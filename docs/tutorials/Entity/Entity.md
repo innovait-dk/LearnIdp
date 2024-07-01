@@ -4,7 +4,7 @@
 
 **Task**: Create a property on the Employees class that can combine FirstName and LastName.
 
-**Execution**:
+**Implementation**:
 
 1. Select "Entity Framework".
 2. Select "Employees".

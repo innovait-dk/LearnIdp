@@ -1,0 +1,558 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.Entity.Localization.PropertySupport
+  commentId: T:Innova.Data.Entity.Localization.PropertySupport
+  id: PropertySupport
+  parent: Innova.Data.Entity.Localization
+  children:
+  - Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  - Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})
+  - Innova.Data.Entity.Localization.PropertySupport.GetMemberExpression(System.String,System.Linq.Expressions.ParameterExpression)
+  - Innova.Data.Entity.Localization.PropertySupport.GetObjectType``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  - Innova.Data.Entity.Localization.PropertySupport.GetPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  - Innova.Data.Entity.Localization.PropertySupport.GetSelectorExpression``1(System.String)
+  langs:
+  - csharp
+  - vb
+  name: PropertySupport
+  nameWithType: PropertySupport
+  fullName: Innova.Data.Entity.Localization.PropertySupport
+  type: Class
+  source:
+    id: PropertySupport
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Localization\PropertySupport.cs
+    startLine: 9
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Localization
+  summary: Provides support for extracting property information based on a property expression.
+  example: []
+  syntax:
+    content: public static class PropertySupport
+    content.vb: Public Module PropertySupport
+  inheritance:
+  - System.Object
+- uid: Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})
+  commentId: M:Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})
+  id: GetFullPropertyName``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})
+  parent: Innova.Data.Entity.Localization.PropertySupport
+  langs:
+  - csharp
+  - vb
+  name: GetFullPropertyName<T, S>(Expression<Func<T, S>>)
+  nameWithType: PropertySupport.GetFullPropertyName<T, S>(Expression<Func<T, S>>)
+  fullName: Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName<T, S>(System.Linq.Expressions.Expression<System.Func<T, S>>)
+  type: Method
+  source:
+    id: GetFullPropertyName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Localization\PropertySupport.cs
+    startLine: 18
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Localization
+  summary: Gets the full name of the property specified by the expression.
+  example: []
+  syntax:
+    content: public static string GetFullPropertyName<T, S>(Expression<Func<T, S>> expression)
+    parameters:
+    - id: expression
+      type: System.Linq.Expressions.Expression{System.Func{{T},{S}}}
+      description: The expression representing the property.
+    typeParameters:
+    - id: T
+      description: The type of the object containing the property.
+    - id: S
+      description: The type of the property.
+    return:
+      type: System.String
+      description: The full name of the property.
+    content.vb: Public Shared Function GetFullPropertyName(Of T, S)(expression As Expression(Of Func(Of T, S))) As String
+  overload: Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName*
+  nameWithType.vb: PropertySupport.GetFullPropertyName(Of T, S)(Expression(Of Func(Of T, S)))
+  fullName.vb: Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName(Of T, S)(System.Linq.Expressions.Expression(Of System.Func(Of T, S)))
+  name.vb: GetFullPropertyName(Of T, S)(Expression(Of Func(Of T, S)))
+- uid: Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  commentId: M:Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  id: GetFullPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  parent: Innova.Data.Entity.Localization.PropertySupport
+  langs:
+  - csharp
+  - vb
+  name: GetFullPropertyName<T>(Expression<Func<T, object>>)
+  nameWithType: PropertySupport.GetFullPropertyName<T>(Expression<Func<T, object>>)
+  fullName: Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName<T>(System.Linq.Expressions.Expression<System.Func<T, object>>)
+  type: Method
+  source:
+    id: GetFullPropertyName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Localization\PropertySupport.cs
+    startLine: 33
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Localization
+  summary: Gets the full name of the property specified by the expression.
+  example: []
+  syntax:
+    content: public static string GetFullPropertyName<T>(Expression<Func<T, object>> expression)
+    parameters:
+    - id: expression
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Object}}
+      description: The expression representing the property.
+    typeParameters:
+    - id: T
+      description: The type of the object containing the property.
+    return:
+      type: System.String
+      description: The full name of the property.
+    content.vb: Public Shared Function GetFullPropertyName(Of T)(expression As Expression(Of Func(Of T, Object))) As String
+  overload: Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName*
+  nameWithType.vb: PropertySupport.GetFullPropertyName(Of T)(Expression(Of Func(Of T, Object)))
+  fullName.vb: Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T, Object)))
+  name.vb: GetFullPropertyName(Of T)(Expression(Of Func(Of T, Object)))
+- uid: Innova.Data.Entity.Localization.PropertySupport.GetObjectType``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  commentId: M:Innova.Data.Entity.Localization.PropertySupport.GetObjectType``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  id: GetObjectType``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  parent: Innova.Data.Entity.Localization.PropertySupport
+  langs:
+  - csharp
+  - vb
+  name: GetObjectType<T>(Expression<Func<T, object>>)
+  nameWithType: PropertySupport.GetObjectType<T>(Expression<Func<T, object>>)
+  fullName: Innova.Data.Entity.Localization.PropertySupport.GetObjectType<T>(System.Linq.Expressions.Expression<System.Func<T, object>>)
+  type: Method
+  source:
+    id: GetObjectType
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Localization\PropertySupport.cs
+    startLine: 44
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Localization
+  summary: Gets the type of the object specified by the expression.
+  example: []
+  syntax:
+    content: public static Type GetObjectType<T>(Expression<Func<T, object>> expr)
+    parameters:
+    - id: expr
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Object}}
+      description: The expression representing the object.
+    typeParameters:
+    - id: T
+      description: The type of the object.
+    return:
+      type: System.Type
+      description: The type of the object.
+    content.vb: Public Shared Function GetObjectType(Of T)(expr As Expression(Of Func(Of T, Object))) As Type
+  overload: Innova.Data.Entity.Localization.PropertySupport.GetObjectType*
+  nameWithType.vb: PropertySupport.GetObjectType(Of T)(Expression(Of Func(Of T, Object)))
+  fullName.vb: Innova.Data.Entity.Localization.PropertySupport.GetObjectType(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T, Object)))
+  name.vb: GetObjectType(Of T)(Expression(Of Func(Of T, Object)))
+- uid: Innova.Data.Entity.Localization.PropertySupport.GetPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  commentId: M:Innova.Data.Entity.Localization.PropertySupport.GetPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  id: GetPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  parent: Innova.Data.Entity.Localization.PropertySupport
+  langs:
+  - csharp
+  - vb
+  name: GetPropertyName<T>(Expression<Func<T, object>>)
+  nameWithType: PropertySupport.GetPropertyName<T>(Expression<Func<T, object>>)
+  fullName: Innova.Data.Entity.Localization.PropertySupport.GetPropertyName<T>(System.Linq.Expressions.Expression<System.Func<T, object>>)
+  type: Method
+  source:
+    id: GetPropertyName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Localization\PropertySupport.cs
+    startLine: 64
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Localization
+  summary: Gets the name of the property specified by the expression.
+  example: []
+  syntax:
+    content: public static string GetPropertyName<T>(Expression<Func<T, object>> expression)
+    parameters:
+    - id: expression
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Object}}
+      description: The expression representing the property.
+    typeParameters:
+    - id: T
+      description: The type of the object containing the property.
+    return:
+      type: System.String
+      description: The name of the property.
+    content.vb: Public Shared Function GetPropertyName(Of T)(expression As Expression(Of Func(Of T, Object))) As String
+  overload: Innova.Data.Entity.Localization.PropertySupport.GetPropertyName*
+  nameWithType.vb: PropertySupport.GetPropertyName(Of T)(Expression(Of Func(Of T, Object)))
+  fullName.vb: Innova.Data.Entity.Localization.PropertySupport.GetPropertyName(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T, Object)))
+  name.vb: GetPropertyName(Of T)(Expression(Of Func(Of T, Object)))
+- uid: Innova.Data.Entity.Localization.PropertySupport.GetSelectorExpression``1(System.String)
+  commentId: M:Innova.Data.Entity.Localization.PropertySupport.GetSelectorExpression``1(System.String)
+  id: GetSelectorExpression``1(System.String)
+  parent: Innova.Data.Entity.Localization.PropertySupport
+  langs:
+  - csharp
+  - vb
+  name: GetSelectorExpression<T>(string)
+  nameWithType: PropertySupport.GetSelectorExpression<T>(string)
+  fullName: Innova.Data.Entity.Localization.PropertySupport.GetSelectorExpression<T>(string)
+  type: Method
+  source:
+    id: GetSelectorExpression
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Localization\PropertySupport.cs
+    startLine: 79
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Localization
+  summary: Gets the selector expression for the specified property.
+  example: []
+  syntax:
+    content: public static LambdaExpression GetSelectorExpression<T>(string property)
+    parameters:
+    - id: property
+      type: System.String
+      description: The name of the property.
+    typeParameters:
+    - id: T
+      description: The type of the object containing the property.
+    return:
+      type: System.Linq.Expressions.LambdaExpression
+      description: The selector expression for the property.
+    content.vb: Public Shared Function GetSelectorExpression(Of T)([property] As String) As LambdaExpression
+  overload: Innova.Data.Entity.Localization.PropertySupport.GetSelectorExpression*
+  nameWithType.vb: PropertySupport.GetSelectorExpression(Of T)(String)
+  fullName.vb: Innova.Data.Entity.Localization.PropertySupport.GetSelectorExpression(Of T)(String)
+  name.vb: GetSelectorExpression(Of T)(String)
+- uid: Innova.Data.Entity.Localization.PropertySupport.GetMemberExpression(System.String,System.Linq.Expressions.ParameterExpression)
+  commentId: M:Innova.Data.Entity.Localization.PropertySupport.GetMemberExpression(System.String,System.Linq.Expressions.ParameterExpression)
+  id: GetMemberExpression(System.String,System.Linq.Expressions.ParameterExpression)
+  parent: Innova.Data.Entity.Localization.PropertySupport
+  langs:
+  - csharp
+  - vb
+  name: GetMemberExpression(string, ParameterExpression)
+  nameWithType: PropertySupport.GetMemberExpression(string, ParameterExpression)
+  fullName: Innova.Data.Entity.Localization.PropertySupport.GetMemberExpression(string, System.Linq.Expressions.ParameterExpression)
+  type: Method
+  source:
+    id: GetMemberExpression
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Localization\PropertySupport.cs
+    startLine: 92
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Localization
+  summary: Gets the member expression for the specified property.
+  example: []
+  syntax:
+    content: public static MemberExpression GetMemberExpression(string property, ParameterExpression parameterExpression)
+    parameters:
+    - id: property
+      type: System.String
+      description: The name of the property.
+    - id: parameterExpression
+      type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression representing the object containing the property.
+    return:
+      type: System.Linq.Expressions.MemberExpression
+      description: The member expression for the property.
+    content.vb: Public Shared Function GetMemberExpression([property] As String, parameterExpression As ParameterExpression) As MemberExpression
+  overload: Innova.Data.Entity.Localization.PropertySupport.GetMemberExpression*
+  nameWithType.vb: PropertySupport.GetMemberExpression(String, ParameterExpression)
+  fullName.vb: Innova.Data.Entity.Localization.PropertySupport.GetMemberExpression(String, System.Linq.Expressions.ParameterExpression)
+  name.vb: GetMemberExpression(String, ParameterExpression)
+references:
+- uid: Innova.Data.Entity.Localization
+  commentId: N:Innova.Data.Entity.Localization
+  href: Innova.html
+  name: Innova.Data.Entity.Localization
+  nameWithType: Innova.Data.Entity.Localization
+  fullName: Innova.Data.Entity.Localization
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  - name: .
+  - uid: Innova.Data.Entity.Localization
+    name: Localization
+    href: Innova.Data.Entity.Localization.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  - name: .
+  - uid: Innova.Data.Entity.Localization
+    name: Localization
+    href: Innova.Data.Entity.Localization.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName*
+  commentId: Overload:Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName
+  href: Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName.html#Innova_Data_Entity_Localization_PropertySupport_GetFullPropertyName__2_System_Linq_Expressions_Expression_System_Func___0___1___
+  name: GetFullPropertyName
+  nameWithType: PropertySupport.GetFullPropertyName
+  fullName: Innova.Data.Entity.Localization.PropertySupport.GetFullPropertyName
+- uid: System.Linq.Expressions.Expression{System.Func{{T},{S}}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,``1}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, S>>
+  nameWithType: Expression<Func<T, S>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, S>>
+  nameWithType.vb: Expression(Of Func(Of T, S))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, S))
+  name.vb: Expression(Of Func(Of T, S))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: S
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: S
+  - name: )
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Object}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{`0,System.Object}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, object>>
+  nameWithType: Expression<Func<T, object>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, object>>
+  nameWithType.vb: Expression(Of Func(Of T, Object))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Object))
+  name.vb: Expression(Of Func(Of T, Object))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: Innova.Data.Entity.Localization.PropertySupport.GetObjectType*
+  commentId: Overload:Innova.Data.Entity.Localization.PropertySupport.GetObjectType
+  href: Innova.Data.Entity.Localization.PropertySupport.GetObjectType.html#Innova_Data_Entity_Localization_PropertySupport_GetObjectType__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___
+  name: GetObjectType
+  nameWithType: PropertySupport.GetObjectType
+  fullName: Innova.Data.Entity.Localization.PropertySupport.GetObjectType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Innova.Data.Entity.Localization.PropertySupport.GetPropertyName*
+  commentId: Overload:Innova.Data.Entity.Localization.PropertySupport.GetPropertyName
+  href: Innova.Data.Entity.Localization.PropertySupport.GetPropertyName.html#Innova_Data_Entity_Localization_PropertySupport_GetPropertyName__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___
+  name: GetPropertyName
+  nameWithType: PropertySupport.GetPropertyName
+  fullName: Innova.Data.Entity.Localization.PropertySupport.GetPropertyName
+- uid: Innova.Data.Entity.Localization.PropertySupport.GetSelectorExpression*
+  commentId: Overload:Innova.Data.Entity.Localization.PropertySupport.GetSelectorExpression
+  href: Innova.Data.Entity.Localization.PropertySupport.GetSelectorExpression.html#Innova_Data_Entity_Localization_PropertySupport_GetSelectorExpression__1_System_String_
+  name: GetSelectorExpression
+  nameWithType: PropertySupport.GetSelectorExpression
+  fullName: Innova.Data.Entity.Localization.PropertySupport.GetSelectorExpression
+- uid: System.Linq.Expressions.LambdaExpression
+  commentId: T:System.Linq.Expressions.LambdaExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.lambdaexpression
+  name: LambdaExpression
+  nameWithType: LambdaExpression
+  fullName: System.Linq.Expressions.LambdaExpression
+- uid: Innova.Data.Entity.Localization.PropertySupport.GetMemberExpression*
+  commentId: Overload:Innova.Data.Entity.Localization.PropertySupport.GetMemberExpression
+  href: Innova.Data.Entity.Localization.PropertySupport.GetMemberExpression.html#Innova_Data_Entity_Localization_PropertySupport_GetMemberExpression_System_String_System_Linq_Expressions_ParameterExpression_
+  name: GetMemberExpression
+  nameWithType: PropertySupport.GetMemberExpression
+  fullName: Innova.Data.Entity.Localization.PropertySupport.GetMemberExpression
+- uid: System.Linq.Expressions.ParameterExpression
+  commentId: T:System.Linq.Expressions.ParameterExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.parameterexpression
+  name: ParameterExpression
+  nameWithType: ParameterExpression
+  fullName: System.Linq.Expressions.ParameterExpression
+- uid: System.Linq.Expressions.MemberExpression
+  commentId: T:System.Linq.Expressions.MemberExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.memberexpression
+  name: MemberExpression
+  nameWithType: MemberExpression
+  fullName: System.Linq.Expressions.MemberExpression
+memberLayout: SeparatePages

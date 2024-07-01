@@ -1,0 +1,349 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.Validation.IEntityValidator
+  commentId: T:Innova.Data.Validation.IEntityValidator
+  id: IEntityValidator
+  parent: Innova.Data.Validation
+  children:
+  - Innova.Data.Validation.IEntityValidator.DefaultRuleSet
+  - Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset``1(``0)
+  - Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset``1(``0,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IEntityValidator
+  nameWithType: IEntityValidator
+  fullName: Innova.Data.Validation.IEntityValidator
+  type: Interface
+  source:
+    id: IEntityValidator
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\IEntityValidator.cs
+    startLine: 26
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Represents an entity validator.
+  example: []
+  syntax:
+    content: public interface IEntityValidator
+    content.vb: Public Interface IEntityValidator
+- uid: Innova.Data.Validation.IEntityValidator.DefaultRuleSet
+  commentId: P:Innova.Data.Validation.IEntityValidator.DefaultRuleSet
+  id: DefaultRuleSet
+  parent: Innova.Data.Validation.IEntityValidator
+  langs:
+  - csharp
+  - vb
+  name: DefaultRuleSet
+  nameWithType: IEntityValidator.DefaultRuleSet
+  fullName: Innova.Data.Validation.IEntityValidator.DefaultRuleSet
+  type: Property
+  source:
+    id: DefaultRuleSet
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\IEntityValidator.cs
+    startLine: 31
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Gets or sets the default validation rule set.
+  example: []
+  syntax:
+    content: ValidationRuleSetEnum DefaultRuleSet { get; set; }
+    parameters: []
+    return:
+      type: Innova.Data.Validation.ValidationRuleSetEnum
+    content.vb: Property DefaultRuleSet As ValidationRuleSetEnum
+  overload: Innova.Data.Validation.IEntityValidator.DefaultRuleSet*
+- uid: Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset``1(``0,System.String)
+  commentId: M:Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset``1(``0,System.String)
+  id: ValidateByDefaultRuleset``1(``0,System.String)
+  parent: Innova.Data.Validation.IEntityValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateByDefaultRuleset<T>(T, string)
+  nameWithType: IEntityValidator.ValidateByDefaultRuleset<T>(T, string)
+  fullName: Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset<T>(T, string)
+  type: Method
+  source:
+    id: ValidateByDefaultRuleset
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\IEntityValidator.cs
+    startLine: 40
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Validates the specified entity using the default validation rule set and the specified property name.
+  example: []
+  syntax:
+    content: ValidationResult ValidateByDefaultRuleset<T>(T entity, string propertyName)
+    parameters:
+    - id: entity
+      type: '{T}'
+      description: The entity to be validated.
+    - id: propertyName
+      type: System.String
+      description: The name of the property to be validated.
+    typeParameters:
+    - id: T
+      description: The type of the entity to be validated.
+    return:
+      type: FluentValidation.Results.ValidationResult
+      description: The validation result.
+    content.vb: Function ValidateByDefaultRuleset(Of T)(entity As T, propertyName As String) As ValidationResult
+  overload: Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset*
+  nameWithType.vb: IEntityValidator.ValidateByDefaultRuleset(Of T)(T, String)
+  fullName.vb: Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset(Of T)(T, String)
+  name.vb: ValidateByDefaultRuleset(Of T)(T, String)
+- uid: Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset``1(``0)
+  commentId: M:Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset``1(``0)
+  id: ValidateByDefaultRuleset``1(``0)
+  parent: Innova.Data.Validation.IEntityValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateByDefaultRuleset<TEntity>(TEntity)
+  nameWithType: IEntityValidator.ValidateByDefaultRuleset<TEntity>(TEntity)
+  fullName: Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset<TEntity>(TEntity)
+  type: Method
+  source:
+    id: ValidateByDefaultRuleset
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\IEntityValidator.cs
+    startLine: 48
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Validates the specified entity using the default validation rule set.
+  example: []
+  syntax:
+    content: Task<ValidationResult> ValidateByDefaultRuleset<TEntity>(TEntity entity)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+      description: The entity to be validated.
+    typeParameters:
+    - id: TEntity
+      description: The type of the entity to be validated.
+    return:
+      type: System.Threading.Tasks.Task{FluentValidation.Results.ValidationResult}
+      description: A task that represents the asynchronous validation operation.
+    content.vb: Function ValidateByDefaultRuleset(Of TEntity)(entity As TEntity) As Task(Of ValidationResult)
+  overload: Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset*
+  nameWithType.vb: IEntityValidator.ValidateByDefaultRuleset(Of TEntity)(TEntity)
+  fullName.vb: Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset(Of TEntity)(TEntity)
+  name.vb: ValidateByDefaultRuleset(Of TEntity)(TEntity)
+references:
+- uid: Innova.Data.Validation
+  commentId: N:Innova.Data.Validation
+  href: Innova.html
+  name: Innova.Data.Validation
+  nameWithType: Innova.Data.Validation
+  fullName: Innova.Data.Validation
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Validation
+    name: Validation
+    href: Innova.Data.Validation.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Validation
+    name: Validation
+    href: Innova.Data.Validation.html
+- uid: Innova.Data.Validation.IEntityValidator.DefaultRuleSet*
+  commentId: Overload:Innova.Data.Validation.IEntityValidator.DefaultRuleSet
+  href: Innova.Data.Validation.IEntityValidator.DefaultRuleSet.html#Innova_Data_Validation_IEntityValidator_DefaultRuleSet
+  name: DefaultRuleSet
+  nameWithType: IEntityValidator.DefaultRuleSet
+  fullName: Innova.Data.Validation.IEntityValidator.DefaultRuleSet
+- uid: Innova.Data.Validation.ValidationRuleSetEnum
+  commentId: T:Innova.Data.Validation.ValidationRuleSetEnum
+  parent: Innova.Data.Validation
+  href: Innova.Data.Validation.ValidationRuleSetEnum.html
+  name: ValidationRuleSetEnum
+  nameWithType: ValidationRuleSetEnum
+  fullName: Innova.Data.Validation.ValidationRuleSetEnum
+- uid: Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset*
+  commentId: Overload:Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset
+  href: Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset.html#Innova_Data_Validation_IEntityValidator_ValidateByDefaultRuleset__1___0_System_String_
+  name: ValidateByDefaultRuleset
+  nameWithType: IEntityValidator.ValidateByDefaultRuleset
+  fullName: Innova.Data.Validation.IEntityValidator.ValidateByDefaultRuleset
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: FluentValidation.Results.ValidationResult
+  commentId: T:FluentValidation.Results.ValidationResult
+  parent: FluentValidation.Results
+  isExternal: true
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: FluentValidation.Results.ValidationResult
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: FluentValidation.Results
+  commentId: N:FluentValidation.Results
+  isExternal: true
+  name: FluentValidation.Results
+  nameWithType: FluentValidation.Results
+  fullName: FluentValidation.Results
+  spec.csharp:
+  - uid: FluentValidation
+    name: FluentValidation
+    isExternal: true
+  - name: .
+  - uid: FluentValidation.Results
+    name: Results
+    isExternal: true
+  spec.vb:
+  - uid: FluentValidation
+    name: FluentValidation
+    isExternal: true
+  - name: .
+  - uid: FluentValidation.Results
+    name: Results
+    isExternal: true
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: System.Threading.Tasks.Task{FluentValidation.Results.ValidationResult}
+  commentId: T:System.Threading.Tasks.Task{FluentValidation.Results.ValidationResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ValidationResult>
+  nameWithType: Task<ValidationResult>
+  fullName: System.Threading.Tasks.Task<FluentValidation.Results.ValidationResult>
+  nameWithType.vb: Task(Of ValidationResult)
+  fullName.vb: System.Threading.Tasks.Task(Of FluentValidation.Results.ValidationResult)
+  name.vb: Task(Of ValidationResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: )
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

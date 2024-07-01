@@ -1,0 +1,708 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1
+  commentId: T:Innova.Data.AppSettings.Services.SavedQueryService`1
+  id: SavedQueryService`1
+  parent: Innova.Data.AppSettings.Services
+  children:
+  - Innova.Data.AppSettings.Services.SavedQueryService`1.#ctor(Innova.Data.IDbContextFactory{`0},Innova.Data.Security.ICurrentUser)
+  - Innova.Data.AppSettings.Services.SavedQueryService`1.DefaultSavedQuerySetting
+  - Innova.Data.AppSettings.Services.SavedQueryService`1.Get(System.String,System.String)
+  - Innova.Data.AppSettings.Services.SavedQueryService`1.GetDefault(System.String,System.String)
+  - Innova.Data.AppSettings.Services.SavedQueryService`1.Save
+  - Innova.Data.AppSettings.Services.SavedQueryService`1.SaveDefaults
+  - Innova.Data.AppSettings.Services.SavedQueryService`1.SavedQuerySetting
+  langs:
+  - csharp
+  - vb
+  name: SavedQueryService<TContext>
+  nameWithType: SavedQueryService<TContext>
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>
+  type: Class
+  source:
+    id: SavedQueryService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\SavedQueryService.cs
+    startLine: 11
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings.Services
+  summary: Service for managing saved queries.
+  example: []
+  syntax:
+    content: 'public class SavedQueryService<TContext> : ISavedQueryService where TContext : DbContext'
+    typeParameters:
+    - id: TContext
+      description: The type of the database context.
+    content.vb: Public Class SavedQueryService(Of TContext As DbContext) Implements ISavedQueryService
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Data.AppSettings.ISavedQueryService
+  nameWithType.vb: SavedQueryService(Of TContext)
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext)
+  name.vb: SavedQueryService(Of TContext)
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1.SavedQuerySetting
+  commentId: P:Innova.Data.AppSettings.Services.SavedQueryService`1.SavedQuerySetting
+  id: SavedQuerySetting
+  parent: Innova.Data.AppSettings.Services.SavedQueryService`1
+  langs:
+  - csharp
+  - vb
+  name: SavedQuerySetting
+  nameWithType: SavedQueryService<TContext>.SavedQuerySetting
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>.SavedQuerySetting
+  type: Property
+  source:
+    id: SavedQuerySetting
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\SavedQueryService.cs
+    startLine: 16
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings.Services
+  syntax:
+    content: protected EntitySavedQuerySetting SavedQuerySetting { get; set; }
+    parameters: []
+    return:
+      type: Innova.Data.AppSettings.EntitySavedQuerySetting
+    content.vb: Protected Property SavedQuerySetting As EntitySavedQuerySetting
+  overload: Innova.Data.AppSettings.Services.SavedQueryService`1.SavedQuerySetting*
+  nameWithType.vb: SavedQueryService(Of TContext).SavedQuerySetting
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext).SavedQuerySetting
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1.DefaultSavedQuerySetting
+  commentId: P:Innova.Data.AppSettings.Services.SavedQueryService`1.DefaultSavedQuerySetting
+  id: DefaultSavedQuerySetting
+  parent: Innova.Data.AppSettings.Services.SavedQueryService`1
+  langs:
+  - csharp
+  - vb
+  name: DefaultSavedQuerySetting
+  nameWithType: SavedQueryService<TContext>.DefaultSavedQuerySetting
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>.DefaultSavedQuerySetting
+  type: Property
+  source:
+    id: DefaultSavedQuerySetting
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\SavedQueryService.cs
+    startLine: 17
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings.Services
+  syntax:
+    content: protected EntitySavedQuerySetting DefaultSavedQuerySetting { get; set; }
+    parameters: []
+    return:
+      type: Innova.Data.AppSettings.EntitySavedQuerySetting
+    content.vb: Protected Property DefaultSavedQuerySetting As EntitySavedQuerySetting
+  overload: Innova.Data.AppSettings.Services.SavedQueryService`1.DefaultSavedQuerySetting*
+  nameWithType.vb: SavedQueryService(Of TContext).DefaultSavedQuerySetting
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext).DefaultSavedQuerySetting
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1.#ctor(Innova.Data.IDbContextFactory{`0},Innova.Data.Security.ICurrentUser)
+  commentId: M:Innova.Data.AppSettings.Services.SavedQueryService`1.#ctor(Innova.Data.IDbContextFactory{`0},Innova.Data.Security.ICurrentUser)
+  id: '#ctor(Innova.Data.IDbContextFactory{`0},Innova.Data.Security.ICurrentUser)'
+  parent: Innova.Data.AppSettings.Services.SavedQueryService`1
+  langs:
+  - csharp
+  - vb
+  name: SavedQueryService(IDbContextFactory<TContext>, ICurrentUser)
+  nameWithType: SavedQueryService<TContext>.SavedQueryService(IDbContextFactory<TContext>, ICurrentUser)
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>.SavedQueryService(Innova.Data.IDbContextFactory<TContext>, Innova.Data.Security.ICurrentUser)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\SavedQueryService.cs
+    startLine: 24
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings.Services
+  summary: Initializes a new instance of the <xref href="Innova.Data.AppSettings.Services.SavedQueryService%601" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public SavedQueryService(IDbContextFactory<TContext> dbContextFactory, ICurrentUser currentUser)
+    parameters:
+    - id: dbContextFactory
+      type: Innova.Data.IDbContextFactory{{TContext}}
+      description: The database context factory.
+    - id: currentUser
+      type: Innova.Data.Security.ICurrentUser
+      description: The current user.
+    content.vb: Public Sub New(dbContextFactory As IDbContextFactory(Of TContext), currentUser As ICurrentUser)
+  overload: Innova.Data.AppSettings.Services.SavedQueryService`1.#ctor*
+  nameWithType.vb: SavedQueryService(Of TContext).New(IDbContextFactory(Of TContext), ICurrentUser)
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext).New(Innova.Data.IDbContextFactory(Of TContext), Innova.Data.Security.ICurrentUser)
+  name.vb: New(IDbContextFactory(Of TContext), ICurrentUser)
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1.Get(System.String,System.String)
+  commentId: M:Innova.Data.AppSettings.Services.SavedQueryService`1.Get(System.String,System.String)
+  id: Get(System.String,System.String)
+  parent: Innova.Data.AppSettings.Services.SavedQueryService`1
+  langs:
+  - csharp
+  - vb
+  name: Get(string, string)
+  nameWithType: SavedQueryService<TContext>.Get(string, string)
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>.Get(string, string)
+  type: Method
+  source:
+    id: Get
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\SavedQueryService.cs
+    startLine: 70
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings.Services
+  summary: >-
+    Retrieves the saved query type for the specified entity type and view key.
+
+    If the query type does not exist, it creates a new one.
+  example: []
+  syntax:
+    content: public EntitySavedQueryType Get(string typeName, string key = null)
+    parameters:
+    - id: typeName
+      type: System.String
+      description: The entity type name.
+    - id: key
+      type: System.String
+      description: The view key.
+    return:
+      type: Innova.Data.AppSettings.EntitySavedQueryType
+      description: The entity saved query type.
+    content.vb: Public Function [Get](typeName As String, key As String = Nothing) As EntitySavedQueryType
+  overload: Innova.Data.AppSettings.Services.SavedQueryService`1.Get*
+  implements:
+  - Innova.Data.AppSettings.ISavedQueryService.Get(System.String,System.String)
+  nameWithType.vb: SavedQueryService(Of TContext).Get(String, String)
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext).Get(String, String)
+  name.vb: Get(String, String)
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1.GetDefault(System.String,System.String)
+  commentId: M:Innova.Data.AppSettings.Services.SavedQueryService`1.GetDefault(System.String,System.String)
+  id: GetDefault(System.String,System.String)
+  parent: Innova.Data.AppSettings.Services.SavedQueryService`1
+  langs:
+  - csharp
+  - vb
+  name: GetDefault(string, string)
+  nameWithType: SavedQueryService<TContext>.GetDefault(string, string)
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>.GetDefault(string, string)
+  type: Method
+  source:
+    id: GetDefault
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\SavedQueryService.cs
+    startLine: 93
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings.Services
+  summary: >-
+    Retrieves the default saved query type for the specified entity type and view key.
+
+    If the query type does not exist, it creates a new one.
+  example: []
+  syntax:
+    content: public EntitySavedQueryType GetDefault(string typeName, string key = null)
+    parameters:
+    - id: typeName
+      type: System.String
+      description: The entity type name.
+    - id: key
+      type: System.String
+      description: The view key.
+    return:
+      type: Innova.Data.AppSettings.EntitySavedQueryType
+      description: The entity saved query type.
+    content.vb: Public Function GetDefault(typeName As String, key As String = Nothing) As EntitySavedQueryType
+  overload: Innova.Data.AppSettings.Services.SavedQueryService`1.GetDefault*
+  implements:
+  - Innova.Data.AppSettings.ISavedQueryService.GetDefault(System.String,System.String)
+  nameWithType.vb: SavedQueryService(Of TContext).GetDefault(String, String)
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext).GetDefault(String, String)
+  name.vb: GetDefault(String, String)
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1.Save
+  commentId: M:Innova.Data.AppSettings.Services.SavedQueryService`1.Save
+  id: Save
+  parent: Innova.Data.AppSettings.Services.SavedQueryService`1
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: SavedQueryService<TContext>.Save()
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>.Save()
+  type: Method
+  source:
+    id: Save
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\SavedQueryService.cs
+    startLine: 112
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings.Services
+  summary: Saves the changes made to the saved queries of the current user.
+  example: []
+  syntax:
+    content: public void Save()
+    content.vb: Public Sub Save()
+  overload: Innova.Data.AppSettings.Services.SavedQueryService`1.Save*
+  implements:
+  - Innova.Data.AppSettings.ISavedQueryService.Save
+  nameWithType.vb: SavedQueryService(Of TContext).Save()
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext).Save()
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1.SaveDefaults
+  commentId: M:Innova.Data.AppSettings.Services.SavedQueryService`1.SaveDefaults
+  id: SaveDefaults
+  parent: Innova.Data.AppSettings.Services.SavedQueryService`1
+  langs:
+  - csharp
+  - vb
+  name: SaveDefaults()
+  nameWithType: SavedQueryService<TContext>.SaveDefaults()
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>.SaveDefaults()
+  type: Method
+  source:
+    id: SaveDefaults
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\SavedQueryService.cs
+    startLine: 120
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings.Services
+  summary: Saves the changes made to the default saved queries.
+  example: []
+  syntax:
+    content: public void SaveDefaults()
+    content.vb: Public Sub SaveDefaults()
+  overload: Innova.Data.AppSettings.Services.SavedQueryService`1.SaveDefaults*
+  implements:
+  - Innova.Data.AppSettings.ISavedQueryService.SaveDefaults
+  nameWithType.vb: SavedQueryService(Of TContext).SaveDefaults()
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext).SaveDefaults()
+references:
+- uid: Innova.Data.AppSettings.Services
+  commentId: N:Innova.Data.AppSettings.Services
+  href: Innova.html
+  name: Innova.Data.AppSettings.Services
+  nameWithType: Innova.Data.AppSettings.Services
+  fullName: Innova.Data.AppSettings.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+  - name: .
+  - uid: Innova.Data.AppSettings.Services
+    name: Services
+    href: Innova.Data.AppSettings.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+  - name: .
+  - uid: Innova.Data.AppSettings.Services
+    name: Services
+    href: Innova.Data.AppSettings.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Data.AppSettings.ISavedQueryService
+  commentId: T:Innova.Data.AppSettings.ISavedQueryService
+  parent: Innova.Data.AppSettings
+  href: Innova.Data.AppSettings.ISavedQueryService.html
+  name: ISavedQueryService
+  nameWithType: ISavedQueryService
+  fullName: Innova.Data.AppSettings.ISavedQueryService
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.AppSettings
+  commentId: N:Innova.Data.AppSettings
+  href: Innova.html
+  name: Innova.Data.AppSettings
+  nameWithType: Innova.Data.AppSettings
+  fullName: Innova.Data.AppSettings
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1.SavedQuerySetting*
+  commentId: Overload:Innova.Data.AppSettings.Services.SavedQueryService`1.SavedQuerySetting
+  href: Innova.Data.AppSettings.Services.SavedQueryService-1.SavedQuerySetting.html#Innova_Data_AppSettings_Services_SavedQueryService_1_SavedQuerySetting
+  name: SavedQuerySetting
+  nameWithType: SavedQueryService<TContext>.SavedQuerySetting
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>.SavedQuerySetting
+  nameWithType.vb: SavedQueryService(Of TContext).SavedQuerySetting
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext).SavedQuerySetting
+- uid: Innova.Data.AppSettings.EntitySavedQuerySetting
+  commentId: T:Innova.Data.AppSettings.EntitySavedQuerySetting
+  parent: Innova.Data.AppSettings
+  href: Innova.Data.AppSettings.EntitySavedQuerySetting.html
+  name: EntitySavedQuerySetting
+  nameWithType: EntitySavedQuerySetting
+  fullName: Innova.Data.AppSettings.EntitySavedQuerySetting
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1.DefaultSavedQuerySetting*
+  commentId: Overload:Innova.Data.AppSettings.Services.SavedQueryService`1.DefaultSavedQuerySetting
+  href: Innova.Data.AppSettings.Services.SavedQueryService-1.DefaultSavedQuerySetting.html#Innova_Data_AppSettings_Services_SavedQueryService_1_DefaultSavedQuerySetting
+  name: DefaultSavedQuerySetting
+  nameWithType: SavedQueryService<TContext>.DefaultSavedQuerySetting
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>.DefaultSavedQuerySetting
+  nameWithType.vb: SavedQueryService(Of TContext).DefaultSavedQuerySetting
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext).DefaultSavedQuerySetting
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1
+  commentId: T:Innova.Data.AppSettings.Services.SavedQueryService`1
+  href: Innova.Data.AppSettings.Services.SavedQueryService-1.html
+  name: SavedQueryService<TContext>
+  nameWithType: SavedQueryService<TContext>
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>
+  nameWithType.vb: SavedQueryService(Of TContext)
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext)
+  name.vb: SavedQueryService(Of TContext)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.SavedQueryService`1
+    name: SavedQueryService
+    href: Innova.Data.AppSettings.Services.SavedQueryService-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.SavedQueryService`1
+    name: SavedQueryService
+    href: Innova.Data.AppSettings.Services.SavedQueryService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1.#ctor*
+  commentId: Overload:Innova.Data.AppSettings.Services.SavedQueryService`1.#ctor
+  href: Innova.Data.AppSettings.Services.SavedQueryService-1.-ctor.html#Innova_Data_AppSettings_Services_SavedQueryService_1__ctor_Innova_Data_IDbContextFactory__0__Innova_Data_Security_ICurrentUser_
+  name: SavedQueryService
+  nameWithType: SavedQueryService<TContext>.SavedQueryService
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>.SavedQueryService
+  nameWithType.vb: SavedQueryService(Of TContext).New
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext).New
+  name.vb: New
+- uid: Innova.Data.IDbContextFactory{{TContext}}
+  commentId: T:Innova.Data.IDbContextFactory{`0}
+  parent: Innova.Data
+  definition: Innova.Data.IDbContextFactory`1
+  href: Innova.Data.IDbContextFactory-1.html
+  name: IDbContextFactory<TContext>
+  nameWithType: IDbContextFactory<TContext>
+  fullName: Innova.Data.IDbContextFactory<TContext>
+  nameWithType.vb: IDbContextFactory(Of TContext)
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext)
+  name.vb: IDbContextFactory(Of TContext)
+  spec.csharp:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+    href: Innova.Data.IDbContextFactory-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+    href: Innova.Data.IDbContextFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Innova.Data.Security.ICurrentUser
+  commentId: T:Innova.Data.Security.ICurrentUser
+  parent: Innova.Data.Security
+  href: Innova.Data.Security.ICurrentUser.html
+  name: ICurrentUser
+  nameWithType: ICurrentUser
+  fullName: Innova.Data.Security.ICurrentUser
+- uid: Innova.Data.IDbContextFactory`1
+  commentId: T:Innova.Data.IDbContextFactory`1
+  href: Innova.Data.IDbContextFactory-1.html
+  name: IDbContextFactory<TContext>
+  nameWithType: IDbContextFactory<TContext>
+  fullName: Innova.Data.IDbContextFactory<TContext>
+  nameWithType.vb: IDbContextFactory(Of TContext)
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext)
+  name.vb: IDbContextFactory(Of TContext)
+  spec.csharp:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+    href: Innova.Data.IDbContextFactory-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+    href: Innova.Data.IDbContextFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Innova.Data
+  commentId: N:Innova.Data
+  href: Innova.html
+  name: Innova.Data
+  nameWithType: Innova.Data
+  fullName: Innova.Data
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+- uid: Innova.Data.Security
+  commentId: N:Innova.Data.Security
+  href: Innova.html
+  name: Innova.Data.Security
+  nameWithType: Innova.Data.Security
+  fullName: Innova.Data.Security
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Security
+    name: Security
+    href: Innova.Data.Security.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Security
+    name: Security
+    href: Innova.Data.Security.html
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1.Get*
+  commentId: Overload:Innova.Data.AppSettings.Services.SavedQueryService`1.Get
+  href: Innova.Data.AppSettings.Services.SavedQueryService-1.Get.html#Innova_Data_AppSettings_Services_SavedQueryService_1_Get_System_String_System_String_
+  name: Get
+  nameWithType: SavedQueryService<TContext>.Get
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>.Get
+  nameWithType.vb: SavedQueryService(Of TContext).Get
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext).Get
+- uid: Innova.Data.AppSettings.ISavedQueryService.Get(System.String,System.String)
+  commentId: M:Innova.Data.AppSettings.ISavedQueryService.Get(System.String,System.String)
+  parent: Innova.Data.AppSettings.ISavedQueryService
+  isExternal: true
+  href: Innova.Data.AppSettings.ISavedQueryService.Get.html#Innova_Data_AppSettings_ISavedQueryService_Get_System_String_System_String_
+  name: Get(string, string)
+  nameWithType: ISavedQueryService.Get(string, string)
+  fullName: Innova.Data.AppSettings.ISavedQueryService.Get(string, string)
+  nameWithType.vb: ISavedQueryService.Get(String, String)
+  fullName.vb: Innova.Data.AppSettings.ISavedQueryService.Get(String, String)
+  name.vb: Get(String, String)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.ISavedQueryService.Get(System.String,System.String)
+    name: Get
+    href: Innova.Data.AppSettings.ISavedQueryService.Get.html#Innova_Data_AppSettings_ISavedQueryService_Get_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.ISavedQueryService.Get(System.String,System.String)
+    name: Get
+    href: Innova.Data.AppSettings.ISavedQueryService.Get.html#Innova_Data_AppSettings_ISavedQueryService_Get_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Data.AppSettings.EntitySavedQueryType
+  commentId: T:Innova.Data.AppSettings.EntitySavedQueryType
+  parent: Innova.Data.AppSettings
+  href: Innova.Data.AppSettings.EntitySavedQueryType.html
+  name: EntitySavedQueryType
+  nameWithType: EntitySavedQueryType
+  fullName: Innova.Data.AppSettings.EntitySavedQueryType
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1.GetDefault*
+  commentId: Overload:Innova.Data.AppSettings.Services.SavedQueryService`1.GetDefault
+  href: Innova.Data.AppSettings.Services.SavedQueryService-1.GetDefault.html#Innova_Data_AppSettings_Services_SavedQueryService_1_GetDefault_System_String_System_String_
+  name: GetDefault
+  nameWithType: SavedQueryService<TContext>.GetDefault
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>.GetDefault
+  nameWithType.vb: SavedQueryService(Of TContext).GetDefault
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext).GetDefault
+- uid: Innova.Data.AppSettings.ISavedQueryService.GetDefault(System.String,System.String)
+  commentId: M:Innova.Data.AppSettings.ISavedQueryService.GetDefault(System.String,System.String)
+  parent: Innova.Data.AppSettings.ISavedQueryService
+  isExternal: true
+  href: Innova.Data.AppSettings.ISavedQueryService.GetDefault.html#Innova_Data_AppSettings_ISavedQueryService_GetDefault_System_String_System_String_
+  name: GetDefault(string, string)
+  nameWithType: ISavedQueryService.GetDefault(string, string)
+  fullName: Innova.Data.AppSettings.ISavedQueryService.GetDefault(string, string)
+  nameWithType.vb: ISavedQueryService.GetDefault(String, String)
+  fullName.vb: Innova.Data.AppSettings.ISavedQueryService.GetDefault(String, String)
+  name.vb: GetDefault(String, String)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.ISavedQueryService.GetDefault(System.String,System.String)
+    name: GetDefault
+    href: Innova.Data.AppSettings.ISavedQueryService.GetDefault.html#Innova_Data_AppSettings_ISavedQueryService_GetDefault_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.ISavedQueryService.GetDefault(System.String,System.String)
+    name: GetDefault
+    href: Innova.Data.AppSettings.ISavedQueryService.GetDefault.html#Innova_Data_AppSettings_ISavedQueryService_GetDefault_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1.Save*
+  commentId: Overload:Innova.Data.AppSettings.Services.SavedQueryService`1.Save
+  href: Innova.Data.AppSettings.Services.SavedQueryService-1.Save.html#Innova_Data_AppSettings_Services_SavedQueryService_1_Save
+  name: Save
+  nameWithType: SavedQueryService<TContext>.Save
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>.Save
+  nameWithType.vb: SavedQueryService(Of TContext).Save
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext).Save
+- uid: Innova.Data.AppSettings.ISavedQueryService.Save
+  commentId: M:Innova.Data.AppSettings.ISavedQueryService.Save
+  parent: Innova.Data.AppSettings.ISavedQueryService
+  href: Innova.Data.AppSettings.ISavedQueryService.Save.html#Innova_Data_AppSettings_ISavedQueryService_Save
+  name: Save()
+  nameWithType: ISavedQueryService.Save()
+  fullName: Innova.Data.AppSettings.ISavedQueryService.Save()
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.ISavedQueryService.Save
+    name: Save
+    href: Innova.Data.AppSettings.ISavedQueryService.Save.html#Innova_Data_AppSettings_ISavedQueryService_Save
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.ISavedQueryService.Save
+    name: Save
+    href: Innova.Data.AppSettings.ISavedQueryService.Save.html#Innova_Data_AppSettings_ISavedQueryService_Save
+  - name: (
+  - name: )
+- uid: Innova.Data.AppSettings.Services.SavedQueryService`1.SaveDefaults*
+  commentId: Overload:Innova.Data.AppSettings.Services.SavedQueryService`1.SaveDefaults
+  href: Innova.Data.AppSettings.Services.SavedQueryService-1.SaveDefaults.html#Innova_Data_AppSettings_Services_SavedQueryService_1_SaveDefaults
+  name: SaveDefaults
+  nameWithType: SavedQueryService<TContext>.SaveDefaults
+  fullName: Innova.Data.AppSettings.Services.SavedQueryService<TContext>.SaveDefaults
+  nameWithType.vb: SavedQueryService(Of TContext).SaveDefaults
+  fullName.vb: Innova.Data.AppSettings.Services.SavedQueryService(Of TContext).SaveDefaults
+- uid: Innova.Data.AppSettings.ISavedQueryService.SaveDefaults
+  commentId: M:Innova.Data.AppSettings.ISavedQueryService.SaveDefaults
+  parent: Innova.Data.AppSettings.ISavedQueryService
+  href: Innova.Data.AppSettings.ISavedQueryService.SaveDefaults.html#Innova_Data_AppSettings_ISavedQueryService_SaveDefaults
+  name: SaveDefaults()
+  nameWithType: ISavedQueryService.SaveDefaults()
+  fullName: Innova.Data.AppSettings.ISavedQueryService.SaveDefaults()
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.ISavedQueryService.SaveDefaults
+    name: SaveDefaults
+    href: Innova.Data.AppSettings.ISavedQueryService.SaveDefaults.html#Innova_Data_AppSettings_ISavedQueryService_SaveDefaults
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.ISavedQueryService.SaveDefaults
+    name: SaveDefaults
+    href: Innova.Data.AppSettings.ISavedQueryService.SaveDefaults.html#Innova_Data_AppSettings_ISavedQueryService_SaveDefaults
+  - name: (
+  - name: )
+memberLayout: SeparatePages

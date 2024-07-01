@@ -44,7 +44,7 @@ In another example of customization [Entity](../Entity/Entity.md), the custom pr
 
 **Task**: Create a property in the Employees class that can be used to map "FirstName" and "LastName" together.
 
-**Execution**: 
+**Implementation**: 
 
 1. Select "User Interface"
 2. Select "Employees"

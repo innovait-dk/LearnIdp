@@ -1,0 +1,570 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.StructuredSearch.Utils
+  commentId: T:Innova.Data.StructuredSearch.Utils
+  id: Utils
+  parent: Innova.Data.StructuredSearch
+  children:
+  - Innova.Data.StructuredSearch.Utils.GetDefaultOperandTypes(System.Type)
+  - Innova.Data.StructuredSearch.Utils.GetFieldOperators(System.Type)
+  - Innova.Data.StructuredSearch.Utils.GetInst
+  - Innova.Data.StructuredSearch.Utils.GetNullableOperandMode(System.Type)
+  - Innova.Data.StructuredSearch.Utils.GetOperandTypes(System.Type)
+  - Innova.Data.StructuredSearch.Utils.GetOperators
+  langs:
+  - csharp
+  - vb
+  name: Utils
+  nameWithType: Utils
+  fullName: Innova.Data.StructuredSearch.Utils
+  type: Class
+  source:
+    id: Utils
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Utils.cs
+    startLine: 11
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Utility class for structured search operations.
+  example: []
+  syntax:
+    content: public static class Utils
+    content.vb: Public Module Utils
+  inheritance:
+  - System.Object
+- uid: Innova.Data.StructuredSearch.Utils.GetOperandTypes(System.Type)
+  commentId: M:Innova.Data.StructuredSearch.Utils.GetOperandTypes(System.Type)
+  id: GetOperandTypes(System.Type)
+  parent: Innova.Data.StructuredSearch.Utils
+  langs:
+  - csharp
+  - vb
+  name: GetOperandTypes(Type)
+  nameWithType: Utils.GetOperandTypes(Type)
+  fullName: Innova.Data.StructuredSearch.Utils.GetOperandTypes(System.Type)
+  type: Method
+  source:
+    id: GetOperandTypes
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Utils.cs
+    startLine: 18
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets the operand types from operator type.
+  example: []
+  syntax:
+    content: public static List<Type> GetOperandTypes(Type operatorType)
+    parameters:
+    - id: operatorType
+      type: System.Type
+      description: The operator type.
+    return:
+      type: System.Collections.Generic.List{System.Type}
+      description: The list of operand types.
+    content.vb: Public Shared Function GetOperandTypes(operatorType As Type) As List(Of Type)
+  overload: Innova.Data.StructuredSearch.Utils.GetOperandTypes*
+- uid: Innova.Data.StructuredSearch.Utils.GetOperators
+  commentId: M:Innova.Data.StructuredSearch.Utils.GetOperators
+  id: GetOperators
+  parent: Innova.Data.StructuredSearch.Utils
+  langs:
+  - csharp
+  - vb
+  name: GetOperators()
+  nameWithType: Utils.GetOperators()
+  fullName: Innova.Data.StructuredSearch.Utils.GetOperators()
+  type: Method
+  source:
+    id: GetOperators
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Utils.cs
+    startLine: 34
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets a list of all implemented operator types that user can select from.
+  example: []
+  syntax:
+    content: public static IEnumerable<Type> GetOperators()
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: The list of operator types.
+    content.vb: Public Shared Function GetOperators() As IEnumerable(Of Type)
+  overload: Innova.Data.StructuredSearch.Utils.GetOperators*
+- uid: Innova.Data.StructuredSearch.Utils.GetInst
+  commentId: M:Innova.Data.StructuredSearch.Utils.GetInst
+  id: GetInst
+  parent: Innova.Data.StructuredSearch.Utils
+  langs:
+  - csharp
+  - vb
+  name: GetInst()
+  nameWithType: Utils.GetInst()
+  fullName: Innova.Data.StructuredSearch.Utils.GetInst()
+  type: Method
+  source:
+    id: GetInst
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Utils.cs
+    startLine: 50
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets instances of all implemented operators.
+  example: []
+  syntax:
+    content: public static IEnumerable<Operator> GetInst()
+    return:
+      type: System.Collections.Generic.IEnumerable{Innova.Data.StructuredSearch.Operator}
+      description: The list of operator instances.
+    content.vb: Public Shared Function GetInst() As IEnumerable(Of [Operator])
+  overload: Innova.Data.StructuredSearch.Utils.GetInst*
+- uid: Innova.Data.StructuredSearch.Utils.GetNullableOperandMode(System.Type)
+  commentId: M:Innova.Data.StructuredSearch.Utils.GetNullableOperandMode(System.Type)
+  id: GetNullableOperandMode(System.Type)
+  parent: Innova.Data.StructuredSearch.Utils
+  langs:
+  - csharp
+  - vb
+  name: GetNullableOperandMode(Type)
+  nameWithType: Utils.GetNullableOperandMode(Type)
+  fullName: Innova.Data.StructuredSearch.Utils.GetNullableOperandMode(System.Type)
+  type: Method
+  source:
+    id: GetNullableOperandMode
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Utils.cs
+    startLine: 67
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets the nullable operand mode for the specified operator type.
+  example: []
+  syntax:
+    content: public static NullableOperandMode GetNullableOperandMode(Type operatorType)
+    parameters:
+    - id: operatorType
+      type: System.Type
+      description: The operator type.
+    return:
+      type: Innova.Data.StructuredSearch.Operators.NullableOperandMode
+      description: The nullable operand mode.
+    content.vb: Public Shared Function GetNullableOperandMode(operatorType As Type) As NullableOperandMode
+  overload: Innova.Data.StructuredSearch.Utils.GetNullableOperandMode*
+- uid: Innova.Data.StructuredSearch.Utils.GetDefaultOperandTypes(System.Type)
+  commentId: M:Innova.Data.StructuredSearch.Utils.GetDefaultOperandTypes(System.Type)
+  id: GetDefaultOperandTypes(System.Type)
+  parent: Innova.Data.StructuredSearch.Utils
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultOperandTypes(Type)
+  nameWithType: Utils.GetDefaultOperandTypes(Type)
+  fullName: Innova.Data.StructuredSearch.Utils.GetDefaultOperandTypes(System.Type)
+  type: Method
+  source:
+    id: GetDefaultOperandTypes
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Utils.cs
+    startLine: 82
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets the (operand) types for which the operator is the default operator.
+  example: []
+  syntax:
+    content: public static Type[] GetDefaultOperandTypes(Type operatorType)
+    parameters:
+    - id: operatorType
+      type: System.Type
+      description: The operator type.
+    return:
+      type: System.Type[]
+      description: The array of operand types.
+    content.vb: Public Shared Function GetDefaultOperandTypes(operatorType As Type) As Type()
+  overload: Innova.Data.StructuredSearch.Utils.GetDefaultOperandTypes*
+- uid: Innova.Data.StructuredSearch.Utils.GetFieldOperators(System.Type)
+  commentId: M:Innova.Data.StructuredSearch.Utils.GetFieldOperators(System.Type)
+  id: GetFieldOperators(System.Type)
+  parent: Innova.Data.StructuredSearch.Utils
+  langs:
+  - csharp
+  - vb
+  name: GetFieldOperators(Type)
+  nameWithType: Utils.GetFieldOperators(Type)
+  fullName: Innova.Data.StructuredSearch.Utils.GetFieldOperators(System.Type)
+  type: Method
+  source:
+    id: GetFieldOperators
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Utils.cs
+    startLine: 98
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets the allowed operators for the specified field type.
+  example: []
+  syntax:
+    content: public static List<Type> GetFieldOperators(Type fieldType)
+    parameters:
+    - id: fieldType
+      type: System.Type
+      description: The field type.
+    return:
+      type: System.Collections.Generic.List{System.Type}
+      description: The list of operator types.
+    content.vb: Public Shared Function GetFieldOperators(fieldType As Type) As List(Of Type)
+  overload: Innova.Data.StructuredSearch.Utils.GetFieldOperators*
+references:
+- uid: Innova.Data.StructuredSearch
+  commentId: N:Innova.Data.StructuredSearch
+  href: Innova.html
+  name: Innova.Data.StructuredSearch
+  nameWithType: Innova.Data.StructuredSearch
+  fullName: Innova.Data.StructuredSearch
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.StructuredSearch
+    name: StructuredSearch
+    href: Innova.Data.StructuredSearch.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.StructuredSearch
+    name: StructuredSearch
+    href: Innova.Data.StructuredSearch.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.StructuredSearch.Utils.GetOperandTypes*
+  commentId: Overload:Innova.Data.StructuredSearch.Utils.GetOperandTypes
+  href: Innova.Data.StructuredSearch.Utils.GetOperandTypes.html#Innova_Data_StructuredSearch_Utils_GetOperandTypes_System_Type_
+  name: GetOperandTypes
+  nameWithType: Utils.GetOperandTypes
+  fullName: Innova.Data.StructuredSearch.Utils.GetOperandTypes
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Collections.Generic.List{System.Type}
+  commentId: T:System.Collections.Generic.List{System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Type>
+  nameWithType: List<Type>
+  fullName: System.Collections.Generic.List<System.Type>
+  nameWithType.vb: List(Of Type)
+  fullName.vb: System.Collections.Generic.List(Of System.Type)
+  name.vb: List(Of Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Data.StructuredSearch.Utils.GetOperators*
+  commentId: Overload:Innova.Data.StructuredSearch.Utils.GetOperators
+  href: Innova.Data.StructuredSearch.Utils.GetOperators.html#Innova_Data_StructuredSearch_Utils_GetOperators
+  name: GetOperators
+  nameWithType: Utils.GetOperators
+  fullName: Innova.Data.StructuredSearch.Utils.GetOperators
+- uid: System.Collections.Generic.IEnumerable{System.Type}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Type>
+  nameWithType: IEnumerable<Type>
+  fullName: System.Collections.Generic.IEnumerable<System.Type>
+  nameWithType.vb: IEnumerable(Of Type)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Type)
+  name.vb: IEnumerable(Of Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.StructuredSearch.Utils.GetInst*
+  commentId: Overload:Innova.Data.StructuredSearch.Utils.GetInst
+  href: Innova.Data.StructuredSearch.Utils.GetInst.html#Innova_Data_StructuredSearch_Utils_GetInst
+  name: GetInst
+  nameWithType: Utils.GetInst
+  fullName: Innova.Data.StructuredSearch.Utils.GetInst
+- uid: System.Collections.Generic.IEnumerable{Innova.Data.StructuredSearch.Operator}
+  commentId: T:System.Collections.Generic.IEnumerable{Innova.Data.StructuredSearch.Operator}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Operator>
+  nameWithType: IEnumerable<Operator>
+  fullName: System.Collections.Generic.IEnumerable<Innova.Data.StructuredSearch.Operator>
+  nameWithType.vb: IEnumerable(Of Operator)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Innova.Data.StructuredSearch.Operator)
+  name.vb: IEnumerable(Of Operator)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Innova.Data.StructuredSearch.Operator
+    name: Operator
+    href: Innova.Data.StructuredSearch.Operator.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.StructuredSearch.Operator
+    name: Operator
+    href: Innova.Data.StructuredSearch.Operator.html
+  - name: )
+- uid: Innova.Data.StructuredSearch.Utils.GetNullableOperandMode*
+  commentId: Overload:Innova.Data.StructuredSearch.Utils.GetNullableOperandMode
+  href: Innova.Data.StructuredSearch.Utils.GetNullableOperandMode.html#Innova_Data_StructuredSearch_Utils_GetNullableOperandMode_System_Type_
+  name: GetNullableOperandMode
+  nameWithType: Utils.GetNullableOperandMode
+  fullName: Innova.Data.StructuredSearch.Utils.GetNullableOperandMode
+- uid: Innova.Data.StructuredSearch.Operators.NullableOperandMode
+  commentId: T:Innova.Data.StructuredSearch.Operators.NullableOperandMode
+  parent: Innova.Data.StructuredSearch.Operators
+  href: Innova.Data.StructuredSearch.Operators.NullableOperandMode.html
+  name: NullableOperandMode
+  nameWithType: NullableOperandMode
+  fullName: Innova.Data.StructuredSearch.Operators.NullableOperandMode
+- uid: Innova.Data.StructuredSearch.Operators
+  commentId: N:Innova.Data.StructuredSearch.Operators
+  href: Innova.html
+  name: Innova.Data.StructuredSearch.Operators
+  nameWithType: Innova.Data.StructuredSearch.Operators
+  fullName: Innova.Data.StructuredSearch.Operators
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.StructuredSearch
+    name: StructuredSearch
+    href: Innova.Data.StructuredSearch.html
+  - name: .
+  - uid: Innova.Data.StructuredSearch.Operators
+    name: Operators
+    href: Innova.Data.StructuredSearch.Operators.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.StructuredSearch
+    name: StructuredSearch
+    href: Innova.Data.StructuredSearch.html
+  - name: .
+  - uid: Innova.Data.StructuredSearch.Operators
+    name: Operators
+    href: Innova.Data.StructuredSearch.Operators.html
+- uid: Innova.Data.StructuredSearch.Utils.GetDefaultOperandTypes*
+  commentId: Overload:Innova.Data.StructuredSearch.Utils.GetDefaultOperandTypes
+  href: Innova.Data.StructuredSearch.Utils.GetDefaultOperandTypes.html#Innova_Data_StructuredSearch_Utils_GetDefaultOperandTypes_System_Type_
+  name: GetDefaultOperandTypes
+  nameWithType: Utils.GetDefaultOperandTypes
+  fullName: Innova.Data.StructuredSearch.Utils.GetDefaultOperandTypes
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: Innova.Data.StructuredSearch.Utils.GetFieldOperators*
+  commentId: Overload:Innova.Data.StructuredSearch.Utils.GetFieldOperators
+  href: Innova.Data.StructuredSearch.Utils.GetFieldOperators.html#Innova_Data_StructuredSearch_Utils_GetFieldOperators_System_Type_
+  name: GetFieldOperators
+  nameWithType: Utils.GetFieldOperators
+  fullName: Innova.Data.StructuredSearch.Utils.GetFieldOperators
+memberLayout: SeparatePages

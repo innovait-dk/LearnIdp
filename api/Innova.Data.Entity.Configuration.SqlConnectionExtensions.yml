@@ -1,0 +1,439 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions
+  commentId: T:Innova.Data.Entity.Configuration.SqlConnectionExtensions
+  id: SqlConnectionExtensions
+  parent: Innova.Data.Entity.Configuration
+  children:
+  - Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.String,System.String)
+  - Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserName(System.Data.IDbConnection,System.String)
+  - Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserNameAsync(System.Data.IDbConnection,System.String)
+  - Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.Data.SqlTypes.SqlBinary)
+  langs:
+  - csharp
+  - vb
+  name: SqlConnectionExtensions
+  nameWithType: SqlConnectionExtensions
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions
+  type: Class
+  source:
+    id: SqlConnectionExtensions
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
+    startLine: 10
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  syntax:
+    content: public static class SqlConnectionExtensions
+    content.vb: Public Module SqlConnectionExtensions
+  inheritance:
+  - System.Object
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.String,System.String)
+  commentId: M:Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.String,System.String)
+  id: SetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.String,System.String)
+  isExtensionMethod: true
+  parent: Innova.Data.Entity.Configuration.SqlConnectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetApplicationRole(SqlConnection, string, string)
+  nameWithType: SqlConnectionExtensions.SetApplicationRole(SqlConnection, string, string)
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole(Microsoft.Data.SqlClient.SqlConnection, string, string)
+  type: Method
+  source:
+    id: SetApplicationRole
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
+    startLine: 20
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Sets the application role on the connection
+  example: []
+  syntax:
+    content: public static SqlBinary SetApplicationRole(this SqlConnection connection, string roleName, string password)
+    parameters:
+    - id: connection
+      type: Microsoft.Data.SqlClient.SqlConnection
+      description: The connection to set the application role
+    - id: roleName
+      type: System.String
+      description: Name of the application role.
+    - id: password
+      type: System.String
+      description: The password of the application role.
+    return:
+      type: System.Data.SqlTypes.SqlBinary
+      description: The cookie value as a SqlBinary
+    content.vb: Public Shared Function SetApplicationRole(connection As SqlConnection, roleName As String, password As String) As SqlBinary
+  overload: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole*
+  nameWithType.vb: SqlConnectionExtensions.SetApplicationRole(SqlConnection, String, String)
+  fullName.vb: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole(Microsoft.Data.SqlClient.SqlConnection, String, String)
+  name.vb: SetApplicationRole(SqlConnection, String, String)
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.Data.SqlTypes.SqlBinary)
+  commentId: M:Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.Data.SqlTypes.SqlBinary)
+  id: UnsetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.Data.SqlTypes.SqlBinary)
+  isExtensionMethod: true
+  parent: Innova.Data.Entity.Configuration.SqlConnectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: UnsetApplicationRole(SqlConnection, SqlBinary)
+  nameWithType: SqlConnectionExtensions.UnsetApplicationRole(SqlConnection, SqlBinary)
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole(Microsoft.Data.SqlClient.SqlConnection, System.Data.SqlTypes.SqlBinary)
+  type: Method
+  source:
+    id: UnsetApplicationRole
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
+    startLine: 47
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Unsets the application role identified by cookie on the connection.
+  example: []
+  syntax:
+    content: public static void UnsetApplicationRole(this SqlConnection connection, SqlBinary cookie)
+    parameters:
+    - id: connection
+      type: Microsoft.Data.SqlClient.SqlConnection
+      description: The connection.
+    - id: cookie
+      type: System.Data.SqlTypes.SqlBinary
+      description: The cookie value as a SqlBinary.
+    content.vb: Public Shared Sub UnsetApplicationRole(connection As SqlConnection, cookie As SqlBinary)
+  overload: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole*
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserName(System.Data.IDbConnection,System.String)
+  commentId: M:Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserName(System.Data.IDbConnection,System.String)
+  id: SetContextUserName(System.Data.IDbConnection,System.String)
+  isExtensionMethod: true
+  parent: Innova.Data.Entity.Configuration.SqlConnectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetContextUserName(IDbConnection, string)
+  nameWithType: SqlConnectionExtensions.SetContextUserName(IDbConnection, string)
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserName(System.Data.IDbConnection, string)
+  type: Method
+  source:
+    id: SetContextUserName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
+    startLine: 64
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Sets the name of the context user.
+  example: []
+  syntax:
+    content: public static void SetContextUserName(this IDbConnection connection, string userName)
+    parameters:
+    - id: connection
+      type: System.Data.IDbConnection
+      description: The connection.
+    - id: userName
+      type: System.String
+      description: Name of the user.
+    content.vb: Public Shared Sub SetContextUserName(connection As IDbConnection, userName As String)
+  overload: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserName*
+  nameWithType.vb: SqlConnectionExtensions.SetContextUserName(IDbConnection, String)
+  fullName.vb: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserName(System.Data.IDbConnection, String)
+  name.vb: SetContextUserName(IDbConnection, String)
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserNameAsync(System.Data.IDbConnection,System.String)
+  commentId: M:Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserNameAsync(System.Data.IDbConnection,System.String)
+  id: SetContextUserNameAsync(System.Data.IDbConnection,System.String)
+  isExtensionMethod: true
+  parent: Innova.Data.Entity.Configuration.SqlConnectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetContextUserNameAsync(IDbConnection, string)
+  nameWithType: SqlConnectionExtensions.SetContextUserNameAsync(IDbConnection, string)
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserNameAsync(System.Data.IDbConnection, string)
+  type: Method
+  source:
+    id: SetContextUserNameAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
+    startLine: 82
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Sets the name of the context user asynchronously.
+  example: []
+  syntax:
+    content: public static Task SetContextUserNameAsync(this IDbConnection connection, string userName)
+    parameters:
+    - id: connection
+      type: System.Data.IDbConnection
+      description: The connection.
+    - id: userName
+      type: System.String
+      description: Name of the user.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Public Shared Function SetContextUserNameAsync(connection As IDbConnection, userName As String) As Task
+  overload: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserNameAsync*
+  nameWithType.vb: SqlConnectionExtensions.SetContextUserNameAsync(IDbConnection, String)
+  fullName.vb: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserNameAsync(System.Data.IDbConnection, String)
+  name.vb: SetContextUserNameAsync(IDbConnection, String)
+references:
+- uid: Innova.Data.Entity.Configuration
+  commentId: N:Innova.Data.Entity.Configuration
+  href: Innova.html
+  name: Innova.Data.Entity.Configuration
+  nameWithType: Innova.Data.Entity.Configuration
+  fullName: Innova.Data.Entity.Configuration
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  - name: .
+  - uid: Innova.Data.Entity.Configuration
+    name: Configuration
+    href: Innova.Data.Entity.Configuration.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  - name: .
+  - uid: Innova.Data.Entity.Configuration
+    name: Configuration
+    href: Innova.Data.Entity.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole*
+  commentId: Overload:Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole
+  href: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole.html#Innova_Data_Entity_Configuration_SqlConnectionExtensions_SetApplicationRole_Microsoft_Data_SqlClient_SqlConnection_System_String_System_String_
+  name: SetApplicationRole
+  nameWithType: SqlConnectionExtensions.SetApplicationRole
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole
+- uid: Microsoft.Data.SqlClient.SqlConnection
+  commentId: T:Microsoft.Data.SqlClient.SqlConnection
+  parent: Microsoft.Data.SqlClient
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.data.sqlclient.sqlconnection
+  name: SqlConnection
+  nameWithType: SqlConnection
+  fullName: Microsoft.Data.SqlClient.SqlConnection
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Data.SqlTypes.SqlBinary
+  commentId: T:System.Data.SqlTypes.SqlBinary
+  parent: System.Data.SqlTypes
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.sqltypes.sqlbinary
+  name: SqlBinary
+  nameWithType: SqlBinary
+  fullName: System.Data.SqlTypes.SqlBinary
+- uid: Microsoft.Data.SqlClient
+  commentId: N:Microsoft.Data.SqlClient
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Data.SqlClient
+  nameWithType: Microsoft.Data.SqlClient
+  fullName: Microsoft.Data.SqlClient
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.data
+  - name: .
+  - uid: Microsoft.Data.SqlClient
+    name: SqlClient
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.data.sqlclient
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.data
+  - name: .
+  - uid: Microsoft.Data.SqlClient
+    name: SqlClient
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.data.sqlclient
+- uid: System.Data.SqlTypes
+  commentId: N:System.Data.SqlTypes
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Data.SqlTypes
+  nameWithType: System.Data.SqlTypes
+  fullName: System.Data.SqlTypes
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+  - name: .
+  - uid: System.Data.SqlTypes
+    name: SqlTypes
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.sqltypes
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+  - name: .
+  - uid: System.Data.SqlTypes
+    name: SqlTypes
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.sqltypes
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole*
+  commentId: Overload:Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole
+  href: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole.html#Innova_Data_Entity_Configuration_SqlConnectionExtensions_UnsetApplicationRole_Microsoft_Data_SqlClient_SqlConnection_System_Data_SqlTypes_SqlBinary_
+  name: UnsetApplicationRole
+  nameWithType: SqlConnectionExtensions.UnsetApplicationRole
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserName*
+  commentId: Overload:Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserName
+  href: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserName.html#Innova_Data_Entity_Configuration_SqlConnectionExtensions_SetContextUserName_System_Data_IDbConnection_System_String_
+  name: SetContextUserName
+  nameWithType: SqlConnectionExtensions.SetContextUserName
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserName
+- uid: System.Data.IDbConnection
+  commentId: T:System.Data.IDbConnection
+  parent: System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idbconnection
+  name: IDbConnection
+  nameWithType: IDbConnection
+  fullName: System.Data.IDbConnection
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserNameAsync*
+  commentId: Overload:Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserNameAsync
+  href: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserNameAsync.html#Innova_Data_Entity_Configuration_SqlConnectionExtensions_SetContextUserNameAsync_System_Data_IDbConnection_System_String_
+  name: SetContextUserNameAsync
+  nameWithType: SqlConnectionExtensions.SetContextUserNameAsync
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserNameAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

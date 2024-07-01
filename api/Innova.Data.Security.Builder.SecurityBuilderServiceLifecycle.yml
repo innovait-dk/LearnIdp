@@ -1,0 +1,714 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle
+  commentId: T:Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle
+  id: SecurityBuilderServiceLifecycle
+  parent: Innova.Data.Security.Builder
+  children:
+  - Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.#ctor(System.Collections.Generic.IEnumerable{Innova.Data.Security.Builder.ISecurityBuilder})
+  - Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  - Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Start(System.Threading.CancellationToken)
+  - Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StartOrder
+  - Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Stop(System.Threading.CancellationToken)
+  - Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StopOrder
+  langs:
+  - csharp
+  - vb
+  name: SecurityBuilderServiceLifecycle
+  nameWithType: SecurityBuilderServiceLifecycle
+  fullName: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle
+  type: Class
+  source:
+    id: SecurityBuilderServiceLifecycle
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Security\Builder\SecurityBuilderServiceLifecycle.cs
+    startLine: 11
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Security.Builder
+  summary: Represents the service lifecycle for security builders.
+  example: []
+  syntax:
+    content: 'public class SecurityBuilderServiceLifecycle : IServiceLifecycle'
+    content.vb: Public Class SecurityBuilderServiceLifecycle Implements IServiceLifecycle
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle
+- uid: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StopOrder
+  commentId: P:Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StopOrder
+  id: StopOrder
+  parent: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: StopOrder
+  nameWithType: SecurityBuilderServiceLifecycle.StopOrder
+  fullName: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StopOrder
+  type: Property
+  source:
+    id: StopOrder
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Security\Builder\SecurityBuilderServiceLifecycle.cs
+    startLine: 18
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Security.Builder
+  summary: Gets the stop order of the service lifecycle.
+  example: []
+  syntax:
+    content: public int StopOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property StopOrder As Integer
+  overload: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StopOrder*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+- uid: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StartOrder
+  commentId: P:Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StartOrder
+  id: StartOrder
+  parent: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: StartOrder
+  nameWithType: SecurityBuilderServiceLifecycle.StartOrder
+  fullName: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StartOrder
+  type: Property
+  source:
+    id: StartOrder
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Security\Builder\SecurityBuilderServiceLifecycle.cs
+    startLine: 23
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Security.Builder
+  summary: Gets the start order of the service lifecycle.
+  example: []
+  syntax:
+    content: public int StartOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property StartOrder As Integer
+  overload: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StartOrder*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+- uid: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.#ctor(System.Collections.Generic.IEnumerable{Innova.Data.Security.Builder.ISecurityBuilder})
+  commentId: M:Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.#ctor(System.Collections.Generic.IEnumerable{Innova.Data.Security.Builder.ISecurityBuilder})
+  id: '#ctor(System.Collections.Generic.IEnumerable{Innova.Data.Security.Builder.ISecurityBuilder})'
+  parent: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: SecurityBuilderServiceLifecycle(IEnumerable<ISecurityBuilder>)
+  nameWithType: SecurityBuilderServiceLifecycle.SecurityBuilderServiceLifecycle(IEnumerable<ISecurityBuilder>)
+  fullName: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.SecurityBuilderServiceLifecycle(System.Collections.Generic.IEnumerable<Innova.Data.Security.Builder.ISecurityBuilder>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Security\Builder\SecurityBuilderServiceLifecycle.cs
+    startLine: 29
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Security.Builder
+  summary: Initializes a new instance of the <xref href="Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public SecurityBuilderServiceLifecycle(IEnumerable<ISecurityBuilder> securityBuilders)
+    parameters:
+    - id: securityBuilders
+      type: System.Collections.Generic.IEnumerable{Innova.Data.Security.Builder.ISecurityBuilder}
+      description: The security builders.
+    content.vb: Public Sub New(securityBuilders As IEnumerable(Of ISecurityBuilder))
+  overload: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.#ctor*
+  nameWithType.vb: SecurityBuilderServiceLifecycle.New(IEnumerable(Of ISecurityBuilder))
+  fullName.vb: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.New(System.Collections.Generic.IEnumerable(Of Innova.Data.Security.Builder.ISecurityBuilder))
+  name.vb: New(IEnumerable(Of ISecurityBuilder))
+- uid: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  commentId: M:Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  id: CanStop(System.Threading.CancellationToken)
+  parent: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: CanStop(CancellationToken)
+  nameWithType: SecurityBuilderServiceLifecycle.CanStop(CancellationToken)
+  fullName: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: CanStop
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Security\Builder\SecurityBuilderServiceLifecycle.cs
+    startLine: 39
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Security.Builder
+  summary: Determines whether the service can be stopped.
+  example: []
+  syntax:
+    content: public Task<bool> CanStop(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: A task that represents the asynchronous operation. The task result contains a value indicating whether the service can be stopped.
+    content.vb: Public Function CanStop(cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.CanStop*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+- uid: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Start(System.Threading.CancellationToken)
+  commentId: M:Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Start(System.Threading.CancellationToken)
+  id: Start(System.Threading.CancellationToken)
+  parent: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: Start(CancellationToken)
+  nameWithType: SecurityBuilderServiceLifecycle.Start(CancellationToken)
+  fullName: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Start(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: Start
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Security\Builder\SecurityBuilderServiceLifecycle.cs
+    startLine: 49
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Security.Builder
+  summary: Starts the service.
+  example: []
+  syntax:
+    content: public Task Start(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Public Function Start(cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Start*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+- uid: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Stop(System.Threading.CancellationToken)
+  commentId: M:Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Stop(System.Threading.CancellationToken)
+  id: Stop(System.Threading.CancellationToken)
+  parent: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: Stop(CancellationToken)
+  nameWithType: SecurityBuilderServiceLifecycle.Stop(CancellationToken)
+  fullName: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Stop(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: Stop
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Security\Builder\SecurityBuilderServiceLifecycle.cs
+    startLine: 65
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Security.Builder
+  summary: Stops the service.
+  example: []
+  syntax:
+    content: public Task Stop(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Public Function [Stop](cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Stop*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+references:
+- uid: Innova.Data.Security.Builder
+  commentId: N:Innova.Data.Security.Builder
+  href: Innova.html
+  name: Innova.Data.Security.Builder
+  nameWithType: Innova.Data.Security.Builder
+  fullName: Innova.Data.Security.Builder
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Security
+    name: Security
+    href: Innova.Data.Security.html
+  - name: .
+  - uid: Innova.Data.Security.Builder
+    name: Builder
+    href: Innova.Data.Security.Builder.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Security
+    name: Security
+    href: Innova.Data.Security.html
+  - name: .
+  - uid: Innova.Data.Security.Builder
+    name: Builder
+    href: Innova.Data.Security.Builder.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Abstractions.Builder.IServiceLifecycle
+  commentId: T:Innova.Abstractions.Builder.IServiceLifecycle
+  parent: Innova.Abstractions.Builder
+  href: Innova.Abstractions.Builder.IServiceLifecycle.html
+  name: IServiceLifecycle
+  nameWithType: IServiceLifecycle
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Abstractions.Builder
+  commentId: N:Innova.Abstractions.Builder
+  href: Innova.html
+  name: Innova.Abstractions.Builder
+  nameWithType: Innova.Abstractions.Builder
+  fullName: Innova.Abstractions.Builder
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Abstractions
+    name: Abstractions
+    href: Innova.Abstractions.html
+  - name: .
+  - uid: Innova.Abstractions.Builder
+    name: Builder
+    href: Innova.Abstractions.Builder.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Abstractions
+    name: Abstractions
+    href: Innova.Abstractions.html
+  - name: .
+  - uid: Innova.Abstractions.Builder
+    name: Builder
+    href: Innova.Abstractions.Builder.html
+- uid: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StopOrder*
+  commentId: Overload:Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StopOrder
+  href: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StopOrder.html#Innova_Data_Security_Builder_SecurityBuilderServiceLifecycle_StopOrder
+  name: StopOrder
+  nameWithType: SecurityBuilderServiceLifecycle.StopOrder
+  fullName: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StopOrder
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+  commentId: P:Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  href: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder.html#Innova_Abstractions_Builder_IServiceLifecycle_StopOrder
+  name: StopOrder
+  nameWithType: IServiceLifecycle.StopOrder
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StartOrder*
+  commentId: Overload:Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StartOrder
+  href: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StartOrder.html#Innova_Data_Security_Builder_SecurityBuilderServiceLifecycle_StartOrder
+  name: StartOrder
+  nameWithType: SecurityBuilderServiceLifecycle.StartOrder
+  fullName: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.StartOrder
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+  commentId: P:Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  href: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder.html#Innova_Abstractions_Builder_IServiceLifecycle_StartOrder
+  name: StartOrder
+  nameWithType: IServiceLifecycle.StartOrder
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+- uid: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle
+  commentId: T:Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle
+  href: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.html
+  name: SecurityBuilderServiceLifecycle
+  nameWithType: SecurityBuilderServiceLifecycle
+  fullName: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle
+- uid: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.#ctor*
+  commentId: Overload:Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.#ctor
+  href: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.-ctor.html#Innova_Data_Security_Builder_SecurityBuilderServiceLifecycle__ctor_System_Collections_Generic_IEnumerable_Innova_Data_Security_Builder_ISecurityBuilder__
+  name: SecurityBuilderServiceLifecycle
+  nameWithType: SecurityBuilderServiceLifecycle.SecurityBuilderServiceLifecycle
+  fullName: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.SecurityBuilderServiceLifecycle
+  nameWithType.vb: SecurityBuilderServiceLifecycle.New
+  fullName.vb: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.New
+  name.vb: New
+- uid: System.Collections.Generic.IEnumerable{Innova.Data.Security.Builder.ISecurityBuilder}
+  commentId: T:System.Collections.Generic.IEnumerable{Innova.Data.Security.Builder.ISecurityBuilder}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ISecurityBuilder>
+  nameWithType: IEnumerable<ISecurityBuilder>
+  fullName: System.Collections.Generic.IEnumerable<Innova.Data.Security.Builder.ISecurityBuilder>
+  nameWithType.vb: IEnumerable(Of ISecurityBuilder)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Innova.Data.Security.Builder.ISecurityBuilder)
+  name.vb: IEnumerable(Of ISecurityBuilder)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Innova.Data.Security.Builder.ISecurityBuilder
+    name: ISecurityBuilder
+    href: Innova.Data.Security.Builder.ISecurityBuilder.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.Security.Builder.ISecurityBuilder
+    name: ISecurityBuilder
+    href: Innova.Data.Security.Builder.ISecurityBuilder.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.CanStop*
+  commentId: Overload:Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.CanStop
+  href: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.CanStop.html#Innova_Data_Security_Builder_SecurityBuilderServiceLifecycle_CanStop_System_Threading_CancellationToken_
+  name: CanStop
+  nameWithType: SecurityBuilderServiceLifecycle.CanStop
+  fullName: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.CanStop
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  isExternal: true
+  href: Innova.Abstractions.Builder.IServiceLifecycle.CanStop.html#Innova_Abstractions_Builder_IServiceLifecycle_CanStop_System_Threading_CancellationToken_
+  name: CanStop(CancellationToken)
+  nameWithType: IServiceLifecycle.CanStop(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+    name: CanStop
+    href: Innova.Abstractions.Builder.IServiceLifecycle.CanStop.html#Innova_Abstractions_Builder_IServiceLifecycle_CanStop_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+    name: CanStop
+    href: Innova.Abstractions.Builder.IServiceLifecycle.CanStop.html#Innova_Abstractions_Builder_IServiceLifecycle_CanStop_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Start*
+  commentId: Overload:Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Start
+  href: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Start.html#Innova_Data_Security_Builder_SecurityBuilderServiceLifecycle_Start_System_Threading_CancellationToken_
+  name: Start
+  nameWithType: SecurityBuilderServiceLifecycle.Start
+  fullName: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Start
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  isExternal: true
+  href: Innova.Abstractions.Builder.IServiceLifecycle.Start.html#Innova_Abstractions_Builder_IServiceLifecycle_Start_System_Threading_CancellationToken_
+  name: Start(CancellationToken)
+  nameWithType: IServiceLifecycle.Start(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+    name: Start
+    href: Innova.Abstractions.Builder.IServiceLifecycle.Start.html#Innova_Abstractions_Builder_IServiceLifecycle_Start_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+    name: Start
+    href: Innova.Abstractions.Builder.IServiceLifecycle.Start.html#Innova_Abstractions_Builder_IServiceLifecycle_Start_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Stop*
+  commentId: Overload:Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Stop
+  href: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Stop.html#Innova_Data_Security_Builder_SecurityBuilderServiceLifecycle_Stop_System_Threading_CancellationToken_
+  name: Stop
+  nameWithType: SecurityBuilderServiceLifecycle.Stop
+  fullName: Innova.Data.Security.Builder.SecurityBuilderServiceLifecycle.Stop
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  isExternal: true
+  href: Innova.Abstractions.Builder.IServiceLifecycle.Stop.html#Innova_Abstractions_Builder_IServiceLifecycle_Stop_System_Threading_CancellationToken_
+  name: Stop(CancellationToken)
+  nameWithType: IServiceLifecycle.Stop(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+    name: Stop
+    href: Innova.Abstractions.Builder.IServiceLifecycle.Stop.html#Innova_Abstractions_Builder_IServiceLifecycle_Stop_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+    name: Stop
+    href: Innova.Abstractions.Builder.IServiceLifecycle.Stop.html#Innova_Abstractions_Builder_IServiceLifecycle_Stop_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+memberLayout: SeparatePages

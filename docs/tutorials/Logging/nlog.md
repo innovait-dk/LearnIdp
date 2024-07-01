@@ -8,7 +8,7 @@ Below is an example of using [NLog](https://nlog-project.org/)
 
 **Task**: Add "NLog.Extensions.Logging" nuget package, add NLog.config file and add AddNLog() in App.xaml.cs
 
-**Execution**: 
+**Implementation**: 
 
 1. Add "NLog.Extensions.Logging" nuget package
 

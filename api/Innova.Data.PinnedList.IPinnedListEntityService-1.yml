@@ -1,0 +1,351 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.PinnedList.IPinnedListEntityService`1
+  commentId: T:Innova.Data.PinnedList.IPinnedListEntityService`1
+  id: IPinnedListEntityService`1
+  parent: Innova.Data.PinnedList
+  children:
+  - Innova.Data.PinnedList.IPinnedListEntityService`1.GetPinnedList(System.Collections.Generic.List{`0},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IPinnedListEntityService<KeyType>
+  nameWithType: IPinnedListEntityService<KeyType>
+  fullName: Innova.Data.PinnedList.IPinnedListEntityService<KeyType>
+  type: Interface
+  source:
+    id: IPinnedListEntityService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\PinnedList\IPinnedListEntityService.cs
+    startLine: 12
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.PinnedList
+  summary: Represents a service for managing pinned list entities.
+  example: []
+  syntax:
+    content: public interface IPinnedListEntityService<KeyType>
+    typeParameters:
+    - id: KeyType
+      description: The type of the keys used to retrieve pinned list items.
+    content.vb: Public Interface IPinnedListEntityService(Of KeyType)
+  nameWithType.vb: IPinnedListEntityService(Of KeyType)
+  fullName.vb: Innova.Data.PinnedList.IPinnedListEntityService(Of KeyType)
+  name.vb: IPinnedListEntityService(Of KeyType)
+- uid: Innova.Data.PinnedList.IPinnedListEntityService`1.GetPinnedList(System.Collections.Generic.List{`0},System.Threading.CancellationToken)
+  commentId: M:Innova.Data.PinnedList.IPinnedListEntityService`1.GetPinnedList(System.Collections.Generic.List{`0},System.Threading.CancellationToken)
+  id: GetPinnedList(System.Collections.Generic.List{`0},System.Threading.CancellationToken)
+  parent: Innova.Data.PinnedList.IPinnedListEntityService`1
+  langs:
+  - csharp
+  - vb
+  name: GetPinnedList(List<KeyType>, CancellationToken)
+  nameWithType: IPinnedListEntityService<KeyType>.GetPinnedList(List<KeyType>, CancellationToken)
+  fullName: Innova.Data.PinnedList.IPinnedListEntityService<KeyType>.GetPinnedList(System.Collections.Generic.List<KeyType>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetPinnedList
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\PinnedList\IPinnedListEntityService.cs
+    startLine: 20
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.PinnedList
+  summary: Retrieves the pinned list items for the specified keys.
+  example: []
+  syntax:
+    content: Task<List<PinnedItem>> GetPinnedList(List<KeyType> keys, CancellationToken cancellationToken = default)
+    parameters:
+    - id: keys
+      type: System.Collections.Generic.List{{KeyType}}
+      description: The keys used to retrieve the pinned list items.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.PinnedList.PinnedItem}}
+      description: A task that represents the asynchronous operation. The task result contains the list of pinned items.
+    content.vb: Function GetPinnedList(keys As List(Of KeyType), cancellationToken As CancellationToken = Nothing) As Task(Of List(Of PinnedItem))
+  overload: Innova.Data.PinnedList.IPinnedListEntityService`1.GetPinnedList*
+  nameWithType.vb: IPinnedListEntityService(Of KeyType).GetPinnedList(List(Of KeyType), CancellationToken)
+  fullName.vb: Innova.Data.PinnedList.IPinnedListEntityService(Of KeyType).GetPinnedList(System.Collections.Generic.List(Of KeyType), System.Threading.CancellationToken)
+  name.vb: GetPinnedList(List(Of KeyType), CancellationToken)
+references:
+- uid: Innova.Data.PinnedList
+  commentId: N:Innova.Data.PinnedList
+  href: Innova.html
+  name: Innova.Data.PinnedList
+  nameWithType: Innova.Data.PinnedList
+  fullName: Innova.Data.PinnedList
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.PinnedList
+    name: PinnedList
+    href: Innova.Data.PinnedList.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.PinnedList
+    name: PinnedList
+    href: Innova.Data.PinnedList.html
+- uid: Innova.Data.PinnedList.IPinnedListEntityService`1.GetPinnedList*
+  commentId: Overload:Innova.Data.PinnedList.IPinnedListEntityService`1.GetPinnedList
+  href: Innova.Data.PinnedList.IPinnedListEntityService-1.GetPinnedList.html#Innova_Data_PinnedList_IPinnedListEntityService_1_GetPinnedList_System_Collections_Generic_List__0__System_Threading_CancellationToken_
+  name: GetPinnedList
+  nameWithType: IPinnedListEntityService<KeyType>.GetPinnedList
+  fullName: Innova.Data.PinnedList.IPinnedListEntityService<KeyType>.GetPinnedList
+  nameWithType.vb: IPinnedListEntityService(Of KeyType).GetPinnedList
+  fullName.vb: Innova.Data.PinnedList.IPinnedListEntityService(Of KeyType).GetPinnedList
+- uid: System.Collections.Generic.List{{KeyType}}
+  commentId: T:System.Collections.Generic.List{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<KeyType>
+  nameWithType: List<KeyType>
+  fullName: System.Collections.Generic.List<KeyType>
+  nameWithType.vb: List(Of KeyType)
+  fullName.vb: System.Collections.Generic.List(Of KeyType)
+  name.vb: List(Of KeyType)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: KeyType
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: KeyType
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.PinnedList.PinnedItem}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.PinnedList.PinnedItem}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<PinnedItem>>
+  nameWithType: Task<List<PinnedItem>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Innova.Data.PinnedList.PinnedItem>>
+  nameWithType.vb: Task(Of List(Of PinnedItem))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Innova.Data.PinnedList.PinnedItem))
+  name.vb: Task(Of List(Of PinnedItem))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.PinnedList.PinnedItem
+    name: PinnedItem
+    href: Innova.Data.PinnedList.PinnedItem.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.PinnedList.PinnedItem
+    name: PinnedItem
+    href: Innova.Data.PinnedList.PinnedItem.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

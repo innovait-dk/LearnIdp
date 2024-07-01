@@ -1,0 +1,315 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Abstractions.Builder.IServiceLifecycleManager
+  commentId: T:Innova.Abstractions.Builder.IServiceLifecycleManager
+  id: IServiceLifecycleManager
+  parent: Innova.Abstractions.Builder
+  children:
+  - Innova.Abstractions.Builder.IServiceLifecycleManager.CanStopAll(System.Threading.CancellationToken)
+  - Innova.Abstractions.Builder.IServiceLifecycleManager.StartAll(System.Threading.CancellationToken)
+  - Innova.Abstractions.Builder.IServiceLifecycleManager.StopAll(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IServiceLifecycleManager
+  nameWithType: IServiceLifecycleManager
+  fullName: Innova.Abstractions.Builder.IServiceLifecycleManager
+  type: Interface
+  source:
+    id: IServiceLifecycleManager
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Abstractions\Builder\IServiceLifecycleManager.cs
+    startLine: 8
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Abstractions.Builder
+  summary: Interface for managing the lifecycle of services.
+  example: []
+  syntax:
+    content: public interface IServiceLifecycleManager
+    content.vb: Public Interface IServiceLifecycleManager
+- uid: Innova.Abstractions.Builder.IServiceLifecycleManager.CanStopAll(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycleManager.CanStopAll(System.Threading.CancellationToken)
+  id: CanStopAll(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycleManager
+  langs:
+  - csharp
+  - vb
+  name: CanStopAll(CancellationToken)
+  nameWithType: IServiceLifecycleManager.CanStopAll(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycleManager.CanStopAll(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: CanStopAll
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Abstractions\Builder\IServiceLifecycleManager.cs
+    startLine: 15
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Abstractions.Builder
+  summary: Checks if all services can be stopped.
+  example: []
+  syntax:
+    content: Task<bool> CanStopAll(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token that can be used to cancel the work
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: A task that represents the asynchronous operation. The task result contains a boolean indicating whether all services can be stopped.
+    content.vb: Function CanStopAll(cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: Innova.Abstractions.Builder.IServiceLifecycleManager.CanStopAll*
+- uid: Innova.Abstractions.Builder.IServiceLifecycleManager.StopAll(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycleManager.StopAll(System.Threading.CancellationToken)
+  id: StopAll(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycleManager
+  langs:
+  - csharp
+  - vb
+  name: StopAll(CancellationToken)
+  nameWithType: IServiceLifecycleManager.StopAll(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycleManager.StopAll(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: StopAll
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Abstractions\Builder\IServiceLifecycleManager.cs
+    startLine: 22
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Abstractions.Builder
+  summary: Stops all services.
+  example: []
+  syntax:
+    content: Task StopAll(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token that can be used to cancel the work
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Function StopAll(cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Abstractions.Builder.IServiceLifecycleManager.StopAll*
+- uid: Innova.Abstractions.Builder.IServiceLifecycleManager.StartAll(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycleManager.StartAll(System.Threading.CancellationToken)
+  id: StartAll(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycleManager
+  langs:
+  - csharp
+  - vb
+  name: StartAll(CancellationToken)
+  nameWithType: IServiceLifecycleManager.StartAll(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycleManager.StartAll(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: StartAll
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Abstractions\Builder\IServiceLifecycleManager.cs
+    startLine: 29
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Abstractions.Builder
+  summary: Starts all services.
+  example: []
+  syntax:
+    content: Task StartAll(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token that can be used to cancel the work
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Function StartAll(cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Abstractions.Builder.IServiceLifecycleManager.StartAll*
+references:
+- uid: Innova.Abstractions.Builder
+  commentId: N:Innova.Abstractions.Builder
+  href: Innova.html
+  name: Innova.Abstractions.Builder
+  nameWithType: Innova.Abstractions.Builder
+  fullName: Innova.Abstractions.Builder
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Abstractions
+    name: Abstractions
+    href: Innova.Abstractions.html
+  - name: .
+  - uid: Innova.Abstractions.Builder
+    name: Builder
+    href: Innova.Abstractions.Builder.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Abstractions
+    name: Abstractions
+    href: Innova.Abstractions.html
+  - name: .
+  - uid: Innova.Abstractions.Builder
+    name: Builder
+    href: Innova.Abstractions.Builder.html
+- uid: Innova.Abstractions.Builder.IServiceLifecycleManager.CanStopAll*
+  commentId: Overload:Innova.Abstractions.Builder.IServiceLifecycleManager.CanStopAll
+  href: Innova.Abstractions.Builder.IServiceLifecycleManager.CanStopAll.html#Innova_Abstractions_Builder_IServiceLifecycleManager_CanStopAll_System_Threading_CancellationToken_
+  name: CanStopAll
+  nameWithType: IServiceLifecycleManager.CanStopAll
+  fullName: Innova.Abstractions.Builder.IServiceLifecycleManager.CanStopAll
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Abstractions.Builder.IServiceLifecycleManager.StopAll*
+  commentId: Overload:Innova.Abstractions.Builder.IServiceLifecycleManager.StopAll
+  href: Innova.Abstractions.Builder.IServiceLifecycleManager.StopAll.html#Innova_Abstractions_Builder_IServiceLifecycleManager_StopAll_System_Threading_CancellationToken_
+  name: StopAll
+  nameWithType: IServiceLifecycleManager.StopAll
+  fullName: Innova.Abstractions.Builder.IServiceLifecycleManager.StopAll
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Innova.Abstractions.Builder.IServiceLifecycleManager.StartAll*
+  commentId: Overload:Innova.Abstractions.Builder.IServiceLifecycleManager.StartAll
+  href: Innova.Abstractions.Builder.IServiceLifecycleManager.StartAll.html#Innova_Abstractions_Builder_IServiceLifecycleManager_StartAll_System_Threading_CancellationToken_
+  name: StartAll
+  nameWithType: IServiceLifecycleManager.StartAll
+  fullName: Innova.Abstractions.Builder.IServiceLifecycleManager.StartAll
+memberLayout: SeparatePages

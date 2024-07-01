@@ -8,7 +8,7 @@ It may be that there is only a need to create a custom property for a view and i
 
 **Task**: Create a property on the EmployeesList class that counts ReportTo
 
-**Execution**: 
+**Implementation**: 
 
 1. Create property 'CountReportTo' on EmployeesList
 2. Make mapping

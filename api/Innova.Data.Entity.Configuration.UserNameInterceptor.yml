@@ -1,0 +1,1719 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor
+  commentId: T:Innova.Data.Entity.Configuration.UserNameInterceptor
+  id: UserNameInterceptor
+  parent: Innova.Data.Entity.Configuration
+  children:
+  - Innova.Data.Entity.Configuration.UserNameInterceptor.#ctor(System.Func{System.String})
+  - Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  - Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  - Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosing(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  - Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosingAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  - Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData)
+  - Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData,System.Threading.CancellationToken)
+  - Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpened(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  - Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpenedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData,System.Threading.CancellationToken)
+  - Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpening(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  - Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpeningAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult,System.Threading.CancellationToken)
+  - Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose
+  - Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose(System.Boolean)
+  - Innova.Data.Entity.Configuration.UserNameInterceptor.Finalize
+  langs:
+  - csharp
+  - vb
+  name: UserNameInterceptor
+  nameWithType: UserNameInterceptor
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor
+  type: Class
+  source:
+    id: UserNameInterceptor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 14
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Interceptor for managing the user name associated with a database connection.
+  example: []
+  syntax:
+    content: 'public class UserNameInterceptor : IDbConnectionInterceptor, IInterceptor, IDisposable'
+    content.vb: Public Class UserNameInterceptor Implements IDbConnectionInterceptor, IInterceptor, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor
+  - Microsoft.EntityFrameworkCore.Diagnostics.IInterceptor
+  - System.IDisposable
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.#ctor(System.Func{System.String})
+  commentId: M:Innova.Data.Entity.Configuration.UserNameInterceptor.#ctor(System.Func{System.String})
+  id: '#ctor(System.Func{System.String})'
+  parent: Innova.Data.Entity.Configuration.UserNameInterceptor
+  langs:
+  - csharp
+  - vb
+  name: UserNameInterceptor(Func<string>)
+  nameWithType: UserNameInterceptor.UserNameInterceptor(Func<string>)
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.UserNameInterceptor(System.Func<string>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 25
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Initializes a new instance of the <xref href="Innova.Data.Entity.Configuration.UserNameInterceptor" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public UserNameInterceptor(Func<string> userNameFunc)
+    parameters:
+    - id: userNameFunc
+      type: System.Func{System.String}
+      description: A function that returns the user name.
+    content.vb: Public Sub New(userNameFunc As Func(Of String))
+  overload: Innova.Data.Entity.Configuration.UserNameInterceptor.#ctor*
+  nameWithType.vb: UserNameInterceptor.New(Func(Of String))
+  fullName.vb: Innova.Data.Entity.Configuration.UserNameInterceptor.New(System.Func(Of String))
+  name.vb: New(Func(Of String))
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  commentId: M:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  id: ConnectionClosed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  parent: Innova.Data.Entity.Configuration.UserNameInterceptor
+  langs:
+  - csharp
+  - vb
+  name: ConnectionClosed(DbConnection, ConnectionEndEventData)
+  nameWithType: UserNameInterceptor.ConnectionClosed(DbConnection, ConnectionEndEventData)
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosed(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  type: Method
+  source:
+    id: ConnectionClosed
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 31
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Called just after EF has called <xref href="System.Data.Common.DbConnection.Close" data-throw-if-not-resolved="false"></xref> in an async context.
+  example: []
+  syntax:
+    content: public void ConnectionClosed(DbConnection connection, ConnectionEndEventData eventData)
+    parameters:
+    - id: connection
+      type: System.Data.Common.DbConnection
+      description: The connection.
+    - id: eventData
+      type: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+      description: Contextual information about the connection.
+    content.vb: Public Sub ConnectionClosed(connection As DbConnection, eventData As ConnectionEndEventData)
+  overload: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosed*
+  implements:
+  - Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  commentId: M:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  id: ConnectionClosedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  parent: Innova.Data.Entity.Configuration.UserNameInterceptor
+  langs:
+  - csharp
+  - vb
+  name: ConnectionClosedAsync(DbConnection, ConnectionEndEventData)
+  nameWithType: UserNameInterceptor.ConnectionClosedAsync(DbConnection, ConnectionEndEventData)
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosedAsync(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  type: Method
+  source:
+    id: ConnectionClosedAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 37
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Called just after EF has called <xref href="System.Data.Common.DbConnection.CloseAsync" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Task ConnectionClosedAsync(DbConnection connection, ConnectionEndEventData eventData)
+    parameters:
+    - id: connection
+      type: System.Data.Common.DbConnection
+      description: The connection.
+    - id: eventData
+      type: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+      description: Contextual information about the connection.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation.
+    content.vb: Public Function ConnectionClosedAsync(connection As DbConnection, eventData As ConnectionEndEventData) As Task
+  overload: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosedAsync*
+  implements:
+  - Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosing(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  commentId: M:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosing(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  id: ConnectionClosing(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  parent: Innova.Data.Entity.Configuration.UserNameInterceptor
+  langs:
+  - csharp
+  - vb
+  name: ConnectionClosing(DbConnection, ConnectionEventData, InterceptionResult)
+  nameWithType: UserNameInterceptor.ConnectionClosing(DbConnection, ConnectionEventData, InterceptionResult)
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosing(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData, Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  type: Method
+  source:
+    id: ConnectionClosing
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 43
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Called just before EF intends to call <xref href="System.Data.Common.DbConnection.CloseAsync" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public InterceptionResult ConnectionClosing(DbConnection connection, ConnectionEventData eventData, InterceptionResult result)
+    parameters:
+    - id: connection
+      type: System.Data.Common.DbConnection
+      description: The connection.
+    - id: eventData
+      type: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+      description: Contextual information about the connection.
+    - id: result
+      type: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+      description: >-
+        Represents the current result if one exists.
+
+        This value will have <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed" data-throw-if-not-resolved="false"></xref> set to true if some previous
+
+        interceptor suppressed execution by calling <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.Suppress" data-throw-if-not-resolved="false"></xref>.
+
+        This value is typically used as the return value for the implementation of this method.
+    return:
+      type: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+      description: >-
+        If <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed" data-throw-if-not-resolved="false"></xref> is false, the EF will continue as normal.
+
+        If <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed" data-throw-if-not-resolved="false"></xref> is true, then EF will suppress the operation
+
+        it was about to perform.
+
+        A normal implementation of this method for any interceptor that is not attempting to suppress
+
+        the operation is to return the <code class="paramref">result</code> value passed in.
+    content.vb: Public Function ConnectionClosing(connection As DbConnection, eventData As ConnectionEventData, result As InterceptionResult) As InterceptionResult
+  overload: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosing*
+  implements:
+  - Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosing(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosingAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  commentId: M:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosingAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  id: ConnectionClosingAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  parent: Innova.Data.Entity.Configuration.UserNameInterceptor
+  langs:
+  - csharp
+  - vb
+  name: ConnectionClosingAsync(DbConnection, ConnectionEventData, InterceptionResult)
+  nameWithType: UserNameInterceptor.ConnectionClosingAsync(DbConnection, ConnectionEventData, InterceptionResult)
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosingAsync(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData, Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  type: Method
+  source:
+    id: ConnectionClosingAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 49
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Called just before EF intends to call <xref href="System.Data.Common.DbConnection.Close" data-throw-if-not-resolved="false"></xref> in an async context.
+  example: []
+  syntax:
+    content: public Task<InterceptionResult> ConnectionClosingAsync(DbConnection connection, ConnectionEventData eventData, InterceptionResult result)
+    parameters:
+    - id: connection
+      type: System.Data.Common.DbConnection
+      description: The connection.
+    - id: eventData
+      type: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+      description: Contextual information about the connection.
+    - id: result
+      type: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+      description: >-
+        Represents the current result if one exists.
+
+        This value will have <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed" data-throw-if-not-resolved="false"></xref> set to true if some previous
+
+        interceptor suppressed execution by calling <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.Suppress" data-throw-if-not-resolved="false"></xref>.
+
+        This value is typically used as the return value for the implementation of this method.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult}
+      description: >-
+        If <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed" data-throw-if-not-resolved="false"></xref> is false, the EF will continue as normal.
+
+        If <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed" data-throw-if-not-resolved="false"></xref> is true, then EF will suppress the operation
+
+        it was about to perform.
+
+        A normal implementation of this method for any interceptor that is not attempting to suppress
+
+        the operation is to return the <code class="paramref">result</code> value passed in.
+    content.vb: Public Function ConnectionClosingAsync(connection As DbConnection, eventData As ConnectionEventData, result As InterceptionResult) As Task(Of InterceptionResult)
+  overload: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosingAsync*
+  implements:
+  - Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosingAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData)
+  commentId: M:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData)
+  id: ConnectionFailed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData)
+  parent: Innova.Data.Entity.Configuration.UserNameInterceptor
+  langs:
+  - csharp
+  - vb
+  name: ConnectionFailed(DbConnection, ConnectionErrorEventData)
+  nameWithType: UserNameInterceptor.ConnectionFailed(DbConnection, ConnectionErrorEventData)
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailed(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData)
+  type: Method
+  source:
+    id: ConnectionFailed
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 55
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Called when closing of a connection has failed with an exception. /&gt;.
+  example: []
+  syntax:
+    content: public void ConnectionFailed(DbConnection connection, ConnectionErrorEventData eventData)
+    parameters:
+    - id: connection
+      type: System.Data.Common.DbConnection
+      description: The connection.
+    - id: eventData
+      type: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData
+      description: Contextual information about the connection.
+    content.vb: Public Sub ConnectionFailed(connection As DbConnection, eventData As ConnectionErrorEventData)
+  overload: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailed*
+  implements:
+  - Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionFailed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData)
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData,System.Threading.CancellationToken)
+  commentId: M:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData,System.Threading.CancellationToken)
+  id: ConnectionFailedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData,System.Threading.CancellationToken)
+  parent: Innova.Data.Entity.Configuration.UserNameInterceptor
+  langs:
+  - csharp
+  - vb
+  name: ConnectionFailedAsync(DbConnection, ConnectionErrorEventData, CancellationToken)
+  nameWithType: UserNameInterceptor.ConnectionFailedAsync(DbConnection, ConnectionErrorEventData, CancellationToken)
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailedAsync(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ConnectionFailedAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 60
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Called when closing of a connection has failed with an exception. /&gt;.
+  example: []
+  syntax:
+    content: public Task ConnectionFailedAsync(DbConnection connection, ConnectionErrorEventData eventData, CancellationToken cancellationToken = default)
+    parameters:
+    - id: connection
+      type: System.Data.Common.DbConnection
+      description: The connection.
+    - id: eventData
+      type: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData
+      description: Contextual information about the connection.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation.
+    content.vb: Public Function ConnectionFailedAsync(connection As DbConnection, eventData As ConnectionErrorEventData, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailedAsync*
+  implements:
+  - Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionFailedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData,System.Threading.CancellationToken)
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpened(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  commentId: M:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpened(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  id: ConnectionOpened(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  parent: Innova.Data.Entity.Configuration.UserNameInterceptor
+  langs:
+  - csharp
+  - vb
+  name: ConnectionOpened(DbConnection, ConnectionEndEventData)
+  nameWithType: UserNameInterceptor.ConnectionOpened(DbConnection, ConnectionEndEventData)
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpened(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  type: Method
+  source:
+    id: ConnectionOpened
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 66
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Called just after EF has called <xref href="System.Data.Common.DbConnection.Open" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void ConnectionOpened(DbConnection connection, ConnectionEndEventData eventData)
+    parameters:
+    - id: connection
+      type: System.Data.Common.DbConnection
+      description: The connection.
+    - id: eventData
+      type: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+      description: Contextual information about the connection.
+    content.vb: Public Sub ConnectionOpened(connection As DbConnection, eventData As ConnectionEndEventData)
+  overload: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpened*
+  implements:
+  - Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpened(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpenedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData,System.Threading.CancellationToken)
+  commentId: M:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpenedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData,System.Threading.CancellationToken)
+  id: ConnectionOpenedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData,System.Threading.CancellationToken)
+  parent: Innova.Data.Entity.Configuration.UserNameInterceptor
+  langs:
+  - csharp
+  - vb
+  name: ConnectionOpenedAsync(DbConnection, ConnectionEndEventData, CancellationToken)
+  nameWithType: UserNameInterceptor.ConnectionOpenedAsync(DbConnection, ConnectionEndEventData, CancellationToken)
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpenedAsync(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ConnectionOpenedAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 89
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Called just after EF has called <xref href="System.Data.Common.DbConnection.OpenAsync" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Task ConnectionOpenedAsync(DbConnection connection, ConnectionEndEventData eventData, CancellationToken cancellationToken = default)
+    parameters:
+    - id: connection
+      type: System.Data.Common.DbConnection
+      description: The connection.
+    - id: eventData
+      type: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+      description: Contextual information about the connection.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation.
+    content.vb: Public Function ConnectionOpenedAsync(connection As DbConnection, eventData As ConnectionEndEventData, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpenedAsync*
+  implements:
+  - Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpenedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData,System.Threading.CancellationToken)
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpening(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  commentId: M:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpening(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  id: ConnectionOpening(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  parent: Innova.Data.Entity.Configuration.UserNameInterceptor
+  langs:
+  - csharp
+  - vb
+  name: ConnectionOpening(DbConnection, ConnectionEventData, InterceptionResult)
+  nameWithType: UserNameInterceptor.ConnectionOpening(DbConnection, ConnectionEventData, InterceptionResult)
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpening(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData, Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  type: Method
+  source:
+    id: ConnectionOpening
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 113
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Called just before EF intends to call <xref href="System.Data.Common.DbConnection.Open" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public InterceptionResult ConnectionOpening(DbConnection connection, ConnectionEventData eventData, InterceptionResult result)
+    parameters:
+    - id: connection
+      type: System.Data.Common.DbConnection
+      description: The connection.
+    - id: eventData
+      type: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+      description: Contextual information about the connection.
+    - id: result
+      type: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+      description: >-
+        Represents the current result if one exists.
+
+        This value will have <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed" data-throw-if-not-resolved="false"></xref> set to true if some previous
+
+        interceptor suppressed execution by calling <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.Suppress" data-throw-if-not-resolved="false"></xref>.
+
+        This value is typically used as the return value for the implementation of this method.
+    return:
+      type: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+      description: >-
+        If <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed" data-throw-if-not-resolved="false"></xref> is false, the EF will continue as normal.
+
+        If <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed" data-throw-if-not-resolved="false"></xref> is true, then EF will suppress the operation
+
+        it was about to perform.
+
+        A normal implementation of this method for any interceptor that is not attempting to suppress
+
+        the operation is to return the <code class="paramref">result</code> value passed in.
+    content.vb: Public Function ConnectionOpening(connection As DbConnection, eventData As ConnectionEventData, result As InterceptionResult) As InterceptionResult
+  overload: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpening*
+  implements:
+  - Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpening(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpeningAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult,System.Threading.CancellationToken)
+  commentId: M:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpeningAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult,System.Threading.CancellationToken)
+  id: ConnectionOpeningAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult,System.Threading.CancellationToken)
+  parent: Innova.Data.Entity.Configuration.UserNameInterceptor
+  langs:
+  - csharp
+  - vb
+  name: ConnectionOpeningAsync(DbConnection, ConnectionEventData, InterceptionResult, CancellationToken)
+  nameWithType: UserNameInterceptor.ConnectionOpeningAsync(DbConnection, ConnectionEventData, InterceptionResult, CancellationToken)
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpeningAsync(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData, Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ConnectionOpeningAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 119
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Called just before EF intends to call <xref href="System.Data.Common.DbConnection.OpenAsync" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Task<InterceptionResult> ConnectionOpeningAsync(DbConnection connection, ConnectionEventData eventData, InterceptionResult result, CancellationToken cancellationToken = default)
+    parameters:
+    - id: connection
+      type: System.Data.Common.DbConnection
+      description: The connection.
+    - id: eventData
+      type: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+      description: Contextual information about the connection.
+    - id: result
+      type: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+      description: >-
+        Represents the current result if one exists.
+
+        This value will have <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed" data-throw-if-not-resolved="false"></xref> set to true if some previous
+
+        interceptor suppressed execution by calling <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.Suppress" data-throw-if-not-resolved="false"></xref>.
+
+        This value is typically used as the return value for the implementation of this method.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult}
+      description: >-
+        If <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed" data-throw-if-not-resolved="false"></xref> is false, the EF will continue as normal.
+
+        If <xref href="Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed" data-throw-if-not-resolved="false"></xref> is true, then EF will suppress the operation
+
+        it was about to perform.
+
+        A normal implementation of this method for any interceptor that is not attempting to suppress
+
+        the operation is to return the <code class="paramref">result</code> value passed in.
+    content.vb: Public Function ConnectionOpeningAsync(connection As DbConnection, eventData As ConnectionEventData, result As InterceptionResult, cancellationToken As CancellationToken = Nothing) As Task(Of InterceptionResult)
+  overload: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpeningAsync*
+  implements:
+  - Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpeningAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult,System.Threading.CancellationToken)
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose(System.Boolean)
+  commentId: M:Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Innova.Data.Entity.Configuration.UserNameInterceptor
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: UserNameInterceptor.Dispose(bool)
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose(bool)
+  type: Method
+  source:
+    id: Dispose
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 125
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  example: []
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose*
+  nameWithType.vb: UserNameInterceptor.Dispose(Boolean)
+  fullName.vb: Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.Finalize
+  commentId: M:Innova.Data.Entity.Configuration.UserNameInterceptor.Finalize
+  id: Finalize
+  parent: Innova.Data.Entity.Configuration.UserNameInterceptor
+  langs:
+  - csharp
+  - vb
+  name: ~UserNameInterceptor()
+  nameWithType: UserNameInterceptor.~UserNameInterceptor()
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.~UserNameInterceptor()
+  type: Method
+  source:
+    id: Finalize
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 144
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  example: []
+  syntax:
+    content: protected ~UserNameInterceptor()
+    content.vb: 'Protected '
+  overload: Innova.Data.Entity.Configuration.UserNameInterceptor.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose
+  commentId: M:Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose
+  id: Dispose
+  parent: Innova.Data.Entity.Configuration.UserNameInterceptor
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: UserNameInterceptor.Dispose()
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\UserNameInterceptor.cs
+    startLine: 150
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Innova.Data.Entity.Configuration
+  commentId: N:Innova.Data.Entity.Configuration
+  href: Innova.html
+  name: Innova.Data.Entity.Configuration
+  nameWithType: Innova.Data.Entity.Configuration
+  fullName: Innova.Data.Entity.Configuration
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  - name: .
+  - uid: Innova.Data.Entity.Configuration
+    name: Configuration
+    href: Innova.Data.Entity.Configuration.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  - name: .
+  - uid: Innova.Data.Entity.Configuration
+    name: Configuration
+    href: Innova.Data.Entity.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor
+  commentId: T:Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor
+  parent: Microsoft.EntityFrameworkCore.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor
+  name: IDbConnectionInterceptor
+  nameWithType: IDbConnectionInterceptor
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.IInterceptor
+  commentId: T:Microsoft.EntityFrameworkCore.Diagnostics.IInterceptor
+  parent: Microsoft.EntityFrameworkCore.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.iinterceptor
+  name: IInterceptor
+  nameWithType: IInterceptor
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.IInterceptor
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.EntityFrameworkCore.Diagnostics
+  commentId: N:Microsoft.EntityFrameworkCore.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.EntityFrameworkCore.Diagnostics
+  nameWithType: Microsoft.EntityFrameworkCore.Diagnostics
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor
+  commentId: T:Innova.Data.Entity.Configuration.UserNameInterceptor
+  href: Innova.Data.Entity.Configuration.UserNameInterceptor.html
+  name: UserNameInterceptor
+  nameWithType: UserNameInterceptor
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.#ctor*
+  commentId: Overload:Innova.Data.Entity.Configuration.UserNameInterceptor.#ctor
+  href: Innova.Data.Entity.Configuration.UserNameInterceptor.-ctor.html#Innova_Data_Entity_Configuration_UserNameInterceptor__ctor_System_Func_System_String__
+  name: UserNameInterceptor
+  nameWithType: UserNameInterceptor.UserNameInterceptor
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.UserNameInterceptor
+  nameWithType.vb: UserNameInterceptor.New
+  fullName.vb: Innova.Data.Entity.Configuration.UserNameInterceptor.New
+  name.vb: New
+- uid: System.Func{System.String}
+  commentId: T:System.Func{System.String}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<string>
+  nameWithType: Func<string>
+  fullName: System.Func<string>
+  nameWithType.vb: Func(Of String)
+  fullName.vb: System.Func(Of String)
+  name.vb: Func(Of String)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Data.Common.DbConnection.Close
+  commentId: M:System.Data.Common.DbConnection.Close
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection.close
+  name: Close()
+  nameWithType: DbConnection.Close()
+  fullName: System.Data.Common.DbConnection.Close()
+  spec.csharp:
+  - uid: System.Data.Common.DbConnection.Close
+    name: Close
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection.close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Data.Common.DbConnection.Close
+    name: Close
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection.close
+  - name: (
+  - name: )
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosed*
+  commentId: Overload:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosed
+  href: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosed.html#Innova_Data_Entity_Configuration_UserNameInterceptor_ConnectionClosed_System_Data_Common_DbConnection_Microsoft_EntityFrameworkCore_Diagnostics_ConnectionEndEventData_
+  name: ConnectionClosed
+  nameWithType: UserNameInterceptor.ConnectionClosed
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosed
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  commentId: M:Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  parent: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionclosed
+  name: ConnectionClosed(DbConnection, ConnectionEndEventData)
+  nameWithType: IDbConnectionInterceptor.ConnectionClosed(DbConnection, ConnectionEndEventData)
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosed(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+    name: ConnectionClosed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionclosed
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+    name: ConnectionEndEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectionendeventdata
+  - name: )
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+    name: ConnectionClosed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionclosed
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+    name: ConnectionEndEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectionendeventdata
+  - name: )
+- uid: System.Data.Common.DbConnection
+  commentId: T:System.Data.Common.DbConnection
+  parent: System.Data.Common
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  name: DbConnection
+  nameWithType: DbConnection
+  fullName: System.Data.Common.DbConnection
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+  commentId: T:Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+  parent: Microsoft.EntityFrameworkCore.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectionendeventdata
+  name: ConnectionEndEventData
+  nameWithType: ConnectionEndEventData
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+- uid: System.Data.Common
+  commentId: N:System.Data.Common
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Data.Common
+  nameWithType: System.Data.Common
+  fullName: System.Data.Common
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+  - name: .
+  - uid: System.Data.Common
+    name: Common
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+  - name: .
+  - uid: System.Data.Common
+    name: Common
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common
+- uid: System.Data.Common.DbConnection.CloseAsync
+  commentId: M:System.Data.Common.DbConnection.CloseAsync
+  isExternal: true
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosedAsync*
+  commentId: Overload:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosedAsync
+  href: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosedAsync.html#Innova_Data_Entity_Configuration_UserNameInterceptor_ConnectionClosedAsync_System_Data_Common_DbConnection_Microsoft_EntityFrameworkCore_Diagnostics_ConnectionEndEventData_
+  name: ConnectionClosedAsync
+  nameWithType: UserNameInterceptor.ConnectionClosedAsync
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosedAsync
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  commentId: M:Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  parent: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionclosedasync
+  name: ConnectionClosedAsync(DbConnection, ConnectionEndEventData)
+  nameWithType: IDbConnectionInterceptor.ConnectionClosedAsync(DbConnection, ConnectionEndEventData)
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosedAsync(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+    name: ConnectionClosedAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionclosedasync
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+    name: ConnectionEndEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectionendeventdata
+  - name: )
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+    name: ConnectionClosedAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionclosedasync
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+    name: ConnectionEndEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectionendeventdata
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed
+  commentId: P:Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult.issuppressed
+  name: IsSuppressed
+  nameWithType: InterceptionResult.IsSuppressed
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.IsSuppressed
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.Suppress
+  commentId: M:Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.Suppress
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult.suppress
+  name: Suppress()
+  nameWithType: InterceptionResult.Suppress()
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.Suppress()
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.Suppress
+    name: Suppress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult.suppress
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult.Suppress
+    name: Suppress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult.suppress
+  - name: (
+  - name: )
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosing*
+  commentId: Overload:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosing
+  href: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosing.html#Innova_Data_Entity_Configuration_UserNameInterceptor_ConnectionClosing_System_Data_Common_DbConnection_Microsoft_EntityFrameworkCore_Diagnostics_ConnectionEventData_Microsoft_EntityFrameworkCore_Diagnostics_InterceptionResult_
+  name: ConnectionClosing
+  nameWithType: UserNameInterceptor.ConnectionClosing
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosing
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosing(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  commentId: M:Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosing(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  parent: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionclosing
+  name: ConnectionClosing(DbConnection, ConnectionEventData, InterceptionResult)
+  nameWithType: IDbConnectionInterceptor.ConnectionClosing(DbConnection, ConnectionEventData, InterceptionResult)
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosing(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData, Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosing(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+    name: ConnectionClosing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionclosing
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+    name: ConnectionEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectioneventdata
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+    name: InterceptionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult
+  - name: )
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosing(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+    name: ConnectionClosing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionclosing
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+    name: ConnectionEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectioneventdata
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+    name: InterceptionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult
+  - name: )
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+  commentId: T:Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+  parent: Microsoft.EntityFrameworkCore.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectioneventdata
+  name: ConnectionEventData
+  nameWithType: ConnectionEventData
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+  commentId: T:Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+  parent: Microsoft.EntityFrameworkCore.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult
+  name: InterceptionResult
+  nameWithType: InterceptionResult
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosingAsync*
+  commentId: Overload:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosingAsync
+  href: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosingAsync.html#Innova_Data_Entity_Configuration_UserNameInterceptor_ConnectionClosingAsync_System_Data_Common_DbConnection_Microsoft_EntityFrameworkCore_Diagnostics_ConnectionEventData_Microsoft_EntityFrameworkCore_Diagnostics_InterceptionResult_
+  name: ConnectionClosingAsync
+  nameWithType: UserNameInterceptor.ConnectionClosingAsync
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionClosingAsync
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosingAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  commentId: M:Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosingAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  parent: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionclosingasync
+  name: ConnectionClosingAsync(DbConnection, ConnectionEventData, InterceptionResult)
+  nameWithType: IDbConnectionInterceptor.ConnectionClosingAsync(DbConnection, ConnectionEventData, InterceptionResult)
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosingAsync(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData, Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosingAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+    name: ConnectionClosingAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionclosingasync
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+    name: ConnectionEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectioneventdata
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+    name: InterceptionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult
+  - name: )
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionClosingAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+    name: ConnectionClosingAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionclosingasync
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+    name: ConnectionEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectioneventdata
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+    name: InterceptionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult
+  - name: )
+- uid: System.Threading.Tasks.Task{Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<InterceptionResult>
+  nameWithType: Task<InterceptionResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult>
+  nameWithType.vb: Task(Of InterceptionResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  name.vb: Task(Of InterceptionResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+    name: InterceptionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+    name: InterceptionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailed*
+  commentId: Overload:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailed
+  href: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailed.html#Innova_Data_Entity_Configuration_UserNameInterceptor_ConnectionFailed_System_Data_Common_DbConnection_Microsoft_EntityFrameworkCore_Diagnostics_ConnectionErrorEventData_
+  name: ConnectionFailed
+  nameWithType: UserNameInterceptor.ConnectionFailed
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailed
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionFailed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData)
+  commentId: M:Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionFailed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData)
+  parent: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionfailed
+  name: ConnectionFailed(DbConnection, ConnectionErrorEventData)
+  nameWithType: IDbConnectionInterceptor.ConnectionFailed(DbConnection, ConnectionErrorEventData)
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionFailed(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionFailed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData)
+    name: ConnectionFailed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionfailed
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData
+    name: ConnectionErrorEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectionerroreventdata
+  - name: )
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionFailed(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData)
+    name: ConnectionFailed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionfailed
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData
+    name: ConnectionErrorEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectionerroreventdata
+  - name: )
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData
+  commentId: T:Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData
+  parent: Microsoft.EntityFrameworkCore.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectionerroreventdata
+  name: ConnectionErrorEventData
+  nameWithType: ConnectionErrorEventData
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailedAsync*
+  commentId: Overload:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailedAsync
+  href: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailedAsync.html#Innova_Data_Entity_Configuration_UserNameInterceptor_ConnectionFailedAsync_System_Data_Common_DbConnection_Microsoft_EntityFrameworkCore_Diagnostics_ConnectionErrorEventData_System_Threading_CancellationToken_
+  name: ConnectionFailedAsync
+  nameWithType: UserNameInterceptor.ConnectionFailedAsync
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionFailedAsync
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionFailedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData,System.Threading.CancellationToken)
+  commentId: M:Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionFailedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData,System.Threading.CancellationToken)
+  parent: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionfailedasync
+  name: ConnectionFailedAsync(DbConnection, ConnectionErrorEventData, CancellationToken)
+  nameWithType: IDbConnectionInterceptor.ConnectionFailedAsync(DbConnection, ConnectionErrorEventData, CancellationToken)
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionFailedAsync(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionFailedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData,System.Threading.CancellationToken)
+    name: ConnectionFailedAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionfailedasync
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData
+    name: ConnectionErrorEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectionerroreventdata
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionFailedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData,System.Threading.CancellationToken)
+    name: ConnectionFailedAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionfailedasync
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionErrorEventData
+    name: ConnectionErrorEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectionerroreventdata
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Data.Common.DbConnection.Open
+  commentId: M:System.Data.Common.DbConnection.Open
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection.open
+  name: Open()
+  nameWithType: DbConnection.Open()
+  fullName: System.Data.Common.DbConnection.Open()
+  spec.csharp:
+  - uid: System.Data.Common.DbConnection.Open
+    name: Open
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection.open
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Data.Common.DbConnection.Open
+    name: Open
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection.open
+  - name: (
+  - name: )
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpened*
+  commentId: Overload:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpened
+  href: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpened.html#Innova_Data_Entity_Configuration_UserNameInterceptor_ConnectionOpened_System_Data_Common_DbConnection_Microsoft_EntityFrameworkCore_Diagnostics_ConnectionEndEventData_
+  name: ConnectionOpened
+  nameWithType: UserNameInterceptor.ConnectionOpened
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpened
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpened(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  commentId: M:Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpened(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  parent: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionopened
+  name: ConnectionOpened(DbConnection, ConnectionEndEventData)
+  nameWithType: IDbConnectionInterceptor.ConnectionOpened(DbConnection, ConnectionEndEventData)
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpened(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpened(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+    name: ConnectionOpened
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionopened
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+    name: ConnectionEndEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectionendeventdata
+  - name: )
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpened(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData)
+    name: ConnectionOpened
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionopened
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+    name: ConnectionEndEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectionendeventdata
+  - name: )
+- uid: System.Data.Common.DbConnection.OpenAsync
+  commentId: M:System.Data.Common.DbConnection.OpenAsync
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection.openasync#system-data-common-dbconnection-openasync
+  name: OpenAsync()
+  nameWithType: DbConnection.OpenAsync()
+  fullName: System.Data.Common.DbConnection.OpenAsync()
+  spec.csharp:
+  - uid: System.Data.Common.DbConnection.OpenAsync
+    name: OpenAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection.openasync#system-data-common-dbconnection-openasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Data.Common.DbConnection.OpenAsync
+    name: OpenAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection.openasync#system-data-common-dbconnection-openasync
+  - name: (
+  - name: )
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpenedAsync*
+  commentId: Overload:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpenedAsync
+  href: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpenedAsync.html#Innova_Data_Entity_Configuration_UserNameInterceptor_ConnectionOpenedAsync_System_Data_Common_DbConnection_Microsoft_EntityFrameworkCore_Diagnostics_ConnectionEndEventData_System_Threading_CancellationToken_
+  name: ConnectionOpenedAsync
+  nameWithType: UserNameInterceptor.ConnectionOpenedAsync
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpenedAsync
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpenedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData,System.Threading.CancellationToken)
+  commentId: M:Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpenedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData,System.Threading.CancellationToken)
+  parent: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionopenedasync
+  name: ConnectionOpenedAsync(DbConnection, ConnectionEndEventData, CancellationToken)
+  nameWithType: IDbConnectionInterceptor.ConnectionOpenedAsync(DbConnection, ConnectionEndEventData, CancellationToken)
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpenedAsync(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpenedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData,System.Threading.CancellationToken)
+    name: ConnectionOpenedAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionopenedasync
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+    name: ConnectionEndEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectionendeventdata
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpenedAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData,System.Threading.CancellationToken)
+    name: ConnectionOpenedAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionopenedasync
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEndEventData
+    name: ConnectionEndEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectionendeventdata
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpening*
+  commentId: Overload:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpening
+  href: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpening.html#Innova_Data_Entity_Configuration_UserNameInterceptor_ConnectionOpening_System_Data_Common_DbConnection_Microsoft_EntityFrameworkCore_Diagnostics_ConnectionEventData_Microsoft_EntityFrameworkCore_Diagnostics_InterceptionResult_
+  name: ConnectionOpening
+  nameWithType: UserNameInterceptor.ConnectionOpening
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpening
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpening(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  commentId: M:Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpening(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  parent: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionopening
+  name: ConnectionOpening(DbConnection, ConnectionEventData, InterceptionResult)
+  nameWithType: IDbConnectionInterceptor.ConnectionOpening(DbConnection, ConnectionEventData, InterceptionResult)
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpening(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData, Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpening(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+    name: ConnectionOpening
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionopening
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+    name: ConnectionEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectioneventdata
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+    name: InterceptionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult
+  - name: )
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpening(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult)
+    name: ConnectionOpening
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionopening
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+    name: ConnectionEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectioneventdata
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+    name: InterceptionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult
+  - name: )
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpeningAsync*
+  commentId: Overload:Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpeningAsync
+  href: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpeningAsync.html#Innova_Data_Entity_Configuration_UserNameInterceptor_ConnectionOpeningAsync_System_Data_Common_DbConnection_Microsoft_EntityFrameworkCore_Diagnostics_ConnectionEventData_Microsoft_EntityFrameworkCore_Diagnostics_InterceptionResult_System_Threading_CancellationToken_
+  name: ConnectionOpeningAsync
+  nameWithType: UserNameInterceptor.ConnectionOpeningAsync
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.ConnectionOpeningAsync
+- uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpeningAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult,System.Threading.CancellationToken)
+  commentId: M:Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpeningAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult,System.Threading.CancellationToken)
+  parent: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionopeningasync
+  name: ConnectionOpeningAsync(DbConnection, ConnectionEventData, InterceptionResult, CancellationToken)
+  nameWithType: IDbConnectionInterceptor.ConnectionOpeningAsync(DbConnection, ConnectionEventData, InterceptionResult, CancellationToken)
+  fullName: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpeningAsync(System.Data.Common.DbConnection, Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData, Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpeningAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult,System.Threading.CancellationToken)
+    name: ConnectionOpeningAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionopeningasync
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+    name: ConnectionEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectioneventdata
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+    name: InterceptionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.IDbConnectionInterceptor.ConnectionOpeningAsync(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult,System.Threading.CancellationToken)
+    name: ConnectionOpeningAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.idbconnectioninterceptor.connectionopeningasync
+  - name: (
+  - uid: System.Data.Common.DbConnection
+    name: DbConnection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.ConnectionEventData
+    name: ConnectionEventData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.connectioneventdata
+  - name: ','
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult
+    name: InterceptionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.diagnostics.interceptionresult
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose*
+  commentId: Overload:Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose
+  href: Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose.html#Innova_Data_Entity_Configuration_UserNameInterceptor_Dispose_System_Boolean_
+  name: Dispose
+  nameWithType: UserNameInterceptor.Dispose
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.Dispose
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Innova.Data.Entity.Configuration.UserNameInterceptor.Finalize*
+  commentId: Overload:Innova.Data.Entity.Configuration.UserNameInterceptor.Finalize
+  href: Innova.Data.Entity.Configuration.UserNameInterceptor.Finalize.html#Innova_Data_Entity_Configuration_UserNameInterceptor_Finalize
+  name: ~UserNameInterceptor
+  nameWithType: UserNameInterceptor.~UserNameInterceptor
+  fullName: Innova.Data.Entity.Configuration.UserNameInterceptor.~UserNameInterceptor
+  spec.csharp:
+  - name: "~"
+  - uid: Innova.Data.Entity.Configuration.UserNameInterceptor.Finalize*
+    name: UserNameInterceptor
+    href: Innova.Data.Entity.Configuration.UserNameInterceptor.Finalize.html#Innova_Data_Entity_Configuration_UserNameInterceptor_Finalize
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+memberLayout: SeparatePages

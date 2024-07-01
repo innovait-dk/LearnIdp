@@ -1,0 +1,401 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Abstractions.Builder.IServiceLifecycle
+  commentId: T:Innova.Abstractions.Builder.IServiceLifecycle
+  id: IServiceLifecycle
+  parent: Innova.Abstractions.Builder
+  children:
+  - Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  - Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+  - Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+  - Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+  - Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+  langs:
+  - csharp
+  - vb
+  name: IServiceLifecycle
+  nameWithType: IServiceLifecycle
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle
+  type: Interface
+  source:
+    id: IServiceLifecycle
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Abstractions\Builder\IServiceLifecycle.cs
+    startLine: 12
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Abstractions.Builder
+  summary: Defines the lifecycle of a service.
+  example: []
+  syntax:
+    content: public interface IServiceLifecycle
+    content.vb: Public Interface IServiceLifecycle
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+  commentId: P:Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+  id: StopOrder
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: StopOrder
+  nameWithType: IServiceLifecycle.StopOrder
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+  type: Property
+  source:
+    id: StopOrder
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Abstractions\Builder\IServiceLifecycle.cs
+    startLine: 17
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Abstractions.Builder
+  summary: Gets the stop order of the service. Should be lower than 1000. Services with lower stop order will be stopped first. Set it to 0 if the order does not matter.
+  example: []
+  syntax:
+    content: int StopOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property StopOrder As Integer
+  overload: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder*
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+  commentId: P:Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+  id: StartOrder
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: StartOrder
+  nameWithType: IServiceLifecycle.StartOrder
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+  type: Property
+  source:
+    id: StartOrder
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Abstractions\Builder\IServiceLifecycle.cs
+    startLine: 22
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Abstractions.Builder
+  summary: Gets the start order of the service. Should be higher than 0. Services with lower start order will be started first. Set it to 0 if the order does not matter.
+  example: []
+  syntax:
+    content: int StartOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property StartOrder As Integer
+  overload: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder*
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  id: CanStop(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: CanStop(CancellationToken)
+  nameWithType: IServiceLifecycle.CanStop(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: CanStop
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Abstractions\Builder\IServiceLifecycle.cs
+    startLine: 29
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Abstractions.Builder
+  summary: Checks if the service can be stopped.
+  example: []
+  syntax:
+    content: Task<bool> CanStop(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Propagates notification that operations should be canceled.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: A task that represents the asynchronous operation. The task result contains a boolean indicating whether the service can be stopped.
+    content.vb: Function CanStop(cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: Innova.Abstractions.Builder.IServiceLifecycle.CanStop*
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+  id: Stop(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: Stop(CancellationToken)
+  nameWithType: IServiceLifecycle.Stop(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: Stop
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Abstractions\Builder\IServiceLifecycle.cs
+    startLine: 36
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Abstractions.Builder
+  summary: Stops the service.
+  example: []
+  syntax:
+    content: Task Stop(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Propagates notification that operations should be canceled.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Function [Stop](cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Abstractions.Builder.IServiceLifecycle.Stop*
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+  id: Start(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: Start(CancellationToken)
+  nameWithType: IServiceLifecycle.Start(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: Start
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Abstractions\Builder\IServiceLifecycle.cs
+    startLine: 43
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Abstractions.Builder
+  summary: Starts the service.
+  example: []
+  syntax:
+    content: Task Start(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Propagates notification that operations should be canceled.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Function Start(cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Abstractions.Builder.IServiceLifecycle.Start*
+references:
+- uid: Innova.Abstractions.Builder
+  commentId: N:Innova.Abstractions.Builder
+  href: Innova.html
+  name: Innova.Abstractions.Builder
+  nameWithType: Innova.Abstractions.Builder
+  fullName: Innova.Abstractions.Builder
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Abstractions
+    name: Abstractions
+    href: Innova.Abstractions.html
+  - name: .
+  - uid: Innova.Abstractions.Builder
+    name: Builder
+    href: Innova.Abstractions.Builder.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Abstractions
+    name: Abstractions
+    href: Innova.Abstractions.html
+  - name: .
+  - uid: Innova.Abstractions.Builder
+    name: Builder
+    href: Innova.Abstractions.Builder.html
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder*
+  commentId: Overload:Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+  href: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder.html#Innova_Abstractions_Builder_IServiceLifecycle_StopOrder
+  name: StopOrder
+  nameWithType: IServiceLifecycle.StopOrder
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder*
+  commentId: Overload:Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+  href: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder.html#Innova_Abstractions_Builder_IServiceLifecycle_StartOrder
+  name: StartOrder
+  nameWithType: IServiceLifecycle.StartOrder
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.CanStop*
+  commentId: Overload:Innova.Abstractions.Builder.IServiceLifecycle.CanStop
+  href: Innova.Abstractions.Builder.IServiceLifecycle.CanStop.html#Innova_Abstractions_Builder_IServiceLifecycle_CanStop_System_Threading_CancellationToken_
+  name: CanStop
+  nameWithType: IServiceLifecycle.CanStop
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.CanStop
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.Stop*
+  commentId: Overload:Innova.Abstractions.Builder.IServiceLifecycle.Stop
+  href: Innova.Abstractions.Builder.IServiceLifecycle.Stop.html#Innova_Abstractions_Builder_IServiceLifecycle_Stop_System_Threading_CancellationToken_
+  name: Stop
+  nameWithType: IServiceLifecycle.Stop
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.Stop
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.Start*
+  commentId: Overload:Innova.Abstractions.Builder.IServiceLifecycle.Start
+  href: Innova.Abstractions.Builder.IServiceLifecycle.Start.html#Innova_Abstractions_Builder_IServiceLifecycle_Start_System_Threading_CancellationToken_
+  name: Start
+  nameWithType: IServiceLifecycle.Start
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.Start
+memberLayout: SeparatePages

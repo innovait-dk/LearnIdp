@@ -8,7 +8,7 @@ Tabs, groups, and buttons can be added via the service.
 
 **Task**: In CategoriesShowMenuService, add a tab, a group, and a menu button.
 
-**Execution**: 
+**Implementation**: 
 
 1. Select "User Interface".
 2. Select "Categories".

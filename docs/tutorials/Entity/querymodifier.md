@@ -7,7 +7,7 @@ The QueryModifier is used in all methods on the EntityService.
 
 **Task**: Create a partial class for the code-generated ProductsQueryModifier and override the "Modify" method.
 
-**Execution**: 
+**Implementation**: 
 
 1. Select "Entity Framework".
 2. Select "Products".

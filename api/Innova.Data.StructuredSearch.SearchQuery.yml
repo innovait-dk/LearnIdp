@@ -1,0 +1,528 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.StructuredSearch.SearchQuery
+  commentId: T:Innova.Data.StructuredSearch.SearchQuery
+  id: SearchQuery
+  parent: Innova.Data.StructuredSearch
+  children:
+  - Innova.Data.StructuredSearch.SearchQuery.Clone
+  - Innova.Data.StructuredSearch.SearchQuery.EnsureUniqueParameters
+  - Innova.Data.StructuredSearch.SearchQuery.LogicalOperator
+  - Innova.Data.StructuredSearch.SearchQuery.MaxResultCount
+  - Innova.Data.StructuredSearch.SearchQuery.SearchOperators
+  langs:
+  - csharp
+  - vb
+  name: SearchQuery
+  nameWithType: SearchQuery
+  fullName: Innova.Data.StructuredSearch.SearchQuery
+  type: Class
+  source:
+    id: SearchQuery
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\SearchQuery.cs
+    startLine: 13
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Represents a search query with a collection of search operators.
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      public class SearchQuery : ICloneable
+    content.vb: >-
+      <DataContract>
+
+      Public Class SearchQuery Implements ICloneable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Innova.Data.StructuredSearch.EntityQuery`1
+  implements:
+  - System.ICloneable
+  extensionMethods:
+  - Innova.Data.StructuredSearch.SearchQuery.Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression``1
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+- uid: Innova.Data.StructuredSearch.SearchQuery.SearchOperators
+  commentId: P:Innova.Data.StructuredSearch.SearchQuery.SearchOperators
+  id: SearchOperators
+  parent: Innova.Data.StructuredSearch.SearchQuery
+  langs:
+  - csharp
+  - vb
+  name: SearchOperators
+  nameWithType: SearchQuery.SearchOperators
+  fullName: Innova.Data.StructuredSearch.SearchQuery.SearchOperators
+  type: Property
+  source:
+    id: SearchOperators
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\SearchQuery.cs
+    startLine: 21
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets or sets the collection of search operators.
+  example: []
+  syntax:
+    content: public List<Operator> SearchOperators { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Innova.Data.StructuredSearch.Operator}
+    content.vb: Public Property SearchOperators As List(Of [Operator])
+  overload: Innova.Data.StructuredSearch.SearchQuery.SearchOperators*
+- uid: Innova.Data.StructuredSearch.SearchQuery.LogicalOperator
+  commentId: P:Innova.Data.StructuredSearch.SearchQuery.LogicalOperator
+  id: LogicalOperator
+  parent: Innova.Data.StructuredSearch.SearchQuery
+  langs:
+  - csharp
+  - vb
+  name: LogicalOperator
+  nameWithType: SearchQuery.LogicalOperator
+  fullName: Innova.Data.StructuredSearch.SearchQuery.LogicalOperator
+  type: Property
+  source:
+    id: LogicalOperator
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\SearchQuery.cs
+    startLine: 32
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets or sets the logical operator used to combine the search operators.
+  example: []
+  syntax:
+    content: public LogicalOperator LogicalOperator { get; set; }
+    parameters: []
+    return:
+      type: Innova.Data.StructuredSearch.LogicalOperator
+    content.vb: Public Property LogicalOperator As LogicalOperator
+  overload: Innova.Data.StructuredSearch.SearchQuery.LogicalOperator*
+- uid: Innova.Data.StructuredSearch.SearchQuery.MaxResultCount
+  commentId: P:Innova.Data.StructuredSearch.SearchQuery.MaxResultCount
+  id: MaxResultCount
+  parent: Innova.Data.StructuredSearch.SearchQuery
+  langs:
+  - csharp
+  - vb
+  name: MaxResultCount
+  nameWithType: SearchQuery.MaxResultCount
+  fullName: Innova.Data.StructuredSearch.SearchQuery.MaxResultCount
+  type: Property
+  source:
+    id: MaxResultCount
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\SearchQuery.cs
+    startLine: 61
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets or sets the maximum number of results to return.
+  example: []
+  syntax:
+    content: public int? MaxResultCount { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property MaxResultCount As Integer?
+  overload: Innova.Data.StructuredSearch.SearchQuery.MaxResultCount*
+- uid: Innova.Data.StructuredSearch.SearchQuery.Clone
+  commentId: M:Innova.Data.StructuredSearch.SearchQuery.Clone
+  id: Clone
+  parent: Innova.Data.StructuredSearch.SearchQuery
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: SearchQuery.Clone()
+  fullName: Innova.Data.StructuredSearch.SearchQuery.Clone()
+  type: Method
+  source:
+    id: Clone
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\SearchQuery.cs
+    startLine: 64
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Creates a new object that is a copy of the current instance.
+  example: []
+  syntax:
+    content: public virtual object Clone()
+    return:
+      type: System.Object
+      description: A new object that is a copy of this instance.
+    content.vb: Public Overridable Function Clone() As Object
+  overload: Innova.Data.StructuredSearch.SearchQuery.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: Innova.Data.StructuredSearch.SearchQuery.EnsureUniqueParameters
+  commentId: M:Innova.Data.StructuredSearch.SearchQuery.EnsureUniqueParameters
+  id: EnsureUniqueParameters
+  parent: Innova.Data.StructuredSearch.SearchQuery
+  langs:
+  - csharp
+  - vb
+  name: EnsureUniqueParameters()
+  nameWithType: SearchQuery.EnsureUniqueParameters()
+  fullName: Innova.Data.StructuredSearch.SearchQuery.EnsureUniqueParameters()
+  type: Method
+  source:
+    id: EnsureUniqueParameters
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\SearchQuery.cs
+    startLine: 79
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Ensures that the parameters of the search operators are unique.
+  example: []
+  syntax:
+    content: public void EnsureUniqueParameters()
+    content.vb: Public Sub EnsureUniqueParameters()
+  overload: Innova.Data.StructuredSearch.SearchQuery.EnsureUniqueParameters*
+references:
+- uid: Innova.Data.StructuredSearch
+  commentId: N:Innova.Data.StructuredSearch
+  href: Innova.html
+  name: Innova.Data.StructuredSearch
+  nameWithType: Innova.Data.StructuredSearch
+  fullName: Innova.Data.StructuredSearch
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.StructuredSearch
+    name: StructuredSearch
+    href: Innova.Data.StructuredSearch.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.StructuredSearch
+    name: StructuredSearch
+    href: Innova.Data.StructuredSearch.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: Innova.Data.StructuredSearch.SearchQuery.Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression``1
+  commentId: M:Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression``1(Innova.Data.StructuredSearch.SearchQuery)
+  parent: Innova.Data.StructuredSearch.SearchQueryExtensions
+  definition: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression``1(Innova.Data.StructuredSearch.SearchQuery)
+  href: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression.html#Innova_Data_StructuredSearch_SearchQueryExtensions_GetWhereExpression__1_Innova_Data_StructuredSearch_SearchQuery_
+  name: GetWhereExpression<T>(SearchQuery)
+  nameWithType: SearchQueryExtensions.GetWhereExpression<T>(SearchQuery)
+  fullName: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression<T>(Innova.Data.StructuredSearch.SearchQuery)
+  nameWithType.vb: SearchQueryExtensions.GetWhereExpression(Of T)(SearchQuery)
+  fullName.vb: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression(Of T)(Innova.Data.StructuredSearch.SearchQuery)
+  name.vb: GetWhereExpression(Of T)(SearchQuery)
+  spec.csharp:
+  - uid: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression``1(Innova.Data.StructuredSearch.SearchQuery)
+    name: GetWhereExpression
+    href: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression.html#Innova_Data_StructuredSearch_SearchQueryExtensions_GetWhereExpression__1_Innova_Data_StructuredSearch_SearchQuery_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Innova.Data.StructuredSearch.SearchQuery
+    name: SearchQuery
+    href: Innova.Data.StructuredSearch.SearchQuery.html
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression``1(Innova.Data.StructuredSearch.SearchQuery)
+    name: GetWhereExpression
+    href: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression.html#Innova_Data_StructuredSearch_SearchQueryExtensions_GetWhereExpression__1_Innova_Data_StructuredSearch_SearchQuery_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Innova.Data.StructuredSearch.SearchQuery
+    name: SearchQuery
+    href: Innova.Data.StructuredSearch.SearchQuery.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression``1(Innova.Data.StructuredSearch.SearchQuery)
+  commentId: M:Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression``1(Innova.Data.StructuredSearch.SearchQuery)
+  href: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression.html#Innova_Data_StructuredSearch_SearchQueryExtensions_GetWhereExpression__1_Innova_Data_StructuredSearch_SearchQuery_
+  name: GetWhereExpression<T>(SearchQuery)
+  nameWithType: SearchQueryExtensions.GetWhereExpression<T>(SearchQuery)
+  fullName: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression<T>(Innova.Data.StructuredSearch.SearchQuery)
+  nameWithType.vb: SearchQueryExtensions.GetWhereExpression(Of T)(SearchQuery)
+  fullName.vb: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression(Of T)(Innova.Data.StructuredSearch.SearchQuery)
+  name.vb: GetWhereExpression(Of T)(SearchQuery)
+  spec.csharp:
+  - uid: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression``1(Innova.Data.StructuredSearch.SearchQuery)
+    name: GetWhereExpression
+    href: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression.html#Innova_Data_StructuredSearch_SearchQueryExtensions_GetWhereExpression__1_Innova_Data_StructuredSearch_SearchQuery_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Innova.Data.StructuredSearch.SearchQuery
+    name: SearchQuery
+    href: Innova.Data.StructuredSearch.SearchQuery.html
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression``1(Innova.Data.StructuredSearch.SearchQuery)
+    name: GetWhereExpression
+    href: Innova.Data.StructuredSearch.SearchQueryExtensions.GetWhereExpression.html#Innova_Data_StructuredSearch_SearchQueryExtensions_GetWhereExpression__1_Innova_Data_StructuredSearch_SearchQuery_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Innova.Data.StructuredSearch.SearchQuery
+    name: SearchQuery
+    href: Innova.Data.StructuredSearch.SearchQuery.html
+  - name: )
+- uid: Innova.Data.StructuredSearch.SearchQueryExtensions
+  commentId: T:Innova.Data.StructuredSearch.SearchQueryExtensions
+  parent: Innova.Data.StructuredSearch
+  href: Innova.Data.StructuredSearch.SearchQueryExtensions.html
+  name: SearchQueryExtensions
+  nameWithType: SearchQueryExtensions
+  fullName: Innova.Data.StructuredSearch.SearchQueryExtensions
+- uid: Innova.Data.StructuredSearch.SearchQuery.SearchOperators*
+  commentId: Overload:Innova.Data.StructuredSearch.SearchQuery.SearchOperators
+  href: Innova.Data.StructuredSearch.SearchQuery.SearchOperators.html#Innova_Data_StructuredSearch_SearchQuery_SearchOperators
+  name: SearchOperators
+  nameWithType: SearchQuery.SearchOperators
+  fullName: Innova.Data.StructuredSearch.SearchQuery.SearchOperators
+- uid: System.Collections.Generic.List{Innova.Data.StructuredSearch.Operator}
+  commentId: T:System.Collections.Generic.List{Innova.Data.StructuredSearch.Operator}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Operator>
+  nameWithType: List<Operator>
+  fullName: System.Collections.Generic.List<Innova.Data.StructuredSearch.Operator>
+  nameWithType.vb: List(Of Operator)
+  fullName.vb: System.Collections.Generic.List(Of Innova.Data.StructuredSearch.Operator)
+  name.vb: List(Of Operator)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.StructuredSearch.Operator
+    name: Operator
+    href: Innova.Data.StructuredSearch.Operator.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.StructuredSearch.Operator
+    name: Operator
+    href: Innova.Data.StructuredSearch.Operator.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Data.StructuredSearch.SearchQuery.LogicalOperator*
+  commentId: Overload:Innova.Data.StructuredSearch.SearchQuery.LogicalOperator
+  href: Innova.Data.StructuredSearch.SearchQuery.LogicalOperator.html#Innova_Data_StructuredSearch_SearchQuery_LogicalOperator
+  name: LogicalOperator
+  nameWithType: SearchQuery.LogicalOperator
+  fullName: Innova.Data.StructuredSearch.SearchQuery.LogicalOperator
+- uid: Innova.Data.StructuredSearch.LogicalOperator
+  commentId: T:Innova.Data.StructuredSearch.LogicalOperator
+  parent: Innova.Data.StructuredSearch
+  href: Innova.Data.StructuredSearch.LogicalOperator.html
+  name: LogicalOperator
+  nameWithType: LogicalOperator
+  fullName: Innova.Data.StructuredSearch.LogicalOperator
+- uid: Innova.Data.StructuredSearch.SearchQuery.MaxResultCount*
+  commentId: Overload:Innova.Data.StructuredSearch.SearchQuery.MaxResultCount
+  href: Innova.Data.StructuredSearch.SearchQuery.MaxResultCount.html#Innova_Data_StructuredSearch_SearchQuery_MaxResultCount
+  name: MaxResultCount
+  nameWithType: SearchQuery.MaxResultCount
+  fullName: Innova.Data.StructuredSearch.SearchQuery.MaxResultCount
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.StructuredSearch.SearchQuery.Clone*
+  commentId: Overload:Innova.Data.StructuredSearch.SearchQuery.Clone
+  href: Innova.Data.StructuredSearch.SearchQuery.Clone.html#Innova_Data_StructuredSearch_SearchQuery_Clone
+  name: Clone
+  nameWithType: SearchQuery.Clone
+  fullName: Innova.Data.StructuredSearch.SearchQuery.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: Innova.Data.StructuredSearch.SearchQuery.EnsureUniqueParameters*
+  commentId: Overload:Innova.Data.StructuredSearch.SearchQuery.EnsureUniqueParameters
+  href: Innova.Data.StructuredSearch.SearchQuery.EnsureUniqueParameters.html#Innova_Data_StructuredSearch_SearchQuery_EnsureUniqueParameters
+  name: EnsureUniqueParameters
+  nameWithType: SearchQuery.EnsureUniqueParameters
+  fullName: Innova.Data.StructuredSearch.SearchQuery.EnsureUniqueParameters
+memberLayout: SeparatePages

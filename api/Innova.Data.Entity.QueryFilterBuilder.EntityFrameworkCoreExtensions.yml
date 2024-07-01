@@ -1,0 +1,496 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions
+  commentId: T:Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions
+  id: EntityFrameworkCoreExtensions
+  parent: Innova.Data.Entity.QueryFilterBuilder
+  children:
+  - Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder{``0})
+  - Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  - Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilters``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0})
+  langs:
+  - csharp
+  - vb
+  name: EntityFrameworkCoreExtensions
+  nameWithType: EntityFrameworkCoreExtensions
+  fullName: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions
+  type: Class
+  source:
+    id: EntityFrameworkCoreExtensions
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\QueryFilterBuilder\EntityFrameworkCoreExtensions.cs
+    startLine: 7
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.QueryFilterBuilder
+  syntax:
+    content: public static class EntityFrameworkCoreExtensions
+    content.vb: Public Module EntityFrameworkCoreExtensions
+  inheritance:
+  - System.Object
+- uid: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilters``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0})
+  commentId: M:Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilters``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0})
+  id: HasQueryFilters``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0})
+  isExtensionMethod: true
+  parent: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions
+  langs:
+  - csharp
+  - vb
+  name: HasQueryFilters<TEntity>(EntityTypeBuilder<TEntity>)
+  nameWithType: EntityFrameworkCoreExtensions.HasQueryFilters<TEntity>(EntityTypeBuilder<TEntity>)
+  fullName: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilters<TEntity>(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>)
+  type: Method
+  source:
+    id: HasQueryFilters
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\QueryFilterBuilder\EntityFrameworkCoreExtensions.cs
+    startLine: 15
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.QueryFilterBuilder
+  summary: Specifies a LINQ predicate expression that will automatically be applied to any queries targeting this entity type.
+  example: []
+  syntax:
+    content: 'public static IQueryFilterBuilder<TEntity> HasQueryFilters<TEntity>(this EntityTypeBuilder<TEntity> entityTypeBuilder) where TEntity : class'
+    parameters:
+    - id: entityTypeBuilder
+      type: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{{TEntity}}
+      description: The entity type builder.
+    typeParameters:
+    - id: TEntity
+      description: The entity type.
+    return:
+      type: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder{{TEntity}}
+      description: QueryFilterBuilder instance which allows to chain multiple query filters.
+    content.vb: Public Shared Function HasQueryFilters(Of TEntity As Class)(entityTypeBuilder As EntityTypeBuilder(Of TEntity)) As IQueryFilterBuilder(Of TEntity)
+  overload: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilters*
+  nameWithType.vb: EntityFrameworkCoreExtensions.HasQueryFilters(Of TEntity)(EntityTypeBuilder(Of TEntity))
+  fullName.vb: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilters(Of TEntity)(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of TEntity))
+  name.vb: HasQueryFilters(Of TEntity)(EntityTypeBuilder(Of TEntity))
+- uid: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  commentId: M:Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  id: HasQueryFilter``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  isExtensionMethod: true
+  parent: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions
+  langs:
+  - csharp
+  - vb
+  name: HasQueryFilter<TEntity>(EntityTypeBuilder<TEntity>, Expression<Func<TEntity, bool>>)
+  nameWithType: EntityFrameworkCoreExtensions.HasQueryFilter<TEntity>(EntityTypeBuilder<TEntity>, Expression<Func<TEntity, bool>>)
+  fullName: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter<TEntity>(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, bool>>)
+  type: Method
+  source:
+    id: HasQueryFilter
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\QueryFilterBuilder\EntityFrameworkCoreExtensions.cs
+    startLine: 27
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.QueryFilterBuilder
+  summary: Specifies a LINQ predicate expression that will automatically be applied to any queries targeting this entity type.
+  example: []
+  syntax:
+    content: 'public static IQueryFilterBuilder<TEntity> HasQueryFilter<TEntity>(this EntityTypeBuilder<TEntity> entityTypeBuilder, Expression<Func<TEntity, bool>> filter) where TEntity : class'
+    parameters:
+    - id: entityTypeBuilder
+      type: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{{TEntity}}
+      description: The entity type builder.
+    - id: filter
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+      description: The LINQ predicate expression.
+    typeParameters:
+    - id: TEntity
+      description: The entity type.
+    return:
+      type: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder{{TEntity}}
+      description: QueryFilterBuilder instance which allows to chain multiple query filters.
+    content.vb: Public Shared Function HasQueryFilter(Of TEntity As Class)(entityTypeBuilder As EntityTypeBuilder(Of TEntity), filter As Expression(Of Func(Of TEntity, Boolean))) As IQueryFilterBuilder(Of TEntity)
+  overload: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter*
+  nameWithType.vb: EntityFrameworkCoreExtensions.HasQueryFilter(Of TEntity)(EntityTypeBuilder(Of TEntity), Expression(Of Func(Of TEntity, Boolean)))
+  fullName.vb: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter(Of TEntity)(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of TEntity), System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean)))
+  name.vb: HasQueryFilter(Of TEntity)(EntityTypeBuilder(Of TEntity), Expression(Of Func(Of TEntity, Boolean)))
+- uid: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder{``0})
+  commentId: M:Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder{``0})
+  id: HasQueryFilter``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder{``0})
+  isExtensionMethod: true
+  parent: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions
+  langs:
+  - csharp
+  - vb
+  name: HasQueryFilter<TEntity>(EntityTypeBuilder<TEntity>, IQueryFilterBuilder<TEntity>)
+  nameWithType: EntityFrameworkCoreExtensions.HasQueryFilter<TEntity>(EntityTypeBuilder<TEntity>, IQueryFilterBuilder<TEntity>)
+  fullName: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter<TEntity>(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>, Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder<TEntity>)
+  type: Method
+  source:
+    id: HasQueryFilter
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\QueryFilterBuilder\EntityFrameworkCoreExtensions.cs
+    startLine: 39
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.QueryFilterBuilder
+  summary: Specifies a LINQ predicate expression that will automatically be applied to any queries targeting this entity type.
+  example: []
+  syntax:
+    content: 'public static EntityTypeBuilder<TEntity> HasQueryFilter<TEntity>(this EntityTypeBuilder<TEntity> entityTypeBuilder, IQueryFilterBuilder<TEntity> queryFilterBuilder) where TEntity : class'
+    parameters:
+    - id: entityTypeBuilder
+      type: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{{TEntity}}
+      description: The entity type builder.
+    - id: queryFilterBuilder
+      type: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder{{TEntity}}
+      description: QueryFilterBuilder instance which allows to chain multiple query filters.
+    typeParameters:
+    - id: TEntity
+      description: The entity type.
+    return:
+      type: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{{TEntity}}
+      description: The same builder instance so that multiple configuration calls can be chained.
+    content.vb: Public Shared Function HasQueryFilter(Of TEntity As Class)(entityTypeBuilder As EntityTypeBuilder(Of TEntity), queryFilterBuilder As IQueryFilterBuilder(Of TEntity)) As EntityTypeBuilder(Of TEntity)
+  overload: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter*
+  nameWithType.vb: EntityFrameworkCoreExtensions.HasQueryFilter(Of TEntity)(EntityTypeBuilder(Of TEntity), IQueryFilterBuilder(Of TEntity))
+  fullName.vb: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter(Of TEntity)(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of TEntity), Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder(Of TEntity))
+  name.vb: HasQueryFilter(Of TEntity)(EntityTypeBuilder(Of TEntity), IQueryFilterBuilder(Of TEntity))
+references:
+- uid: Innova.Data.Entity.QueryFilterBuilder
+  commentId: N:Innova.Data.Entity.QueryFilterBuilder
+  href: Innova.html
+  name: Innova.Data.Entity.QueryFilterBuilder
+  nameWithType: Innova.Data.Entity.QueryFilterBuilder
+  fullName: Innova.Data.Entity.QueryFilterBuilder
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  - name: .
+  - uid: Innova.Data.Entity.QueryFilterBuilder
+    name: QueryFilterBuilder
+    href: Innova.Data.Entity.QueryFilterBuilder.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  - name: .
+  - uid: Innova.Data.Entity.QueryFilterBuilder
+    name: QueryFilterBuilder
+    href: Innova.Data.Entity.QueryFilterBuilder.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilters*
+  commentId: Overload:Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilters
+  href: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilters.html#Innova_Data_Entity_QueryFilterBuilder_EntityFrameworkCoreExtensions_HasQueryFilters__1_Microsoft_EntityFrameworkCore_Metadata_Builders_EntityTypeBuilder___0__
+  name: HasQueryFilters
+  nameWithType: EntityFrameworkCoreExtensions.HasQueryFilters
+  fullName: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilters
+- uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{{TEntity}}
+  commentId: T:Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0}
+  parent: Microsoft.EntityFrameworkCore.Metadata.Builders
+  definition: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.metadata.builders.entitytypebuilder-1
+  name: EntityTypeBuilder<TEntity>
+  nameWithType: EntityTypeBuilder<TEntity>
+  fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>
+  nameWithType.vb: EntityTypeBuilder(Of TEntity)
+  fullName.vb: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of TEntity)
+  name.vb: EntityTypeBuilder(Of TEntity)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.metadata.builders.entitytypebuilder-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.metadata.builders.entitytypebuilder-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder{{TEntity}}
+  commentId: T:Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder{``0}
+  parent: Innova.Data.Entity.QueryFilterBuilder
+  definition: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder`1
+  href: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder-1.html
+  name: IQueryFilterBuilder<TEntity>
+  nameWithType: IQueryFilterBuilder<TEntity>
+  fullName: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder<TEntity>
+  nameWithType.vb: IQueryFilterBuilder(Of TEntity)
+  fullName.vb: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder(Of TEntity)
+  name.vb: IQueryFilterBuilder(Of TEntity)
+  spec.csharp:
+  - uid: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder`1
+    name: IQueryFilterBuilder
+    href: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder`1
+    name: IQueryFilterBuilder
+    href: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+  commentId: T:Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.metadata.builders.entitytypebuilder-1
+  name: EntityTypeBuilder<TEntity>
+  nameWithType: EntityTypeBuilder<TEntity>
+  fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>
+  nameWithType.vb: EntityTypeBuilder(Of TEntity)
+  fullName.vb: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of TEntity)
+  name.vb: EntityTypeBuilder(Of TEntity)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.metadata.builders.entitytypebuilder-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.metadata.builders.entitytypebuilder-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Microsoft.EntityFrameworkCore.Metadata.Builders
+  commentId: N:Microsoft.EntityFrameworkCore.Metadata.Builders
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.EntityFrameworkCore.Metadata.Builders
+  nameWithType: Microsoft.EntityFrameworkCore.Metadata.Builders
+  fullName: Microsoft.EntityFrameworkCore.Metadata.Builders
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore.Metadata
+    name: Metadata
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.metadata
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders
+    name: Builders
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.metadata.builders
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore.Metadata
+    name: Metadata
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.metadata
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders
+    name: Builders
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.metadata.builders
+- uid: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder`1
+  commentId: T:Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder`1
+  parent: Innova.Data.Entity.QueryFilterBuilder
+  href: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder-1.html
+  name: IQueryFilterBuilder<TEntity>
+  nameWithType: IQueryFilterBuilder<TEntity>
+  fullName: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder<TEntity>
+  nameWithType.vb: IQueryFilterBuilder(Of TEntity)
+  fullName.vb: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder(Of TEntity)
+  name.vb: IQueryFilterBuilder(Of TEntity)
+  spec.csharp:
+  - uid: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder`1
+    name: IQueryFilterBuilder
+    href: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder`1
+    name: IQueryFilterBuilder
+    href: Innova.Data.Entity.QueryFilterBuilder.IQueryFilterBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter*
+  commentId: Overload:Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter
+  href: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter.html#Innova_Data_Entity_QueryFilterBuilder_EntityFrameworkCoreExtensions_HasQueryFilter__1_Microsoft_EntityFrameworkCore_Metadata_Builders_EntityTypeBuilder___0__System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
+  name: HasQueryFilter
+  nameWithType: EntityFrameworkCoreExtensions.HasQueryFilter
+  fullName: Innova.Data.Entity.QueryFilterBuilder.EntityFrameworkCoreExtensions.HasQueryFilter
+- uid: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TEntity, bool>>
+  nameWithType: Expression<Func<TEntity, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TEntity, bool>>
+  nameWithType.vb: Expression(Of Func(Of TEntity, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean))
+  name.vb: Expression(Of Func(Of TEntity, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+memberLayout: SeparatePages

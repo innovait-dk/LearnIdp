@@ -1,0 +1,445 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.SettingHelper
+  commentId: T:Innova.Data.SettingHelper
+  id: SettingHelper
+  parent: Innova.Data
+  children:
+  - Innova.Data.SettingHelper.ConvertFromSettings``2(``0)
+  - Innova.Data.SettingHelper.ConvertToSettingToTrue``1(``0,System.Collections.Generic.List{System.String})
+  - Innova.Data.SettingHelper.ConvertToSetting``2(System.Collections.Generic.List{``1})
+  - Innova.Data.SettingHelper.GetConverter(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: SettingHelper
+  nameWithType: SettingHelper
+  fullName: Innova.Data.SettingHelper
+  type: Class
+  source:
+    id: SettingHelper
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\SettingHelper.cs
+    startLine: 13
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Helper class for converting settings between different types.
+  example: []
+  syntax:
+    content: public static class SettingHelper
+    content.vb: Public Module SettingHelper
+  inheritance:
+  - System.Object
+- uid: Innova.Data.SettingHelper.ConvertToSetting``2(System.Collections.Generic.List{``1})
+  commentId: M:Innova.Data.SettingHelper.ConvertToSetting``2(System.Collections.Generic.List{``1})
+  id: ConvertToSetting``2(System.Collections.Generic.List{``1})
+  parent: Innova.Data.SettingHelper
+  langs:
+  - csharp
+  - vb
+  name: ConvertToSetting<T, E>(List<E>)
+  nameWithType: SettingHelper.ConvertToSetting<T, E>(List<E>)
+  fullName: Innova.Data.SettingHelper.ConvertToSetting<T, E>(System.Collections.Generic.List<E>)
+  type: Method
+  source:
+    id: ConvertToSetting
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\SettingHelper.cs
+    startLine: 23
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Converts a list of settings to the specified type.
+  example: []
+  syntax:
+    content: 'public static T ConvertToSetting<T, E>(List<E> settings) where T : class, new() where E : IBaseSettings'
+    parameters:
+    - id: settings
+      type: System.Collections.Generic.List{{E}}
+      description: The list of settings to convert.
+    typeParameters:
+    - id: T
+      description: The type to convert to.
+    - id: E
+      description: The type of the settings.
+    return:
+      type: '{T}'
+      description: The converted settings object.
+    content.vb: Public Shared Function ConvertToSetting(Of T As {Class, New}, E As IBaseSettings)(settings As List(Of E)) As T
+  overload: Innova.Data.SettingHelper.ConvertToSetting*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the settings list is null.
+  nameWithType.vb: SettingHelper.ConvertToSetting(Of T, E)(List(Of E))
+  fullName.vb: Innova.Data.SettingHelper.ConvertToSetting(Of T, E)(System.Collections.Generic.List(Of E))
+  name.vb: ConvertToSetting(Of T, E)(List(Of E))
+- uid: Innova.Data.SettingHelper.ConvertToSettingToTrue``1(``0,System.Collections.Generic.List{System.String})
+  commentId: M:Innova.Data.SettingHelper.ConvertToSettingToTrue``1(``0,System.Collections.Generic.List{System.String})
+  id: ConvertToSettingToTrue``1(``0,System.Collections.Generic.List{System.String})
+  parent: Innova.Data.SettingHelper
+  langs:
+  - csharp
+  - vb
+  name: ConvertToSettingToTrue<T>(T, List<string>)
+  nameWithType: SettingHelper.ConvertToSettingToTrue<T>(T, List<string>)
+  fullName: Innova.Data.SettingHelper.ConvertToSettingToTrue<T>(T, System.Collections.Generic.List<string>)
+  type: Method
+  source:
+    id: ConvertToSettingToTrue
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\SettingHelper.cs
+    startLine: 63
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Sets the specified properties of the security setting object to true.
+  example: []
+  syntax:
+    content: 'public static void ConvertToSettingToTrue<T>(T securitySetting, List<string> propertyNames) where T : class'
+    parameters:
+    - id: securitySetting
+      type: '{T}'
+      description: The security setting object.
+    - id: propertyNames
+      type: System.Collections.Generic.List{System.String}
+      description: The names of the properties to set to true.
+    typeParameters:
+    - id: T
+      description: The type of the security setting object.
+    content.vb: Public Shared Sub ConvertToSettingToTrue(Of T As Class)(securitySetting As T, propertyNames As List(Of String))
+  overload: Innova.Data.SettingHelper.ConvertToSettingToTrue*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the property names list is null.
+  nameWithType.vb: SettingHelper.ConvertToSettingToTrue(Of T)(T, List(Of String))
+  fullName.vb: Innova.Data.SettingHelper.ConvertToSettingToTrue(Of T)(T, System.Collections.Generic.List(Of String))
+  name.vb: ConvertToSettingToTrue(Of T)(T, List(Of String))
+- uid: Innova.Data.SettingHelper.ConvertFromSettings``2(``0)
+  commentId: M:Innova.Data.SettingHelper.ConvertFromSettings``2(``0)
+  id: ConvertFromSettings``2(``0)
+  parent: Innova.Data.SettingHelper
+  langs:
+  - csharp
+  - vb
+  name: ConvertFromSettings<T, E>(T)
+  nameWithType: SettingHelper.ConvertFromSettings<T, E>(T)
+  fullName: Innova.Data.SettingHelper.ConvertFromSettings<T, E>(T)
+  type: Method
+  source:
+    id: ConvertFromSettings
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\SettingHelper.cs
+    startLine: 92
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Converts the specified object to a list of settings.
+  example: []
+  syntax:
+    content: 'public static List<E> ConvertFromSettings<T, E>(T from) where T : class, new() where E : IBaseSettings, new()'
+    parameters:
+    - id: from
+      type: '{T}'
+      description: The object to convert.
+    typeParameters:
+    - id: T
+      description: The type of the object to convert.
+    - id: E
+      description: The type of the settings.
+    return:
+      type: System.Collections.Generic.List{{E}}
+      description: The list of converted settings.
+    content.vb: Public Shared Function ConvertFromSettings(Of T As {Class, New}, E As {IBaseSettings, New})(from As T) As List(Of E)
+  overload: Innova.Data.SettingHelper.ConvertFromSettings*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the object to convert is null.
+  nameWithType.vb: SettingHelper.ConvertFromSettings(Of T, E)(T)
+  fullName.vb: Innova.Data.SettingHelper.ConvertFromSettings(Of T, E)(T)
+  name.vb: ConvertFromSettings(Of T, E)(T)
+- uid: Innova.Data.SettingHelper.GetConverter(System.Type)
+  commentId: M:Innova.Data.SettingHelper.GetConverter(System.Type)
+  id: GetConverter(System.Type)
+  parent: Innova.Data.SettingHelper
+  langs:
+  - csharp
+  - vb
+  name: GetConverter(Type)
+  nameWithType: SettingHelper.GetConverter(Type)
+  fullName: Innova.Data.SettingHelper.GetConverter(System.Type)
+  type: Method
+  source:
+    id: GetConverter
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\SettingHelper.cs
+    startLine: 123
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the appropriate type converter for the specified type.
+  example: []
+  syntax:
+    content: public static TypeConverter GetConverter(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to get the converter for.
+    return:
+      type: System.ComponentModel.TypeConverter
+      description: The type converter.
+    content.vb: Public Shared Function GetConverter(type As Type) As TypeConverter
+  overload: Innova.Data.SettingHelper.GetConverter*
+references:
+- uid: Innova.Data
+  commentId: N:Innova.Data
+  href: Innova.html
+  name: Innova.Data
+  nameWithType: Innova.Data
+  fullName: Innova.Data
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Innova.Data.SettingHelper.ConvertToSetting*
+  commentId: Overload:Innova.Data.SettingHelper.ConvertToSetting
+  href: Innova.Data.SettingHelper.ConvertToSetting.html#Innova_Data_SettingHelper_ConvertToSetting__2_System_Collections_Generic_List___1__
+  name: ConvertToSetting
+  nameWithType: SettingHelper.ConvertToSetting
+  fullName: Innova.Data.SettingHelper.ConvertToSetting
+- uid: System.Collections.Generic.List{{E}}
+  commentId: T:System.Collections.Generic.List{``1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<E>
+  nameWithType: List<E>
+  fullName: System.Collections.Generic.List<E>
+  nameWithType.vb: List(Of E)
+  fullName.vb: System.Collections.Generic.List(Of E)
+  name.vb: List(Of E)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: E
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: E
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Innova.Data.SettingHelper.ConvertToSettingToTrue*
+  commentId: Overload:Innova.Data.SettingHelper.ConvertToSettingToTrue
+  href: Innova.Data.SettingHelper.ConvertToSettingToTrue.html#Innova_Data_SettingHelper_ConvertToSettingToTrue__1___0_System_Collections_Generic_List_System_String__
+  name: ConvertToSettingToTrue
+  nameWithType: SettingHelper.ConvertToSettingToTrue
+  fullName: Innova.Data.SettingHelper.ConvertToSettingToTrue
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Data.SettingHelper.ConvertFromSettings*
+  commentId: Overload:Innova.Data.SettingHelper.ConvertFromSettings
+  href: Innova.Data.SettingHelper.ConvertFromSettings.html#Innova_Data_SettingHelper_ConvertFromSettings__2___0_
+  name: ConvertFromSettings
+  nameWithType: SettingHelper.ConvertFromSettings
+  fullName: Innova.Data.SettingHelper.ConvertFromSettings
+- uid: Innova.Data.SettingHelper.GetConverter*
+  commentId: Overload:Innova.Data.SettingHelper.GetConverter
+  href: Innova.Data.SettingHelper.GetConverter.html#Innova_Data_SettingHelper_GetConverter_System_Type_
+  name: GetConverter
+  nameWithType: SettingHelper.GetConverter
+  fullName: Innova.Data.SettingHelper.GetConverter
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.ComponentModel.TypeConverter
+  commentId: T:System.ComponentModel.TypeConverter
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.typeconverter
+  name: TypeConverter
+  nameWithType: TypeConverter
+  fullName: System.ComponentModel.TypeConverter
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+memberLayout: SeparatePages

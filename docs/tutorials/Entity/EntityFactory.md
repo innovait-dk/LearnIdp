@@ -4,7 +4,7 @@
 
 **Task**: Create a partial class for the code-generated EmployeesEntityFactory and implement the partial method "SetDefaults".
 
-**Execution**: 
+**Implementation**: 
 
 1. Select "Entity Framework".
 2. Select "Employees".

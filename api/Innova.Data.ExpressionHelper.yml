@@ -1,0 +1,286 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.ExpressionHelper
+  commentId: T:Innova.Data.ExpressionHelper
+  id: ExpressionHelper
+  parent: Innova.Data
+  children:
+  - Innova.Data.ExpressionHelper.AndAlso``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  - Innova.Data.ExpressionHelper.OrElse``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  langs:
+  - csharp
+  - vb
+  name: ExpressionHelper
+  nameWithType: ExpressionHelper
+  fullName: Innova.Data.ExpressionHelper
+  type: Class
+  source:
+    id: ExpressionHelper
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExpressionHelper.cs
+    startLine: 11
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Provides helper methods for working with expressions.
+  example: []
+  syntax:
+    content: public static class ExpressionHelper
+    content.vb: Public Module ExpressionHelper
+  inheritance:
+  - System.Object
+- uid: Innova.Data.ExpressionHelper.AndAlso``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  commentId: M:Innova.Data.ExpressionHelper.AndAlso``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  id: AndAlso``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  isExtensionMethod: true
+  parent: Innova.Data.ExpressionHelper
+  langs:
+  - csharp
+  - vb
+  name: AndAlso<T>(Expression<Func<T, bool>>, Expression<Func<T, bool>>)
+  nameWithType: ExpressionHelper.AndAlso<T>(Expression<Func<T, bool>>, Expression<Func<T, bool>>)
+  fullName: Innova.Data.ExpressionHelper.AndAlso<T>(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Linq.Expressions.Expression<System.Func<T, bool>>)
+  type: Method
+  source:
+    id: AndAlso
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExpressionHelper.cs
+    startLine: 20
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Combines two expressions using the logical AND operator.
+  example: []
+  syntax:
+    content: public static Expression<Func<T, bool>> AndAlso<T>(this Expression<Func<T, bool>> expr1, Expression<Func<T, bool>> expr2)
+    parameters:
+    - id: expr1
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The first expression.
+    - id: expr2
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The second expression.
+    typeParameters:
+    - id: T
+      description: The type of the parameter in the expressions.
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The combined expression.
+    content.vb: Public Shared Function [AndAlso](Of T)(expr1 As Expression(Of Func(Of T, Boolean)), expr2 As Expression(Of Func(Of T, Boolean))) As Expression(Of Func(Of T, Boolean))
+  overload: Innova.Data.ExpressionHelper.AndAlso*
+  nameWithType.vb: ExpressionHelper.AndAlso(Of T)(Expression(Of Func(Of T, Boolean)), Expression(Of Func(Of T, Boolean)))
+  fullName.vb: Innova.Data.ExpressionHelper.AndAlso(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)), System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)))
+  name.vb: AndAlso(Of T)(Expression(Of Func(Of T, Boolean)), Expression(Of Func(Of T, Boolean)))
+- uid: Innova.Data.ExpressionHelper.OrElse``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  commentId: M:Innova.Data.ExpressionHelper.OrElse``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  id: OrElse``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  isExtensionMethod: true
+  parent: Innova.Data.ExpressionHelper
+  langs:
+  - csharp
+  - vb
+  name: OrElse<T>(Expression<Func<T, bool>>, Expression<Func<T, bool>>)
+  nameWithType: ExpressionHelper.OrElse<T>(Expression<Func<T, bool>>, Expression<Func<T, bool>>)
+  fullName: Innova.Data.ExpressionHelper.OrElse<T>(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Linq.Expressions.Expression<System.Func<T, bool>>)
+  type: Method
+  source:
+    id: OrElse
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExpressionHelper.cs
+    startLine: 45
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Combines two expressions using the logical OR operator.
+  example: []
+  syntax:
+    content: public static Expression<Func<T, bool>> OrElse<T>(this Expression<Func<T, bool>> expr1, Expression<Func<T, bool>> expr2)
+    parameters:
+    - id: expr1
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The first expression.
+    - id: expr2
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The second expression.
+    typeParameters:
+    - id: T
+      description: The type of the parameter in the expressions.
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The combined expression.
+    content.vb: Public Shared Function [OrElse](Of T)(expr1 As Expression(Of Func(Of T, Boolean)), expr2 As Expression(Of Func(Of T, Boolean))) As Expression(Of Func(Of T, Boolean))
+  overload: Innova.Data.ExpressionHelper.OrElse*
+  nameWithType.vb: ExpressionHelper.OrElse(Of T)(Expression(Of Func(Of T, Boolean)), Expression(Of Func(Of T, Boolean)))
+  fullName.vb: Innova.Data.ExpressionHelper.OrElse(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)), System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)))
+  name.vb: OrElse(Of T)(Expression(Of Func(Of T, Boolean)), Expression(Of Func(Of T, Boolean)))
+references:
+- uid: Innova.Data
+  commentId: N:Innova.Data
+  href: Innova.html
+  name: Innova.Data
+  nameWithType: Innova.Data
+  fullName: Innova.Data
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.ExpressionHelper.AndAlso*
+  commentId: Overload:Innova.Data.ExpressionHelper.AndAlso
+  href: Innova.Data.ExpressionHelper.AndAlso.html#Innova_Data_ExpressionHelper_AndAlso__1_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
+  name: AndAlso
+  nameWithType: ExpressionHelper.AndAlso
+  fullName: Innova.Data.ExpressionHelper.AndAlso
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, bool>>
+  nameWithType: Expression<Func<T, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, bool>>
+  nameWithType.vb: Expression(Of Func(Of T, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean))
+  name.vb: Expression(Of Func(Of T, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: Innova.Data.ExpressionHelper.OrElse*
+  commentId: Overload:Innova.Data.ExpressionHelper.OrElse
+  href: Innova.Data.ExpressionHelper.OrElse.html#Innova_Data_ExpressionHelper_OrElse__1_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
+  name: OrElse
+  nameWithType: ExpressionHelper.OrElse
+  fullName: Innova.Data.ExpressionHelper.OrElse
+memberLayout: SeparatePages

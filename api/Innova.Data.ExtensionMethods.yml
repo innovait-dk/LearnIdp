@@ -1,0 +1,1439 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.ExtensionMethods
+  commentId: T:Innova.Data.ExtensionMethods
+  id: ExtensionMethods
+  parent: Innova.Data
+  children:
+  - Innova.Data.ExtensionMethods.And``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  - Innova.Data.ExtensionMethods.Any``1(System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  - Innova.Data.ExtensionMethods.AsParameters``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  - Innova.Data.ExtensionMethods.Batch``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  - Innova.Data.ExtensionMethods.Contains(System.String,System.String,System.StringComparison)
+  - Innova.Data.ExtensionMethods.ContainsCaseInsensitive(System.String,System.String)
+  - Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Nullable{System.Int64},System.Int32)
+  - Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)
+  - Innova.Data.ExtensionMethods.False``1
+  - Innova.Data.ExtensionMethods.FastCast``1(System.Collections.IEnumerable)
+  - Innova.Data.ExtensionMethods.Or``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  - Innova.Data.ExtensionMethods.ParseToDateTime(System.String)
+  - Innova.Data.ExtensionMethods.True``1
+  - Innova.Data.ExtensionMethods.WhereWithParameters``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  langs:
+  - csharp
+  - vb
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Innova.Data.ExtensionMethods
+  type: Class
+  source:
+    id: ExtensionMethods
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 16
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Provides extension methods for various types.
+  example: []
+  syntax:
+    content: public static class ExtensionMethods
+    content.vb: Public Module ExtensionMethods
+  inheritance:
+  - System.Object
+- uid: Innova.Data.ExtensionMethods.ParseToDateTime(System.String)
+  commentId: M:Innova.Data.ExtensionMethods.ParseToDateTime(System.String)
+  id: ParseToDateTime(System.String)
+  isExtensionMethod: true
+  parent: Innova.Data.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: ParseToDateTime(string)
+  nameWithType: ExtensionMethods.ParseToDateTime(string)
+  fullName: Innova.Data.ExtensionMethods.ParseToDateTime(string)
+  type: Method
+  source:
+    id: ParseToDateTime
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 23
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Parses a string representation of a date and time to a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: public static DateTime ParseToDateTime(this string dateString)
+    parameters:
+    - id: dateString
+      type: System.String
+      description: The string representation of the date and time.
+    return:
+      type: System.DateTime
+      description: The parsed <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> object.
+    content.vb: Public Shared Function ParseToDateTime(dateString As String) As Date
+  overload: Innova.Data.ExtensionMethods.ParseToDateTime*
+  nameWithType.vb: ExtensionMethods.ParseToDateTime(String)
+  fullName.vb: Innova.Data.ExtensionMethods.ParseToDateTime(String)
+  name.vb: ParseToDateTime(String)
+- uid: Innova.Data.ExtensionMethods.ContainsCaseInsensitive(System.String,System.String)
+  commentId: M:Innova.Data.ExtensionMethods.ContainsCaseInsensitive(System.String,System.String)
+  id: ContainsCaseInsensitive(System.String,System.String)
+  isExtensionMethod: true
+  parent: Innova.Data.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: ContainsCaseInsensitive(string, string)
+  nameWithType: ExtensionMethods.ContainsCaseInsensitive(string, string)
+  fullName: Innova.Data.ExtensionMethods.ContainsCaseInsensitive(string, string)
+  type: Method
+  source:
+    id: ContainsCaseInsensitive
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 48
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Determines whether a string contains a specified value, ignoring case.
+  example: []
+  syntax:
+    content: public static bool ContainsCaseInsensitive(this string text, string value)
+    parameters:
+    - id: text
+      type: System.String
+      description: The string to search.
+    - id: value
+      type: System.String
+      description: The value to find.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the string contains the specified value; otherwise, <code>false</code>.
+    content.vb: Public Shared Function ContainsCaseInsensitive(text As String, value As String) As Boolean
+  overload: Innova.Data.ExtensionMethods.ContainsCaseInsensitive*
+  nameWithType.vb: ExtensionMethods.ContainsCaseInsensitive(String, String)
+  fullName.vb: Innova.Data.ExtensionMethods.ContainsCaseInsensitive(String, String)
+  name.vb: ContainsCaseInsensitive(String, String)
+- uid: Innova.Data.ExtensionMethods.Contains(System.String,System.String,System.StringComparison)
+  commentId: M:Innova.Data.ExtensionMethods.Contains(System.String,System.String,System.StringComparison)
+  id: Contains(System.String,System.String,System.StringComparison)
+  isExtensionMethod: true
+  parent: Innova.Data.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: Contains(string, string, StringComparison)
+  nameWithType: ExtensionMethods.Contains(string, string, StringComparison)
+  fullName: Innova.Data.ExtensionMethods.Contains(string, string, System.StringComparison)
+  type: Method
+  source:
+    id: Contains
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 60
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Determines whether a string contains a specified value using the specified string comparison option.
+  example: []
+  syntax:
+    content: public static bool Contains(this string text, string value, StringComparison stringComparison)
+    parameters:
+    - id: text
+      type: System.String
+      description: The string to search.
+    - id: value
+      type: System.String
+      description: The value to find.
+    - id: stringComparison
+      type: System.StringComparison
+      description: The string comparison option to use.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the string contains the specified value; otherwise, <code>false</code>.
+    content.vb: Public Shared Function Contains(text As String, value As String, stringComparison As StringComparison) As Boolean
+  overload: Innova.Data.ExtensionMethods.Contains*
+  nameWithType.vb: ExtensionMethods.Contains(String, String, StringComparison)
+  fullName.vb: Innova.Data.ExtensionMethods.Contains(String, String, System.StringComparison)
+  name.vb: Contains(String, String, StringComparison)
+- uid: Innova.Data.ExtensionMethods.Batch``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  commentId: M:Innova.Data.ExtensionMethods.Batch``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  id: Batch``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  isExtensionMethod: true
+  parent: Innova.Data.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: Batch<T>(IEnumerable<T>, int)
+  nameWithType: ExtensionMethods.Batch<T>(IEnumerable<T>, int)
+  fullName: Innova.Data.ExtensionMethods.Batch<T>(System.Collections.Generic.IEnumerable<T>, int)
+  type: Method
+  source:
+    id: Batch
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 72
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Enumerates a sequence in chunks, yielding batches of a certain size to the enumerator.
+  example: []
+  syntax:
+    content: public static IEnumerable<T[]> Batch<T>(this IEnumerable<T> sequence, int batchSize)
+    parameters:
+    - id: sequence
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The sequence of items to be enumerated.
+    - id: batchSize
+      type: System.Int32
+      description: The maximum number of items to include in a batch.
+    typeParameters:
+    - id: T
+      description: The type of item in the batch.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}[]}
+      description: A sequence of arrays, with each array containing at most <code class="paramref">batchSize</code> elements.
+    content.vb: Public Shared Function Batch(Of T)(sequence As IEnumerable(Of T), batchSize As Integer) As IEnumerable(Of T())
+  overload: Innova.Data.ExtensionMethods.Batch*
+  nameWithType.vb: ExtensionMethods.Batch(Of T)(IEnumerable(Of T), Integer)
+  fullName.vb: Innova.Data.ExtensionMethods.Batch(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer)
+  name.vb: Batch(Of T)(IEnumerable(Of T), Integer)
+- uid: Innova.Data.ExtensionMethods.True``1
+  commentId: M:Innova.Data.ExtensionMethods.True``1
+  id: True``1
+  parent: Innova.Data.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: True<T>()
+  nameWithType: ExtensionMethods.True<T>()
+  fullName: Innova.Data.ExtensionMethods.True<T>()
+  type: Method
+  source:
+    id: "True"
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 99
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Creates a predicate expression that always evaluates to <code>true</code>.
+  example: []
+  syntax:
+    content: public static Expression<Func<T, bool>> True<T>()
+    typeParameters:
+    - id: T
+      description: The type of the parameter in the expression.
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: A predicate expression that always evaluates to <code>true</code>.
+    content.vb: Public Shared Function [True](Of T)() As Expression(Of Func(Of T, Boolean))
+  overload: Innova.Data.ExtensionMethods.True*
+  nameWithType.vb: ExtensionMethods.True(Of T)()
+  fullName.vb: Innova.Data.ExtensionMethods.True(Of T)()
+  name.vb: True(Of T)()
+- uid: Innova.Data.ExtensionMethods.False``1
+  commentId: M:Innova.Data.ExtensionMethods.False``1
+  id: False``1
+  parent: Innova.Data.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: False<T>()
+  nameWithType: ExtensionMethods.False<T>()
+  fullName: Innova.Data.ExtensionMethods.False<T>()
+  type: Method
+  source:
+    id: "False"
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 109
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Creates a predicate expression that always evaluates to <code>false</code>.
+  example: []
+  syntax:
+    content: public static Expression<Func<T, bool>> False<T>()
+    typeParameters:
+    - id: T
+      description: The type of the parameter in the expression.
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: A predicate expression that always evaluates to <code>false</code>.
+    content.vb: Public Shared Function [False](Of T)() As Expression(Of Func(Of T, Boolean))
+  overload: Innova.Data.ExtensionMethods.False*
+  nameWithType.vb: ExtensionMethods.False(Of T)()
+  fullName.vb: Innova.Data.ExtensionMethods.False(Of T)()
+  name.vb: False(Of T)()
+- uid: Innova.Data.ExtensionMethods.Or``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  commentId: M:Innova.Data.ExtensionMethods.Or``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  id: Or``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  isExtensionMethod: true
+  parent: Innova.Data.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: Or<T>(Expression<Func<T, bool>>, Expression<Func<T, bool>>)
+  nameWithType: ExtensionMethods.Or<T>(Expression<Func<T, bool>>, Expression<Func<T, bool>>)
+  fullName: Innova.Data.ExtensionMethods.Or<T>(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Linq.Expressions.Expression<System.Func<T, bool>>)
+  type: Method
+  source:
+    id: Or
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 121
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Combines two predicate expressions using the logical OR operator.
+  example: []
+  syntax:
+    content: public static Expression<Func<T, bool>> Or<T>(this Expression<Func<T, bool>> expr1, Expression<Func<T, bool>> expr2)
+    parameters:
+    - id: expr1
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The first predicate expression.
+    - id: expr2
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The second predicate expression.
+    typeParameters:
+    - id: T
+      description: The type of the parameter in the expressions.
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: A new predicate expression that represents the logical OR of the two input expressions.
+    content.vb: Public Shared Function [Or](Of T)(expr1 As Expression(Of Func(Of T, Boolean)), expr2 As Expression(Of Func(Of T, Boolean))) As Expression(Of Func(Of T, Boolean))
+  overload: Innova.Data.ExtensionMethods.Or*
+  nameWithType.vb: ExtensionMethods.Or(Of T)(Expression(Of Func(Of T, Boolean)), Expression(Of Func(Of T, Boolean)))
+  fullName.vb: Innova.Data.ExtensionMethods.Or(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)), System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)))
+  name.vb: Or(Of T)(Expression(Of Func(Of T, Boolean)), Expression(Of Func(Of T, Boolean)))
+- uid: Innova.Data.ExtensionMethods.Any``1(System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  commentId: M:Innova.Data.ExtensionMethods.Any``1(System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  id: Any``1(System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  isExtensionMethod: true
+  parent: Innova.Data.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: Any<TSource>(ParameterExpression, Expression<Func<TSource, bool>>)
+  nameWithType: ExtensionMethods.Any<TSource>(ParameterExpression, Expression<Func<TSource, bool>>)
+  fullName: Innova.Data.ExtensionMethods.Any<TSource>(System.Linq.Expressions.ParameterExpression, System.Linq.Expressions.Expression<System.Func<TSource, bool>>)
+  type: Method
+  source:
+    id: Any
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 134
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Creates an expression that determines whether any element of a sequence satisfies a specified condition.
+  example: []
+  syntax:
+    content: public static Expression Any<TSource>(this ParameterExpression parameter, Expression<Func<TSource, bool>> predicate)
+    parameters:
+    - id: parameter
+      type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression representing the sequence.
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},System.Boolean}}
+      description: The predicate expression to apply to each element of the sequence.
+    typeParameters:
+    - id: TSource
+      description: The type of the elements in the sequence.
+    return:
+      type: System.Linq.Expressions.Expression
+      description: An expression that determines whether any element of the sequence satisfies the specified condition.
+    content.vb: Public Shared Function Any(Of TSource)(parameter As ParameterExpression, predicate As Expression(Of Func(Of TSource, Boolean))) As Expression
+  overload: Innova.Data.ExtensionMethods.Any*
+  nameWithType.vb: ExtensionMethods.Any(Of TSource)(ParameterExpression, Expression(Of Func(Of TSource, Boolean)))
+  fullName.vb: Innova.Data.ExtensionMethods.Any(Of TSource)(System.Linq.Expressions.ParameterExpression, System.Linq.Expressions.Expression(Of System.Func(Of TSource, Boolean)))
+  name.vb: Any(Of TSource)(ParameterExpression, Expression(Of Func(Of TSource, Boolean)))
+- uid: Innova.Data.ExtensionMethods.And``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  commentId: M:Innova.Data.ExtensionMethods.And``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  id: And``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  isExtensionMethod: true
+  parent: Innova.Data.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: And<T>(Expression<Func<T, bool>>, Expression<Func<T, bool>>)
+  nameWithType: ExtensionMethods.And<T>(Expression<Func<T, bool>>, Expression<Func<T, bool>>)
+  fullName: Innova.Data.ExtensionMethods.And<T>(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Linq.Expressions.Expression<System.Func<T, bool>>)
+  type: Method
+  source:
+    id: And
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 153
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Combines two predicate expressions using the logical AND operator.
+  example: []
+  syntax:
+    content: public static Expression<Func<T, bool>> And<T>(this Expression<Func<T, bool>> expr1, Expression<Func<T, bool>> expr2)
+    parameters:
+    - id: expr1
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The first predicate expression.
+    - id: expr2
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The second predicate expression.
+    typeParameters:
+    - id: T
+      description: The type of the parameter in the expressions.
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: A new predicate expression that represents the logical AND of the two input expressions.
+    content.vb: Public Shared Function [And](Of T)(expr1 As Expression(Of Func(Of T, Boolean)), expr2 As Expression(Of Func(Of T, Boolean))) As Expression(Of Func(Of T, Boolean))
+  overload: Innova.Data.ExtensionMethods.And*
+  nameWithType.vb: ExtensionMethods.And(Of T)(Expression(Of Func(Of T, Boolean)), Expression(Of Func(Of T, Boolean)))
+  fullName.vb: Innova.Data.ExtensionMethods.And(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)), System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)))
+  name.vb: And(Of T)(Expression(Of Func(Of T, Boolean)), Expression(Of Func(Of T, Boolean)))
+- uid: Innova.Data.ExtensionMethods.FastCast``1(System.Collections.IEnumerable)
+  commentId: M:Innova.Data.ExtensionMethods.FastCast``1(System.Collections.IEnumerable)
+  id: FastCast``1(System.Collections.IEnumerable)
+  isExtensionMethod: true
+  parent: Innova.Data.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: FastCast<T>(IEnumerable)
+  nameWithType: ExtensionMethods.FastCast<T>(IEnumerable)
+  fullName: Innova.Data.ExtensionMethods.FastCast<T>(System.Collections.IEnumerable)
+  type: Method
+  source:
+    id: FastCast
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 165
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Casts the elements of a non-generic <xref href="System.Collections.IEnumerable" data-throw-if-not-resolved="false"></xref> to the specified type.
+  example: []
+  syntax:
+    content: 'public static IEnumerable<T> FastCast<T>(this IEnumerable source) where T : class'
+    parameters:
+    - id: source
+      type: System.Collections.IEnumerable
+      description: The non-generic <xref href="System.Collections.IEnumerable" data-throw-if-not-resolved="false"></xref> to cast.
+    typeParameters:
+    - id: T
+      description: The type to cast the elements to.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> that contains the casted elements.
+    content.vb: Public Shared Function FastCast(Of T As Class)(source As IEnumerable) As IEnumerable(Of T)
+  overload: Innova.Data.ExtensionMethods.FastCast*
+  nameWithType.vb: ExtensionMethods.FastCast(Of T)(IEnumerable)
+  fullName.vb: Innova.Data.ExtensionMethods.FastCast(Of T)(System.Collections.IEnumerable)
+  name.vb: FastCast(Of T)(IEnumerable)
+- uid: Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)
+  commentId: M:Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)
+  id: CopyToWithProgressAsync(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: Innova.Data.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: CopyToWithProgressAsync(Stream, Stream, IProgress<ProgressInfo>, int, long?, CancellationToken)
+  nameWithType: ExtensionMethods.CopyToWithProgressAsync(Stream, Stream, IProgress<ProgressInfo>, int, long?, CancellationToken)
+  fullName: Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream, System.IO.Stream, System.IProgress<Innova.Data.ProgressInfo>, int, long?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: CopyToWithProgressAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 191
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Asynchronously copies the contents of a <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> to another <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> with progress reporting.
+  example: []
+  syntax:
+    content: public static Task CopyToWithProgressAsync(this Stream source, Stream destination, IProgress<ProgressInfo> percentProgress, int bufferSize = 32768, long? sourceStreamLength = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: source
+      type: System.IO.Stream
+      description: The source <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> to copy from.
+    - id: destination
+      type: System.IO.Stream
+      description: The destination <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> to copy to.
+    - id: percentProgress
+      type: System.IProgress{Innova.Data.ProgressInfo}
+      description: The progress reporter that reports the progress of the copy operation.
+    - id: bufferSize
+      type: System.Int32
+      description: The size of the buffer used for copying.
+    - id: sourceStreamLength
+      type: System.Nullable{System.Int64}
+      description: The length of the source stream, if known.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token to cancel the copy operation.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous copy operation.
+    content.vb: Public Shared Function CopyToWithProgressAsync(source As Stream, destination As Stream, percentProgress As IProgress(Of ProgressInfo), bufferSize As Integer = 32768, sourceStreamLength As Long? = Nothing, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Data.ExtensionMethods.CopyToWithProgressAsync*
+  nameWithType.vb: ExtensionMethods.CopyToWithProgressAsync(Stream, Stream, IProgress(Of ProgressInfo), Integer, Long?, CancellationToken)
+  fullName.vb: Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream, System.IO.Stream, System.IProgress(Of Innova.Data.ProgressInfo), Integer, Long?, System.Threading.CancellationToken)
+  name.vb: CopyToWithProgressAsync(Stream, Stream, IProgress(Of ProgressInfo), Integer, Long?, CancellationToken)
+- uid: Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Nullable{System.Int64},System.Int32)
+  commentId: M:Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Nullable{System.Int64},System.Int32)
+  id: CopyToWithProgress(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Nullable{System.Int64},System.Int32)
+  isExtensionMethod: true
+  parent: Innova.Data.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: CopyToWithProgress(Stream, Stream, IProgress<ProgressInfo>, long?, int)
+  nameWithType: ExtensionMethods.CopyToWithProgress(Stream, Stream, IProgress<ProgressInfo>, long?, int)
+  fullName: Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream, System.IO.Stream, System.IProgress<Innova.Data.ProgressInfo>, long?, int)
+  type: Method
+  source:
+    id: CopyToWithProgress
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 264
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Copies the contents of a <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> to another <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> with progress reporting.
+  example: []
+  syntax:
+    content: public static void CopyToWithProgress(this Stream source, Stream destination, IProgress<ProgressInfo> percentProgress, long? sourceStreamLength = null, int bufferSize = 32768)
+    parameters:
+    - id: source
+      type: System.IO.Stream
+      description: The source <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> to copy from.
+    - id: destination
+      type: System.IO.Stream
+      description: The destination <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> to copy to.
+    - id: percentProgress
+      type: System.IProgress{Innova.Data.ProgressInfo}
+      description: The progress reporter that reports the progress of the copy operation.
+    - id: sourceStreamLength
+      type: System.Nullable{System.Int64}
+      description: The length of the source stream, if known.
+    - id: bufferSize
+      type: System.Int32
+      description: The size of the buffer used for copying.
+    content.vb: Public Shared Sub CopyToWithProgress(source As Stream, destination As Stream, percentProgress As IProgress(Of ProgressInfo), sourceStreamLength As Long? = Nothing, bufferSize As Integer = 32768)
+  overload: Innova.Data.ExtensionMethods.CopyToWithProgress*
+  nameWithType.vb: ExtensionMethods.CopyToWithProgress(Stream, Stream, IProgress(Of ProgressInfo), Long?, Integer)
+  fullName.vb: Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream, System.IO.Stream, System.IProgress(Of Innova.Data.ProgressInfo), Long?, Integer)
+  name.vb: CopyToWithProgress(Stream, Stream, IProgress(Of ProgressInfo), Long?, Integer)
+- uid: Innova.Data.ExtensionMethods.WhereWithParameters``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  commentId: M:Innova.Data.ExtensionMethods.WhereWithParameters``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  id: WhereWithParameters``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  isExtensionMethod: true
+  parent: Innova.Data.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: WhereWithParameters<TSource>(IQueryable<TSource>, Expression<Func<TSource, bool>>)
+  nameWithType: ExtensionMethods.WhereWithParameters<TSource>(IQueryable<TSource>, Expression<Func<TSource, bool>>)
+  fullName: Innova.Data.ExtensionMethods.WhereWithParameters<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>)
+  type: Method
+  source:
+    id: WhereWithParameters
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 335
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Filters a sequence of values based on a predicate expression with parameters.
+  example: []
+  syntax:
+    content: public static IQueryable<TSource> WhereWithParameters<TSource>(this IQueryable<TSource> queryable, Expression<Func<TSource, bool>> where)
+    parameters:
+    - id: queryable
+      type: System.Linq.IQueryable{{TSource}}
+      description: The queryable sequence to filter.
+    - id: where
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},System.Boolean}}
+      description: The predicate expression with parameters.
+    typeParameters:
+    - id: TSource
+      description: The type of the elements in the sequence.
+    return:
+      type: System.Linq.IQueryable{{TSource}}
+      description: A new queryable sequence that contains elements from the input sequence that satisfy the predicate expression.
+    content.vb: Public Shared Function WhereWithParameters(Of TSource)(queryable As IQueryable(Of TSource), where As Expression(Of Func(Of TSource, Boolean))) As IQueryable(Of TSource)
+  overload: Innova.Data.ExtensionMethods.WhereWithParameters*
+  nameWithType.vb: ExtensionMethods.WhereWithParameters(Of TSource)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)))
+  fullName.vb: Innova.Data.ExtensionMethods.WhereWithParameters(Of TSource)(System.Linq.IQueryable(Of TSource), System.Linq.Expressions.Expression(Of System.Func(Of TSource, Boolean)))
+  name.vb: WhereWithParameters(Of TSource)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)))
+- uid: Innova.Data.ExtensionMethods.AsParameters``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  commentId: M:Innova.Data.ExtensionMethods.AsParameters``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  id: AsParameters``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  isExtensionMethod: true
+  parent: Innova.Data.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: AsParameters<TSource>(Expression<Func<TSource, bool>>)
+  nameWithType: ExtensionMethods.AsParameters<TSource>(Expression<Func<TSource, bool>>)
+  fullName: Innova.Data.ExtensionMethods.AsParameters<TSource>(System.Linq.Expressions.Expression<System.Func<TSource, bool>>)
+  type: Method
+  source:
+    id: AsParameters
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\ExtensionMethods.cs
+    startLine: 346
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Replaces the constant values in a predicate expression with parameters.
+  example: []
+  syntax:
+    content: public static Expression<Func<TSource, bool>> AsParameters<TSource>(this Expression<Func<TSource, bool>> expression)
+    parameters:
+    - id: expression
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},System.Boolean}}
+      description: The predicate expression with constant values.
+    typeParameters:
+    - id: TSource
+      description: The type of the elements in the sequence.
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},System.Boolean}}
+      description: A new predicate expression with parameters.
+    content.vb: Public Shared Function AsParameters(Of TSource)(expression As Expression(Of Func(Of TSource, Boolean))) As Expression(Of Func(Of TSource, Boolean))
+  overload: Innova.Data.ExtensionMethods.AsParameters*
+  nameWithType.vb: ExtensionMethods.AsParameters(Of TSource)(Expression(Of Func(Of TSource, Boolean)))
+  fullName.vb: Innova.Data.ExtensionMethods.AsParameters(Of TSource)(System.Linq.Expressions.Expression(Of System.Func(Of TSource, Boolean)))
+  name.vb: AsParameters(Of TSource)(Expression(Of Func(Of TSource, Boolean)))
+references:
+- uid: Innova.Data
+  commentId: N:Innova.Data
+  href: Innova.html
+  name: Innova.Data
+  nameWithType: Innova.Data
+  fullName: Innova.Data
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Innova.Data.ExtensionMethods.ParseToDateTime*
+  commentId: Overload:Innova.Data.ExtensionMethods.ParseToDateTime
+  href: Innova.Data.ExtensionMethods.ParseToDateTime.html#Innova_Data_ExtensionMethods_ParseToDateTime_System_String_
+  name: ParseToDateTime
+  nameWithType: ExtensionMethods.ParseToDateTime
+  fullName: Innova.Data.ExtensionMethods.ParseToDateTime
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Data.ExtensionMethods.ContainsCaseInsensitive*
+  commentId: Overload:Innova.Data.ExtensionMethods.ContainsCaseInsensitive
+  href: Innova.Data.ExtensionMethods.ContainsCaseInsensitive.html#Innova_Data_ExtensionMethods_ContainsCaseInsensitive_System_String_System_String_
+  name: ContainsCaseInsensitive
+  nameWithType: ExtensionMethods.ContainsCaseInsensitive
+  fullName: Innova.Data.ExtensionMethods.ContainsCaseInsensitive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Innova.Data.ExtensionMethods.Contains*
+  commentId: Overload:Innova.Data.ExtensionMethods.Contains
+  href: Innova.Data.ExtensionMethods.Contains.html#Innova_Data_ExtensionMethods_Contains_System_String_System_String_System_StringComparison_
+  name: Contains
+  nameWithType: ExtensionMethods.Contains
+  fullName: Innova.Data.ExtensionMethods.Contains
+- uid: System.StringComparison
+  commentId: T:System.StringComparison
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.stringcomparison
+  name: StringComparison
+  nameWithType: StringComparison
+  fullName: System.StringComparison
+- uid: Innova.Data.ExtensionMethods.Batch*
+  commentId: Overload:Innova.Data.ExtensionMethods.Batch
+  href: Innova.Data.ExtensionMethods.Batch.html#Innova_Data_ExtensionMethods_Batch__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  name: Batch
+  nameWithType: ExtensionMethods.Batch
+  fullName: Innova.Data.ExtensionMethods.Batch
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.IEnumerable{{T}[]}
+  commentId: T:System.Collections.Generic.IEnumerable{``0[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T[]>
+  nameWithType: IEnumerable<T[]>
+  fullName: System.Collections.Generic.IEnumerable<T[]>
+  nameWithType.vb: IEnumerable(Of T())
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T())
+  name.vb: IEnumerable(Of T())
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Data.ExtensionMethods.True*
+  commentId: Overload:Innova.Data.ExtensionMethods.True
+  href: Innova.Data.ExtensionMethods.True.html#Innova_Data_ExtensionMethods_True__1
+  name: "True"
+  nameWithType: ExtensionMethods.True
+  fullName: Innova.Data.ExtensionMethods.True
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, bool>>
+  nameWithType: Expression<Func<T, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, bool>>
+  nameWithType.vb: Expression(Of Func(Of T, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean))
+  name.vb: Expression(Of Func(Of T, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: Innova.Data.ExtensionMethods.False*
+  commentId: Overload:Innova.Data.ExtensionMethods.False
+  href: Innova.Data.ExtensionMethods.False.html#Innova_Data_ExtensionMethods_False__1
+  name: "False"
+  nameWithType: ExtensionMethods.False
+  fullName: Innova.Data.ExtensionMethods.False
+- uid: Innova.Data.ExtensionMethods.Or*
+  commentId: Overload:Innova.Data.ExtensionMethods.Or
+  href: Innova.Data.ExtensionMethods.Or.html#Innova_Data_ExtensionMethods_Or__1_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
+  name: Or
+  nameWithType: ExtensionMethods.Or
+  fullName: Innova.Data.ExtensionMethods.Or
+- uid: Innova.Data.ExtensionMethods.Any*
+  commentId: Overload:Innova.Data.ExtensionMethods.Any
+  href: Innova.Data.ExtensionMethods.Any.html#Innova_Data_ExtensionMethods_Any__1_System_Linq_Expressions_ParameterExpression_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
+  name: Any
+  nameWithType: ExtensionMethods.Any
+  fullName: Innova.Data.ExtensionMethods.Any
+- uid: System.Linq.Expressions.ParameterExpression
+  commentId: T:System.Linq.Expressions.ParameterExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.parameterexpression
+  name: ParameterExpression
+  nameWithType: ParameterExpression
+  fullName: System.Linq.Expressions.ParameterExpression
+- uid: System.Linq.Expressions.Expression{System.Func{{TSource},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TSource, bool>>
+  nameWithType: Expression<Func<TSource, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TSource, bool>>
+  nameWithType.vb: Expression(Of Func(Of TSource, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TSource, Boolean))
+  name.vb: Expression(Of Func(Of TSource, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: Innova.Data.ExtensionMethods.And*
+  commentId: Overload:Innova.Data.ExtensionMethods.And
+  href: Innova.Data.ExtensionMethods.And.html#Innova_Data_ExtensionMethods_And__1_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
+  name: And
+  nameWithType: ExtensionMethods.And
+  fullName: Innova.Data.ExtensionMethods.And
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: Innova.Data.ExtensionMethods.FastCast*
+  commentId: Overload:Innova.Data.ExtensionMethods.FastCast
+  href: Innova.Data.ExtensionMethods.FastCast.html#Innova_Data_ExtensionMethods_FastCast__1_System_Collections_IEnumerable_
+  name: FastCast
+  nameWithType: ExtensionMethods.FastCast
+  fullName: Innova.Data.ExtensionMethods.FastCast
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: Innova.Data.ExtensionMethods.CopyToWithProgressAsync*
+  commentId: Overload:Innova.Data.ExtensionMethods.CopyToWithProgressAsync
+  href: Innova.Data.ExtensionMethods.CopyToWithProgressAsync.html#Innova_Data_ExtensionMethods_CopyToWithProgressAsync_System_IO_Stream_System_IO_Stream_System_IProgress_Innova_Data_ProgressInfo__System_Int32_System_Nullable_System_Int64__System_Threading_CancellationToken_
+  name: CopyToWithProgressAsync
+  nameWithType: ExtensionMethods.CopyToWithProgressAsync
+  fullName: Innova.Data.ExtensionMethods.CopyToWithProgressAsync
+- uid: System.IProgress{Innova.Data.ProgressInfo}
+  commentId: T:System.IProgress{Innova.Data.ProgressInfo}
+  parent: System
+  definition: System.IProgress`1
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  name: IProgress<ProgressInfo>
+  nameWithType: IProgress<ProgressInfo>
+  fullName: System.IProgress<Innova.Data.ProgressInfo>
+  nameWithType.vb: IProgress(Of ProgressInfo)
+  fullName.vb: System.IProgress(Of Innova.Data.ProgressInfo)
+  name.vb: IProgress(Of ProgressInfo)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: Innova.Data.ProgressInfo
+    name: ProgressInfo
+    href: Innova.Data.ProgressInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.ProgressInfo
+    name: ProgressInfo
+    href: Innova.Data.ProgressInfo.html
+  - name: )
+- uid: System.Nullable{System.Int64}
+  commentId: T:System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long?
+  nameWithType: long?
+  fullName: long?
+  nameWithType.vb: Long?
+  fullName.vb: Long?
+  name.vb: Long?
+  spec.csharp:
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  spec.vb:
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.IProgress`1
+  commentId: T:System.IProgress`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  name: IProgress<T>
+  nameWithType: IProgress<T>
+  fullName: System.IProgress<T>
+  nameWithType.vb: IProgress(Of T)
+  fullName.vb: System.IProgress(Of T)
+  name.vb: IProgress(Of T)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Data.ExtensionMethods.CopyToWithProgress*
+  commentId: Overload:Innova.Data.ExtensionMethods.CopyToWithProgress
+  href: Innova.Data.ExtensionMethods.CopyToWithProgress.html#Innova_Data_ExtensionMethods_CopyToWithProgress_System_IO_Stream_System_IO_Stream_System_IProgress_Innova_Data_ProgressInfo__System_Nullable_System_Int64__System_Int32_
+  name: CopyToWithProgress
+  nameWithType: ExtensionMethods.CopyToWithProgress
+  fullName: Innova.Data.ExtensionMethods.CopyToWithProgress
+- uid: Innova.Data.ExtensionMethods.WhereWithParameters*
+  commentId: Overload:Innova.Data.ExtensionMethods.WhereWithParameters
+  href: Innova.Data.ExtensionMethods.WhereWithParameters.html#Innova_Data_ExtensionMethods_WhereWithParameters__1_System_Linq_IQueryable___0__System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
+  name: WhereWithParameters
+  nameWithType: ExtensionMethods.WhereWithParameters
+  fullName: Innova.Data.ExtensionMethods.WhereWithParameters
+- uid: System.Linq.IQueryable{{TSource}}
+  commentId: T:System.Linq.IQueryable{``0}
+  parent: System.Linq
+  definition: System.Linq.IQueryable`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  name: IQueryable<TSource>
+  nameWithType: IQueryable<TSource>
+  fullName: System.Linq.IQueryable<TSource>
+  nameWithType.vb: IQueryable(Of TSource)
+  fullName.vb: System.Linq.IQueryable(Of TSource)
+  name.vb: IQueryable(Of TSource)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: TSource
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: )
+- uid: System.Linq.IQueryable`1
+  commentId: T:System.Linq.IQueryable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+- uid: Innova.Data.ExtensionMethods.AsParameters*
+  commentId: Overload:Innova.Data.ExtensionMethods.AsParameters
+  href: Innova.Data.ExtensionMethods.AsParameters.html#Innova_Data_ExtensionMethods_AsParameters__1_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
+  name: AsParameters
+  nameWithType: ExtensionMethods.AsParameters
+  fullName: Innova.Data.ExtensionMethods.AsParameters
+memberLayout: SeparatePages

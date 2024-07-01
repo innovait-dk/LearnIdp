@@ -1,0 +1,266 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.AppSettings.IServiceCollectionSettings
+  commentId: T:Innova.Data.AppSettings.IServiceCollectionSettings
+  id: IServiceCollectionSettings
+  parent: Innova.Data.AppSettings
+  children:
+  - Innova.Data.AppSettings.IServiceCollectionSettings.AddAppSettings``3(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Innova.Data.AppSettings.IServiceCollectionSettings.AddUIServicesUserSettings``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Innova.Data.AppSettings.IServiceCollectionSettings.AddUserSettings``3(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  langs:
+  - csharp
+  - vb
+  name: IServiceCollectionSettings
+  nameWithType: IServiceCollectionSettings
+  fullName: Innova.Data.AppSettings.IServiceCollectionSettings
+  type: Class
+  source:
+    id: IServiceCollectionSettings
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\IServiceCollectionSettings.cs
+    startLine: 11
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings
+  summary: Provides extension methods for configuring service collection settings.
+  example: []
+  syntax:
+    content: public static class IServiceCollectionSettings
+    content.vb: Public Module IServiceCollectionSettings
+  inheritance:
+  - System.Object
+- uid: Innova.Data.AppSettings.IServiceCollectionSettings.AddUIServicesUserSettings``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Innova.Data.AppSettings.IServiceCollectionSettings.AddUIServicesUserSettings``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddUIServicesUserSettings``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Innova.Data.AppSettings.IServiceCollectionSettings
+  langs:
+  - csharp
+  - vb
+  name: AddUIServicesUserSettings<TContext>(IServiceCollection)
+  nameWithType: IServiceCollectionSettings.AddUIServicesUserSettings<TContext>(IServiceCollection)
+  fullName: Innova.Data.AppSettings.IServiceCollectionSettings.AddUIServicesUserSettings<TContext>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    id: AddUIServicesUserSettings
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\IServiceCollectionSettings.cs
+    startLine: 19
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings
+  summary: Adds UI services for user settings to the service collection.
+  example: []
+  syntax:
+    content: 'public static IServiceCollection AddUIServicesUserSettings<TContext>(this IServiceCollection services) where TContext : DbContext'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    typeParameters:
+    - id: TContext
+      description: The type of the DbContext.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The updated service collection.
+    content.vb: Public Shared Function AddUIServicesUserSettings(Of TContext As DbContext)(services As IServiceCollection) As IServiceCollection
+  overload: Innova.Data.AppSettings.IServiceCollectionSettings.AddUIServicesUserSettings*
+  nameWithType.vb: IServiceCollectionSettings.AddUIServicesUserSettings(Of TContext)(IServiceCollection)
+  fullName.vb: Innova.Data.AppSettings.IServiceCollectionSettings.AddUIServicesUserSettings(Of TContext)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddUIServicesUserSettings(Of TContext)(IServiceCollection)
+- uid: Innova.Data.AppSettings.IServiceCollectionSettings.AddUserSettings``3(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Innova.Data.AppSettings.IServiceCollectionSettings.AddUserSettings``3(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddUserSettings``3(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Innova.Data.AppSettings.IServiceCollectionSettings
+  langs:
+  - csharp
+  - vb
+  name: AddUserSettings<Tinterface, T, TSettingService>(IServiceCollection)
+  nameWithType: IServiceCollectionSettings.AddUserSettings<Tinterface, T, TSettingService>(IServiceCollection)
+  fullName: Innova.Data.AppSettings.IServiceCollectionSettings.AddUserSettings<Tinterface, T, TSettingService>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    id: AddUserSettings
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\IServiceCollectionSettings.cs
+    startLine: 35
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings
+  summary: Adds user settings to the service collection.
+  example: []
+  syntax:
+    content: 'public static IServiceCollection AddUserSettings<Tinterface, T, TSettingService>(this IServiceCollection services) where Tinterface : class where T : class, Tinterface, new() where TSettingService : class, ISettingEntityService'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    typeParameters:
+    - id: Tinterface
+      description: The interface type for the user settings.
+    - id: T
+      description: The implementation type for the user settings.
+    - id: TSettingService
+      description: The implementation type for the setting entity service.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The updated service collection.
+    content.vb: Public Shared Function AddUserSettings(Of Tinterface As Class, T As {Class, Tinterface, New}, TSettingService As {Class, ISettingEntityService})(services As IServiceCollection) As IServiceCollection
+  overload: Innova.Data.AppSettings.IServiceCollectionSettings.AddUserSettings*
+  nameWithType.vb: IServiceCollectionSettings.AddUserSettings(Of Tinterface, T, TSettingService)(IServiceCollection)
+  fullName.vb: Innova.Data.AppSettings.IServiceCollectionSettings.AddUserSettings(Of Tinterface, T, TSettingService)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddUserSettings(Of Tinterface, T, TSettingService)(IServiceCollection)
+- uid: Innova.Data.AppSettings.IServiceCollectionSettings.AddAppSettings``3(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Innova.Data.AppSettings.IServiceCollectionSettings.AddAppSettings``3(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddAppSettings``3(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Innova.Data.AppSettings.IServiceCollectionSettings
+  langs:
+  - csharp
+  - vb
+  name: AddAppSettings<Tinterface, T, TSettingService>(IServiceCollection)
+  nameWithType: IServiceCollectionSettings.AddAppSettings<Tinterface, T, TSettingService>(IServiceCollection)
+  fullName: Innova.Data.AppSettings.IServiceCollectionSettings.AddAppSettings<Tinterface, T, TSettingService>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    id: AddAppSettings
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\IServiceCollectionSettings.cs
+    startLine: 63
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings
+  summary: Adds application settings to the service collection.
+  example: []
+  syntax:
+    content: 'public static IServiceCollection AddAppSettings<Tinterface, T, TSettingService>(this IServiceCollection services) where Tinterface : class where T : class, Tinterface, new() where TSettingService : class, ISettingEntityService'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
+    typeParameters:
+    - id: Tinterface
+      description: The interface type for the application settings.
+    - id: T
+      description: The implementation type for the application settings.
+    - id: TSettingService
+      description: The implementation type for the setting entity service.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The updated service collection.
+    content.vb: Public Shared Function AddAppSettings(Of Tinterface As Class, T As {Class, Tinterface, New}, TSettingService As {Class, ISettingEntityService})(services As IServiceCollection) As IServiceCollection
+  overload: Innova.Data.AppSettings.IServiceCollectionSettings.AddAppSettings*
+  nameWithType.vb: IServiceCollectionSettings.AddAppSettings(Of Tinterface, T, TSettingService)(IServiceCollection)
+  fullName.vb: Innova.Data.AppSettings.IServiceCollectionSettings.AddAppSettings(Of Tinterface, T, TSettingService)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddAppSettings(Of Tinterface, T, TSettingService)(IServiceCollection)
+references:
+- uid: Innova.Data.AppSettings
+  commentId: N:Innova.Data.AppSettings
+  href: Innova.html
+  name: Innova.Data.AppSettings
+  nameWithType: Innova.Data.AppSettings
+  fullName: Innova.Data.AppSettings
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.AppSettings.IServiceCollectionSettings.AddUIServicesUserSettings*
+  commentId: Overload:Innova.Data.AppSettings.IServiceCollectionSettings.AddUIServicesUserSettings
+  href: Innova.Data.AppSettings.IServiceCollectionSettings.AddUIServicesUserSettings.html#Innova_Data_AppSettings_IServiceCollectionSettings_AddUIServicesUserSettings__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddUIServicesUserSettings
+  nameWithType: IServiceCollectionSettings.AddUIServicesUserSettings
+  fullName: Innova.Data.AppSettings.IServiceCollectionSettings.AddUIServicesUserSettings
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: Innova.Data.AppSettings.IServiceCollectionSettings.AddUserSettings*
+  commentId: Overload:Innova.Data.AppSettings.IServiceCollectionSettings.AddUserSettings
+  href: Innova.Data.AppSettings.IServiceCollectionSettings.AddUserSettings.html#Innova_Data_AppSettings_IServiceCollectionSettings_AddUserSettings__3_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddUserSettings
+  nameWithType: IServiceCollectionSettings.AddUserSettings
+  fullName: Innova.Data.AppSettings.IServiceCollectionSettings.AddUserSettings
+- uid: Innova.Data.AppSettings.IServiceCollectionSettings.AddAppSettings*
+  commentId: Overload:Innova.Data.AppSettings.IServiceCollectionSettings.AddAppSettings
+  href: Innova.Data.AppSettings.IServiceCollectionSettings.AddAppSettings.html#Innova_Data_AppSettings_IServiceCollectionSettings_AddAppSettings__3_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddAppSettings
+  nameWithType: IServiceCollectionSettings.AddAppSettings
+  fullName: Innova.Data.AppSettings.IServiceCollectionSettings.AddAppSettings
+memberLayout: SeparatePages

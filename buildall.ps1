@@ -1,3 +1,3 @@
-docfx metadata
+docfx metadata docfx_metadata.json
 docfx build
-docfx serve
+#docfx serve

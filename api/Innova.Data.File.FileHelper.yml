@@ -1,0 +1,478 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.File.FileHelper
+  commentId: T:Innova.Data.File.FileHelper
+  id: FileHelper
+  parent: Innova.Data.File
+  children:
+  - Innova.Data.File.FileHelper.GetHash(System.IO.Stream,System.String)
+  - Innova.Data.File.FileHelper.GetHashAlgotithm(System.String)
+  - Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream,System.String,System.Int32)
+  - Innova.Data.File.FileHelper.GetHashString(System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: FileHelper
+  nameWithType: FileHelper
+  fullName: Innova.Data.File.FileHelper
+  type: Class
+  source:
+    id: FileHelper
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\FileHelper.cs
+    startLine: 11
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  summary: Provides helper methods for working with files.
+  example: []
+  syntax:
+    content: public static class FileHelper
+    content.vb: Public Module FileHelper
+  inheritance:
+  - System.Object
+- uid: Innova.Data.File.FileHelper.GetHashAlgotithm(System.String)
+  commentId: M:Innova.Data.File.FileHelper.GetHashAlgotithm(System.String)
+  id: GetHashAlgotithm(System.String)
+  parent: Innova.Data.File.FileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetHashAlgotithm(string)
+  nameWithType: FileHelper.GetHashAlgotithm(string)
+  fullName: Innova.Data.File.FileHelper.GetHashAlgotithm(string)
+  type: Method
+  source:
+    id: GetHashAlgotithm
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\FileHelper.cs
+    startLine: 18
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  summary: Gets the specified hash algorithm.
+  example: []
+  syntax:
+    content: public static HashAlgorithm GetHashAlgotithm(string hashAlgorithmName)
+    parameters:
+    - id: hashAlgorithmName
+      type: System.String
+      description: The name of the hash algorithm.
+    return:
+      type: System.Security.Cryptography.HashAlgorithm
+      description: The hash algorithm instance.
+    content.vb: Public Shared Function GetHashAlgotithm(hashAlgorithmName As String) As HashAlgorithm
+  overload: Innova.Data.File.FileHelper.GetHashAlgotithm*
+  nameWithType.vb: FileHelper.GetHashAlgotithm(String)
+  fullName.vb: Innova.Data.File.FileHelper.GetHashAlgotithm(String)
+  name.vb: GetHashAlgotithm(String)
+- uid: Innova.Data.File.FileHelper.GetHash(System.IO.Stream,System.String)
+  commentId: M:Innova.Data.File.FileHelper.GetHash(System.IO.Stream,System.String)
+  id: GetHash(System.IO.Stream,System.String)
+  isExtensionMethod: true
+  parent: Innova.Data.File.FileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetHash(Stream, string)
+  nameWithType: FileHelper.GetHash(Stream, string)
+  fullName: Innova.Data.File.FileHelper.GetHash(System.IO.Stream, string)
+  type: Method
+  source:
+    id: GetHash
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\FileHelper.cs
+    startLine: 60
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  summary: Computes the hash value for the specified stream using the specified hash algorithm.
+  example: []
+  syntax:
+    content: public static string GetHash(this Stream stream, string hashAlgorithmName)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to compute the hash for.
+    - id: hashAlgorithmName
+      type: System.String
+      description: The name of the hash algorithm.
+    return:
+      type: System.String
+      description: The computed hash value as a string.
+    content.vb: Public Shared Function GetHash(stream As Stream, hashAlgorithmName As String) As String
+  overload: Innova.Data.File.FileHelper.GetHash*
+  nameWithType.vb: FileHelper.GetHash(Stream, String)
+  fullName.vb: Innova.Data.File.FileHelper.GetHash(System.IO.Stream, String)
+  name.vb: GetHash(Stream, String)
+- uid: Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream,System.String,System.Int32)
+  commentId: M:Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream,System.String,System.Int32)
+  id: GetHashAsync(System.IO.Stream,System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Innova.Data.File.FileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetHashAsync(Stream, string, int)
+  nameWithType: FileHelper.GetHashAsync(Stream, string, int)
+  fullName: Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream, string, int)
+  type: Method
+  source:
+    id: GetHashAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\FileHelper.cs
+    startLine: 78
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  summary: Asynchronously computes the hash value for the specified stream using the specified hash algorithm and a custom buffer size.
+  example: []
+  syntax:
+    content: public static Task<string> GetHashAsync(this Stream stream, string hashAlgorithmName, int bufferSize = 524288)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to compute the hash for.
+    - id: hashAlgorithmName
+      type: System.String
+      description: The name of the hash algorithm.
+    - id: bufferSize
+      type: System.Int32
+      description: The size of the buffer used to read the stream.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: A task that represents the asynchronous operation. The task result contains the computed hash value as a string.
+    content.vb: Public Shared Function GetHashAsync(stream As Stream, hashAlgorithmName As String, bufferSize As Integer = 524288) As Task(Of String)
+  overload: Innova.Data.File.FileHelper.GetHashAsync*
+  nameWithType.vb: FileHelper.GetHashAsync(Stream, String, Integer)
+  fullName.vb: Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream, String, Integer)
+  name.vb: GetHashAsync(Stream, String, Integer)
+- uid: Innova.Data.File.FileHelper.GetHashString(System.Byte[])
+  commentId: M:Innova.Data.File.FileHelper.GetHashString(System.Byte[])
+  id: GetHashString(System.Byte[])
+  parent: Innova.Data.File.FileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetHashString(byte[])
+  nameWithType: FileHelper.GetHashString(byte[])
+  fullName: Innova.Data.File.FileHelper.GetHashString(byte[])
+  type: Method
+  source:
+    id: GetHashString
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\FileHelper.cs
+    startLine: 99
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  summary: Converts the specified hash value to a string representation.
+  example: []
+  syntax:
+    content: public static string GetHashString(byte[] hash)
+    parameters:
+    - id: hash
+      type: System.Byte[]
+      description: The hash value to convert.
+    return:
+      type: System.String
+      description: The string representation of the hash value.
+    content.vb: Public Shared Function GetHashString(hash As Byte()) As String
+  overload: Innova.Data.File.FileHelper.GetHashString*
+  nameWithType.vb: FileHelper.GetHashString(Byte())
+  fullName.vb: Innova.Data.File.FileHelper.GetHashString(Byte())
+  name.vb: GetHashString(Byte())
+references:
+- uid: Innova.Data.File
+  commentId: N:Innova.Data.File
+  href: Innova.html
+  name: Innova.Data.File
+  nameWithType: Innova.Data.File
+  fullName: Innova.Data.File
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.File
+    name: File
+    href: Innova.Data.File.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.File
+    name: File
+    href: Innova.Data.File.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.File.FileHelper.GetHashAlgotithm*
+  commentId: Overload:Innova.Data.File.FileHelper.GetHashAlgotithm
+  href: Innova.Data.File.FileHelper.GetHashAlgotithm.html#Innova_Data_File_FileHelper_GetHashAlgotithm_System_String_
+  name: GetHashAlgotithm
+  nameWithType: FileHelper.GetHashAlgotithm
+  fullName: Innova.Data.File.FileHelper.GetHashAlgotithm
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Security.Cryptography.HashAlgorithm
+  commentId: T:System.Security.Cryptography.HashAlgorithm
+  parent: System.Security.Cryptography
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.security.cryptography.hashalgorithm
+  name: HashAlgorithm
+  nameWithType: HashAlgorithm
+  fullName: System.Security.Cryptography.HashAlgorithm
+- uid: System.Security.Cryptography
+  commentId: N:System.Security.Cryptography
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Security.Cryptography
+  nameWithType: System.Security.Cryptography
+  fullName: System.Security.Cryptography
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Cryptography
+    name: Cryptography
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.cryptography
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Cryptography
+    name: Cryptography
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.cryptography
+- uid: Innova.Data.File.FileHelper.GetHash*
+  commentId: Overload:Innova.Data.File.FileHelper.GetHash
+  href: Innova.Data.File.FileHelper.GetHash.html#Innova_Data_File_FileHelper_GetHash_System_IO_Stream_System_String_
+  name: GetHash
+  nameWithType: FileHelper.GetHash
+  fullName: Innova.Data.File.FileHelper.GetHash
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Innova.Data.File.FileHelper.GetHashAsync*
+  commentId: Overload:Innova.Data.File.FileHelper.GetHashAsync
+  href: Innova.Data.File.FileHelper.GetHashAsync.html#Innova_Data_File_FileHelper_GetHashAsync_System_IO_Stream_System_String_System_Int32_
+  name: GetHashAsync
+  nameWithType: FileHelper.GetHashAsync
+  fullName: Innova.Data.File.FileHelper.GetHashAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Data.File.FileHelper.GetHashString*
+  commentId: Overload:Innova.Data.File.FileHelper.GetHashString
+  href: Innova.Data.File.FileHelper.GetHashString.html#Innova_Data_File_FileHelper_GetHashString_System_Byte___
+  name: GetHashString
+  nameWithType: FileHelper.GetHashString
+  fullName: Innova.Data.File.FileHelper.GetHashString
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+memberLayout: SeparatePages

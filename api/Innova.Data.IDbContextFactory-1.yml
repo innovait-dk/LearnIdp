@@ -1,0 +1,275 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.IDbContextFactory`1
+  commentId: T:Innova.Data.IDbContextFactory`1
+  id: IDbContextFactory`1
+  parent: Innova.Data
+  children:
+  - Innova.Data.IDbContextFactory`1.CreateDbContext
+  - Innova.Data.IDbContextFactory`1.CreateDbContextAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IDbContextFactory<TContext>
+  nameWithType: IDbContextFactory<TContext>
+  fullName: Innova.Data.IDbContextFactory<TContext>
+  type: Interface
+  source:
+    id: IDbContextFactory
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\IDbContextFactory.cs
+    startLine: 12
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Represents a factory for creating instances of the database context.
+  example: []
+  syntax:
+    content: 'public interface IDbContextFactory<TContext> where TContext : DbContext'
+    typeParameters:
+    - id: TContext
+      description: The type of the database context.
+    content.vb: Public Interface IDbContextFactory(Of TContext As DbContext)
+  nameWithType.vb: IDbContextFactory(Of TContext)
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext)
+  name.vb: IDbContextFactory(Of TContext)
+- uid: Innova.Data.IDbContextFactory`1.CreateDbContext
+  commentId: M:Innova.Data.IDbContextFactory`1.CreateDbContext
+  id: CreateDbContext
+  parent: Innova.Data.IDbContextFactory`1
+  langs:
+  - csharp
+  - vb
+  name: CreateDbContext()
+  nameWithType: IDbContextFactory<TContext>.CreateDbContext()
+  fullName: Innova.Data.IDbContextFactory<TContext>.CreateDbContext()
+  type: Method
+  source:
+    id: CreateDbContext
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\IDbContextFactory.cs
+    startLine: 19
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Creates a new instance of the database context.
+  example: []
+  syntax:
+    content: TContext CreateDbContext()
+    return:
+      type: '{TContext}'
+      description: The created database context.
+    content.vb: Function CreateDbContext() As TContext
+  overload: Innova.Data.IDbContextFactory`1.CreateDbContext*
+  nameWithType.vb: IDbContextFactory(Of TContext).CreateDbContext()
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext).CreateDbContext()
+- uid: Innova.Data.IDbContextFactory`1.CreateDbContextAsync(System.Threading.CancellationToken)
+  commentId: M:Innova.Data.IDbContextFactory`1.CreateDbContextAsync(System.Threading.CancellationToken)
+  id: CreateDbContextAsync(System.Threading.CancellationToken)
+  parent: Innova.Data.IDbContextFactory`1
+  langs:
+  - csharp
+  - vb
+  name: CreateDbContextAsync(CancellationToken)
+  nameWithType: IDbContextFactory<TContext>.CreateDbContextAsync(CancellationToken)
+  fullName: Innova.Data.IDbContextFactory<TContext>.CreateDbContextAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: CreateDbContextAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\IDbContextFactory.cs
+    startLine: 26
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Asynchronously creates a new instance of the database context.
+  example: []
+  syntax:
+    content: Task<TContext> CreateDbContextAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{{TContext}}
+      description: A task that represents the asynchronous operation. The task result contains the created database context.
+    content.vb: Function CreateDbContextAsync(cancellationToken As CancellationToken = Nothing) As Task(Of TContext)
+  overload: Innova.Data.IDbContextFactory`1.CreateDbContextAsync*
+  nameWithType.vb: IDbContextFactory(Of TContext).CreateDbContextAsync(CancellationToken)
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext).CreateDbContextAsync(System.Threading.CancellationToken)
+references:
+- uid: Innova.Data
+  commentId: N:Innova.Data
+  href: Innova.html
+  name: Innova.Data
+  nameWithType: Innova.Data
+  fullName: Innova.Data
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+- uid: Innova.Data.IDbContextFactory`1.CreateDbContext*
+  commentId: Overload:Innova.Data.IDbContextFactory`1.CreateDbContext
+  href: Innova.Data.IDbContextFactory-1.CreateDbContext.html#Innova_Data_IDbContextFactory_1_CreateDbContext
+  name: CreateDbContext
+  nameWithType: IDbContextFactory<TContext>.CreateDbContext
+  fullName: Innova.Data.IDbContextFactory<TContext>.CreateDbContext
+  nameWithType.vb: IDbContextFactory(Of TContext).CreateDbContext
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext).CreateDbContext
+- uid: '{TContext}'
+  commentId: '!:TContext'
+  definition: TContext
+  name: TContext
+  nameWithType: TContext
+  fullName: TContext
+- uid: TContext
+  name: TContext
+  nameWithType: TContext
+  fullName: TContext
+- uid: Innova.Data.IDbContextFactory`1.CreateDbContextAsync*
+  commentId: Overload:Innova.Data.IDbContextFactory`1.CreateDbContextAsync
+  href: Innova.Data.IDbContextFactory-1.CreateDbContextAsync.html#Innova_Data_IDbContextFactory_1_CreateDbContextAsync_System_Threading_CancellationToken_
+  name: CreateDbContextAsync
+  nameWithType: IDbContextFactory<TContext>.CreateDbContextAsync
+  fullName: Innova.Data.IDbContextFactory<TContext>.CreateDbContextAsync
+  nameWithType.vb: IDbContextFactory(Of TContext).CreateDbContextAsync
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext).CreateDbContextAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{{TContext}}
+  commentId: T:System.Threading.Tasks.Task{`0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TContext>
+  nameWithType: Task<TContext>
+  fullName: System.Threading.Tasks.Task<TContext>
+  nameWithType.vb: Task(Of TContext)
+  fullName.vb: System.Threading.Tasks.Task(Of TContext)
+  name.vb: Task(Of TContext)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

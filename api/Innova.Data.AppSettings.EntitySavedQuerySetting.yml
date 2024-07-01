@@ -1,0 +1,369 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.AppSettings.EntitySavedQuerySetting
+  commentId: T:Innova.Data.AppSettings.EntitySavedQuerySetting
+  id: EntitySavedQuerySetting
+  parent: Innova.Data.AppSettings
+  children:
+  - Innova.Data.AppSettings.EntitySavedQuerySetting.#ctor
+  - Innova.Data.AppSettings.EntitySavedQuerySetting.EntitySavedQueryTypes
+  - Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeName(System.String)
+  - Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeNameAndKey(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: EntitySavedQuerySetting
+  nameWithType: EntitySavedQuerySetting
+  fullName: Innova.Data.AppSettings.EntitySavedQuerySetting
+  type: Class
+  source:
+    id: EntitySavedQuerySetting
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\EntitySavedQuerySetting.cs
+    startLine: 15
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings
+  summary: Represents the settings for entity saved queries.
+  example: []
+  syntax:
+    content: >-
+      [TypeConverter(typeof(EntitySavedQuerySettingConverter))]
+
+      public class EntitySavedQuerySetting
+    content.vb: >-
+      <TypeConverter(GetType(EntitySavedQuerySettingConverter))>
+
+      Public Class EntitySavedQuerySetting
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.ComponentModel.TypeConverterAttribute
+    ctor: System.ComponentModel.TypeConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Innova.Data.AppSettings.EntitySavedQuerySettingConverter
+- uid: Innova.Data.AppSettings.EntitySavedQuerySetting.EntitySavedQueryTypes
+  commentId: P:Innova.Data.AppSettings.EntitySavedQuerySetting.EntitySavedQueryTypes
+  id: EntitySavedQueryTypes
+  parent: Innova.Data.AppSettings.EntitySavedQuerySetting
+  langs:
+  - csharp
+  - vb
+  name: EntitySavedQueryTypes
+  nameWithType: EntitySavedQuerySetting.EntitySavedQueryTypes
+  fullName: Innova.Data.AppSettings.EntitySavedQuerySetting.EntitySavedQueryTypes
+  type: Property
+  source:
+    id: EntitySavedQueryTypes
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\EntitySavedQuerySetting.cs
+    startLine: 27
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings
+  summary: Gets or sets the list of entity saved query types.
+  example: []
+  syntax:
+    content: public List<EntitySavedQueryType> EntitySavedQueryTypes { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Innova.Data.AppSettings.EntitySavedQueryType}
+    content.vb: Public Property EntitySavedQueryTypes As List(Of EntitySavedQueryType)
+  overload: Innova.Data.AppSettings.EntitySavedQuerySetting.EntitySavedQueryTypes*
+- uid: Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeName(System.String)
+  commentId: M:Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeName(System.String)
+  id: GetByTypeName(System.String)
+  parent: Innova.Data.AppSettings.EntitySavedQuerySetting
+  langs:
+  - csharp
+  - vb
+  name: GetByTypeName(string)
+  nameWithType: EntitySavedQuerySetting.GetByTypeName(string)
+  fullName: Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeName(string)
+  type: Method
+  source:
+    id: GetByTypeName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\EntitySavedQuerySetting.cs
+    startLine: 35
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings
+  summary: Gets the entity saved query type by type name.
+  example: []
+  syntax:
+    content: public EntitySavedQueryType GetByTypeName(string typeName)
+    parameters:
+    - id: typeName
+      type: System.String
+      description: The type name.
+    return:
+      type: Innova.Data.AppSettings.EntitySavedQueryType
+      description: The entity saved query type.
+    content.vb: Public Function GetByTypeName(typeName As String) As EntitySavedQueryType
+  overload: Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeName*
+  nameWithType.vb: EntitySavedQuerySetting.GetByTypeName(String)
+  fullName.vb: Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeName(String)
+  name.vb: GetByTypeName(String)
+- uid: Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeNameAndKey(System.String,System.String)
+  commentId: M:Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeNameAndKey(System.String,System.String)
+  id: GetByTypeNameAndKey(System.String,System.String)
+  parent: Innova.Data.AppSettings.EntitySavedQuerySetting
+  langs:
+  - csharp
+  - vb
+  name: GetByTypeNameAndKey(string, string)
+  nameWithType: EntitySavedQuerySetting.GetByTypeNameAndKey(string, string)
+  fullName: Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeNameAndKey(string, string)
+  type: Method
+  source:
+    id: GetByTypeNameAndKey
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\EntitySavedQuerySetting.cs
+    startLine: 46
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings
+  summary: Gets the entity saved query type by type name and key.
+  example: []
+  syntax:
+    content: public EntitySavedQueryType GetByTypeNameAndKey(string typeName, string key)
+    parameters:
+    - id: typeName
+      type: System.String
+      description: The type name.
+    - id: key
+      type: System.String
+      description: The key.
+    return:
+      type: Innova.Data.AppSettings.EntitySavedQueryType
+      description: The entity saved query type.
+    content.vb: Public Function GetByTypeNameAndKey(typeName As String, key As String) As EntitySavedQueryType
+  overload: Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeNameAndKey*
+  nameWithType.vb: EntitySavedQuerySetting.GetByTypeNameAndKey(String, String)
+  fullName.vb: Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeNameAndKey(String, String)
+  name.vb: GetByTypeNameAndKey(String, String)
+- uid: Innova.Data.AppSettings.EntitySavedQuerySetting.#ctor
+  commentId: M:Innova.Data.AppSettings.EntitySavedQuerySetting.#ctor
+  id: '#ctor'
+  parent: Innova.Data.AppSettings.EntitySavedQuerySetting
+  langs:
+  - csharp
+  - vb
+  name: EntitySavedQuerySetting()
+  nameWithType: EntitySavedQuerySetting.EntitySavedQuerySetting()
+  fullName: Innova.Data.AppSettings.EntitySavedQuerySetting.EntitySavedQuerySetting()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\EntitySavedQuerySetting.cs
+    startLine: 63
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings
+  summary: Initializes a new instance of the <xref href="Innova.Data.AppSettings.EntitySavedQuerySetting" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public EntitySavedQuerySetting()
+    content.vb: Public Sub New()
+  overload: Innova.Data.AppSettings.EntitySavedQuerySetting.#ctor*
+  nameWithType.vb: EntitySavedQuerySetting.New()
+  fullName.vb: Innova.Data.AppSettings.EntitySavedQuerySetting.New()
+  name.vb: New()
+references:
+- uid: Innova.Data.AppSettings
+  commentId: N:Innova.Data.AppSettings
+  href: Innova.html
+  name: Innova.Data.AppSettings
+  nameWithType: Innova.Data.AppSettings
+  fullName: Innova.Data.AppSettings
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.AppSettings.EntitySavedQuerySetting.EntitySavedQueryTypes*
+  commentId: Overload:Innova.Data.AppSettings.EntitySavedQuerySetting.EntitySavedQueryTypes
+  href: Innova.Data.AppSettings.EntitySavedQuerySetting.EntitySavedQueryTypes.html#Innova_Data_AppSettings_EntitySavedQuerySetting_EntitySavedQueryTypes
+  name: EntitySavedQueryTypes
+  nameWithType: EntitySavedQuerySetting.EntitySavedQueryTypes
+  fullName: Innova.Data.AppSettings.EntitySavedQuerySetting.EntitySavedQueryTypes
+- uid: System.Collections.Generic.List{Innova.Data.AppSettings.EntitySavedQueryType}
+  commentId: T:System.Collections.Generic.List{Innova.Data.AppSettings.EntitySavedQueryType}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<EntitySavedQueryType>
+  nameWithType: List<EntitySavedQueryType>
+  fullName: System.Collections.Generic.List<Innova.Data.AppSettings.EntitySavedQueryType>
+  nameWithType.vb: List(Of EntitySavedQueryType)
+  fullName.vb: System.Collections.Generic.List(Of Innova.Data.AppSettings.EntitySavedQueryType)
+  name.vb: List(Of EntitySavedQueryType)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.AppSettings.EntitySavedQueryType
+    name: EntitySavedQueryType
+    href: Innova.Data.AppSettings.EntitySavedQueryType.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.AppSettings.EntitySavedQueryType
+    name: EntitySavedQueryType
+    href: Innova.Data.AppSettings.EntitySavedQueryType.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeName*
+  commentId: Overload:Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeName
+  href: Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeName.html#Innova_Data_AppSettings_EntitySavedQuerySetting_GetByTypeName_System_String_
+  name: GetByTypeName
+  nameWithType: EntitySavedQuerySetting.GetByTypeName
+  fullName: Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Data.AppSettings.EntitySavedQueryType
+  commentId: T:Innova.Data.AppSettings.EntitySavedQueryType
+  parent: Innova.Data.AppSettings
+  href: Innova.Data.AppSettings.EntitySavedQueryType.html
+  name: EntitySavedQueryType
+  nameWithType: EntitySavedQueryType
+  fullName: Innova.Data.AppSettings.EntitySavedQueryType
+- uid: Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeNameAndKey*
+  commentId: Overload:Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeNameAndKey
+  href: Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeNameAndKey.html#Innova_Data_AppSettings_EntitySavedQuerySetting_GetByTypeNameAndKey_System_String_System_String_
+  name: GetByTypeNameAndKey
+  nameWithType: EntitySavedQuerySetting.GetByTypeNameAndKey
+  fullName: Innova.Data.AppSettings.EntitySavedQuerySetting.GetByTypeNameAndKey
+- uid: Innova.Data.AppSettings.EntitySavedQuerySetting
+  commentId: T:Innova.Data.AppSettings.EntitySavedQuerySetting
+  parent: Innova.Data.AppSettings
+  href: Innova.Data.AppSettings.EntitySavedQuerySetting.html
+  name: EntitySavedQuerySetting
+  nameWithType: EntitySavedQuerySetting
+  fullName: Innova.Data.AppSettings.EntitySavedQuerySetting
+- uid: Innova.Data.AppSettings.EntitySavedQuerySetting.#ctor*
+  commentId: Overload:Innova.Data.AppSettings.EntitySavedQuerySetting.#ctor
+  href: Innova.Data.AppSettings.EntitySavedQuerySetting.-ctor.html#Innova_Data_AppSettings_EntitySavedQuerySetting__ctor
+  name: EntitySavedQuerySetting
+  nameWithType: EntitySavedQuerySetting.EntitySavedQuerySetting
+  fullName: Innova.Data.AppSettings.EntitySavedQuerySetting.EntitySavedQuerySetting
+  nameWithType.vb: EntitySavedQuerySetting.New
+  fullName.vb: Innova.Data.AppSettings.EntitySavedQuerySetting.New
+  name.vb: New
+memberLayout: SeparatePages

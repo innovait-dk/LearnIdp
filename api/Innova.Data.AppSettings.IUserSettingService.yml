@@ -1,0 +1,298 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.AppSettings.IUserSettingService
+  commentId: T:Innova.Data.AppSettings.IUserSettingService
+  id: IUserSettingService
+  parent: Innova.Data.AppSettings
+  children:
+  - Innova.Data.AppSettings.IUserSettingService.GetValue``1(System.String)
+  - Innova.Data.AppSettings.IUserSettingService.LoadData
+  - Innova.Data.AppSettings.IUserSettingService.Save
+  - Innova.Data.AppSettings.IUserSettingService.SetValue(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IUserSettingService
+  nameWithType: IUserSettingService
+  fullName: Innova.Data.AppSettings.IUserSettingService
+  type: Interface
+  source:
+    id: IUserSettingService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\IUserSettingService.cs
+    startLine: 21
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings
+  summary: Represents a user setting service that provides operations for retrieving and manipulating user settings.
+  example: []
+  syntax:
+    content: public interface IUserSettingService
+    content.vb: Public Interface IUserSettingService
+- uid: Innova.Data.AppSettings.IUserSettingService.GetValue``1(System.String)
+  commentId: M:Innova.Data.AppSettings.IUserSettingService.GetValue``1(System.String)
+  id: GetValue``1(System.String)
+  parent: Innova.Data.AppSettings.IUserSettingService
+  langs:
+  - csharp
+  - vb
+  name: GetValue<ValueType>(string)
+  nameWithType: IUserSettingService.GetValue<ValueType>(string)
+  fullName: Innova.Data.AppSettings.IUserSettingService.GetValue<ValueType>(string)
+  type: Method
+  source:
+    id: GetValue
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\IUserSettingService.cs
+    startLine: 29
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings
+  summary: Gets the value of the specified setting key.
+  example: []
+  syntax:
+    content: ValueType GetValue<ValueType>(string settingsKey)
+    parameters:
+    - id: settingsKey
+      type: System.String
+      description: The key of the setting.
+    typeParameters:
+    - id: ValueType
+      description: The type of the value.
+    return:
+      type: '{ValueType}'
+      description: The value of the setting.
+    content.vb: Function GetValue(Of ValueType)(settingsKey As String) As ValueType
+  overload: Innova.Data.AppSettings.IUserSettingService.GetValue*
+  nameWithType.vb: IUserSettingService.GetValue(Of ValueType)(String)
+  fullName.vb: Innova.Data.AppSettings.IUserSettingService.GetValue(Of ValueType)(String)
+  name.vb: GetValue(Of ValueType)(String)
+- uid: Innova.Data.AppSettings.IUserSettingService.SetValue(System.String,System.Object)
+  commentId: M:Innova.Data.AppSettings.IUserSettingService.SetValue(System.String,System.Object)
+  id: SetValue(System.String,System.Object)
+  parent: Innova.Data.AppSettings.IUserSettingService
+  langs:
+  - csharp
+  - vb
+  name: SetValue(string, object)
+  nameWithType: IUserSettingService.SetValue(string, object)
+  fullName: Innova.Data.AppSettings.IUserSettingService.SetValue(string, object)
+  type: Method
+  source:
+    id: SetValue
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\IUserSettingService.cs
+    startLine: 37
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings
+  summary: Sets the value of the specified setting key.
+  example: []
+  syntax:
+    content: Task SetValue(string settingsKey, object value)
+    parameters:
+    - id: settingsKey
+      type: System.String
+      description: The key of the setting.
+    - id: value
+      type: System.Object
+      description: The value to be set.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Function SetValue(settingsKey As String, value As Object) As Task
+  overload: Innova.Data.AppSettings.IUserSettingService.SetValue*
+  nameWithType.vb: IUserSettingService.SetValue(String, Object)
+  fullName.vb: Innova.Data.AppSettings.IUserSettingService.SetValue(String, Object)
+  name.vb: SetValue(String, Object)
+- uid: Innova.Data.AppSettings.IUserSettingService.Save
+  commentId: M:Innova.Data.AppSettings.IUserSettingService.Save
+  id: Save
+  parent: Innova.Data.AppSettings.IUserSettingService
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: IUserSettingService.Save()
+  fullName: Innova.Data.AppSettings.IUserSettingService.Save()
+  type: Method
+  source:
+    id: Save
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\IUserSettingService.cs
+    startLine: 43
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings
+  summary: Saves the user settings.
+  example: []
+  syntax:
+    content: Task Save()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Function Save() As Task
+  overload: Innova.Data.AppSettings.IUserSettingService.Save*
+- uid: Innova.Data.AppSettings.IUserSettingService.LoadData
+  commentId: M:Innova.Data.AppSettings.IUserSettingService.LoadData
+  id: LoadData
+  parent: Innova.Data.AppSettings.IUserSettingService
+  langs:
+  - csharp
+  - vb
+  name: LoadData()
+  nameWithType: IUserSettingService.LoadData()
+  fullName: Innova.Data.AppSettings.IUserSettingService.LoadData()
+  type: Method
+  source:
+    id: LoadData
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\IUserSettingService.cs
+    startLine: 49
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings
+  summary: Loads the user settings data.
+  example: []
+  syntax:
+    content: Task LoadData()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Function LoadData() As Task
+  overload: Innova.Data.AppSettings.IUserSettingService.LoadData*
+references:
+- uid: Innova.Data.AppSettings
+  commentId: N:Innova.Data.AppSettings
+  href: Innova.html
+  name: Innova.Data.AppSettings
+  nameWithType: Innova.Data.AppSettings
+  fullName: Innova.Data.AppSettings
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+- uid: Innova.Data.AppSettings.IUserSettingService.GetValue*
+  commentId: Overload:Innova.Data.AppSettings.IUserSettingService.GetValue
+  href: Innova.Data.AppSettings.IUserSettingService.GetValue.html#Innova_Data_AppSettings_IUserSettingService_GetValue__1_System_String_
+  name: GetValue
+  nameWithType: IUserSettingService.GetValue
+  fullName: Innova.Data.AppSettings.IUserSettingService.GetValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{ValueType}'
+  commentId: '!:ValueType'
+  definition: ValueType
+  name: ValueType
+  nameWithType: ValueType
+  fullName: ValueType
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ValueType
+  name: ValueType
+  nameWithType: ValueType
+  fullName: ValueType
+- uid: Innova.Data.AppSettings.IUserSettingService.SetValue*
+  commentId: Overload:Innova.Data.AppSettings.IUserSettingService.SetValue
+  href: Innova.Data.AppSettings.IUserSettingService.SetValue.html#Innova_Data_AppSettings_IUserSettingService_SetValue_System_String_System_Object_
+  name: SetValue
+  nameWithType: IUserSettingService.SetValue
+  fullName: Innova.Data.AppSettings.IUserSettingService.SetValue
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Data.AppSettings.IUserSettingService.Save*
+  commentId: Overload:Innova.Data.AppSettings.IUserSettingService.Save
+  href: Innova.Data.AppSettings.IUserSettingService.Save.html#Innova_Data_AppSettings_IUserSettingService_Save
+  name: Save
+  nameWithType: IUserSettingService.Save
+  fullName: Innova.Data.AppSettings.IUserSettingService.Save
+- uid: Innova.Data.AppSettings.IUserSettingService.LoadData*
+  commentId: Overload:Innova.Data.AppSettings.IUserSettingService.LoadData
+  href: Innova.Data.AppSettings.IUserSettingService.LoadData.html#Innova_Data_AppSettings_IUserSettingService_LoadData
+  name: LoadData
+  nameWithType: IUserSettingService.LoadData
+  fullName: Innova.Data.AppSettings.IUserSettingService.LoadData
+memberLayout: SeparatePages

@@ -4,7 +4,7 @@
 
 **Task**: Create a Menu and register it on the menuservice for CategoriesShow (CategoriesShowMenuService)
 
-**Execution**: 
+**Implementation**: 
 
 1. Select "User Interface".
 2. Select "Categories".

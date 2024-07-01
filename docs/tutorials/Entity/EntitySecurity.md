@@ -4,7 +4,7 @@
 
 **Task**: Set entity security "CanDelete" to false.
 
-**Execution**: 
+**Implementation**: 
 
 1. Select "Entity Framework".
 2. Select "Categories".

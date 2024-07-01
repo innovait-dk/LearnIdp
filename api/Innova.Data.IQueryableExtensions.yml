@@ -1,0 +1,352 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.IQueryableExtensions
+  commentId: T:Innova.Data.IQueryableExtensions
+  id: IQueryableExtensions
+  parent: Innova.Data
+  children:
+  - Innova.Data.IQueryableExtensions.OrderByDescending``1(System.Linq.IQueryable{``0},System.Linq.Expressions.LambdaExpression)
+  - Innova.Data.IQueryableExtensions.OrderBy``1(System.Linq.IQueryable{``0},System.Linq.Expressions.LambdaExpression)
+  langs:
+  - csharp
+  - vb
+  name: IQueryableExtensions
+  nameWithType: IQueryableExtensions
+  fullName: Innova.Data.IQueryableExtensions
+  type: Class
+  source:
+    id: IQueryableExtensions
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\IQueryableExtensions.cs
+    startLine: 9
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Provides extension methods for <xref href="System.Linq.IQueryable%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class IQueryableExtensions
+    content.vb: Public Module IQueryableExtensions
+  inheritance:
+  - System.Object
+- uid: Innova.Data.IQueryableExtensions.OrderByDescending``1(System.Linq.IQueryable{``0},System.Linq.Expressions.LambdaExpression)
+  commentId: M:Innova.Data.IQueryableExtensions.OrderByDescending``1(System.Linq.IQueryable{``0},System.Linq.Expressions.LambdaExpression)
+  id: OrderByDescending``1(System.Linq.IQueryable{``0},System.Linq.Expressions.LambdaExpression)
+  isExtensionMethod: true
+  parent: Innova.Data.IQueryableExtensions
+  langs:
+  - csharp
+  - vb
+  name: OrderByDescending<T>(IQueryable<T>, LambdaExpression)
+  nameWithType: IQueryableExtensions.OrderByDescending<T>(IQueryable<T>, LambdaExpression)
+  fullName: Innova.Data.IQueryableExtensions.OrderByDescending<T>(System.Linq.IQueryable<T>, System.Linq.Expressions.LambdaExpression)
+  type: Method
+  source:
+    id: OrderByDescending
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\IQueryableExtensions.cs
+    startLine: 21
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Sorts the elements of a sequence in descending order according to a specified key.
+  example: []
+  syntax:
+    content: public static IOrderedQueryable<T> OrderByDescending<T>(this IQueryable<T> query, LambdaExpression sortExpression)
+    parameters:
+    - id: query
+      type: System.Linq.IQueryable{{T}}
+      description: The sequence to sort.
+    - id: sortExpression
+      type: System.Linq.Expressions.LambdaExpression
+      description: A lambda expression representing the key to sort by.
+    typeParameters:
+    - id: T
+      description: The type of the elements of the sequence.
+    return:
+      type: System.Linq.IOrderedQueryable{{T}}
+      description: An <xref href="System.Linq.IOrderedQueryable%601" data-throw-if-not-resolved="false"></xref> whose elements are sorted in descending order.
+    content.vb: Public Shared Function OrderByDescending(Of T)(query As IQueryable(Of T), sortExpression As LambdaExpression) As IOrderedQueryable(Of T)
+  overload: Innova.Data.IQueryableExtensions.OrderByDescending*
+  nameWithType.vb: IQueryableExtensions.OrderByDescending(Of T)(IQueryable(Of T), LambdaExpression)
+  fullName.vb: Innova.Data.IQueryableExtensions.OrderByDescending(Of T)(System.Linq.IQueryable(Of T), System.Linq.Expressions.LambdaExpression)
+  name.vb: OrderByDescending(Of T)(IQueryable(Of T), LambdaExpression)
+- uid: Innova.Data.IQueryableExtensions.OrderBy``1(System.Linq.IQueryable{``0},System.Linq.Expressions.LambdaExpression)
+  commentId: M:Innova.Data.IQueryableExtensions.OrderBy``1(System.Linq.IQueryable{``0},System.Linq.Expressions.LambdaExpression)
+  id: OrderBy``1(System.Linq.IQueryable{``0},System.Linq.Expressions.LambdaExpression)
+  isExtensionMethod: true
+  parent: Innova.Data.IQueryableExtensions
+  langs:
+  - csharp
+  - vb
+  name: OrderBy<T>(IQueryable<T>, LambdaExpression)
+  nameWithType: IQueryableExtensions.OrderBy<T>(IQueryable<T>, LambdaExpression)
+  fullName: Innova.Data.IQueryableExtensions.OrderBy<T>(System.Linq.IQueryable<T>, System.Linq.Expressions.LambdaExpression)
+  type: Method
+  source:
+    id: OrderBy
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\IQueryableExtensions.cs
+    startLine: 44
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Sorts the elements of a sequence in ascending order according to a specified key.
+  example: []
+  syntax:
+    content: public static IOrderedQueryable<T> OrderBy<T>(this IQueryable<T> query, LambdaExpression sortExpression)
+    parameters:
+    - id: query
+      type: System.Linq.IQueryable{{T}}
+      description: The sequence to sort.
+    - id: sortExpression
+      type: System.Linq.Expressions.LambdaExpression
+      description: A lambda expression representing the key to sort by.
+    typeParameters:
+    - id: T
+      description: The type of the elements of the sequence.
+    return:
+      type: System.Linq.IOrderedQueryable{{T}}
+      description: An <xref href="System.Linq.IOrderedQueryable%601" data-throw-if-not-resolved="false"></xref> whose elements are sorted in ascending order.
+    content.vb: Public Shared Function OrderBy(Of T)(query As IQueryable(Of T), sortExpression As LambdaExpression) As IOrderedQueryable(Of T)
+  overload: Innova.Data.IQueryableExtensions.OrderBy*
+  nameWithType.vb: IQueryableExtensions.OrderBy(Of T)(IQueryable(Of T), LambdaExpression)
+  fullName.vb: Innova.Data.IQueryableExtensions.OrderBy(Of T)(System.Linq.IQueryable(Of T), System.Linq.Expressions.LambdaExpression)
+  name.vb: OrderBy(Of T)(IQueryable(Of T), LambdaExpression)
+references:
+- uid: System.Linq.IQueryable`1
+  commentId: T:System.Linq.IQueryable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data
+  commentId: N:Innova.Data
+  href: Innova.html
+  name: Innova.Data
+  nameWithType: Innova.Data
+  fullName: Innova.Data
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Linq.IOrderedQueryable`1
+  commentId: T:System.Linq.IOrderedQueryable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iorderedqueryable-1
+  name: IOrderedQueryable<T>
+  nameWithType: IOrderedQueryable<T>
+  fullName: System.Linq.IOrderedQueryable<T>
+  nameWithType.vb: IOrderedQueryable(Of T)
+  fullName.vb: System.Linq.IOrderedQueryable(Of T)
+  name.vb: IOrderedQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IOrderedQueryable`1
+    name: IOrderedQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iorderedqueryable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IOrderedQueryable`1
+    name: IOrderedQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iorderedqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.IQueryableExtensions.OrderByDescending*
+  commentId: Overload:Innova.Data.IQueryableExtensions.OrderByDescending
+  href: Innova.Data.IQueryableExtensions.OrderByDescending.html#Innova_Data_IQueryableExtensions_OrderByDescending__1_System_Linq_IQueryable___0__System_Linq_Expressions_LambdaExpression_
+  name: OrderByDescending
+  nameWithType: IQueryableExtensions.OrderByDescending
+  fullName: Innova.Data.IQueryableExtensions.OrderByDescending
+- uid: System.Linq.IQueryable{{T}}
+  commentId: T:System.Linq.IQueryable{``0}
+  parent: System.Linq
+  definition: System.Linq.IQueryable`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Linq.Expressions.LambdaExpression
+  commentId: T:System.Linq.Expressions.LambdaExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.lambdaexpression
+  name: LambdaExpression
+  nameWithType: LambdaExpression
+  fullName: System.Linq.Expressions.LambdaExpression
+- uid: System.Linq.IOrderedQueryable{{T}}
+  commentId: T:System.Linq.IOrderedQueryable{``0}
+  parent: System.Linq
+  definition: System.Linq.IOrderedQueryable`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iorderedqueryable-1
+  name: IOrderedQueryable<T>
+  nameWithType: IOrderedQueryable<T>
+  fullName: System.Linq.IOrderedQueryable<T>
+  nameWithType.vb: IOrderedQueryable(Of T)
+  fullName.vb: System.Linq.IOrderedQueryable(Of T)
+  name.vb: IOrderedQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IOrderedQueryable`1
+    name: IOrderedQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iorderedqueryable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IOrderedQueryable`1
+    name: IOrderedQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iorderedqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: Innova.Data.IQueryableExtensions.OrderBy*
+  commentId: Overload:Innova.Data.IQueryableExtensions.OrderBy
+  href: Innova.Data.IQueryableExtensions.OrderBy.html#Innova_Data_IQueryableExtensions_OrderBy__1_System_Linq_IQueryable___0__System_Linq_Expressions_LambdaExpression_
+  name: OrderBy
+  nameWithType: IQueryableExtensions.OrderBy
+  fullName: Innova.Data.IQueryableExtensions.OrderBy
+memberLayout: SeparatePages

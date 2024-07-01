@@ -4,7 +4,7 @@
 
 **Task**: Create a validation rule on the property "BirthDay". "BirthDay" should be more than 18 years ago from today's date.
 
-**Execution**: 
+**Implementation**: 
 
 1. Select "Validation"
 2. Select "Employees"

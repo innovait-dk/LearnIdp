@@ -1,0 +1,2808 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.File.HashStream
+  commentId: T:Innova.Data.File.HashStream
+  id: HashStream
+  parent: Innova.Data.File
+  children:
+  - Innova.Data.File.HashStream.#ctor(System.IO.Stream,System.Security.Cryptography.HashAlgorithm)
+  - Innova.Data.File.HashStream.CanRead
+  - Innova.Data.File.HashStream.CanSeek
+  - Innova.Data.File.HashStream.CanWrite
+  - Innova.Data.File.HashStream.Flush
+  - Innova.Data.File.HashStream.Hash
+  - Innova.Data.File.HashStream.Hash(System.Byte[])
+  - Innova.Data.File.HashStream.Length
+  - Innova.Data.File.HashStream.Position
+  - Innova.Data.File.HashStream.Read(System.Byte[],System.Int32,System.Int32)
+  - Innova.Data.File.HashStream.Seek(System.Int64,System.IO.SeekOrigin)
+  - Innova.Data.File.HashStream.SetLength(System.Int64)
+  - Innova.Data.File.HashStream.Write(System.Byte[],System.Int32,System.Int32)
+  - Innova.Data.File.HashStream.hash
+  - Innova.Data.File.HashStream.target
+  langs:
+  - csharp
+  - vb
+  name: HashStream
+  nameWithType: HashStream
+  fullName: Innova.Data.File.HashStream
+  type: Class
+  source:
+    id: HashStream
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 30
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  summary: >-
+    Passthrough stream which calculates a hash on all the bytes read or written.
+
+    This is a useful alternative to CryptoStream if you don't want the data to be
+
+    encrypted, but still want to calculate a hash on the data in a transparent way.
+  example: []
+  syntax:
+    content: 'public class HashStream : Stream, IDisposable'
+    content.vb: Public Class HashStream Inherits Stream Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  - System.IO.Stream
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.IO.Stream.Null
+  - System.IO.Stream.CopyToAsync(System.IO.Stream)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  - System.IO.Stream.CopyTo(System.IO.Stream)
+  - System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  - System.IO.Stream.Close
+  - System.IO.Stream.Dispose
+  - System.IO.Stream.Dispose(System.Boolean)
+  - System.IO.Stream.FlushAsync
+  - System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  - System.IO.Stream.CreateWaitHandle
+  - System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  - System.IO.Stream.EndRead(System.IAsyncResult)
+  - System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  - System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  - System.IO.Stream.EndWrite(System.IAsyncResult)
+  - System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  - System.IO.Stream.ReadByte
+  - System.IO.Stream.WriteByte(System.Byte)
+  - System.IO.Stream.Synchronized(System.IO.Stream)
+  - System.IO.Stream.ObjectInvariant
+  - System.IO.Stream.CanTimeout
+  - System.IO.Stream.ReadTimeout
+  - System.IO.Stream.WriteTimeout
+  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.InitializeLifetimeService
+  - System.MarshalByRefObject.CreateObjRef(System.Type)
+  extensionMethods:
+  - System.IO.Stream.Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Nullable{System.Int64},System.Int32)
+  - System.IO.Stream.Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)
+  - System.IO.Stream.Innova.Data.File.FileHelper.GetHash(System.String)
+  - System.IO.Stream.Innova.Data.File.FileHelper.GetHashAsync(System.String,System.Int32)
+- uid: Innova.Data.File.HashStream.target
+  commentId: F:Innova.Data.File.HashStream.target
+  id: target
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: target
+  nameWithType: HashStream.target
+  fullName: Innova.Data.File.HashStream.target
+  type: Field
+  source:
+    id: target
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 33
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  syntax:
+    content: protected Stream target
+    return:
+      type: System.IO.Stream
+    content.vb: Protected target As Stream
+- uid: Innova.Data.File.HashStream.hash
+  commentId: F:Innova.Data.File.HashStream.hash
+  id: hash
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: hash
+  nameWithType: HashStream.hash
+  fullName: Innova.Data.File.HashStream.hash
+  type: Field
+  source:
+    id: hash
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 34
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  syntax:
+    content: protected HashAlgorithm hash
+    return:
+      type: System.Security.Cryptography.HashAlgorithm
+    content.vb: Protected hash As HashAlgorithm
+- uid: Innova.Data.File.HashStream.#ctor(System.IO.Stream,System.Security.Cryptography.HashAlgorithm)
+  commentId: M:Innova.Data.File.HashStream.#ctor(System.IO.Stream,System.Security.Cryptography.HashAlgorithm)
+  id: '#ctor(System.IO.Stream,System.Security.Cryptography.HashAlgorithm)'
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: HashStream(Stream, HashAlgorithm)
+  nameWithType: HashStream.HashStream(Stream, HashAlgorithm)
+  fullName: Innova.Data.File.HashStream.HashStream(System.IO.Stream, System.Security.Cryptography.HashAlgorithm)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 41
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  summary: Standard constructor
+  example: []
+  syntax:
+    content: public HashStream(Stream targetStream, HashAlgorithm hashAlgorithm)
+    parameters:
+    - id: targetStream
+      type: System.IO.Stream
+      description: The stream to pass data to, or read data from
+    - id: hashAlgorithm
+      type: System.Security.Cryptography.HashAlgorithm
+      description: The hash algorithm to use, e.g. SHA256Managed
+    content.vb: Public Sub New(targetStream As Stream, hashAlgorithm As HashAlgorithm)
+  overload: Innova.Data.File.HashStream.#ctor*
+  nameWithType.vb: HashStream.New(Stream, HashAlgorithm)
+  fullName.vb: Innova.Data.File.HashStream.New(System.IO.Stream, System.Security.Cryptography.HashAlgorithm)
+  name.vb: New(Stream, HashAlgorithm)
+- uid: Innova.Data.File.HashStream.CanRead
+  commentId: P:Innova.Data.File.HashStream.CanRead
+  id: CanRead
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: CanRead
+  nameWithType: HashStream.CanRead
+  fullName: Innova.Data.File.HashStream.CanRead
+  type: Property
+  source:
+    id: CanRead
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 48
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  example: []
+  syntax:
+    content: public override bool CanRead { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property CanRead As Boolean
+  overridden: System.IO.Stream.CanRead
+  overload: Innova.Data.File.HashStream.CanRead*
+- uid: Innova.Data.File.HashStream.CanSeek
+  commentId: P:Innova.Data.File.HashStream.CanSeek
+  id: CanSeek
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: CanSeek
+  nameWithType: HashStream.CanSeek
+  fullName: Innova.Data.File.HashStream.CanSeek
+  type: Property
+  source:
+    id: CanSeek
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 54
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  example: []
+  syntax:
+    content: public override bool CanSeek { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property CanSeek As Boolean
+  overridden: System.IO.Stream.CanSeek
+  overload: Innova.Data.File.HashStream.CanSeek*
+- uid: Innova.Data.File.HashStream.CanWrite
+  commentId: P:Innova.Data.File.HashStream.CanWrite
+  id: CanWrite
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: CanWrite
+  nameWithType: HashStream.CanWrite
+  fullName: Innova.Data.File.HashStream.CanWrite
+  type: Property
+  source:
+    id: CanWrite
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 60
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  example: []
+  syntax:
+    content: public override bool CanWrite { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property CanWrite As Boolean
+  overridden: System.IO.Stream.CanWrite
+  overload: Innova.Data.File.HashStream.CanWrite*
+- uid: Innova.Data.File.HashStream.Length
+  commentId: P:Innova.Data.File.HashStream.Length
+  id: Length
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: HashStream.Length
+  fullName: Innova.Data.File.HashStream.Length
+  type: Property
+  source:
+    id: Length
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 66
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  example: []
+  syntax:
+    content: public override long Length { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Overrides ReadOnly Property Length As Long
+  overridden: System.IO.Stream.Length
+  overload: Innova.Data.File.HashStream.Length*
+- uid: Innova.Data.File.HashStream.Position
+  commentId: P:Innova.Data.File.HashStream.Position
+  id: Position
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: HashStream.Position
+  fullName: Innova.Data.File.HashStream.Position
+  type: Property
+  source:
+    id: Position
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 72
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  example: []
+  syntax:
+    content: public override long Position { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Overrides Property Position As Long
+  overridden: System.IO.Stream.Position
+  overload: Innova.Data.File.HashStream.Position*
+- uid: Innova.Data.File.HashStream.Flush
+  commentId: M:Innova.Data.File.HashStream.Flush
+  id: Flush
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: HashStream.Flush()
+  fullName: Innova.Data.File.HashStream.Flush()
+  type: Method
+  source:
+    id: Flush
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 79
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  example: []
+  syntax:
+    content: public override void Flush()
+    content.vb: Public Overrides Sub Flush()
+  overridden: System.IO.Stream.Flush
+  overload: Innova.Data.File.HashStream.Flush*
+- uid: Innova.Data.File.HashStream.Read(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Innova.Data.File.HashStream.Read(System.Byte[],System.Int32,System.Int32)
+  id: Read(System.Byte[],System.Int32,System.Int32)
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: Read(byte[], int, int)
+  nameWithType: HashStream.Read(byte[], int, int)
+  fullName: Innova.Data.File.HashStream.Read(byte[], int, int)
+  type: Method
+  source:
+    id: Read
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 85
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  example: []
+  syntax:
+    content: public override int Read(byte[] buffer, int offset, int count)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function Read(buffer As Byte(), offset As Integer, count As Integer) As Integer
+  overridden: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+  overload: Innova.Data.File.HashStream.Read*
+  nameWithType.vb: HashStream.Read(Byte(), Integer, Integer)
+  fullName.vb: Innova.Data.File.HashStream.Read(Byte(), Integer, Integer)
+  name.vb: Read(Byte(), Integer, Integer)
+- uid: Innova.Data.File.HashStream.Seek(System.Int64,System.IO.SeekOrigin)
+  commentId: M:Innova.Data.File.HashStream.Seek(System.Int64,System.IO.SeekOrigin)
+  id: Seek(System.Int64,System.IO.SeekOrigin)
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: Seek(long, SeekOrigin)
+  nameWithType: HashStream.Seek(long, SeekOrigin)
+  fullName: Innova.Data.File.HashStream.Seek(long, System.IO.SeekOrigin)
+  type: Method
+  source:
+    id: Seek
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 93
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  example: []
+  syntax:
+    content: public override long Seek(long offset, SeekOrigin origin)
+    parameters:
+    - id: offset
+      type: System.Int64
+    - id: origin
+      type: System.IO.SeekOrigin
+    return:
+      type: System.Int64
+    content.vb: Public Overrides Function Seek(offset As Long, origin As SeekOrigin) As Long
+  overridden: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+  overload: Innova.Data.File.HashStream.Seek*
+  nameWithType.vb: HashStream.Seek(Long, SeekOrigin)
+  fullName.vb: Innova.Data.File.HashStream.Seek(Long, System.IO.SeekOrigin)
+  name.vb: Seek(Long, SeekOrigin)
+- uid: Innova.Data.File.HashStream.SetLength(System.Int64)
+  commentId: M:Innova.Data.File.HashStream.SetLength(System.Int64)
+  id: SetLength(System.Int64)
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: SetLength(long)
+  nameWithType: HashStream.SetLength(long)
+  fullName: Innova.Data.File.HashStream.SetLength(long)
+  type: Method
+  source:
+    id: SetLength
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 99
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  example: []
+  syntax:
+    content: public override void SetLength(long value)
+    parameters:
+    - id: value
+      type: System.Int64
+    content.vb: Public Overrides Sub SetLength(value As Long)
+  overridden: System.IO.Stream.SetLength(System.Int64)
+  overload: Innova.Data.File.HashStream.SetLength*
+  nameWithType.vb: HashStream.SetLength(Long)
+  fullName.vb: Innova.Data.File.HashStream.SetLength(Long)
+  name.vb: SetLength(Long)
+- uid: Innova.Data.File.HashStream.Write(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Innova.Data.File.HashStream.Write(System.Byte[],System.Int32,System.Int32)
+  id: Write(System.Byte[],System.Int32,System.Int32)
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: Write(byte[], int, int)
+  nameWithType: HashStream.Write(byte[], int, int)
+  fullName: Innova.Data.File.HashStream.Write(byte[], int, int)
+  type: Method
+  source:
+    id: Write
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 105
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  example: []
+  syntax:
+    content: public override void Write(byte[] buffer, int offset, int count)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    content.vb: Public Overrides Sub Write(buffer As Byte(), offset As Integer, count As Integer)
+  overridden: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+  overload: Innova.Data.File.HashStream.Write*
+  nameWithType.vb: HashStream.Write(Byte(), Integer, Integer)
+  fullName.vb: Innova.Data.File.HashStream.Write(Byte(), Integer, Integer)
+  name.vb: Write(Byte(), Integer, Integer)
+- uid: Innova.Data.File.HashStream.Hash(System.Byte[])
+  commentId: M:Innova.Data.File.HashStream.Hash(System.Byte[])
+  id: Hash(System.Byte[])
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: Hash(byte[])
+  nameWithType: HashStream.Hash(byte[])
+  fullName: Innova.Data.File.HashStream.Hash(byte[])
+  type: Method
+  source:
+    id: Hash
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 118
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  summary: >-
+    Calculate final hash for the content which has been written or read to
+
+    the target stream so far.
+  example: []
+  syntax:
+    content: public byte[] Hash(byte[] passphraseBytes)
+    parameters:
+    - id: passphraseBytes
+      type: System.Byte[]
+      description: >-
+        Additional secret bytes not written to the stream
+            which should be used to calculate the hash.
+    return:
+      type: System.Byte[]
+      description: The hash value
+    content.vb: Public Function Hash(passphraseBytes As Byte()) As Byte()
+  overload: Innova.Data.File.HashStream.Hash*
+  nameWithType.vb: HashStream.Hash(Byte())
+  fullName.vb: Innova.Data.File.HashStream.Hash(Byte())
+  name.vb: Hash(Byte())
+- uid: Innova.Data.File.HashStream.Hash
+  commentId: M:Innova.Data.File.HashStream.Hash
+  id: Hash
+  parent: Innova.Data.File.HashStream
+  langs:
+  - csharp
+  - vb
+  name: Hash()
+  nameWithType: HashStream.Hash()
+  fullName: Innova.Data.File.HashStream.Hash()
+  type: Method
+  source:
+    id: Hash
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\File\HashStream.cs
+    startLine: 133
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.File
+  summary: >-
+    Calculate final hash for the content which has been written or read to
+
+    the target stream so far.
+  remarks: >-
+    Consider using the overloaded method which takes a passphrase if you want
+
+    an additional factor other than just the stream data.
+  example: []
+  syntax:
+    content: public byte[] Hash()
+    return:
+      type: System.Byte[]
+      description: The hash value
+    content.vb: Public Function Hash() As Byte()
+  overload: Innova.Data.File.HashStream.Hash*
+references:
+- uid: Innova.Data.File
+  commentId: N:Innova.Data.File
+  href: Innova.html
+  name: Innova.Data.File
+  nameWithType: Innova.Data.File
+  fullName: Innova.Data.File
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.File
+    name: File
+    href: Innova.Data.File.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.File
+    name: File
+    href: Innova.Data.File.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject
+  name: MarshalByRefObject
+  nameWithType: MarshalByRefObject
+  fullName: System.MarshalByRefObject
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IO.Stream.Null
+  commentId: F:System.IO.Stream.Null
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.null
+  name: "Null"
+  nameWithType: Stream.Null
+  fullName: System.IO.Stream.Null
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+  commentId: M:System.IO.Stream.CopyToAsync(System.IO.Stream)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.copytoasync#system-io-stream-copytoasync(system-io-stream)
+  name: CopyToAsync(Stream)
+  nameWithType: Stream.CopyToAsync(Stream)
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+    name: CopyToAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.copytoasync#system-io-stream-copytoasync(system-io-stream)
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+    name: CopyToAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.copytoasync#system-io-stream-copytoasync(system-io-stream)
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  commentId: M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.copytoasync#system-io-stream-copytoasync(system-io-stream-system-int32)
+  name: CopyToAsync(Stream, int)
+  nameWithType: Stream.CopyToAsync(Stream, int)
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, int)
+  nameWithType.vb: Stream.CopyToAsync(Stream, Integer)
+  fullName.vb: System.IO.Stream.CopyToAsync(System.IO.Stream, Integer)
+  name.vb: CopyToAsync(Stream, Integer)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+    name: CopyToAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.copytoasync#system-io-stream-copytoasync(system-io-stream-system-int32)
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+    name: CopyToAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.copytoasync#system-io-stream-copytoasync(system-io-stream-system-int32)
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  commentId: M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.copytoasync#system-io-stream-copytoasync(system-io-stream-system-int32-system-threading-cancellationtoken)
+  name: CopyToAsync(Stream, int, CancellationToken)
+  nameWithType: Stream.CopyToAsync(Stream, int, CancellationToken)
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, int, System.Threading.CancellationToken)
+  nameWithType.vb: Stream.CopyToAsync(Stream, Integer, CancellationToken)
+  fullName.vb: System.IO.Stream.CopyToAsync(System.IO.Stream, Integer, System.Threading.CancellationToken)
+  name.vb: CopyToAsync(Stream, Integer, CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+    name: CopyToAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.copytoasync#system-io-stream-copytoasync(system-io-stream-system-int32-system-threading-cancellationtoken)
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+    name: CopyToAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.copytoasync#system-io-stream-copytoasync(system-io-stream-system-int32-system-threading-cancellationtoken)
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.Stream.CopyTo(System.IO.Stream)
+  commentId: M:System.IO.Stream.CopyTo(System.IO.Stream)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.copyto#system-io-stream-copyto(system-io-stream)
+  name: CopyTo(Stream)
+  nameWithType: Stream.CopyTo(Stream)
+  fullName: System.IO.Stream.CopyTo(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.copyto#system-io-stream-copyto(system-io-stream)
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.copyto#system-io-stream-copyto(system-io-stream)
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  commentId: M:System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.copyto#system-io-stream-copyto(system-io-stream-system-int32)
+  name: CopyTo(Stream, int)
+  nameWithType: Stream.CopyTo(Stream, int)
+  fullName: System.IO.Stream.CopyTo(System.IO.Stream, int)
+  nameWithType.vb: Stream.CopyTo(Stream, Integer)
+  fullName.vb: System.IO.Stream.CopyTo(System.IO.Stream, Integer)
+  name.vb: CopyTo(Stream, Integer)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.copyto#system-io-stream-copyto(system-io-stream-system-int32)
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.copyto#system-io-stream-copyto(system-io-stream-system-int32)
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.IO.Stream.Close
+  commentId: M:System.IO.Stream.Close
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.close
+  name: Close()
+  nameWithType: Stream.Close()
+  fullName: System.IO.Stream.Close()
+  spec.csharp:
+  - uid: System.IO.Stream.Close
+    name: Close
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.Close
+    name: Close
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.close
+  - name: (
+  - name: )
+- uid: System.IO.Stream.Dispose
+  commentId: M:System.IO.Stream.Dispose
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.dispose#system-io-stream-dispose
+  name: Dispose()
+  nameWithType: Stream.Dispose()
+  fullName: System.IO.Stream.Dispose()
+  spec.csharp:
+  - uid: System.IO.Stream.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.dispose#system-io-stream-dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.dispose#system-io-stream-dispose
+  - name: (
+  - name: )
+- uid: System.IO.Stream.Dispose(System.Boolean)
+  commentId: M:System.IO.Stream.Dispose(System.Boolean)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.dispose#system-io-stream-dispose(system-boolean)
+  name: Dispose(bool)
+  nameWithType: Stream.Dispose(bool)
+  fullName: System.IO.Stream.Dispose(bool)
+  nameWithType.vb: Stream.Dispose(Boolean)
+  fullName.vb: System.IO.Stream.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: System.IO.Stream.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.dispose#system-io-stream-dispose(system-boolean)
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.dispose#system-io-stream-dispose(system-boolean)
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.IO.Stream.FlushAsync
+  commentId: M:System.IO.Stream.FlushAsync
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.flushasync#system-io-stream-flushasync
+  name: FlushAsync()
+  nameWithType: Stream.FlushAsync()
+  fullName: System.IO.Stream.FlushAsync()
+  spec.csharp:
+  - uid: System.IO.Stream.FlushAsync
+    name: FlushAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.flushasync#system-io-stream-flushasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.FlushAsync
+    name: FlushAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.flushasync#system-io-stream-flushasync
+  - name: (
+  - name: )
+- uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  commentId: M:System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.flushasync#system-io-stream-flushasync(system-threading-cancellationtoken)
+  name: FlushAsync(CancellationToken)
+  nameWithType: Stream.FlushAsync(CancellationToken)
+  fullName: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+    name: FlushAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.flushasync#system-io-stream-flushasync(system-threading-cancellationtoken)
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+    name: FlushAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.flushasync#system-io-stream-flushasync(system-threading-cancellationtoken)
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.Stream.CreateWaitHandle
+  commentId: M:System.IO.Stream.CreateWaitHandle
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.createwaithandle
+  name: CreateWaitHandle()
+  nameWithType: Stream.CreateWaitHandle()
+  fullName: System.IO.Stream.CreateWaitHandle()
+  spec.csharp:
+  - uid: System.IO.Stream.CreateWaitHandle
+    name: CreateWaitHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.createwaithandle
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.CreateWaitHandle
+    name: CreateWaitHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.createwaithandle
+  - name: (
+  - name: )
+- uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  commentId: M:System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.beginread
+  name: BeginRead(byte[], int, int, AsyncCallback, object)
+  nameWithType: Stream.BeginRead(byte[], int, int, AsyncCallback, object)
+  fullName: System.IO.Stream.BeginRead(byte[], int, int, System.AsyncCallback, object)
+  nameWithType.vb: Stream.BeginRead(Byte(), Integer, Integer, AsyncCallback, Object)
+  fullName.vb: System.IO.Stream.BeginRead(Byte(), Integer, Integer, System.AsyncCallback, Object)
+  name.vb: BeginRead(Byte(), Integer, Integer, AsyncCallback, Object)
+  spec.csharp:
+  - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginRead
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.beginread
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginRead
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.beginread
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IO.Stream.EndRead(System.IAsyncResult)
+  commentId: M:System.IO.Stream.EndRead(System.IAsyncResult)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.endread
+  name: EndRead(IAsyncResult)
+  nameWithType: Stream.EndRead(IAsyncResult)
+  fullName: System.IO.Stream.EndRead(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.IO.Stream.EndRead(System.IAsyncResult)
+    name: EndRead
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.endread
+  - name: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.EndRead(System.IAsyncResult)
+    name: EndRead
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.endread
+  - name: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  - name: )
+- uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  commentId: M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.readasync#system-io-stream-readasync(system-byte()-system-int32-system-int32)
+  name: ReadAsync(byte[], int, int)
+  nameWithType: Stream.ReadAsync(byte[], int, int)
+  fullName: System.IO.Stream.ReadAsync(byte[], int, int)
+  nameWithType.vb: Stream.ReadAsync(Byte(), Integer, Integer)
+  fullName.vb: System.IO.Stream.ReadAsync(Byte(), Integer, Integer)
+  name.vb: ReadAsync(Byte(), Integer, Integer)
+  spec.csharp:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+    name: ReadAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.readasync#system-io-stream-readasync(system-byte()-system-int32-system-int32)
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+    name: ReadAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.readasync#system-io-stream-readasync(system-byte()-system-int32-system-int32)
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  commentId: M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.readasync#system-io-stream-readasync(system-byte()-system-int32-system-int32-system-threading-cancellationtoken)
+  name: ReadAsync(byte[], int, int, CancellationToken)
+  nameWithType: Stream.ReadAsync(byte[], int, int, CancellationToken)
+  fullName: System.IO.Stream.ReadAsync(byte[], int, int, System.Threading.CancellationToken)
+  nameWithType.vb: Stream.ReadAsync(Byte(), Integer, Integer, CancellationToken)
+  fullName.vb: System.IO.Stream.ReadAsync(Byte(), Integer, Integer, System.Threading.CancellationToken)
+  name.vb: ReadAsync(Byte(), Integer, Integer, CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: ReadAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.readasync#system-io-stream-readasync(system-byte()-system-int32-system-int32-system-threading-cancellationtoken)
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: ReadAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.readasync#system-io-stream-readasync(system-byte()-system-int32-system-int32-system-threading-cancellationtoken)
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  commentId: M:System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.beginwrite
+  name: BeginWrite(byte[], int, int, AsyncCallback, object)
+  nameWithType: Stream.BeginWrite(byte[], int, int, AsyncCallback, object)
+  fullName: System.IO.Stream.BeginWrite(byte[], int, int, System.AsyncCallback, object)
+  nameWithType.vb: Stream.BeginWrite(Byte(), Integer, Integer, AsyncCallback, Object)
+  fullName.vb: System.IO.Stream.BeginWrite(Byte(), Integer, Integer, System.AsyncCallback, Object)
+  name.vb: BeginWrite(Byte(), Integer, Integer, AsyncCallback, Object)
+  spec.csharp:
+  - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginWrite
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.beginwrite
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginWrite
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.beginwrite
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+  commentId: M:System.IO.Stream.EndWrite(System.IAsyncResult)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.endwrite
+  name: EndWrite(IAsyncResult)
+  nameWithType: Stream.EndWrite(IAsyncResult)
+  fullName: System.IO.Stream.EndWrite(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+    name: EndWrite
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.endwrite
+  - name: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+    name: EndWrite
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.endwrite
+  - name: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  - name: )
+- uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  commentId: M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.writeasync#system-io-stream-writeasync(system-byte()-system-int32-system-int32)
+  name: WriteAsync(byte[], int, int)
+  nameWithType: Stream.WriteAsync(byte[], int, int)
+  fullName: System.IO.Stream.WriteAsync(byte[], int, int)
+  nameWithType.vb: Stream.WriteAsync(Byte(), Integer, Integer)
+  fullName.vb: System.IO.Stream.WriteAsync(Byte(), Integer, Integer)
+  name.vb: WriteAsync(Byte(), Integer, Integer)
+  spec.csharp:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+    name: WriteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.writeasync#system-io-stream-writeasync(system-byte()-system-int32-system-int32)
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+    name: WriteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.writeasync#system-io-stream-writeasync(system-byte()-system-int32-system-int32)
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  commentId: M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.writeasync#system-io-stream-writeasync(system-byte()-system-int32-system-int32-system-threading-cancellationtoken)
+  name: WriteAsync(byte[], int, int, CancellationToken)
+  nameWithType: Stream.WriteAsync(byte[], int, int, CancellationToken)
+  fullName: System.IO.Stream.WriteAsync(byte[], int, int, System.Threading.CancellationToken)
+  nameWithType.vb: Stream.WriteAsync(Byte(), Integer, Integer, CancellationToken)
+  fullName.vb: System.IO.Stream.WriteAsync(Byte(), Integer, Integer, System.Threading.CancellationToken)
+  name.vb: WriteAsync(Byte(), Integer, Integer, CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: WriteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.writeasync#system-io-stream-writeasync(system-byte()-system-int32-system-int32-system-threading-cancellationtoken)
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: WriteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.writeasync#system-io-stream-writeasync(system-byte()-system-int32-system-int32-system-threading-cancellationtoken)
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.Stream.ReadByte
+  commentId: M:System.IO.Stream.ReadByte
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.readbyte
+  name: ReadByte()
+  nameWithType: Stream.ReadByte()
+  fullName: System.IO.Stream.ReadByte()
+  spec.csharp:
+  - uid: System.IO.Stream.ReadByte
+    name: ReadByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.readbyte
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadByte
+    name: ReadByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.readbyte
+  - name: (
+  - name: )
+- uid: System.IO.Stream.WriteByte(System.Byte)
+  commentId: M:System.IO.Stream.WriteByte(System.Byte)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.writebyte
+  name: WriteByte(byte)
+  nameWithType: Stream.WriteByte(byte)
+  fullName: System.IO.Stream.WriteByte(byte)
+  nameWithType.vb: Stream.WriteByte(Byte)
+  fullName.vb: System.IO.Stream.WriteByte(Byte)
+  name.vb: WriteByte(Byte)
+  spec.csharp:
+  - uid: System.IO.Stream.WriteByte(System.Byte)
+    name: WriteByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.writebyte
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.WriteByte(System.Byte)
+    name: WriteByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.writebyte
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.IO.Stream.Synchronized(System.IO.Stream)
+  commentId: M:System.IO.Stream.Synchronized(System.IO.Stream)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.synchronized
+  name: Synchronized(Stream)
+  nameWithType: Stream.Synchronized(Stream)
+  fullName: System.IO.Stream.Synchronized(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.Stream.Synchronized(System.IO.Stream)
+    name: Synchronized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.synchronized
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.Synchronized(System.IO.Stream)
+    name: Synchronized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.synchronized
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: System.IO.Stream.ObjectInvariant
+  commentId: M:System.IO.Stream.ObjectInvariant
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.objectinvariant
+  name: ObjectInvariant()
+  nameWithType: Stream.ObjectInvariant()
+  fullName: System.IO.Stream.ObjectInvariant()
+  spec.csharp:
+  - uid: System.IO.Stream.ObjectInvariant
+    name: ObjectInvariant
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.objectinvariant
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.ObjectInvariant
+    name: ObjectInvariant
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.objectinvariant
+  - name: (
+  - name: )
+- uid: System.IO.Stream.CanTimeout
+  commentId: P:System.IO.Stream.CanTimeout
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.cantimeout
+  name: CanTimeout
+  nameWithType: Stream.CanTimeout
+  fullName: System.IO.Stream.CanTimeout
+- uid: System.IO.Stream.ReadTimeout
+  commentId: P:System.IO.Stream.ReadTimeout
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.readtimeout
+  name: ReadTimeout
+  nameWithType: Stream.ReadTimeout
+  fullName: System.IO.Stream.ReadTimeout
+- uid: System.IO.Stream.WriteTimeout
+  commentId: P:System.IO.Stream.WriteTimeout
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.writetimeout
+  name: WriteTimeout
+  nameWithType: Stream.WriteTimeout
+  fullName: System.IO.Stream.WriteTimeout
+- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  commentId: M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  name: MemberwiseClone(bool)
+  nameWithType: MarshalByRefObject.MemberwiseClone(bool)
+  fullName: System.MarshalByRefObject.MemberwiseClone(bool)
+  nameWithType.vb: MarshalByRefObject.MemberwiseClone(Boolean)
+  fullName.vb: System.MarshalByRefObject.MemberwiseClone(Boolean)
+  name.vb: MemberwiseClone(Boolean)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.MarshalByRefObject.GetLifetimeService
+  commentId: M:System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  name: GetLifetimeService()
+  nameWithType: MarshalByRefObject.GetLifetimeService()
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.InitializeLifetimeService
+  commentId: M:System.MarshalByRefObject.InitializeLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  name: InitializeLifetimeService()
+  nameWithType: MarshalByRefObject.InitializeLifetimeService()
+  fullName: System.MarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+  commentId: M:System.MarshalByRefObject.CreateObjRef(System.Type)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref
+  name: CreateObjRef(Type)
+  nameWithType: MarshalByRefObject.CreateObjRef(Type)
+  fullName: System.MarshalByRefObject.CreateObjRef(System.Type)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.IO.Stream.Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Nullable{System.Int64},System.Int32)
+  commentId: M:Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Nullable{System.Int64},System.Int32)
+  parent: Innova.Data.ExtensionMethods
+  definition: Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Nullable{System.Int64},System.Int32)
+  href: Innova.Data.ExtensionMethods.CopyToWithProgress.html#Innova_Data_ExtensionMethods_CopyToWithProgress_System_IO_Stream_System_IO_Stream_System_IProgress_Innova_Data_ProgressInfo__System_Nullable_System_Int64__System_Int32_
+  name: CopyToWithProgress(Stream, Stream, IProgress<ProgressInfo>, long?, int)
+  nameWithType: ExtensionMethods.CopyToWithProgress(Stream, Stream, IProgress<ProgressInfo>, long?, int)
+  fullName: Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream, System.IO.Stream, System.IProgress<Innova.Data.ProgressInfo>, long?, int)
+  nameWithType.vb: ExtensionMethods.CopyToWithProgress(Stream, Stream, IProgress(Of ProgressInfo), Long?, Integer)
+  fullName.vb: Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream, System.IO.Stream, System.IProgress(Of Innova.Data.ProgressInfo), Long?, Integer)
+  name.vb: CopyToWithProgress(Stream, Stream, IProgress(Of ProgressInfo), Long?, Integer)
+  spec.csharp:
+  - uid: Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Nullable{System.Int64},System.Int32)
+    name: CopyToWithProgress
+    href: Innova.Data.ExtensionMethods.CopyToWithProgress.html#Innova_Data_ExtensionMethods_CopyToWithProgress_System_IO_Stream_System_IO_Stream_System_IProgress_Innova_Data_ProgressInfo__System_Nullable_System_Int64__System_Int32_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: Innova.Data.ProgressInfo
+    name: ProgressInfo
+    href: Innova.Data.ProgressInfo.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Nullable{System.Int64},System.Int32)
+    name: CopyToWithProgress
+    href: Innova.Data.ExtensionMethods.CopyToWithProgress.html#Innova_Data_ExtensionMethods_CopyToWithProgress_System_IO_Stream_System_IO_Stream_System_IProgress_Innova_Data_ProgressInfo__System_Nullable_System_Int64__System_Int32_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.ProgressInfo
+    name: ProgressInfo
+    href: Innova.Data.ProgressInfo.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.IO.Stream.Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)
+  commentId: M:Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)
+  parent: Innova.Data.ExtensionMethods
+  definition: Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)
+  href: Innova.Data.ExtensionMethods.CopyToWithProgressAsync.html#Innova_Data_ExtensionMethods_CopyToWithProgressAsync_System_IO_Stream_System_IO_Stream_System_IProgress_Innova_Data_ProgressInfo__System_Int32_System_Nullable_System_Int64__System_Threading_CancellationToken_
+  name: CopyToWithProgressAsync(Stream, Stream, IProgress<ProgressInfo>, int, long?, CancellationToken)
+  nameWithType: ExtensionMethods.CopyToWithProgressAsync(Stream, Stream, IProgress<ProgressInfo>, int, long?, CancellationToken)
+  fullName: Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream, System.IO.Stream, System.IProgress<Innova.Data.ProgressInfo>, int, long?, System.Threading.CancellationToken)
+  nameWithType.vb: ExtensionMethods.CopyToWithProgressAsync(Stream, Stream, IProgress(Of ProgressInfo), Integer, Long?, CancellationToken)
+  fullName.vb: Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream, System.IO.Stream, System.IProgress(Of Innova.Data.ProgressInfo), Integer, Long?, System.Threading.CancellationToken)
+  name.vb: CopyToWithProgressAsync(Stream, Stream, IProgress(Of ProgressInfo), Integer, Long?, CancellationToken)
+  spec.csharp:
+  - uid: Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)
+    name: CopyToWithProgressAsync
+    href: Innova.Data.ExtensionMethods.CopyToWithProgressAsync.html#Innova_Data_ExtensionMethods_CopyToWithProgressAsync_System_IO_Stream_System_IO_Stream_System_IProgress_Innova_Data_ProgressInfo__System_Int32_System_Nullable_System_Int64__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: Innova.Data.ProgressInfo
+    name: ProgressInfo
+    href: Innova.Data.ProgressInfo.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)
+    name: CopyToWithProgressAsync
+    href: Innova.Data.ExtensionMethods.CopyToWithProgressAsync.html#Innova_Data_ExtensionMethods_CopyToWithProgressAsync_System_IO_Stream_System_IO_Stream_System_IProgress_Innova_Data_ProgressInfo__System_Int32_System_Nullable_System_Int64__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.ProgressInfo
+    name: ProgressInfo
+    href: Innova.Data.ProgressInfo.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.Stream.Innova.Data.File.FileHelper.GetHash(System.String)
+  commentId: M:Innova.Data.File.FileHelper.GetHash(System.IO.Stream,System.String)
+  parent: Innova.Data.File.FileHelper
+  definition: Innova.Data.File.FileHelper.GetHash(System.IO.Stream,System.String)
+  href: Innova.Data.File.FileHelper.GetHash.html#Innova_Data_File_FileHelper_GetHash_System_IO_Stream_System_String_
+  name: GetHash(Stream, string)
+  nameWithType: FileHelper.GetHash(Stream, string)
+  fullName: Innova.Data.File.FileHelper.GetHash(System.IO.Stream, string)
+  nameWithType.vb: FileHelper.GetHash(Stream, String)
+  fullName.vb: Innova.Data.File.FileHelper.GetHash(System.IO.Stream, String)
+  name.vb: GetHash(Stream, String)
+  spec.csharp:
+  - uid: Innova.Data.File.FileHelper.GetHash(System.IO.Stream,System.String)
+    name: GetHash
+    href: Innova.Data.File.FileHelper.GetHash.html#Innova_Data_File_FileHelper_GetHash_System_IO_Stream_System_String_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.File.FileHelper.GetHash(System.IO.Stream,System.String)
+    name: GetHash
+    href: Innova.Data.File.FileHelper.GetHash.html#Innova_Data_File_FileHelper_GetHash_System_IO_Stream_System_String_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.IO.Stream.Innova.Data.File.FileHelper.GetHashAsync(System.String,System.Int32)
+  commentId: M:Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream,System.String,System.Int32)
+  parent: Innova.Data.File.FileHelper
+  definition: Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream,System.String,System.Int32)
+  href: Innova.Data.File.FileHelper.GetHashAsync.html#Innova_Data_File_FileHelper_GetHashAsync_System_IO_Stream_System_String_System_Int32_
+  name: GetHashAsync(Stream, string, int)
+  nameWithType: FileHelper.GetHashAsync(Stream, string, int)
+  fullName: Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream, string, int)
+  nameWithType.vb: FileHelper.GetHashAsync(Stream, String, Integer)
+  fullName.vb: Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream, String, Integer)
+  name.vb: GetHashAsync(Stream, String, Integer)
+  spec.csharp:
+  - uid: Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream,System.String,System.Int32)
+    name: GetHashAsync
+    href: Innova.Data.File.FileHelper.GetHashAsync.html#Innova_Data_File_FileHelper_GetHashAsync_System_IO_Stream_System_String_System_Int32_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream,System.String,System.Int32)
+    name: GetHashAsync
+    href: Innova.Data.File.FileHelper.GetHashAsync.html#Innova_Data_File_FileHelper_GetHashAsync_System_IO_Stream_System_String_System_Int32_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Nullable{System.Int64},System.Int32)
+  commentId: M:Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Nullable{System.Int64},System.Int32)
+  isExternal: true
+  href: Innova.Data.ExtensionMethods.CopyToWithProgress.html#Innova_Data_ExtensionMethods_CopyToWithProgress_System_IO_Stream_System_IO_Stream_System_IProgress_Innova_Data_ProgressInfo__System_Nullable_System_Int64__System_Int32_
+  name: CopyToWithProgress(Stream, Stream, IProgress<ProgressInfo>, long?, int)
+  nameWithType: ExtensionMethods.CopyToWithProgress(Stream, Stream, IProgress<ProgressInfo>, long?, int)
+  fullName: Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream, System.IO.Stream, System.IProgress<Innova.Data.ProgressInfo>, long?, int)
+  nameWithType.vb: ExtensionMethods.CopyToWithProgress(Stream, Stream, IProgress(Of ProgressInfo), Long?, Integer)
+  fullName.vb: Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream, System.IO.Stream, System.IProgress(Of Innova.Data.ProgressInfo), Long?, Integer)
+  name.vb: CopyToWithProgress(Stream, Stream, IProgress(Of ProgressInfo), Long?, Integer)
+  spec.csharp:
+  - uid: Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Nullable{System.Int64},System.Int32)
+    name: CopyToWithProgress
+    href: Innova.Data.ExtensionMethods.CopyToWithProgress.html#Innova_Data_ExtensionMethods_CopyToWithProgress_System_IO_Stream_System_IO_Stream_System_IProgress_Innova_Data_ProgressInfo__System_Nullable_System_Int64__System_Int32_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: Innova.Data.ProgressInfo
+    name: ProgressInfo
+    href: Innova.Data.ProgressInfo.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.ExtensionMethods.CopyToWithProgress(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Nullable{System.Int64},System.Int32)
+    name: CopyToWithProgress
+    href: Innova.Data.ExtensionMethods.CopyToWithProgress.html#Innova_Data_ExtensionMethods_CopyToWithProgress_System_IO_Stream_System_IO_Stream_System_IProgress_Innova_Data_ProgressInfo__System_Nullable_System_Int64__System_Int32_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.ProgressInfo
+    name: ProgressInfo
+    href: Innova.Data.ProgressInfo.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.ExtensionMethods
+  commentId: T:Innova.Data.ExtensionMethods
+  parent: Innova.Data
+  href: Innova.Data.ExtensionMethods.html
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Innova.Data.ExtensionMethods
+- uid: Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)
+  commentId: M:Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)
+  isExternal: true
+  href: Innova.Data.ExtensionMethods.CopyToWithProgressAsync.html#Innova_Data_ExtensionMethods_CopyToWithProgressAsync_System_IO_Stream_System_IO_Stream_System_IProgress_Innova_Data_ProgressInfo__System_Int32_System_Nullable_System_Int64__System_Threading_CancellationToken_
+  name: CopyToWithProgressAsync(Stream, Stream, IProgress<ProgressInfo>, int, long?, CancellationToken)
+  nameWithType: ExtensionMethods.CopyToWithProgressAsync(Stream, Stream, IProgress<ProgressInfo>, int, long?, CancellationToken)
+  fullName: Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream, System.IO.Stream, System.IProgress<Innova.Data.ProgressInfo>, int, long?, System.Threading.CancellationToken)
+  nameWithType.vb: ExtensionMethods.CopyToWithProgressAsync(Stream, Stream, IProgress(Of ProgressInfo), Integer, Long?, CancellationToken)
+  fullName.vb: Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream, System.IO.Stream, System.IProgress(Of Innova.Data.ProgressInfo), Integer, Long?, System.Threading.CancellationToken)
+  name.vb: CopyToWithProgressAsync(Stream, Stream, IProgress(Of ProgressInfo), Integer, Long?, CancellationToken)
+  spec.csharp:
+  - uid: Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)
+    name: CopyToWithProgressAsync
+    href: Innova.Data.ExtensionMethods.CopyToWithProgressAsync.html#Innova_Data_ExtensionMethods_CopyToWithProgressAsync_System_IO_Stream_System_IO_Stream_System_IProgress_Innova_Data_ProgressInfo__System_Int32_System_Nullable_System_Int64__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: Innova.Data.ProgressInfo
+    name: ProgressInfo
+    href: Innova.Data.ProgressInfo.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.ExtensionMethods.CopyToWithProgressAsync(System.IO.Stream,System.IO.Stream,System.IProgress{Innova.Data.ProgressInfo},System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)
+    name: CopyToWithProgressAsync
+    href: Innova.Data.ExtensionMethods.CopyToWithProgressAsync.html#Innova_Data_ExtensionMethods_CopyToWithProgressAsync_System_IO_Stream_System_IO_Stream_System_IProgress_Innova_Data_ProgressInfo__System_Int32_System_Nullable_System_Int64__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.ProgressInfo
+    name: ProgressInfo
+    href: Innova.Data.ProgressInfo.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Innova.Data.File.FileHelper.GetHash(System.IO.Stream,System.String)
+  commentId: M:Innova.Data.File.FileHelper.GetHash(System.IO.Stream,System.String)
+  isExternal: true
+  href: Innova.Data.File.FileHelper.GetHash.html#Innova_Data_File_FileHelper_GetHash_System_IO_Stream_System_String_
+  name: GetHash(Stream, string)
+  nameWithType: FileHelper.GetHash(Stream, string)
+  fullName: Innova.Data.File.FileHelper.GetHash(System.IO.Stream, string)
+  nameWithType.vb: FileHelper.GetHash(Stream, String)
+  fullName.vb: Innova.Data.File.FileHelper.GetHash(System.IO.Stream, String)
+  name.vb: GetHash(Stream, String)
+  spec.csharp:
+  - uid: Innova.Data.File.FileHelper.GetHash(System.IO.Stream,System.String)
+    name: GetHash
+    href: Innova.Data.File.FileHelper.GetHash.html#Innova_Data_File_FileHelper_GetHash_System_IO_Stream_System_String_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.File.FileHelper.GetHash(System.IO.Stream,System.String)
+    name: GetHash
+    href: Innova.Data.File.FileHelper.GetHash.html#Innova_Data_File_FileHelper_GetHash_System_IO_Stream_System_String_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Data.File.FileHelper
+  commentId: T:Innova.Data.File.FileHelper
+  parent: Innova.Data.File
+  href: Innova.Data.File.FileHelper.html
+  name: FileHelper
+  nameWithType: FileHelper
+  fullName: Innova.Data.File.FileHelper
+- uid: Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream,System.String,System.Int32)
+  commentId: M:Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream,System.String,System.Int32)
+  isExternal: true
+  href: Innova.Data.File.FileHelper.GetHashAsync.html#Innova_Data_File_FileHelper_GetHashAsync_System_IO_Stream_System_String_System_Int32_
+  name: GetHashAsync(Stream, string, int)
+  nameWithType: FileHelper.GetHashAsync(Stream, string, int)
+  fullName: Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream, string, int)
+  nameWithType.vb: FileHelper.GetHashAsync(Stream, String, Integer)
+  fullName.vb: Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream, String, Integer)
+  name.vb: GetHashAsync(Stream, String, Integer)
+  spec.csharp:
+  - uid: Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream,System.String,System.Int32)
+    name: GetHashAsync
+    href: Innova.Data.File.FileHelper.GetHashAsync.html#Innova_Data_File_FileHelper_GetHashAsync_System_IO_Stream_System_String_System_Int32_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.File.FileHelper.GetHashAsync(System.IO.Stream,System.String,System.Int32)
+    name: GetHashAsync
+    href: Innova.Data.File.FileHelper.GetHashAsync.html#Innova_Data_File_FileHelper_GetHashAsync_System_IO_Stream_System_String_System_Int32_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data
+  commentId: N:Innova.Data
+  href: Innova.html
+  name: Innova.Data
+  nameWithType: Innova.Data
+  fullName: Innova.Data
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+- uid: System.Security.Cryptography.HashAlgorithm
+  commentId: T:System.Security.Cryptography.HashAlgorithm
+  parent: System.Security.Cryptography
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.security.cryptography.hashalgorithm
+  name: HashAlgorithm
+  nameWithType: HashAlgorithm
+  fullName: System.Security.Cryptography.HashAlgorithm
+- uid: System.Security.Cryptography
+  commentId: N:System.Security.Cryptography
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Security.Cryptography
+  nameWithType: System.Security.Cryptography
+  fullName: System.Security.Cryptography
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Cryptography
+    name: Cryptography
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.cryptography
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Cryptography
+    name: Cryptography
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.cryptography
+- uid: Innova.Data.File.HashStream.#ctor*
+  commentId: Overload:Innova.Data.File.HashStream.#ctor
+  href: Innova.Data.File.HashStream.-ctor.html#Innova_Data_File_HashStream__ctor_System_IO_Stream_System_Security_Cryptography_HashAlgorithm_
+  name: HashStream
+  nameWithType: HashStream.HashStream
+  fullName: Innova.Data.File.HashStream.HashStream
+  nameWithType.vb: HashStream.New
+  fullName.vb: Innova.Data.File.HashStream.New
+  name.vb: New
+- uid: System.IO.Stream.CanRead
+  commentId: P:System.IO.Stream.CanRead
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.canread
+  name: CanRead
+  nameWithType: Stream.CanRead
+  fullName: System.IO.Stream.CanRead
+- uid: Innova.Data.File.HashStream.CanRead*
+  commentId: Overload:Innova.Data.File.HashStream.CanRead
+  href: Innova.Data.File.HashStream.CanRead.html#Innova_Data_File_HashStream_CanRead
+  name: CanRead
+  nameWithType: HashStream.CanRead
+  fullName: Innova.Data.File.HashStream.CanRead
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IO.Stream.CanSeek
+  commentId: P:System.IO.Stream.CanSeek
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.canseek
+  name: CanSeek
+  nameWithType: Stream.CanSeek
+  fullName: System.IO.Stream.CanSeek
+- uid: Innova.Data.File.HashStream.CanSeek*
+  commentId: Overload:Innova.Data.File.HashStream.CanSeek
+  href: Innova.Data.File.HashStream.CanSeek.html#Innova_Data_File_HashStream_CanSeek
+  name: CanSeek
+  nameWithType: HashStream.CanSeek
+  fullName: Innova.Data.File.HashStream.CanSeek
+- uid: System.IO.Stream.CanWrite
+  commentId: P:System.IO.Stream.CanWrite
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.canwrite
+  name: CanWrite
+  nameWithType: Stream.CanWrite
+  fullName: System.IO.Stream.CanWrite
+- uid: Innova.Data.File.HashStream.CanWrite*
+  commentId: Overload:Innova.Data.File.HashStream.CanWrite
+  href: Innova.Data.File.HashStream.CanWrite.html#Innova_Data_File_HashStream_CanWrite
+  name: CanWrite
+  nameWithType: HashStream.CanWrite
+  fullName: Innova.Data.File.HashStream.CanWrite
+- uid: System.IO.Stream.Length
+  commentId: P:System.IO.Stream.Length
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.length
+  name: Length
+  nameWithType: Stream.Length
+  fullName: System.IO.Stream.Length
+- uid: Innova.Data.File.HashStream.Length*
+  commentId: Overload:Innova.Data.File.HashStream.Length
+  href: Innova.Data.File.HashStream.Length.html#Innova_Data_File_HashStream_Length
+  name: Length
+  nameWithType: HashStream.Length
+  fullName: Innova.Data.File.HashStream.Length
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.IO.Stream.Position
+  commentId: P:System.IO.Stream.Position
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.position
+  name: Position
+  nameWithType: Stream.Position
+  fullName: System.IO.Stream.Position
+- uid: Innova.Data.File.HashStream.Position*
+  commentId: Overload:Innova.Data.File.HashStream.Position
+  href: Innova.Data.File.HashStream.Position.html#Innova_Data_File_HashStream_Position
+  name: Position
+  nameWithType: HashStream.Position
+  fullName: Innova.Data.File.HashStream.Position
+- uid: System.IO.Stream.Flush
+  commentId: M:System.IO.Stream.Flush
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.flush
+  name: Flush()
+  nameWithType: Stream.Flush()
+  fullName: System.IO.Stream.Flush()
+  spec.csharp:
+  - uid: System.IO.Stream.Flush
+    name: Flush
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.flush
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.Flush
+    name: Flush
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.flush
+  - name: (
+  - name: )
+- uid: Innova.Data.File.HashStream.Flush*
+  commentId: Overload:Innova.Data.File.HashStream.Flush
+  href: Innova.Data.File.HashStream.Flush.html#Innova_Data_File_HashStream_Flush
+  name: Flush
+  nameWithType: HashStream.Flush
+  fullName: Innova.Data.File.HashStream.Flush
+- uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+  commentId: M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.read
+  name: Read(byte[], int, int)
+  nameWithType: Stream.Read(byte[], int, int)
+  fullName: System.IO.Stream.Read(byte[], int, int)
+  nameWithType.vb: Stream.Read(Byte(), Integer, Integer)
+  fullName.vb: System.IO.Stream.Read(Byte(), Integer, Integer)
+  name.vb: Read(Byte(), Integer, Integer)
+  spec.csharp:
+  - uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+    name: Read
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.read
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+    name: Read
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.read
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.File.HashStream.Read*
+  commentId: Overload:Innova.Data.File.HashStream.Read
+  href: Innova.Data.File.HashStream.Read.html#Innova_Data_File_HashStream_Read_System_Byte___System_Int32_System_Int32_
+  name: Read
+  nameWithType: HashStream.Read
+  fullName: Innova.Data.File.HashStream.Read
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+  commentId: M:System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.seek
+  name: Seek(long, SeekOrigin)
+  nameWithType: Stream.Seek(long, SeekOrigin)
+  fullName: System.IO.Stream.Seek(long, System.IO.SeekOrigin)
+  nameWithType.vb: Stream.Seek(Long, SeekOrigin)
+  fullName.vb: System.IO.Stream.Seek(Long, System.IO.SeekOrigin)
+  name.vb: Seek(Long, SeekOrigin)
+  spec.csharp:
+  - uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+    name: Seek
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.seek
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.IO.SeekOrigin
+    name: SeekOrigin
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.seekorigin
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+    name: Seek
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.seek
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.IO.SeekOrigin
+    name: SeekOrigin
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.seekorigin
+  - name: )
+- uid: Innova.Data.File.HashStream.Seek*
+  commentId: Overload:Innova.Data.File.HashStream.Seek
+  href: Innova.Data.File.HashStream.Seek.html#Innova_Data_File_HashStream_Seek_System_Int64_System_IO_SeekOrigin_
+  name: Seek
+  nameWithType: HashStream.Seek
+  fullName: Innova.Data.File.HashStream.Seek
+- uid: System.IO.SeekOrigin
+  commentId: T:System.IO.SeekOrigin
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.seekorigin
+  name: SeekOrigin
+  nameWithType: SeekOrigin
+  fullName: System.IO.SeekOrigin
+- uid: System.IO.Stream.SetLength(System.Int64)
+  commentId: M:System.IO.Stream.SetLength(System.Int64)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.setlength
+  name: SetLength(long)
+  nameWithType: Stream.SetLength(long)
+  fullName: System.IO.Stream.SetLength(long)
+  nameWithType.vb: Stream.SetLength(Long)
+  fullName.vb: System.IO.Stream.SetLength(Long)
+  name.vb: SetLength(Long)
+  spec.csharp:
+  - uid: System.IO.Stream.SetLength(System.Int64)
+    name: SetLength
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.setlength
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.SetLength(System.Int64)
+    name: SetLength
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.setlength
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Innova.Data.File.HashStream.SetLength*
+  commentId: Overload:Innova.Data.File.HashStream.SetLength
+  href: Innova.Data.File.HashStream.SetLength.html#Innova_Data_File_HashStream_SetLength_System_Int64_
+  name: SetLength
+  nameWithType: HashStream.SetLength
+  fullName: Innova.Data.File.HashStream.SetLength
+- uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+  commentId: M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream.write
+  name: Write(byte[], int, int)
+  nameWithType: Stream.Write(byte[], int, int)
+  fullName: System.IO.Stream.Write(byte[], int, int)
+  nameWithType.vb: Stream.Write(Byte(), Integer, Integer)
+  fullName.vb: System.IO.Stream.Write(Byte(), Integer, Integer)
+  name.vb: Write(Byte(), Integer, Integer)
+  spec.csharp:
+  - uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+    name: Write
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.write
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+    name: Write
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream.write
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.File.HashStream.Write*
+  commentId: Overload:Innova.Data.File.HashStream.Write
+  href: Innova.Data.File.HashStream.Write.html#Innova_Data_File_HashStream_Write_System_Byte___System_Int32_System_Int32_
+  name: Write
+  nameWithType: HashStream.Write
+  fullName: Innova.Data.File.HashStream.Write
+- uid: Innova.Data.File.HashStream.Hash*
+  commentId: Overload:Innova.Data.File.HashStream.Hash
+  href: Innova.Data.File.HashStream.Hash.html#Innova_Data_File_HashStream_Hash_System_Byte___
+  name: Hash
+  nameWithType: HashStream.Hash
+  fullName: Innova.Data.File.HashStream.Hash
+memberLayout: SeparatePages

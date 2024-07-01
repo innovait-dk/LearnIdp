@@ -1,0 +1,1329 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.StructuredSearch.Operator
+  commentId: T:Innova.Data.StructuredSearch.Operator
+  id: Operator
+  parent: Innova.Data.StructuredSearch
+  children:
+  - Innova.Data.StructuredSearch.Operator.#ctor(System.String,System.Collections.Generic.List{System.Object})
+  - Innova.Data.StructuredSearch.Operator.CheckForParentWhereClause(System.String)
+  - Innova.Data.StructuredSearch.Operator.ClearOperator
+  - Innova.Data.StructuredSearch.Operator.Clone
+  - Innova.Data.StructuredSearch.Operator.EnsureUniqueParameters(System.Int32@)
+  - Innova.Data.StructuredSearch.Operator.FieldName
+  - Innova.Data.StructuredSearch.Operator.FieldType
+  - Innova.Data.StructuredSearch.Operator.FriendlyFieldName
+  - Innova.Data.StructuredSearch.Operator.FriendlyParameter
+  - Innova.Data.StructuredSearch.Operator.GetMemberExpression(System.Linq.Expressions.ParameterExpression,System.String)
+  - Innova.Data.StructuredSearch.Operator.GetWhereExpression``1(System.Linq.Expressions.ParameterExpression)
+  - Innova.Data.StructuredSearch.Operator.InitializeSelectedItem
+  - Innova.Data.StructuredSearch.Operator.IsValid
+  - Innova.Data.StructuredSearch.Operator.OnPropertyChanged(System.String)
+  - Innova.Data.StructuredSearch.Operator.OperatorCaption
+  - Innova.Data.StructuredSearch.Operator.ParameterName
+  - Innova.Data.StructuredSearch.Operator.Parameters
+  - Innova.Data.StructuredSearch.Operator.ParentWhereClause
+  - Innova.Data.StructuredSearch.Operator.PropertyChanged
+  - Innova.Data.StructuredSearch.Operator.RequiredParameterCount
+  - Innova.Data.StructuredSearch.Operator.SelectedItem
+  - Innova.Data.StructuredSearch.Operator.SetOperatorCaption(System.String)
+  - Innova.Data.StructuredSearch.Operator.ValueDescription
+  - Innova.Data.StructuredSearch.Operator.VerifyParameters
+  langs:
+  - csharp
+  - vb
+  name: Operator
+  nameWithType: Operator
+  fullName: Innova.Data.StructuredSearch.Operator
+  type: Class
+  source:
+    id: Operator
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 14
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Represents an abstract base class for operators used in structured search.
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      public abstract class Operator : INotifyPropertyChanged
+    content.vb: >-
+      <DataContract>
+
+      Public MustInherit Class [Operator] Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Innova.Data.StructuredSearch.BinaryOperator
+  - Innova.Data.StructuredSearch.Operators.InOperator
+  - Innova.Data.StructuredSearch.Operators.RelatedOperatorWrapper`1
+  - Innova.Data.StructuredSearch.TertiaryOperator
+  - Innova.Data.StructuredSearch.UnaryOperator
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+- uid: Innova.Data.StructuredSearch.Operator.#ctor(System.String,System.Collections.Generic.List{System.Object})
+  commentId: M:Innova.Data.StructuredSearch.Operator.#ctor(System.String,System.Collections.Generic.List{System.Object})
+  id: '#ctor(System.String,System.Collections.Generic.List{System.Object})'
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: Operator(string, List<object>)
+  nameWithType: Operator.Operator(string, List<object>)
+  fullName: Innova.Data.StructuredSearch.Operator.Operator(string, System.Collections.Generic.List<object>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 24
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Initializes a new instance of the <xref href="Innova.Data.StructuredSearch.Operator" data-throw-if-not-resolved="false"></xref> class with the specified field name and parameters.
+  example: []
+  syntax:
+    content: public Operator(string fieldName, List<object> parameters)
+    parameters:
+    - id: fieldName
+      type: System.String
+      description: The name of the field.
+    - id: parameters
+      type: System.Collections.Generic.List{System.Object}
+      description: The list of parameters.
+    content.vb: Public Sub New(fieldName As String, parameters As List(Of Object))
+  overload: Innova.Data.StructuredSearch.Operator.#ctor*
+  nameWithType.vb: Operator.New(String, List(Of Object))
+  fullName.vb: Innova.Data.StructuredSearch.Operator.New(String, System.Collections.Generic.List(Of Object))
+  name.vb: New(String, List(Of Object))
+- uid: Innova.Data.StructuredSearch.Operator.IsValid
+  commentId: P:Innova.Data.StructuredSearch.Operator.IsValid
+  id: IsValid
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: IsValid
+  nameWithType: Operator.IsValid
+  fullName: Innova.Data.StructuredSearch.Operator.IsValid
+  type: Property
+  source:
+    id: IsValid
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 38
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets a value indicating whether the operator is valid.
+  example: []
+  syntax:
+    content: public virtual bool IsValid { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property IsValid As Boolean
+  overload: Innova.Data.StructuredSearch.Operator.IsValid*
+- uid: Innova.Data.StructuredSearch.Operator.SelectedItem
+  commentId: P:Innova.Data.StructuredSearch.Operator.SelectedItem
+  id: SelectedItem
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: SelectedItem
+  nameWithType: Operator.SelectedItem
+  fullName: Innova.Data.StructuredSearch.Operator.SelectedItem
+  type: Property
+  source:
+    id: SelectedItem
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 53
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets or sets the selected item.
+  example: []
+  syntax:
+    content: public object SelectedItem { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property SelectedItem As Object
+  overload: Innova.Data.StructuredSearch.Operator.SelectedItem*
+- uid: Innova.Data.StructuredSearch.Operator.FieldName
+  commentId: P:Innova.Data.StructuredSearch.Operator.FieldName
+  id: FieldName
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: FieldName
+  nameWithType: Operator.FieldName
+  fullName: Innova.Data.StructuredSearch.Operator.FieldName
+  type: Property
+  source:
+    id: FieldName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 65
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets or sets the field name.
+  example: []
+  syntax:
+    content: public string FieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FieldName As String
+  overload: Innova.Data.StructuredSearch.Operator.FieldName*
+- uid: Innova.Data.StructuredSearch.Operator.FieldType
+  commentId: P:Innova.Data.StructuredSearch.Operator.FieldType
+  id: FieldType
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: FieldType
+  nameWithType: Operator.FieldType
+  fullName: Innova.Data.StructuredSearch.Operator.FieldType
+  type: Property
+  source:
+    id: FieldType
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 86
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets or sets the type of the field.
+  example: []
+  syntax:
+    content: public Type FieldType { get; set; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Property FieldType As Type
+  overload: Innova.Data.StructuredSearch.Operator.FieldType*
+- uid: Innova.Data.StructuredSearch.Operator.ParameterName
+  commentId: P:Innova.Data.StructuredSearch.Operator.ParameterName
+  id: ParameterName
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: ParameterName
+  nameWithType: Operator.ParameterName
+  fullName: Innova.Data.StructuredSearch.Operator.ParameterName
+  type: Property
+  source:
+    id: ParameterName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 93
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets or sets the parameter name.
+  example: []
+  syntax:
+    content: public string ParameterName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ParameterName As String
+  overload: Innova.Data.StructuredSearch.Operator.ParameterName*
+- uid: Innova.Data.StructuredSearch.Operator.Parameters
+  commentId: P:Innova.Data.StructuredSearch.Operator.Parameters
+  id: Parameters
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: Parameters
+  nameWithType: Operator.Parameters
+  fullName: Innova.Data.StructuredSearch.Operator.Parameters
+  type: Property
+  source:
+    id: Parameters
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 109
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets or sets the list of parameters.
+  example: []
+  syntax:
+    content: public List<object> Parameters { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Object}
+    content.vb: Public Property Parameters As List(Of Object)
+  overload: Innova.Data.StructuredSearch.Operator.Parameters*
+- uid: Innova.Data.StructuredSearch.Operator.RequiredParameterCount
+  commentId: P:Innova.Data.StructuredSearch.Operator.RequiredParameterCount
+  id: RequiredParameterCount
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: RequiredParameterCount
+  nameWithType: Operator.RequiredParameterCount
+  fullName: Innova.Data.StructuredSearch.Operator.RequiredParameterCount
+  type: Property
+  source:
+    id: RequiredParameterCount
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 118
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets the required parameter count.
+  example: []
+  syntax:
+    content: public abstract int? RequiredParameterCount { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public MustOverride ReadOnly Property RequiredParameterCount As Integer?
+  overload: Innova.Data.StructuredSearch.Operator.RequiredParameterCount*
+- uid: Innova.Data.StructuredSearch.Operator.OperatorCaption
+  commentId: P:Innova.Data.StructuredSearch.Operator.OperatorCaption
+  id: OperatorCaption
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: OperatorCaption
+  nameWithType: Operator.OperatorCaption
+  fullName: Innova.Data.StructuredSearch.Operator.OperatorCaption
+  type: Property
+  source:
+    id: OperatorCaption
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 125
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets the operator caption.
+  example: []
+  syntax:
+    content: public string OperatorCaption { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property OperatorCaption As String
+  overload: Innova.Data.StructuredSearch.Operator.OperatorCaption*
+- uid: Innova.Data.StructuredSearch.Operator.FriendlyFieldName
+  commentId: P:Innova.Data.StructuredSearch.Operator.FriendlyFieldName
+  id: FriendlyFieldName
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: FriendlyFieldName
+  nameWithType: Operator.FriendlyFieldName
+  fullName: Innova.Data.StructuredSearch.Operator.FriendlyFieldName
+  type: Property
+  source:
+    id: FriendlyFieldName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 147
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets or sets the friendly field name.
+  example: []
+  syntax:
+    content: public virtual string FriendlyFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property FriendlyFieldName As String
+  overload: Innova.Data.StructuredSearch.Operator.FriendlyFieldName*
+- uid: Innova.Data.StructuredSearch.Operator.ParentWhereClause
+  commentId: P:Innova.Data.StructuredSearch.Operator.ParentWhereClause
+  id: ParentWhereClause
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: ParentWhereClause
+  nameWithType: Operator.ParentWhereClause
+  fullName: Innova.Data.StructuredSearch.Operator.ParentWhereClause
+  type: Property
+  source:
+    id: ParentWhereClause
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 166
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets or sets the parent where clause.
+  example: []
+  syntax:
+    content: public string ParentWhereClause { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ParentWhereClause As String
+  overload: Innova.Data.StructuredSearch.Operator.ParentWhereClause*
+- uid: Innova.Data.StructuredSearch.Operator.ValueDescription
+  commentId: P:Innova.Data.StructuredSearch.Operator.ValueDescription
+  id: ValueDescription
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: ValueDescription
+  nameWithType: Operator.ValueDescription
+  fullName: Innova.Data.StructuredSearch.Operator.ValueDescription
+  type: Property
+  source:
+    id: ValueDescription
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 171
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets or sets the value description.
+  example: []
+  syntax:
+    content: public abstract string ValueDescription { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public MustOverride Property ValueDescription As String
+  overload: Innova.Data.StructuredSearch.Operator.ValueDescription*
+- uid: Innova.Data.StructuredSearch.Operator.EnsureUniqueParameters(System.Int32@)
+  commentId: M:Innova.Data.StructuredSearch.Operator.EnsureUniqueParameters(System.Int32@)
+  id: EnsureUniqueParameters(System.Int32@)
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: EnsureUniqueParameters(ref int)
+  nameWithType: Operator.EnsureUniqueParameters(ref int)
+  fullName: Innova.Data.StructuredSearch.Operator.EnsureUniqueParameters(ref int)
+  type: Method
+  source:
+    id: EnsureUniqueParameters
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 180
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Ensures that the parameter name is unique.
+  example: []
+  syntax:
+    content: public virtual void EnsureUniqueParameters(ref int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index to append to the parameter name.
+    content.vb: Public Overridable Sub EnsureUniqueParameters(i As Integer)
+  overload: Innova.Data.StructuredSearch.Operator.EnsureUniqueParameters*
+  nameWithType.vb: Operator.EnsureUniqueParameters(Integer)
+  fullName.vb: Innova.Data.StructuredSearch.Operator.EnsureUniqueParameters(Integer)
+  name.vb: EnsureUniqueParameters(Integer)
+- uid: Innova.Data.StructuredSearch.Operator.FriendlyParameter
+  commentId: P:Innova.Data.StructuredSearch.Operator.FriendlyParameter
+  id: FriendlyParameter
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: FriendlyParameter
+  nameWithType: Operator.FriendlyParameter
+  fullName: Innova.Data.StructuredSearch.Operator.FriendlyParameter
+  type: Property
+  source:
+    id: FriendlyParameter
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 188
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets the friendly parameter string.
+  example: []
+  syntax:
+    content: public virtual string FriendlyParameter { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property FriendlyParameter As String
+  overload: Innova.Data.StructuredSearch.Operator.FriendlyParameter*
+- uid: Innova.Data.StructuredSearch.Operator.ClearOperator
+  commentId: M:Innova.Data.StructuredSearch.Operator.ClearOperator
+  id: ClearOperator
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: ClearOperator()
+  nameWithType: Operator.ClearOperator()
+  fullName: Innova.Data.StructuredSearch.Operator.ClearOperator()
+  type: Method
+  source:
+    id: ClearOperator
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 212
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Clears the operator by setting the parameters to null.
+  example: []
+  syntax:
+    content: public virtual void ClearOperator()
+    content.vb: Public Overridable Sub ClearOperator()
+  overload: Innova.Data.StructuredSearch.Operator.ClearOperator*
+- uid: Innova.Data.StructuredSearch.Operator.Clone
+  commentId: M:Innova.Data.StructuredSearch.Operator.Clone
+  id: Clone
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: Operator.Clone()
+  fullName: Innova.Data.StructuredSearch.Operator.Clone()
+  type: Method
+  source:
+    id: Clone
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 225
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Creates a clone of the operator.
+  example: []
+  syntax:
+    content: public virtual Operator Clone()
+    return:
+      type: Innova.Data.StructuredSearch.Operator
+      description: A new instance of the operator.
+    content.vb: Public Overridable Function Clone() As [Operator]
+  overload: Innova.Data.StructuredSearch.Operator.Clone*
+- uid: Innova.Data.StructuredSearch.Operator.InitializeSelectedItem
+  commentId: M:Innova.Data.StructuredSearch.Operator.InitializeSelectedItem
+  id: InitializeSelectedItem
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: InitializeSelectedItem()
+  nameWithType: Operator.InitializeSelectedItem()
+  fullName: Innova.Data.StructuredSearch.Operator.InitializeSelectedItem()
+  type: Method
+  source:
+    id: InitializeSelectedItem
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 238
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Initializes the selected item.
+  example: []
+  syntax:
+    content: public virtual void InitializeSelectedItem()
+    content.vb: Public Overridable Sub InitializeSelectedItem()
+  overload: Innova.Data.StructuredSearch.Operator.InitializeSelectedItem*
+- uid: Innova.Data.StructuredSearch.Operator.VerifyParameters
+  commentId: M:Innova.Data.StructuredSearch.Operator.VerifyParameters
+  id: VerifyParameters
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: VerifyParameters()
+  nameWithType: Operator.VerifyParameters()
+  fullName: Innova.Data.StructuredSearch.Operator.VerifyParameters()
+  type: Method
+  source:
+    id: VerifyParameters
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 248
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Verifies the parameters of the operator.
+  example: []
+  syntax:
+    content: protected void VerifyParameters()
+    content.vb: Protected Sub VerifyParameters()
+  overload: Innova.Data.StructuredSearch.Operator.VerifyParameters*
+- uid: Innova.Data.StructuredSearch.Operator.CheckForParentWhereClause(System.String)
+  commentId: M:Innova.Data.StructuredSearch.Operator.CheckForParentWhereClause(System.String)
+  id: CheckForParentWhereClause(System.String)
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: CheckForParentWhereClause(string)
+  nameWithType: Operator.CheckForParentWhereClause(string)
+  fullName: Innova.Data.StructuredSearch.Operator.CheckForParentWhereClause(string)
+  type: Method
+  source:
+    id: CheckForParentWhereClause
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 268
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Checks for the parent where clause and formats the child where clause accordingly.
+  example: []
+  syntax:
+    content: protected string CheckForParentWhereClause(string childWhere)
+    parameters:
+    - id: childWhere
+      type: System.String
+      description: The child where clause.
+    return:
+      type: System.String
+      description: The formatted where clause.
+    content.vb: Protected Function CheckForParentWhereClause(childWhere As String) As String
+  overload: Innova.Data.StructuredSearch.Operator.CheckForParentWhereClause*
+  nameWithType.vb: Operator.CheckForParentWhereClause(String)
+  fullName.vb: Innova.Data.StructuredSearch.Operator.CheckForParentWhereClause(String)
+  name.vb: CheckForParentWhereClause(String)
+- uid: Innova.Data.StructuredSearch.Operator.SetOperatorCaption(System.String)
+  commentId: M:Innova.Data.StructuredSearch.Operator.SetOperatorCaption(System.String)
+  id: SetOperatorCaption(System.String)
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: SetOperatorCaption(string)
+  nameWithType: Operator.SetOperatorCaption(string)
+  fullName: Innova.Data.StructuredSearch.Operator.SetOperatorCaption(string)
+  type: Method
+  source:
+    id: SetOperatorCaption
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 282
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Sets the operator caption.
+  example: []
+  syntax:
+    content: protected void SetOperatorCaption(string operatorCaption)
+    parameters:
+    - id: operatorCaption
+      type: System.String
+      description: The operator caption.
+    content.vb: Protected Sub SetOperatorCaption(operatorCaption As String)
+  overload: Innova.Data.StructuredSearch.Operator.SetOperatorCaption*
+  nameWithType.vb: Operator.SetOperatorCaption(String)
+  fullName.vb: Innova.Data.StructuredSearch.Operator.SetOperatorCaption(String)
+  name.vb: SetOperatorCaption(String)
+- uid: Innova.Data.StructuredSearch.Operator.GetMemberExpression(System.Linq.Expressions.ParameterExpression,System.String)
+  commentId: M:Innova.Data.StructuredSearch.Operator.GetMemberExpression(System.Linq.Expressions.ParameterExpression,System.String)
+  id: GetMemberExpression(System.Linq.Expressions.ParameterExpression,System.String)
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: GetMemberExpression(ParameterExpression, string)
+  nameWithType: Operator.GetMemberExpression(ParameterExpression, string)
+  fullName: Innova.Data.StructuredSearch.Operator.GetMemberExpression(System.Linq.Expressions.ParameterExpression, string)
+  type: Method
+  source:
+    id: GetMemberExpression
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 294
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets the member expression for the specified property.
+  example: []
+  syntax:
+    content: protected MemberExpression GetMemberExpression(ParameterExpression parameterExpression, string property)
+    parameters:
+    - id: parameterExpression
+      type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
+    - id: property
+      type: System.String
+      description: The property name.
+    return:
+      type: System.Linq.Expressions.MemberExpression
+      description: The member expression.
+    content.vb: Protected Function GetMemberExpression(parameterExpression As ParameterExpression, [property] As String) As MemberExpression
+  overload: Innova.Data.StructuredSearch.Operator.GetMemberExpression*
+  nameWithType.vb: Operator.GetMemberExpression(ParameterExpression, String)
+  fullName.vb: Innova.Data.StructuredSearch.Operator.GetMemberExpression(System.Linq.Expressions.ParameterExpression, String)
+  name.vb: GetMemberExpression(ParameterExpression, String)
+- uid: Innova.Data.StructuredSearch.Operator.GetWhereExpression``1(System.Linq.Expressions.ParameterExpression)
+  commentId: M:Innova.Data.StructuredSearch.Operator.GetWhereExpression``1(System.Linq.Expressions.ParameterExpression)
+  id: GetWhereExpression``1(System.Linq.Expressions.ParameterExpression)
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: GetWhereExpression<T>(ParameterExpression)
+  nameWithType: Operator.GetWhereExpression<T>(ParameterExpression)
+  fullName: Innova.Data.StructuredSearch.Operator.GetWhereExpression<T>(System.Linq.Expressions.ParameterExpression)
+  type: Method
+  source:
+    id: GetWhereExpression
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 307
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Gets the where expression for the specified type.
+  example: []
+  syntax:
+    content: 'public abstract Expression<Func<T, bool>> GetWhereExpression<T>(ParameterExpression parameter) where T : class'
+    parameters:
+    - id: parameter
+      type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
+    typeParameters:
+    - id: T
+      description: The type.
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The where expression.
+    content.vb: Public MustOverride Function GetWhereExpression(Of T As Class)(parameter As ParameterExpression) As Expression(Of Func(Of T, Boolean))
+  overload: Innova.Data.StructuredSearch.Operator.GetWhereExpression*
+  nameWithType.vb: Operator.GetWhereExpression(Of T)(ParameterExpression)
+  fullName.vb: Innova.Data.StructuredSearch.Operator.GetWhereExpression(Of T)(System.Linq.Expressions.ParameterExpression)
+  name.vb: GetWhereExpression(Of T)(ParameterExpression)
+- uid: Innova.Data.StructuredSearch.Operator.PropertyChanged
+  commentId: E:Innova.Data.StructuredSearch.Operator.PropertyChanged
+  id: PropertyChanged
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: PropertyChanged
+  nameWithType: Operator.PropertyChanged
+  fullName: Innova.Data.StructuredSearch.Operator.PropertyChanged
+  type: Event
+  source:
+    id: PropertyChanged
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 310
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  summary: Occurs when a property value changes.
+  example: []
+  syntax:
+    content: public event PropertyChangedEventHandler PropertyChanged
+    return:
+      type: System.ComponentModel.PropertyChangedEventHandler
+    content.vb: Public Event PropertyChanged As PropertyChangedEventHandler
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: Innova.Data.StructuredSearch.Operator.OnPropertyChanged(System.String)
+  commentId: M:Innova.Data.StructuredSearch.Operator.OnPropertyChanged(System.String)
+  id: OnPropertyChanged(System.String)
+  parent: Innova.Data.StructuredSearch.Operator
+  langs:
+  - csharp
+  - vb
+  name: OnPropertyChanged(string)
+  nameWithType: Operator.OnPropertyChanged(string)
+  fullName: Innova.Data.StructuredSearch.Operator.OnPropertyChanged(string)
+  type: Method
+  source:
+    id: OnPropertyChanged
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\Base\Operator.cs
+    startLine: 312
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.StructuredSearch
+  syntax:
+    content: protected void OnPropertyChanged(string propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+    content.vb: Protected Sub OnPropertyChanged(propertyName As String)
+  overload: Innova.Data.StructuredSearch.Operator.OnPropertyChanged*
+  nameWithType.vb: Operator.OnPropertyChanged(String)
+  fullName.vb: Innova.Data.StructuredSearch.Operator.OnPropertyChanged(String)
+  name.vb: OnPropertyChanged(String)
+references:
+- uid: Innova.Data.StructuredSearch
+  commentId: N:Innova.Data.StructuredSearch
+  href: Innova.html
+  name: Innova.Data.StructuredSearch
+  nameWithType: Innova.Data.StructuredSearch
+  fullName: Innova.Data.StructuredSearch
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.StructuredSearch
+    name: StructuredSearch
+    href: Innova.Data.StructuredSearch.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.StructuredSearch
+    name: StructuredSearch
+    href: Innova.Data.StructuredSearch.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Innova.Data.StructuredSearch.Operator
+  commentId: T:Innova.Data.StructuredSearch.Operator
+  parent: Innova.Data.StructuredSearch
+  href: Innova.Data.StructuredSearch.Operator.html
+  name: Operator
+  nameWithType: Operator
+  fullName: Innova.Data.StructuredSearch.Operator
+- uid: Innova.Data.StructuredSearch.Operator.#ctor*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.#ctor
+  href: Innova.Data.StructuredSearch.Operator.-ctor.html#Innova_Data_StructuredSearch_Operator__ctor_System_String_System_Collections_Generic_List_System_Object__
+  name: Operator
+  nameWithType: Operator.Operator
+  fullName: Innova.Data.StructuredSearch.Operator.Operator
+  nameWithType.vb: Operator.New
+  fullName.vb: Innova.Data.StructuredSearch.Operator.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{System.Object}
+  commentId: T:System.Collections.Generic.List{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<object>
+  nameWithType: List<object>
+  fullName: System.Collections.Generic.List<object>
+  nameWithType.vb: List(Of Object)
+  fullName.vb: System.Collections.Generic.List(Of Object)
+  name.vb: List(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Data.StructuredSearch.Operator.IsValid*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.IsValid
+  href: Innova.Data.StructuredSearch.Operator.IsValid.html#Innova_Data_StructuredSearch_Operator_IsValid
+  name: IsValid
+  nameWithType: Operator.IsValid
+  fullName: Innova.Data.StructuredSearch.Operator.IsValid
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Innova.Data.StructuredSearch.Operator.SelectedItem*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.SelectedItem
+  href: Innova.Data.StructuredSearch.Operator.SelectedItem.html#Innova_Data_StructuredSearch_Operator_SelectedItem
+  name: SelectedItem
+  nameWithType: Operator.SelectedItem
+  fullName: Innova.Data.StructuredSearch.Operator.SelectedItem
+- uid: Innova.Data.StructuredSearch.Operator.FieldName*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.FieldName
+  href: Innova.Data.StructuredSearch.Operator.FieldName.html#Innova_Data_StructuredSearch_Operator_FieldName
+  name: FieldName
+  nameWithType: Operator.FieldName
+  fullName: Innova.Data.StructuredSearch.Operator.FieldName
+- uid: Innova.Data.StructuredSearch.Operator.FieldType*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.FieldType
+  href: Innova.Data.StructuredSearch.Operator.FieldType.html#Innova_Data_StructuredSearch_Operator_FieldType
+  name: FieldType
+  nameWithType: Operator.FieldType
+  fullName: Innova.Data.StructuredSearch.Operator.FieldType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Innova.Data.StructuredSearch.Operator.ParameterName*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.ParameterName
+  href: Innova.Data.StructuredSearch.Operator.ParameterName.html#Innova_Data_StructuredSearch_Operator_ParameterName
+  name: ParameterName
+  nameWithType: Operator.ParameterName
+  fullName: Innova.Data.StructuredSearch.Operator.ParameterName
+- uid: Innova.Data.StructuredSearch.Operator.Parameters*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.Parameters
+  href: Innova.Data.StructuredSearch.Operator.Parameters.html#Innova_Data_StructuredSearch_Operator_Parameters
+  name: Parameters
+  nameWithType: Operator.Parameters
+  fullName: Innova.Data.StructuredSearch.Operator.Parameters
+- uid: Innova.Data.StructuredSearch.Operator.RequiredParameterCount*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.RequiredParameterCount
+  href: Innova.Data.StructuredSearch.Operator.RequiredParameterCount.html#Innova_Data_StructuredSearch_Operator_RequiredParameterCount
+  name: RequiredParameterCount
+  nameWithType: Operator.RequiredParameterCount
+  fullName: Innova.Data.StructuredSearch.Operator.RequiredParameterCount
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.StructuredSearch.Operator.OperatorCaption*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.OperatorCaption
+  href: Innova.Data.StructuredSearch.Operator.OperatorCaption.html#Innova_Data_StructuredSearch_Operator_OperatorCaption
+  name: OperatorCaption
+  nameWithType: Operator.OperatorCaption
+  fullName: Innova.Data.StructuredSearch.Operator.OperatorCaption
+- uid: Innova.Data.StructuredSearch.Operator.FriendlyFieldName*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.FriendlyFieldName
+  href: Innova.Data.StructuredSearch.Operator.FriendlyFieldName.html#Innova_Data_StructuredSearch_Operator_FriendlyFieldName
+  name: FriendlyFieldName
+  nameWithType: Operator.FriendlyFieldName
+  fullName: Innova.Data.StructuredSearch.Operator.FriendlyFieldName
+- uid: Innova.Data.StructuredSearch.Operator.ParentWhereClause*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.ParentWhereClause
+  href: Innova.Data.StructuredSearch.Operator.ParentWhereClause.html#Innova_Data_StructuredSearch_Operator_ParentWhereClause
+  name: ParentWhereClause
+  nameWithType: Operator.ParentWhereClause
+  fullName: Innova.Data.StructuredSearch.Operator.ParentWhereClause
+- uid: Innova.Data.StructuredSearch.Operator.ValueDescription*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.ValueDescription
+  href: Innova.Data.StructuredSearch.Operator.ValueDescription.html#Innova_Data_StructuredSearch_Operator_ValueDescription
+  name: ValueDescription
+  nameWithType: Operator.ValueDescription
+  fullName: Innova.Data.StructuredSearch.Operator.ValueDescription
+- uid: Innova.Data.StructuredSearch.Operator.EnsureUniqueParameters*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.EnsureUniqueParameters
+  href: Innova.Data.StructuredSearch.Operator.EnsureUniqueParameters.html#Innova_Data_StructuredSearch_Operator_EnsureUniqueParameters_System_Int32__
+  name: EnsureUniqueParameters
+  nameWithType: Operator.EnsureUniqueParameters
+  fullName: Innova.Data.StructuredSearch.Operator.EnsureUniqueParameters
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Innova.Data.StructuredSearch.Operator.FriendlyParameter*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.FriendlyParameter
+  href: Innova.Data.StructuredSearch.Operator.FriendlyParameter.html#Innova_Data_StructuredSearch_Operator_FriendlyParameter
+  name: FriendlyParameter
+  nameWithType: Operator.FriendlyParameter
+  fullName: Innova.Data.StructuredSearch.Operator.FriendlyParameter
+- uid: Innova.Data.StructuredSearch.Operator.ClearOperator*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.ClearOperator
+  href: Innova.Data.StructuredSearch.Operator.ClearOperator.html#Innova_Data_StructuredSearch_Operator_ClearOperator
+  name: ClearOperator
+  nameWithType: Operator.ClearOperator
+  fullName: Innova.Data.StructuredSearch.Operator.ClearOperator
+- uid: Innova.Data.StructuredSearch.Operator.Clone*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.Clone
+  href: Innova.Data.StructuredSearch.Operator.Clone.html#Innova_Data_StructuredSearch_Operator_Clone
+  name: Clone
+  nameWithType: Operator.Clone
+  fullName: Innova.Data.StructuredSearch.Operator.Clone
+- uid: Innova.Data.StructuredSearch.Operator.InitializeSelectedItem*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.InitializeSelectedItem
+  href: Innova.Data.StructuredSearch.Operator.InitializeSelectedItem.html#Innova_Data_StructuredSearch_Operator_InitializeSelectedItem
+  name: InitializeSelectedItem
+  nameWithType: Operator.InitializeSelectedItem
+  fullName: Innova.Data.StructuredSearch.Operator.InitializeSelectedItem
+- uid: Innova.Data.StructuredSearch.Operator.VerifyParameters*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.VerifyParameters
+  href: Innova.Data.StructuredSearch.Operator.VerifyParameters.html#Innova_Data_StructuredSearch_Operator_VerifyParameters
+  name: VerifyParameters
+  nameWithType: Operator.VerifyParameters
+  fullName: Innova.Data.StructuredSearch.Operator.VerifyParameters
+- uid: Innova.Data.StructuredSearch.Operator.CheckForParentWhereClause*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.CheckForParentWhereClause
+  href: Innova.Data.StructuredSearch.Operator.CheckForParentWhereClause.html#Innova_Data_StructuredSearch_Operator_CheckForParentWhereClause_System_String_
+  name: CheckForParentWhereClause
+  nameWithType: Operator.CheckForParentWhereClause
+  fullName: Innova.Data.StructuredSearch.Operator.CheckForParentWhereClause
+- uid: Innova.Data.StructuredSearch.Operator.SetOperatorCaption*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.SetOperatorCaption
+  href: Innova.Data.StructuredSearch.Operator.SetOperatorCaption.html#Innova_Data_StructuredSearch_Operator_SetOperatorCaption_System_String_
+  name: SetOperatorCaption
+  nameWithType: Operator.SetOperatorCaption
+  fullName: Innova.Data.StructuredSearch.Operator.SetOperatorCaption
+- uid: Innova.Data.StructuredSearch.Operator.GetMemberExpression*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.GetMemberExpression
+  href: Innova.Data.StructuredSearch.Operator.GetMemberExpression.html#Innova_Data_StructuredSearch_Operator_GetMemberExpression_System_Linq_Expressions_ParameterExpression_System_String_
+  name: GetMemberExpression
+  nameWithType: Operator.GetMemberExpression
+  fullName: Innova.Data.StructuredSearch.Operator.GetMemberExpression
+- uid: System.Linq.Expressions.ParameterExpression
+  commentId: T:System.Linq.Expressions.ParameterExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.parameterexpression
+  name: ParameterExpression
+  nameWithType: ParameterExpression
+  fullName: System.Linq.Expressions.ParameterExpression
+- uid: System.Linq.Expressions.MemberExpression
+  commentId: T:System.Linq.Expressions.MemberExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.memberexpression
+  name: MemberExpression
+  nameWithType: MemberExpression
+  fullName: System.Linq.Expressions.MemberExpression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: Innova.Data.StructuredSearch.Operator.GetWhereExpression*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.GetWhereExpression
+  href: Innova.Data.StructuredSearch.Operator.GetWhereExpression.html#Innova_Data_StructuredSearch_Operator_GetWhereExpression__1_System_Linq_Expressions_ParameterExpression_
+  name: GetWhereExpression
+  nameWithType: Operator.GetWhereExpression
+  fullName: Innova.Data.StructuredSearch.Operator.GetWhereExpression
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, bool>>
+  nameWithType: Expression<Func<T, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, bool>>
+  nameWithType.vb: Expression(Of Func(Of T, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean))
+  name.vb: Expression(Of Func(Of T, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  commentId: E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  parent: System.ComponentModel.INotifyPropertyChanged
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged
+  name: PropertyChanged
+  nameWithType: INotifyPropertyChanged.PropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: System.ComponentModel.PropertyChangedEventHandler
+  commentId: T:System.ComponentModel.PropertyChangedEventHandler
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler
+  name: PropertyChangedEventHandler
+  nameWithType: PropertyChangedEventHandler
+  fullName: System.ComponentModel.PropertyChangedEventHandler
+- uid: Innova.Data.StructuredSearch.Operator.OnPropertyChanged*
+  commentId: Overload:Innova.Data.StructuredSearch.Operator.OnPropertyChanged
+  href: Innova.Data.StructuredSearch.Operator.OnPropertyChanged.html#Innova_Data_StructuredSearch_Operator_OnPropertyChanged_System_String_
+  name: OnPropertyChanged
+  nameWithType: Operator.OnPropertyChanged
+  fullName: Innova.Data.StructuredSearch.Operator.OnPropertyChanged
+memberLayout: SeparatePages

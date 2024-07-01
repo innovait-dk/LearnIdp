@@ -1,0 +1,392 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.Security.Builder.SecurityBuilder`1
+  commentId: T:Innova.Data.Security.Builder.SecurityBuilder`1
+  id: SecurityBuilder`1
+  parent: Innova.Data.Security.Builder
+  children:
+  - Innova.Data.Security.Builder.SecurityBuilder`1.#ctor(`0)
+  - Innova.Data.Security.Builder.SecurityBuilder`1.Build
+  - Innova.Data.Security.Builder.SecurityBuilder`1.Settings
+  langs:
+  - csharp
+  - vb
+  name: SecurityBuilder<TSetting>
+  nameWithType: SecurityBuilder<TSetting>
+  fullName: Innova.Data.Security.Builder.SecurityBuilder<TSetting>
+  type: Class
+  source:
+    id: SecurityBuilder
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Security\Builder\SecurityBuilder.cs
+    startLine: 11
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Security.Builder
+  summary: Represents a base class for security builders.
+  example: []
+  syntax:
+    content: 'public abstract class SecurityBuilder<TSetting> : ISettingSecurityBuilder<TSetting>, ISecurityBuilder where TSetting : class'
+    typeParameters:
+    - id: TSetting
+      description: The type of the security settings.
+    content.vb: Public MustInherit Class SecurityBuilder(Of TSetting As Class) Implements ISettingSecurityBuilder(Of TSetting), ISecurityBuilder
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Data.Security.Builder.ISettingSecurityBuilder{{TSetting}}
+  - Innova.Data.Security.Builder.ISecurityBuilder
+  nameWithType.vb: SecurityBuilder(Of TSetting)
+  fullName.vb: Innova.Data.Security.Builder.SecurityBuilder(Of TSetting)
+  name.vb: SecurityBuilder(Of TSetting)
+- uid: Innova.Data.Security.Builder.SecurityBuilder`1.Settings
+  commentId: P:Innova.Data.Security.Builder.SecurityBuilder`1.Settings
+  id: Settings
+  parent: Innova.Data.Security.Builder.SecurityBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: SecurityBuilder<TSetting>.Settings
+  fullName: Innova.Data.Security.Builder.SecurityBuilder<TSetting>.Settings
+  type: Property
+  source:
+    id: Settings
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Security\Builder\SecurityBuilder.cs
+    startLine: 16
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Security.Builder
+  summary: Gets the security settings.
+  example: []
+  syntax:
+    content: public TSetting Settings { get; }
+    parameters: []
+    return:
+      type: '{TSetting}'
+    content.vb: Public ReadOnly Property Settings As TSetting
+  overload: Innova.Data.Security.Builder.SecurityBuilder`1.Settings*
+  implements:
+  - Innova.Data.Security.Builder.ISettingSecurityBuilder{{TSetting}}.Settings
+  nameWithType.vb: SecurityBuilder(Of TSetting).Settings
+  fullName.vb: Innova.Data.Security.Builder.SecurityBuilder(Of TSetting).Settings
+- uid: Innova.Data.Security.Builder.SecurityBuilder`1.#ctor(`0)
+  commentId: M:Innova.Data.Security.Builder.SecurityBuilder`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: Innova.Data.Security.Builder.SecurityBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: SecurityBuilder(TSetting)
+  nameWithType: SecurityBuilder<TSetting>.SecurityBuilder(TSetting)
+  fullName: Innova.Data.Security.Builder.SecurityBuilder<TSetting>.SecurityBuilder(TSetting)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Security\Builder\SecurityBuilder.cs
+    startLine: 22
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Security.Builder
+  summary: Initializes a new instance of the <xref href="Innova.Data.Security.Builder.SecurityBuilder%601" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public SecurityBuilder(TSetting settings)
+    parameters:
+    - id: settings
+      type: '{TSetting}'
+      description: The security settings.
+    content.vb: Public Sub New(settings As TSetting)
+  overload: Innova.Data.Security.Builder.SecurityBuilder`1.#ctor*
+  nameWithType.vb: SecurityBuilder(Of TSetting).New(TSetting)
+  fullName.vb: Innova.Data.Security.Builder.SecurityBuilder(Of TSetting).New(TSetting)
+  name.vb: New(TSetting)
+- uid: Innova.Data.Security.Builder.SecurityBuilder`1.Build
+  commentId: M:Innova.Data.Security.Builder.SecurityBuilder`1.Build
+  id: Build
+  parent: Innova.Data.Security.Builder.SecurityBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Build()
+  nameWithType: SecurityBuilder<TSetting>.Build()
+  fullName: Innova.Data.Security.Builder.SecurityBuilder<TSetting>.Build()
+  type: Method
+  source:
+    id: Build
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Security\Builder\SecurityBuilder.cs
+    startLine: 31
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Security.Builder
+  summary: Builds the security.
+  example: []
+  syntax:
+    content: public abstract Task Build()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Public MustOverride Function Build() As Task
+  overload: Innova.Data.Security.Builder.SecurityBuilder`1.Build*
+  implements:
+  - Innova.Data.Security.Builder.ISecurityBuilder.Build
+  nameWithType.vb: SecurityBuilder(Of TSetting).Build()
+  fullName.vb: Innova.Data.Security.Builder.SecurityBuilder(Of TSetting).Build()
+references:
+- uid: Innova.Data.Security.Builder
+  commentId: N:Innova.Data.Security.Builder
+  href: Innova.html
+  name: Innova.Data.Security.Builder
+  nameWithType: Innova.Data.Security.Builder
+  fullName: Innova.Data.Security.Builder
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Security
+    name: Security
+    href: Innova.Data.Security.html
+  - name: .
+  - uid: Innova.Data.Security.Builder
+    name: Builder
+    href: Innova.Data.Security.Builder.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Security
+    name: Security
+    href: Innova.Data.Security.html
+  - name: .
+  - uid: Innova.Data.Security.Builder
+    name: Builder
+    href: Innova.Data.Security.Builder.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Data.Security.Builder.ISettingSecurityBuilder{{TSetting}}
+  commentId: T:Innova.Data.Security.Builder.ISettingSecurityBuilder{`0}
+  parent: Innova.Data.Security.Builder
+  definition: Innova.Data.Security.Builder.ISettingSecurityBuilder`1
+  href: Innova.Data.Security.Builder.ISettingSecurityBuilder-1.html
+  name: ISettingSecurityBuilder<TSetting>
+  nameWithType: ISettingSecurityBuilder<TSetting>
+  fullName: Innova.Data.Security.Builder.ISettingSecurityBuilder<TSetting>
+  nameWithType.vb: ISettingSecurityBuilder(Of TSetting)
+  fullName.vb: Innova.Data.Security.Builder.ISettingSecurityBuilder(Of TSetting)
+  name.vb: ISettingSecurityBuilder(Of TSetting)
+  spec.csharp:
+  - uid: Innova.Data.Security.Builder.ISettingSecurityBuilder`1
+    name: ISettingSecurityBuilder
+    href: Innova.Data.Security.Builder.ISettingSecurityBuilder-1.html
+  - name: <
+  - name: TSetting
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Security.Builder.ISettingSecurityBuilder`1
+    name: ISettingSecurityBuilder
+    href: Innova.Data.Security.Builder.ISettingSecurityBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSetting
+  - name: )
+- uid: Innova.Data.Security.Builder.ISecurityBuilder
+  commentId: T:Innova.Data.Security.Builder.ISecurityBuilder
+  parent: Innova.Data.Security.Builder
+  href: Innova.Data.Security.Builder.ISecurityBuilder.html
+  name: ISecurityBuilder
+  nameWithType: ISecurityBuilder
+  fullName: Innova.Data.Security.Builder.ISecurityBuilder
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.Security.Builder.ISettingSecurityBuilder`1
+  commentId: T:Innova.Data.Security.Builder.ISettingSecurityBuilder`1
+  href: Innova.Data.Security.Builder.ISettingSecurityBuilder-1.html
+  name: ISettingSecurityBuilder<TSetting>
+  nameWithType: ISettingSecurityBuilder<TSetting>
+  fullName: Innova.Data.Security.Builder.ISettingSecurityBuilder<TSetting>
+  nameWithType.vb: ISettingSecurityBuilder(Of TSetting)
+  fullName.vb: Innova.Data.Security.Builder.ISettingSecurityBuilder(Of TSetting)
+  name.vb: ISettingSecurityBuilder(Of TSetting)
+  spec.csharp:
+  - uid: Innova.Data.Security.Builder.ISettingSecurityBuilder`1
+    name: ISettingSecurityBuilder
+    href: Innova.Data.Security.Builder.ISettingSecurityBuilder-1.html
+  - name: <
+  - name: TSetting
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Security.Builder.ISettingSecurityBuilder`1
+    name: ISettingSecurityBuilder
+    href: Innova.Data.Security.Builder.ISettingSecurityBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSetting
+  - name: )
+- uid: Innova.Data.Security.Builder.SecurityBuilder`1.Settings*
+  commentId: Overload:Innova.Data.Security.Builder.SecurityBuilder`1.Settings
+  href: Innova.Data.Security.Builder.SecurityBuilder-1.Settings.html#Innova_Data_Security_Builder_SecurityBuilder_1_Settings
+  name: Settings
+  nameWithType: SecurityBuilder<TSetting>.Settings
+  fullName: Innova.Data.Security.Builder.SecurityBuilder<TSetting>.Settings
+  nameWithType.vb: SecurityBuilder(Of TSetting).Settings
+  fullName.vb: Innova.Data.Security.Builder.SecurityBuilder(Of TSetting).Settings
+- uid: Innova.Data.Security.Builder.ISettingSecurityBuilder{{TSetting}}.Settings
+  commentId: P:Innova.Data.Security.Builder.ISettingSecurityBuilder{`0}.Settings
+  parent: Innova.Data.Security.Builder.ISettingSecurityBuilder{{TSetting}}
+  definition: Innova.Data.Security.Builder.ISettingSecurityBuilder`1.Settings
+  href: Innova.Data.Security.Builder.ISettingSecurityBuilder-1.Settings.html#Innova_Data_Security_Builder_ISettingSecurityBuilder_1_Settings
+  name: Settings
+  nameWithType: ISettingSecurityBuilder<TSetting>.Settings
+  fullName: Innova.Data.Security.Builder.ISettingSecurityBuilder<TSetting>.Settings
+  nameWithType.vb: ISettingSecurityBuilder(Of TSetting).Settings
+  fullName.vb: Innova.Data.Security.Builder.ISettingSecurityBuilder(Of TSetting).Settings
+- uid: '{TSetting}'
+  commentId: '!:TSetting'
+  definition: TSetting
+  name: TSetting
+  nameWithType: TSetting
+  fullName: TSetting
+- uid: Innova.Data.Security.Builder.ISettingSecurityBuilder`1.Settings
+  commentId: P:Innova.Data.Security.Builder.ISettingSecurityBuilder`1.Settings
+  href: Innova.Data.Security.Builder.ISettingSecurityBuilder-1.Settings.html#Innova_Data_Security_Builder_ISettingSecurityBuilder_1_Settings
+  name: Settings
+  nameWithType: ISettingSecurityBuilder<TSetting>.Settings
+  fullName: Innova.Data.Security.Builder.ISettingSecurityBuilder<TSetting>.Settings
+  nameWithType.vb: ISettingSecurityBuilder(Of TSetting).Settings
+  fullName.vb: Innova.Data.Security.Builder.ISettingSecurityBuilder(Of TSetting).Settings
+- uid: TSetting
+  name: TSetting
+  nameWithType: TSetting
+  fullName: TSetting
+- uid: Innova.Data.Security.Builder.SecurityBuilder`1
+  commentId: T:Innova.Data.Security.Builder.SecurityBuilder`1
+  href: Innova.Data.Security.Builder.SecurityBuilder-1.html
+  name: SecurityBuilder<TSetting>
+  nameWithType: SecurityBuilder<TSetting>
+  fullName: Innova.Data.Security.Builder.SecurityBuilder<TSetting>
+  nameWithType.vb: SecurityBuilder(Of TSetting)
+  fullName.vb: Innova.Data.Security.Builder.SecurityBuilder(Of TSetting)
+  name.vb: SecurityBuilder(Of TSetting)
+  spec.csharp:
+  - uid: Innova.Data.Security.Builder.SecurityBuilder`1
+    name: SecurityBuilder
+    href: Innova.Data.Security.Builder.SecurityBuilder-1.html
+  - name: <
+  - name: TSetting
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Security.Builder.SecurityBuilder`1
+    name: SecurityBuilder
+    href: Innova.Data.Security.Builder.SecurityBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSetting
+  - name: )
+- uid: Innova.Data.Security.Builder.SecurityBuilder`1.#ctor*
+  commentId: Overload:Innova.Data.Security.Builder.SecurityBuilder`1.#ctor
+  href: Innova.Data.Security.Builder.SecurityBuilder-1.-ctor.html#Innova_Data_Security_Builder_SecurityBuilder_1__ctor__0_
+  name: SecurityBuilder
+  nameWithType: SecurityBuilder<TSetting>.SecurityBuilder
+  fullName: Innova.Data.Security.Builder.SecurityBuilder<TSetting>.SecurityBuilder
+  nameWithType.vb: SecurityBuilder(Of TSetting).New
+  fullName.vb: Innova.Data.Security.Builder.SecurityBuilder(Of TSetting).New
+  name.vb: New
+- uid: Innova.Data.Security.Builder.SecurityBuilder`1.Build*
+  commentId: Overload:Innova.Data.Security.Builder.SecurityBuilder`1.Build
+  href: Innova.Data.Security.Builder.SecurityBuilder-1.Build.html#Innova_Data_Security_Builder_SecurityBuilder_1_Build
+  name: Build
+  nameWithType: SecurityBuilder<TSetting>.Build
+  fullName: Innova.Data.Security.Builder.SecurityBuilder<TSetting>.Build
+  nameWithType.vb: SecurityBuilder(Of TSetting).Build
+  fullName.vb: Innova.Data.Security.Builder.SecurityBuilder(Of TSetting).Build
+- uid: Innova.Data.Security.Builder.ISecurityBuilder.Build
+  commentId: M:Innova.Data.Security.Builder.ISecurityBuilder.Build
+  parent: Innova.Data.Security.Builder.ISecurityBuilder
+  href: Innova.Data.Security.Builder.ISecurityBuilder.Build.html#Innova_Data_Security_Builder_ISecurityBuilder_Build
+  name: Build()
+  nameWithType: ISecurityBuilder.Build()
+  fullName: Innova.Data.Security.Builder.ISecurityBuilder.Build()
+  spec.csharp:
+  - uid: Innova.Data.Security.Builder.ISecurityBuilder.Build
+    name: Build
+    href: Innova.Data.Security.Builder.ISecurityBuilder.Build.html#Innova_Data_Security_Builder_ISecurityBuilder_Build
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Security.Builder.ISecurityBuilder.Build
+    name: Build
+    href: Innova.Data.Security.Builder.ISecurityBuilder.Build.html#Innova_Data_Security_Builder_ISecurityBuilder_Build
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

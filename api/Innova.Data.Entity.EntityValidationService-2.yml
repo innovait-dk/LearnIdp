@@ -1,0 +1,1150 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.Entity.EntityValidationService`2
+  commentId: T:Innova.Data.Entity.EntityValidationService`2
+  id: EntityValidationService`2
+  parent: Innova.Data.Entity
+  children:
+  - Innova.Data.Entity.EntityValidationService`2.#ctor(System.Collections.Generic.IEnumerable{Innova.Data.Validation.IEntityValidator{`1}},Innova.Data.Entity.IEntityServiceConfiguration{`0})
+  - Innova.Data.Entity.EntityValidationService`2.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  - Innova.Data.Entity.EntityValidationService`2.SetValidatorOnEntity(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+  - Innova.Data.Entity.EntityValidationService`2.Validate(`1,Innova.Data.Validation.ValidationRuleSetEnum,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: EntityValidationService<T, TEntityInterface>
+  nameWithType: EntityValidationService<T, TEntityInterface>
+  fullName: Innova.Data.Entity.EntityValidationService<T, TEntityInterface>
+  type: Class
+  source:
+    id: EntityValidationService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\EntityValidationService.cs
+    startLine: 18
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity
+  summary: Service for entity validation.
+  example: []
+  syntax:
+    content: 'public class EntityValidationService<T, TEntityInterface> : IEntityValidationService<T, TEntityInterface>, IEntityValidatorService where T : class where TEntityInterface : class'
+    typeParameters:
+    - id: T
+      description: The type of the entity.
+    - id: TEntityInterface
+      description: The interface type of the entity.
+    content.vb: Public Class EntityValidationService(Of T As Class, TEntityInterface As Class) Implements IEntityValidationService(Of T, TEntityInterface), IEntityValidatorService
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Data.Entity.IEntityValidationService{{T},{TEntityInterface}}
+  - Innova.Data.Entity.IEntityValidatorService
+  extensionMethods:
+  - Innova.Data.Entity.IEntityValidationService{`0,`1}.Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid``2({T},FluentValidation.Results.ValidationResult)
+  - Innova.Data.Entity.IEntityValidationService{`0,`1}.Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException``2(Innova.Data.Entity.IPrimaryKey)
+  nameWithType.vb: EntityValidationService(Of T, TEntityInterface)
+  fullName.vb: Innova.Data.Entity.EntityValidationService(Of T, TEntityInterface)
+  name.vb: EntityValidationService(Of T, TEntityInterface)
+- uid: Innova.Data.Entity.EntityValidationService`2.#ctor(System.Collections.Generic.IEnumerable{Innova.Data.Validation.IEntityValidator{`1}},Innova.Data.Entity.IEntityServiceConfiguration{`0})
+  commentId: M:Innova.Data.Entity.EntityValidationService`2.#ctor(System.Collections.Generic.IEnumerable{Innova.Data.Validation.IEntityValidator{`1}},Innova.Data.Entity.IEntityServiceConfiguration{`0})
+  id: '#ctor(System.Collections.Generic.IEnumerable{Innova.Data.Validation.IEntityValidator{`1}},Innova.Data.Entity.IEntityServiceConfiguration{`0})'
+  parent: Innova.Data.Entity.EntityValidationService`2
+  langs:
+  - csharp
+  - vb
+  name: EntityValidationService(IEnumerable<IEntityValidator<TEntityInterface>>, IEntityServiceConfiguration<T>)
+  nameWithType: EntityValidationService<T, TEntityInterface>.EntityValidationService(IEnumerable<IEntityValidator<TEntityInterface>>, IEntityServiceConfiguration<T>)
+  fullName: Innova.Data.Entity.EntityValidationService<T, TEntityInterface>.EntityValidationService(System.Collections.Generic.IEnumerable<Innova.Data.Validation.IEntityValidator<TEntityInterface>>, Innova.Data.Entity.IEntityServiceConfiguration<T>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\EntityValidationService.cs
+    startLine: 28
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity
+  summary: Initializes a new instance of the <xref href="Innova.Data.Entity.EntityValidationService%602" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public EntityValidationService(IEnumerable<IEntityValidator<TEntityInterface>> validators, IEntityServiceConfiguration<T> entityServiceConfiguration)
+    parameters:
+    - id: validators
+      type: System.Collections.Generic.IEnumerable{Innova.Data.Validation.IEntityValidator{{TEntityInterface}}}
+      description: The validators to be used for entity validation.
+    - id: entityServiceConfiguration
+      type: Innova.Data.Entity.IEntityServiceConfiguration{{T}}
+      description: The configuration for the entity service.
+    content.vb: Public Sub New(validators As IEnumerable(Of IEntityValidator(Of TEntityInterface)), entityServiceConfiguration As IEntityServiceConfiguration(Of T))
+  overload: Innova.Data.Entity.EntityValidationService`2.#ctor*
+  nameWithType.vb: EntityValidationService(Of T, TEntityInterface).New(IEnumerable(Of IEntityValidator(Of TEntityInterface)), IEntityServiceConfiguration(Of T))
+  fullName.vb: Innova.Data.Entity.EntityValidationService(Of T, TEntityInterface).New(System.Collections.Generic.IEnumerable(Of Innova.Data.Validation.IEntityValidator(Of TEntityInterface)), Innova.Data.Entity.IEntityServiceConfiguration(Of T))
+  name.vb: New(IEnumerable(Of IEntityValidator(Of TEntityInterface)), IEntityServiceConfiguration(Of T))
+- uid: Innova.Data.Entity.EntityValidationService`2.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  commentId: M:Innova.Data.Entity.EntityValidationService`2.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  id: IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  parent: Innova.Data.Entity.EntityValidationService`2
+  langs:
+  - csharp
+  - vb
+  name: IsPrimaryKeysValid(IPrimaryKey)
+  nameWithType: EntityValidationService<T, TEntityInterface>.IsPrimaryKeysValid(IPrimaryKey)
+  fullName: Innova.Data.Entity.EntityValidationService<T, TEntityInterface>.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  type: Method
+  source:
+    id: IsPrimaryKeysValid
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\EntityValidationService.cs
+    startLine: 52
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity
+  summary: Checks if the primary keys are valid.
+  example: []
+  syntax:
+    content: public bool IsPrimaryKeysValid(IPrimaryKey primaryKeys)
+    parameters:
+    - id: primaryKeys
+      type: Innova.Data.Entity.IPrimaryKey
+      description: The primary keys to be validated.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the primary keys are valid; otherwise, <code>false</code>.
+    content.vb: Public Function IsPrimaryKeysValid(primaryKeys As IPrimaryKey) As Boolean
+  overload: Innova.Data.Entity.EntityValidationService`2.IsPrimaryKeysValid*
+  implements:
+  - Innova.Data.Entity.IEntityValidationService{{T},{TEntityInterface}}.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  nameWithType.vb: EntityValidationService(Of T, TEntityInterface).IsPrimaryKeysValid(IPrimaryKey)
+  fullName.vb: Innova.Data.Entity.EntityValidationService(Of T, TEntityInterface).IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+- uid: Innova.Data.Entity.EntityValidationService`2.Validate(`1,Innova.Data.Validation.ValidationRuleSetEnum,System.Threading.CancellationToken)
+  commentId: M:Innova.Data.Entity.EntityValidationService`2.Validate(`1,Innova.Data.Validation.ValidationRuleSetEnum,System.Threading.CancellationToken)
+  id: Validate(`1,Innova.Data.Validation.ValidationRuleSetEnum,System.Threading.CancellationToken)
+  parent: Innova.Data.Entity.EntityValidationService`2
+  langs:
+  - csharp
+  - vb
+  name: Validate(TEntityInterface, ValidationRuleSetEnum, CancellationToken)
+  nameWithType: EntityValidationService<T, TEntityInterface>.Validate(TEntityInterface, ValidationRuleSetEnum, CancellationToken)
+  fullName: Innova.Data.Entity.EntityValidationService<T, TEntityInterface>.Validate(TEntityInterface, Innova.Data.Validation.ValidationRuleSetEnum, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: Validate
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\EntityValidationService.cs
+    startLine: 70
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity
+  summary: Validates the entity.
+  example: []
+  syntax:
+    content: public Task Validate(TEntityInterface entity, ValidationRuleSetEnum validationRuleSetEnum, CancellationToken cancellationToken = default)
+    parameters:
+    - id: entity
+      type: '{TEntityInterface}'
+      description: The entity to be validated.
+    - id: validationRuleSetEnum
+      type: Innova.Data.Validation.ValidationRuleSetEnum
+      description: The validation rule set to be used.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Public Function Validate(entity As TEntityInterface, validationRuleSetEnum As ValidationRuleSetEnum, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Data.Entity.EntityValidationService`2.Validate*
+  implements:
+  - Innova.Data.Entity.IEntityValidationService{{T},{TEntityInterface}}.Validate({TEntityInterface},Innova.Data.Validation.ValidationRuleSetEnum,System.Threading.CancellationToken)
+  nameWithType.vb: EntityValidationService(Of T, TEntityInterface).Validate(TEntityInterface, ValidationRuleSetEnum, CancellationToken)
+  fullName.vb: Innova.Data.Entity.EntityValidationService(Of T, TEntityInterface).Validate(TEntityInterface, Innova.Data.Validation.ValidationRuleSetEnum, System.Threading.CancellationToken)
+- uid: Innova.Data.Entity.EntityValidationService`2.SetValidatorOnEntity(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+  commentId: M:Innova.Data.Entity.EntityValidationService`2.SetValidatorOnEntity(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+  id: SetValidatorOnEntity(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+  parent: Innova.Data.Entity.EntityValidationService`2
+  langs:
+  - csharp
+  - vb
+  name: SetValidatorOnEntity(object, ValidationRuleSetEnum)
+  nameWithType: EntityValidationService<T, TEntityInterface>.SetValidatorOnEntity(object, ValidationRuleSetEnum)
+  fullName: Innova.Data.Entity.EntityValidationService<T, TEntityInterface>.SetValidatorOnEntity(object, Innova.Data.Validation.ValidationRuleSetEnum)
+  type: Method
+  source:
+    id: SetValidatorOnEntity
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\EntityValidationService.cs
+    startLine: 85
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity
+  summary: Sets the validator on the entity.
+  example: []
+  syntax:
+    content: public virtual void SetValidatorOnEntity(object entity, ValidationRuleSetEnum validationRuleSetEnum)
+    parameters:
+    - id: entity
+      type: System.Object
+      description: The entity to set the validator on.
+    - id: validationRuleSetEnum
+      type: Innova.Data.Validation.ValidationRuleSetEnum
+      description: The validation rule set to be used.
+    content.vb: Public Overridable Sub SetValidatorOnEntity(entity As Object, validationRuleSetEnum As ValidationRuleSetEnum)
+  overload: Innova.Data.Entity.EntityValidationService`2.SetValidatorOnEntity*
+  implements:
+  - Innova.Data.Entity.IEntityValidatorService.SetValidatorOnEntity(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+  nameWithType.vb: EntityValidationService(Of T, TEntityInterface).SetValidatorOnEntity(Object, ValidationRuleSetEnum)
+  fullName.vb: Innova.Data.Entity.EntityValidationService(Of T, TEntityInterface).SetValidatorOnEntity(Object, Innova.Data.Validation.ValidationRuleSetEnum)
+  name.vb: SetValidatorOnEntity(Object, ValidationRuleSetEnum)
+references:
+- uid: Innova.Data.Entity
+  commentId: N:Innova.Data.Entity
+  href: Innova.html
+  name: Innova.Data.Entity
+  nameWithType: Innova.Data.Entity
+  fullName: Innova.Data.Entity
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Data.Entity.IEntityValidationService{{T},{TEntityInterface}}
+  commentId: T:Innova.Data.Entity.IEntityValidationService{`0,`1}
+  parent: Innova.Data.Entity
+  definition: Innova.Data.Entity.IEntityValidationService`2
+  href: Innova.Data.Entity.IEntityValidationService-2.html
+  name: IEntityValidationService<T, TEntityInterface>
+  nameWithType: IEntityValidationService<T, TEntityInterface>
+  fullName: Innova.Data.Entity.IEntityValidationService<T, TEntityInterface>
+  nameWithType.vb: IEntityValidationService(Of T, TEntityInterface)
+  fullName.vb: Innova.Data.Entity.IEntityValidationService(Of T, TEntityInterface)
+  name.vb: IEntityValidationService(Of T, TEntityInterface)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityValidationService`2
+    name: IEntityValidationService
+    href: Innova.Data.Entity.IEntityValidationService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityValidationService`2
+    name: IEntityValidationService
+    href: Innova.Data.Entity.IEntityValidationService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: )
+- uid: Innova.Data.Entity.IEntityValidatorService
+  commentId: T:Innova.Data.Entity.IEntityValidatorService
+  parent: Innova.Data.Entity
+  href: Innova.Data.Entity.IEntityValidatorService.html
+  name: IEntityValidatorService
+  nameWithType: IEntityValidatorService
+  fullName: Innova.Data.Entity.IEntityValidatorService
+- uid: Innova.Data.Entity.IEntityValidationService{`0,`1}.Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid``2({T},FluentValidation.Results.ValidationResult)
+  commentId: M:Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid``2(Innova.Data.Entity.IEntityValidationService{``0,``1},``0,FluentValidation.Results.ValidationResult)
+  parent: Innova.Data.Entity.IEntityValidationServiceExtensions
+  definition: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid``2(Innova.Data.Entity.IEntityValidationService{``0,``1},``0,FluentValidation.Results.ValidationResult)
+  href: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid.html#Innova_Data_Entity_IEntityValidationServiceExtensions_IsEntityValid__2_Innova_Data_Entity_IEntityValidationService___0___1____0_FluentValidation_Results_ValidationResult_
+  name: IsEntityValid<T, TEntityInterface>(IEntityValidationService<T, TEntityInterface>, T, ValidationResult)
+  nameWithType: IEntityValidationServiceExtensions.IsEntityValid<T, TEntityInterface>(IEntityValidationService<T, TEntityInterface>, T, ValidationResult)
+  fullName: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid<T, TEntityInterface>(Innova.Data.Entity.IEntityValidationService<T, TEntityInterface>, T, FluentValidation.Results.ValidationResult)
+  nameWithType.vb: IEntityValidationServiceExtensions.IsEntityValid(Of T, TEntityInterface)(IEntityValidationService(Of T, TEntityInterface), T, ValidationResult)
+  fullName.vb: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid(Of T, TEntityInterface)(Innova.Data.Entity.IEntityValidationService(Of T, TEntityInterface), T, FluentValidation.Results.ValidationResult)
+  name.vb: IsEntityValid(Of T, TEntityInterface)(IEntityValidationService(Of T, TEntityInterface), T, ValidationResult)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid``2(Innova.Data.Entity.IEntityValidationService{`0,`1},`0,FluentValidation.Results.ValidationResult)
+    name: IsEntityValid
+    href: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid.html#Innova_Data_Entity_IEntityValidationServiceExtensions_IsEntityValid__2_Innova_Data_Entity_IEntityValidationService___0___1____0_FluentValidation_Results_ValidationResult_
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: '>'
+  - name: (
+  - uid: Innova.Data.Entity.IEntityValidationService`2
+    name: IEntityValidationService
+    href: Innova.Data.Entity.IEntityValidationService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid``2(Innova.Data.Entity.IEntityValidationService{`0,`1},`0,FluentValidation.Results.ValidationResult)
+    name: IsEntityValid
+    href: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid.html#Innova_Data_Entity_IEntityValidationServiceExtensions_IsEntityValid__2_Innova_Data_Entity_IEntityValidationService___0___1____0_FluentValidation_Results_ValidationResult_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: )
+  - name: (
+  - uid: Innova.Data.Entity.IEntityValidationService`2
+    name: IEntityValidationService
+    href: Innova.Data.Entity.IEntityValidationService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: )
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: )
+- uid: Innova.Data.Entity.IEntityValidationService{`0,`1}.Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException``2(Innova.Data.Entity.IPrimaryKey)
+  commentId: M:Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException``2(Innova.Data.Entity.IEntityValidationService{``0,``1},Innova.Data.Entity.IPrimaryKey)
+  parent: Innova.Data.Entity.IEntityValidationServiceExtensions
+  definition: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException``2(Innova.Data.Entity.IEntityValidationService{``0,``1},Innova.Data.Entity.IPrimaryKey)
+  href: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException.html#Innova_Data_Entity_IEntityValidationServiceExtensions_IsPrimaryKeysValidAndThrowException__2_Innova_Data_Entity_IEntityValidationService___0___1__Innova_Data_Entity_IPrimaryKey_
+  name: IsPrimaryKeysValidAndThrowException<T, TEntityInterface>(IEntityValidationService<T, TEntityInterface>, IPrimaryKey)
+  nameWithType: IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException<T, TEntityInterface>(IEntityValidationService<T, TEntityInterface>, IPrimaryKey)
+  fullName: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException<T, TEntityInterface>(Innova.Data.Entity.IEntityValidationService<T, TEntityInterface>, Innova.Data.Entity.IPrimaryKey)
+  nameWithType.vb: IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException(Of T, TEntityInterface)(IEntityValidationService(Of T, TEntityInterface), IPrimaryKey)
+  fullName.vb: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException(Of T, TEntityInterface)(Innova.Data.Entity.IEntityValidationService(Of T, TEntityInterface), Innova.Data.Entity.IPrimaryKey)
+  name.vb: IsPrimaryKeysValidAndThrowException(Of T, TEntityInterface)(IEntityValidationService(Of T, TEntityInterface), IPrimaryKey)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException``2(Innova.Data.Entity.IEntityValidationService{`0,`1},Innova.Data.Entity.IPrimaryKey)
+    name: IsPrimaryKeysValidAndThrowException
+    href: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException.html#Innova_Data_Entity_IEntityValidationServiceExtensions_IsPrimaryKeysValidAndThrowException__2_Innova_Data_Entity_IEntityValidationService___0___1__Innova_Data_Entity_IPrimaryKey_
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: '>'
+  - name: (
+  - uid: Innova.Data.Entity.IEntityValidationService`2
+    name: IEntityValidationService
+    href: Innova.Data.Entity.IEntityValidationService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException``2(Innova.Data.Entity.IEntityValidationService{`0,`1},Innova.Data.Entity.IPrimaryKey)
+    name: IsPrimaryKeysValidAndThrowException
+    href: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException.html#Innova_Data_Entity_IEntityValidationServiceExtensions_IsPrimaryKeysValidAndThrowException__2_Innova_Data_Entity_IEntityValidationService___0___1__Innova_Data_Entity_IPrimaryKey_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: )
+  - name: (
+  - uid: Innova.Data.Entity.IEntityValidationService`2
+    name: IEntityValidationService
+    href: Innova.Data.Entity.IEntityValidationService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.Entity.IEntityValidationService`2
+  commentId: T:Innova.Data.Entity.IEntityValidationService`2
+  href: Innova.Data.Entity.IEntityValidationService-2.html
+  name: IEntityValidationService<T, TEntityInterface>
+  nameWithType: IEntityValidationService<T, TEntityInterface>
+  fullName: Innova.Data.Entity.IEntityValidationService<T, TEntityInterface>
+  nameWithType.vb: IEntityValidationService(Of T, TEntityInterface)
+  fullName.vb: Innova.Data.Entity.IEntityValidationService(Of T, TEntityInterface)
+  name.vb: IEntityValidationService(Of T, TEntityInterface)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityValidationService`2
+    name: IEntityValidationService
+    href: Innova.Data.Entity.IEntityValidationService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityValidationService`2
+    name: IEntityValidationService
+    href: Innova.Data.Entity.IEntityValidationService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: )
+- uid: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid``2(Innova.Data.Entity.IEntityValidationService{``0,``1},``0,FluentValidation.Results.ValidationResult)
+  commentId: M:Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid``2(Innova.Data.Entity.IEntityValidationService{``0,``1},``0,FluentValidation.Results.ValidationResult)
+  isExternal: true
+  href: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid.html#Innova_Data_Entity_IEntityValidationServiceExtensions_IsEntityValid__2_Innova_Data_Entity_IEntityValidationService___0___1____0_FluentValidation_Results_ValidationResult_
+  name: IsEntityValid<T, TInterface>(IEntityValidationService<T, TInterface>, T, ValidationResult)
+  nameWithType: IEntityValidationServiceExtensions.IsEntityValid<T, TInterface>(IEntityValidationService<T, TInterface>, T, ValidationResult)
+  fullName: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid<T, TInterface>(Innova.Data.Entity.IEntityValidationService<T, TInterface>, T, FluentValidation.Results.ValidationResult)
+  nameWithType.vb: IEntityValidationServiceExtensions.IsEntityValid(Of T, TInterface)(IEntityValidationService(Of T, TInterface), T, ValidationResult)
+  fullName.vb: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid(Of T, TInterface)(Innova.Data.Entity.IEntityValidationService(Of T, TInterface), T, FluentValidation.Results.ValidationResult)
+  name.vb: IsEntityValid(Of T, TInterface)(IEntityValidationService(Of T, TInterface), T, ValidationResult)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid``2(Innova.Data.Entity.IEntityValidationService{``0,``1},``0,FluentValidation.Results.ValidationResult)
+    name: IsEntityValid
+    href: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid.html#Innova_Data_Entity_IEntityValidationServiceExtensions_IsEntityValid__2_Innova_Data_Entity_IEntityValidationService___0___1____0_FluentValidation_Results_ValidationResult_
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInterface
+  - name: '>'
+  - name: (
+  - uid: Innova.Data.Entity.IEntityValidationService`2
+    name: IEntityValidationService
+    href: Innova.Data.Entity.IEntityValidationService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInterface
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid``2(Innova.Data.Entity.IEntityValidationService{``0,``1},``0,FluentValidation.Results.ValidationResult)
+    name: IsEntityValid
+    href: Innova.Data.Entity.IEntityValidationServiceExtensions.IsEntityValid.html#Innova_Data_Entity_IEntityValidationServiceExtensions_IsEntityValid__2_Innova_Data_Entity_IEntityValidationService___0___1____0_FluentValidation_Results_ValidationResult_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInterface
+  - name: )
+  - name: (
+  - uid: Innova.Data.Entity.IEntityValidationService`2
+    name: IEntityValidationService
+    href: Innova.Data.Entity.IEntityValidationService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInterface
+  - name: )
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: )
+- uid: Innova.Data.Entity.IEntityValidationServiceExtensions
+  commentId: T:Innova.Data.Entity.IEntityValidationServiceExtensions
+  parent: Innova.Data.Entity
+  href: Innova.Data.Entity.IEntityValidationServiceExtensions.html
+  name: IEntityValidationServiceExtensions
+  nameWithType: IEntityValidationServiceExtensions
+  fullName: Innova.Data.Entity.IEntityValidationServiceExtensions
+- uid: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException``2(Innova.Data.Entity.IEntityValidationService{``0,``1},Innova.Data.Entity.IPrimaryKey)
+  commentId: M:Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException``2(Innova.Data.Entity.IEntityValidationService{``0,``1},Innova.Data.Entity.IPrimaryKey)
+  href: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException.html#Innova_Data_Entity_IEntityValidationServiceExtensions_IsPrimaryKeysValidAndThrowException__2_Innova_Data_Entity_IEntityValidationService___0___1__Innova_Data_Entity_IPrimaryKey_
+  name: IsPrimaryKeysValidAndThrowException<T, TInterface>(IEntityValidationService<T, TInterface>, IPrimaryKey)
+  nameWithType: IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException<T, TInterface>(IEntityValidationService<T, TInterface>, IPrimaryKey)
+  fullName: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException<T, TInterface>(Innova.Data.Entity.IEntityValidationService<T, TInterface>, Innova.Data.Entity.IPrimaryKey)
+  nameWithType.vb: IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException(Of T, TInterface)(IEntityValidationService(Of T, TInterface), IPrimaryKey)
+  fullName.vb: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException(Of T, TInterface)(Innova.Data.Entity.IEntityValidationService(Of T, TInterface), Innova.Data.Entity.IPrimaryKey)
+  name.vb: IsPrimaryKeysValidAndThrowException(Of T, TInterface)(IEntityValidationService(Of T, TInterface), IPrimaryKey)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException``2(Innova.Data.Entity.IEntityValidationService{``0,``1},Innova.Data.Entity.IPrimaryKey)
+    name: IsPrimaryKeysValidAndThrowException
+    href: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException.html#Innova_Data_Entity_IEntityValidationServiceExtensions_IsPrimaryKeysValidAndThrowException__2_Innova_Data_Entity_IEntityValidationService___0___1__Innova_Data_Entity_IPrimaryKey_
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInterface
+  - name: '>'
+  - name: (
+  - uid: Innova.Data.Entity.IEntityValidationService`2
+    name: IEntityValidationService
+    href: Innova.Data.Entity.IEntityValidationService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInterface
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException``2(Innova.Data.Entity.IEntityValidationService{``0,``1},Innova.Data.Entity.IPrimaryKey)
+    name: IsPrimaryKeysValidAndThrowException
+    href: Innova.Data.Entity.IEntityValidationServiceExtensions.IsPrimaryKeysValidAndThrowException.html#Innova_Data_Entity_IEntityValidationServiceExtensions_IsPrimaryKeysValidAndThrowException__2_Innova_Data_Entity_IEntityValidationService___0___1__Innova_Data_Entity_IPrimaryKey_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInterface
+  - name: )
+  - name: (
+  - uid: Innova.Data.Entity.IEntityValidationService`2
+    name: IEntityValidationService
+    href: Innova.Data.Entity.IEntityValidationService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInterface
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+- uid: Innova.Data.Entity.EntityValidationService`2
+  commentId: T:Innova.Data.Entity.EntityValidationService`2
+  href: Innova.Data.Entity.EntityValidationService-2.html
+  name: EntityValidationService<T, TEntityInterface>
+  nameWithType: EntityValidationService<T, TEntityInterface>
+  fullName: Innova.Data.Entity.EntityValidationService<T, TEntityInterface>
+  nameWithType.vb: EntityValidationService(Of T, TEntityInterface)
+  fullName.vb: Innova.Data.Entity.EntityValidationService(Of T, TEntityInterface)
+  name.vb: EntityValidationService(Of T, TEntityInterface)
+  spec.csharp:
+  - uid: Innova.Data.Entity.EntityValidationService`2
+    name: EntityValidationService
+    href: Innova.Data.Entity.EntityValidationService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.EntityValidationService`2
+    name: EntityValidationService
+    href: Innova.Data.Entity.EntityValidationService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: )
+- uid: Innova.Data.Entity.EntityValidationService`2.#ctor*
+  commentId: Overload:Innova.Data.Entity.EntityValidationService`2.#ctor
+  href: Innova.Data.Entity.EntityValidationService-2.-ctor.html#Innova_Data_Entity_EntityValidationService_2__ctor_System_Collections_Generic_IEnumerable_Innova_Data_Validation_IEntityValidator__1___Innova_Data_Entity_IEntityServiceConfiguration__0__
+  name: EntityValidationService
+  nameWithType: EntityValidationService<T, TEntityInterface>.EntityValidationService
+  fullName: Innova.Data.Entity.EntityValidationService<T, TEntityInterface>.EntityValidationService
+  nameWithType.vb: EntityValidationService(Of T, TEntityInterface).New
+  fullName.vb: Innova.Data.Entity.EntityValidationService(Of T, TEntityInterface).New
+  name.vb: New
+- uid: System.Collections.Generic.IEnumerable{Innova.Data.Validation.IEntityValidator{{TEntityInterface}}}
+  commentId: T:System.Collections.Generic.IEnumerable{Innova.Data.Validation.IEntityValidator{`1}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IEntityValidator<TEntityInterface>>
+  nameWithType: IEnumerable<IEntityValidator<TEntityInterface>>
+  fullName: System.Collections.Generic.IEnumerable<Innova.Data.Validation.IEntityValidator<TEntityInterface>>
+  nameWithType.vb: IEnumerable(Of IEntityValidator(Of TEntityInterface))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Innova.Data.Validation.IEntityValidator(Of TEntityInterface))
+  name.vb: IEnumerable(Of IEntityValidator(Of TEntityInterface))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Innova.Data.Validation.IEntityValidator`1
+    name: IEntityValidator
+    href: Innova.Data.Validation.IEntityValidator-1.html
+  - name: <
+  - name: TEntityInterface
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.Validation.IEntityValidator`1
+    name: IEntityValidator
+    href: Innova.Data.Validation.IEntityValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntityInterface
+  - name: )
+  - name: )
+- uid: Innova.Data.Entity.IEntityServiceConfiguration{{T}}
+  commentId: T:Innova.Data.Entity.IEntityServiceConfiguration{`0}
+  parent: Innova.Data.Entity
+  definition: Innova.Data.Entity.IEntityServiceConfiguration`1
+  href: Innova.Data.Entity.IEntityServiceConfiguration-1.html
+  name: IEntityServiceConfiguration<T>
+  nameWithType: IEntityServiceConfiguration<T>
+  fullName: Innova.Data.Entity.IEntityServiceConfiguration<T>
+  nameWithType.vb: IEntityServiceConfiguration(Of T)
+  fullName.vb: Innova.Data.Entity.IEntityServiceConfiguration(Of T)
+  name.vb: IEntityServiceConfiguration(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityServiceConfiguration`1
+    name: IEntityServiceConfiguration
+    href: Innova.Data.Entity.IEntityServiceConfiguration-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityServiceConfiguration`1
+    name: IEntityServiceConfiguration
+    href: Innova.Data.Entity.IEntityServiceConfiguration-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Data.Entity.IEntityServiceConfiguration`1
+  commentId: T:Innova.Data.Entity.IEntityServiceConfiguration`1
+  href: Innova.Data.Entity.IEntityServiceConfiguration-1.html
+  name: IEntityServiceConfiguration<T>
+  nameWithType: IEntityServiceConfiguration<T>
+  fullName: Innova.Data.Entity.IEntityServiceConfiguration<T>
+  nameWithType.vb: IEntityServiceConfiguration(Of T)
+  fullName.vb: Innova.Data.Entity.IEntityServiceConfiguration(Of T)
+  name.vb: IEntityServiceConfiguration(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityServiceConfiguration`1
+    name: IEntityServiceConfiguration
+    href: Innova.Data.Entity.IEntityServiceConfiguration-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityServiceConfiguration`1
+    name: IEntityServiceConfiguration
+    href: Innova.Data.Entity.IEntityServiceConfiguration-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.Entity.EntityValidationService`2.IsPrimaryKeysValid*
+  commentId: Overload:Innova.Data.Entity.EntityValidationService`2.IsPrimaryKeysValid
+  href: Innova.Data.Entity.EntityValidationService-2.IsPrimaryKeysValid.html#Innova_Data_Entity_EntityValidationService_2_IsPrimaryKeysValid_Innova_Data_Entity_IPrimaryKey_
+  name: IsPrimaryKeysValid
+  nameWithType: EntityValidationService<T, TEntityInterface>.IsPrimaryKeysValid
+  fullName: Innova.Data.Entity.EntityValidationService<T, TEntityInterface>.IsPrimaryKeysValid
+  nameWithType.vb: EntityValidationService(Of T, TEntityInterface).IsPrimaryKeysValid
+  fullName.vb: Innova.Data.Entity.EntityValidationService(Of T, TEntityInterface).IsPrimaryKeysValid
+- uid: Innova.Data.Entity.IEntityValidationService{{T},{TEntityInterface}}.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  commentId: M:Innova.Data.Entity.IEntityValidationService{`0,`1}.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  parent: Innova.Data.Entity.IEntityValidationService{{T},{TEntityInterface}}
+  definition: Innova.Data.Entity.IEntityValidationService`2.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  href: Innova.Data.Entity.IEntityValidationService-2.IsPrimaryKeysValid.html#Innova_Data_Entity_IEntityValidationService_2_IsPrimaryKeysValid_Innova_Data_Entity_IPrimaryKey_
+  name: IsPrimaryKeysValid(IPrimaryKey)
+  nameWithType: IEntityValidationService<T, TEntityInterface>.IsPrimaryKeysValid(IPrimaryKey)
+  fullName: Innova.Data.Entity.IEntityValidationService<T, TEntityInterface>.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  nameWithType.vb: IEntityValidationService(Of T, TEntityInterface).IsPrimaryKeysValid(IPrimaryKey)
+  fullName.vb: Innova.Data.Entity.IEntityValidationService(Of T, TEntityInterface).IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityValidationService{`0,`1}.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+    name: IsPrimaryKeysValid
+    href: Innova.Data.Entity.IEntityValidationService-2.IsPrimaryKeysValid.html#Innova_Data_Entity_IEntityValidationService_2_IsPrimaryKeysValid_Innova_Data_Entity_IPrimaryKey_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityValidationService{`0,`1}.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+    name: IsPrimaryKeysValid
+    href: Innova.Data.Entity.IEntityValidationService-2.IsPrimaryKeysValid.html#Innova_Data_Entity_IEntityValidationService_2_IsPrimaryKeysValid_Innova_Data_Entity_IPrimaryKey_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+- uid: Innova.Data.Entity.IPrimaryKey
+  commentId: T:Innova.Data.Entity.IPrimaryKey
+  parent: Innova.Data.Entity
+  href: Innova.Data.Entity.IPrimaryKey.html
+  name: IPrimaryKey
+  nameWithType: IPrimaryKey
+  fullName: Innova.Data.Entity.IPrimaryKey
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Innova.Data.Entity.IEntityValidationService`2.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  commentId: M:Innova.Data.Entity.IEntityValidationService`2.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  href: Innova.Data.Entity.IEntityValidationService-2.IsPrimaryKeysValid.html#Innova_Data_Entity_IEntityValidationService_2_IsPrimaryKeysValid_Innova_Data_Entity_IPrimaryKey_
+  name: IsPrimaryKeysValid(IPrimaryKey)
+  nameWithType: IEntityValidationService<T, TEntityInterface>.IsPrimaryKeysValid(IPrimaryKey)
+  fullName: Innova.Data.Entity.IEntityValidationService<T, TEntityInterface>.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  nameWithType.vb: IEntityValidationService(Of T, TEntityInterface).IsPrimaryKeysValid(IPrimaryKey)
+  fullName.vb: Innova.Data.Entity.IEntityValidationService(Of T, TEntityInterface).IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityValidationService`2.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+    name: IsPrimaryKeysValid
+    href: Innova.Data.Entity.IEntityValidationService-2.IsPrimaryKeysValid.html#Innova_Data_Entity_IEntityValidationService_2_IsPrimaryKeysValid_Innova_Data_Entity_IPrimaryKey_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityValidationService`2.IsPrimaryKeysValid(Innova.Data.Entity.IPrimaryKey)
+    name: IsPrimaryKeysValid
+    href: Innova.Data.Entity.IEntityValidationService-2.IsPrimaryKeysValid.html#Innova_Data_Entity_IEntityValidationService_2_IsPrimaryKeysValid_Innova_Data_Entity_IPrimaryKey_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+- uid: Innova.Data.Entity.EntityValidationService`2.Validate*
+  commentId: Overload:Innova.Data.Entity.EntityValidationService`2.Validate
+  href: Innova.Data.Entity.EntityValidationService-2.Validate.html#Innova_Data_Entity_EntityValidationService_2_Validate__1_Innova_Data_Validation_ValidationRuleSetEnum_System_Threading_CancellationToken_
+  name: Validate
+  nameWithType: EntityValidationService<T, TEntityInterface>.Validate
+  fullName: Innova.Data.Entity.EntityValidationService<T, TEntityInterface>.Validate
+  nameWithType.vb: EntityValidationService(Of T, TEntityInterface).Validate
+  fullName.vb: Innova.Data.Entity.EntityValidationService(Of T, TEntityInterface).Validate
+- uid: Innova.Data.Entity.IEntityValidationService{{T},{TEntityInterface}}.Validate({TEntityInterface},Innova.Data.Validation.ValidationRuleSetEnum,System.Threading.CancellationToken)
+  commentId: M:Innova.Data.Entity.IEntityValidationService{`0,`1}.Validate(`1,Innova.Data.Validation.ValidationRuleSetEnum,System.Threading.CancellationToken)
+  parent: Innova.Data.Entity.IEntityValidationService{{T},{TEntityInterface}}
+  definition: Innova.Data.Entity.IEntityValidationService`2.Validate(`1,Innova.Data.Validation.ValidationRuleSetEnum,System.Threading.CancellationToken)
+  href: Innova.Data.Entity.IEntityValidationService-2.Validate.html#Innova_Data_Entity_IEntityValidationService_2_Validate__1_Innova_Data_Validation_ValidationRuleSetEnum_System_Threading_CancellationToken_
+  name: Validate(TEntityInterface, ValidationRuleSetEnum, CancellationToken)
+  nameWithType: IEntityValidationService<T, TEntityInterface>.Validate(TEntityInterface, ValidationRuleSetEnum, CancellationToken)
+  fullName: Innova.Data.Entity.IEntityValidationService<T, TEntityInterface>.Validate(TEntityInterface, Innova.Data.Validation.ValidationRuleSetEnum, System.Threading.CancellationToken)
+  nameWithType.vb: IEntityValidationService(Of T, TEntityInterface).Validate(TEntityInterface, ValidationRuleSetEnum, CancellationToken)
+  fullName.vb: Innova.Data.Entity.IEntityValidationService(Of T, TEntityInterface).Validate(TEntityInterface, Innova.Data.Validation.ValidationRuleSetEnum, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityValidationService{`0,`1}.Validate(`1,Innova.Data.Validation.ValidationRuleSetEnum,System.Threading.CancellationToken)
+    name: Validate
+    href: Innova.Data.Entity.IEntityValidationService-2.Validate.html#Innova_Data_Entity_IEntityValidationService_2_Validate__1_Innova_Data_Validation_ValidationRuleSetEnum_System_Threading_CancellationToken_
+  - name: (
+  - name: TEntityInterface
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Validation.ValidationRuleSetEnum
+    name: ValidationRuleSetEnum
+    href: Innova.Data.Validation.ValidationRuleSetEnum.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityValidationService{`0,`1}.Validate(`1,Innova.Data.Validation.ValidationRuleSetEnum,System.Threading.CancellationToken)
+    name: Validate
+    href: Innova.Data.Entity.IEntityValidationService-2.Validate.html#Innova_Data_Entity_IEntityValidationService_2_Validate__1_Innova_Data_Validation_ValidationRuleSetEnum_System_Threading_CancellationToken_
+  - name: (
+  - name: TEntityInterface
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Validation.ValidationRuleSetEnum
+    name: ValidationRuleSetEnum
+    href: Innova.Data.Validation.ValidationRuleSetEnum.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: '{TEntityInterface}'
+  commentId: '!:TEntityInterface'
+  definition: TEntityInterface
+  name: TEntityInterface
+  nameWithType: TEntityInterface
+  fullName: TEntityInterface
+- uid: Innova.Data.Validation.ValidationRuleSetEnum
+  commentId: T:Innova.Data.Validation.ValidationRuleSetEnum
+  parent: Innova.Data.Validation
+  href: Innova.Data.Validation.ValidationRuleSetEnum.html
+  name: ValidationRuleSetEnum
+  nameWithType: ValidationRuleSetEnum
+  fullName: Innova.Data.Validation.ValidationRuleSetEnum
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Innova.Data.Entity.IEntityValidationService`2.Validate(`1,Innova.Data.Validation.ValidationRuleSetEnum,System.Threading.CancellationToken)
+  commentId: M:Innova.Data.Entity.IEntityValidationService`2.Validate(`1,Innova.Data.Validation.ValidationRuleSetEnum,System.Threading.CancellationToken)
+  isExternal: true
+  href: Innova.Data.Entity.IEntityValidationService-2.Validate.html#Innova_Data_Entity_IEntityValidationService_2_Validate__1_Innova_Data_Validation_ValidationRuleSetEnum_System_Threading_CancellationToken_
+  name: Validate(TEntityInterface, ValidationRuleSetEnum, CancellationToken)
+  nameWithType: IEntityValidationService<T, TEntityInterface>.Validate(TEntityInterface, ValidationRuleSetEnum, CancellationToken)
+  fullName: Innova.Data.Entity.IEntityValidationService<T, TEntityInterface>.Validate(TEntityInterface, Innova.Data.Validation.ValidationRuleSetEnum, System.Threading.CancellationToken)
+  nameWithType.vb: IEntityValidationService(Of T, TEntityInterface).Validate(TEntityInterface, ValidationRuleSetEnum, CancellationToken)
+  fullName.vb: Innova.Data.Entity.IEntityValidationService(Of T, TEntityInterface).Validate(TEntityInterface, Innova.Data.Validation.ValidationRuleSetEnum, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityValidationService`2.Validate(`1,Innova.Data.Validation.ValidationRuleSetEnum,System.Threading.CancellationToken)
+    name: Validate
+    href: Innova.Data.Entity.IEntityValidationService-2.Validate.html#Innova_Data_Entity_IEntityValidationService_2_Validate__1_Innova_Data_Validation_ValidationRuleSetEnum_System_Threading_CancellationToken_
+  - name: (
+  - name: TEntityInterface
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Validation.ValidationRuleSetEnum
+    name: ValidationRuleSetEnum
+    href: Innova.Data.Validation.ValidationRuleSetEnum.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityValidationService`2.Validate(`1,Innova.Data.Validation.ValidationRuleSetEnum,System.Threading.CancellationToken)
+    name: Validate
+    href: Innova.Data.Entity.IEntityValidationService-2.Validate.html#Innova_Data_Entity_IEntityValidationService_2_Validate__1_Innova_Data_Validation_ValidationRuleSetEnum_System_Threading_CancellationToken_
+  - name: (
+  - name: TEntityInterface
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Validation.ValidationRuleSetEnum
+    name: ValidationRuleSetEnum
+    href: Innova.Data.Validation.ValidationRuleSetEnum.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: TEntityInterface
+  name: TEntityInterface
+  nameWithType: TEntityInterface
+  fullName: TEntityInterface
+- uid: Innova.Data.Validation
+  commentId: N:Innova.Data.Validation
+  href: Innova.html
+  name: Innova.Data.Validation
+  nameWithType: Innova.Data.Validation
+  fullName: Innova.Data.Validation
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Validation
+    name: Validation
+    href: Innova.Data.Validation.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Validation
+    name: Validation
+    href: Innova.Data.Validation.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Data.Entity.EntityValidationService`2.SetValidatorOnEntity*
+  commentId: Overload:Innova.Data.Entity.EntityValidationService`2.SetValidatorOnEntity
+  href: Innova.Data.Entity.EntityValidationService-2.SetValidatorOnEntity.html#Innova_Data_Entity_EntityValidationService_2_SetValidatorOnEntity_System_Object_Innova_Data_Validation_ValidationRuleSetEnum_
+  name: SetValidatorOnEntity
+  nameWithType: EntityValidationService<T, TEntityInterface>.SetValidatorOnEntity
+  fullName: Innova.Data.Entity.EntityValidationService<T, TEntityInterface>.SetValidatorOnEntity
+  nameWithType.vb: EntityValidationService(Of T, TEntityInterface).SetValidatorOnEntity
+  fullName.vb: Innova.Data.Entity.EntityValidationService(Of T, TEntityInterface).SetValidatorOnEntity
+- uid: Innova.Data.Entity.IEntityValidatorService.SetValidatorOnEntity(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+  commentId: M:Innova.Data.Entity.IEntityValidatorService.SetValidatorOnEntity(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+  parent: Innova.Data.Entity.IEntityValidatorService
+  isExternal: true
+  href: Innova.Data.Entity.IEntityValidatorService.SetValidatorOnEntity.html#Innova_Data_Entity_IEntityValidatorService_SetValidatorOnEntity_System_Object_Innova_Data_Validation_ValidationRuleSetEnum_
+  name: SetValidatorOnEntity(object, ValidationRuleSetEnum)
+  nameWithType: IEntityValidatorService.SetValidatorOnEntity(object, ValidationRuleSetEnum)
+  fullName: Innova.Data.Entity.IEntityValidatorService.SetValidatorOnEntity(object, Innova.Data.Validation.ValidationRuleSetEnum)
+  nameWithType.vb: IEntityValidatorService.SetValidatorOnEntity(Object, ValidationRuleSetEnum)
+  fullName.vb: Innova.Data.Entity.IEntityValidatorService.SetValidatorOnEntity(Object, Innova.Data.Validation.ValidationRuleSetEnum)
+  name.vb: SetValidatorOnEntity(Object, ValidationRuleSetEnum)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityValidatorService.SetValidatorOnEntity(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+    name: SetValidatorOnEntity
+    href: Innova.Data.Entity.IEntityValidatorService.SetValidatorOnEntity.html#Innova_Data_Entity_IEntityValidatorService_SetValidatorOnEntity_System_Object_Innova_Data_Validation_ValidationRuleSetEnum_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Validation.ValidationRuleSetEnum
+    name: ValidationRuleSetEnum
+    href: Innova.Data.Validation.ValidationRuleSetEnum.html
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityValidatorService.SetValidatorOnEntity(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+    name: SetValidatorOnEntity
+    href: Innova.Data.Entity.IEntityValidatorService.SetValidatorOnEntity.html#Innova_Data_Entity_IEntityValidatorService_SetValidatorOnEntity_System_Object_Innova_Data_Validation_ValidationRuleSetEnum_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Validation.ValidationRuleSetEnum
+    name: ValidationRuleSetEnum
+    href: Innova.Data.Validation.ValidationRuleSetEnum.html
+  - name: )
+memberLayout: SeparatePages

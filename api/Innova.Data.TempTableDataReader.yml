@@ -1,0 +1,2996 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.TempTableDataReader
+  commentId: T:Innova.Data.TempTableDataReader
+  id: TempTableDataReader
+  parent: Innova.Data
+  children:
+  - Innova.Data.TempTableDataReader.#ctor(System.Collections.Generic.IEnumerable{Innova.Data.Entity.IPrimaryKey})
+  - Innova.Data.TempTableDataReader.Close
+  - Innova.Data.TempTableDataReader.Depth
+  - Innova.Data.TempTableDataReader.Dispose
+  - Innova.Data.TempTableDataReader.FieldCount
+  - Innova.Data.TempTableDataReader.GetBoolean(System.Int32)
+  - Innova.Data.TempTableDataReader.GetByte(System.Int32)
+  - Innova.Data.TempTableDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)
+  - Innova.Data.TempTableDataReader.GetChar(System.Int32)
+  - Innova.Data.TempTableDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)
+  - Innova.Data.TempTableDataReader.GetData(System.Int32)
+  - Innova.Data.TempTableDataReader.GetDataTypeName(System.Int32)
+  - Innova.Data.TempTableDataReader.GetDateTime(System.Int32)
+  - Innova.Data.TempTableDataReader.GetDecimal(System.Int32)
+  - Innova.Data.TempTableDataReader.GetDouble(System.Int32)
+  - Innova.Data.TempTableDataReader.GetFieldType(System.Int32)
+  - Innova.Data.TempTableDataReader.GetFloat(System.Int32)
+  - Innova.Data.TempTableDataReader.GetGuid(System.Int32)
+  - Innova.Data.TempTableDataReader.GetInt16(System.Int32)
+  - Innova.Data.TempTableDataReader.GetInt32(System.Int32)
+  - Innova.Data.TempTableDataReader.GetInt64(System.Int32)
+  - Innova.Data.TempTableDataReader.GetName(System.Int32)
+  - Innova.Data.TempTableDataReader.GetOrdinal(System.String)
+  - Innova.Data.TempTableDataReader.GetSchemaTable
+  - Innova.Data.TempTableDataReader.GetString(System.Int32)
+  - Innova.Data.TempTableDataReader.GetValue(System.Int32)
+  - Innova.Data.TempTableDataReader.GetValues(System.Object[])
+  - Innova.Data.TempTableDataReader.IsClosed
+  - Innova.Data.TempTableDataReader.IsDBNull(System.Int32)
+  - Innova.Data.TempTableDataReader.Item(System.Int32)
+  - Innova.Data.TempTableDataReader.Item(System.String)
+  - Innova.Data.TempTableDataReader.NextResult
+  - Innova.Data.TempTableDataReader.Read
+  - Innova.Data.TempTableDataReader.RecordsAffected
+  langs:
+  - csharp
+  - vb
+  name: TempTableDataReader
+  nameWithType: TempTableDataReader
+  fullName: Innova.Data.TempTableDataReader
+  type: Class
+  source:
+    id: TempTableDataReader
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 11
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Represents a data reader for a temporary table.
+  example: []
+  syntax:
+    content: 'public sealed class TempTableDataReader : IDataReader, IDisposable, IDataRecord'
+    content.vb: Public NotInheritable Class TempTableDataReader Implements IDataReader, IDisposable, IDataRecord
+  inheritance:
+  - System.Object
+  implements:
+  - System.Data.IDataReader
+  - System.IDisposable
+  - System.Data.IDataRecord
+- uid: Innova.Data.TempTableDataReader.FieldCount
+  commentId: P:Innova.Data.TempTableDataReader.FieldCount
+  id: FieldCount
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: FieldCount
+  nameWithType: TempTableDataReader.FieldCount
+  fullName: Innova.Data.TempTableDataReader.FieldCount
+  type: Property
+  source:
+    id: FieldCount
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 19
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the number of fields in the data reader.
+  example: []
+  syntax:
+    content: public int FieldCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property FieldCount As Integer
+  overload: Innova.Data.TempTableDataReader.FieldCount*
+  implements:
+  - System.Data.IDataRecord.FieldCount
+- uid: Innova.Data.TempTableDataReader.#ctor(System.Collections.Generic.IEnumerable{Innova.Data.Entity.IPrimaryKey})
+  commentId: M:Innova.Data.TempTableDataReader.#ctor(System.Collections.Generic.IEnumerable{Innova.Data.Entity.IPrimaryKey})
+  id: '#ctor(System.Collections.Generic.IEnumerable{Innova.Data.Entity.IPrimaryKey})'
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: TempTableDataReader(IEnumerable<IPrimaryKey>)
+  nameWithType: TempTableDataReader.TempTableDataReader(IEnumerable<IPrimaryKey>)
+  fullName: Innova.Data.TempTableDataReader.TempTableDataReader(System.Collections.Generic.IEnumerable<Innova.Data.Entity.IPrimaryKey>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 25
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Initializes a new instance of the <xref href="Innova.Data.TempTableDataReader" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public TempTableDataReader(IEnumerable<IPrimaryKey> values)
+    parameters:
+    - id: values
+      type: System.Collections.Generic.IEnumerable{Innova.Data.Entity.IPrimaryKey}
+      description: The collection of primary keys representing the data.
+    content.vb: Public Sub New(values As IEnumerable(Of IPrimaryKey))
+  overload: Innova.Data.TempTableDataReader.#ctor*
+  nameWithType.vb: TempTableDataReader.New(IEnumerable(Of IPrimaryKey))
+  fullName.vb: Innova.Data.TempTableDataReader.New(System.Collections.Generic.IEnumerable(Of Innova.Data.Entity.IPrimaryKey))
+  name.vb: New(IEnumerable(Of IPrimaryKey))
+- uid: Innova.Data.TempTableDataReader.Read
+  commentId: M:Innova.Data.TempTableDataReader.Read
+  id: Read
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: Read()
+  nameWithType: TempTableDataReader.Read()
+  fullName: Innova.Data.TempTableDataReader.Read()
+  type: Method
+  source:
+    id: Read
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 43
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Advances the data reader to the next record.
+  example: []
+  syntax:
+    content: public bool Read()
+    return:
+      type: System.Boolean
+      description: <code>true</code> if there are more rows; otherwise, <code>false</code>.
+    content.vb: Public Function Read() As Boolean
+  overload: Innova.Data.TempTableDataReader.Read*
+  implements:
+  - System.Data.IDataReader.Read
+- uid: Innova.Data.TempTableDataReader.GetValue(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetValue(System.Int32)
+  id: GetValue(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetValue(int)
+  nameWithType: TempTableDataReader.GetValue(int)
+  fullName: Innova.Data.TempTableDataReader.GetValue(int)
+  type: Method
+  source:
+    id: GetValue
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 53
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the value of the specified field.
+  example: []
+  syntax:
+    content: public object GetValue(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The zero-based index of the field.
+    return:
+      type: System.Object
+      description: The value of the field.
+    content.vb: Public Function GetValue(i As Integer) As Object
+  overload: Innova.Data.TempTableDataReader.GetValue*
+  implements:
+  - System.Data.IDataRecord.GetValue(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetValue(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetValue(Integer)
+  name.vb: GetValue(Integer)
+- uid: Innova.Data.TempTableDataReader.Dispose
+  commentId: M:Innova.Data.TempTableDataReader.Dispose
+  id: Dispose
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: TempTableDataReader.Dispose()
+  fullName: Innova.Data.TempTableDataReader.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 61
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Releases all resources used by the data reader.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Innova.Data.TempTableDataReader.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Innova.Data.TempTableDataReader.Depth
+  commentId: P:Innova.Data.TempTableDataReader.Depth
+  id: Depth
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: Depth
+  nameWithType: TempTableDataReader.Depth
+  fullName: Innova.Data.TempTableDataReader.Depth
+  type: Property
+  source:
+    id: Depth
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 69
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets a value indicating the depth of nesting for the current row.
+  example: []
+  syntax:
+    content: public int Depth { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The level of nesting.
+    content.vb: Public ReadOnly Property Depth As Integer
+  overload: Innova.Data.TempTableDataReader.Depth*
+  implements:
+  - System.Data.IDataReader.Depth
+- uid: Innova.Data.TempTableDataReader.IsClosed
+  commentId: P:Innova.Data.TempTableDataReader.IsClosed
+  id: IsClosed
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: IsClosed
+  nameWithType: TempTableDataReader.IsClosed
+  fullName: Innova.Data.TempTableDataReader.IsClosed
+  type: Property
+  source:
+    id: IsClosed
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 72
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets a value indicating whether the data reader is closed.
+  example: []
+  syntax:
+    content: public bool IsClosed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the data reader is closed; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public ReadOnly Property IsClosed As Boolean
+  overload: Innova.Data.TempTableDataReader.IsClosed*
+  implements:
+  - System.Data.IDataReader.IsClosed
+- uid: Innova.Data.TempTableDataReader.RecordsAffected
+  commentId: P:Innova.Data.TempTableDataReader.RecordsAffected
+  id: RecordsAffected
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: RecordsAffected
+  nameWithType: TempTableDataReader.RecordsAffected
+  fullName: Innova.Data.TempTableDataReader.RecordsAffected
+  type: Property
+  source:
+    id: RecordsAffected
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 75
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the number of rows changed, inserted, or deleted by execution of the SQL statement.
+  example: []
+  syntax:
+    content: public int RecordsAffected { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of rows changed, inserted, or deleted; 0 if no rows were affected or the statement failed; and -1 for SELECT statements.
+    content.vb: Public ReadOnly Property RecordsAffected As Integer
+  overload: Innova.Data.TempTableDataReader.RecordsAffected*
+  implements:
+  - System.Data.IDataReader.RecordsAffected
+- uid: Innova.Data.TempTableDataReader.Item(System.String)
+  commentId: P:Innova.Data.TempTableDataReader.Item(System.String)
+  id: Item(System.String)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: this[string]
+  nameWithType: TempTableDataReader.this[string]
+  fullName: Innova.Data.TempTableDataReader.this[string]
+  type: Property
+  source:
+    id: this[]
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 78
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the column with the specified name.
+  example: []
+  syntax:
+    content: public object this[string name] { get; }
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the column to find.
+    return:
+      type: System.Object
+      description: The column with the specified name as an <xref href="System.Object" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Default Property this[](name As String) As Object
+  overload: Innova.Data.TempTableDataReader.Item*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: No column with the specified name was found.
+  implements:
+  - System.Data.IDataRecord.Item(System.String)
+  nameWithType.vb: TempTableDataReader.this[](String)
+  fullName.vb: Innova.Data.TempTableDataReader.this[](String)
+  name.vb: this[](String)
+- uid: Innova.Data.TempTableDataReader.Item(System.Int32)
+  commentId: P:Innova.Data.TempTableDataReader.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: TempTableDataReader.this[int]
+  fullName: Innova.Data.TempTableDataReader.this[int]
+  type: Property
+  source:
+    id: this[]
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 81
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the column located at the specified index.
+  example: []
+  syntax:
+    content: public object this[int i] { get; }
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The zero-based index of the column to get.
+    return:
+      type: System.Object
+      description: The column located at the specified index as an <xref href="System.Object" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Default Property this[](i As Integer) As Object
+  overload: Innova.Data.TempTableDataReader.Item*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.Item(System.Int32)
+  nameWithType.vb: TempTableDataReader.this[](Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.this[](Integer)
+  name.vb: this[](Integer)
+- uid: Innova.Data.TempTableDataReader.GetBoolean(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetBoolean(System.Int32)
+  id: GetBoolean(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetBoolean(int)
+  nameWithType: TempTableDataReader.GetBoolean(int)
+  fullName: Innova.Data.TempTableDataReader.GetBoolean(int)
+  type: Method
+  source:
+    id: GetBoolean
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 84
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the value of the specified column as a Boolean.
+  example: []
+  syntax:
+    content: public bool GetBoolean(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The zero-based column ordinal.
+    return:
+      type: System.Boolean
+      description: The value of the column.
+    content.vb: Public Function GetBoolean(i As Integer) As Boolean
+  overload: Innova.Data.TempTableDataReader.GetBoolean*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetBoolean(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetBoolean(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetBoolean(Integer)
+  name.vb: GetBoolean(Integer)
+- uid: Innova.Data.TempTableDataReader.Close
+  commentId: M:Innova.Data.TempTableDataReader.Close
+  id: Close
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: TempTableDataReader.Close()
+  fullName: Innova.Data.TempTableDataReader.Close()
+  type: Method
+  source:
+    id: Close
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 87
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Closes the <xref href="System.Data.IDataReader" data-throw-if-not-resolved="false"></xref> Object.
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: Innova.Data.TempTableDataReader.Close*
+  implements:
+  - System.Data.IDataReader.Close
+- uid: Innova.Data.TempTableDataReader.GetSchemaTable
+  commentId: M:Innova.Data.TempTableDataReader.GetSchemaTable
+  id: GetSchemaTable
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetSchemaTable()
+  nameWithType: TempTableDataReader.GetSchemaTable()
+  fullName: Innova.Data.TempTableDataReader.GetSchemaTable()
+  type: Method
+  source:
+    id: GetSchemaTable
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 93
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Returns a <xref href="System.Data.DataTable" data-throw-if-not-resolved="false"></xref> that describes the column metadata of the <xref href="System.Data.IDataReader" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public DataTable GetSchemaTable()
+    return:
+      type: System.Data.DataTable
+      description: A <xref href="System.Data.DataTable" data-throw-if-not-resolved="false"></xref> that describes the column metadata.
+    content.vb: Public Function GetSchemaTable() As DataTable
+  overload: Innova.Data.TempTableDataReader.GetSchemaTable*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The <xref href="System.Data.IDataReader" data-throw-if-not-resolved="false"></xref> is closed.
+  implements:
+  - System.Data.IDataReader.GetSchemaTable
+- uid: Innova.Data.TempTableDataReader.NextResult
+  commentId: M:Innova.Data.TempTableDataReader.NextResult
+  id: NextResult
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: NextResult()
+  nameWithType: TempTableDataReader.NextResult()
+  fullName: Innova.Data.TempTableDataReader.NextResult()
+  type: Method
+  source:
+    id: NextResult
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 99
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Advances the data reader to the next result, when reading the results of batch SQL statements.
+  example: []
+  syntax:
+    content: public bool NextResult()
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if there are more rows; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function NextResult() As Boolean
+  overload: Innova.Data.TempTableDataReader.NextResult*
+  implements:
+  - System.Data.IDataReader.NextResult
+- uid: Innova.Data.TempTableDataReader.GetByte(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetByte(System.Int32)
+  id: GetByte(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetByte(int)
+  nameWithType: TempTableDataReader.GetByte(int)
+  fullName: Innova.Data.TempTableDataReader.GetByte(int)
+  type: Method
+  source:
+    id: GetByte
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 105
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the 8-bit unsigned integer value of the specified column.
+  example: []
+  syntax:
+    content: public byte GetByte(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The zero-based column ordinal.
+    return:
+      type: System.Byte
+      description: The 8-bit unsigned integer value of the specified column.
+    content.vb: Public Function GetByte(i As Integer) As Byte
+  overload: Innova.Data.TempTableDataReader.GetByte*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetByte(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetByte(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetByte(Integer)
+  name.vb: GetByte(Integer)
+- uid: Innova.Data.TempTableDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)
+  id: GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetBytes(int, long, byte[], int, int)
+  nameWithType: TempTableDataReader.GetBytes(int, long, byte[], int, int)
+  fullName: Innova.Data.TempTableDataReader.GetBytes(int, long, byte[], int, int)
+  type: Method
+  source:
+    id: GetBytes
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 111
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Reads a stream of bytes from the specified column offset into the buffer as an array, starting at the given buffer offset.
+  example: []
+  syntax:
+    content: public long GetBytes(int i, long fieldOffset, byte[] buffer, int bufferoffset, int length)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The zero-based column ordinal.
+    - id: fieldOffset
+      type: System.Int64
+      description: The index within the field from which to start the read operation.
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer into which to read the stream of bytes.
+    - id: bufferoffset
+      type: System.Int32
+      description: The index for <code class="paramref">buffer</code> to start the read operation.
+    - id: length
+      type: System.Int32
+      description: The number of bytes to read.
+    return:
+      type: System.Int64
+      description: The actual number of bytes read.
+    content.vb: Public Function GetBytes(i As Integer, fieldOffset As Long, buffer As Byte(), bufferoffset As Integer, length As Integer) As Long
+  overload: Innova.Data.TempTableDataReader.GetBytes*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)
+  nameWithType.vb: TempTableDataReader.GetBytes(Integer, Long, Byte(), Integer, Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetBytes(Integer, Long, Byte(), Integer, Integer)
+  name.vb: GetBytes(Integer, Long, Byte(), Integer, Integer)
+- uid: Innova.Data.TempTableDataReader.GetChar(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetChar(System.Int32)
+  id: GetChar(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetChar(int)
+  nameWithType: TempTableDataReader.GetChar(int)
+  fullName: Innova.Data.TempTableDataReader.GetChar(int)
+  type: Method
+  source:
+    id: GetChar
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 117
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the character value of the specified column.
+  example: []
+  syntax:
+    content: public char GetChar(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The zero-based column ordinal.
+    return:
+      type: System.Char
+      description: The character value of the specified column.
+    content.vb: Public Function GetChar(i As Integer) As Char
+  overload: Innova.Data.TempTableDataReader.GetChar*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetChar(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetChar(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetChar(Integer)
+  name.vb: GetChar(Integer)
+- uid: Innova.Data.TempTableDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)
+  id: GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetChars(int, long, char[], int, int)
+  nameWithType: TempTableDataReader.GetChars(int, long, char[], int, int)
+  fullName: Innova.Data.TempTableDataReader.GetChars(int, long, char[], int, int)
+  type: Method
+  source:
+    id: GetChars
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 123
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Reads a stream of characters from the specified column offset into the buffer as an array, starting at the given buffer offset.
+  example: []
+  syntax:
+    content: public long GetChars(int i, long fieldoffset, char[] buffer, int bufferoffset, int length)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The zero-based column ordinal.
+    - id: fieldoffset
+      type: System.Int64
+      description: The index within the row from which to start the read operation.
+    - id: buffer
+      type: System.Char[]
+      description: The buffer into which to read the stream of bytes.
+    - id: bufferoffset
+      type: System.Int32
+      description: The index for <code class="paramref">buffer</code> to start the read operation.
+    - id: length
+      type: System.Int32
+      description: The number of bytes to read.
+    return:
+      type: System.Int64
+      description: The actual number of characters read.
+    content.vb: Public Function GetChars(i As Integer, fieldoffset As Long, buffer As Char(), bufferoffset As Integer, length As Integer) As Long
+  overload: Innova.Data.TempTableDataReader.GetChars*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)
+  nameWithType.vb: TempTableDataReader.GetChars(Integer, Long, Char(), Integer, Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetChars(Integer, Long, Char(), Integer, Integer)
+  name.vb: GetChars(Integer, Long, Char(), Integer, Integer)
+- uid: Innova.Data.TempTableDataReader.GetData(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetData(System.Int32)
+  id: GetData(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetData(int)
+  nameWithType: TempTableDataReader.GetData(int)
+  fullName: Innova.Data.TempTableDataReader.GetData(int)
+  type: Method
+  source:
+    id: GetData
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 129
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Returns an <xref href="System.Data.IDataReader" data-throw-if-not-resolved="false"></xref> for the specified column ordinal.
+  example: []
+  syntax:
+    content: public IDataReader GetData(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index of the field to find.
+    return:
+      type: System.Data.IDataReader
+      description: The <xref href="System.Data.IDataReader" data-throw-if-not-resolved="false"></xref> for the specified column ordinal.
+    content.vb: Public Function GetData(i As Integer) As IDataReader
+  overload: Innova.Data.TempTableDataReader.GetData*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetData(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetData(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetData(Integer)
+  name.vb: GetData(Integer)
+- uid: Innova.Data.TempTableDataReader.GetDataTypeName(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetDataTypeName(System.Int32)
+  id: GetDataTypeName(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetDataTypeName(int)
+  nameWithType: TempTableDataReader.GetDataTypeName(int)
+  fullName: Innova.Data.TempTableDataReader.GetDataTypeName(int)
+  type: Method
+  source:
+    id: GetDataTypeName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 135
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the data type information for the specified field.
+  example: []
+  syntax:
+    content: public string GetDataTypeName(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index of the field to find.
+    return:
+      type: System.String
+      description: The data type information for the specified field.
+    content.vb: Public Function GetDataTypeName(i As Integer) As String
+  overload: Innova.Data.TempTableDataReader.GetDataTypeName*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetDataTypeName(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetDataTypeName(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetDataTypeName(Integer)
+  name.vb: GetDataTypeName(Integer)
+- uid: Innova.Data.TempTableDataReader.GetDateTime(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetDateTime(System.Int32)
+  id: GetDateTime(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetDateTime(int)
+  nameWithType: TempTableDataReader.GetDateTime(int)
+  fullName: Innova.Data.TempTableDataReader.GetDateTime(int)
+  type: Method
+  source:
+    id: GetDateTime
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 141
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the date and time data value of the specified field.
+  example: []
+  syntax:
+    content: public DateTime GetDateTime(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index of the field to find.
+    return:
+      type: System.DateTime
+      description: The date and time data value of the specified field.
+    content.vb: Public Function GetDateTime(i As Integer) As Date
+  overload: Innova.Data.TempTableDataReader.GetDateTime*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetDateTime(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetDateTime(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetDateTime(Integer)
+  name.vb: GetDateTime(Integer)
+- uid: Innova.Data.TempTableDataReader.GetDecimal(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetDecimal(System.Int32)
+  id: GetDecimal(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetDecimal(int)
+  nameWithType: TempTableDataReader.GetDecimal(int)
+  fullName: Innova.Data.TempTableDataReader.GetDecimal(int)
+  type: Method
+  source:
+    id: GetDecimal
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 147
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the fixed-position numeric value of the specified field.
+  example: []
+  syntax:
+    content: public decimal GetDecimal(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index of the field to find.
+    return:
+      type: System.Decimal
+      description: The fixed-position numeric value of the specified field.
+    content.vb: Public Function GetDecimal(i As Integer) As Decimal
+  overload: Innova.Data.TempTableDataReader.GetDecimal*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetDecimal(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetDecimal(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetDecimal(Integer)
+  name.vb: GetDecimal(Integer)
+- uid: Innova.Data.TempTableDataReader.GetDouble(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetDouble(System.Int32)
+  id: GetDouble(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetDouble(int)
+  nameWithType: TempTableDataReader.GetDouble(int)
+  fullName: Innova.Data.TempTableDataReader.GetDouble(int)
+  type: Method
+  source:
+    id: GetDouble
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 153
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the double-precision floating point number of the specified field.
+  example: []
+  syntax:
+    content: public double GetDouble(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index of the field to find.
+    return:
+      type: System.Double
+      description: The double-precision floating point number of the specified field.
+    content.vb: Public Function GetDouble(i As Integer) As Double
+  overload: Innova.Data.TempTableDataReader.GetDouble*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetDouble(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetDouble(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetDouble(Integer)
+  name.vb: GetDouble(Integer)
+- uid: Innova.Data.TempTableDataReader.GetFieldType(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetFieldType(System.Int32)
+  id: GetFieldType(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetFieldType(int)
+  nameWithType: TempTableDataReader.GetFieldType(int)
+  fullName: Innova.Data.TempTableDataReader.GetFieldType(int)
+  type: Method
+  source:
+    id: GetFieldType
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 159
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the <xref href="System.Type" data-throw-if-not-resolved="false"></xref> information corresponding to the type of <xref href="System.Object" data-throw-if-not-resolved="false"></xref> that would be returned from <xref href="System.Data.IDataRecord.GetValue(System.Int32)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Type GetFieldType(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index of the field to find.
+    return:
+      type: System.Type
+      description: The <xref href="System.Type" data-throw-if-not-resolved="false"></xref> information corresponding to the type of <xref href="System.Object" data-throw-if-not-resolved="false"></xref> that would be returned from <xref href="System.Data.IDataRecord.GetValue(System.Int32)" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetFieldType(i As Integer) As Type
+  overload: Innova.Data.TempTableDataReader.GetFieldType*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetFieldType(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetFieldType(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetFieldType(Integer)
+  name.vb: GetFieldType(Integer)
+- uid: Innova.Data.TempTableDataReader.GetFloat(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetFloat(System.Int32)
+  id: GetFloat(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetFloat(int)
+  nameWithType: TempTableDataReader.GetFloat(int)
+  fullName: Innova.Data.TempTableDataReader.GetFloat(int)
+  type: Method
+  source:
+    id: GetFloat
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 165
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the single-precision floating point number of the specified field.
+  example: []
+  syntax:
+    content: public float GetFloat(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index of the field to find.
+    return:
+      type: System.Single
+      description: The single-precision floating point number of the specified field.
+    content.vb: Public Function GetFloat(i As Integer) As Single
+  overload: Innova.Data.TempTableDataReader.GetFloat*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetFloat(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetFloat(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetFloat(Integer)
+  name.vb: GetFloat(Integer)
+- uid: Innova.Data.TempTableDataReader.GetGuid(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetGuid(System.Int32)
+  id: GetGuid(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetGuid(int)
+  nameWithType: TempTableDataReader.GetGuid(int)
+  fullName: Innova.Data.TempTableDataReader.GetGuid(int)
+  type: Method
+  source:
+    id: GetGuid
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 171
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Returns the GUID value of the specified field.
+  example: []
+  syntax:
+    content: public Guid GetGuid(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index of the field to find.
+    return:
+      type: System.Guid
+      description: The GUID value of the specified field.
+    content.vb: Public Function GetGuid(i As Integer) As Guid
+  overload: Innova.Data.TempTableDataReader.GetGuid*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetGuid(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetGuid(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetGuid(Integer)
+  name.vb: GetGuid(Integer)
+- uid: Innova.Data.TempTableDataReader.GetInt16(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetInt16(System.Int32)
+  id: GetInt16(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetInt16(int)
+  nameWithType: TempTableDataReader.GetInt16(int)
+  fullName: Innova.Data.TempTableDataReader.GetInt16(int)
+  type: Method
+  source:
+    id: GetInt16
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 177
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the 16-bit signed integer value of the specified field.
+  example: []
+  syntax:
+    content: public short GetInt16(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index of the field to find.
+    return:
+      type: System.Int16
+      description: The 16-bit signed integer value of the specified field.
+    content.vb: Public Function GetInt16(i As Integer) As Short
+  overload: Innova.Data.TempTableDataReader.GetInt16*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetInt16(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetInt16(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetInt16(Integer)
+  name.vb: GetInt16(Integer)
+- uid: Innova.Data.TempTableDataReader.GetInt32(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetInt32(System.Int32)
+  id: GetInt32(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetInt32(int)
+  nameWithType: TempTableDataReader.GetInt32(int)
+  fullName: Innova.Data.TempTableDataReader.GetInt32(int)
+  type: Method
+  source:
+    id: GetInt32
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 183
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the 32-bit signed integer value of the specified field.
+  example: []
+  syntax:
+    content: public int GetInt32(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index of the field to find.
+    return:
+      type: System.Int32
+      description: The 32-bit signed integer value of the specified field.
+    content.vb: Public Function GetInt32(i As Integer) As Integer
+  overload: Innova.Data.TempTableDataReader.GetInt32*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetInt32(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetInt32(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetInt32(Integer)
+  name.vb: GetInt32(Integer)
+- uid: Innova.Data.TempTableDataReader.GetInt64(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetInt64(System.Int32)
+  id: GetInt64(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetInt64(int)
+  nameWithType: TempTableDataReader.GetInt64(int)
+  fullName: Innova.Data.TempTableDataReader.GetInt64(int)
+  type: Method
+  source:
+    id: GetInt64
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 189
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the 64-bit signed integer value of the specified field.
+  example: []
+  syntax:
+    content: public long GetInt64(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index of the field to find.
+    return:
+      type: System.Int64
+      description: The 64-bit signed integer value of the specified field.
+    content.vb: Public Function GetInt64(i As Integer) As Long
+  overload: Innova.Data.TempTableDataReader.GetInt64*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetInt64(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetInt64(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetInt64(Integer)
+  name.vb: GetInt64(Integer)
+- uid: Innova.Data.TempTableDataReader.GetName(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetName(System.Int32)
+  id: GetName(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetName(int)
+  nameWithType: TempTableDataReader.GetName(int)
+  fullName: Innova.Data.TempTableDataReader.GetName(int)
+  type: Method
+  source:
+    id: GetName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 195
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the name for the field to find.
+  example: []
+  syntax:
+    content: public string GetName(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index of the field to find.
+    return:
+      type: System.String
+      description: The name of the field or the empty string (""), if there is no value to return.
+    content.vb: Public Function GetName(i As Integer) As String
+  overload: Innova.Data.TempTableDataReader.GetName*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetName(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetName(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetName(Integer)
+  name.vb: GetName(Integer)
+- uid: Innova.Data.TempTableDataReader.GetOrdinal(System.String)
+  commentId: M:Innova.Data.TempTableDataReader.GetOrdinal(System.String)
+  id: GetOrdinal(System.String)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetOrdinal(string)
+  nameWithType: TempTableDataReader.GetOrdinal(string)
+  fullName: Innova.Data.TempTableDataReader.GetOrdinal(string)
+  type: Method
+  source:
+    id: GetOrdinal
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 201
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Return the index of the named field.
+  example: []
+  syntax:
+    content: public int GetOrdinal(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the field to find.
+    return:
+      type: System.Int32
+      description: The index of the named field.
+    content.vb: Public Function GetOrdinal(name As String) As Integer
+  overload: Innova.Data.TempTableDataReader.GetOrdinal*
+  implements:
+  - System.Data.IDataRecord.GetOrdinal(System.String)
+  nameWithType.vb: TempTableDataReader.GetOrdinal(String)
+  fullName.vb: Innova.Data.TempTableDataReader.GetOrdinal(String)
+  name.vb: GetOrdinal(String)
+- uid: Innova.Data.TempTableDataReader.GetString(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.GetString(System.Int32)
+  id: GetString(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetString(int)
+  nameWithType: TempTableDataReader.GetString(int)
+  fullName: Innova.Data.TempTableDataReader.GetString(int)
+  type: Method
+  source:
+    id: GetString
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 207
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the string value of the specified field.
+  example: []
+  syntax:
+    content: public string GetString(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index of the field to find.
+    return:
+      type: System.String
+      description: The string value of the specified field.
+    content.vb: Public Function GetString(i As Integer) As String
+  overload: Innova.Data.TempTableDataReader.GetString*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.GetString(System.Int32)
+  nameWithType.vb: TempTableDataReader.GetString(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.GetString(Integer)
+  name.vb: GetString(Integer)
+- uid: Innova.Data.TempTableDataReader.GetValues(System.Object[])
+  commentId: M:Innova.Data.TempTableDataReader.GetValues(System.Object[])
+  id: GetValues(System.Object[])
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: GetValues(object[])
+  nameWithType: TempTableDataReader.GetValues(object[])
+  fullName: Innova.Data.TempTableDataReader.GetValues(object[])
+  type: Method
+  source:
+    id: GetValues
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 213
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Populates an array of objects with the column values of the current record.
+  example: []
+  syntax:
+    content: public int GetValues(object[] values)
+    parameters:
+    - id: values
+      type: System.Object[]
+      description: An array of <xref href="System.Object" data-throw-if-not-resolved="false"></xref> to copy the attribute fields into.
+    return:
+      type: System.Int32
+      description: The number of instances of <xref href="System.Object" data-throw-if-not-resolved="false"></xref> in the array.
+    content.vb: Public Function GetValues(values As Object()) As Integer
+  overload: Innova.Data.TempTableDataReader.GetValues*
+  implements:
+  - System.Data.IDataRecord.GetValues(System.Object[])
+  nameWithType.vb: TempTableDataReader.GetValues(Object())
+  fullName.vb: Innova.Data.TempTableDataReader.GetValues(Object())
+  name.vb: GetValues(Object())
+- uid: Innova.Data.TempTableDataReader.IsDBNull(System.Int32)
+  commentId: M:Innova.Data.TempTableDataReader.IsDBNull(System.Int32)
+  id: IsDBNull(System.Int32)
+  parent: Innova.Data.TempTableDataReader
+  langs:
+  - csharp
+  - vb
+  name: IsDBNull(int)
+  nameWithType: TempTableDataReader.IsDBNull(int)
+  fullName: Innova.Data.TempTableDataReader.IsDBNull(int)
+  type: Method
+  source:
+    id: IsDBNull
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\TempTableDataReader.cs
+    startLine: 219
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Return whether the specified field is set to null.
+  example: []
+  syntax:
+    content: public bool IsDBNull(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index of the field to find.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified field is set to null; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function IsDBNull(i As Integer) As Boolean
+  overload: Innova.Data.TempTableDataReader.IsDBNull*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: The index passed was outside the range of 0 through <xref href="System.Data.IDataRecord.FieldCount" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Data.IDataRecord.IsDBNull(System.Int32)
+  nameWithType.vb: TempTableDataReader.IsDBNull(Integer)
+  fullName.vb: Innova.Data.TempTableDataReader.IsDBNull(Integer)
+  name.vb: IsDBNull(Integer)
+references:
+- uid: Innova.Data
+  commentId: N:Innova.Data
+  href: Innova.html
+  name: Innova.Data
+  nameWithType: Innova.Data
+  fullName: Innova.Data
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Data.IDataReader
+  commentId: T:System.Data.IDataReader
+  parent: System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatareader
+  name: IDataReader
+  nameWithType: IDataReader
+  fullName: System.Data.IDataReader
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Data.IDataRecord
+  commentId: T:System.Data.IDataRecord
+  parent: System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord
+  name: IDataRecord
+  nameWithType: IDataRecord
+  fullName: System.Data.IDataRecord
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+- uid: Innova.Data.TempTableDataReader.FieldCount*
+  commentId: Overload:Innova.Data.TempTableDataReader.FieldCount
+  href: Innova.Data.TempTableDataReader.FieldCount.html#Innova_Data_TempTableDataReader_FieldCount
+  name: FieldCount
+  nameWithType: TempTableDataReader.FieldCount
+  fullName: Innova.Data.TempTableDataReader.FieldCount
+- uid: System.Data.IDataRecord.FieldCount
+  commentId: P:System.Data.IDataRecord.FieldCount
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.fieldcount
+  name: FieldCount
+  nameWithType: IDataRecord.FieldCount
+  fullName: System.Data.IDataRecord.FieldCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Innova.Data.TempTableDataReader
+  commentId: T:Innova.Data.TempTableDataReader
+  href: Innova.Data.TempTableDataReader.html
+  name: TempTableDataReader
+  nameWithType: TempTableDataReader
+  fullName: Innova.Data.TempTableDataReader
+- uid: Innova.Data.TempTableDataReader.#ctor*
+  commentId: Overload:Innova.Data.TempTableDataReader.#ctor
+  href: Innova.Data.TempTableDataReader.-ctor.html#Innova_Data_TempTableDataReader__ctor_System_Collections_Generic_IEnumerable_Innova_Data_Entity_IPrimaryKey__
+  name: TempTableDataReader
+  nameWithType: TempTableDataReader.TempTableDataReader
+  fullName: Innova.Data.TempTableDataReader.TempTableDataReader
+  nameWithType.vb: TempTableDataReader.New
+  fullName.vb: Innova.Data.TempTableDataReader.New
+  name.vb: New
+- uid: System.Collections.Generic.IEnumerable{Innova.Data.Entity.IPrimaryKey}
+  commentId: T:System.Collections.Generic.IEnumerable{Innova.Data.Entity.IPrimaryKey}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IPrimaryKey>
+  nameWithType: IEnumerable<IPrimaryKey>
+  fullName: System.Collections.Generic.IEnumerable<Innova.Data.Entity.IPrimaryKey>
+  nameWithType.vb: IEnumerable(Of IPrimaryKey)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Innova.Data.Entity.IPrimaryKey)
+  name.vb: IEnumerable(Of IPrimaryKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Data.TempTableDataReader.Read*
+  commentId: Overload:Innova.Data.TempTableDataReader.Read
+  href: Innova.Data.TempTableDataReader.Read.html#Innova_Data_TempTableDataReader_Read
+  name: Read
+  nameWithType: TempTableDataReader.Read
+  fullName: Innova.Data.TempTableDataReader.Read
+- uid: System.Data.IDataReader.Read
+  commentId: M:System.Data.IDataReader.Read
+  parent: System.Data.IDataReader
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.read
+  name: Read()
+  nameWithType: IDataReader.Read()
+  fullName: System.Data.IDataReader.Read()
+  spec.csharp:
+  - uid: System.Data.IDataReader.Read
+    name: Read
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.read
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataReader.Read
+    name: Read
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.read
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Innova.Data.TempTableDataReader.GetValue*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetValue
+  href: Innova.Data.TempTableDataReader.GetValue.html#Innova_Data_TempTableDataReader_GetValue_System_Int32_
+  name: GetValue
+  nameWithType: TempTableDataReader.GetValue
+  fullName: Innova.Data.TempTableDataReader.GetValue
+- uid: System.Data.IDataRecord.GetValue(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetValue(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getvalue
+  name: GetValue(int)
+  nameWithType: IDataRecord.GetValue(int)
+  fullName: System.Data.IDataRecord.GetValue(int)
+  nameWithType.vb: IDataRecord.GetValue(Integer)
+  fullName.vb: System.Data.IDataRecord.GetValue(Integer)
+  name.vb: GetValue(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetValue(System.Int32)
+    name: GetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getvalue
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetValue(System.Int32)
+    name: GetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getvalue
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.TempTableDataReader.Dispose*
+  commentId: Overload:Innova.Data.TempTableDataReader.Dispose
+  href: Innova.Data.TempTableDataReader.Dispose.html#Innova_Data_TempTableDataReader_Dispose
+  name: Dispose
+  nameWithType: TempTableDataReader.Dispose
+  fullName: Innova.Data.TempTableDataReader.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Innova.Data.TempTableDataReader.Depth*
+  commentId: Overload:Innova.Data.TempTableDataReader.Depth
+  href: Innova.Data.TempTableDataReader.Depth.html#Innova_Data_TempTableDataReader_Depth
+  name: Depth
+  nameWithType: TempTableDataReader.Depth
+  fullName: Innova.Data.TempTableDataReader.Depth
+- uid: System.Data.IDataReader.Depth
+  commentId: P:System.Data.IDataReader.Depth
+  parent: System.Data.IDataReader
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.depth
+  name: Depth
+  nameWithType: IDataReader.Depth
+  fullName: System.Data.IDataReader.Depth
+- uid: Innova.Data.TempTableDataReader.IsClosed*
+  commentId: Overload:Innova.Data.TempTableDataReader.IsClosed
+  href: Innova.Data.TempTableDataReader.IsClosed.html#Innova_Data_TempTableDataReader_IsClosed
+  name: IsClosed
+  nameWithType: TempTableDataReader.IsClosed
+  fullName: Innova.Data.TempTableDataReader.IsClosed
+- uid: System.Data.IDataReader.IsClosed
+  commentId: P:System.Data.IDataReader.IsClosed
+  parent: System.Data.IDataReader
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.isclosed
+  name: IsClosed
+  nameWithType: IDataReader.IsClosed
+  fullName: System.Data.IDataReader.IsClosed
+- uid: Innova.Data.TempTableDataReader.RecordsAffected*
+  commentId: Overload:Innova.Data.TempTableDataReader.RecordsAffected
+  href: Innova.Data.TempTableDataReader.RecordsAffected.html#Innova_Data_TempTableDataReader_RecordsAffected
+  name: RecordsAffected
+  nameWithType: TempTableDataReader.RecordsAffected
+  fullName: Innova.Data.TempTableDataReader.RecordsAffected
+- uid: System.Data.IDataReader.RecordsAffected
+  commentId: P:System.Data.IDataReader.RecordsAffected
+  parent: System.Data.IDataReader
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.recordsaffected
+  name: RecordsAffected
+  nameWithType: IDataReader.RecordsAffected
+  fullName: System.Data.IDataReader.RecordsAffected
+- uid: System.IndexOutOfRangeException
+  commentId: T:System.IndexOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception
+  name: IndexOutOfRangeException
+  nameWithType: IndexOutOfRangeException
+  fullName: System.IndexOutOfRangeException
+- uid: Innova.Data.TempTableDataReader.Item*
+  commentId: Overload:Innova.Data.TempTableDataReader.Item
+  href: Innova.Data.TempTableDataReader.Item.html#Innova_Data_TempTableDataReader_Item_System_String_
+  name: this
+  nameWithType: TempTableDataReader.this
+  fullName: Innova.Data.TempTableDataReader.this
+  nameWithType.vb: TempTableDataReader.this[]
+  fullName.vb: Innova.Data.TempTableDataReader.this[]
+  name.vb: this[]
+- uid: System.Data.IDataRecord.Item(System.String)
+  commentId: P:System.Data.IDataRecord.Item(System.String)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: this[string]
+  nameWithType: IDataRecord.this[string]
+  fullName: System.Data.IDataRecord.this[string]
+  nameWithType.vb: IDataRecord.this[](String)
+  fullName.vb: System.Data.IDataRecord.this[](String)
+  name.vb: this[](String)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ']'
+  spec.vb:
+  - uid: System.Data.IDataRecord.Item(System.String)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.item
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Data.IDataRecord.Item(System.Int32)
+  commentId: P:System.Data.IDataRecord.Item(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IDataRecord.this[int]
+  fullName: System.Data.IDataRecord.this[int]
+  nameWithType.vb: IDataRecord.this[](Integer)
+  fullName.vb: System.Data.IDataRecord.this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Data.IDataRecord.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.TempTableDataReader.GetBoolean*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetBoolean
+  href: Innova.Data.TempTableDataReader.GetBoolean.html#Innova_Data_TempTableDataReader_GetBoolean_System_Int32_
+  name: GetBoolean
+  nameWithType: TempTableDataReader.GetBoolean
+  fullName: Innova.Data.TempTableDataReader.GetBoolean
+- uid: System.Data.IDataRecord.GetBoolean(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetBoolean(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getboolean
+  name: GetBoolean(int)
+  nameWithType: IDataRecord.GetBoolean(int)
+  fullName: System.Data.IDataRecord.GetBoolean(int)
+  nameWithType.vb: IDataRecord.GetBoolean(Integer)
+  fullName.vb: System.Data.IDataRecord.GetBoolean(Integer)
+  name.vb: GetBoolean(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetBoolean(System.Int32)
+    name: GetBoolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getboolean
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetBoolean(System.Int32)
+    name: GetBoolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getboolean
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.TempTableDataReader.Close*
+  commentId: Overload:Innova.Data.TempTableDataReader.Close
+  href: Innova.Data.TempTableDataReader.Close.html#Innova_Data_TempTableDataReader_Close
+  name: Close
+  nameWithType: TempTableDataReader.Close
+  fullName: Innova.Data.TempTableDataReader.Close
+- uid: System.Data.IDataReader.Close
+  commentId: M:System.Data.IDataReader.Close
+  parent: System.Data.IDataReader
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.close
+  name: Close()
+  nameWithType: IDataReader.Close()
+  fullName: System.Data.IDataReader.Close()
+  spec.csharp:
+  - uid: System.Data.IDataReader.Close
+    name: Close
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataReader.Close
+    name: Close
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.close
+  - name: (
+  - name: )
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.datatable
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: Innova.Data.TempTableDataReader.GetSchemaTable*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetSchemaTable
+  href: Innova.Data.TempTableDataReader.GetSchemaTable.html#Innova_Data_TempTableDataReader_GetSchemaTable
+  name: GetSchemaTable
+  nameWithType: TempTableDataReader.GetSchemaTable
+  fullName: Innova.Data.TempTableDataReader.GetSchemaTable
+- uid: System.Data.IDataReader.GetSchemaTable
+  commentId: M:System.Data.IDataReader.GetSchemaTable
+  parent: System.Data.IDataReader
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.getschematable
+  name: GetSchemaTable()
+  nameWithType: IDataReader.GetSchemaTable()
+  fullName: System.Data.IDataReader.GetSchemaTable()
+  spec.csharp:
+  - uid: System.Data.IDataReader.GetSchemaTable
+    name: GetSchemaTable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.getschematable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataReader.GetSchemaTable
+    name: GetSchemaTable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.getschematable
+  - name: (
+  - name: )
+- uid: Innova.Data.TempTableDataReader.NextResult*
+  commentId: Overload:Innova.Data.TempTableDataReader.NextResult
+  href: Innova.Data.TempTableDataReader.NextResult.html#Innova_Data_TempTableDataReader_NextResult
+  name: NextResult
+  nameWithType: TempTableDataReader.NextResult
+  fullName: Innova.Data.TempTableDataReader.NextResult
+- uid: System.Data.IDataReader.NextResult
+  commentId: M:System.Data.IDataReader.NextResult
+  parent: System.Data.IDataReader
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.nextresult
+  name: NextResult()
+  nameWithType: IDataReader.NextResult()
+  fullName: System.Data.IDataReader.NextResult()
+  spec.csharp:
+  - uid: System.Data.IDataReader.NextResult
+    name: NextResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.nextresult
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataReader.NextResult
+    name: NextResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatareader.nextresult
+  - name: (
+  - name: )
+- uid: Innova.Data.TempTableDataReader.GetByte*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetByte
+  href: Innova.Data.TempTableDataReader.GetByte.html#Innova_Data_TempTableDataReader_GetByte_System_Int32_
+  name: GetByte
+  nameWithType: TempTableDataReader.GetByte
+  fullName: Innova.Data.TempTableDataReader.GetByte
+- uid: System.Data.IDataRecord.GetByte(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetByte(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getbyte
+  name: GetByte(int)
+  nameWithType: IDataRecord.GetByte(int)
+  fullName: System.Data.IDataRecord.GetByte(int)
+  nameWithType.vb: IDataRecord.GetByte(Integer)
+  fullName.vb: System.Data.IDataRecord.GetByte(Integer)
+  name.vb: GetByte(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetByte(System.Int32)
+    name: GetByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getbyte
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetByte(System.Int32)
+    name: GetByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getbyte
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: Innova.Data.TempTableDataReader.GetBytes*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetBytes
+  href: Innova.Data.TempTableDataReader.GetBytes.html#Innova_Data_TempTableDataReader_GetBytes_System_Int32_System_Int64_System_Byte___System_Int32_System_Int32_
+  name: GetBytes
+  nameWithType: TempTableDataReader.GetBytes
+  fullName: Innova.Data.TempTableDataReader.GetBytes
+- uid: System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)
+  commentId: M:System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getbytes
+  name: GetBytes(int, long, byte[], int, int)
+  nameWithType: IDataRecord.GetBytes(int, long, byte[], int, int)
+  fullName: System.Data.IDataRecord.GetBytes(int, long, byte[], int, int)
+  nameWithType.vb: IDataRecord.GetBytes(Integer, Long, Byte(), Integer, Integer)
+  fullName.vb: System.Data.IDataRecord.GetBytes(Integer, Long, Byte(), Integer, Integer)
+  name.vb: GetBytes(Integer, Long, Byte(), Integer, Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)
+    name: GetBytes
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getbytes
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)
+    name: GetBytes
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getbytes
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: Innova.Data.TempTableDataReader.GetChar*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetChar
+  href: Innova.Data.TempTableDataReader.GetChar.html#Innova_Data_TempTableDataReader_GetChar_System_Int32_
+  name: GetChar
+  nameWithType: TempTableDataReader.GetChar
+  fullName: Innova.Data.TempTableDataReader.GetChar
+- uid: System.Data.IDataRecord.GetChar(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetChar(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getchar
+  name: GetChar(int)
+  nameWithType: IDataRecord.GetChar(int)
+  fullName: System.Data.IDataRecord.GetChar(int)
+  nameWithType.vb: IDataRecord.GetChar(Integer)
+  fullName.vb: System.Data.IDataRecord.GetChar(Integer)
+  name.vb: GetChar(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetChar(System.Int32)
+    name: GetChar
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getchar
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetChar(System.Int32)
+    name: GetChar
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getchar
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: Innova.Data.TempTableDataReader.GetChars*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetChars
+  href: Innova.Data.TempTableDataReader.GetChars.html#Innova_Data_TempTableDataReader_GetChars_System_Int32_System_Int64_System_Char___System_Int32_System_Int32_
+  name: GetChars
+  nameWithType: TempTableDataReader.GetChars
+  fullName: Innova.Data.TempTableDataReader.GetChars
+- uid: System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)
+  commentId: M:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getchars
+  name: GetChars(int, long, char[], int, int)
+  nameWithType: IDataRecord.GetChars(int, long, char[], int, int)
+  fullName: System.Data.IDataRecord.GetChars(int, long, char[], int, int)
+  nameWithType.vb: IDataRecord.GetChars(Integer, Long, Char(), Integer, Integer)
+  fullName.vb: System.Data.IDataRecord.GetChars(Integer, Long, Char(), Integer, Integer)
+  name.vb: GetChars(Integer, Long, Char(), Integer, Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)
+    name: GetChars
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getchars
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)
+    name: GetChars
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getchars
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Char[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char[]
+  nameWithType: char[]
+  fullName: char[]
+  nameWithType.vb: Char()
+  fullName.vb: Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: (
+  - name: )
+- uid: Innova.Data.TempTableDataReader.GetData*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetData
+  href: Innova.Data.TempTableDataReader.GetData.html#Innova_Data_TempTableDataReader_GetData_System_Int32_
+  name: GetData
+  nameWithType: TempTableDataReader.GetData
+  fullName: Innova.Data.TempTableDataReader.GetData
+- uid: System.Data.IDataRecord.GetData(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetData(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdata
+  name: GetData(int)
+  nameWithType: IDataRecord.GetData(int)
+  fullName: System.Data.IDataRecord.GetData(int)
+  nameWithType.vb: IDataRecord.GetData(Integer)
+  fullName.vb: System.Data.IDataRecord.GetData(Integer)
+  name.vb: GetData(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetData(System.Int32)
+    name: GetData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdata
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetData(System.Int32)
+    name: GetData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdata
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.TempTableDataReader.GetDataTypeName*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetDataTypeName
+  href: Innova.Data.TempTableDataReader.GetDataTypeName.html#Innova_Data_TempTableDataReader_GetDataTypeName_System_Int32_
+  name: GetDataTypeName
+  nameWithType: TempTableDataReader.GetDataTypeName
+  fullName: Innova.Data.TempTableDataReader.GetDataTypeName
+- uid: System.Data.IDataRecord.GetDataTypeName(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetDataTypeName(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdatatypename
+  name: GetDataTypeName(int)
+  nameWithType: IDataRecord.GetDataTypeName(int)
+  fullName: System.Data.IDataRecord.GetDataTypeName(int)
+  nameWithType.vb: IDataRecord.GetDataTypeName(Integer)
+  fullName.vb: System.Data.IDataRecord.GetDataTypeName(Integer)
+  name.vb: GetDataTypeName(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetDataTypeName(System.Int32)
+    name: GetDataTypeName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdatatypename
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetDataTypeName(System.Int32)
+    name: GetDataTypeName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdatatypename
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.TempTableDataReader.GetDateTime*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetDateTime
+  href: Innova.Data.TempTableDataReader.GetDateTime.html#Innova_Data_TempTableDataReader_GetDateTime_System_Int32_
+  name: GetDateTime
+  nameWithType: TempTableDataReader.GetDateTime
+  fullName: Innova.Data.TempTableDataReader.GetDateTime
+- uid: System.Data.IDataRecord.GetDateTime(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetDateTime(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdatetime
+  name: GetDateTime(int)
+  nameWithType: IDataRecord.GetDateTime(int)
+  fullName: System.Data.IDataRecord.GetDateTime(int)
+  nameWithType.vb: IDataRecord.GetDateTime(Integer)
+  fullName.vb: System.Data.IDataRecord.GetDateTime(Integer)
+  name.vb: GetDateTime(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetDateTime(System.Int32)
+    name: GetDateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdatetime
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetDateTime(System.Int32)
+    name: GetDateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdatetime
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Innova.Data.TempTableDataReader.GetDecimal*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetDecimal
+  href: Innova.Data.TempTableDataReader.GetDecimal.html#Innova_Data_TempTableDataReader_GetDecimal_System_Int32_
+  name: GetDecimal
+  nameWithType: TempTableDataReader.GetDecimal
+  fullName: Innova.Data.TempTableDataReader.GetDecimal
+- uid: System.Data.IDataRecord.GetDecimal(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetDecimal(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdecimal
+  name: GetDecimal(int)
+  nameWithType: IDataRecord.GetDecimal(int)
+  fullName: System.Data.IDataRecord.GetDecimal(int)
+  nameWithType.vb: IDataRecord.GetDecimal(Integer)
+  fullName.vb: System.Data.IDataRecord.GetDecimal(Integer)
+  name.vb: GetDecimal(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetDecimal(System.Int32)
+    name: GetDecimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdecimal
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetDecimal(System.Int32)
+    name: GetDecimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdecimal
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: Innova.Data.TempTableDataReader.GetDouble*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetDouble
+  href: Innova.Data.TempTableDataReader.GetDouble.html#Innova_Data_TempTableDataReader_GetDouble_System_Int32_
+  name: GetDouble
+  nameWithType: TempTableDataReader.GetDouble
+  fullName: Innova.Data.TempTableDataReader.GetDouble
+- uid: System.Data.IDataRecord.GetDouble(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetDouble(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdouble
+  name: GetDouble(int)
+  nameWithType: IDataRecord.GetDouble(int)
+  fullName: System.Data.IDataRecord.GetDouble(int)
+  nameWithType.vb: IDataRecord.GetDouble(Integer)
+  fullName.vb: System.Data.IDataRecord.GetDouble(Integer)
+  name.vb: GetDouble(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetDouble(System.Int32)
+    name: GetDouble
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdouble
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetDouble(System.Int32)
+    name: GetDouble
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getdouble
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Innova.Data.TempTableDataReader.GetFieldType*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetFieldType
+  href: Innova.Data.TempTableDataReader.GetFieldType.html#Innova_Data_TempTableDataReader_GetFieldType_System_Int32_
+  name: GetFieldType
+  nameWithType: TempTableDataReader.GetFieldType
+  fullName: Innova.Data.TempTableDataReader.GetFieldType
+- uid: System.Data.IDataRecord.GetFieldType(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetFieldType(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getfieldtype
+  name: GetFieldType(int)
+  nameWithType: IDataRecord.GetFieldType(int)
+  fullName: System.Data.IDataRecord.GetFieldType(int)
+  nameWithType.vb: IDataRecord.GetFieldType(Integer)
+  fullName.vb: System.Data.IDataRecord.GetFieldType(Integer)
+  name.vb: GetFieldType(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetFieldType(System.Int32)
+    name: GetFieldType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getfieldtype
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetFieldType(System.Int32)
+    name: GetFieldType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getfieldtype
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.TempTableDataReader.GetFloat*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetFloat
+  href: Innova.Data.TempTableDataReader.GetFloat.html#Innova_Data_TempTableDataReader_GetFloat_System_Int32_
+  name: GetFloat
+  nameWithType: TempTableDataReader.GetFloat
+  fullName: Innova.Data.TempTableDataReader.GetFloat
+- uid: System.Data.IDataRecord.GetFloat(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetFloat(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getfloat
+  name: GetFloat(int)
+  nameWithType: IDataRecord.GetFloat(int)
+  fullName: System.Data.IDataRecord.GetFloat(int)
+  nameWithType.vb: IDataRecord.GetFloat(Integer)
+  fullName.vb: System.Data.IDataRecord.GetFloat(Integer)
+  name.vb: GetFloat(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetFloat(System.Int32)
+    name: GetFloat
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getfloat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetFloat(System.Int32)
+    name: GetFloat
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getfloat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Innova.Data.TempTableDataReader.GetGuid*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetGuid
+  href: Innova.Data.TempTableDataReader.GetGuid.html#Innova_Data_TempTableDataReader_GetGuid_System_Int32_
+  name: GetGuid
+  nameWithType: TempTableDataReader.GetGuid
+  fullName: Innova.Data.TempTableDataReader.GetGuid
+- uid: System.Data.IDataRecord.GetGuid(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetGuid(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getguid
+  name: GetGuid(int)
+  nameWithType: IDataRecord.GetGuid(int)
+  fullName: System.Data.IDataRecord.GetGuid(int)
+  nameWithType.vb: IDataRecord.GetGuid(Integer)
+  fullName.vb: System.Data.IDataRecord.GetGuid(Integer)
+  name.vb: GetGuid(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetGuid(System.Int32)
+    name: GetGuid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getguid
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetGuid(System.Int32)
+    name: GetGuid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getguid
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Innova.Data.TempTableDataReader.GetInt16*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetInt16
+  href: Innova.Data.TempTableDataReader.GetInt16.html#Innova_Data_TempTableDataReader_GetInt16_System_Int32_
+  name: GetInt16
+  nameWithType: TempTableDataReader.GetInt16
+  fullName: Innova.Data.TempTableDataReader.GetInt16
+- uid: System.Data.IDataRecord.GetInt16(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetInt16(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getint16
+  name: GetInt16(int)
+  nameWithType: IDataRecord.GetInt16(int)
+  fullName: System.Data.IDataRecord.GetInt16(int)
+  nameWithType.vb: IDataRecord.GetInt16(Integer)
+  fullName.vb: System.Data.IDataRecord.GetInt16(Integer)
+  name.vb: GetInt16(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetInt16(System.Int32)
+    name: GetInt16
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getint16
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetInt16(System.Int32)
+    name: GetInt16
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getint16
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: Innova.Data.TempTableDataReader.GetInt32*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetInt32
+  href: Innova.Data.TempTableDataReader.GetInt32.html#Innova_Data_TempTableDataReader_GetInt32_System_Int32_
+  name: GetInt32
+  nameWithType: TempTableDataReader.GetInt32
+  fullName: Innova.Data.TempTableDataReader.GetInt32
+- uid: System.Data.IDataRecord.GetInt32(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetInt32(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getint32
+  name: GetInt32(int)
+  nameWithType: IDataRecord.GetInt32(int)
+  fullName: System.Data.IDataRecord.GetInt32(int)
+  nameWithType.vb: IDataRecord.GetInt32(Integer)
+  fullName.vb: System.Data.IDataRecord.GetInt32(Integer)
+  name.vb: GetInt32(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetInt32(System.Int32)
+    name: GetInt32
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getint32
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetInt32(System.Int32)
+    name: GetInt32
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getint32
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.TempTableDataReader.GetInt64*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetInt64
+  href: Innova.Data.TempTableDataReader.GetInt64.html#Innova_Data_TempTableDataReader_GetInt64_System_Int32_
+  name: GetInt64
+  nameWithType: TempTableDataReader.GetInt64
+  fullName: Innova.Data.TempTableDataReader.GetInt64
+- uid: System.Data.IDataRecord.GetInt64(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetInt64(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getint64
+  name: GetInt64(int)
+  nameWithType: IDataRecord.GetInt64(int)
+  fullName: System.Data.IDataRecord.GetInt64(int)
+  nameWithType.vb: IDataRecord.GetInt64(Integer)
+  fullName.vb: System.Data.IDataRecord.GetInt64(Integer)
+  name.vb: GetInt64(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetInt64(System.Int32)
+    name: GetInt64
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getint64
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetInt64(System.Int32)
+    name: GetInt64
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getint64
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.TempTableDataReader.GetName*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetName
+  href: Innova.Data.TempTableDataReader.GetName.html#Innova_Data_TempTableDataReader_GetName_System_Int32_
+  name: GetName
+  nameWithType: TempTableDataReader.GetName
+  fullName: Innova.Data.TempTableDataReader.GetName
+- uid: System.Data.IDataRecord.GetName(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetName(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getname
+  name: GetName(int)
+  nameWithType: IDataRecord.GetName(int)
+  fullName: System.Data.IDataRecord.GetName(int)
+  nameWithType.vb: IDataRecord.GetName(Integer)
+  fullName.vb: System.Data.IDataRecord.GetName(Integer)
+  name.vb: GetName(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetName(System.Int32)
+    name: GetName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getname
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetName(System.Int32)
+    name: GetName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getname
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.TempTableDataReader.GetOrdinal*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetOrdinal
+  href: Innova.Data.TempTableDataReader.GetOrdinal.html#Innova_Data_TempTableDataReader_GetOrdinal_System_String_
+  name: GetOrdinal
+  nameWithType: TempTableDataReader.GetOrdinal
+  fullName: Innova.Data.TempTableDataReader.GetOrdinal
+- uid: System.Data.IDataRecord.GetOrdinal(System.String)
+  commentId: M:System.Data.IDataRecord.GetOrdinal(System.String)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getordinal
+  name: GetOrdinal(string)
+  nameWithType: IDataRecord.GetOrdinal(string)
+  fullName: System.Data.IDataRecord.GetOrdinal(string)
+  nameWithType.vb: IDataRecord.GetOrdinal(String)
+  fullName.vb: System.Data.IDataRecord.GetOrdinal(String)
+  name.vb: GetOrdinal(String)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetOrdinal(System.String)
+    name: GetOrdinal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getordinal
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetOrdinal(System.String)
+    name: GetOrdinal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getordinal
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Data.TempTableDataReader.GetString*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetString
+  href: Innova.Data.TempTableDataReader.GetString.html#Innova_Data_TempTableDataReader_GetString_System_Int32_
+  name: GetString
+  nameWithType: TempTableDataReader.GetString
+  fullName: Innova.Data.TempTableDataReader.GetString
+- uid: System.Data.IDataRecord.GetString(System.Int32)
+  commentId: M:System.Data.IDataRecord.GetString(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getstring
+  name: GetString(int)
+  nameWithType: IDataRecord.GetString(int)
+  fullName: System.Data.IDataRecord.GetString(int)
+  nameWithType.vb: IDataRecord.GetString(Integer)
+  fullName.vb: System.Data.IDataRecord.GetString(Integer)
+  name.vb: GetString(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetString(System.Int32)
+    name: GetString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getstring
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetString(System.Int32)
+    name: GetString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getstring
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.TempTableDataReader.GetValues*
+  commentId: Overload:Innova.Data.TempTableDataReader.GetValues
+  href: Innova.Data.TempTableDataReader.GetValues.html#Innova_Data_TempTableDataReader_GetValues_System_Object___
+  name: GetValues
+  nameWithType: TempTableDataReader.GetValues
+  fullName: Innova.Data.TempTableDataReader.GetValues
+- uid: System.Data.IDataRecord.GetValues(System.Object[])
+  commentId: M:System.Data.IDataRecord.GetValues(System.Object[])
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getvalues
+  name: GetValues(object[])
+  nameWithType: IDataRecord.GetValues(object[])
+  fullName: System.Data.IDataRecord.GetValues(object[])
+  nameWithType.vb: IDataRecord.GetValues(Object())
+  fullName.vb: System.Data.IDataRecord.GetValues(Object())
+  name.vb: GetValues(Object())
+  spec.csharp:
+  - uid: System.Data.IDataRecord.GetValues(System.Object[])
+    name: GetValues
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getvalues
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.GetValues(System.Object[])
+    name: GetValues
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.getvalues
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: Innova.Data.TempTableDataReader.IsDBNull*
+  commentId: Overload:Innova.Data.TempTableDataReader.IsDBNull
+  href: Innova.Data.TempTableDataReader.IsDBNull.html#Innova_Data_TempTableDataReader_IsDBNull_System_Int32_
+  name: IsDBNull
+  nameWithType: TempTableDataReader.IsDBNull
+  fullName: Innova.Data.TempTableDataReader.IsDBNull
+- uid: System.Data.IDataRecord.IsDBNull(System.Int32)
+  commentId: M:System.Data.IDataRecord.IsDBNull(System.Int32)
+  parent: System.Data.IDataRecord
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.isdbnull
+  name: IsDBNull(int)
+  nameWithType: IDataRecord.IsDBNull(int)
+  fullName: System.Data.IDataRecord.IsDBNull(int)
+  nameWithType.vb: IDataRecord.IsDBNull(Integer)
+  fullName.vb: System.Data.IDataRecord.IsDBNull(Integer)
+  name.vb: IsDBNull(Integer)
+  spec.csharp:
+  - uid: System.Data.IDataRecord.IsDBNull(System.Int32)
+    name: IsDBNull
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.isdbnull
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Data.IDataRecord.IsDBNull(System.Int32)
+    name: IsDBNull
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.idatarecord.isdbnull
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+memberLayout: SeparatePages

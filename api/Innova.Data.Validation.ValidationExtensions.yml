@@ -1,0 +1,1063 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.Validation.ValidationExtensions
+  commentId: T:Innova.Data.Validation.ValidationExtensions
+  id: ValidationExtensions
+  parent: Innova.Data.Validation
+  children:
+  - Innova.Data.Validation.ValidationExtensions.AccountExists``1(FluentValidation.IRuleBuilder{``0,System.String})
+  - Innova.Data.Validation.ValidationExtensions.GetErrors(FluentValidation.Results.ValidationResult)
+  - Innova.Data.Validation.ValidationExtensions.GetErrors(System.Collections.Generic.IEnumerable{FluentValidation.Results.ValidationResult})
+  - Innova.Data.Validation.ValidationExtensions.GetErrors``1(FluentValidation.Results.ValidationResult,``0)
+  - Innova.Data.Validation.ValidationExtensions.GetResults(System.ComponentModel.INotifyDataErrorInfo)
+  - Innova.Data.Validation.ValidationExtensions.GetResultsAsString(System.ComponentModel.INotifyDataErrorInfo)
+  - Innova.Data.Validation.ValidationExtensions.ValidateAndIfThrowError(Innova.Data.Validation.IEntityValidation)
+  - Innova.Data.Validation.ValidationExtensions.ValidateResult``1(FluentValidation.Results.ValidationResult,``0)
+  - Innova.Data.Validation.ValidationExtensions.Validate``1(FluentValidation.IValidator{``0},``0,System.String,System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])
+  - Innova.Data.Validation.ValidationExtensions.Validate``1(FluentValidation.IValidator{``0},``0,System.String,System.String)
+  - Innova.Data.Validation.ValidationExtensions.Validate``1(FluentValidation.IValidator{``0},``0,System.String,System.String[])
+  langs:
+  - csharp
+  - vb
+  name: ValidationExtensions
+  nameWithType: ValidationExtensions
+  fullName: Innova.Data.Validation.ValidationExtensions
+  type: Class
+  source:
+    id: ValidationExtensions
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\ValidationExtensions.cs
+    startLine: 17
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Provides extension methods for validating objects using FluentValidation.
+  example: []
+  syntax:
+    content: public static class ValidationExtensions
+    content.vb: Public Module ValidationExtensions
+  inheritance:
+  - System.Object
+- uid: Innova.Data.Validation.ValidationExtensions.Validate``1(FluentValidation.IValidator{``0},``0,System.String,System.String[])
+  commentId: M:Innova.Data.Validation.ValidationExtensions.Validate``1(FluentValidation.IValidator{``0},``0,System.String,System.String[])
+  id: Validate``1(FluentValidation.IValidator{``0},``0,System.String,System.String[])
+  isExtensionMethod: true
+  parent: Innova.Data.Validation.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: Validate<T>(IValidator<T>, T, string, string[])
+  nameWithType: ValidationExtensions.Validate<T>(IValidator<T>, T, string, string[])
+  fullName: Innova.Data.Validation.ValidationExtensions.Validate<T>(FluentValidation.IValidator<T>, T, string, string[])
+  type: Method
+  source:
+    id: Validate
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\ValidationExtensions.cs
+    startLine: 28
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Validates an object using the specified validator, rule set, and properties.
+  example: []
+  syntax:
+    content: public static ValidationResult Validate<T>(this IValidator<T> validator, T instance, string ruleSet, string[] properties)
+    parameters:
+    - id: validator
+      type: FluentValidation.IValidator{{T}}
+      description: The validator to use for validation.
+    - id: instance
+      type: '{T}'
+      description: The object instance to validate.
+    - id: ruleSet
+      type: System.String
+      description: The rule set to use for validation.
+    - id: properties
+      type: System.String[]
+      description: The properties to include in the validation.
+    typeParameters:
+    - id: T
+      description: The type of the object to validate.
+    return:
+      type: FluentValidation.Results.ValidationResult
+      description: The validation result.
+    content.vb: Public Shared Function Validate(Of T)(validator As IValidator(Of T), instance As T, ruleSet As String, properties As String()) As ValidationResult
+  overload: Innova.Data.Validation.ValidationExtensions.Validate*
+  nameWithType.vb: ValidationExtensions.Validate(Of T)(IValidator(Of T), T, String, String())
+  fullName.vb: Innova.Data.Validation.ValidationExtensions.Validate(Of T)(FluentValidation.IValidator(Of T), T, String, String())
+  name.vb: Validate(Of T)(IValidator(Of T), T, String, String())
+- uid: Innova.Data.Validation.ValidationExtensions.Validate``1(FluentValidation.IValidator{``0},``0,System.String,System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])
+  commentId: M:Innova.Data.Validation.ValidationExtensions.Validate``1(FluentValidation.IValidator{``0},``0,System.String,System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])
+  id: Validate``1(FluentValidation.IValidator{``0},``0,System.String,System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])
+  isExtensionMethod: true
+  parent: Innova.Data.Validation.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: Validate<T>(IValidator<T>, T, string, Expression<Func<T, object>>[])
+  nameWithType: ValidationExtensions.Validate<T>(IValidator<T>, T, string, Expression<Func<T, object>>[])
+  fullName: Innova.Data.Validation.ValidationExtensions.Validate<T>(FluentValidation.IValidator<T>, T, string, System.Linq.Expressions.Expression<System.Func<T, object>>[])
+  type: Method
+  source:
+    id: Validate
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\ValidationExtensions.cs
+    startLine: 51
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Validates an object using the specified validator, rule set, and property expressions.
+  example: []
+  syntax:
+    content: public static ValidationResult Validate<T>(this IValidator<T> validator, T instance, string ruleSet, Expression<Func<T, object>>[] propertyExpressions)
+    parameters:
+    - id: validator
+      type: FluentValidation.IValidator{{T}}
+      description: The validator to use for validation.
+    - id: instance
+      type: '{T}'
+      description: The object instance to validate.
+    - id: ruleSet
+      type: System.String
+      description: The rule set to use for validation.
+    - id: propertyExpressions
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Object}}[]
+      description: The property expressions to include in the validation.
+    typeParameters:
+    - id: T
+      description: The type of the object to validate.
+    return:
+      type: FluentValidation.Results.ValidationResult
+      description: The validation result.
+    content.vb: Public Shared Function Validate(Of T)(validator As IValidator(Of T), instance As T, ruleSet As String, propertyExpressions As Expression(Of Func(Of T, Object))()) As ValidationResult
+  overload: Innova.Data.Validation.ValidationExtensions.Validate*
+  nameWithType.vb: ValidationExtensions.Validate(Of T)(IValidator(Of T), T, String, Expression(Of Func(Of T, Object))())
+  fullName.vb: Innova.Data.Validation.ValidationExtensions.Validate(Of T)(FluentValidation.IValidator(Of T), T, String, System.Linq.Expressions.Expression(Of System.Func(Of T, Object))())
+  name.vb: Validate(Of T)(IValidator(Of T), T, String, Expression(Of Func(Of T, Object))())
+- uid: Innova.Data.Validation.ValidationExtensions.Validate``1(FluentValidation.IValidator{``0},``0,System.String,System.String)
+  commentId: M:Innova.Data.Validation.ValidationExtensions.Validate``1(FluentValidation.IValidator{``0},``0,System.String,System.String)
+  id: Validate``1(FluentValidation.IValidator{``0},``0,System.String,System.String)
+  isExtensionMethod: true
+  parent: Innova.Data.Validation.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: Validate<T>(IValidator<T>, T, string, string)
+  nameWithType: ValidationExtensions.Validate<T>(IValidator<T>, T, string, string)
+  fullName: Innova.Data.Validation.ValidationExtensions.Validate<T>(FluentValidation.IValidator<T>, T, string, string)
+  type: Method
+  source:
+    id: Validate
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\ValidationExtensions.cs
+    startLine: 66
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Validates an object using the specified validator, rule set, and property name.
+  example: []
+  syntax:
+    content: public static ValidationResult Validate<T>(this IValidator<T> validator, T instance, string ruleSet, string propertyName)
+    parameters:
+    - id: validator
+      type: FluentValidation.IValidator{{T}}
+      description: The validator to use for validation.
+    - id: instance
+      type: '{T}'
+      description: The object instance to validate.
+    - id: ruleSet
+      type: System.String
+      description: The rule set to use for validation.
+    - id: propertyName
+      type: System.String
+      description: The property name to include in the validation.
+    typeParameters:
+    - id: T
+      description: The type of the object to validate.
+    return:
+      type: FluentValidation.Results.ValidationResult
+      description: The validation result.
+    content.vb: Public Shared Function Validate(Of T)(validator As IValidator(Of T), instance As T, ruleSet As String, propertyName As String) As ValidationResult
+  overload: Innova.Data.Validation.ValidationExtensions.Validate*
+  nameWithType.vb: ValidationExtensions.Validate(Of T)(IValidator(Of T), T, String, String)
+  fullName.vb: Innova.Data.Validation.ValidationExtensions.Validate(Of T)(FluentValidation.IValidator(Of T), T, String, String)
+  name.vb: Validate(Of T)(IValidator(Of T), T, String, String)
+- uid: Innova.Data.Validation.ValidationExtensions.AccountExists``1(FluentValidation.IRuleBuilder{``0,System.String})
+  commentId: M:Innova.Data.Validation.ValidationExtensions.AccountExists``1(FluentValidation.IRuleBuilder{``0,System.String})
+  id: AccountExists``1(FluentValidation.IRuleBuilder{``0,System.String})
+  isExtensionMethod: true
+  parent: Innova.Data.Validation.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AccountExists<T>(IRuleBuilder<T, string>)
+  nameWithType: ValidationExtensions.AccountExists<T>(IRuleBuilder<T, string>)
+  fullName: Innova.Data.Validation.ValidationExtensions.AccountExists<T>(FluentValidation.IRuleBuilder<T, string>)
+  type: Method
+  source:
+    id: AccountExists
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\ValidationExtensions.cs
+    startLine: 89
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Specifies a custom validator for the AccountExists rule.
+  example: []
+  syntax:
+    content: public static IRuleBuilderOptions<T, string> AccountExists<T>(this IRuleBuilder<T, string> ruleBuilder)
+    parameters:
+    - id: ruleBuilder
+      type: FluentValidation.IRuleBuilder{{T},System.String}
+      description: The rule builder.
+    typeParameters:
+    - id: T
+      description: The type of the object being validated.
+    return:
+      type: FluentValidation.IRuleBuilderOptions{{T},System.String}
+      description: The rule builder options.
+    content.vb: Public Shared Function AccountExists(Of T)(ruleBuilder As IRuleBuilder(Of T, String)) As IRuleBuilderOptions(Of T, String)
+  overload: Innova.Data.Validation.ValidationExtensions.AccountExists*
+  nameWithType.vb: ValidationExtensions.AccountExists(Of T)(IRuleBuilder(Of T, String))
+  fullName.vb: Innova.Data.Validation.ValidationExtensions.AccountExists(Of T)(FluentValidation.IRuleBuilder(Of T, String))
+  name.vb: AccountExists(Of T)(IRuleBuilder(Of T, String))
+- uid: Innova.Data.Validation.ValidationExtensions.GetErrors(FluentValidation.Results.ValidationResult)
+  commentId: M:Innova.Data.Validation.ValidationExtensions.GetErrors(FluentValidation.Results.ValidationResult)
+  id: GetErrors(FluentValidation.Results.ValidationResult)
+  isExtensionMethod: true
+  parent: Innova.Data.Validation.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetErrors(ValidationResult)
+  nameWithType: ValidationExtensions.GetErrors(ValidationResult)
+  fullName: Innova.Data.Validation.ValidationExtensions.GetErrors(FluentValidation.Results.ValidationResult)
+  type: Method
+  source:
+    id: GetErrors
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\ValidationExtensions.cs
+    startLine: 99
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Gets the validation errors as a string.
+  example: []
+  syntax:
+    content: public static string GetErrors(this ValidationResult validationResult)
+    parameters:
+    - id: validationResult
+      type: FluentValidation.Results.ValidationResult
+      description: The validation result.
+    return:
+      type: System.String
+      description: The validation errors as a string.
+    content.vb: Public Shared Function GetErrors(validationResult As ValidationResult) As String
+  overload: Innova.Data.Validation.ValidationExtensions.GetErrors*
+- uid: Innova.Data.Validation.ValidationExtensions.GetErrors``1(FluentValidation.Results.ValidationResult,``0)
+  commentId: M:Innova.Data.Validation.ValidationExtensions.GetErrors``1(FluentValidation.Results.ValidationResult,``0)
+  id: GetErrors``1(FluentValidation.Results.ValidationResult,``0)
+  isExtensionMethod: true
+  parent: Innova.Data.Validation.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetErrors<T>(ValidationResult, T)
+  nameWithType: ValidationExtensions.GetErrors<T>(ValidationResult, T)
+  fullName: Innova.Data.Validation.ValidationExtensions.GetErrors<T>(FluentValidation.Results.ValidationResult, T)
+  type: Method
+  source:
+    id: GetErrors
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\ValidationExtensions.cs
+    startLine: 111
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Gets the validation errors as a string for the specified entity.
+  example: []
+  syntax:
+    content: 'public static string GetErrors<T>(this ValidationResult validationResult, T entity) where T : class'
+    parameters:
+    - id: validationResult
+      type: FluentValidation.Results.ValidationResult
+      description: The validation result.
+    - id: entity
+      type: '{T}'
+      description: The entity.
+    typeParameters:
+    - id: T
+      description: The type of the entity.
+    return:
+      type: System.String
+      description: The validation errors as a string.
+    content.vb: Public Shared Function GetErrors(Of T As Class)(validationResult As ValidationResult, entity As T) As String
+  overload: Innova.Data.Validation.ValidationExtensions.GetErrors*
+  nameWithType.vb: ValidationExtensions.GetErrors(Of T)(ValidationResult, T)
+  fullName.vb: Innova.Data.Validation.ValidationExtensions.GetErrors(Of T)(FluentValidation.Results.ValidationResult, T)
+  name.vb: GetErrors(Of T)(ValidationResult, T)
+- uid: Innova.Data.Validation.ValidationExtensions.GetErrors(System.Collections.Generic.IEnumerable{FluentValidation.Results.ValidationResult})
+  commentId: M:Innova.Data.Validation.ValidationExtensions.GetErrors(System.Collections.Generic.IEnumerable{FluentValidation.Results.ValidationResult})
+  id: GetErrors(System.Collections.Generic.IEnumerable{FluentValidation.Results.ValidationResult})
+  isExtensionMethod: true
+  parent: Innova.Data.Validation.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetErrors(IEnumerable<ValidationResult>)
+  nameWithType: ValidationExtensions.GetErrors(IEnumerable<ValidationResult>)
+  fullName: Innova.Data.Validation.ValidationExtensions.GetErrors(System.Collections.Generic.IEnumerable<FluentValidation.Results.ValidationResult>)
+  type: Method
+  source:
+    id: GetErrors
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\ValidationExtensions.cs
+    startLine: 139
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Gets the validation errors as a string for the specified validation results.
+  example: []
+  syntax:
+    content: public static string GetErrors(this IEnumerable<ValidationResult> validationResults)
+    parameters:
+    - id: validationResults
+      type: System.Collections.Generic.IEnumerable{FluentValidation.Results.ValidationResult}
+      description: The validation results.
+    return:
+      type: System.String
+      description: The validation errors as a string.
+    content.vb: Public Shared Function GetErrors(validationResults As IEnumerable(Of ValidationResult)) As String
+  overload: Innova.Data.Validation.ValidationExtensions.GetErrors*
+  nameWithType.vb: ValidationExtensions.GetErrors(IEnumerable(Of ValidationResult))
+  fullName.vb: Innova.Data.Validation.ValidationExtensions.GetErrors(System.Collections.Generic.IEnumerable(Of FluentValidation.Results.ValidationResult))
+  name.vb: GetErrors(IEnumerable(Of ValidationResult))
+- uid: Innova.Data.Validation.ValidationExtensions.ValidateResult``1(FluentValidation.Results.ValidationResult,``0)
+  commentId: M:Innova.Data.Validation.ValidationExtensions.ValidateResult``1(FluentValidation.Results.ValidationResult,``0)
+  id: ValidateResult``1(FluentValidation.Results.ValidationResult,``0)
+  isExtensionMethod: true
+  parent: Innova.Data.Validation.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateResult<T>(ValidationResult, T)
+  nameWithType: ValidationExtensions.ValidateResult<T>(ValidationResult, T)
+  fullName: Innova.Data.Validation.ValidationExtensions.ValidateResult<T>(FluentValidation.Results.ValidationResult, T)
+  type: Method
+  source:
+    id: ValidateResult
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\ValidationExtensions.cs
+    startLine: 150
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Validates the validation result and throws a ValidationException if the result is not valid.
+  example: []
+  syntax:
+    content: 'public static void ValidateResult<T>(this ValidationResult validationResult, T entity) where T : class'
+    parameters:
+    - id: validationResult
+      type: FluentValidation.Results.ValidationResult
+      description: The validation result.
+    - id: entity
+      type: '{T}'
+      description: The entity.
+    typeParameters:
+    - id: T
+      description: The type of the entity.
+    content.vb: Public Shared Sub ValidateResult(Of T As Class)(validationResult As ValidationResult, entity As T)
+  overload: Innova.Data.Validation.ValidationExtensions.ValidateResult*
+  nameWithType.vb: ValidationExtensions.ValidateResult(Of T)(ValidationResult, T)
+  fullName.vb: Innova.Data.Validation.ValidationExtensions.ValidateResult(Of T)(FluentValidation.Results.ValidationResult, T)
+  name.vb: ValidateResult(Of T)(ValidationResult, T)
+- uid: Innova.Data.Validation.ValidationExtensions.GetResults(System.ComponentModel.INotifyDataErrorInfo)
+  commentId: M:Innova.Data.Validation.ValidationExtensions.GetResults(System.ComponentModel.INotifyDataErrorInfo)
+  id: GetResults(System.ComponentModel.INotifyDataErrorInfo)
+  isExtensionMethod: true
+  parent: Innova.Data.Validation.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetResults(INotifyDataErrorInfo)
+  nameWithType: ValidationExtensions.GetResults(INotifyDataErrorInfo)
+  fullName: Innova.Data.Validation.ValidationExtensions.GetResults(System.ComponentModel.INotifyDataErrorInfo)
+  type: Method
+  source:
+    id: GetResults
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\ValidationExtensions.cs
+    startLine: 163
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Gets the validation results for the specified INotifyDataErrorInfo.
+  example: []
+  syntax:
+    content: public static IEnumerable<ValidationResult> GetResults(this INotifyDataErrorInfo notifyDataErrorInfo)
+    parameters:
+    - id: notifyDataErrorInfo
+      type: System.ComponentModel.INotifyDataErrorInfo
+      description: The INotifyDataErrorInfo.
+    return:
+      type: System.Collections.Generic.IEnumerable{FluentValidation.Results.ValidationResult}
+      description: The validation results.
+    content.vb: Public Shared Function GetResults(notifyDataErrorInfo As INotifyDataErrorInfo) As IEnumerable(Of ValidationResult)
+  overload: Innova.Data.Validation.ValidationExtensions.GetResults*
+- uid: Innova.Data.Validation.ValidationExtensions.GetResultsAsString(System.ComponentModel.INotifyDataErrorInfo)
+  commentId: M:Innova.Data.Validation.ValidationExtensions.GetResultsAsString(System.ComponentModel.INotifyDataErrorInfo)
+  id: GetResultsAsString(System.ComponentModel.INotifyDataErrorInfo)
+  isExtensionMethod: true
+  parent: Innova.Data.Validation.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetResultsAsString(INotifyDataErrorInfo)
+  nameWithType: ValidationExtensions.GetResultsAsString(INotifyDataErrorInfo)
+  fullName: Innova.Data.Validation.ValidationExtensions.GetResultsAsString(System.ComponentModel.INotifyDataErrorInfo)
+  type: Method
+  source:
+    id: GetResultsAsString
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\ValidationExtensions.cs
+    startLine: 174
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Gets the validation results as a string for the specified INotifyDataErrorInfo.
+  example: []
+  syntax:
+    content: public static string GetResultsAsString(this INotifyDataErrorInfo notifyDataErrorInfo)
+    parameters:
+    - id: notifyDataErrorInfo
+      type: System.ComponentModel.INotifyDataErrorInfo
+      description: The INotifyDataErrorInfo.
+    return:
+      type: System.String
+      description: The validation results as a string.
+    content.vb: Public Shared Function GetResultsAsString(notifyDataErrorInfo As INotifyDataErrorInfo) As String
+  overload: Innova.Data.Validation.ValidationExtensions.GetResultsAsString*
+- uid: Innova.Data.Validation.ValidationExtensions.ValidateAndIfThrowError(Innova.Data.Validation.IEntityValidation)
+  commentId: M:Innova.Data.Validation.ValidationExtensions.ValidateAndIfThrowError(Innova.Data.Validation.IEntityValidation)
+  id: ValidateAndIfThrowError(Innova.Data.Validation.IEntityValidation)
+  isExtensionMethod: true
+  parent: Innova.Data.Validation.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateAndIfThrowError(IEntityValidation)
+  nameWithType: ValidationExtensions.ValidateAndIfThrowError(IEntityValidation)
+  fullName: Innova.Data.Validation.ValidationExtensions.ValidateAndIfThrowError(Innova.Data.Validation.IEntityValidation)
+  type: Method
+  source:
+    id: ValidateAndIfThrowError
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\ValidationExtensions.cs
+    startLine: 184
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  summary: Validates the entity and throws a ValidationException if the result is not valid.
+  example: []
+  syntax:
+    content: public static Task ValidateAndIfThrowError(this IEntityValidation entityValidation)
+    parameters:
+    - id: entityValidation
+      type: Innova.Data.Validation.IEntityValidation
+      description: The entity validation.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function ValidateAndIfThrowError(entityValidation As IEntityValidation) As Task
+  overload: Innova.Data.Validation.ValidationExtensions.ValidateAndIfThrowError*
+references:
+- uid: Innova.Data.Validation
+  commentId: N:Innova.Data.Validation
+  href: Innova.html
+  name: Innova.Data.Validation
+  nameWithType: Innova.Data.Validation
+  fullName: Innova.Data.Validation
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Validation
+    name: Validation
+    href: Innova.Data.Validation.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Validation
+    name: Validation
+    href: Innova.Data.Validation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.Validation.ValidationExtensions.Validate*
+  commentId: Overload:Innova.Data.Validation.ValidationExtensions.Validate
+  href: Innova.Data.Validation.ValidationExtensions.Validate.html#Innova_Data_Validation_ValidationExtensions_Validate__1_FluentValidation_IValidator___0____0_System_String_System_String___
+  name: Validate
+  nameWithType: ValidationExtensions.Validate
+  fullName: Innova.Data.Validation.ValidationExtensions.Validate
+- uid: FluentValidation.IValidator{{T}}
+  commentId: T:FluentValidation.IValidator{`0}
+  parent: FluentValidation
+  definition: FluentValidation.IValidator`1
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: FluentValidation.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: FluentValidation.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: FluentValidation.Results.ValidationResult
+  commentId: T:FluentValidation.Results.ValidationResult
+  parent: FluentValidation.Results
+  isExternal: true
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: FluentValidation.Results.ValidationResult
+- uid: FluentValidation.IValidator`1
+  commentId: T:FluentValidation.IValidator`1
+  isExternal: true
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: FluentValidation.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: FluentValidation.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: FluentValidation
+  commentId: N:FluentValidation
+  isExternal: true
+  name: FluentValidation
+  nameWithType: FluentValidation
+  fullName: FluentValidation
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: FluentValidation.Results
+  commentId: N:FluentValidation.Results
+  isExternal: true
+  name: FluentValidation.Results
+  nameWithType: FluentValidation.Results
+  fullName: FluentValidation.Results
+  spec.csharp:
+  - uid: FluentValidation
+    name: FluentValidation
+    isExternal: true
+  - name: .
+  - uid: FluentValidation.Results
+    name: Results
+    isExternal: true
+  spec.vb:
+  - uid: FluentValidation
+    name: FluentValidation
+    isExternal: true
+  - name: .
+  - uid: FluentValidation.Results
+    name: Results
+    isExternal: true
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Object}}[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, object>>[]
+  nameWithType: Expression<Func<T, object>>[]
+  fullName: System.Linq.Expressions.Expression<System.Func<T, object>>[]
+  nameWithType.vb: Expression(Of Func(Of T, Object))()
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Object))()
+  name.vb: Expression(Of Func(Of T, Object))()
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+  - name: (
+  - name: )
+- uid: Innova.Data.Validation.ValidationExtensions.AccountExists*
+  commentId: Overload:Innova.Data.Validation.ValidationExtensions.AccountExists
+  href: Innova.Data.Validation.ValidationExtensions.AccountExists.html#Innova_Data_Validation_ValidationExtensions_AccountExists__1_FluentValidation_IRuleBuilder___0_System_String__
+  name: AccountExists
+  nameWithType: ValidationExtensions.AccountExists
+  fullName: Innova.Data.Validation.ValidationExtensions.AccountExists
+- uid: FluentValidation.IRuleBuilder{{T},System.String}
+  commentId: T:FluentValidation.IRuleBuilder{``0,System.String}
+  parent: FluentValidation
+  definition: FluentValidation.IRuleBuilder`2
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: IRuleBuilder<T, string>
+  nameWithType: IRuleBuilder<T, string>
+  fullName: FluentValidation.IRuleBuilder<T, string>
+  nameWithType.vb: IRuleBuilder(Of T, String)
+  fullName.vb: FluentValidation.IRuleBuilder(Of T, String)
+  name.vb: IRuleBuilder(Of T, String)
+  spec.csharp:
+  - uid: FluentValidation.IRuleBuilder`2
+    name: IRuleBuilder
+    isExternal: true
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: FluentValidation.IRuleBuilder`2
+    name: IRuleBuilder
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: FluentValidation.IRuleBuilderOptions{{T},System.String}
+  commentId: T:FluentValidation.IRuleBuilderOptions{``0,System.String}
+  parent: FluentValidation
+  definition: FluentValidation.IRuleBuilderOptions`2
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: IRuleBuilderOptions<T, string>
+  nameWithType: IRuleBuilderOptions<T, string>
+  fullName: FluentValidation.IRuleBuilderOptions<T, string>
+  nameWithType.vb: IRuleBuilderOptions(Of T, String)
+  fullName.vb: FluentValidation.IRuleBuilderOptions(Of T, String)
+  name.vb: IRuleBuilderOptions(Of T, String)
+  spec.csharp:
+  - uid: FluentValidation.IRuleBuilderOptions`2
+    name: IRuleBuilderOptions
+    isExternal: true
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: FluentValidation.IRuleBuilderOptions`2
+    name: IRuleBuilderOptions
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: FluentValidation.IRuleBuilder`2
+  commentId: T:FluentValidation.IRuleBuilder`2
+  isExternal: true
+  name: IRuleBuilder<T, TProperty>
+  nameWithType: IRuleBuilder<T, TProperty>
+  fullName: FluentValidation.IRuleBuilder<T, TProperty>
+  nameWithType.vb: IRuleBuilder(Of T, TProperty)
+  fullName.vb: FluentValidation.IRuleBuilder(Of T, TProperty)
+  name.vb: IRuleBuilder(Of T, TProperty)
+  spec.csharp:
+  - uid: FluentValidation.IRuleBuilder`2
+    name: IRuleBuilder
+    isExternal: true
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: '>'
+  spec.vb:
+  - uid: FluentValidation.IRuleBuilder`2
+    name: IRuleBuilder
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: )
+- uid: FluentValidation.IRuleBuilderOptions`2
+  commentId: T:FluentValidation.IRuleBuilderOptions`2
+  isExternal: true
+  name: IRuleBuilderOptions<T, TProperty>
+  nameWithType: IRuleBuilderOptions<T, TProperty>
+  fullName: FluentValidation.IRuleBuilderOptions<T, TProperty>
+  nameWithType.vb: IRuleBuilderOptions(Of T, TProperty)
+  fullName.vb: FluentValidation.IRuleBuilderOptions(Of T, TProperty)
+  name.vb: IRuleBuilderOptions(Of T, TProperty)
+  spec.csharp:
+  - uid: FluentValidation.IRuleBuilderOptions`2
+    name: IRuleBuilderOptions
+    isExternal: true
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: '>'
+  spec.vb:
+  - uid: FluentValidation.IRuleBuilderOptions`2
+    name: IRuleBuilderOptions
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: )
+- uid: Innova.Data.Validation.ValidationExtensions.GetErrors*
+  commentId: Overload:Innova.Data.Validation.ValidationExtensions.GetErrors
+  href: Innova.Data.Validation.ValidationExtensions.GetErrors.html#Innova_Data_Validation_ValidationExtensions_GetErrors_FluentValidation_Results_ValidationResult_
+  name: GetErrors
+  nameWithType: ValidationExtensions.GetErrors
+  fullName: Innova.Data.Validation.ValidationExtensions.GetErrors
+- uid: System.Collections.Generic.IEnumerable{FluentValidation.Results.ValidationResult}
+  commentId: T:System.Collections.Generic.IEnumerable{FluentValidation.Results.ValidationResult}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ValidationResult>
+  nameWithType: IEnumerable<ValidationResult>
+  fullName: System.Collections.Generic.IEnumerable<FluentValidation.Results.ValidationResult>
+  nameWithType.vb: IEnumerable(Of ValidationResult)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of FluentValidation.Results.ValidationResult)
+  name.vb: IEnumerable(Of ValidationResult)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Data.Validation.ValidationExtensions.ValidateResult*
+  commentId: Overload:Innova.Data.Validation.ValidationExtensions.ValidateResult
+  href: Innova.Data.Validation.ValidationExtensions.ValidateResult.html#Innova_Data_Validation_ValidationExtensions_ValidateResult__1_FluentValidation_Results_ValidationResult___0_
+  name: ValidateResult
+  nameWithType: ValidationExtensions.ValidateResult
+  fullName: Innova.Data.Validation.ValidationExtensions.ValidateResult
+- uid: Innova.Data.Validation.ValidationExtensions.GetResults*
+  commentId: Overload:Innova.Data.Validation.ValidationExtensions.GetResults
+  href: Innova.Data.Validation.ValidationExtensions.GetResults.html#Innova_Data_Validation_ValidationExtensions_GetResults_System_ComponentModel_INotifyDataErrorInfo_
+  name: GetResults
+  nameWithType: ValidationExtensions.GetResults
+  fullName: Innova.Data.Validation.ValidationExtensions.GetResults
+- uid: System.ComponentModel.INotifyDataErrorInfo
+  commentId: T:System.ComponentModel.INotifyDataErrorInfo
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifydataerrorinfo
+  name: INotifyDataErrorInfo
+  nameWithType: INotifyDataErrorInfo
+  fullName: System.ComponentModel.INotifyDataErrorInfo
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Innova.Data.Validation.ValidationExtensions.GetResultsAsString*
+  commentId: Overload:Innova.Data.Validation.ValidationExtensions.GetResultsAsString
+  href: Innova.Data.Validation.ValidationExtensions.GetResultsAsString.html#Innova_Data_Validation_ValidationExtensions_GetResultsAsString_System_ComponentModel_INotifyDataErrorInfo_
+  name: GetResultsAsString
+  nameWithType: ValidationExtensions.GetResultsAsString
+  fullName: Innova.Data.Validation.ValidationExtensions.GetResultsAsString
+- uid: Innova.Data.Validation.ValidationExtensions.ValidateAndIfThrowError*
+  commentId: Overload:Innova.Data.Validation.ValidationExtensions.ValidateAndIfThrowError
+  href: Innova.Data.Validation.ValidationExtensions.ValidateAndIfThrowError.html#Innova_Data_Validation_ValidationExtensions_ValidateAndIfThrowError_Innova_Data_Validation_IEntityValidation_
+  name: ValidateAndIfThrowError
+  nameWithType: ValidationExtensions.ValidateAndIfThrowError
+  fullName: Innova.Data.Validation.ValidationExtensions.ValidateAndIfThrowError
+- uid: Innova.Data.Validation.IEntityValidation
+  commentId: T:Innova.Data.Validation.IEntityValidation
+  parent: Innova.Data.Validation
+  href: Innova.Data.Validation.IEntityValidation.html
+  name: IEntityValidation
+  nameWithType: IEntityValidation
+  fullName: Innova.Data.Validation.IEntityValidation
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

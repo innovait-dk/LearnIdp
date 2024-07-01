@@ -10,7 +10,7 @@ When there is a need to log, inject ILogger in the constructor.
 
 **Task**: Inject ILogger and call LogInformation in onExecute.
 
-**Execution**: 
+**Implementation**: 
 ```cs
     public class CategoriesShowDialogMenu:MenuModelEntity<Northwind.Data.Entity.CategoriesShow>
     {

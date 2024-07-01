@@ -1,0 +1,591 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.Entity.Relations.RelatedEntityModel`2
+  commentId: T:Innova.Data.Entity.Relations.RelatedEntityModel`2
+  id: RelatedEntityModel`2
+  parent: Innova.Data.Entity.Relations
+  children:
+  - Innova.Data.Entity.Relations.RelatedEntityModel`2.#ctor
+  - Innova.Data.Entity.Relations.RelatedEntityModel`2.#ctor(`0,`1)
+  - Innova.Data.Entity.Relations.RelatedEntityModel`2.PropertyChanged
+  - Innova.Data.Entity.Relations.RelatedEntityModel`2.RelatedEntity
+  - Innova.Data.Entity.Relations.RelatedEntityModel`2.Relation
+  - Innova.Data.Entity.Relations.RelatedEntityModel`2.ToString
+  - Innova.Data.Entity.Relations.RelatedEntityModel`2.ToStringDelegate
+  langs:
+  - csharp
+  - vb
+  name: RelatedEntityModel<RelationType, RelatedEntityType>
+  nameWithType: RelatedEntityModel<RelationType, RelatedEntityType>
+  fullName: Innova.Data.Entity.Relations.RelatedEntityModel<RelationType, RelatedEntityType>
+  type: Class
+  source:
+    id: RelatedEntityModel
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Relations\RelatedEntityModel.cs
+    startLine: 11
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Relations
+  summary: Represents a model for a related entity.
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      public class RelatedEntityModel<RelationType, RelatedEntityType> : INotifyPropertyChanged where RelationType : class, IEntityWithKey<RelationType> where RelatedEntityType : class, IEntityWithKey<RelationType>
+    typeParameters:
+    - id: RelationType
+      description: The type of the relation.
+    - id: RelatedEntityType
+      description: The type of the related entity.
+    content.vb: >-
+      <DataContract>
+
+      Public Class RelatedEntityModel(Of RelationType As {Class, IEntityWithKey(Of RelationType)}, RelatedEntityType As {Class, IEntityWithKey(Of RelationType)}) Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  nameWithType.vb: RelatedEntityModel(Of RelationType, RelatedEntityType)
+  fullName.vb: Innova.Data.Entity.Relations.RelatedEntityModel(Of RelationType, RelatedEntityType)
+  name.vb: RelatedEntityModel(Of RelationType, RelatedEntityType)
+- uid: Innova.Data.Entity.Relations.RelatedEntityModel`2.Relation
+  commentId: P:Innova.Data.Entity.Relations.RelatedEntityModel`2.Relation
+  id: Relation
+  parent: Innova.Data.Entity.Relations.RelatedEntityModel`2
+  langs:
+  - csharp
+  - vb
+  name: Relation
+  nameWithType: RelatedEntityModel<RelationType, RelatedEntityType>.Relation
+  fullName: Innova.Data.Entity.Relations.RelatedEntityModel<RelationType, RelatedEntityType>.Relation
+  type: Property
+  source:
+    id: Relation
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Relations\RelatedEntityModel.cs
+    startLine: 16
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Relations
+  syntax:
+    content: >-
+      [DataMember]
+
+      public RelationType Relation { get; set; }
+    parameters: []
+    return:
+      type: '{RelationType}'
+    content.vb: >-
+      <DataMember>
+
+      Public Property Relation As RelationType
+  overload: Innova.Data.Entity.Relations.RelatedEntityModel`2.Relation*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  nameWithType.vb: RelatedEntityModel(Of RelationType, RelatedEntityType).Relation
+  fullName.vb: Innova.Data.Entity.Relations.RelatedEntityModel(Of RelationType, RelatedEntityType).Relation
+- uid: Innova.Data.Entity.Relations.RelatedEntityModel`2.RelatedEntity
+  commentId: P:Innova.Data.Entity.Relations.RelatedEntityModel`2.RelatedEntity
+  id: RelatedEntity
+  parent: Innova.Data.Entity.Relations.RelatedEntityModel`2
+  langs:
+  - csharp
+  - vb
+  name: RelatedEntity
+  nameWithType: RelatedEntityModel<RelationType, RelatedEntityType>.RelatedEntity
+  fullName: Innova.Data.Entity.Relations.RelatedEntityModel<RelationType, RelatedEntityType>.RelatedEntity
+  type: Property
+  source:
+    id: RelatedEntity
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Relations\RelatedEntityModel.cs
+    startLine: 32
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Relations
+  syntax:
+    content: >-
+      [DataMember]
+
+      public RelatedEntityType RelatedEntity { get; set; }
+    parameters: []
+    return:
+      type: '{RelatedEntityType}'
+    content.vb: >-
+      <DataMember>
+
+      Public Property RelatedEntity As RelatedEntityType
+  overload: Innova.Data.Entity.Relations.RelatedEntityModel`2.RelatedEntity*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  nameWithType.vb: RelatedEntityModel(Of RelationType, RelatedEntityType).RelatedEntity
+  fullName.vb: Innova.Data.Entity.Relations.RelatedEntityModel(Of RelationType, RelatedEntityType).RelatedEntity
+- uid: Innova.Data.Entity.Relations.RelatedEntityModel`2.#ctor
+  commentId: M:Innova.Data.Entity.Relations.RelatedEntityModel`2.#ctor
+  id: '#ctor'
+  parent: Innova.Data.Entity.Relations.RelatedEntityModel`2
+  langs:
+  - csharp
+  - vb
+  name: RelatedEntityModel()
+  nameWithType: RelatedEntityModel<RelationType, RelatedEntityType>.RelatedEntityModel()
+  fullName: Innova.Data.Entity.Relations.RelatedEntityModel<RelationType, RelatedEntityType>.RelatedEntityModel()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Relations\RelatedEntityModel.cs
+    startLine: 49
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Relations
+  summary: Initializes a new instance of the <xref href="Innova.Data.Entity.Relations.RelatedEntityModel%602" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public RelatedEntityModel()
+    content.vb: Public Sub New()
+  overload: Innova.Data.Entity.Relations.RelatedEntityModel`2.#ctor*
+  nameWithType.vb: RelatedEntityModel(Of RelationType, RelatedEntityType).New()
+  fullName.vb: Innova.Data.Entity.Relations.RelatedEntityModel(Of RelationType, RelatedEntityType).New()
+  name.vb: New()
+- uid: Innova.Data.Entity.Relations.RelatedEntityModel`2.#ctor(`0,`1)
+  commentId: M:Innova.Data.Entity.Relations.RelatedEntityModel`2.#ctor(`0,`1)
+  id: '#ctor(`0,`1)'
+  parent: Innova.Data.Entity.Relations.RelatedEntityModel`2
+  langs:
+  - csharp
+  - vb
+  name: RelatedEntityModel(RelationType, RelatedEntityType)
+  nameWithType: RelatedEntityModel<RelationType, RelatedEntityType>.RelatedEntityModel(RelationType, RelatedEntityType)
+  fullName: Innova.Data.Entity.Relations.RelatedEntityModel<RelationType, RelatedEntityType>.RelatedEntityModel(RelationType, RelatedEntityType)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Relations\RelatedEntityModel.cs
+    startLine: 59
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Relations
+  summary: Initializes a new instance of the <xref href="Innova.Data.Entity.Relations.RelatedEntityModel%602" data-throw-if-not-resolved="false"></xref> class with the specified relation and related entity.
+  example: []
+  syntax:
+    content: public RelatedEntityModel(RelationType relation, RelatedEntityType relatedEntity)
+    parameters:
+    - id: relation
+      type: '{RelationType}'
+      description: The relation.
+    - id: relatedEntity
+      type: '{RelatedEntityType}'
+      description: The related entity.
+    content.vb: Public Sub New(relation As RelationType, relatedEntity As RelatedEntityType)
+  overload: Innova.Data.Entity.Relations.RelatedEntityModel`2.#ctor*
+  nameWithType.vb: RelatedEntityModel(Of RelationType, RelatedEntityType).New(RelationType, RelatedEntityType)
+  fullName.vb: Innova.Data.Entity.Relations.RelatedEntityModel(Of RelationType, RelatedEntityType).New(RelationType, RelatedEntityType)
+  name.vb: New(RelationType, RelatedEntityType)
+- uid: Innova.Data.Entity.Relations.RelatedEntityModel`2.ToString
+  commentId: M:Innova.Data.Entity.Relations.RelatedEntityModel`2.ToString
+  id: ToString
+  parent: Innova.Data.Entity.Relations.RelatedEntityModel`2
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: RelatedEntityModel<RelationType, RelatedEntityType>.ToString()
+  fullName: Innova.Data.Entity.Relations.RelatedEntityModel<RelationType, RelatedEntityType>.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Relations\RelatedEntityModel.cs
+    startLine: 69
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Relations
+  summary: Returns a string representation of the related entity model.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string representation of the related entity model.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Innova.Data.Entity.Relations.RelatedEntityModel`2.ToString*
+  nameWithType.vb: RelatedEntityModel(Of RelationType, RelatedEntityType).ToString()
+  fullName.vb: Innova.Data.Entity.Relations.RelatedEntityModel(Of RelationType, RelatedEntityType).ToString()
+- uid: Innova.Data.Entity.Relations.RelatedEntityModel`2.ToStringDelegate
+  commentId: F:Innova.Data.Entity.Relations.RelatedEntityModel`2.ToStringDelegate
+  id: ToStringDelegate
+  parent: Innova.Data.Entity.Relations.RelatedEntityModel`2
+  langs:
+  - csharp
+  - vb
+  name: ToStringDelegate
+  nameWithType: RelatedEntityModel<RelationType, RelatedEntityType>.ToStringDelegate
+  fullName: Innova.Data.Entity.Relations.RelatedEntityModel<RelationType, RelatedEntityType>.ToStringDelegate
+  type: Field
+  source:
+    id: ToStringDelegate
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Relations\RelatedEntityModel.cs
+    startLine: 81
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Relations
+  summary: Gets or sets the delegate used to convert the related entity model to a string representation.
+  example: []
+  syntax:
+    content: public static Func<RelationType, RelatedEntityType, string> ToStringDelegate
+    return:
+      type: System.Func{{RelationType},{RelatedEntityType},System.String}
+    content.vb: Public Shared ToStringDelegate As Func(Of RelationType, RelatedEntityType, String)
+  nameWithType.vb: RelatedEntityModel(Of RelationType, RelatedEntityType).ToStringDelegate
+  fullName.vb: Innova.Data.Entity.Relations.RelatedEntityModel(Of RelationType, RelatedEntityType).ToStringDelegate
+- uid: Innova.Data.Entity.Relations.RelatedEntityModel`2.PropertyChanged
+  commentId: E:Innova.Data.Entity.Relations.RelatedEntityModel`2.PropertyChanged
+  id: PropertyChanged
+  parent: Innova.Data.Entity.Relations.RelatedEntityModel`2
+  langs:
+  - csharp
+  - vb
+  name: PropertyChanged
+  nameWithType: RelatedEntityModel<RelationType, RelatedEntityType>.PropertyChanged
+  fullName: Innova.Data.Entity.Relations.RelatedEntityModel<RelationType, RelatedEntityType>.PropertyChanged
+  type: Event
+  source:
+    id: PropertyChanged
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Relations\RelatedEntityModel.cs
+    startLine: 92
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Relations
+  summary: Occurs when a property value changes.
+  example: []
+  syntax:
+    content: public event PropertyChangedEventHandler PropertyChanged
+    return:
+      type: System.ComponentModel.PropertyChangedEventHandler
+    content.vb: Public Event PropertyChanged As PropertyChangedEventHandler
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  nameWithType.vb: RelatedEntityModel(Of RelationType, RelatedEntityType).PropertyChanged
+  fullName.vb: Innova.Data.Entity.Relations.RelatedEntityModel(Of RelationType, RelatedEntityType).PropertyChanged
+references:
+- uid: Innova.Data.Entity.Relations
+  commentId: N:Innova.Data.Entity.Relations
+  href: Innova.html
+  name: Innova.Data.Entity.Relations
+  nameWithType: Innova.Data.Entity.Relations
+  fullName: Innova.Data.Entity.Relations
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  - name: .
+  - uid: Innova.Data.Entity.Relations
+    name: Relations
+    href: Innova.Data.Entity.Relations.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  - name: .
+  - uid: Innova.Data.Entity.Relations
+    name: Relations
+    href: Innova.Data.Entity.Relations.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Innova.Data.Entity.Relations.RelatedEntityModel`2.Relation*
+  commentId: Overload:Innova.Data.Entity.Relations.RelatedEntityModel`2.Relation
+  href: Innova.Data.Entity.Relations.RelatedEntityModel-2.Relation.html#Innova_Data_Entity_Relations_RelatedEntityModel_2_Relation
+  name: Relation
+  nameWithType: RelatedEntityModel<RelationType, RelatedEntityType>.Relation
+  fullName: Innova.Data.Entity.Relations.RelatedEntityModel<RelationType, RelatedEntityType>.Relation
+  nameWithType.vb: RelatedEntityModel(Of RelationType, RelatedEntityType).Relation
+  fullName.vb: Innova.Data.Entity.Relations.RelatedEntityModel(Of RelationType, RelatedEntityType).Relation
+- uid: '{RelationType}'
+  commentId: '!:RelationType'
+  definition: RelationType
+  name: RelationType
+  nameWithType: RelationType
+  fullName: RelationType
+- uid: RelationType
+  name: RelationType
+  nameWithType: RelationType
+  fullName: RelationType
+- uid: Innova.Data.Entity.Relations.RelatedEntityModel`2.RelatedEntity*
+  commentId: Overload:Innova.Data.Entity.Relations.RelatedEntityModel`2.RelatedEntity
+  href: Innova.Data.Entity.Relations.RelatedEntityModel-2.RelatedEntity.html#Innova_Data_Entity_Relations_RelatedEntityModel_2_RelatedEntity
+  name: RelatedEntity
+  nameWithType: RelatedEntityModel<RelationType, RelatedEntityType>.RelatedEntity
+  fullName: Innova.Data.Entity.Relations.RelatedEntityModel<RelationType, RelatedEntityType>.RelatedEntity
+  nameWithType.vb: RelatedEntityModel(Of RelationType, RelatedEntityType).RelatedEntity
+  fullName.vb: Innova.Data.Entity.Relations.RelatedEntityModel(Of RelationType, RelatedEntityType).RelatedEntity
+- uid: '{RelatedEntityType}'
+  commentId: '!:RelatedEntityType'
+  definition: RelatedEntityType
+  name: RelatedEntityType
+  nameWithType: RelatedEntityType
+  fullName: RelatedEntityType
+- uid: RelatedEntityType
+  name: RelatedEntityType
+  nameWithType: RelatedEntityType
+  fullName: RelatedEntityType
+- uid: Innova.Data.Entity.Relations.RelatedEntityModel`2
+  commentId: T:Innova.Data.Entity.Relations.RelatedEntityModel`2
+  href: Innova.Data.Entity.Relations.RelatedEntityModel-2.html
+  name: RelatedEntityModel<RelationType, RelatedEntityType>
+  nameWithType: RelatedEntityModel<RelationType, RelatedEntityType>
+  fullName: Innova.Data.Entity.Relations.RelatedEntityModel<RelationType, RelatedEntityType>
+  nameWithType.vb: RelatedEntityModel(Of RelationType, RelatedEntityType)
+  fullName.vb: Innova.Data.Entity.Relations.RelatedEntityModel(Of RelationType, RelatedEntityType)
+  name.vb: RelatedEntityModel(Of RelationType, RelatedEntityType)
+  spec.csharp:
+  - uid: Innova.Data.Entity.Relations.RelatedEntityModel`2
+    name: RelatedEntityModel
+    href: Innova.Data.Entity.Relations.RelatedEntityModel-2.html
+  - name: <
+  - name: RelationType
+  - name: ','
+  - name: " "
+  - name: RelatedEntityType
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.Relations.RelatedEntityModel`2
+    name: RelatedEntityModel
+    href: Innova.Data.Entity.Relations.RelatedEntityModel-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: RelationType
+  - name: ','
+  - name: " "
+  - name: RelatedEntityType
+  - name: )
+- uid: Innova.Data.Entity.Relations.RelatedEntityModel`2.#ctor*
+  commentId: Overload:Innova.Data.Entity.Relations.RelatedEntityModel`2.#ctor
+  href: Innova.Data.Entity.Relations.RelatedEntityModel-2.-ctor.html#Innova_Data_Entity_Relations_RelatedEntityModel_2__ctor
+  name: RelatedEntityModel
+  nameWithType: RelatedEntityModel<RelationType, RelatedEntityType>.RelatedEntityModel
+  fullName: Innova.Data.Entity.Relations.RelatedEntityModel<RelationType, RelatedEntityType>.RelatedEntityModel
+  nameWithType.vb: RelatedEntityModel(Of RelationType, RelatedEntityType).New
+  fullName.vb: Innova.Data.Entity.Relations.RelatedEntityModel(Of RelationType, RelatedEntityType).New
+  name.vb: New
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Innova.Data.Entity.Relations.RelatedEntityModel`2.ToString*
+  commentId: Overload:Innova.Data.Entity.Relations.RelatedEntityModel`2.ToString
+  href: Innova.Data.Entity.Relations.RelatedEntityModel-2.ToString.html#Innova_Data_Entity_Relations_RelatedEntityModel_2_ToString
+  name: ToString
+  nameWithType: RelatedEntityModel<RelationType, RelatedEntityType>.ToString
+  fullName: Innova.Data.Entity.Relations.RelatedEntityModel<RelationType, RelatedEntityType>.ToString
+  nameWithType.vb: RelatedEntityModel(Of RelationType, RelatedEntityType).ToString
+  fullName.vb: Innova.Data.Entity.Relations.RelatedEntityModel(Of RelationType, RelatedEntityType).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Func{{RelationType},{RelatedEntityType},System.String}
+  commentId: T:System.Func{`0,`1,System.String}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<RelationType, RelatedEntityType, string>
+  nameWithType: Func<RelationType, RelatedEntityType, string>
+  fullName: System.Func<RelationType, RelatedEntityType, string>
+  nameWithType.vb: Func(Of RelationType, RelatedEntityType, String)
+  fullName.vb: System.Func(Of RelationType, RelatedEntityType, String)
+  name.vb: Func(Of RelationType, RelatedEntityType, String)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: RelationType
+  - name: ','
+  - name: " "
+  - name: RelatedEntityType
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: RelationType
+  - name: ','
+  - name: " "
+  - name: RelatedEntityType
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  commentId: E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  parent: System.ComponentModel.INotifyPropertyChanged
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged
+  name: PropertyChanged
+  nameWithType: INotifyPropertyChanged.PropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: System.ComponentModel.PropertyChangedEventHandler
+  commentId: T:System.ComponentModel.PropertyChangedEventHandler
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler
+  name: PropertyChangedEventHandler
+  nameWithType: PropertyChangedEventHandler
+  fullName: System.ComponentModel.PropertyChangedEventHandler
+memberLayout: SeparatePages

@@ -1,0 +1,683 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Data.AppSettings.Services.DefaultLayoutDataService`1
+  commentId: T:Innova.Data.AppSettings.Services.DefaultLayoutDataService`1
+  id: DefaultLayoutDataService`1
+  parent: Innova.Data.AppSettings.Services
+  children:
+  - Innova.Data.AppSettings.Services.DefaultLayoutDataService`1.#ctor(Innova.Data.IDbContextFactory{`0})
+  - Innova.Data.AppSettings.Services.DefaultLayoutDataService`1.UserId
+  langs:
+  - csharp
+  - vb
+  name: DefaultLayoutDataService<TContext>
+  nameWithType: DefaultLayoutDataService<TContext>
+  fullName: Innova.Data.AppSettings.Services.DefaultLayoutDataService<TContext>
+  type: Class
+  source:
+    id: DefaultLayoutDataService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\DefaultLayoutDataService.cs
+    startLine: 8
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings.Services
+  summary: Represents a default layout data service.
+  example: []
+  syntax:
+    content: 'public class DefaultLayoutDataService<TContext> : LayoutDataServiceBase<TContext>, ILayoutDataServiceBase where TContext : DbContext'
+    typeParameters:
+    - id: TContext
+      description: The type of the database context.
+    content.vb: Public Class DefaultLayoutDataService(Of TContext As DbContext) Inherits LayoutDataServiceBase(Of TContext) Implements ILayoutDataServiceBase
+  inheritance:
+  - System.Object
+  - Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}
+  implements:
+  - Innova.Data.AppSettings.Services.ILayoutDataServiceBase
+  inheritedMembers:
+  - Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}.ViewLayoutSetting
+  - Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}.GetViewLayout(System.String)
+  - Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}.GetLayouts
+  - Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}.DeleteLayout(System.String,System.String)
+  - Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}.GetOrCreateLayout(System.String,System.String,System.String)
+  nameWithType.vb: DefaultLayoutDataService(Of TContext)
+  fullName.vb: Innova.Data.AppSettings.Services.DefaultLayoutDataService(Of TContext)
+  name.vb: DefaultLayoutDataService(Of TContext)
+- uid: Innova.Data.AppSettings.Services.DefaultLayoutDataService`1.UserId
+  commentId: P:Innova.Data.AppSettings.Services.DefaultLayoutDataService`1.UserId
+  id: UserId
+  parent: Innova.Data.AppSettings.Services.DefaultLayoutDataService`1
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: DefaultLayoutDataService<TContext>.UserId
+  fullName: Innova.Data.AppSettings.Services.DefaultLayoutDataService<TContext>.UserId
+  type: Property
+  source:
+    id: UserId
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\DefaultLayoutDataService.cs
+    startLine: 13
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings.Services
+  summary: Gets the user ID.
+  example: []
+  syntax:
+    content: public override string UserId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property UserId As String
+  overridden: Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}.UserId
+  overload: Innova.Data.AppSettings.Services.DefaultLayoutDataService`1.UserId*
+  nameWithType.vb: DefaultLayoutDataService(Of TContext).UserId
+  fullName.vb: Innova.Data.AppSettings.Services.DefaultLayoutDataService(Of TContext).UserId
+- uid: Innova.Data.AppSettings.Services.DefaultLayoutDataService`1.#ctor(Innova.Data.IDbContextFactory{`0})
+  commentId: M:Innova.Data.AppSettings.Services.DefaultLayoutDataService`1.#ctor(Innova.Data.IDbContextFactory{`0})
+  id: '#ctor(Innova.Data.IDbContextFactory{`0})'
+  parent: Innova.Data.AppSettings.Services.DefaultLayoutDataService`1
+  langs:
+  - csharp
+  - vb
+  name: DefaultLayoutDataService(IDbContextFactory<TContext>)
+  nameWithType: DefaultLayoutDataService<TContext>.DefaultLayoutDataService(IDbContextFactory<TContext>)
+  fullName: Innova.Data.AppSettings.Services.DefaultLayoutDataService<TContext>.DefaultLayoutDataService(Innova.Data.IDbContextFactory<TContext>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\DefaultLayoutDataService.cs
+    startLine: 19
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.AppSettings.Services
+  summary: Initializes a new instance of the <xref href="Innova.Data.AppSettings.Services.DefaultLayoutDataService%601" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public DefaultLayoutDataService(IDbContextFactory<TContext> dbContextFactory)
+    parameters:
+    - id: dbContextFactory
+      type: Innova.Data.IDbContextFactory{{TContext}}
+      description: The database context factory.
+    content.vb: Public Sub New(dbContextFactory As IDbContextFactory(Of TContext))
+  overload: Innova.Data.AppSettings.Services.DefaultLayoutDataService`1.#ctor*
+  nameWithType.vb: DefaultLayoutDataService(Of TContext).New(IDbContextFactory(Of TContext))
+  fullName.vb: Innova.Data.AppSettings.Services.DefaultLayoutDataService(Of TContext).New(Innova.Data.IDbContextFactory(Of TContext))
+  name.vb: New(IDbContextFactory(Of TContext))
+references:
+- uid: Innova.Data.AppSettings.Services
+  commentId: N:Innova.Data.AppSettings.Services
+  href: Innova.html
+  name: Innova.Data.AppSettings.Services
+  nameWithType: Innova.Data.AppSettings.Services
+  fullName: Innova.Data.AppSettings.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+  - name: .
+  - uid: Innova.Data.AppSettings.Services
+    name: Services
+    href: Innova.Data.AppSettings.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+  - name: .
+  - uid: Innova.Data.AppSettings.Services
+    name: Services
+    href: Innova.Data.AppSettings.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}
+  commentId: T:Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}
+  parent: Innova.Data.AppSettings.Services
+  definition: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1
+  href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.html
+  name: LayoutDataServiceBase<TContext>
+  nameWithType: LayoutDataServiceBase<TContext>
+  fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>
+  nameWithType.vb: LayoutDataServiceBase(Of TContext)
+  fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext)
+  name.vb: LayoutDataServiceBase(Of TContext)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1
+    name: LayoutDataServiceBase
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1
+    name: LayoutDataServiceBase
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Innova.Data.AppSettings.Services.ILayoutDataServiceBase
+  commentId: T:Innova.Data.AppSettings.Services.ILayoutDataServiceBase
+  parent: Innova.Data.AppSettings.Services
+  href: Innova.Data.AppSettings.Services.ILayoutDataServiceBase.html
+  name: ILayoutDataServiceBase
+  nameWithType: ILayoutDataServiceBase
+  fullName: Innova.Data.AppSettings.Services.ILayoutDataServiceBase
+- uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}.ViewLayoutSetting
+  commentId: P:Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}.ViewLayoutSetting
+  parent: Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}
+  definition: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.ViewLayoutSetting
+  href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.ViewLayoutSetting.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_ViewLayoutSetting
+  name: ViewLayoutSetting
+  nameWithType: LayoutDataServiceBase<TContext>.ViewLayoutSetting
+  fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>.ViewLayoutSetting
+  nameWithType.vb: LayoutDataServiceBase(Of TContext).ViewLayoutSetting
+  fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext).ViewLayoutSetting
+- uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}.GetViewLayout(System.String)
+  commentId: M:Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}.GetViewLayout(System.String)
+  parent: Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}
+  definition: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetViewLayout(System.String)
+  href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetViewLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetViewLayout_System_String_
+  name: GetViewLayout(string)
+  nameWithType: LayoutDataServiceBase<TContext>.GetViewLayout(string)
+  fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>.GetViewLayout(string)
+  nameWithType.vb: LayoutDataServiceBase(Of TContext).GetViewLayout(String)
+  fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext).GetViewLayout(String)
+  name.vb: GetViewLayout(String)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}.GetViewLayout(System.String)
+    name: GetViewLayout
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetViewLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetViewLayout_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}.GetViewLayout(System.String)
+    name: GetViewLayout
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetViewLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetViewLayout_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}.GetLayouts
+  commentId: M:Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}.GetLayouts
+  parent: Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}
+  definition: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetLayouts
+  href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetLayouts.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetLayouts
+  name: GetLayouts()
+  nameWithType: LayoutDataServiceBase<TContext>.GetLayouts()
+  fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>.GetLayouts()
+  nameWithType.vb: LayoutDataServiceBase(Of TContext).GetLayouts()
+  fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext).GetLayouts()
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}.GetLayouts
+    name: GetLayouts
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetLayouts.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetLayouts
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}.GetLayouts
+    name: GetLayouts
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetLayouts.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetLayouts
+  - name: (
+  - name: )
+- uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}.DeleteLayout(System.String,System.String)
+  commentId: M:Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}.DeleteLayout(System.String,System.String)
+  parent: Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}
+  definition: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.DeleteLayout(System.String,System.String)
+  href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.DeleteLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_DeleteLayout_System_String_System_String_
+  name: DeleteLayout(string, string)
+  nameWithType: LayoutDataServiceBase<TContext>.DeleteLayout(string, string)
+  fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>.DeleteLayout(string, string)
+  nameWithType.vb: LayoutDataServiceBase(Of TContext).DeleteLayout(String, String)
+  fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext).DeleteLayout(String, String)
+  name.vb: DeleteLayout(String, String)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}.DeleteLayout(System.String,System.String)
+    name: DeleteLayout
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.DeleteLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_DeleteLayout_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}.DeleteLayout(System.String,System.String)
+    name: DeleteLayout
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.DeleteLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_DeleteLayout_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}.GetOrCreateLayout(System.String,System.String,System.String)
+  commentId: M:Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}.GetOrCreateLayout(System.String,System.String,System.String)
+  parent: Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}
+  definition: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetOrCreateLayout(System.String,System.String,System.String)
+  href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetOrCreateLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetOrCreateLayout_System_String_System_String_System_String_
+  name: GetOrCreateLayout(string, string, string)
+  nameWithType: LayoutDataServiceBase<TContext>.GetOrCreateLayout(string, string, string)
+  fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>.GetOrCreateLayout(string, string, string)
+  nameWithType.vb: LayoutDataServiceBase(Of TContext).GetOrCreateLayout(String, String, String)
+  fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext).GetOrCreateLayout(String, String, String)
+  name.vb: GetOrCreateLayout(String, String, String)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}.GetOrCreateLayout(System.String,System.String,System.String)
+    name: GetOrCreateLayout
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetOrCreateLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetOrCreateLayout_System_String_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}.GetOrCreateLayout(System.String,System.String,System.String)
+    name: GetOrCreateLayout
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetOrCreateLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetOrCreateLayout_System_String_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1
+  commentId: T:Innova.Data.AppSettings.Services.LayoutDataServiceBase`1
+  href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.html
+  name: LayoutDataServiceBase<TContext>
+  nameWithType: LayoutDataServiceBase<TContext>
+  fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>
+  nameWithType.vb: LayoutDataServiceBase(Of TContext)
+  fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext)
+  name.vb: LayoutDataServiceBase(Of TContext)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1
+    name: LayoutDataServiceBase
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1
+    name: LayoutDataServiceBase
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.ViewLayoutSetting
+  commentId: P:Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.ViewLayoutSetting
+  href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.ViewLayoutSetting.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_ViewLayoutSetting
+  name: ViewLayoutSetting
+  nameWithType: LayoutDataServiceBase<TContext>.ViewLayoutSetting
+  fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>.ViewLayoutSetting
+  nameWithType.vb: LayoutDataServiceBase(Of TContext).ViewLayoutSetting
+  fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext).ViewLayoutSetting
+- uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetViewLayout(System.String)
+  commentId: M:Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetViewLayout(System.String)
+  isExternal: true
+  href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetViewLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetViewLayout_System_String_
+  name: GetViewLayout(string)
+  nameWithType: LayoutDataServiceBase<TContext>.GetViewLayout(string)
+  fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>.GetViewLayout(string)
+  nameWithType.vb: LayoutDataServiceBase(Of TContext).GetViewLayout(String)
+  fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext).GetViewLayout(String)
+  name.vb: GetViewLayout(String)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetViewLayout(System.String)
+    name: GetViewLayout
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetViewLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetViewLayout_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetViewLayout(System.String)
+    name: GetViewLayout
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetViewLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetViewLayout_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetLayouts
+  commentId: M:Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetLayouts
+  href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetLayouts.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetLayouts
+  name: GetLayouts()
+  nameWithType: LayoutDataServiceBase<TContext>.GetLayouts()
+  fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>.GetLayouts()
+  nameWithType.vb: LayoutDataServiceBase(Of TContext).GetLayouts()
+  fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext).GetLayouts()
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetLayouts
+    name: GetLayouts
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetLayouts.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetLayouts
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetLayouts
+    name: GetLayouts
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetLayouts.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetLayouts
+  - name: (
+  - name: )
+- uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.DeleteLayout(System.String,System.String)
+  commentId: M:Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.DeleteLayout(System.String,System.String)
+  isExternal: true
+  href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.DeleteLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_DeleteLayout_System_String_System_String_
+  name: DeleteLayout(string, string)
+  nameWithType: LayoutDataServiceBase<TContext>.DeleteLayout(string, string)
+  fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>.DeleteLayout(string, string)
+  nameWithType.vb: LayoutDataServiceBase(Of TContext).DeleteLayout(String, String)
+  fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext).DeleteLayout(String, String)
+  name.vb: DeleteLayout(String, String)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.DeleteLayout(System.String,System.String)
+    name: DeleteLayout
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.DeleteLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_DeleteLayout_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.DeleteLayout(System.String,System.String)
+    name: DeleteLayout
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.DeleteLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_DeleteLayout_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetOrCreateLayout(System.String,System.String,System.String)
+  commentId: M:Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetOrCreateLayout(System.String,System.String,System.String)
+  isExternal: true
+  href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetOrCreateLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetOrCreateLayout_System_String_System_String_System_String_
+  name: GetOrCreateLayout(string, string, string)
+  nameWithType: LayoutDataServiceBase<TContext>.GetOrCreateLayout(string, string, string)
+  fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>.GetOrCreateLayout(string, string, string)
+  nameWithType.vb: LayoutDataServiceBase(Of TContext).GetOrCreateLayout(String, String, String)
+  fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext).GetOrCreateLayout(String, String, String)
+  name.vb: GetOrCreateLayout(String, String, String)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetOrCreateLayout(System.String,System.String,System.String)
+    name: GetOrCreateLayout
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetOrCreateLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetOrCreateLayout_System_String_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.GetOrCreateLayout(System.String,System.String,System.String)
+    name: GetOrCreateLayout
+    href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.GetOrCreateLayout.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_GetOrCreateLayout_System_String_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}.UserId
+  commentId: P:Innova.Data.AppSettings.Services.LayoutDataServiceBase{`0}.UserId
+  parent: Innova.Data.AppSettings.Services.LayoutDataServiceBase{{TContext}}
+  definition: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.UserId
+  href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.UserId.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_UserId
+  name: UserId
+  nameWithType: LayoutDataServiceBase<TContext>.UserId
+  fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>.UserId
+  nameWithType.vb: LayoutDataServiceBase(Of TContext).UserId
+  fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext).UserId
+- uid: Innova.Data.AppSettings.Services.DefaultLayoutDataService`1.UserId*
+  commentId: Overload:Innova.Data.AppSettings.Services.DefaultLayoutDataService`1.UserId
+  href: Innova.Data.AppSettings.Services.DefaultLayoutDataService-1.UserId.html#Innova_Data_AppSettings_Services_DefaultLayoutDataService_1_UserId
+  name: UserId
+  nameWithType: DefaultLayoutDataService<TContext>.UserId
+  fullName: Innova.Data.AppSettings.Services.DefaultLayoutDataService<TContext>.UserId
+  nameWithType.vb: DefaultLayoutDataService(Of TContext).UserId
+  fullName.vb: Innova.Data.AppSettings.Services.DefaultLayoutDataService(Of TContext).UserId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.UserId
+  commentId: P:Innova.Data.AppSettings.Services.LayoutDataServiceBase`1.UserId
+  href: Innova.Data.AppSettings.Services.LayoutDataServiceBase-1.UserId.html#Innova_Data_AppSettings_Services_LayoutDataServiceBase_1_UserId
+  name: UserId
+  nameWithType: LayoutDataServiceBase<TContext>.UserId
+  fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>.UserId
+  nameWithType.vb: LayoutDataServiceBase(Of TContext).UserId
+  fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext).UserId
+- uid: Innova.Data.AppSettings.Services.DefaultLayoutDataService`1
+  commentId: T:Innova.Data.AppSettings.Services.DefaultLayoutDataService`1
+  href: Innova.Data.AppSettings.Services.DefaultLayoutDataService-1.html
+  name: DefaultLayoutDataService<TContext>
+  nameWithType: DefaultLayoutDataService<TContext>
+  fullName: Innova.Data.AppSettings.Services.DefaultLayoutDataService<TContext>
+  nameWithType.vb: DefaultLayoutDataService(Of TContext)
+  fullName.vb: Innova.Data.AppSettings.Services.DefaultLayoutDataService(Of TContext)
+  name.vb: DefaultLayoutDataService(Of TContext)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.DefaultLayoutDataService`1
+    name: DefaultLayoutDataService
+    href: Innova.Data.AppSettings.Services.DefaultLayoutDataService-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.DefaultLayoutDataService`1
+    name: DefaultLayoutDataService
+    href: Innova.Data.AppSettings.Services.DefaultLayoutDataService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Innova.Data.AppSettings.Services.DefaultLayoutDataService`1.#ctor*
+  commentId: Overload:Innova.Data.AppSettings.Services.DefaultLayoutDataService`1.#ctor
+  href: Innova.Data.AppSettings.Services.DefaultLayoutDataService-1.-ctor.html#Innova_Data_AppSettings_Services_DefaultLayoutDataService_1__ctor_Innova_Data_IDbContextFactory__0__
+  name: DefaultLayoutDataService
+  nameWithType: DefaultLayoutDataService<TContext>.DefaultLayoutDataService
+  fullName: Innova.Data.AppSettings.Services.DefaultLayoutDataService<TContext>.DefaultLayoutDataService
+  nameWithType.vb: DefaultLayoutDataService(Of TContext).New
+  fullName.vb: Innova.Data.AppSettings.Services.DefaultLayoutDataService(Of TContext).New
+  name.vb: New
+- uid: Innova.Data.IDbContextFactory{{TContext}}
+  commentId: T:Innova.Data.IDbContextFactory{`0}
+  parent: Innova.Data
+  definition: Innova.Data.IDbContextFactory`1
+  href: Innova.Data.IDbContextFactory-1.html
+  name: IDbContextFactory<TContext>
+  nameWithType: IDbContextFactory<TContext>
+  fullName: Innova.Data.IDbContextFactory<TContext>
+  nameWithType.vb: IDbContextFactory(Of TContext)
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext)
+  name.vb: IDbContextFactory(Of TContext)
+  spec.csharp:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+    href: Innova.Data.IDbContextFactory-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+    href: Innova.Data.IDbContextFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Innova.Data.IDbContextFactory`1
+  commentId: T:Innova.Data.IDbContextFactory`1
+  href: Innova.Data.IDbContextFactory-1.html
+  name: IDbContextFactory<TContext>
+  nameWithType: IDbContextFactory<TContext>
+  fullName: Innova.Data.IDbContextFactory<TContext>
+  nameWithType.vb: IDbContextFactory(Of TContext)
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext)
+  name.vb: IDbContextFactory(Of TContext)
+  spec.csharp:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+    href: Innova.Data.IDbContextFactory-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+    href: Innova.Data.IDbContextFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Innova.Data
+  commentId: N:Innova.Data
+  href: Innova.html
+  name: Innova.Data
+  nameWithType: Innova.Data
+  fullName: Innova.Data
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+memberLayout: SeparatePages
