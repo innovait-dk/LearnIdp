@@ -1,0 +1,957 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+  commentId: T:Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+  id: ListQueryParameter`1
+  parent: Innova.Prism.Library.ClassDefinitions
+  children:
+  - Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.#ctor(Innova.Data.Entity.QueryParameter{`0})
+  - Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.Clone
+  - Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.GetQueryParameter
+  - Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.ListFilter
+  langs:
+  - csharp
+  - vb
+  name: ListQueryParameter<T>
+  nameWithType: ListQueryParameter<T>
+  fullName: Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>
+  type: Class
+  source:
+    id: ListQueryParameter
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\ListQueryParameter.cs
+    startLine: 13
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Represents a query parameter for listing entities.
+  example: []
+  syntax:
+    content: 'public class ListQueryParameter<T> : QueryParameter<T>, IQueryParameter, ICloneable where T : class'
+    typeParameters:
+    - id: T
+      description: The type of the entity.
+    content.vb: Public Class ListQueryParameter(Of T As Class) Inherits QueryParameter(Of T) Implements IQueryParameter, ICloneable
+  inheritance:
+  - System.Object
+  - Innova.Data.Entity.QueryParameter{{T}}
+  implements:
+  - Innova.Data.Entity.Interfaces.IQueryParameter
+  - System.ICloneable
+  inheritedMembers:
+  - Innova.Data.Entity.QueryParameter{{T}}.PrimaryKeys
+  - Innova.Data.Entity.QueryParameter{{T}}.SearchQuery
+  - Innova.Data.Entity.QueryParameter{{T}}.Skip
+  - Innova.Data.Entity.QueryParameter{{T}}.Take
+  - Innova.Data.Entity.QueryParameter{{T}}.OrderBy
+  - Innova.Data.Entity.QueryParameter{{T}}.Where
+  extensionMethods:
+  - Innova.Data.Entity.QueryParameter{`0}.Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy``1(System.Collections.Generic.IEnumerable{Telerik.Windows.Data.ISortDescriptor})
+  - Innova.Data.Entity.QueryParameter{`0}.Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere``1(Telerik.Windows.Data.CompositeFilterDescriptorCollection)
+  nameWithType.vb: ListQueryParameter(Of T)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T)
+  name.vb: ListQueryParameter(Of T)
+- uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.ListFilter
+  commentId: P:Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.ListFilter
+  id: ListFilter
+  parent: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+  langs:
+  - csharp
+  - vb
+  name: ListFilter
+  nameWithType: ListQueryParameter<T>.ListFilter
+  fullName: Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>.ListFilter
+  type: Property
+  source:
+    id: ListFilter
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\ListQueryParameter.cs
+    startLine: 20
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Gets or sets the filter expression for the list query.
+  example: []
+  syntax:
+    content: public virtual Expression<Func<T, bool>> ListFilter { get; set; }
+    parameters: []
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+    content.vb: Public Overridable Property ListFilter As Expression(Of Func(Of T, Boolean))
+  overload: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.ListFilter*
+  nameWithType.vb: ListQueryParameter(Of T).ListFilter
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T).ListFilter
+- uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.#ctor(Innova.Data.Entity.QueryParameter{`0})
+  commentId: M:Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.#ctor(Innova.Data.Entity.QueryParameter{`0})
+  id: '#ctor(Innova.Data.Entity.QueryParameter{`0})'
+  parent: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+  langs:
+  - csharp
+  - vb
+  name: ListQueryParameter(QueryParameter<T>)
+  nameWithType: ListQueryParameter<T>.ListQueryParameter(QueryParameter<T>)
+  fullName: Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>.ListQueryParameter(Innova.Data.Entity.QueryParameter<T>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\ListQueryParameter.cs
+    startLine: 26
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.ClassDefinitions.ListQueryParameter%601" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public ListQueryParameter(QueryParameter<T> queryParameter)
+    parameters:
+    - id: queryParameter
+      type: Innova.Data.Entity.QueryParameter{{T}}
+      description: The query parameter to copy from.
+    content.vb: Public Sub New(queryParameter As QueryParameter(Of T))
+  overload: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.#ctor*
+  nameWithType.vb: ListQueryParameter(Of T).New(QueryParameter(Of T))
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T).New(Innova.Data.Entity.QueryParameter(Of T))
+  name.vb: New(QueryParameter(Of T))
+- uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.Clone
+  commentId: M:Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.Clone
+  id: Clone
+  parent: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: ListQueryParameter<T>.Clone()
+  fullName: Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>.Clone()
+  type: Method
+  source:
+    id: Clone
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\ListQueryParameter.cs
+    startLine: 36
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Creates a new instance of the <xref href="Innova.Prism.Library.ClassDefinitions.ListQueryParameter%601" data-throw-if-not-resolved="false"></xref> class that is a copy of the current instance.
+  example: []
+  syntax:
+    content: public override object Clone()
+    return:
+      type: System.Object
+      description: A new instance of the <xref href="Innova.Prism.Library.ClassDefinitions.ListQueryParameter%601" data-throw-if-not-resolved="false"></xref> class that is a copy of the current instance.
+    content.vb: Public Overrides Function Clone() As Object
+  overridden: Innova.Data.Entity.QueryParameter{{T}}.Clone
+  overload: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.Clone*
+  nameWithType.vb: ListQueryParameter(Of T).Clone()
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T).Clone()
+- uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.GetQueryParameter
+  commentId: M:Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.GetQueryParameter
+  id: GetQueryParameter
+  parent: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+  langs:
+  - csharp
+  - vb
+  name: GetQueryParameter()
+  nameWithType: ListQueryParameter<T>.GetQueryParameter()
+  fullName: Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>.GetQueryParameter()
+  type: Method
+  source:
+    id: GetQueryParameter
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\ListQueryParameter.cs
+    startLine: 48
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Gets the query parameter for the list query.
+  example: []
+  syntax:
+    content: public QueryParameter<T> GetQueryParameter()
+    return:
+      type: Innova.Data.Entity.QueryParameter{{T}}
+      description: The query parameter for the list query.
+    content.vb: Public Function GetQueryParameter() As QueryParameter(Of T)
+  overload: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.GetQueryParameter*
+  nameWithType.vb: ListQueryParameter(Of T).GetQueryParameter()
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T).GetQueryParameter()
+references:
+- uid: Innova.Prism.Library.ClassDefinitions
+  commentId: N:Innova.Prism.Library.ClassDefinitions
+  href: Innova.html
+  name: Innova.Prism.Library.ClassDefinitions
+  nameWithType: Innova.Prism.Library.ClassDefinitions
+  fullName: Innova.Prism.Library.ClassDefinitions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Data.Entity.QueryParameter{{T}}
+  commentId: T:Innova.Data.Entity.QueryParameter{`0}
+  parent: Innova.Data.Entity
+  definition: Innova.Data.Entity.QueryParameter`1
+  href: Innova.Data.Entity.QueryParameter-1.html
+  name: QueryParameter<T>
+  nameWithType: QueryParameter<T>
+  fullName: Innova.Data.Entity.QueryParameter<T>
+  nameWithType.vb: QueryParameter(Of T)
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T)
+  name.vb: QueryParameter(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.Entity.Interfaces.IQueryParameter
+  commentId: T:Innova.Data.Entity.Interfaces.IQueryParameter
+  parent: Innova.Data.Entity.Interfaces
+  href: Innova.Data.Entity.Interfaces.IQueryParameter.html
+  name: IQueryParameter
+  nameWithType: IQueryParameter
+  fullName: Innova.Data.Entity.Interfaces.IQueryParameter
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: Innova.Data.Entity.QueryParameter{{T}}.PrimaryKeys
+  commentId: P:Innova.Data.Entity.QueryParameter{`0}.PrimaryKeys
+  parent: Innova.Data.Entity.QueryParameter{{T}}
+  definition: Innova.Data.Entity.QueryParameter`1.PrimaryKeys
+  name: PrimaryKeys
+  nameWithType: QueryParameter<T>.PrimaryKeys
+  fullName: Innova.Data.Entity.QueryParameter<T>.PrimaryKeys
+  nameWithType.vb: QueryParameter(Of T).PrimaryKeys
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T).PrimaryKeys
+- uid: Innova.Data.Entity.QueryParameter{{T}}.SearchQuery
+  commentId: P:Innova.Data.Entity.QueryParameter{`0}.SearchQuery
+  parent: Innova.Data.Entity.QueryParameter{{T}}
+  definition: Innova.Data.Entity.QueryParameter`1.SearchQuery
+  name: SearchQuery
+  nameWithType: QueryParameter<T>.SearchQuery
+  fullName: Innova.Data.Entity.QueryParameter<T>.SearchQuery
+  nameWithType.vb: QueryParameter(Of T).SearchQuery
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T).SearchQuery
+- uid: Innova.Data.Entity.QueryParameter{{T}}.Skip
+  commentId: P:Innova.Data.Entity.QueryParameter{`0}.Skip
+  parent: Innova.Data.Entity.QueryParameter{{T}}
+  definition: Innova.Data.Entity.QueryParameter`1.Skip
+  name: Skip
+  nameWithType: QueryParameter<T>.Skip
+  fullName: Innova.Data.Entity.QueryParameter<T>.Skip
+  nameWithType.vb: QueryParameter(Of T).Skip
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T).Skip
+- uid: Innova.Data.Entity.QueryParameter{{T}}.Take
+  commentId: P:Innova.Data.Entity.QueryParameter{`0}.Take
+  parent: Innova.Data.Entity.QueryParameter{{T}}
+  definition: Innova.Data.Entity.QueryParameter`1.Take
+  name: Take
+  nameWithType: QueryParameter<T>.Take
+  fullName: Innova.Data.Entity.QueryParameter<T>.Take
+  nameWithType.vb: QueryParameter(Of T).Take
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T).Take
+- uid: Innova.Data.Entity.QueryParameter{{T}}.OrderBy
+  commentId: P:Innova.Data.Entity.QueryParameter{`0}.OrderBy
+  parent: Innova.Data.Entity.QueryParameter{{T}}
+  definition: Innova.Data.Entity.QueryParameter`1.OrderBy
+  name: OrderBy
+  nameWithType: QueryParameter<T>.OrderBy
+  fullName: Innova.Data.Entity.QueryParameter<T>.OrderBy
+  nameWithType.vb: QueryParameter(Of T).OrderBy
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T).OrderBy
+- uid: Innova.Data.Entity.QueryParameter{{T}}.Where
+  commentId: P:Innova.Data.Entity.QueryParameter{`0}.Where
+  parent: Innova.Data.Entity.QueryParameter{{T}}
+  definition: Innova.Data.Entity.QueryParameter`1.Where
+  name: Where
+  nameWithType: QueryParameter<T>.Where
+  fullName: Innova.Data.Entity.QueryParameter<T>.Where
+  nameWithType.vb: QueryParameter(Of T).Where
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T).Where
+- uid: Innova.Data.Entity.QueryParameter{`0}.Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy``1(System.Collections.Generic.IEnumerable{Telerik.Windows.Data.ISortDescriptor})
+  commentId: M:Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy``1(Innova.Data.Entity.QueryParameter{``0},System.Collections.Generic.IEnumerable{Telerik.Windows.Data.ISortDescriptor})
+  parent: Innova.Prism.Telerik.Extensions.QueryParameterExtensions
+  definition: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy``1(Innova.Data.Entity.QueryParameter{``0},System.Collections.Generic.IEnumerable{Telerik.Windows.Data.ISortDescriptor})
+  href: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy.html#Innova_Prism_Telerik_Extensions_QueryParameterExtensions_SetOrderBy__1_Innova_Data_Entity_QueryParameter___0__System_Collections_Generic_IEnumerable_Telerik_Windows_Data_ISortDescriptor__
+  name: SetOrderBy<T>(QueryParameter<T>, IEnumerable<ISortDescriptor>)
+  nameWithType: QueryParameterExtensions.SetOrderBy<T>(QueryParameter<T>, IEnumerable<ISortDescriptor>)
+  fullName: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy<T>(Innova.Data.Entity.QueryParameter<T>, System.Collections.Generic.IEnumerable<Telerik.Windows.Data.ISortDescriptor>)
+  nameWithType.vb: QueryParameterExtensions.SetOrderBy(Of T)(QueryParameter(Of T), IEnumerable(Of ISortDescriptor))
+  fullName.vb: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy(Of T)(Innova.Data.Entity.QueryParameter(Of T), System.Collections.Generic.IEnumerable(Of Telerik.Windows.Data.ISortDescriptor))
+  name.vb: SetOrderBy(Of T)(QueryParameter(Of T), IEnumerable(Of ISortDescriptor))
+  spec.csharp:
+  - uid: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy``1(Innova.Data.Entity.QueryParameter{`0},System.Collections.Generic.IEnumerable{Telerik.Windows.Data.ISortDescriptor})
+    name: SetOrderBy
+    href: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy.html#Innova_Prism_Telerik_Extensions_QueryParameterExtensions_SetOrderBy__1_Innova_Data_Entity_QueryParameter___0__System_Collections_Generic_IEnumerable_Telerik_Windows_Data_ISortDescriptor__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Telerik.Windows.Data.ISortDescriptor
+    name: ISortDescriptor
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy``1(Innova.Data.Entity.QueryParameter{`0},System.Collections.Generic.IEnumerable{Telerik.Windows.Data.ISortDescriptor})
+    name: SetOrderBy
+    href: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy.html#Innova_Prism_Telerik_Extensions_QueryParameterExtensions_SetOrderBy__1_Innova_Data_Entity_QueryParameter___0__System_Collections_Generic_IEnumerable_Telerik_Windows_Data_ISortDescriptor__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Telerik.Windows.Data.ISortDescriptor
+    name: ISortDescriptor
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Innova.Data.Entity.QueryParameter{`0}.Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere``1(Telerik.Windows.Data.CompositeFilterDescriptorCollection)
+  commentId: M:Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere``1(Innova.Data.Entity.QueryParameter{``0},Telerik.Windows.Data.CompositeFilterDescriptorCollection)
+  parent: Innova.Prism.Telerik.Extensions.QueryParameterExtensions
+  definition: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere``1(Innova.Data.Entity.QueryParameter{``0},Telerik.Windows.Data.CompositeFilterDescriptorCollection)
+  href: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere.html#Innova_Prism_Telerik_Extensions_QueryParameterExtensions_SetWhere__1_Innova_Data_Entity_QueryParameter___0__Telerik_Windows_Data_CompositeFilterDescriptorCollection_
+  name: SetWhere<T>(QueryParameter<T>, CompositeFilterDescriptorCollection)
+  nameWithType: QueryParameterExtensions.SetWhere<T>(QueryParameter<T>, CompositeFilterDescriptorCollection)
+  fullName: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere<T>(Innova.Data.Entity.QueryParameter<T>, Telerik.Windows.Data.CompositeFilterDescriptorCollection)
+  nameWithType.vb: QueryParameterExtensions.SetWhere(Of T)(QueryParameter(Of T), CompositeFilterDescriptorCollection)
+  fullName.vb: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere(Of T)(Innova.Data.Entity.QueryParameter(Of T), Telerik.Windows.Data.CompositeFilterDescriptorCollection)
+  name.vb: SetWhere(Of T)(QueryParameter(Of T), CompositeFilterDescriptorCollection)
+  spec.csharp:
+  - uid: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere``1(Innova.Data.Entity.QueryParameter{`0},Telerik.Windows.Data.CompositeFilterDescriptorCollection)
+    name: SetWhere
+    href: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere.html#Innova_Prism_Telerik_Extensions_QueryParameterExtensions_SetWhere__1_Innova_Data_Entity_QueryParameter___0__Telerik_Windows_Data_CompositeFilterDescriptorCollection_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Telerik.Windows.Data.CompositeFilterDescriptorCollection
+    name: CompositeFilterDescriptorCollection
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere``1(Innova.Data.Entity.QueryParameter{`0},Telerik.Windows.Data.CompositeFilterDescriptorCollection)
+    name: SetWhere
+    href: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere.html#Innova_Prism_Telerik_Extensions_QueryParameterExtensions_SetWhere__1_Innova_Data_Entity_QueryParameter___0__Telerik_Windows_Data_CompositeFilterDescriptorCollection_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Telerik.Windows.Data.CompositeFilterDescriptorCollection
+    name: CompositeFilterDescriptorCollection
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.Entity.QueryParameter`1
+  commentId: T:Innova.Data.Entity.QueryParameter`1
+  href: Innova.Data.Entity.QueryParameter-1.html
+  name: QueryParameter<T>
+  nameWithType: QueryParameter<T>
+  fullName: Innova.Data.Entity.QueryParameter<T>
+  nameWithType.vb: QueryParameter(Of T)
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T)
+  name.vb: QueryParameter(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.Entity
+  commentId: N:Innova.Data.Entity
+  href: Innova.html
+  name: Innova.Data.Entity
+  nameWithType: Innova.Data.Entity
+  fullName: Innova.Data.Entity
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+- uid: Innova.Data.Entity.Interfaces
+  commentId: N:Innova.Data.Entity.Interfaces
+  href: Innova.html
+  name: Innova.Data.Entity.Interfaces
+  nameWithType: Innova.Data.Entity.Interfaces
+  fullName: Innova.Data.Entity.Interfaces
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  - name: .
+  - uid: Innova.Data.Entity.Interfaces
+    name: Interfaces
+    href: Innova.Data.Entity.Interfaces.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  - name: .
+  - uid: Innova.Data.Entity.Interfaces
+    name: Interfaces
+    href: Innova.Data.Entity.Interfaces.html
+- uid: Innova.Data.Entity.QueryParameter`1.PrimaryKeys
+  commentId: P:Innova.Data.Entity.QueryParameter`1.PrimaryKeys
+  name: PrimaryKeys
+  nameWithType: QueryParameter<T>.PrimaryKeys
+  fullName: Innova.Data.Entity.QueryParameter<T>.PrimaryKeys
+  nameWithType.vb: QueryParameter(Of T).PrimaryKeys
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T).PrimaryKeys
+- uid: Innova.Data.Entity.QueryParameter`1.SearchQuery
+  commentId: P:Innova.Data.Entity.QueryParameter`1.SearchQuery
+  name: SearchQuery
+  nameWithType: QueryParameter<T>.SearchQuery
+  fullName: Innova.Data.Entity.QueryParameter<T>.SearchQuery
+  nameWithType.vb: QueryParameter(Of T).SearchQuery
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T).SearchQuery
+- uid: Innova.Data.Entity.QueryParameter`1.Skip
+  commentId: P:Innova.Data.Entity.QueryParameter`1.Skip
+  name: Skip
+  nameWithType: QueryParameter<T>.Skip
+  fullName: Innova.Data.Entity.QueryParameter<T>.Skip
+  nameWithType.vb: QueryParameter(Of T).Skip
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T).Skip
+- uid: Innova.Data.Entity.QueryParameter`1.Take
+  commentId: P:Innova.Data.Entity.QueryParameter`1.Take
+  name: Take
+  nameWithType: QueryParameter<T>.Take
+  fullName: Innova.Data.Entity.QueryParameter<T>.Take
+  nameWithType.vb: QueryParameter(Of T).Take
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T).Take
+- uid: Innova.Data.Entity.QueryParameter`1.OrderBy
+  commentId: P:Innova.Data.Entity.QueryParameter`1.OrderBy
+  name: OrderBy
+  nameWithType: QueryParameter<T>.OrderBy
+  fullName: Innova.Data.Entity.QueryParameter<T>.OrderBy
+  nameWithType.vb: QueryParameter(Of T).OrderBy
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T).OrderBy
+- uid: Innova.Data.Entity.QueryParameter`1.Where
+  commentId: P:Innova.Data.Entity.QueryParameter`1.Where
+  name: Where
+  nameWithType: QueryParameter<T>.Where
+  fullName: Innova.Data.Entity.QueryParameter<T>.Where
+  nameWithType.vb: QueryParameter(Of T).Where
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T).Where
+- uid: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy``1(Innova.Data.Entity.QueryParameter{``0},System.Collections.Generic.IEnumerable{Telerik.Windows.Data.ISortDescriptor})
+  commentId: M:Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy``1(Innova.Data.Entity.QueryParameter{``0},System.Collections.Generic.IEnumerable{Telerik.Windows.Data.ISortDescriptor})
+  isExternal: true
+  href: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy.html#Innova_Prism_Telerik_Extensions_QueryParameterExtensions_SetOrderBy__1_Innova_Data_Entity_QueryParameter___0__System_Collections_Generic_IEnumerable_Telerik_Windows_Data_ISortDescriptor__
+  name: SetOrderBy<T>(QueryParameter<T>, IEnumerable<ISortDescriptor>)
+  nameWithType: QueryParameterExtensions.SetOrderBy<T>(QueryParameter<T>, IEnumerable<ISortDescriptor>)
+  fullName: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy<T>(Innova.Data.Entity.QueryParameter<T>, System.Collections.Generic.IEnumerable<Telerik.Windows.Data.ISortDescriptor>)
+  nameWithType.vb: QueryParameterExtensions.SetOrderBy(Of T)(QueryParameter(Of T), IEnumerable(Of ISortDescriptor))
+  fullName.vb: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy(Of T)(Innova.Data.Entity.QueryParameter(Of T), System.Collections.Generic.IEnumerable(Of Telerik.Windows.Data.ISortDescriptor))
+  name.vb: SetOrderBy(Of T)(QueryParameter(Of T), IEnumerable(Of ISortDescriptor))
+  spec.csharp:
+  - uid: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy``1(Innova.Data.Entity.QueryParameter{``0},System.Collections.Generic.IEnumerable{Telerik.Windows.Data.ISortDescriptor})
+    name: SetOrderBy
+    href: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy.html#Innova_Prism_Telerik_Extensions_QueryParameterExtensions_SetOrderBy__1_Innova_Data_Entity_QueryParameter___0__System_Collections_Generic_IEnumerable_Telerik_Windows_Data_ISortDescriptor__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Telerik.Windows.Data.ISortDescriptor
+    name: ISortDescriptor
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy``1(Innova.Data.Entity.QueryParameter{``0},System.Collections.Generic.IEnumerable{Telerik.Windows.Data.ISortDescriptor})
+    name: SetOrderBy
+    href: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetOrderBy.html#Innova_Prism_Telerik_Extensions_QueryParameterExtensions_SetOrderBy__1_Innova_Data_Entity_QueryParameter___0__System_Collections_Generic_IEnumerable_Telerik_Windows_Data_ISortDescriptor__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Telerik.Windows.Data.ISortDescriptor
+    name: ISortDescriptor
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Innova.Prism.Telerik.Extensions.QueryParameterExtensions
+  commentId: T:Innova.Prism.Telerik.Extensions.QueryParameterExtensions
+  parent: Innova.Prism.Telerik.Extensions
+  href: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.html
+  name: QueryParameterExtensions
+  nameWithType: QueryParameterExtensions
+  fullName: Innova.Prism.Telerik.Extensions.QueryParameterExtensions
+- uid: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere``1(Innova.Data.Entity.QueryParameter{``0},Telerik.Windows.Data.CompositeFilterDescriptorCollection)
+  commentId: M:Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere``1(Innova.Data.Entity.QueryParameter{``0},Telerik.Windows.Data.CompositeFilterDescriptorCollection)
+  isExternal: true
+  href: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere.html#Innova_Prism_Telerik_Extensions_QueryParameterExtensions_SetWhere__1_Innova_Data_Entity_QueryParameter___0__Telerik_Windows_Data_CompositeFilterDescriptorCollection_
+  name: SetWhere<T>(QueryParameter<T>, CompositeFilterDescriptorCollection)
+  nameWithType: QueryParameterExtensions.SetWhere<T>(QueryParameter<T>, CompositeFilterDescriptorCollection)
+  fullName: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere<T>(Innova.Data.Entity.QueryParameter<T>, Telerik.Windows.Data.CompositeFilterDescriptorCollection)
+  nameWithType.vb: QueryParameterExtensions.SetWhere(Of T)(QueryParameter(Of T), CompositeFilterDescriptorCollection)
+  fullName.vb: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere(Of T)(Innova.Data.Entity.QueryParameter(Of T), Telerik.Windows.Data.CompositeFilterDescriptorCollection)
+  name.vb: SetWhere(Of T)(QueryParameter(Of T), CompositeFilterDescriptorCollection)
+  spec.csharp:
+  - uid: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere``1(Innova.Data.Entity.QueryParameter{``0},Telerik.Windows.Data.CompositeFilterDescriptorCollection)
+    name: SetWhere
+    href: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere.html#Innova_Prism_Telerik_Extensions_QueryParameterExtensions_SetWhere__1_Innova_Data_Entity_QueryParameter___0__Telerik_Windows_Data_CompositeFilterDescriptorCollection_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Telerik.Windows.Data.CompositeFilterDescriptorCollection
+    name: CompositeFilterDescriptorCollection
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere``1(Innova.Data.Entity.QueryParameter{``0},Telerik.Windows.Data.CompositeFilterDescriptorCollection)
+    name: SetWhere
+    href: Innova.Prism.Telerik.Extensions.QueryParameterExtensions.SetWhere.html#Innova_Prism_Telerik_Extensions_QueryParameterExtensions_SetWhere__1_Innova_Data_Entity_QueryParameter___0__Telerik_Windows_Data_CompositeFilterDescriptorCollection_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Telerik.Windows.Data.CompositeFilterDescriptorCollection
+    name: CompositeFilterDescriptorCollection
+    isExternal: true
+  - name: )
+- uid: Innova.Prism.Telerik.Extensions
+  commentId: N:Innova.Prism.Telerik.Extensions
+  href: Innova.html
+  name: Innova.Prism.Telerik.Extensions
+  nameWithType: Innova.Prism.Telerik.Extensions
+  fullName: Innova.Prism.Telerik.Extensions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Telerik
+    name: Telerik
+    href: Innova.Prism.Telerik.html
+  - name: .
+  - uid: Innova.Prism.Telerik.Extensions
+    name: Extensions
+    href: Innova.Prism.Telerik.Extensions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Telerik
+    name: Telerik
+    href: Innova.Prism.Telerik.html
+  - name: .
+  - uid: Innova.Prism.Telerik.Extensions
+    name: Extensions
+    href: Innova.Prism.Telerik.Extensions.html
+- uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.ListFilter*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.ListFilter
+  href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.ListFilter.html#Innova_Prism_Library_ClassDefinitions_ListQueryParameter_1_ListFilter
+  name: ListFilter
+  nameWithType: ListQueryParameter<T>.ListFilter
+  fullName: Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>.ListFilter
+  nameWithType.vb: ListQueryParameter(Of T).ListFilter
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T).ListFilter
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, bool>>
+  nameWithType: Expression<Func<T, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, bool>>
+  nameWithType.vb: Expression(Of Func(Of T, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean))
+  name.vb: Expression(Of Func(Of T, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+  commentId: T:Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+  href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.html
+  name: ListQueryParameter<T>
+  nameWithType: ListQueryParameter<T>
+  fullName: Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>
+  nameWithType.vb: ListQueryParameter(Of T)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T)
+  name.vb: ListQueryParameter(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+    name: ListQueryParameter
+    href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+    name: ListQueryParameter
+    href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.#ctor*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.#ctor
+  href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.-ctor.html#Innova_Prism_Library_ClassDefinitions_ListQueryParameter_1__ctor_Innova_Data_Entity_QueryParameter__0__
+  name: ListQueryParameter
+  nameWithType: ListQueryParameter<T>.ListQueryParameter
+  fullName: Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>.ListQueryParameter
+  nameWithType.vb: ListQueryParameter(Of T).New
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T).New
+  name.vb: New
+- uid: Innova.Data.Entity.QueryParameter{{T}}.Clone
+  commentId: M:Innova.Data.Entity.QueryParameter{`0}.Clone
+  parent: Innova.Data.Entity.QueryParameter{{T}}
+  definition: Innova.Data.Entity.QueryParameter`1.Clone
+  name: Clone()
+  nameWithType: QueryParameter<T>.Clone()
+  fullName: Innova.Data.Entity.QueryParameter<T>.Clone()
+  nameWithType.vb: QueryParameter(Of T).Clone()
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T).Clone()
+  spec.csharp:
+  - uid: Innova.Data.Entity.QueryParameter{`0}.Clone
+    name: Clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Entity.QueryParameter{`0}.Clone
+    name: Clone
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.Clone*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.Clone
+  href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.Clone.html#Innova_Prism_Library_ClassDefinitions_ListQueryParameter_1_Clone
+  name: Clone
+  nameWithType: ListQueryParameter<T>.Clone
+  fullName: Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>.Clone
+  nameWithType.vb: ListQueryParameter(Of T).Clone
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T).Clone
+- uid: Innova.Data.Entity.QueryParameter`1.Clone
+  commentId: M:Innova.Data.Entity.QueryParameter`1.Clone
+  name: Clone()
+  nameWithType: QueryParameter<T>.Clone()
+  fullName: Innova.Data.Entity.QueryParameter<T>.Clone()
+  nameWithType.vb: QueryParameter(Of T).Clone()
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T).Clone()
+  spec.csharp:
+  - uid: Innova.Data.Entity.QueryParameter`1.Clone
+    name: Clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Entity.QueryParameter`1.Clone
+    name: Clone
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.GetQueryParameter*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1.GetQueryParameter
+  href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.GetQueryParameter.html#Innova_Prism_Library_ClassDefinitions_ListQueryParameter_1_GetQueryParameter
+  name: GetQueryParameter
+  nameWithType: ListQueryParameter<T>.GetQueryParameter
+  fullName: Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>.GetQueryParameter
+  nameWithType.vb: ListQueryParameter(Of T).GetQueryParameter
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T).GetQueryParameter
+memberLayout: SeparatePages

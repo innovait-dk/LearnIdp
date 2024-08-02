@@ -1,0 +1,984 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.InnovaApplicationBuilder
+  commentId: T:Innova.Prism.Library.InnovaApplicationBuilder
+  id: InnovaApplicationBuilder
+  parent: Innova.Prism.Library
+  children:
+  - Innova.Prism.Library.InnovaApplicationBuilder.#ctor
+  - Innova.Prism.Library.InnovaApplicationBuilder.AppExtensionBuilders
+  - Innova.Prism.Library.InnovaApplicationBuilder.BuildWithUnity(Unity.IUnityContainer)
+  - Innova.Prism.Library.InnovaApplicationBuilder.Builder
+  - Innova.Prism.Library.InnovaApplicationBuilder.Connection
+  - Innova.Prism.Library.InnovaApplicationBuilder.CreateMainWindow
+  - Innova.Prism.Library.InnovaApplicationBuilder.HttpPath
+  - Innova.Prism.Library.InnovaApplicationBuilder.LoadPrismModule(Prism.Modularity.IModuleCatalog)
+  - Innova.Prism.Library.InnovaApplicationBuilder.Services
+  - Innova.Prism.Library.InnovaApplicationBuilder._host
+  langs:
+  - csharp
+  - vb
+  name: InnovaApplicationBuilder
+  nameWithType: InnovaApplicationBuilder
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder
+  type: Class
+  source:
+    id: InnovaApplicationBuilder
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\InnovaApplicationBuilder.cs
+    startLine: 22
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Represents an application builder for Innova.
+  example: []
+  syntax:
+    content: 'public class InnovaApplicationBuilder : IInnovaApplicationBuilder, IInnovaApplicationBuilderBase'
+    content.vb: Public Class InnovaApplicationBuilder Implements IInnovaApplicationBuilder, IInnovaApplicationBuilderBase
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Prism.Library.IInnovaApplicationBuilder
+  - Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+  extensionMethods:
+  - Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow``2
+- uid: Innova.Prism.Library.InnovaApplicationBuilder._host
+  commentId: F:Innova.Prism.Library.InnovaApplicationBuilder._host
+  id: _host
+  parent: Innova.Prism.Library.InnovaApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: _host
+  nameWithType: InnovaApplicationBuilder._host
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder._host
+  type: Field
+  source:
+    id: _host
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\InnovaApplicationBuilder.cs
+    startLine: 25
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  syntax:
+    content: public IHost _host
+    return:
+      type: Microsoft.Extensions.Hosting.IHost
+    content.vb: Public _host As IHost
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.Builder
+  commentId: P:Innova.Prism.Library.InnovaApplicationBuilder.Builder
+  id: Builder
+  parent: Innova.Prism.Library.InnovaApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: Builder
+  nameWithType: InnovaApplicationBuilder.Builder
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.Builder
+  type: Property
+  source:
+    id: Builder
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\InnovaApplicationBuilder.cs
+    startLine: 26
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  syntax:
+    content: public HostApplicationBuilder Builder { get; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.Hosting.HostApplicationBuilder
+    content.vb: Public ReadOnly Property Builder As HostApplicationBuilder
+  overload: Innova.Prism.Library.InnovaApplicationBuilder.Builder*
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.Connection
+  commentId: P:Innova.Prism.Library.InnovaApplicationBuilder.Connection
+  id: Connection
+  parent: Innova.Prism.Library.InnovaApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: Connection
+  nameWithType: InnovaApplicationBuilder.Connection
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.Connection
+  type: Property
+  source:
+    id: Connection
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\InnovaApplicationBuilder.cs
+    startLine: 27
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Gets or sets the SQL connection options for the application.
+  example: []
+  syntax:
+    content: public SqlConnectionOption Connection { get; set; }
+    parameters: []
+    return:
+      type: Innova.Data.Entity.SqlConnectionOption
+    content.vb: Public Property Connection As SqlConnectionOption
+  overload: Innova.Prism.Library.InnovaApplicationBuilder.Connection*
+  implements:
+  - Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.Connection
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.AppExtensionBuilders
+  commentId: P:Innova.Prism.Library.InnovaApplicationBuilder.AppExtensionBuilders
+  id: AppExtensionBuilders
+  parent: Innova.Prism.Library.InnovaApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: AppExtensionBuilders
+  nameWithType: InnovaApplicationBuilder.AppExtensionBuilders
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.AppExtensionBuilders
+  type: Property
+  source:
+    id: AppExtensionBuilders
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\InnovaApplicationBuilder.cs
+    startLine: 29
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Gets or sets the list of application extension builders.
+  example: []
+  syntax:
+    content: public List<IAppExtensionBuilderBase> AppExtensionBuilders { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Innova.Abstractions.Builder.IAppExtensionBuilderBase}
+    content.vb: Public Property AppExtensionBuilders As List(Of IAppExtensionBuilderBase)
+  overload: Innova.Prism.Library.InnovaApplicationBuilder.AppExtensionBuilders*
+  implements:
+  - Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.AppExtensionBuilders
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.Services
+  commentId: P:Innova.Prism.Library.InnovaApplicationBuilder.Services
+  id: Services
+  parent: Innova.Prism.Library.InnovaApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: Services
+  nameWithType: InnovaApplicationBuilder.Services
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.Services
+  type: Property
+  source:
+    id: Services
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\InnovaApplicationBuilder.cs
+    startLine: 31
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Gets the service collection that this application builder is configuring.
+  example: []
+  syntax:
+    content: public IServiceCollection Services { get; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public ReadOnly Property Services As IServiceCollection
+  overload: Innova.Prism.Library.InnovaApplicationBuilder.Services*
+  implements:
+  - Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.Services
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.HttpPath
+  commentId: P:Innova.Prism.Library.InnovaApplicationBuilder.HttpPath
+  id: HttpPath
+  parent: Innova.Prism.Library.InnovaApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: HttpPath
+  nameWithType: InnovaApplicationBuilder.HttpPath
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.HttpPath
+  type: Property
+  source:
+    id: HttpPath
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\InnovaApplicationBuilder.cs
+    startLine: 33
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Gets or sets the HTTP path for the application.
+  example: []
+  syntax:
+    content: public string HttpPath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property HttpPath As String
+  overload: Innova.Prism.Library.InnovaApplicationBuilder.HttpPath*
+  implements:
+  - Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.HttpPath
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.#ctor
+  commentId: M:Innova.Prism.Library.InnovaApplicationBuilder.#ctor
+  id: '#ctor'
+  parent: Innova.Prism.Library.InnovaApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: InnovaApplicationBuilder()
+  nameWithType: InnovaApplicationBuilder.InnovaApplicationBuilder()
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.InnovaApplicationBuilder()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\InnovaApplicationBuilder.cs
+    startLine: 38
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.InnovaApplicationBuilder" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public InnovaApplicationBuilder()
+    content.vb: Public Sub New()
+  overload: Innova.Prism.Library.InnovaApplicationBuilder.#ctor*
+  nameWithType.vb: InnovaApplicationBuilder.New()
+  fullName.vb: Innova.Prism.Library.InnovaApplicationBuilder.New()
+  name.vb: New()
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.BuildWithUnity(Unity.IUnityContainer)
+  commentId: M:Innova.Prism.Library.InnovaApplicationBuilder.BuildWithUnity(Unity.IUnityContainer)
+  id: BuildWithUnity(Unity.IUnityContainer)
+  parent: Innova.Prism.Library.InnovaApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildWithUnity(IUnityContainer)
+  nameWithType: InnovaApplicationBuilder.BuildWithUnity(IUnityContainer)
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.BuildWithUnity(Unity.IUnityContainer)
+  type: Method
+  source:
+    id: BuildWithUnity
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\InnovaApplicationBuilder.cs
+    startLine: 63
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Builds the application with Unity container.
+  example: []
+  syntax:
+    content: public void BuildWithUnity(IUnityContainer container)
+    parameters:
+    - id: container
+      type: Unity.IUnityContainer
+      description: The Unity container.
+    content.vb: Public Sub BuildWithUnity(container As IUnityContainer)
+  overload: Innova.Prism.Library.InnovaApplicationBuilder.BuildWithUnity*
+  implements:
+  - Innova.Prism.Library.IInnovaApplicationBuilder.BuildWithUnity(Unity.IUnityContainer)
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.CreateMainWindow
+  commentId: M:Innova.Prism.Library.InnovaApplicationBuilder.CreateMainWindow
+  id: CreateMainWindow
+  parent: Innova.Prism.Library.InnovaApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: CreateMainWindow()
+  nameWithType: InnovaApplicationBuilder.CreateMainWindow()
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.CreateMainWindow()
+  type: Method
+  source:
+    id: CreateMainWindow
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\InnovaApplicationBuilder.cs
+    startLine: 79
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Creates the main window of the application.
+  example: []
+  syntax:
+    content: public Window CreateMainWindow()
+    return:
+      type: System.Windows.Window
+      description: The main window.
+    content.vb: Public Function CreateMainWindow() As Window
+  overload: Innova.Prism.Library.InnovaApplicationBuilder.CreateMainWindow*
+  implements:
+  - Innova.Prism.Library.IInnovaApplicationBuilder.CreateMainWindow
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.LoadPrismModule(Prism.Modularity.IModuleCatalog)
+  commentId: M:Innova.Prism.Library.InnovaApplicationBuilder.LoadPrismModule(Prism.Modularity.IModuleCatalog)
+  id: LoadPrismModule(Prism.Modularity.IModuleCatalog)
+  parent: Innova.Prism.Library.InnovaApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: LoadPrismModule(IModuleCatalog)
+  nameWithType: InnovaApplicationBuilder.LoadPrismModule(IModuleCatalog)
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.LoadPrismModule(Prism.Modularity.IModuleCatalog)
+  type: Method
+  source:
+    id: LoadPrismModule
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\InnovaApplicationBuilder.cs
+    startLine: 89
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Loads the Prism module into the module catalog.
+  example: []
+  syntax:
+    content: public void LoadPrismModule(IModuleCatalog moduleCatalog)
+    parameters:
+    - id: moduleCatalog
+      type: Prism.Modularity.IModuleCatalog
+      description: The module catalog.
+    content.vb: Public Sub LoadPrismModule(moduleCatalog As IModuleCatalog)
+  overload: Innova.Prism.Library.InnovaApplicationBuilder.LoadPrismModule*
+  implements:
+  - Innova.Prism.Library.IInnovaApplicationBuilder.LoadPrismModule(Prism.Modularity.IModuleCatalog)
+references:
+- uid: Innova.Prism.Library
+  commentId: N:Innova.Prism.Library
+  href: Innova.html
+  name: Innova.Prism.Library
+  nameWithType: Innova.Prism.Library
+  fullName: Innova.Prism.Library
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Prism.Library.IInnovaApplicationBuilder
+  commentId: T:Innova.Prism.Library.IInnovaApplicationBuilder
+  parent: Innova.Prism.Library
+  href: Innova.Prism.Library.IInnovaApplicationBuilder.html
+  name: IInnovaApplicationBuilder
+  nameWithType: IInnovaApplicationBuilder
+  fullName: Innova.Prism.Library.IInnovaApplicationBuilder
+- uid: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+  commentId: T:Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+  parent: Innova.Abstractions.Builder
+  href: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.html
+  name: IInnovaApplicationBuilderBase
+  nameWithType: IInnovaApplicationBuilderBase
+  fullName: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+- uid: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow``2
+  commentId: M:Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow``2(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  parent: Innova.Prism.Library.IInnovaApplicationBuilderExt
+  definition: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow``2(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  href: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow.html#Innova_Prism_Library_IInnovaApplicationBuilderExt_AddMainWindow__2_Innova_Abstractions_Builder_IInnovaApplicationBuilderBase_
+  name: AddMainWindow<TView, TViewModel>(IInnovaApplicationBuilderBase)
+  nameWithType: IInnovaApplicationBuilderExt.AddMainWindow<TView, TViewModel>(IInnovaApplicationBuilderBase)
+  fullName: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow<TView, TViewModel>(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  nameWithType.vb: IInnovaApplicationBuilderExt.AddMainWindow(Of TView, TViewModel)(IInnovaApplicationBuilderBase)
+  fullName.vb: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow(Of TView, TViewModel)(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  name.vb: AddMainWindow(Of TView, TViewModel)(IInnovaApplicationBuilderBase)
+  spec.csharp:
+  - uid: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow``2(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+    name: AddMainWindow
+    href: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow.html#Innova_Prism_Library_IInnovaApplicationBuilderExt_AddMainWindow__2_Innova_Abstractions_Builder_IInnovaApplicationBuilderBase_
+  - name: <
+  - name: TView
+  - name: ','
+  - name: " "
+  - name: TViewModel
+  - name: '>'
+  - name: (
+  - uid: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+    name: IInnovaApplicationBuilderBase
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow``2(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+    name: AddMainWindow
+    href: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow.html#Innova_Prism_Library_IInnovaApplicationBuilderExt_AddMainWindow__2_Innova_Abstractions_Builder_IInnovaApplicationBuilderBase_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TView
+  - name: ','
+  - name: " "
+  - name: TViewModel
+  - name: )
+  - name: (
+  - uid: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+    name: IInnovaApplicationBuilderBase
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Abstractions.Builder
+  commentId: N:Innova.Abstractions.Builder
+  href: Innova.html
+  name: Innova.Abstractions.Builder
+  nameWithType: Innova.Abstractions.Builder
+  fullName: Innova.Abstractions.Builder
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Abstractions
+    name: Abstractions
+    href: Innova.Abstractions.html
+  - name: .
+  - uid: Innova.Abstractions.Builder
+    name: Builder
+    href: Innova.Abstractions.Builder.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Abstractions
+    name: Abstractions
+    href: Innova.Abstractions.html
+  - name: .
+  - uid: Innova.Abstractions.Builder
+    name: Builder
+    href: Innova.Abstractions.Builder.html
+- uid: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow``2(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  commentId: M:Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow``2(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  href: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow.html#Innova_Prism_Library_IInnovaApplicationBuilderExt_AddMainWindow__2_Innova_Abstractions_Builder_IInnovaApplicationBuilderBase_
+  name: AddMainWindow<TView, TViewModel>(IInnovaApplicationBuilderBase)
+  nameWithType: IInnovaApplicationBuilderExt.AddMainWindow<TView, TViewModel>(IInnovaApplicationBuilderBase)
+  fullName: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow<TView, TViewModel>(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  nameWithType.vb: IInnovaApplicationBuilderExt.AddMainWindow(Of TView, TViewModel)(IInnovaApplicationBuilderBase)
+  fullName.vb: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow(Of TView, TViewModel)(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  name.vb: AddMainWindow(Of TView, TViewModel)(IInnovaApplicationBuilderBase)
+  spec.csharp:
+  - uid: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow``2(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+    name: AddMainWindow
+    href: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow.html#Innova_Prism_Library_IInnovaApplicationBuilderExt_AddMainWindow__2_Innova_Abstractions_Builder_IInnovaApplicationBuilderBase_
+  - name: <
+  - name: TView
+  - name: ','
+  - name: " "
+  - name: TViewModel
+  - name: '>'
+  - name: (
+  - uid: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+    name: IInnovaApplicationBuilderBase
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow``2(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+    name: AddMainWindow
+    href: Innova.Prism.Library.IInnovaApplicationBuilderExt.AddMainWindow.html#Innova_Prism_Library_IInnovaApplicationBuilderExt_AddMainWindow__2_Innova_Abstractions_Builder_IInnovaApplicationBuilderBase_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TView
+  - name: ','
+  - name: " "
+  - name: TViewModel
+  - name: )
+  - name: (
+  - uid: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+    name: IInnovaApplicationBuilderBase
+  - name: )
+- uid: Innova.Prism.Library.IInnovaApplicationBuilderExt
+  commentId: T:Innova.Prism.Library.IInnovaApplicationBuilderExt
+  parent: Innova.Prism.Library
+  href: Innova.Prism.Library.IInnovaApplicationBuilderExt.html
+  name: IInnovaApplicationBuilderExt
+  nameWithType: IInnovaApplicationBuilderExt
+  fullName: Innova.Prism.Library.IInnovaApplicationBuilderExt
+- uid: Microsoft.Extensions.Hosting.IHost
+  commentId: T:Microsoft.Extensions.Hosting.IHost
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihost
+  name: IHost
+  nameWithType: IHost
+  fullName: Microsoft.Extensions.Hosting.IHost
+- uid: Microsoft.Extensions.Hosting
+  commentId: N:Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.Builder*
+  commentId: Overload:Innova.Prism.Library.InnovaApplicationBuilder.Builder
+  href: Innova.Prism.Library.InnovaApplicationBuilder.Builder.html#Innova_Prism_Library_InnovaApplicationBuilder_Builder
+  name: Builder
+  nameWithType: InnovaApplicationBuilder.Builder
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.Builder
+- uid: Microsoft.Extensions.Hosting.HostApplicationBuilder
+  commentId: T:Microsoft.Extensions.Hosting.HostApplicationBuilder
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.hostapplicationbuilder
+  name: HostApplicationBuilder
+  nameWithType: HostApplicationBuilder
+  fullName: Microsoft.Extensions.Hosting.HostApplicationBuilder
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.Connection*
+  commentId: Overload:Innova.Prism.Library.InnovaApplicationBuilder.Connection
+  href: Innova.Prism.Library.InnovaApplicationBuilder.Connection.html#Innova_Prism_Library_InnovaApplicationBuilder_Connection
+  name: Connection
+  nameWithType: InnovaApplicationBuilder.Connection
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.Connection
+- uid: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.Connection
+  commentId: P:Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.Connection
+  parent: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+  name: Connection
+  nameWithType: IInnovaApplicationBuilderBase.Connection
+  fullName: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.Connection
+- uid: Innova.Data.Entity.SqlConnectionOption
+  commentId: T:Innova.Data.Entity.SqlConnectionOption
+  parent: Innova.Data.Entity
+  href: Innova.Data.Entity.SqlConnectionOption.html
+  name: SqlConnectionOption
+  nameWithType: SqlConnectionOption
+  fullName: Innova.Data.Entity.SqlConnectionOption
+- uid: Innova.Data.Entity
+  commentId: N:Innova.Data.Entity
+  href: Innova.html
+  name: Innova.Data.Entity
+  nameWithType: Innova.Data.Entity
+  fullName: Innova.Data.Entity
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.AppExtensionBuilders*
+  commentId: Overload:Innova.Prism.Library.InnovaApplicationBuilder.AppExtensionBuilders
+  href: Innova.Prism.Library.InnovaApplicationBuilder.AppExtensionBuilders.html#Innova_Prism_Library_InnovaApplicationBuilder_AppExtensionBuilders
+  name: AppExtensionBuilders
+  nameWithType: InnovaApplicationBuilder.AppExtensionBuilders
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.AppExtensionBuilders
+- uid: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.AppExtensionBuilders
+  commentId: P:Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.AppExtensionBuilders
+  parent: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+  name: AppExtensionBuilders
+  nameWithType: IInnovaApplicationBuilderBase.AppExtensionBuilders
+  fullName: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.AppExtensionBuilders
+- uid: System.Collections.Generic.List{Innova.Abstractions.Builder.IAppExtensionBuilderBase}
+  commentId: T:System.Collections.Generic.List{Innova.Abstractions.Builder.IAppExtensionBuilderBase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<IAppExtensionBuilderBase>
+  nameWithType: List<IAppExtensionBuilderBase>
+  fullName: System.Collections.Generic.List<Innova.Abstractions.Builder.IAppExtensionBuilderBase>
+  nameWithType.vb: List(Of IAppExtensionBuilderBase)
+  fullName.vb: System.Collections.Generic.List(Of Innova.Abstractions.Builder.IAppExtensionBuilderBase)
+  name.vb: List(Of IAppExtensionBuilderBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Abstractions.Builder.IAppExtensionBuilderBase
+    name: IAppExtensionBuilderBase
+    href: Innova.Abstractions.Builder.IAppExtensionBuilderBase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Abstractions.Builder.IAppExtensionBuilderBase
+    name: IAppExtensionBuilderBase
+    href: Innova.Abstractions.Builder.IAppExtensionBuilderBase.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.Services*
+  commentId: Overload:Innova.Prism.Library.InnovaApplicationBuilder.Services
+  href: Innova.Prism.Library.InnovaApplicationBuilder.Services.html#Innova_Prism_Library_InnovaApplicationBuilder_Services
+  name: Services
+  nameWithType: InnovaApplicationBuilder.Services
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.Services
+- uid: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.Services
+  commentId: P:Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.Services
+  parent: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+  name: Services
+  nameWithType: IInnovaApplicationBuilderBase.Services
+  fullName: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.Services
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.HttpPath*
+  commentId: Overload:Innova.Prism.Library.InnovaApplicationBuilder.HttpPath
+  href: Innova.Prism.Library.InnovaApplicationBuilder.HttpPath.html#Innova_Prism_Library_InnovaApplicationBuilder_HttpPath
+  name: HttpPath
+  nameWithType: InnovaApplicationBuilder.HttpPath
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.HttpPath
+- uid: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.HttpPath
+  commentId: P:Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.HttpPath
+  parent: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+  name: HttpPath
+  nameWithType: IInnovaApplicationBuilderBase.HttpPath
+  fullName: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.HttpPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Prism.Library.InnovaApplicationBuilder
+  commentId: T:Innova.Prism.Library.InnovaApplicationBuilder
+  parent: Innova.Prism.Library
+  href: Innova.Prism.Library.InnovaApplicationBuilder.html
+  name: InnovaApplicationBuilder
+  nameWithType: InnovaApplicationBuilder
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.#ctor*
+  commentId: Overload:Innova.Prism.Library.InnovaApplicationBuilder.#ctor
+  href: Innova.Prism.Library.InnovaApplicationBuilder.-ctor.html#Innova_Prism_Library_InnovaApplicationBuilder__ctor
+  name: InnovaApplicationBuilder
+  nameWithType: InnovaApplicationBuilder.InnovaApplicationBuilder
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.InnovaApplicationBuilder
+  nameWithType.vb: InnovaApplicationBuilder.New
+  fullName.vb: Innova.Prism.Library.InnovaApplicationBuilder.New
+  name.vb: New
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.BuildWithUnity*
+  commentId: Overload:Innova.Prism.Library.InnovaApplicationBuilder.BuildWithUnity
+  href: Innova.Prism.Library.InnovaApplicationBuilder.BuildWithUnity.html#Innova_Prism_Library_InnovaApplicationBuilder_BuildWithUnity_Unity_IUnityContainer_
+  name: BuildWithUnity
+  nameWithType: InnovaApplicationBuilder.BuildWithUnity
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.BuildWithUnity
+- uid: Innova.Prism.Library.IInnovaApplicationBuilder.BuildWithUnity(Unity.IUnityContainer)
+  commentId: M:Innova.Prism.Library.IInnovaApplicationBuilder.BuildWithUnity(Unity.IUnityContainer)
+  parent: Innova.Prism.Library.IInnovaApplicationBuilder
+  isExternal: true
+  href: Innova.Prism.Library.IInnovaApplicationBuilder.BuildWithUnity.html#Innova_Prism_Library_IInnovaApplicationBuilder_BuildWithUnity_Unity_IUnityContainer_
+  name: BuildWithUnity(IUnityContainer)
+  nameWithType: IInnovaApplicationBuilder.BuildWithUnity(IUnityContainer)
+  fullName: Innova.Prism.Library.IInnovaApplicationBuilder.BuildWithUnity(Unity.IUnityContainer)
+  spec.csharp:
+  - uid: Innova.Prism.Library.IInnovaApplicationBuilder.BuildWithUnity(Unity.IUnityContainer)
+    name: BuildWithUnity
+    href: Innova.Prism.Library.IInnovaApplicationBuilder.BuildWithUnity.html#Innova_Prism_Library_IInnovaApplicationBuilder_BuildWithUnity_Unity_IUnityContainer_
+  - name: (
+  - uid: Unity.IUnityContainer
+    name: IUnityContainer
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.IInnovaApplicationBuilder.BuildWithUnity(Unity.IUnityContainer)
+    name: BuildWithUnity
+    href: Innova.Prism.Library.IInnovaApplicationBuilder.BuildWithUnity.html#Innova_Prism_Library_IInnovaApplicationBuilder_BuildWithUnity_Unity_IUnityContainer_
+  - name: (
+  - uid: Unity.IUnityContainer
+    name: IUnityContainer
+    isExternal: true
+  - name: )
+- uid: Unity.IUnityContainer
+  commentId: T:Unity.IUnityContainer
+  parent: Unity
+  isExternal: true
+  name: IUnityContainer
+  nameWithType: IUnityContainer
+  fullName: Unity.IUnityContainer
+- uid: Unity
+  commentId: N:Unity
+  isExternal: true
+  name: Unity
+  nameWithType: Unity
+  fullName: Unity
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.CreateMainWindow*
+  commentId: Overload:Innova.Prism.Library.InnovaApplicationBuilder.CreateMainWindow
+  href: Innova.Prism.Library.InnovaApplicationBuilder.CreateMainWindow.html#Innova_Prism_Library_InnovaApplicationBuilder_CreateMainWindow
+  name: CreateMainWindow
+  nameWithType: InnovaApplicationBuilder.CreateMainWindow
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.CreateMainWindow
+- uid: Innova.Prism.Library.IInnovaApplicationBuilder.CreateMainWindow
+  commentId: M:Innova.Prism.Library.IInnovaApplicationBuilder.CreateMainWindow
+  parent: Innova.Prism.Library.IInnovaApplicationBuilder
+  href: Innova.Prism.Library.IInnovaApplicationBuilder.CreateMainWindow.html#Innova_Prism_Library_IInnovaApplicationBuilder_CreateMainWindow
+  name: CreateMainWindow()
+  nameWithType: IInnovaApplicationBuilder.CreateMainWindow()
+  fullName: Innova.Prism.Library.IInnovaApplicationBuilder.CreateMainWindow()
+  spec.csharp:
+  - uid: Innova.Prism.Library.IInnovaApplicationBuilder.CreateMainWindow
+    name: CreateMainWindow
+    href: Innova.Prism.Library.IInnovaApplicationBuilder.CreateMainWindow.html#Innova_Prism_Library_IInnovaApplicationBuilder_CreateMainWindow
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.IInnovaApplicationBuilder.CreateMainWindow
+    name: CreateMainWindow
+    href: Innova.Prism.Library.IInnovaApplicationBuilder.CreateMainWindow.html#Innova_Prism_Library_IInnovaApplicationBuilder_CreateMainWindow
+  - name: (
+  - name: )
+- uid: System.Windows.Window
+  commentId: T:System.Windows.Window
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.window
+  name: Window
+  nameWithType: Window
+  fullName: System.Windows.Window
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+- uid: Innova.Prism.Library.InnovaApplicationBuilder.LoadPrismModule*
+  commentId: Overload:Innova.Prism.Library.InnovaApplicationBuilder.LoadPrismModule
+  href: Innova.Prism.Library.InnovaApplicationBuilder.LoadPrismModule.html#Innova_Prism_Library_InnovaApplicationBuilder_LoadPrismModule_Prism_Modularity_IModuleCatalog_
+  name: LoadPrismModule
+  nameWithType: InnovaApplicationBuilder.LoadPrismModule
+  fullName: Innova.Prism.Library.InnovaApplicationBuilder.LoadPrismModule
+- uid: Innova.Prism.Library.IInnovaApplicationBuilder.LoadPrismModule(Prism.Modularity.IModuleCatalog)
+  commentId: M:Innova.Prism.Library.IInnovaApplicationBuilder.LoadPrismModule(Prism.Modularity.IModuleCatalog)
+  parent: Innova.Prism.Library.IInnovaApplicationBuilder
+  isExternal: true
+  href: Innova.Prism.Library.IInnovaApplicationBuilder.LoadPrismModule.html#Innova_Prism_Library_IInnovaApplicationBuilder_LoadPrismModule_Prism_Modularity_IModuleCatalog_
+  name: LoadPrismModule(IModuleCatalog)
+  nameWithType: IInnovaApplicationBuilder.LoadPrismModule(IModuleCatalog)
+  fullName: Innova.Prism.Library.IInnovaApplicationBuilder.LoadPrismModule(Prism.Modularity.IModuleCatalog)
+  spec.csharp:
+  - uid: Innova.Prism.Library.IInnovaApplicationBuilder.LoadPrismModule(Prism.Modularity.IModuleCatalog)
+    name: LoadPrismModule
+    href: Innova.Prism.Library.IInnovaApplicationBuilder.LoadPrismModule.html#Innova_Prism_Library_IInnovaApplicationBuilder_LoadPrismModule_Prism_Modularity_IModuleCatalog_
+  - name: (
+  - uid: Prism.Modularity.IModuleCatalog
+    name: IModuleCatalog
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.IInnovaApplicationBuilder.LoadPrismModule(Prism.Modularity.IModuleCatalog)
+    name: LoadPrismModule
+    href: Innova.Prism.Library.IInnovaApplicationBuilder.LoadPrismModule.html#Innova_Prism_Library_IInnovaApplicationBuilder_LoadPrismModule_Prism_Modularity_IModuleCatalog_
+  - name: (
+  - uid: Prism.Modularity.IModuleCatalog
+    name: IModuleCatalog
+    isExternal: true
+  - name: )
+- uid: Prism.Modularity.IModuleCatalog
+  commentId: T:Prism.Modularity.IModuleCatalog
+  parent: Prism.Modularity
+  isExternal: true
+  name: IModuleCatalog
+  nameWithType: IModuleCatalog
+  fullName: Prism.Modularity.IModuleCatalog
+- uid: Prism.Modularity
+  commentId: N:Prism.Modularity
+  isExternal: true
+  name: Prism.Modularity
+  nameWithType: Prism.Modularity
+  fullName: Prism.Modularity
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Modularity
+    name: Modularity
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Modularity
+    name: Modularity
+    isExternal: true
+memberLayout: SeparatePages

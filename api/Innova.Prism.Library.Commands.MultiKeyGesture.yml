@@ -1,0 +1,625 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Commands.MultiKeyGesture
+  commentId: T:Innova.Prism.Library.Commands.MultiKeyGesture
+  id: MultiKeyGesture
+  parent: Innova.Prism.Library.Commands
+  children:
+  - Innova.Prism.Library.Commands.MultiKeyGesture.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Input.Key},System.Windows.Input.ModifierKeys)
+  - Innova.Prism.Library.Commands.MultiKeyGesture.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Input.Key},System.Windows.Input.ModifierKeys,System.String)
+  - Innova.Prism.Library.Commands.MultiKeyGesture.Keys
+  - Innova.Prism.Library.Commands.MultiKeyGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)
+  langs:
+  - csharp
+  - vb
+  name: MultiKeyGesture
+  nameWithType: MultiKeyGesture
+  fullName: Innova.Prism.Library.Commands.MultiKeyGesture
+  type: Class
+  source:
+    id: MultiKeyGesture
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Commands\MultiKeyGesture.cs
+    startLine: 11
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Commands
+  summary: Represents a multi-key gesture that can be used as a command input.
+  example: []
+  syntax:
+    content: >-
+      [TypeConverter(typeof(MultiKeyGestureConverter))]
+
+      public class MultiKeyGesture : KeyGesture
+    content.vb: >-
+      <TypeConverter(GetType(MultiKeyGestureConverter))>
+
+      Public Class MultiKeyGesture Inherits KeyGesture
+  inheritance:
+  - System.Object
+  - System.Windows.Input.InputGesture
+  - System.Windows.Input.KeyGesture
+  inheritedMembers:
+  - System.Windows.Input.KeyGesture.GetDisplayStringForCulture(System.Globalization.CultureInfo)
+  - System.Windows.Input.KeyGesture.Modifiers
+  - System.Windows.Input.KeyGesture.Key
+  - System.Windows.Input.KeyGesture.DisplayString
+  attributes:
+  - type: System.ComponentModel.TypeConverterAttribute
+    ctor: System.ComponentModel.TypeConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Innova.Prism.Library.Commands.MultiKeyGestureConverter
+- uid: Innova.Prism.Library.Commands.MultiKeyGesture.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Input.Key},System.Windows.Input.ModifierKeys)
+  commentId: M:Innova.Prism.Library.Commands.MultiKeyGesture.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Input.Key},System.Windows.Input.ModifierKeys)
+  id: '#ctor(System.Collections.Generic.IEnumerable{System.Windows.Input.Key},System.Windows.Input.ModifierKeys)'
+  parent: Innova.Prism.Library.Commands.MultiKeyGesture
+  langs:
+  - csharp
+  - vb
+  name: MultiKeyGesture(IEnumerable<Key>, ModifierKeys)
+  nameWithType: MultiKeyGesture.MultiKeyGesture(IEnumerable<Key>, ModifierKeys)
+  fullName: Innova.Prism.Library.Commands.MultiKeyGesture.MultiKeyGesture(System.Collections.Generic.IEnumerable<System.Windows.Input.Key>, System.Windows.Input.ModifierKeys)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Commands\MultiKeyGesture.cs
+    startLine: 24
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Commands
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Commands.MultiKeyGesture" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public MultiKeyGesture(IEnumerable<Key> keys, ModifierKeys modifiers)
+    parameters:
+    - id: keys
+      type: System.Collections.Generic.IEnumerable{System.Windows.Input.Key}
+      description: The keys that make up the multi-key gesture.
+    - id: modifiers
+      type: System.Windows.Input.ModifierKeys
+      description: The modifier keys.
+    content.vb: Public Sub New(keys As IEnumerable(Of Key), modifiers As ModifierKeys)
+  overload: Innova.Prism.Library.Commands.MultiKeyGesture.#ctor*
+  nameWithType.vb: MultiKeyGesture.New(IEnumerable(Of Key), ModifierKeys)
+  fullName.vb: Innova.Prism.Library.Commands.MultiKeyGesture.New(System.Collections.Generic.IEnumerable(Of System.Windows.Input.Key), System.Windows.Input.ModifierKeys)
+  name.vb: New(IEnumerable(Of Key), ModifierKeys)
+- uid: Innova.Prism.Library.Commands.MultiKeyGesture.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Input.Key},System.Windows.Input.ModifierKeys,System.String)
+  commentId: M:Innova.Prism.Library.Commands.MultiKeyGesture.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Input.Key},System.Windows.Input.ModifierKeys,System.String)
+  id: '#ctor(System.Collections.Generic.IEnumerable{System.Windows.Input.Key},System.Windows.Input.ModifierKeys,System.String)'
+  parent: Innova.Prism.Library.Commands.MultiKeyGesture
+  langs:
+  - csharp
+  - vb
+  name: MultiKeyGesture(IEnumerable<Key>, ModifierKeys, string)
+  nameWithType: MultiKeyGesture.MultiKeyGesture(IEnumerable<Key>, ModifierKeys, string)
+  fullName: Innova.Prism.Library.Commands.MultiKeyGesture.MultiKeyGesture(System.Collections.Generic.IEnumerable<System.Windows.Input.Key>, System.Windows.Input.ModifierKeys, string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Commands\MultiKeyGesture.cs
+    startLine: 35
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Commands
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Commands.MultiKeyGesture" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public MultiKeyGesture(IEnumerable<Key> keys, ModifierKeys modifiers, string displayString)
+    parameters:
+    - id: keys
+      type: System.Collections.Generic.IEnumerable{System.Windows.Input.Key}
+      description: The keys that make up the multi-key gesture.
+    - id: modifiers
+      type: System.Windows.Input.ModifierKeys
+      description: The modifier keys.
+    - id: displayString
+      type: System.String
+      description: The display string for the gesture.
+    content.vb: Public Sub New(keys As IEnumerable(Of Key), modifiers As ModifierKeys, displayString As String)
+  overload: Innova.Prism.Library.Commands.MultiKeyGesture.#ctor*
+  nameWithType.vb: MultiKeyGesture.New(IEnumerable(Of Key), ModifierKeys, String)
+  fullName.vb: Innova.Prism.Library.Commands.MultiKeyGesture.New(System.Collections.Generic.IEnumerable(Of System.Windows.Input.Key), System.Windows.Input.ModifierKeys, String)
+  name.vb: New(IEnumerable(Of Key), ModifierKeys, String)
+- uid: Innova.Prism.Library.Commands.MultiKeyGesture.Keys
+  commentId: P:Innova.Prism.Library.Commands.MultiKeyGesture.Keys
+  id: Keys
+  parent: Innova.Prism.Library.Commands.MultiKeyGesture
+  langs:
+  - csharp
+  - vb
+  name: Keys
+  nameWithType: MultiKeyGesture.Keys
+  fullName: Innova.Prism.Library.Commands.MultiKeyGesture.Keys
+  type: Property
+  source:
+    id: Keys
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Commands\MultiKeyGesture.cs
+    startLine: 49
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Commands
+  summary: Gets or sets the keys that make up the multi-key gesture.
+  example: []
+  syntax:
+    content: public IList<Key> Keys { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.Windows.Input.Key}
+    content.vb: Public Property Keys As IList(Of Key)
+  overload: Innova.Prism.Library.Commands.MultiKeyGesture.Keys*
+- uid: Innova.Prism.Library.Commands.MultiKeyGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)
+  commentId: M:Innova.Prism.Library.Commands.MultiKeyGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)
+  id: Matches(System.Object,System.Windows.Input.InputEventArgs)
+  parent: Innova.Prism.Library.Commands.MultiKeyGesture
+  langs:
+  - csharp
+  - vb
+  name: Matches(object, InputEventArgs)
+  nameWithType: MultiKeyGesture.Matches(object, InputEventArgs)
+  fullName: Innova.Prism.Library.Commands.MultiKeyGesture.Matches(object, System.Windows.Input.InputEventArgs)
+  type: Method
+  source:
+    id: Matches
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Commands\MultiKeyGesture.cs
+    startLine: 61
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Commands
+  summary: Determines whether the multi-key gesture matches the specified input event arguments.
+  example: []
+  syntax:
+    content: public override bool Matches(object targetElement, InputEventArgs inputEventArgs)
+    parameters:
+    - id: targetElement
+      type: System.Object
+      description: The target element.
+    - id: inputEventArgs
+      type: System.Windows.Input.InputEventArgs
+      description: The input event arguments.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the gesture matches the input event arguments; otherwise, <code>false</code>.
+    content.vb: Public Overrides Function Matches(targetElement As Object, inputEventArgs As InputEventArgs) As Boolean
+  overridden: System.Windows.Input.KeyGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)
+  overload: Innova.Prism.Library.Commands.MultiKeyGesture.Matches*
+  nameWithType.vb: MultiKeyGesture.Matches(Object, InputEventArgs)
+  fullName.vb: Innova.Prism.Library.Commands.MultiKeyGesture.Matches(Object, System.Windows.Input.InputEventArgs)
+  name.vb: Matches(Object, InputEventArgs)
+references:
+- uid: Innova.Prism.Library.Commands
+  commentId: N:Innova.Prism.Library.Commands
+  href: Innova.html
+  name: Innova.Prism.Library.Commands
+  nameWithType: Innova.Prism.Library.Commands
+  fullName: Innova.Prism.Library.Commands
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Commands
+    name: Commands
+    href: Innova.Prism.Library.Commands.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Commands
+    name: Commands
+    href: Innova.Prism.Library.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Windows.Input.InputGesture
+  commentId: T:System.Windows.Input.InputGesture
+  parent: System.Windows.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.input.inputgesture
+  name: InputGesture
+  nameWithType: InputGesture
+  fullName: System.Windows.Input.InputGesture
+- uid: System.Windows.Input.KeyGesture
+  commentId: T:System.Windows.Input.KeyGesture
+  parent: System.Windows.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.input.keygesture
+  name: KeyGesture
+  nameWithType: KeyGesture
+  fullName: System.Windows.Input.KeyGesture
+- uid: System.Windows.Input.KeyGesture.GetDisplayStringForCulture(System.Globalization.CultureInfo)
+  commentId: M:System.Windows.Input.KeyGesture.GetDisplayStringForCulture(System.Globalization.CultureInfo)
+  parent: System.Windows.Input.KeyGesture
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.input.keygesture.getdisplaystringforculture
+  name: GetDisplayStringForCulture(CultureInfo)
+  nameWithType: KeyGesture.GetDisplayStringForCulture(CultureInfo)
+  fullName: System.Windows.Input.KeyGesture.GetDisplayStringForCulture(System.Globalization.CultureInfo)
+  spec.csharp:
+  - uid: System.Windows.Input.KeyGesture.GetDisplayStringForCulture(System.Globalization.CultureInfo)
+    name: GetDisplayStringForCulture
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input.keygesture.getdisplaystringforculture
+  - name: (
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Input.KeyGesture.GetDisplayStringForCulture(System.Globalization.CultureInfo)
+    name: GetDisplayStringForCulture
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input.keygesture.getdisplaystringforculture
+  - name: (
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+- uid: System.Windows.Input.KeyGesture.Modifiers
+  commentId: P:System.Windows.Input.KeyGesture.Modifiers
+  parent: System.Windows.Input.KeyGesture
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.input.keygesture.modifiers
+  name: Modifiers
+  nameWithType: KeyGesture.Modifiers
+  fullName: System.Windows.Input.KeyGesture.Modifiers
+- uid: System.Windows.Input.KeyGesture.Key
+  commentId: P:System.Windows.Input.KeyGesture.Key
+  parent: System.Windows.Input.KeyGesture
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.input.keygesture.key
+  name: Key
+  nameWithType: KeyGesture.Key
+  fullName: System.Windows.Input.KeyGesture.Key
+- uid: System.Windows.Input.KeyGesture.DisplayString
+  commentId: P:System.Windows.Input.KeyGesture.DisplayString
+  parent: System.Windows.Input.KeyGesture
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.input.keygesture.displaystring
+  name: DisplayString
+  nameWithType: KeyGesture.DisplayString
+  fullName: System.Windows.Input.KeyGesture.DisplayString
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Input
+    name: Input
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Input
+    name: Input
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input
+- uid: Innova.Prism.Library.Commands.MultiKeyGesture
+  commentId: T:Innova.Prism.Library.Commands.MultiKeyGesture
+  href: Innova.Prism.Library.Commands.MultiKeyGesture.html
+  name: MultiKeyGesture
+  nameWithType: MultiKeyGesture
+  fullName: Innova.Prism.Library.Commands.MultiKeyGesture
+- uid: Innova.Prism.Library.Commands.MultiKeyGesture.#ctor*
+  commentId: Overload:Innova.Prism.Library.Commands.MultiKeyGesture.#ctor
+  href: Innova.Prism.Library.Commands.MultiKeyGesture.-ctor.html#Innova_Prism_Library_Commands_MultiKeyGesture__ctor_System_Collections_Generic_IEnumerable_System_Windows_Input_Key__System_Windows_Input_ModifierKeys_
+  name: MultiKeyGesture
+  nameWithType: MultiKeyGesture.MultiKeyGesture
+  fullName: Innova.Prism.Library.Commands.MultiKeyGesture.MultiKeyGesture
+  nameWithType.vb: MultiKeyGesture.New
+  fullName.vb: Innova.Prism.Library.Commands.MultiKeyGesture.New
+  name.vb: New
+- uid: System.Collections.Generic.IEnumerable{System.Windows.Input.Key}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Windows.Input.Key}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Key>
+  nameWithType: IEnumerable<Key>
+  fullName: System.Collections.Generic.IEnumerable<System.Windows.Input.Key>
+  nameWithType.vb: IEnumerable(Of Key)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Windows.Input.Key)
+  name.vb: IEnumerable(Of Key)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Windows.Input.Key
+    name: Key
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input.key
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Windows.Input.Key
+    name: Key
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input.key
+  - name: )
+- uid: System.Windows.Input.ModifierKeys
+  commentId: T:System.Windows.Input.ModifierKeys
+  parent: System.Windows.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.input.modifierkeys
+  name: ModifierKeys
+  nameWithType: ModifierKeys
+  fullName: System.Windows.Input.ModifierKeys
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Prism.Library.Commands.MultiKeyGesture.Keys*
+  commentId: Overload:Innova.Prism.Library.Commands.MultiKeyGesture.Keys
+  href: Innova.Prism.Library.Commands.MultiKeyGesture.Keys.html#Innova_Prism_Library_Commands_MultiKeyGesture_Keys
+  name: Keys
+  nameWithType: MultiKeyGesture.Keys
+  fullName: Innova.Prism.Library.Commands.MultiKeyGesture.Keys
+- uid: System.Collections.Generic.IList{System.Windows.Input.Key}
+  commentId: T:System.Collections.Generic.IList{System.Windows.Input.Key}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<Key>
+  nameWithType: IList<Key>
+  fullName: System.Collections.Generic.IList<System.Windows.Input.Key>
+  nameWithType.vb: IList(Of Key)
+  fullName.vb: System.Collections.Generic.IList(Of System.Windows.Input.Key)
+  name.vb: IList(Of Key)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: System.Windows.Input.Key
+    name: Key
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input.key
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Windows.Input.Key
+    name: Key
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input.key
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Windows.Input.KeyGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)
+  commentId: M:System.Windows.Input.KeyGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)
+  parent: System.Windows.Input.KeyGesture
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.input.keygesture.matches
+  name: Matches(object, InputEventArgs)
+  nameWithType: KeyGesture.Matches(object, InputEventArgs)
+  fullName: System.Windows.Input.KeyGesture.Matches(object, System.Windows.Input.InputEventArgs)
+  nameWithType.vb: KeyGesture.Matches(Object, InputEventArgs)
+  fullName.vb: System.Windows.Input.KeyGesture.Matches(Object, System.Windows.Input.InputEventArgs)
+  name.vb: Matches(Object, InputEventArgs)
+  spec.csharp:
+  - uid: System.Windows.Input.KeyGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)
+    name: Matches
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input.keygesture.matches
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Input.InputEventArgs
+    name: InputEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input.inputeventargs
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Input.KeyGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)
+    name: Matches
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input.keygesture.matches
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Input.InputEventArgs
+    name: InputEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input.inputeventargs
+  - name: )
+- uid: Innova.Prism.Library.Commands.MultiKeyGesture.Matches*
+  commentId: Overload:Innova.Prism.Library.Commands.MultiKeyGesture.Matches
+  href: Innova.Prism.Library.Commands.MultiKeyGesture.Matches.html#Innova_Prism_Library_Commands_MultiKeyGesture_Matches_System_Object_System_Windows_Input_InputEventArgs_
+  name: Matches
+  nameWithType: MultiKeyGesture.Matches
+  fullName: Innova.Prism.Library.Commands.MultiKeyGesture.Matches
+- uid: System.Windows.Input.InputEventArgs
+  commentId: T:System.Windows.Input.InputEventArgs
+  parent: System.Windows.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.input.inputeventargs
+  name: InputEventArgs
+  nameWithType: InputEventArgs
+  fullName: System.Windows.Input.InputEventArgs
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+memberLayout: SeparatePages

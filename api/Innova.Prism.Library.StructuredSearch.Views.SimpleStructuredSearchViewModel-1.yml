@@ -1,0 +1,2695 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1
+  commentId: T:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1
+  id: SimpleStructuredSearchViewModel`1
+  parent: Innova.Prism.Library.StructuredSearch.Views
+  children:
+  - Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.#ctor(Prism.Events.IEventAggregator,Innova.Prism.Library.Services.ILookupService)
+  - Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ActivateAllFields
+  - Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.CreateEntitySavedQuery
+  - Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ExecuteClearAllOperators
+  - Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ExecuteSearch
+  - Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.OnIsActiveChanged
+  - Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.QueryFields
+  - Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  - Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ViewStateKey
+  langs:
+  - csharp
+  - vb
+  name: SimpleStructuredSearchViewModel<T>
+  nameWithType: SimpleStructuredSearchViewModel<T>
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>
+  type: Class
+  source:
+    id: SimpleStructuredSearchViewModel
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StructuredSearch\Views\SimpleStructuredSearchViewModel.cs
+    startLine: 15
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.StructuredSearch.Views
+  syntax:
+    content: 'public abstract class SimpleStructuredSearchViewModel<T> : BaseStructuredSearchViewModel<T>, INotifyPropertyChanged, INavigationAwareViewModel<NavigationState>, IRegionMemberLifetime, IHasFilter, ICanClosePopup, IActiveAware, ISimpleStructuredSearchViewModel where T : class'
+    typeParameters:
+    - id: T
+    content.vb: Public MustInherit Class SimpleStructuredSearchViewModel(Of T As Class) Inherits BaseStructuredSearchViewModel(Of T) Implements INotifyPropertyChanged, INavigationAwareViewModel(Of NavigationState), IRegionMemberLifetime, IHasFilter, ICanClosePopup, IActiveAware, ISimpleStructuredSearchViewModel
+  inheritance:
+  - System.Object
+  - Prism.Mvvm.BindableBase
+  - Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}
+  - Prism.Regions.IRegionMemberLifetime
+  - Innova.Prism.Library.StructuredSearch.Views.IHasFilter
+  - Innova.Prism.Library.StructuredSearch.Views.ICanClosePopup
+  - Prism.IActiveAware
+  - Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel
+  inheritedMembers:
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.SearchFilterKey
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.SearchFieldsKey
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.HasFilterChanged
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.KeepAlive
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ClosePopup
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.IsActiveChanged
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.CanClosePopup
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.EventAggregator
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.LookupService
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ExecuteSearchCommand
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ClearAllOperatorsCommand
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.RemoveFilterCommand
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.Fields
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.HasFilter
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.SelectedLogicalOperator
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.MaxResultCount
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.MaxResultCountItemSource
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ControlIsExpanded
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ExecuteSearchOnStartup
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ShowMaxResult
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ShowSetLogicalOperators
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.IsActive
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.LoadData
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.DisableMaxResultCount
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.EnableMaxResultCount
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.OnNavigatedTo(Prism.Regions.NavigationParameters)
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.LeavingView
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.RaiseSearchEvent(Innova.Data.StructuredSearch.EntityQuery{{T}})
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.SaveState
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.SetInitialState
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.OnClose
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.UpdateCommands
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.CanExecuteSearch
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.CanClearAllOperators
+  - Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}.ViewState
+  - Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}.PreviousNavigationState
+  - Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}.ParentNavigationState
+  - Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}.NavigationStateChanged
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  - Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  - Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  - Prism.Mvvm.BindableBase.PropertyChanged
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T)
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T)
+  name.vb: SimpleStructuredSearchViewModel(Of T)
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ViewStateKey
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ViewStateKey
+  id: ViewStateKey
+  parent: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: ViewStateKey
+  nameWithType: SimpleStructuredSearchViewModel<T>.ViewStateKey
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.ViewStateKey
+  type: Property
+  source:
+    id: ViewStateKey
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StructuredSearch\Views\SimpleStructuredSearchViewModel.cs
+    startLine: 19
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.StructuredSearch.Views
+  example: []
+  syntax:
+    content: public override string ViewStateKey { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property ViewStateKey As String
+  overridden: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ViewStateKey
+  overload: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ViewStateKey*
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).ViewStateKey
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).ViewStateKey
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.QueryFields
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.QueryFields
+  id: QueryFields
+  parent: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: QueryFields
+  nameWithType: SimpleStructuredSearchViewModel<T>.QueryFields
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.QueryFields
+  type: Property
+  source:
+    id: QueryFields
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StructuredSearch\Views\SimpleStructuredSearchViewModel.cs
+    startLine: 20
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.StructuredSearch.Views
+  syntax:
+    content: public ObservableCollection<EntitySearchFieldViewModel> QueryFields { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.StructuredSearch.EntitySearchFieldViewModel}
+    content.vb: Public Property QueryFields As ObservableCollection(Of EntitySearchFieldViewModel)
+  overload: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.QueryFields*
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).QueryFields
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).QueryFields
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.#ctor(Prism.Events.IEventAggregator,Innova.Prism.Library.Services.ILookupService)
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.#ctor(Prism.Events.IEventAggregator,Innova.Prism.Library.Services.ILookupService)
+  id: '#ctor(Prism.Events.IEventAggregator,Innova.Prism.Library.Services.ILookupService)'
+  parent: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: SimpleStructuredSearchViewModel(IEventAggregator, ILookupService)
+  nameWithType: SimpleStructuredSearchViewModel<T>.SimpleStructuredSearchViewModel(IEventAggregator, ILookupService)
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.SimpleStructuredSearchViewModel(Prism.Events.IEventAggregator, Innova.Prism.Library.Services.ILookupService)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StructuredSearch\Views\SimpleStructuredSearchViewModel.cs
+    startLine: 29
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.StructuredSearch.Views
+  syntax:
+    content: protected SimpleStructuredSearchViewModel(IEventAggregator eventAggregator, ILookupService lookupService)
+    parameters:
+    - id: eventAggregator
+      type: Prism.Events.IEventAggregator
+    - id: lookupService
+      type: Innova.Prism.Library.Services.ILookupService
+    content.vb: Protected Sub New(eventAggregator As IEventAggregator, lookupService As ILookupService)
+  overload: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.#ctor*
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).New(IEventAggregator, ILookupService)
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).New(Prism.Events.IEventAggregator, Innova.Prism.Library.Services.ILookupService)
+  name.vb: New(IEventAggregator, ILookupService)
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.OnIsActiveChanged
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.OnIsActiveChanged
+  id: OnIsActiveChanged
+  parent: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: OnIsActiveChanged()
+  nameWithType: SimpleStructuredSearchViewModel<T>.OnIsActiveChanged()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.OnIsActiveChanged()
+  type: Method
+  source:
+    id: OnIsActiveChanged
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StructuredSearch\Views\SimpleStructuredSearchViewModel.cs
+    startLine: 35
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.StructuredSearch.Views
+  example: []
+  syntax:
+    content: protected override void OnIsActiveChanged()
+    content.vb: Protected Overrides Sub OnIsActiveChanged()
+  overridden: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.OnIsActiveChanged
+  overload: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.OnIsActiveChanged*
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).OnIsActiveChanged()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).OnIsActiveChanged()
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ActivateAllFields
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ActivateAllFields
+  id: ActivateAllFields
+  parent: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: ActivateAllFields()
+  nameWithType: SimpleStructuredSearchViewModel<T>.ActivateAllFields()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.ActivateAllFields()
+  type: Method
+  source:
+    id: ActivateAllFields
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StructuredSearch\Views\SimpleStructuredSearchViewModel.cs
+    startLine: 44
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.StructuredSearch.Views
+  example: []
+  syntax:
+    content: public void ActivateAllFields()
+    content.vb: Public Sub ActivateAllFields()
+  overload: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ActivateAllFields*
+  implements:
+  - Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel.ActivateAllFields
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).ActivateAllFields()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).ActivateAllFields()
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  id: SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  parent: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: SetQueryParametersFromViewState(EntitySavedQuery)
+  nameWithType: SimpleStructuredSearchViewModel<T>.SetQueryParametersFromViewState(EntitySavedQuery)
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  type: Method
+  source:
+    id: SetQueryParametersFromViewState
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StructuredSearch\Views\SimpleStructuredSearchViewModel.cs
+    startLine: 59
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.StructuredSearch.Views
+  example: []
+  syntax:
+    content: protected override void SetQueryParametersFromViewState(EntitySavedQuery entitySavedQuery)
+    parameters:
+    - id: entitySavedQuery
+      type: Innova.Data.StructuredSearch.EntitySavedQuery
+    content.vb: Protected Overrides Sub SetQueryParametersFromViewState(entitySavedQuery As EntitySavedQuery)
+  overridden: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  overload: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.SetQueryParametersFromViewState*
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).SetQueryParametersFromViewState(EntitySavedQuery)
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.CreateEntitySavedQuery
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.CreateEntitySavedQuery
+  id: CreateEntitySavedQuery
+  parent: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: CreateEntitySavedQuery()
+  nameWithType: SimpleStructuredSearchViewModel<T>.CreateEntitySavedQuery()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.CreateEntitySavedQuery()
+  type: Method
+  source:
+    id: CreateEntitySavedQuery
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StructuredSearch\Views\SimpleStructuredSearchViewModel.cs
+    startLine: 73
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.StructuredSearch.Views
+  example: []
+  syntax:
+    content: protected override EntitySavedQuery CreateEntitySavedQuery()
+    return:
+      type: Innova.Data.StructuredSearch.EntitySavedQuery
+    content.vb: Protected Overrides Function CreateEntitySavedQuery() As EntitySavedQuery
+  overridden: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.CreateEntitySavedQuery
+  overload: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.CreateEntitySavedQuery*
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).CreateEntitySavedQuery()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).CreateEntitySavedQuery()
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ExecuteSearch
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ExecuteSearch
+  id: ExecuteSearch
+  parent: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: ExecuteSearch()
+  nameWithType: SimpleStructuredSearchViewModel<T>.ExecuteSearch()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.ExecuteSearch()
+  type: Method
+  source:
+    id: ExecuteSearch
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StructuredSearch\Views\SimpleStructuredSearchViewModel.cs
+    startLine: 81
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.StructuredSearch.Views
+  example: []
+  syntax:
+    content: protected override void ExecuteSearch()
+    content.vb: Protected Overrides Sub ExecuteSearch()
+  overridden: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ExecuteSearch
+  overload: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ExecuteSearch*
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).ExecuteSearch()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).ExecuteSearch()
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ExecuteClearAllOperators
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ExecuteClearAllOperators
+  id: ExecuteClearAllOperators
+  parent: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: ExecuteClearAllOperators()
+  nameWithType: SimpleStructuredSearchViewModel<T>.ExecuteClearAllOperators()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.ExecuteClearAllOperators()
+  type: Method
+  source:
+    id: ExecuteClearAllOperators
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StructuredSearch\Views\SimpleStructuredSearchViewModel.cs
+    startLine: 109
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.StructuredSearch.Views
+  example: []
+  syntax:
+    content: protected override void ExecuteClearAllOperators()
+    content.vb: Protected Overrides Sub ExecuteClearAllOperators()
+  overridden: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ExecuteClearAllOperators
+  overload: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ExecuteClearAllOperators*
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).ExecuteClearAllOperators()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).ExecuteClearAllOperators()
+references:
+- uid: Innova.Prism.Library.StructuredSearch.Views
+  commentId: N:Innova.Prism.Library.StructuredSearch.Views
+  href: Innova.html
+  name: Innova.Prism.Library.StructuredSearch.Views
+  nameWithType: Innova.Prism.Library.StructuredSearch.Views
+  fullName: Innova.Prism.Library.StructuredSearch.Views
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.StructuredSearch
+    name: StructuredSearch
+    href: Innova.Prism.Library.StructuredSearch.html
+  - name: .
+  - uid: Innova.Prism.Library.StructuredSearch.Views
+    name: Views
+    href: Innova.Prism.Library.StructuredSearch.Views.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.StructuredSearch
+    name: StructuredSearch
+    href: Innova.Prism.Library.StructuredSearch.html
+  - name: .
+  - uid: Innova.Prism.Library.StructuredSearch.Views
+    name: Views
+    href: Innova.Prism.Library.StructuredSearch.Views.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Prism.Mvvm.BindableBase
+  commentId: T:Prism.Mvvm.BindableBase
+  parent: Prism.Mvvm
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: BindableBase
+  nameWithType: BindableBase
+  fullName: Prism.Mvvm.BindableBase
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}
+  commentId: T:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}
+  parent: Innova.Prism.Library.BaseViewModels
+  definition: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.html
+  name: NavigationAwareViewModel<NavigationState>
+  nameWithType: NavigationAwareViewModel<NavigationState>
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<Innova.Prism.Library.BaseViewModels.NavigationState>
+  nameWithType.vb: NavigationAwareViewModel(Of NavigationState)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of Innova.Prism.Library.BaseViewModels.NavigationState)
+  name.vb: NavigationAwareViewModel(Of NavigationState)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+    name: NavigationAwareViewModel
+    href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.html
+  - name: <
+  - uid: Innova.Prism.Library.BaseViewModels.NavigationState
+    name: NavigationState
+    href: Innova.Prism.Library.BaseViewModels.NavigationState.html
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+    name: NavigationAwareViewModel
+    href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.BaseViewModels.NavigationState
+    name: NavigationState
+    href: Innova.Prism.Library.BaseViewModels.NavigationState.html
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  commentId: T:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}
+  parent: Innova.Prism.Library.StructuredSearch.Views
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.html
+  name: BaseStructuredSearchViewModel<T>
+  nameWithType: BaseStructuredSearchViewModel<T>
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T)
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T)
+  name.vb: BaseStructuredSearchViewModel(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1
+    name: BaseStructuredSearchViewModel
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1
+    name: BaseStructuredSearchViewModel
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}
+  commentId: T:Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}
+  parent: Innova.Prism.Library.BaseViewModels
+  definition: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1
+  href: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel-1.html
+  name: INavigationAwareViewModel<NavigationState>
+  nameWithType: INavigationAwareViewModel<NavigationState>
+  fullName: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel<Innova.Prism.Library.BaseViewModels.NavigationState>
+  nameWithType.vb: INavigationAwareViewModel(Of NavigationState)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel(Of Innova.Prism.Library.BaseViewModels.NavigationState)
+  name.vb: INavigationAwareViewModel(Of NavigationState)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1
+    name: INavigationAwareViewModel
+    href: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel-1.html
+  - name: <
+  - uid: Innova.Prism.Library.BaseViewModels.NavigationState
+    name: NavigationState
+    href: Innova.Prism.Library.BaseViewModels.NavigationState.html
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1
+    name: INavigationAwareViewModel
+    href: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.BaseViewModels.NavigationState
+    name: NavigationState
+    href: Innova.Prism.Library.BaseViewModels.NavigationState.html
+  - name: )
+- uid: Prism.Regions.IRegionMemberLifetime
+  commentId: T:Prism.Regions.IRegionMemberLifetime
+  parent: Prism.Regions
+  isExternal: true
+  name: IRegionMemberLifetime
+  nameWithType: IRegionMemberLifetime
+  fullName: Prism.Regions.IRegionMemberLifetime
+- uid: Innova.Prism.Library.StructuredSearch.Views.IHasFilter
+  commentId: T:Innova.Prism.Library.StructuredSearch.Views.IHasFilter
+  parent: Innova.Prism.Library.StructuredSearch.Views
+  href: Innova.Prism.Library.StructuredSearch.Views.IHasFilter.html
+  name: IHasFilter
+  nameWithType: IHasFilter
+  fullName: Innova.Prism.Library.StructuredSearch.Views.IHasFilter
+- uid: Innova.Prism.Library.StructuredSearch.Views.ICanClosePopup
+  commentId: T:Innova.Prism.Library.StructuredSearch.Views.ICanClosePopup
+  parent: Innova.Prism.Library.StructuredSearch.Views
+  href: Innova.Prism.Library.StructuredSearch.Views.ICanClosePopup.html
+  name: ICanClosePopup
+  nameWithType: ICanClosePopup
+  fullName: Innova.Prism.Library.StructuredSearch.Views.ICanClosePopup
+- uid: Prism.IActiveAware
+  commentId: T:Prism.IActiveAware
+  parent: Prism
+  isExternal: true
+  name: IActiveAware
+  nameWithType: IActiveAware
+  fullName: Prism.IActiveAware
+- uid: Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel
+  commentId: T:Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel
+  parent: Innova.Prism.Library.StructuredSearch.Views
+  href: Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel.html
+  name: ISimpleStructuredSearchViewModel
+  nameWithType: ISimpleStructuredSearchViewModel
+  fullName: Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.SearchFilterKey
+  commentId: F:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.SearchFilterKey
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SearchFilterKey
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SearchFilterKey.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SearchFilterKey
+  name: SearchFilterKey
+  nameWithType: BaseStructuredSearchViewModel<T>.SearchFilterKey
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.SearchFilterKey
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).SearchFilterKey
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).SearchFilterKey
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.SearchFieldsKey
+  commentId: F:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.SearchFieldsKey
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SearchFieldsKey
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SearchFieldsKey.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SearchFieldsKey
+  name: SearchFieldsKey
+  nameWithType: BaseStructuredSearchViewModel<T>.SearchFieldsKey
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.SearchFieldsKey
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).SearchFieldsKey
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).SearchFieldsKey
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.HasFilterChanged
+  commentId: E:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.HasFilterChanged
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.HasFilterChanged
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.HasFilterChanged.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_HasFilterChanged
+  name: HasFilterChanged
+  nameWithType: BaseStructuredSearchViewModel<T>.HasFilterChanged
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.HasFilterChanged
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).HasFilterChanged
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).HasFilterChanged
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.KeepAlive
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.KeepAlive
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.KeepAlive
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.KeepAlive.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_KeepAlive
+  name: KeepAlive
+  nameWithType: BaseStructuredSearchViewModel<T>.KeepAlive
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.KeepAlive
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).KeepAlive
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).KeepAlive
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ClosePopup
+  commentId: E:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.ClosePopup
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ClosePopup
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ClosePopup.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ClosePopup
+  name: ClosePopup
+  nameWithType: BaseStructuredSearchViewModel<T>.ClosePopup
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ClosePopup
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ClosePopup
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ClosePopup
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.IsActiveChanged
+  commentId: E:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.IsActiveChanged
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.IsActiveChanged
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.IsActiveChanged.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_IsActiveChanged
+  name: IsActiveChanged
+  nameWithType: BaseStructuredSearchViewModel<T>.IsActiveChanged
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.IsActiveChanged
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).IsActiveChanged
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).IsActiveChanged
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.CanClosePopup
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.CanClosePopup
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CanClosePopup
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CanClosePopup.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CanClosePopup
+  name: CanClosePopup
+  nameWithType: BaseStructuredSearchViewModel<T>.CanClosePopup
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.CanClosePopup
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).CanClosePopup
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).CanClosePopup
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.EventAggregator
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.EventAggregator
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.EventAggregator
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.EventAggregator.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_EventAggregator
+  name: EventAggregator
+  nameWithType: BaseStructuredSearchViewModel<T>.EventAggregator
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.EventAggregator
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).EventAggregator
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).EventAggregator
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.LookupService
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.LookupService
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.LookupService
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.LookupService.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_LookupService
+  name: LookupService
+  nameWithType: BaseStructuredSearchViewModel<T>.LookupService
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.LookupService
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).LookupService
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).LookupService
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ExecuteSearchCommand
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.ExecuteSearchCommand
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteSearchCommand
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteSearchCommand.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteSearchCommand
+  name: ExecuteSearchCommand
+  nameWithType: BaseStructuredSearchViewModel<T>.ExecuteSearchCommand
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ExecuteSearchCommand
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ExecuteSearchCommand
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ExecuteSearchCommand
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ClearAllOperatorsCommand
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.ClearAllOperatorsCommand
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ClearAllOperatorsCommand
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ClearAllOperatorsCommand.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ClearAllOperatorsCommand
+  name: ClearAllOperatorsCommand
+  nameWithType: BaseStructuredSearchViewModel<T>.ClearAllOperatorsCommand
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ClearAllOperatorsCommand
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ClearAllOperatorsCommand
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ClearAllOperatorsCommand
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.RemoveFilterCommand
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.RemoveFilterCommand
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.RemoveFilterCommand
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.RemoveFilterCommand.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_RemoveFilterCommand
+  name: RemoveFilterCommand
+  nameWithType: BaseStructuredSearchViewModel<T>.RemoveFilterCommand
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.RemoveFilterCommand
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).RemoveFilterCommand
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).RemoveFilterCommand
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.Fields
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.Fields
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.Fields
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.Fields.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_Fields
+  name: Fields
+  nameWithType: BaseStructuredSearchViewModel<T>.Fields
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.Fields
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).Fields
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).Fields
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.HasFilter
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.HasFilter
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.HasFilter
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.HasFilter.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_HasFilter
+  name: HasFilter
+  nameWithType: BaseStructuredSearchViewModel<T>.HasFilter
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.HasFilter
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).HasFilter
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).HasFilter
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.SelectedLogicalOperator
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.SelectedLogicalOperator
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SelectedLogicalOperator
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SelectedLogicalOperator.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SelectedLogicalOperator
+  name: SelectedLogicalOperator
+  nameWithType: BaseStructuredSearchViewModel<T>.SelectedLogicalOperator
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.SelectedLogicalOperator
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).SelectedLogicalOperator
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).SelectedLogicalOperator
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.MaxResultCount
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.MaxResultCount
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.MaxResultCount
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.MaxResultCount.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_MaxResultCount
+  name: MaxResultCount
+  nameWithType: BaseStructuredSearchViewModel<T>.MaxResultCount
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.MaxResultCount
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).MaxResultCount
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).MaxResultCount
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.MaxResultCountItemSource
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.MaxResultCountItemSource
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.MaxResultCountItemSource
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.MaxResultCountItemSource.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_MaxResultCountItemSource
+  name: MaxResultCountItemSource
+  nameWithType: BaseStructuredSearchViewModel<T>.MaxResultCountItemSource
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.MaxResultCountItemSource
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).MaxResultCountItemSource
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).MaxResultCountItemSource
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ControlIsExpanded
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.ControlIsExpanded
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ControlIsExpanded
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ControlIsExpanded.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ControlIsExpanded
+  name: ControlIsExpanded
+  nameWithType: BaseStructuredSearchViewModel<T>.ControlIsExpanded
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ControlIsExpanded
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ControlIsExpanded
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ControlIsExpanded
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ExecuteSearchOnStartup
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.ExecuteSearchOnStartup
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteSearchOnStartup
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteSearchOnStartup.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteSearchOnStartup
+  name: ExecuteSearchOnStartup
+  nameWithType: BaseStructuredSearchViewModel<T>.ExecuteSearchOnStartup
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ExecuteSearchOnStartup
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ExecuteSearchOnStartup
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ExecuteSearchOnStartup
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ShowMaxResult
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.ShowMaxResult
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ShowMaxResult
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ShowMaxResult.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ShowMaxResult
+  name: ShowMaxResult
+  nameWithType: BaseStructuredSearchViewModel<T>.ShowMaxResult
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ShowMaxResult
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ShowMaxResult
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ShowMaxResult
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ShowSetLogicalOperators
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.ShowSetLogicalOperators
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ShowSetLogicalOperators
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ShowSetLogicalOperators.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ShowSetLogicalOperators
+  name: ShowSetLogicalOperators
+  nameWithType: BaseStructuredSearchViewModel<T>.ShowSetLogicalOperators
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ShowSetLogicalOperators
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ShowSetLogicalOperators
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ShowSetLogicalOperators
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.IsActive
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.IsActive
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.IsActive
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.IsActive.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_IsActive
+  name: IsActive
+  nameWithType: BaseStructuredSearchViewModel<T>.IsActive
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.IsActive
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).IsActive
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).IsActive
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.LoadData
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.LoadData
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.LoadData
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.LoadData.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_LoadData
+  name: LoadData()
+  nameWithType: BaseStructuredSearchViewModel<T>.LoadData()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.LoadData()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).LoadData()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).LoadData()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.LoadData
+    name: LoadData
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.LoadData.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_LoadData
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.LoadData
+    name: LoadData
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.LoadData.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_LoadData
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.DisableMaxResultCount
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.DisableMaxResultCount
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.DisableMaxResultCount
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.DisableMaxResultCount.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_DisableMaxResultCount
+  name: DisableMaxResultCount()
+  nameWithType: BaseStructuredSearchViewModel<T>.DisableMaxResultCount()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.DisableMaxResultCount()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).DisableMaxResultCount()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).DisableMaxResultCount()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.DisableMaxResultCount
+    name: DisableMaxResultCount
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.DisableMaxResultCount.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_DisableMaxResultCount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.DisableMaxResultCount
+    name: DisableMaxResultCount
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.DisableMaxResultCount.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_DisableMaxResultCount
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.EnableMaxResultCount
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.EnableMaxResultCount
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.EnableMaxResultCount
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.EnableMaxResultCount.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_EnableMaxResultCount
+  name: EnableMaxResultCount()
+  nameWithType: BaseStructuredSearchViewModel<T>.EnableMaxResultCount()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.EnableMaxResultCount()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).EnableMaxResultCount()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).EnableMaxResultCount()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.EnableMaxResultCount
+    name: EnableMaxResultCount
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.EnableMaxResultCount.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_EnableMaxResultCount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.EnableMaxResultCount
+    name: EnableMaxResultCount
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.EnableMaxResultCount.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_EnableMaxResultCount
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.OnNavigatedTo(Prism.Regions.NavigationParameters)
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.OnNavigatedTo(Prism.Regions.NavigationParameters)
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnNavigatedTo(Prism.Regions.NavigationParameters)
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnNavigatedTo.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnNavigatedTo_Prism_Regions_NavigationParameters_
+  name: OnNavigatedTo(NavigationParameters)
+  nameWithType: BaseStructuredSearchViewModel<T>.OnNavigatedTo(NavigationParameters)
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.OnNavigatedTo(Prism.Regions.NavigationParameters)
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).OnNavigatedTo(NavigationParameters)
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).OnNavigatedTo(Prism.Regions.NavigationParameters)
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.OnNavigatedTo(Prism.Regions.NavigationParameters)
+    name: OnNavigatedTo
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnNavigatedTo.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnNavigatedTo_Prism_Regions_NavigationParameters_
+  - name: (
+  - uid: Prism.Regions.NavigationParameters
+    name: NavigationParameters
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationParameters.cs
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.OnNavigatedTo(Prism.Regions.NavigationParameters)
+    name: OnNavigatedTo
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnNavigatedTo.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnNavigatedTo_Prism_Regions_NavigationParameters_
+  - name: (
+  - uid: Prism.Regions.NavigationParameters
+    name: NavigationParameters
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationParameters.cs
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnNavigatedFrom.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnNavigatedFrom_Prism_Regions_NavigationParameters_
+  name: OnNavigatedFrom(NavigationParameters)
+  nameWithType: BaseStructuredSearchViewModel<T>.OnNavigatedFrom(NavigationParameters)
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).OnNavigatedFrom(NavigationParameters)
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+    name: OnNavigatedFrom
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnNavigatedFrom.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnNavigatedFrom_Prism_Regions_NavigationParameters_
+  - name: (
+  - uid: Prism.Regions.NavigationParameters
+    name: NavigationParameters
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationParameters.cs
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+    name: OnNavigatedFrom
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnNavigatedFrom.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnNavigatedFrom_Prism_Regions_NavigationParameters_
+  - name: (
+  - uid: Prism.Regions.NavigationParameters
+    name: NavigationParameters
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationParameters.cs
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.LeavingView
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.LeavingView
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.LeavingView
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.LeavingView.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_LeavingView
+  name: LeavingView()
+  nameWithType: BaseStructuredSearchViewModel<T>.LeavingView()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.LeavingView()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).LeavingView()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).LeavingView()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.LeavingView
+    name: LeavingView
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.LeavingView.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_LeavingView
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.LeavingView
+    name: LeavingView
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.LeavingView.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_LeavingView
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.RaiseSearchEvent(Innova.Data.StructuredSearch.EntityQuery{{T}})
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.RaiseSearchEvent(Innova.Data.StructuredSearch.EntityQuery{`0})
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.RaiseSearchEvent(Innova.Data.StructuredSearch.EntityQuery{`0})
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.RaiseSearchEvent.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_RaiseSearchEvent_Innova_Data_StructuredSearch_EntityQuery__0__
+  name: RaiseSearchEvent(EntityQuery<T>)
+  nameWithType: BaseStructuredSearchViewModel<T>.RaiseSearchEvent(EntityQuery<T>)
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.RaiseSearchEvent(Innova.Data.StructuredSearch.EntityQuery<T>)
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).RaiseSearchEvent(EntityQuery(Of T))
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).RaiseSearchEvent(Innova.Data.StructuredSearch.EntityQuery(Of T))
+  name.vb: RaiseSearchEvent(EntityQuery(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.RaiseSearchEvent(Innova.Data.StructuredSearch.EntityQuery{`0})
+    name: RaiseSearchEvent
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.RaiseSearchEvent.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_RaiseSearchEvent_Innova_Data_StructuredSearch_EntityQuery__0__
+  - name: (
+  - uid: Innova.Data.StructuredSearch.EntityQuery`1
+    name: EntityQuery
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.RaiseSearchEvent(Innova.Data.StructuredSearch.EntityQuery{`0})
+    name: RaiseSearchEvent
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.RaiseSearchEvent.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_RaiseSearchEvent_Innova_Data_StructuredSearch_EntityQuery__0__
+  - name: (
+  - uid: Innova.Data.StructuredSearch.EntityQuery`1
+    name: EntityQuery
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.SaveState
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.SaveState
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SaveState
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SaveState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SaveState
+  name: SaveState()
+  nameWithType: BaseStructuredSearchViewModel<T>.SaveState()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.SaveState()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).SaveState()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).SaveState()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.SaveState
+    name: SaveState
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SaveState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SaveState
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.SaveState
+    name: SaveState
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SaveState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SaveState
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.SetInitialState
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.SetInitialState
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SetInitialState
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SetInitialState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SetInitialState
+  name: SetInitialState()
+  nameWithType: BaseStructuredSearchViewModel<T>.SetInitialState()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.SetInitialState()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).SetInitialState()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).SetInitialState()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.SetInitialState
+    name: SetInitialState
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SetInitialState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SetInitialState
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.SetInitialState
+    name: SetInitialState
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SetInitialState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SetInitialState
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.OnClose
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.OnClose
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnClose
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnClose.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnClose
+  name: OnClose()
+  nameWithType: BaseStructuredSearchViewModel<T>.OnClose()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.OnClose()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).OnClose()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).OnClose()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.OnClose
+    name: OnClose
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnClose.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnClose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.OnClose
+    name: OnClose
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnClose.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnClose
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.UpdateCommands
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.UpdateCommands
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.UpdateCommands
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.UpdateCommands.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_UpdateCommands
+  name: UpdateCommands()
+  nameWithType: BaseStructuredSearchViewModel<T>.UpdateCommands()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.UpdateCommands()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).UpdateCommands()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).UpdateCommands()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.UpdateCommands
+    name: UpdateCommands
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.UpdateCommands.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_UpdateCommands
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.UpdateCommands
+    name: UpdateCommands
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.UpdateCommands.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_UpdateCommands
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.CanExecuteSearch
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.CanExecuteSearch
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CanExecuteSearch
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CanExecuteSearch.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CanExecuteSearch
+  name: CanExecuteSearch()
+  nameWithType: BaseStructuredSearchViewModel<T>.CanExecuteSearch()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.CanExecuteSearch()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).CanExecuteSearch()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).CanExecuteSearch()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.CanExecuteSearch
+    name: CanExecuteSearch
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CanExecuteSearch.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CanExecuteSearch
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.CanExecuteSearch
+    name: CanExecuteSearch
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CanExecuteSearch.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CanExecuteSearch
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.CanClearAllOperators
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.CanClearAllOperators
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CanClearAllOperators
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CanClearAllOperators.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CanClearAllOperators
+  name: CanClearAllOperators()
+  nameWithType: BaseStructuredSearchViewModel<T>.CanClearAllOperators()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.CanClearAllOperators()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).CanClearAllOperators()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).CanClearAllOperators()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.CanClearAllOperators
+    name: CanClearAllOperators
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CanClearAllOperators.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CanClearAllOperators
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.CanClearAllOperators
+    name: CanClearAllOperators
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CanClearAllOperators.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CanClearAllOperators
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}.ViewState
+  commentId: P:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}.ViewState
+  parent: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}
+  definition: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ViewState
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.ViewState.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_ViewState
+  name: ViewState
+  nameWithType: NavigationAwareViewModel<NavigationState>.ViewState
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<Innova.Prism.Library.BaseViewModels.NavigationState>.ViewState
+  nameWithType.vb: NavigationAwareViewModel(Of NavigationState).ViewState
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of Innova.Prism.Library.BaseViewModels.NavigationState).ViewState
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}.PreviousNavigationState
+  commentId: P:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}.PreviousNavigationState
+  parent: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}
+  definition: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.PreviousNavigationState
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.PreviousNavigationState.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_PreviousNavigationState
+  name: PreviousNavigationState
+  nameWithType: NavigationAwareViewModel<NavigationState>.PreviousNavigationState
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<Innova.Prism.Library.BaseViewModels.NavigationState>.PreviousNavigationState
+  nameWithType.vb: NavigationAwareViewModel(Of NavigationState).PreviousNavigationState
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of Innova.Prism.Library.BaseViewModels.NavigationState).PreviousNavigationState
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}.ParentNavigationState
+  commentId: P:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}.ParentNavigationState
+  parent: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}
+  definition: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ParentNavigationState
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.ParentNavigationState.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_ParentNavigationState
+  name: ParentNavigationState
+  nameWithType: NavigationAwareViewModel<NavigationState>.ParentNavigationState
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<Innova.Prism.Library.BaseViewModels.NavigationState>.ParentNavigationState
+  nameWithType.vb: NavigationAwareViewModel(Of NavigationState).ParentNavigationState
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of Innova.Prism.Library.BaseViewModels.NavigationState).ParentNavigationState
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}.NavigationStateChanged
+  commentId: M:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}.NavigationStateChanged
+  parent: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}
+  definition: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.NavigationStateChanged
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.NavigationStateChanged.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_NavigationStateChanged
+  name: NavigationStateChanged()
+  nameWithType: NavigationAwareViewModel<NavigationState>.NavigationStateChanged()
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<Innova.Prism.Library.BaseViewModels.NavigationState>.NavigationStateChanged()
+  nameWithType.vb: NavigationAwareViewModel(Of NavigationState).NavigationStateChanged()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of Innova.Prism.Library.BaseViewModels.NavigationState).NavigationStateChanged()
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}.NavigationStateChanged
+    name: NavigationStateChanged
+    href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.NavigationStateChanged.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_NavigationStateChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel{Innova.Prism.Library.BaseViewModels.NavigationState}.NavigationStateChanged
+    name: NavigationStateChanged
+    href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.NavigationStateChanged.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_NavigationStateChanged
+  - name: (
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  commentId: M:Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: RaisePropertyChanged(string)
+  nameWithType: BindableBase.RaisePropertyChanged(string)
+  fullName: Prism.Mvvm.BindableBase.RaisePropertyChanged(string)
+  nameWithType.vb: BindableBase.RaisePropertyChanged(String)
+  fullName.vb: Prism.Mvvm.BindableBase.RaisePropertyChanged(String)
+  name.vb: RaisePropertyChanged(String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: OnPropertyChanged(PropertyChangedEventArgs)
+  nameWithType: BindableBase.OnPropertyChanged(PropertyChangedEventArgs)
+  fullName: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: Prism.Mvvm.BindableBase.PropertyChanged
+  commentId: E:Prism.Mvvm.BindableBase.PropertyChanged
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: PropertyChanged
+  nameWithType: BindableBase.PropertyChanged
+  fullName: Prism.Mvvm.BindableBase.PropertyChanged
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Prism.Mvvm
+  commentId: N:Prism.Mvvm
+  isExternal: true
+  name: Prism.Mvvm
+  nameWithType: Prism.Mvvm
+  fullName: Prism.Mvvm
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+  commentId: T:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.html
+  name: NavigationAwareViewModel<TState>
+  nameWithType: NavigationAwareViewModel<TState>
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>
+  nameWithType.vb: NavigationAwareViewModel(Of TState)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState)
+  name.vb: NavigationAwareViewModel(Of TState)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+    name: NavigationAwareViewModel
+    href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.html
+  - name: <
+  - name: TState
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+    name: NavigationAwareViewModel
+    href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels
+  commentId: N:Innova.Prism.Library.BaseViewModels
+  href: Innova.html
+  name: Innova.Prism.Library.BaseViewModels
+  nameWithType: Innova.Prism.Library.BaseViewModels
+  fullName: Innova.Prism.Library.BaseViewModels
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.BaseViewModels
+    name: BaseViewModels
+    href: Innova.Prism.Library.BaseViewModels.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.BaseViewModels
+    name: BaseViewModels
+    href: Innova.Prism.Library.BaseViewModels.html
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1
+  commentId: T:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.html
+  name: BaseStructuredSearchViewModel<T>
+  nameWithType: BaseStructuredSearchViewModel<T>
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T)
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T)
+  name.vb: BaseStructuredSearchViewModel(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1
+    name: BaseStructuredSearchViewModel
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1
+    name: BaseStructuredSearchViewModel
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1
+  commentId: T:Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1
+  href: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel-1.html
+  name: INavigationAwareViewModel<TState>
+  nameWithType: INavigationAwareViewModel<TState>
+  fullName: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel<TState>
+  nameWithType.vb: INavigationAwareViewModel(Of TState)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel(Of TState)
+  name.vb: INavigationAwareViewModel(Of TState)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1
+    name: INavigationAwareViewModel
+    href: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel-1.html
+  - name: <
+  - name: TState
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1
+    name: INavigationAwareViewModel
+    href: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: )
+- uid: Prism.Regions
+  commentId: N:Prism.Regions
+  href: Prism.html
+  name: Prism.Regions
+  nameWithType: Prism.Regions
+  fullName: Prism.Regions
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Regions
+    name: Regions
+    href: Prism.Regions.html
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Regions
+    name: Regions
+    href: Prism.Regions.html
+- uid: Prism
+  isExternal: true
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SearchFilterKey
+  commentId: F:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SearchFilterKey
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SearchFilterKey.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SearchFilterKey
+  name: SearchFilterKey
+  nameWithType: BaseStructuredSearchViewModel<T>.SearchFilterKey
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.SearchFilterKey
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).SearchFilterKey
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).SearchFilterKey
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SearchFieldsKey
+  commentId: F:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SearchFieldsKey
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SearchFieldsKey.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SearchFieldsKey
+  name: SearchFieldsKey
+  nameWithType: BaseStructuredSearchViewModel<T>.SearchFieldsKey
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.SearchFieldsKey
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).SearchFieldsKey
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).SearchFieldsKey
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.HasFilterChanged
+  commentId: E:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.HasFilterChanged
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.HasFilterChanged.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_HasFilterChanged
+  name: HasFilterChanged
+  nameWithType: BaseStructuredSearchViewModel<T>.HasFilterChanged
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.HasFilterChanged
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).HasFilterChanged
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).HasFilterChanged
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.KeepAlive
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.KeepAlive
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.KeepAlive.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_KeepAlive
+  name: KeepAlive
+  nameWithType: BaseStructuredSearchViewModel<T>.KeepAlive
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.KeepAlive
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).KeepAlive
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).KeepAlive
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ClosePopup
+  commentId: E:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ClosePopup
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ClosePopup.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ClosePopup
+  name: ClosePopup
+  nameWithType: BaseStructuredSearchViewModel<T>.ClosePopup
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ClosePopup
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ClosePopup
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ClosePopup
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.IsActiveChanged
+  commentId: E:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.IsActiveChanged
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.IsActiveChanged.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_IsActiveChanged
+  name: IsActiveChanged
+  nameWithType: BaseStructuredSearchViewModel<T>.IsActiveChanged
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.IsActiveChanged
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).IsActiveChanged
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).IsActiveChanged
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CanClosePopup
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CanClosePopup
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CanClosePopup.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CanClosePopup
+  name: CanClosePopup
+  nameWithType: BaseStructuredSearchViewModel<T>.CanClosePopup
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.CanClosePopup
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).CanClosePopup
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).CanClosePopup
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.EventAggregator
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.EventAggregator
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.EventAggregator.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_EventAggregator
+  name: EventAggregator
+  nameWithType: BaseStructuredSearchViewModel<T>.EventAggregator
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.EventAggregator
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).EventAggregator
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).EventAggregator
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.LookupService
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.LookupService
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.LookupService.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_LookupService
+  name: LookupService
+  nameWithType: BaseStructuredSearchViewModel<T>.LookupService
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.LookupService
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).LookupService
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).LookupService
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteSearchCommand
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteSearchCommand
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteSearchCommand.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteSearchCommand
+  name: ExecuteSearchCommand
+  nameWithType: BaseStructuredSearchViewModel<T>.ExecuteSearchCommand
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ExecuteSearchCommand
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ExecuteSearchCommand
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ExecuteSearchCommand
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ClearAllOperatorsCommand
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ClearAllOperatorsCommand
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ClearAllOperatorsCommand.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ClearAllOperatorsCommand
+  name: ClearAllOperatorsCommand
+  nameWithType: BaseStructuredSearchViewModel<T>.ClearAllOperatorsCommand
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ClearAllOperatorsCommand
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ClearAllOperatorsCommand
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ClearAllOperatorsCommand
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.RemoveFilterCommand
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.RemoveFilterCommand
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.RemoveFilterCommand.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_RemoveFilterCommand
+  name: RemoveFilterCommand
+  nameWithType: BaseStructuredSearchViewModel<T>.RemoveFilterCommand
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.RemoveFilterCommand
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).RemoveFilterCommand
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).RemoveFilterCommand
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.Fields
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.Fields
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.Fields.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_Fields
+  name: Fields
+  nameWithType: BaseStructuredSearchViewModel<T>.Fields
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.Fields
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).Fields
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).Fields
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.HasFilter
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.HasFilter
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.HasFilter.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_HasFilter
+  name: HasFilter
+  nameWithType: BaseStructuredSearchViewModel<T>.HasFilter
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.HasFilter
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).HasFilter
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).HasFilter
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SelectedLogicalOperator
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SelectedLogicalOperator
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SelectedLogicalOperator.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SelectedLogicalOperator
+  name: SelectedLogicalOperator
+  nameWithType: BaseStructuredSearchViewModel<T>.SelectedLogicalOperator
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.SelectedLogicalOperator
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).SelectedLogicalOperator
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).SelectedLogicalOperator
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.MaxResultCount
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.MaxResultCount
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.MaxResultCount.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_MaxResultCount
+  name: MaxResultCount
+  nameWithType: BaseStructuredSearchViewModel<T>.MaxResultCount
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.MaxResultCount
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).MaxResultCount
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).MaxResultCount
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.MaxResultCountItemSource
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.MaxResultCountItemSource
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.MaxResultCountItemSource.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_MaxResultCountItemSource
+  name: MaxResultCountItemSource
+  nameWithType: BaseStructuredSearchViewModel<T>.MaxResultCountItemSource
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.MaxResultCountItemSource
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).MaxResultCountItemSource
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).MaxResultCountItemSource
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ControlIsExpanded
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ControlIsExpanded
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ControlIsExpanded.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ControlIsExpanded
+  name: ControlIsExpanded
+  nameWithType: BaseStructuredSearchViewModel<T>.ControlIsExpanded
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ControlIsExpanded
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ControlIsExpanded
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ControlIsExpanded
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteSearchOnStartup
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteSearchOnStartup
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteSearchOnStartup.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteSearchOnStartup
+  name: ExecuteSearchOnStartup
+  nameWithType: BaseStructuredSearchViewModel<T>.ExecuteSearchOnStartup
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ExecuteSearchOnStartup
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ExecuteSearchOnStartup
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ExecuteSearchOnStartup
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ShowMaxResult
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ShowMaxResult
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ShowMaxResult.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ShowMaxResult
+  name: ShowMaxResult
+  nameWithType: BaseStructuredSearchViewModel<T>.ShowMaxResult
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ShowMaxResult
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ShowMaxResult
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ShowMaxResult
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ShowSetLogicalOperators
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ShowSetLogicalOperators
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ShowSetLogicalOperators.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ShowSetLogicalOperators
+  name: ShowSetLogicalOperators
+  nameWithType: BaseStructuredSearchViewModel<T>.ShowSetLogicalOperators
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ShowSetLogicalOperators
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ShowSetLogicalOperators
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ShowSetLogicalOperators
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.IsActive
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.IsActive
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.IsActive.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_IsActive
+  name: IsActive
+  nameWithType: BaseStructuredSearchViewModel<T>.IsActive
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.IsActive
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).IsActive
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).IsActive
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.LoadData
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.LoadData
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.LoadData.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_LoadData
+  name: LoadData()
+  nameWithType: BaseStructuredSearchViewModel<T>.LoadData()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.LoadData()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).LoadData()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).LoadData()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.LoadData
+    name: LoadData
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.LoadData.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_LoadData
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.LoadData
+    name: LoadData
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.LoadData.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_LoadData
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.DisableMaxResultCount
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.DisableMaxResultCount
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.DisableMaxResultCount.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_DisableMaxResultCount
+  name: DisableMaxResultCount()
+  nameWithType: BaseStructuredSearchViewModel<T>.DisableMaxResultCount()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.DisableMaxResultCount()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).DisableMaxResultCount()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).DisableMaxResultCount()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.DisableMaxResultCount
+    name: DisableMaxResultCount
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.DisableMaxResultCount.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_DisableMaxResultCount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.DisableMaxResultCount
+    name: DisableMaxResultCount
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.DisableMaxResultCount.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_DisableMaxResultCount
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.EnableMaxResultCount
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.EnableMaxResultCount
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.EnableMaxResultCount.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_EnableMaxResultCount
+  name: EnableMaxResultCount()
+  nameWithType: BaseStructuredSearchViewModel<T>.EnableMaxResultCount()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.EnableMaxResultCount()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).EnableMaxResultCount()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).EnableMaxResultCount()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.EnableMaxResultCount
+    name: EnableMaxResultCount
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.EnableMaxResultCount.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_EnableMaxResultCount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.EnableMaxResultCount
+    name: EnableMaxResultCount
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.EnableMaxResultCount.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_EnableMaxResultCount
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnNavigatedTo(Prism.Regions.NavigationParameters)
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnNavigatedTo(Prism.Regions.NavigationParameters)
+  isExternal: true
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnNavigatedTo.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnNavigatedTo_Prism_Regions_NavigationParameters_
+  name: OnNavigatedTo(NavigationParameters)
+  nameWithType: BaseStructuredSearchViewModel<T>.OnNavigatedTo(NavigationParameters)
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.OnNavigatedTo(Prism.Regions.NavigationParameters)
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).OnNavigatedTo(NavigationParameters)
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).OnNavigatedTo(Prism.Regions.NavigationParameters)
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnNavigatedTo(Prism.Regions.NavigationParameters)
+    name: OnNavigatedTo
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnNavigatedTo.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnNavigatedTo_Prism_Regions_NavigationParameters_
+  - name: (
+  - uid: Prism.Regions.NavigationParameters
+    name: NavigationParameters
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationParameters.cs
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnNavigatedTo(Prism.Regions.NavigationParameters)
+    name: OnNavigatedTo
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnNavigatedTo.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnNavigatedTo_Prism_Regions_NavigationParameters_
+  - name: (
+  - uid: Prism.Regions.NavigationParameters
+    name: NavigationParameters
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationParameters.cs
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  isExternal: true
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnNavigatedFrom.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnNavigatedFrom_Prism_Regions_NavigationParameters_
+  name: OnNavigatedFrom(NavigationParameters)
+  nameWithType: BaseStructuredSearchViewModel<T>.OnNavigatedFrom(NavigationParameters)
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).OnNavigatedFrom(NavigationParameters)
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+    name: OnNavigatedFrom
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnNavigatedFrom.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnNavigatedFrom_Prism_Regions_NavigationParameters_
+  - name: (
+  - uid: Prism.Regions.NavigationParameters
+    name: NavigationParameters
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationParameters.cs
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+    name: OnNavigatedFrom
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnNavigatedFrom.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnNavigatedFrom_Prism_Regions_NavigationParameters_
+  - name: (
+  - uid: Prism.Regions.NavigationParameters
+    name: NavigationParameters
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationParameters.cs
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.LeavingView
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.LeavingView
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.LeavingView.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_LeavingView
+  name: LeavingView()
+  nameWithType: BaseStructuredSearchViewModel<T>.LeavingView()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.LeavingView()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).LeavingView()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).LeavingView()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.LeavingView
+    name: LeavingView
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.LeavingView.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_LeavingView
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.LeavingView
+    name: LeavingView
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.LeavingView.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_LeavingView
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.RaiseSearchEvent(Innova.Data.StructuredSearch.EntityQuery{`0})
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.RaiseSearchEvent(Innova.Data.StructuredSearch.EntityQuery{`0})
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.RaiseSearchEvent.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_RaiseSearchEvent_Innova_Data_StructuredSearch_EntityQuery__0__
+  name: RaiseSearchEvent(EntityQuery<T>)
+  nameWithType: BaseStructuredSearchViewModel<T>.RaiseSearchEvent(EntityQuery<T>)
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.RaiseSearchEvent(Innova.Data.StructuredSearch.EntityQuery<T>)
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).RaiseSearchEvent(EntityQuery(Of T))
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).RaiseSearchEvent(Innova.Data.StructuredSearch.EntityQuery(Of T))
+  name.vb: RaiseSearchEvent(EntityQuery(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.RaiseSearchEvent(Innova.Data.StructuredSearch.EntityQuery{`0})
+    name: RaiseSearchEvent
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.RaiseSearchEvent.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_RaiseSearchEvent_Innova_Data_StructuredSearch_EntityQuery__0__
+  - name: (
+  - uid: Innova.Data.StructuredSearch.EntityQuery`1
+    name: EntityQuery
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.RaiseSearchEvent(Innova.Data.StructuredSearch.EntityQuery{`0})
+    name: RaiseSearchEvent
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.RaiseSearchEvent.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_RaiseSearchEvent_Innova_Data_StructuredSearch_EntityQuery__0__
+  - name: (
+  - uid: Innova.Data.StructuredSearch.EntityQuery`1
+    name: EntityQuery
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SaveState
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SaveState
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SaveState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SaveState
+  name: SaveState()
+  nameWithType: BaseStructuredSearchViewModel<T>.SaveState()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.SaveState()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).SaveState()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).SaveState()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SaveState
+    name: SaveState
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SaveState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SaveState
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SaveState
+    name: SaveState
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SaveState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SaveState
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SetInitialState
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SetInitialState
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SetInitialState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SetInitialState
+  name: SetInitialState()
+  nameWithType: BaseStructuredSearchViewModel<T>.SetInitialState()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.SetInitialState()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).SetInitialState()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).SetInitialState()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SetInitialState
+    name: SetInitialState
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SetInitialState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SetInitialState
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SetInitialState
+    name: SetInitialState
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SetInitialState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SetInitialState
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnClose
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnClose
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnClose.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnClose
+  name: OnClose()
+  nameWithType: BaseStructuredSearchViewModel<T>.OnClose()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.OnClose()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).OnClose()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).OnClose()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnClose
+    name: OnClose
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnClose.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnClose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnClose
+    name: OnClose
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnClose.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnClose
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.UpdateCommands
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.UpdateCommands
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.UpdateCommands.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_UpdateCommands
+  name: UpdateCommands()
+  nameWithType: BaseStructuredSearchViewModel<T>.UpdateCommands()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.UpdateCommands()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).UpdateCommands()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).UpdateCommands()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.UpdateCommands
+    name: UpdateCommands
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.UpdateCommands.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_UpdateCommands
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.UpdateCommands
+    name: UpdateCommands
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.UpdateCommands.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_UpdateCommands
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CanExecuteSearch
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CanExecuteSearch
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CanExecuteSearch.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CanExecuteSearch
+  name: CanExecuteSearch()
+  nameWithType: BaseStructuredSearchViewModel<T>.CanExecuteSearch()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.CanExecuteSearch()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).CanExecuteSearch()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).CanExecuteSearch()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CanExecuteSearch
+    name: CanExecuteSearch
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CanExecuteSearch.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CanExecuteSearch
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CanExecuteSearch
+    name: CanExecuteSearch
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CanExecuteSearch.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CanExecuteSearch
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CanClearAllOperators
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CanClearAllOperators
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CanClearAllOperators.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CanClearAllOperators
+  name: CanClearAllOperators()
+  nameWithType: BaseStructuredSearchViewModel<T>.CanClearAllOperators()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.CanClearAllOperators()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).CanClearAllOperators()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).CanClearAllOperators()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CanClearAllOperators
+    name: CanClearAllOperators
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CanClearAllOperators.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CanClearAllOperators
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CanClearAllOperators
+    name: CanClearAllOperators
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CanClearAllOperators.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CanClearAllOperators
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ViewState
+  commentId: P:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ViewState
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.ViewState.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_ViewState
+  name: ViewState
+  nameWithType: NavigationAwareViewModel<TState>.ViewState
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.ViewState
+  nameWithType.vb: NavigationAwareViewModel(Of TState).ViewState
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).ViewState
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.PreviousNavigationState
+  commentId: P:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.PreviousNavigationState
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.PreviousNavigationState.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_PreviousNavigationState
+  name: PreviousNavigationState
+  nameWithType: NavigationAwareViewModel<TState>.PreviousNavigationState
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.PreviousNavigationState
+  nameWithType.vb: NavigationAwareViewModel(Of TState).PreviousNavigationState
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).PreviousNavigationState
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ParentNavigationState
+  commentId: P:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ParentNavigationState
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.ParentNavigationState.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_ParentNavigationState
+  name: ParentNavigationState
+  nameWithType: NavigationAwareViewModel<TState>.ParentNavigationState
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.ParentNavigationState
+  nameWithType.vb: NavigationAwareViewModel(Of TState).ParentNavigationState
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).ParentNavigationState
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.NavigationStateChanged
+  commentId: M:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.NavigationStateChanged
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.NavigationStateChanged.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_NavigationStateChanged
+  name: NavigationStateChanged()
+  nameWithType: NavigationAwareViewModel<TState>.NavigationStateChanged()
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.NavigationStateChanged()
+  nameWithType.vb: NavigationAwareViewModel(Of TState).NavigationStateChanged()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).NavigationStateChanged()
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.NavigationStateChanged
+    name: NavigationStateChanged
+    href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.NavigationStateChanged.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_NavigationStateChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.NavigationStateChanged
+    name: NavigationStateChanged
+    href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.NavigationStateChanged.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_NavigationStateChanged
+  - name: (
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ViewStateKey
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.ViewStateKey
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ViewStateKey
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ViewStateKey.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ViewStateKey
+  name: ViewStateKey
+  nameWithType: BaseStructuredSearchViewModel<T>.ViewStateKey
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ViewStateKey
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ViewStateKey
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ViewStateKey
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ViewStateKey*
+  commentId: Overload:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ViewStateKey
+  href: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel-1.ViewStateKey.html#Innova_Prism_Library_StructuredSearch_Views_SimpleStructuredSearchViewModel_1_ViewStateKey
+  name: ViewStateKey
+  nameWithType: SimpleStructuredSearchViewModel<T>.ViewStateKey
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.ViewStateKey
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).ViewStateKey
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).ViewStateKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ViewStateKey
+  commentId: P:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ViewStateKey
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ViewStateKey.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ViewStateKey
+  name: ViewStateKey
+  nameWithType: BaseStructuredSearchViewModel<T>.ViewStateKey
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ViewStateKey
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ViewStateKey
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ViewStateKey
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.QueryFields*
+  commentId: Overload:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.QueryFields
+  href: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel-1.QueryFields.html#Innova_Prism_Library_StructuredSearch_Views_SimpleStructuredSearchViewModel_1_QueryFields
+  name: QueryFields
+  nameWithType: SimpleStructuredSearchViewModel<T>.QueryFields
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.QueryFields
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).QueryFields
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).QueryFields
+- uid: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.StructuredSearch.EntitySearchFieldViewModel}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.StructuredSearch.EntitySearchFieldViewModel}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<EntitySearchFieldViewModel>
+  nameWithType: ObservableCollection<EntitySearchFieldViewModel>
+  fullName: System.Collections.ObjectModel.ObservableCollection<Innova.Prism.Library.StructuredSearch.EntitySearchFieldViewModel>
+  nameWithType.vb: ObservableCollection(Of EntitySearchFieldViewModel)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of Innova.Prism.Library.StructuredSearch.EntitySearchFieldViewModel)
+  name.vb: ObservableCollection(Of EntitySearchFieldViewModel)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: Innova.Prism.Library.StructuredSearch.EntitySearchFieldViewModel
+    name: EntitySearchFieldViewModel
+    href: Innova.Prism.Library.StructuredSearch.EntitySearchFieldViewModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.StructuredSearch.EntitySearchFieldViewModel
+    name: EntitySearchFieldViewModel
+    href: Innova.Prism.Library.StructuredSearch.EntitySearchFieldViewModel.html
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.#ctor*
+  commentId: Overload:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.#ctor
+  href: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel-1.-ctor.html#Innova_Prism_Library_StructuredSearch_Views_SimpleStructuredSearchViewModel_1__ctor_Prism_Events_IEventAggregator_Innova_Prism_Library_Services_ILookupService_
+  name: SimpleStructuredSearchViewModel
+  nameWithType: SimpleStructuredSearchViewModel<T>.SimpleStructuredSearchViewModel
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.SimpleStructuredSearchViewModel
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).New
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).New
+  name.vb: New
+- uid: Prism.Events.IEventAggregator
+  commentId: T:Prism.Events.IEventAggregator
+  parent: Prism.Events
+  isExternal: true
+  name: IEventAggregator
+  nameWithType: IEventAggregator
+  fullName: Prism.Events.IEventAggregator
+- uid: Innova.Prism.Library.Services.ILookupService
+  commentId: T:Innova.Prism.Library.Services.ILookupService
+  parent: Innova.Prism.Library.Services
+  href: Innova.Prism.Library.Services.ILookupService.html
+  name: ILookupService
+  nameWithType: ILookupService
+  fullName: Innova.Prism.Library.Services.ILookupService
+- uid: Prism.Events
+  commentId: N:Prism.Events
+  isExternal: true
+  name: Prism.Events
+  nameWithType: Prism.Events
+  fullName: Prism.Events
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+- uid: Innova.Prism.Library.Services
+  commentId: N:Innova.Prism.Library.Services
+  href: Innova.html
+  name: Innova.Prism.Library.Services
+  nameWithType: Innova.Prism.Library.Services
+  fullName: Innova.Prism.Library.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.OnIsActiveChanged
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.OnIsActiveChanged
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnIsActiveChanged
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnIsActiveChanged.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnIsActiveChanged
+  name: OnIsActiveChanged()
+  nameWithType: BaseStructuredSearchViewModel<T>.OnIsActiveChanged()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.OnIsActiveChanged()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).OnIsActiveChanged()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).OnIsActiveChanged()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.OnIsActiveChanged
+    name: OnIsActiveChanged
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnIsActiveChanged.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnIsActiveChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.OnIsActiveChanged
+    name: OnIsActiveChanged
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnIsActiveChanged.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnIsActiveChanged
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.OnIsActiveChanged*
+  commentId: Overload:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.OnIsActiveChanged
+  href: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel-1.OnIsActiveChanged.html#Innova_Prism_Library_StructuredSearch_Views_SimpleStructuredSearchViewModel_1_OnIsActiveChanged
+  name: OnIsActiveChanged
+  nameWithType: SimpleStructuredSearchViewModel<T>.OnIsActiveChanged
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.OnIsActiveChanged
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).OnIsActiveChanged
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).OnIsActiveChanged
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnIsActiveChanged
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnIsActiveChanged
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnIsActiveChanged.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnIsActiveChanged
+  name: OnIsActiveChanged()
+  nameWithType: BaseStructuredSearchViewModel<T>.OnIsActiveChanged()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.OnIsActiveChanged()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).OnIsActiveChanged()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).OnIsActiveChanged()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnIsActiveChanged
+    name: OnIsActiveChanged
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnIsActiveChanged.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnIsActiveChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.OnIsActiveChanged
+    name: OnIsActiveChanged
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.OnIsActiveChanged.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_OnIsActiveChanged
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ActivateAllFields*
+  commentId: Overload:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ActivateAllFields
+  href: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel-1.ActivateAllFields.html#Innova_Prism_Library_StructuredSearch_Views_SimpleStructuredSearchViewModel_1_ActivateAllFields
+  name: ActivateAllFields
+  nameWithType: SimpleStructuredSearchViewModel<T>.ActivateAllFields
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.ActivateAllFields
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).ActivateAllFields
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).ActivateAllFields
+- uid: Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel.ActivateAllFields
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel.ActivateAllFields
+  parent: Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel
+  href: Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel.ActivateAllFields.html#Innova_Prism_Library_StructuredSearch_Views_ISimpleStructuredSearchViewModel_ActivateAllFields
+  name: ActivateAllFields()
+  nameWithType: ISimpleStructuredSearchViewModel.ActivateAllFields()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel.ActivateAllFields()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel.ActivateAllFields
+    name: ActivateAllFields
+    href: Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel.ActivateAllFields.html#Innova_Prism_Library_StructuredSearch_Views_ISimpleStructuredSearchViewModel_ActivateAllFields
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel.ActivateAllFields
+    name: ActivateAllFields
+    href: Innova.Prism.Library.StructuredSearch.Views.ISimpleStructuredSearchViewModel.ActivateAllFields.html#Innova_Prism_Library_StructuredSearch_Views_ISimpleStructuredSearchViewModel_ActivateAllFields
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SetQueryParametersFromViewState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SetQueryParametersFromViewState_Innova_Data_StructuredSearch_EntitySavedQuery_
+  name: SetQueryParametersFromViewState(EntitySavedQuery)
+  nameWithType: BaseStructuredSearchViewModel<T>.SetQueryParametersFromViewState(EntitySavedQuery)
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).SetQueryParametersFromViewState(EntitySavedQuery)
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+    name: SetQueryParametersFromViewState
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SetQueryParametersFromViewState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SetQueryParametersFromViewState_Innova_Data_StructuredSearch_EntitySavedQuery_
+  - name: (
+  - uid: Innova.Data.StructuredSearch.EntitySavedQuery
+    name: EntitySavedQuery
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+    name: SetQueryParametersFromViewState
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SetQueryParametersFromViewState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SetQueryParametersFromViewState_Innova_Data_StructuredSearch_EntitySavedQuery_
+  - name: (
+  - uid: Innova.Data.StructuredSearch.EntitySavedQuery
+    name: EntitySavedQuery
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.SetQueryParametersFromViewState*
+  commentId: Overload:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.SetQueryParametersFromViewState
+  href: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel-1.SetQueryParametersFromViewState.html#Innova_Prism_Library_StructuredSearch_Views_SimpleStructuredSearchViewModel_1_SetQueryParametersFromViewState_Innova_Data_StructuredSearch_EntitySavedQuery_
+  name: SetQueryParametersFromViewState
+  nameWithType: SimpleStructuredSearchViewModel<T>.SetQueryParametersFromViewState
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.SetQueryParametersFromViewState
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).SetQueryParametersFromViewState
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).SetQueryParametersFromViewState
+- uid: Innova.Data.StructuredSearch.EntitySavedQuery
+  commentId: T:Innova.Data.StructuredSearch.EntitySavedQuery
+  parent: Innova.Data.StructuredSearch
+  href: Innova.Data.StructuredSearch.EntitySavedQuery.html
+  name: EntitySavedQuery
+  nameWithType: EntitySavedQuery
+  fullName: Innova.Data.StructuredSearch.EntitySavedQuery
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SetQueryParametersFromViewState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SetQueryParametersFromViewState_Innova_Data_StructuredSearch_EntitySavedQuery_
+  name: SetQueryParametersFromViewState(EntitySavedQuery)
+  nameWithType: BaseStructuredSearchViewModel<T>.SetQueryParametersFromViewState(EntitySavedQuery)
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).SetQueryParametersFromViewState(EntitySavedQuery)
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+    name: SetQueryParametersFromViewState
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SetQueryParametersFromViewState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SetQueryParametersFromViewState_Innova_Data_StructuredSearch_EntitySavedQuery_
+  - name: (
+  - uid: Innova.Data.StructuredSearch.EntitySavedQuery
+    name: EntitySavedQuery
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.SetQueryParametersFromViewState(Innova.Data.StructuredSearch.EntitySavedQuery)
+    name: SetQueryParametersFromViewState
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.SetQueryParametersFromViewState.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_SetQueryParametersFromViewState_Innova_Data_StructuredSearch_EntitySavedQuery_
+  - name: (
+  - uid: Innova.Data.StructuredSearch.EntitySavedQuery
+    name: EntitySavedQuery
+  - name: )
+- uid: Innova.Data.StructuredSearch
+  commentId: N:Innova.Data.StructuredSearch
+  href: Innova.html
+  name: Innova.Data.StructuredSearch
+  nameWithType: Innova.Data.StructuredSearch
+  fullName: Innova.Data.StructuredSearch
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.StructuredSearch
+    name: StructuredSearch
+    href: Innova.Data.StructuredSearch.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.StructuredSearch
+    name: StructuredSearch
+    href: Innova.Data.StructuredSearch.html
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.CreateEntitySavedQuery
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.CreateEntitySavedQuery
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CreateEntitySavedQuery
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CreateEntitySavedQuery.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CreateEntitySavedQuery
+  name: CreateEntitySavedQuery()
+  nameWithType: BaseStructuredSearchViewModel<T>.CreateEntitySavedQuery()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.CreateEntitySavedQuery()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).CreateEntitySavedQuery()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).CreateEntitySavedQuery()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.CreateEntitySavedQuery
+    name: CreateEntitySavedQuery
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CreateEntitySavedQuery.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CreateEntitySavedQuery
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.CreateEntitySavedQuery
+    name: CreateEntitySavedQuery
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CreateEntitySavedQuery.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CreateEntitySavedQuery
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.CreateEntitySavedQuery*
+  commentId: Overload:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.CreateEntitySavedQuery
+  href: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel-1.CreateEntitySavedQuery.html#Innova_Prism_Library_StructuredSearch_Views_SimpleStructuredSearchViewModel_1_CreateEntitySavedQuery
+  name: CreateEntitySavedQuery
+  nameWithType: SimpleStructuredSearchViewModel<T>.CreateEntitySavedQuery
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.CreateEntitySavedQuery
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).CreateEntitySavedQuery
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).CreateEntitySavedQuery
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CreateEntitySavedQuery
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CreateEntitySavedQuery
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CreateEntitySavedQuery.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CreateEntitySavedQuery
+  name: CreateEntitySavedQuery()
+  nameWithType: BaseStructuredSearchViewModel<T>.CreateEntitySavedQuery()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.CreateEntitySavedQuery()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).CreateEntitySavedQuery()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).CreateEntitySavedQuery()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CreateEntitySavedQuery
+    name: CreateEntitySavedQuery
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CreateEntitySavedQuery.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CreateEntitySavedQuery
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.CreateEntitySavedQuery
+    name: CreateEntitySavedQuery
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.CreateEntitySavedQuery.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_CreateEntitySavedQuery
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ExecuteSearch
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.ExecuteSearch
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteSearch
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteSearch.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteSearch
+  name: ExecuteSearch()
+  nameWithType: BaseStructuredSearchViewModel<T>.ExecuteSearch()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ExecuteSearch()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ExecuteSearch()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ExecuteSearch()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.ExecuteSearch
+    name: ExecuteSearch
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteSearch.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteSearch
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.ExecuteSearch
+    name: ExecuteSearch
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteSearch.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteSearch
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ExecuteSearch*
+  commentId: Overload:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ExecuteSearch
+  href: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel-1.ExecuteSearch.html#Innova_Prism_Library_StructuredSearch_Views_SimpleStructuredSearchViewModel_1_ExecuteSearch
+  name: ExecuteSearch
+  nameWithType: SimpleStructuredSearchViewModel<T>.ExecuteSearch
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.ExecuteSearch
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).ExecuteSearch
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).ExecuteSearch
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteSearch
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteSearch
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteSearch.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteSearch
+  name: ExecuteSearch()
+  nameWithType: BaseStructuredSearchViewModel<T>.ExecuteSearch()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ExecuteSearch()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ExecuteSearch()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ExecuteSearch()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteSearch
+    name: ExecuteSearch
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteSearch.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteSearch
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteSearch
+    name: ExecuteSearch
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteSearch.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteSearch
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}.ExecuteClearAllOperators
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.ExecuteClearAllOperators
+  parent: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{{T}}
+  definition: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteClearAllOperators
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteClearAllOperators.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteClearAllOperators
+  name: ExecuteClearAllOperators()
+  nameWithType: BaseStructuredSearchViewModel<T>.ExecuteClearAllOperators()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ExecuteClearAllOperators()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ExecuteClearAllOperators()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ExecuteClearAllOperators()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.ExecuteClearAllOperators
+    name: ExecuteClearAllOperators
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteClearAllOperators.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteClearAllOperators
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel{`0}.ExecuteClearAllOperators
+    name: ExecuteClearAllOperators
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteClearAllOperators.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteClearAllOperators
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ExecuteClearAllOperators*
+  commentId: Overload:Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel`1.ExecuteClearAllOperators
+  href: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel-1.ExecuteClearAllOperators.html#Innova_Prism_Library_StructuredSearch_Views_SimpleStructuredSearchViewModel_1_ExecuteClearAllOperators
+  name: ExecuteClearAllOperators
+  nameWithType: SimpleStructuredSearchViewModel<T>.ExecuteClearAllOperators
+  fullName: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel<T>.ExecuteClearAllOperators
+  nameWithType.vb: SimpleStructuredSearchViewModel(Of T).ExecuteClearAllOperators
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.SimpleStructuredSearchViewModel(Of T).ExecuteClearAllOperators
+- uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteClearAllOperators
+  commentId: M:Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteClearAllOperators
+  href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteClearAllOperators.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteClearAllOperators
+  name: ExecuteClearAllOperators()
+  nameWithType: BaseStructuredSearchViewModel<T>.ExecuteClearAllOperators()
+  fullName: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel<T>.ExecuteClearAllOperators()
+  nameWithType.vb: BaseStructuredSearchViewModel(Of T).ExecuteClearAllOperators()
+  fullName.vb: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel(Of T).ExecuteClearAllOperators()
+  spec.csharp:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteClearAllOperators
+    name: ExecuteClearAllOperators
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteClearAllOperators.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteClearAllOperators
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1.ExecuteClearAllOperators
+    name: ExecuteClearAllOperators
+    href: Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel-1.ExecuteClearAllOperators.html#Innova_Prism_Library_StructuredSearch_Views_BaseStructuredSearchViewModel_1_ExecuteClearAllOperators
+  - name: (
+  - name: )
+memberLayout: SeparatePages

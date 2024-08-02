@@ -1,0 +1,797 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Services.PinnedListService`2
+  commentId: T:Innova.Prism.Library.Services.PinnedListService`2
+  id: PinnedListService`2
+  parent: Innova.Prism.Library.Services
+  children:
+  - Innova.Prism.Library.Services.PinnedListService`2.#ctor(Prism.Events.IEventAggregator,Innova.Data.AppSettings.IUserSettingService,Innova.Data.PinnedList.IPinnedListEntityService{`1})
+  - Innova.Prism.Library.Services.PinnedListService`2.GetPinnedItems
+  langs:
+  - csharp
+  - vb
+  name: PinnedListService<T, KeyType>
+  nameWithType: PinnedListService<T, KeyType>
+  fullName: Innova.Prism.Library.Services.PinnedListService<T, KeyType>
+  type: Class
+  source:
+    id: PinnedListService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\PinnedListService.cs
+    startLine: 17
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Represents a base class for a pinned list service.
+  example: []
+  syntax:
+    content: 'public abstract class PinnedListService<T, KeyType> : BaseUserSetting<MyList<KeyType>>, IPinnedListService<T>, IUserSettingServiceSave where T : class'
+    typeParameters:
+    - id: T
+      description: The type of the entity.
+    - id: KeyType
+      description: The type of the key.
+    content.vb: Public MustInherit Class PinnedListService(Of T As Class, KeyType) Inherits BaseUserSetting(Of MyList(Of KeyType)) Implements IPinnedListService(Of T), IUserSettingServiceSave
+  inheritance:
+  - System.Object
+  - Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}
+  implements:
+  - Innova.Prism.Library.Services.IPinnedListService{{T}}
+  - Innova.Data.AppSettings.IUserSettingServiceSave
+  inheritedMembers:
+  - Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}.userSettingService
+  - Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}.Setting
+  - Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}.SettingKey
+  - Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}.LoadData
+  - Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}.Save
+  nameWithType.vb: PinnedListService(Of T, KeyType)
+  fullName.vb: Innova.Prism.Library.Services.PinnedListService(Of T, KeyType)
+  name.vb: PinnedListService(Of T, KeyType)
+- uid: Innova.Prism.Library.Services.PinnedListService`2.#ctor(Prism.Events.IEventAggregator,Innova.Data.AppSettings.IUserSettingService,Innova.Data.PinnedList.IPinnedListEntityService{`1})
+  commentId: M:Innova.Prism.Library.Services.PinnedListService`2.#ctor(Prism.Events.IEventAggregator,Innova.Data.AppSettings.IUserSettingService,Innova.Data.PinnedList.IPinnedListEntityService{`1})
+  id: '#ctor(Prism.Events.IEventAggregator,Innova.Data.AppSettings.IUserSettingService,Innova.Data.PinnedList.IPinnedListEntityService{`1})'
+  parent: Innova.Prism.Library.Services.PinnedListService`2
+  langs:
+  - csharp
+  - vb
+  name: PinnedListService(IEventAggregator, IUserSettingService, IPinnedListEntityService<KeyType>)
+  nameWithType: PinnedListService<T, KeyType>.PinnedListService(IEventAggregator, IUserSettingService, IPinnedListEntityService<KeyType>)
+  fullName: Innova.Prism.Library.Services.PinnedListService<T, KeyType>.PinnedListService(Prism.Events.IEventAggregator, Innova.Data.AppSettings.IUserSettingService, Innova.Data.PinnedList.IPinnedListEntityService<KeyType>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\PinnedListService.cs
+    startLine: 28
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Services.PinnedListService%602" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public PinnedListService(IEventAggregator eventAggregator, IUserSettingService userSettingService, IPinnedListEntityService<KeyType> pinnedListEntityService)
+    parameters:
+    - id: eventAggregator
+      type: Prism.Events.IEventAggregator
+      description: The event aggregator.
+    - id: userSettingService
+      type: Innova.Data.AppSettings.IUserSettingService
+      description: The user setting service.
+    - id: pinnedListEntityService
+      type: Innova.Data.PinnedList.IPinnedListEntityService{{KeyType}}
+      description: The pinned list entity service.
+    content.vb: Public Sub New(eventAggregator As IEventAggregator, userSettingService As IUserSettingService, pinnedListEntityService As IPinnedListEntityService(Of KeyType))
+  overload: Innova.Prism.Library.Services.PinnedListService`2.#ctor*
+  nameWithType.vb: PinnedListService(Of T, KeyType).New(IEventAggregator, IUserSettingService, IPinnedListEntityService(Of KeyType))
+  fullName.vb: Innova.Prism.Library.Services.PinnedListService(Of T, KeyType).New(Prism.Events.IEventAggregator, Innova.Data.AppSettings.IUserSettingService, Innova.Data.PinnedList.IPinnedListEntityService(Of KeyType))
+  name.vb: New(IEventAggregator, IUserSettingService, IPinnedListEntityService(Of KeyType))
+- uid: Innova.Prism.Library.Services.PinnedListService`2.GetPinnedItems
+  commentId: M:Innova.Prism.Library.Services.PinnedListService`2.GetPinnedItems
+  id: GetPinnedItems
+  parent: Innova.Prism.Library.Services.PinnedListService`2
+  langs:
+  - csharp
+  - vb
+  name: GetPinnedItems()
+  nameWithType: PinnedListService<T, KeyType>.GetPinnedItems()
+  fullName: Innova.Prism.Library.Services.PinnedListService<T, KeyType>.GetPinnedItems()
+  type: Method
+  source:
+    id: GetPinnedItems
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\PinnedListService.cs
+    startLine: 67
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Gets the list of pinned items.
+  example: []
+  syntax:
+    content: public Task<List<PinnedItem>> GetPinnedItems()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.PinnedList.PinnedItem}}
+      description: The list of pinned items.
+    content.vb: Public Function GetPinnedItems() As Task(Of List(Of PinnedItem))
+  overload: Innova.Prism.Library.Services.PinnedListService`2.GetPinnedItems*
+  implements:
+  - Innova.Prism.Library.Services.IPinnedListService{{T}}.GetPinnedItems
+  nameWithType.vb: PinnedListService(Of T, KeyType).GetPinnedItems()
+  fullName.vb: Innova.Prism.Library.Services.PinnedListService(Of T, KeyType).GetPinnedItems()
+references:
+- uid: Innova.Prism.Library.Services
+  commentId: N:Innova.Prism.Library.Services
+  href: Innova.html
+  name: Innova.Prism.Library.Services
+  nameWithType: Innova.Prism.Library.Services
+  fullName: Innova.Prism.Library.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}
+  commentId: T:Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{`1}}
+  parent: Innova.Data.AppSettings.Services
+  definition: Innova.Data.AppSettings.Services.BaseUserSetting`1
+  name: BaseUserSetting<MyList<KeyType>>
+  nameWithType: BaseUserSetting<MyList<KeyType>>
+  fullName: Innova.Data.AppSettings.Services.BaseUserSetting<Innova.Data.AppSettings.MyList<KeyType>>
+  nameWithType.vb: BaseUserSetting(Of MyList(Of KeyType))
+  fullName.vb: Innova.Data.AppSettings.Services.BaseUserSetting(Of Innova.Data.AppSettings.MyList(Of KeyType))
+  name.vb: BaseUserSetting(Of MyList(Of KeyType))
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.BaseUserSetting`1
+    name: BaseUserSetting
+  - name: <
+  - uid: Innova.Data.AppSettings.MyList`1
+    name: MyList
+  - name: <
+  - name: KeyType
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.BaseUserSetting`1
+    name: BaseUserSetting
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.AppSettings.MyList`1
+    name: MyList
+  - name: (
+  - name: Of
+  - name: " "
+  - name: KeyType
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Services.IPinnedListService{{T}}
+  commentId: T:Innova.Prism.Library.Services.IPinnedListService{`0}
+  parent: Innova.Prism.Library.Services
+  definition: Innova.Prism.Library.Services.IPinnedListService`1
+  href: Innova.Prism.Library.Services.IPinnedListService-1.html
+  name: IPinnedListService<T>
+  nameWithType: IPinnedListService<T>
+  fullName: Innova.Prism.Library.Services.IPinnedListService<T>
+  nameWithType.vb: IPinnedListService(Of T)
+  fullName.vb: Innova.Prism.Library.Services.IPinnedListService(Of T)
+  name.vb: IPinnedListService(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IPinnedListService`1
+    name: IPinnedListService
+    href: Innova.Prism.Library.Services.IPinnedListService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IPinnedListService`1
+    name: IPinnedListService
+    href: Innova.Prism.Library.Services.IPinnedListService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.AppSettings.IUserSettingServiceSave
+  commentId: T:Innova.Data.AppSettings.IUserSettingServiceSave
+  parent: Innova.Data.AppSettings
+  href: Innova.Data.AppSettings.IUserSettingServiceSave.html
+  name: IUserSettingServiceSave
+  nameWithType: IUserSettingServiceSave
+  fullName: Innova.Data.AppSettings.IUserSettingServiceSave
+- uid: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}.userSettingService
+  commentId: F:Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{`1}}.userSettingService
+  parent: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}
+  definition: Innova.Data.AppSettings.Services.BaseUserSetting`1.userSettingService
+  name: userSettingService
+  nameWithType: BaseUserSetting<MyList<KeyType>>.userSettingService
+  fullName: Innova.Data.AppSettings.Services.BaseUserSetting<Innova.Data.AppSettings.MyList<KeyType>>.userSettingService
+  nameWithType.vb: BaseUserSetting(Of MyList(Of KeyType)).userSettingService
+  fullName.vb: Innova.Data.AppSettings.Services.BaseUserSetting(Of Innova.Data.AppSettings.MyList(Of KeyType)).userSettingService
+- uid: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}.Setting
+  commentId: P:Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{`1}}.Setting
+  parent: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}
+  definition: Innova.Data.AppSettings.Services.BaseUserSetting`1.Setting
+  name: Setting
+  nameWithType: BaseUserSetting<MyList<KeyType>>.Setting
+  fullName: Innova.Data.AppSettings.Services.BaseUserSetting<Innova.Data.AppSettings.MyList<KeyType>>.Setting
+  nameWithType.vb: BaseUserSetting(Of MyList(Of KeyType)).Setting
+  fullName.vb: Innova.Data.AppSettings.Services.BaseUserSetting(Of Innova.Data.AppSettings.MyList(Of KeyType)).Setting
+- uid: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}.SettingKey
+  commentId: P:Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{`1}}.SettingKey
+  parent: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}
+  definition: Innova.Data.AppSettings.Services.BaseUserSetting`1.SettingKey
+  name: SettingKey
+  nameWithType: BaseUserSetting<MyList<KeyType>>.SettingKey
+  fullName: Innova.Data.AppSettings.Services.BaseUserSetting<Innova.Data.AppSettings.MyList<KeyType>>.SettingKey
+  nameWithType.vb: BaseUserSetting(Of MyList(Of KeyType)).SettingKey
+  fullName.vb: Innova.Data.AppSettings.Services.BaseUserSetting(Of Innova.Data.AppSettings.MyList(Of KeyType)).SettingKey
+- uid: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}.LoadData
+  commentId: M:Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{`1}}.LoadData
+  parent: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}
+  definition: Innova.Data.AppSettings.Services.BaseUserSetting`1.LoadData
+  name: LoadData()
+  nameWithType: BaseUserSetting<MyList<KeyType>>.LoadData()
+  fullName: Innova.Data.AppSettings.Services.BaseUserSetting<Innova.Data.AppSettings.MyList<KeyType>>.LoadData()
+  nameWithType.vb: BaseUserSetting(Of MyList(Of KeyType)).LoadData()
+  fullName.vb: Innova.Data.AppSettings.Services.BaseUserSetting(Of Innova.Data.AppSettings.MyList(Of KeyType)).LoadData()
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{`1}}.LoadData
+    name: LoadData
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{`1}}.LoadData
+    name: LoadData
+  - name: (
+  - name: )
+- uid: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}.Save
+  commentId: M:Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{`1}}.Save
+  parent: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{{KeyType}}}
+  definition: Innova.Data.AppSettings.Services.BaseUserSetting`1.Save
+  name: Save()
+  nameWithType: BaseUserSetting<MyList<KeyType>>.Save()
+  fullName: Innova.Data.AppSettings.Services.BaseUserSetting<Innova.Data.AppSettings.MyList<KeyType>>.Save()
+  nameWithType.vb: BaseUserSetting(Of MyList(Of KeyType)).Save()
+  fullName.vb: Innova.Data.AppSettings.Services.BaseUserSetting(Of Innova.Data.AppSettings.MyList(Of KeyType)).Save()
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{`1}}.Save
+    name: Save
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.BaseUserSetting{Innova.Data.AppSettings.MyList{`1}}.Save
+    name: Save
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.AppSettings.Services.BaseUserSetting`1
+  commentId: T:Innova.Data.AppSettings.Services.BaseUserSetting`1
+  href: Innova.Data.AppSettings.Services.BaseUserSetting-1.html
+  name: BaseUserSetting<T>
+  nameWithType: BaseUserSetting<T>
+  fullName: Innova.Data.AppSettings.Services.BaseUserSetting<T>
+  nameWithType.vb: BaseUserSetting(Of T)
+  fullName.vb: Innova.Data.AppSettings.Services.BaseUserSetting(Of T)
+  name.vb: BaseUserSetting(Of T)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.BaseUserSetting`1
+    name: BaseUserSetting
+    href: Innova.Data.AppSettings.Services.BaseUserSetting-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.BaseUserSetting`1
+    name: BaseUserSetting
+    href: Innova.Data.AppSettings.Services.BaseUserSetting-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.AppSettings.Services
+  commentId: N:Innova.Data.AppSettings.Services
+  href: Innova.html
+  name: Innova.Data.AppSettings.Services
+  nameWithType: Innova.Data.AppSettings.Services
+  fullName: Innova.Data.AppSettings.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+  - name: .
+  - uid: Innova.Data.AppSettings.Services
+    name: Services
+    href: Innova.Data.AppSettings.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+  - name: .
+  - uid: Innova.Data.AppSettings.Services
+    name: Services
+    href: Innova.Data.AppSettings.Services.html
+- uid: Innova.Prism.Library.Services.IPinnedListService`1
+  commentId: T:Innova.Prism.Library.Services.IPinnedListService`1
+  href: Innova.Prism.Library.Services.IPinnedListService-1.html
+  name: IPinnedListService<T>
+  nameWithType: IPinnedListService<T>
+  fullName: Innova.Prism.Library.Services.IPinnedListService<T>
+  nameWithType.vb: IPinnedListService(Of T)
+  fullName.vb: Innova.Prism.Library.Services.IPinnedListService(Of T)
+  name.vb: IPinnedListService(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IPinnedListService`1
+    name: IPinnedListService
+    href: Innova.Prism.Library.Services.IPinnedListService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IPinnedListService`1
+    name: IPinnedListService
+    href: Innova.Prism.Library.Services.IPinnedListService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.AppSettings
+  commentId: N:Innova.Data.AppSettings
+  href: Innova.html
+  name: Innova.Data.AppSettings
+  nameWithType: Innova.Data.AppSettings
+  fullName: Innova.Data.AppSettings
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+- uid: Innova.Data.AppSettings.Services.BaseUserSetting`1.userSettingService
+  commentId: F:Innova.Data.AppSettings.Services.BaseUserSetting`1.userSettingService
+  name: userSettingService
+  nameWithType: BaseUserSetting<T>.userSettingService
+  fullName: Innova.Data.AppSettings.Services.BaseUserSetting<T>.userSettingService
+  nameWithType.vb: BaseUserSetting(Of T).userSettingService
+  fullName.vb: Innova.Data.AppSettings.Services.BaseUserSetting(Of T).userSettingService
+- uid: Innova.Data.AppSettings.Services.BaseUserSetting`1.Setting
+  commentId: P:Innova.Data.AppSettings.Services.BaseUserSetting`1.Setting
+  name: Setting
+  nameWithType: BaseUserSetting<T>.Setting
+  fullName: Innova.Data.AppSettings.Services.BaseUserSetting<T>.Setting
+  nameWithType.vb: BaseUserSetting(Of T).Setting
+  fullName.vb: Innova.Data.AppSettings.Services.BaseUserSetting(Of T).Setting
+- uid: Innova.Data.AppSettings.Services.BaseUserSetting`1.SettingKey
+  commentId: P:Innova.Data.AppSettings.Services.BaseUserSetting`1.SettingKey
+  name: SettingKey
+  nameWithType: BaseUserSetting<T>.SettingKey
+  fullName: Innova.Data.AppSettings.Services.BaseUserSetting<T>.SettingKey
+  nameWithType.vb: BaseUserSetting(Of T).SettingKey
+  fullName.vb: Innova.Data.AppSettings.Services.BaseUserSetting(Of T).SettingKey
+- uid: Innova.Data.AppSettings.Services.BaseUserSetting`1.LoadData
+  commentId: M:Innova.Data.AppSettings.Services.BaseUserSetting`1.LoadData
+  name: LoadData()
+  nameWithType: BaseUserSetting<T>.LoadData()
+  fullName: Innova.Data.AppSettings.Services.BaseUserSetting<T>.LoadData()
+  nameWithType.vb: BaseUserSetting(Of T).LoadData()
+  fullName.vb: Innova.Data.AppSettings.Services.BaseUserSetting(Of T).LoadData()
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.BaseUserSetting`1.LoadData
+    name: LoadData
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.BaseUserSetting`1.LoadData
+    name: LoadData
+  - name: (
+  - name: )
+- uid: Innova.Data.AppSettings.Services.BaseUserSetting`1.Save
+  commentId: M:Innova.Data.AppSettings.Services.BaseUserSetting`1.Save
+  name: Save()
+  nameWithType: BaseUserSetting<T>.Save()
+  fullName: Innova.Data.AppSettings.Services.BaseUserSetting<T>.Save()
+  nameWithType.vb: BaseUserSetting(Of T).Save()
+  fullName.vb: Innova.Data.AppSettings.Services.BaseUserSetting(Of T).Save()
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.BaseUserSetting`1.Save
+    name: Save
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.BaseUserSetting`1.Save
+    name: Save
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Services.PinnedListService`2
+  commentId: T:Innova.Prism.Library.Services.PinnedListService`2
+  href: Innova.Prism.Library.Services.PinnedListService-2.html
+  name: PinnedListService<T, KeyType>
+  nameWithType: PinnedListService<T, KeyType>
+  fullName: Innova.Prism.Library.Services.PinnedListService<T, KeyType>
+  nameWithType.vb: PinnedListService(Of T, KeyType)
+  fullName.vb: Innova.Prism.Library.Services.PinnedListService(Of T, KeyType)
+  name.vb: PinnedListService(Of T, KeyType)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.PinnedListService`2
+    name: PinnedListService
+    href: Innova.Prism.Library.Services.PinnedListService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: KeyType
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.PinnedListService`2
+    name: PinnedListService
+    href: Innova.Prism.Library.Services.PinnedListService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: KeyType
+  - name: )
+- uid: Innova.Prism.Library.Services.PinnedListService`2.#ctor*
+  commentId: Overload:Innova.Prism.Library.Services.PinnedListService`2.#ctor
+  href: Innova.Prism.Library.Services.PinnedListService-2.-ctor.html#Innova_Prism_Library_Services_PinnedListService_2__ctor_Prism_Events_IEventAggregator_Innova_Data_AppSettings_IUserSettingService_Innova_Data_PinnedList_IPinnedListEntityService__1__
+  name: PinnedListService
+  nameWithType: PinnedListService<T, KeyType>.PinnedListService
+  fullName: Innova.Prism.Library.Services.PinnedListService<T, KeyType>.PinnedListService
+  nameWithType.vb: PinnedListService(Of T, KeyType).New
+  fullName.vb: Innova.Prism.Library.Services.PinnedListService(Of T, KeyType).New
+  name.vb: New
+- uid: Prism.Events.IEventAggregator
+  commentId: T:Prism.Events.IEventAggregator
+  parent: Prism.Events
+  isExternal: true
+  name: IEventAggregator
+  nameWithType: IEventAggregator
+  fullName: Prism.Events.IEventAggregator
+- uid: Innova.Data.AppSettings.IUserSettingService
+  commentId: T:Innova.Data.AppSettings.IUserSettingService
+  parent: Innova.Data.AppSettings
+  href: Innova.Data.AppSettings.IUserSettingService.html
+  name: IUserSettingService
+  nameWithType: IUserSettingService
+  fullName: Innova.Data.AppSettings.IUserSettingService
+- uid: Innova.Data.PinnedList.IPinnedListEntityService{{KeyType}}
+  commentId: T:Innova.Data.PinnedList.IPinnedListEntityService{`1}
+  parent: Innova.Data.PinnedList
+  definition: Innova.Data.PinnedList.IPinnedListEntityService`1
+  name: IPinnedListEntityService<KeyType>
+  nameWithType: IPinnedListEntityService<KeyType>
+  fullName: Innova.Data.PinnedList.IPinnedListEntityService<KeyType>
+  nameWithType.vb: IPinnedListEntityService(Of KeyType)
+  fullName.vb: Innova.Data.PinnedList.IPinnedListEntityService(Of KeyType)
+  name.vb: IPinnedListEntityService(Of KeyType)
+  spec.csharp:
+  - uid: Innova.Data.PinnedList.IPinnedListEntityService`1
+    name: IPinnedListEntityService
+  - name: <
+  - name: KeyType
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.PinnedList.IPinnedListEntityService`1
+    name: IPinnedListEntityService
+  - name: (
+  - name: Of
+  - name: " "
+  - name: KeyType
+  - name: )
+- uid: Prism.Events
+  commentId: N:Prism.Events
+  isExternal: true
+  name: Prism.Events
+  nameWithType: Prism.Events
+  fullName: Prism.Events
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+- uid: Innova.Data.PinnedList.IPinnedListEntityService`1
+  commentId: T:Innova.Data.PinnedList.IPinnedListEntityService`1
+  href: Innova.Data.PinnedList.IPinnedListEntityService-1.html
+  name: IPinnedListEntityService<KeyType>
+  nameWithType: IPinnedListEntityService<KeyType>
+  fullName: Innova.Data.PinnedList.IPinnedListEntityService<KeyType>
+  nameWithType.vb: IPinnedListEntityService(Of KeyType)
+  fullName.vb: Innova.Data.PinnedList.IPinnedListEntityService(Of KeyType)
+  name.vb: IPinnedListEntityService(Of KeyType)
+  spec.csharp:
+  - uid: Innova.Data.PinnedList.IPinnedListEntityService`1
+    name: IPinnedListEntityService
+    href: Innova.Data.PinnedList.IPinnedListEntityService-1.html
+  - name: <
+  - name: KeyType
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.PinnedList.IPinnedListEntityService`1
+    name: IPinnedListEntityService
+    href: Innova.Data.PinnedList.IPinnedListEntityService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: KeyType
+  - name: )
+- uid: Innova.Data.PinnedList
+  commentId: N:Innova.Data.PinnedList
+  href: Innova.html
+  name: Innova.Data.PinnedList
+  nameWithType: Innova.Data.PinnedList
+  fullName: Innova.Data.PinnedList
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.PinnedList
+    name: PinnedList
+    href: Innova.Data.PinnedList.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.PinnedList
+    name: PinnedList
+    href: Innova.Data.PinnedList.html
+- uid: Innova.Prism.Library.Services.PinnedListService`2.GetPinnedItems*
+  commentId: Overload:Innova.Prism.Library.Services.PinnedListService`2.GetPinnedItems
+  href: Innova.Prism.Library.Services.PinnedListService-2.GetPinnedItems.html#Innova_Prism_Library_Services_PinnedListService_2_GetPinnedItems
+  name: GetPinnedItems
+  nameWithType: PinnedListService<T, KeyType>.GetPinnedItems
+  fullName: Innova.Prism.Library.Services.PinnedListService<T, KeyType>.GetPinnedItems
+  nameWithType.vb: PinnedListService(Of T, KeyType).GetPinnedItems
+  fullName.vb: Innova.Prism.Library.Services.PinnedListService(Of T, KeyType).GetPinnedItems
+- uid: Innova.Prism.Library.Services.IPinnedListService{{T}}.GetPinnedItems
+  commentId: M:Innova.Prism.Library.Services.IPinnedListService{`0}.GetPinnedItems
+  parent: Innova.Prism.Library.Services.IPinnedListService{{T}}
+  definition: Innova.Prism.Library.Services.IPinnedListService`1.GetPinnedItems
+  href: Innova.Prism.Library.Services.IPinnedListService-1.GetPinnedItems.html#Innova_Prism_Library_Services_IPinnedListService_1_GetPinnedItems
+  name: GetPinnedItems()
+  nameWithType: IPinnedListService<T>.GetPinnedItems()
+  fullName: Innova.Prism.Library.Services.IPinnedListService<T>.GetPinnedItems()
+  nameWithType.vb: IPinnedListService(Of T).GetPinnedItems()
+  fullName.vb: Innova.Prism.Library.Services.IPinnedListService(Of T).GetPinnedItems()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IPinnedListService{`0}.GetPinnedItems
+    name: GetPinnedItems
+    href: Innova.Prism.Library.Services.IPinnedListService-1.GetPinnedItems.html#Innova_Prism_Library_Services_IPinnedListService_1_GetPinnedItems
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IPinnedListService{`0}.GetPinnedItems
+    name: GetPinnedItems
+    href: Innova.Prism.Library.Services.IPinnedListService-1.GetPinnedItems.html#Innova_Prism_Library_Services_IPinnedListService_1_GetPinnedItems
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.PinnedList.PinnedItem}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.PinnedList.PinnedItem}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<PinnedItem>>
+  nameWithType: Task<List<PinnedItem>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Innova.Data.PinnedList.PinnedItem>>
+  nameWithType.vb: Task(Of List(Of PinnedItem))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Innova.Data.PinnedList.PinnedItem))
+  name.vb: Task(Of List(Of PinnedItem))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.PinnedList.PinnedItem
+    name: PinnedItem
+    href: Innova.Data.PinnedList.PinnedItem.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.PinnedList.PinnedItem
+    name: PinnedItem
+    href: Innova.Data.PinnedList.PinnedItem.html
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Services.IPinnedListService`1.GetPinnedItems
+  commentId: M:Innova.Prism.Library.Services.IPinnedListService`1.GetPinnedItems
+  href: Innova.Prism.Library.Services.IPinnedListService-1.GetPinnedItems.html#Innova_Prism_Library_Services_IPinnedListService_1_GetPinnedItems
+  name: GetPinnedItems()
+  nameWithType: IPinnedListService<T>.GetPinnedItems()
+  fullName: Innova.Prism.Library.Services.IPinnedListService<T>.GetPinnedItems()
+  nameWithType.vb: IPinnedListService(Of T).GetPinnedItems()
+  fullName.vb: Innova.Prism.Library.Services.IPinnedListService(Of T).GetPinnedItems()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IPinnedListService`1.GetPinnedItems
+    name: GetPinnedItems
+    href: Innova.Prism.Library.Services.IPinnedListService-1.GetPinnedItems.html#Innova_Prism_Library_Services_IPinnedListService_1_GetPinnedItems
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IPinnedListService`1.GetPinnedItems
+    name: GetPinnedItems
+    href: Innova.Prism.Library.Services.IPinnedListService-1.GetPinnedItems.html#Innova_Prism_Library_Services_IPinnedListService_1_GetPinnedItems
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

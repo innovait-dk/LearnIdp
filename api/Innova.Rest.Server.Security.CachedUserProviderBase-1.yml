@@ -1,0 +1,706 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Rest.Server.Security.CachedUserProviderBase`1
+  commentId: T:Innova.Rest.Server.Security.CachedUserProviderBase`1
+  id: CachedUserProviderBase`1
+  parent: Innova.Rest.Server.Security
+  children:
+  - Innova.Rest.Server.Security.CachedUserProviderBase`1.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Options.IOptions{Innova.Rest.Server.Security.UserCacheOptions})
+  - Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUser
+  - Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUserAsync
+  - Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUserFromStore(System.Security.Claims.ClaimsPrincipal)
+  langs:
+  - csharp
+  - vb
+  name: CachedUserProviderBase<TUser>
+  nameWithType: CachedUserProviderBase<TUser>
+  fullName: Innova.Rest.Server.Security.CachedUserProviderBase<TUser>
+  type: Class
+  source:
+    id: CachedUserProviderBase
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Security\CachedUserProviderBase.cs
+    startLine: 17
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server.Security
+  syntax:
+    content: 'public class CachedUserProviderBase<TUser> : IUserProvider where TUser : class, ICurrentUser, new()'
+    typeParameters:
+    - id: TUser
+    content.vb: Public Class CachedUserProviderBase(Of TUser As {Class, ICurrentUser, New}) Implements IUserProvider
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Data.Security.IUserProvider
+  nameWithType.vb: CachedUserProviderBase(Of TUser)
+  fullName.vb: Innova.Rest.Server.Security.CachedUserProviderBase(Of TUser)
+  name.vb: CachedUserProviderBase(Of TUser)
+- uid: Innova.Rest.Server.Security.CachedUserProviderBase`1.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Options.IOptions{Innova.Rest.Server.Security.UserCacheOptions})
+  commentId: M:Innova.Rest.Server.Security.CachedUserProviderBase`1.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Options.IOptions{Innova.Rest.Server.Security.UserCacheOptions})
+  id: '#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Options.IOptions{Innova.Rest.Server.Security.UserCacheOptions})'
+  parent: Innova.Rest.Server.Security.CachedUserProviderBase`1
+  langs:
+  - csharp
+  - vb
+  name: CachedUserProviderBase(IHttpContextAccessor, IMemoryCache, IOptions<UserCacheOptions>)
+  nameWithType: CachedUserProviderBase<TUser>.CachedUserProviderBase(IHttpContextAccessor, IMemoryCache, IOptions<UserCacheOptions>)
+  fullName: Innova.Rest.Server.Security.CachedUserProviderBase<TUser>.CachedUserProviderBase(Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.Extensions.Caching.Memory.IMemoryCache, Microsoft.Extensions.Options.IOptions<Innova.Rest.Server.Security.UserCacheOptions>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Security\CachedUserProviderBase.cs
+    startLine: 25
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server.Security
+  syntax:
+    content: public CachedUserProviderBase(IHttpContextAccessor httpContextAccessor, IMemoryCache memoryCache, IOptions<UserCacheOptions> options)
+    parameters:
+    - id: httpContextAccessor
+      type: Microsoft.AspNetCore.Http.IHttpContextAccessor
+    - id: memoryCache
+      type: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    - id: options
+      type: Microsoft.Extensions.Options.IOptions{Innova.Rest.Server.Security.UserCacheOptions}
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, memoryCache As IMemoryCache, options As IOptions(Of UserCacheOptions))
+  overload: Innova.Rest.Server.Security.CachedUserProviderBase`1.#ctor*
+  nameWithType.vb: CachedUserProviderBase(Of TUser).New(IHttpContextAccessor, IMemoryCache, IOptions(Of UserCacheOptions))
+  fullName.vb: Innova.Rest.Server.Security.CachedUserProviderBase(Of TUser).New(Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.Extensions.Caching.Memory.IMemoryCache, Microsoft.Extensions.Options.IOptions(Of Innova.Rest.Server.Security.UserCacheOptions))
+  name.vb: New(IHttpContextAccessor, IMemoryCache, IOptions(Of UserCacheOptions))
+- uid: Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUserFromStore(System.Security.Claims.ClaimsPrincipal)
+  commentId: M:Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUserFromStore(System.Security.Claims.ClaimsPrincipal)
+  id: GetCurrentUserFromStore(System.Security.Claims.ClaimsPrincipal)
+  parent: Innova.Rest.Server.Security.CachedUserProviderBase`1
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentUserFromStore(ClaimsPrincipal)
+  nameWithType: CachedUserProviderBase<TUser>.GetCurrentUserFromStore(ClaimsPrincipal)
+  fullName: Innova.Rest.Server.Security.CachedUserProviderBase<TUser>.GetCurrentUserFromStore(System.Security.Claims.ClaimsPrincipal)
+  type: Method
+  source:
+    id: GetCurrentUserFromStore
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Security\CachedUserProviderBase.cs
+    startLine: 43
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server.Security
+  summary: Gets the current user from store to be put in the cache. Thread safe.
+  example: []
+  syntax:
+    content: protected virtual Task<TUser> GetCurrentUserFromStore(ClaimsPrincipal claimsPrincipal)
+    parameters:
+    - id: claimsPrincipal
+      type: System.Security.Claims.ClaimsPrincipal
+    return:
+      type: System.Threading.Tasks.Task{{TUser}}
+      description: ''
+    content.vb: Protected Overridable Function GetCurrentUserFromStore(claimsPrincipal As ClaimsPrincipal) As Task(Of TUser)
+  overload: Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUserFromStore*
+  nameWithType.vb: CachedUserProviderBase(Of TUser).GetCurrentUserFromStore(ClaimsPrincipal)
+  fullName.vb: Innova.Rest.Server.Security.CachedUserProviderBase(Of TUser).GetCurrentUserFromStore(System.Security.Claims.ClaimsPrincipal)
+- uid: Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUserAsync
+  commentId: M:Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUserAsync
+  id: GetCurrentUserAsync
+  parent: Innova.Rest.Server.Security.CachedUserProviderBase`1
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentUserAsync()
+  nameWithType: CachedUserProviderBase<TUser>.GetCurrentUserAsync()
+  fullName: Innova.Rest.Server.Security.CachedUserProviderBase<TUser>.GetCurrentUserAsync()
+  type: Method
+  source:
+    id: GetCurrentUserAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Security\CachedUserProviderBase.cs
+    startLine: 58
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server.Security
+  summary: Asynchronously gets the current user.
+  example: []
+  syntax:
+    content: public Task<ICurrentUser> GetCurrentUserAsync()
+    return:
+      type: System.Threading.Tasks.Task{Innova.Data.Security.ICurrentUser}
+      description: A task that represents the asynchronous operation. The task result contains the current user.
+    content.vb: Public Function GetCurrentUserAsync() As Task(Of ICurrentUser)
+  overload: Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUserAsync*
+  implements:
+  - Innova.Data.Security.IUserProvider.GetCurrentUserAsync
+  nameWithType.vb: CachedUserProviderBase(Of TUser).GetCurrentUserAsync()
+  fullName.vb: Innova.Rest.Server.Security.CachedUserProviderBase(Of TUser).GetCurrentUserAsync()
+- uid: Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUser
+  commentId: M:Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUser
+  id: GetCurrentUser
+  parent: Innova.Rest.Server.Security.CachedUserProviderBase`1
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentUser()
+  nameWithType: CachedUserProviderBase<TUser>.GetCurrentUser()
+  fullName: Innova.Rest.Server.Security.CachedUserProviderBase<TUser>.GetCurrentUser()
+  type: Method
+  source:
+    id: GetCurrentUser
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Security\CachedUserProviderBase.cs
+    startLine: 84
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server.Security
+  summary: Gets the current user.
+  example: []
+  syntax:
+    content: public ICurrentUser GetCurrentUser()
+    return:
+      type: Innova.Data.Security.ICurrentUser
+      description: The current user.
+    content.vb: Public Function GetCurrentUser() As ICurrentUser
+  overload: Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUser*
+  implements:
+  - Innova.Data.Security.IUserProvider.GetCurrentUser
+  nameWithType.vb: CachedUserProviderBase(Of TUser).GetCurrentUser()
+  fullName.vb: Innova.Rest.Server.Security.CachedUserProviderBase(Of TUser).GetCurrentUser()
+references:
+- uid: Innova.Rest.Server.Security
+  commentId: N:Innova.Rest.Server.Security
+  href: Innova.html
+  name: Innova.Rest.Server.Security
+  nameWithType: Innova.Rest.Server.Security
+  fullName: Innova.Rest.Server.Security
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Server
+    name: Server
+    href: Innova.Rest.Server.html
+  - name: .
+  - uid: Innova.Rest.Server.Security
+    name: Security
+    href: Innova.Rest.Server.Security.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Server
+    name: Server
+    href: Innova.Rest.Server.html
+  - name: .
+  - uid: Innova.Rest.Server.Security
+    name: Security
+    href: Innova.Rest.Server.Security.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Data.Security.IUserProvider
+  commentId: T:Innova.Data.Security.IUserProvider
+  parent: Innova.Data.Security
+  href: Innova.Data.Security.IUserProvider.html
+  name: IUserProvider
+  nameWithType: IUserProvider
+  fullName: Innova.Data.Security.IUserProvider
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.Security
+  commentId: N:Innova.Data.Security
+  href: Innova.html
+  name: Innova.Data.Security
+  nameWithType: Innova.Data.Security
+  fullName: Innova.Data.Security
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Security
+    name: Security
+    href: Innova.Data.Security.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Security
+    name: Security
+    href: Innova.Data.Security.html
+- uid: Innova.Rest.Server.Security.CachedUserProviderBase`1.#ctor*
+  commentId: Overload:Innova.Rest.Server.Security.CachedUserProviderBase`1.#ctor
+  href: Innova.Rest.Server.Security.CachedUserProviderBase-1.-ctor.html#Innova_Rest_Server_Security_CachedUserProviderBase_1__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_Microsoft_Extensions_Caching_Memory_IMemoryCache_Microsoft_Extensions_Options_IOptions_Innova_Rest_Server_Security_UserCacheOptions__
+  name: CachedUserProviderBase
+  nameWithType: CachedUserProviderBase<TUser>.CachedUserProviderBase
+  fullName: Innova.Rest.Server.Security.CachedUserProviderBase<TUser>.CachedUserProviderBase
+  nameWithType.vb: CachedUserProviderBase(Of TUser).New
+  fullName.vb: Innova.Rest.Server.Security.CachedUserProviderBase(Of TUser).New
+  name.vb: New
+- uid: Microsoft.AspNetCore.Http.IHttpContextAccessor
+  commentId: T:Microsoft.AspNetCore.Http.IHttpContextAccessor
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.ihttpcontextaccessor
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: Microsoft.AspNetCore.Http.IHttpContextAccessor
+- uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+  commentId: T:Microsoft.Extensions.Caching.Memory.IMemoryCache
+  parent: Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  name: IMemoryCache
+  nameWithType: IMemoryCache
+  fullName: Microsoft.Extensions.Caching.Memory.IMemoryCache
+- uid: Microsoft.Extensions.Options.IOptions{Innova.Rest.Server.Security.UserCacheOptions}
+  commentId: T:Microsoft.Extensions.Options.IOptions{Innova.Rest.Server.Security.UserCacheOptions}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<UserCacheOptions>
+  nameWithType: IOptions<UserCacheOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<Innova.Rest.Server.Security.UserCacheOptions>
+  nameWithType.vb: IOptions(Of UserCacheOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of Innova.Rest.Server.Security.UserCacheOptions)
+  name.vb: IOptions(Of UserCacheOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: Innova.Rest.Server.Security.UserCacheOptions
+    name: UserCacheOptions
+    href: Innova.Rest.Server.Security.UserCacheOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Rest.Server.Security.UserCacheOptions
+    name: UserCacheOptions
+    href: Innova.Rest.Server.Security.UserCacheOptions.html
+  - name: )
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+- uid: Microsoft.Extensions.Caching.Memory
+  commentId: N:Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Memory
+  nameWithType: Microsoft.Extensions.Caching.Memory
+  fullName: Microsoft.Extensions.Caching.Memory
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+- uid: Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUserFromStore*
+  commentId: Overload:Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUserFromStore
+  href: Innova.Rest.Server.Security.CachedUserProviderBase-1.GetCurrentUserFromStore.html#Innova_Rest_Server_Security_CachedUserProviderBase_1_GetCurrentUserFromStore_System_Security_Claims_ClaimsPrincipal_
+  name: GetCurrentUserFromStore
+  nameWithType: CachedUserProviderBase<TUser>.GetCurrentUserFromStore
+  fullName: Innova.Rest.Server.Security.CachedUserProviderBase<TUser>.GetCurrentUserFromStore
+  nameWithType.vb: CachedUserProviderBase(Of TUser).GetCurrentUserFromStore
+  fullName.vb: Innova.Rest.Server.Security.CachedUserProviderBase(Of TUser).GetCurrentUserFromStore
+- uid: System.Security.Claims.ClaimsPrincipal
+  commentId: T:System.Security.Claims.ClaimsPrincipal
+  parent: System.Security.Claims
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal
+  name: ClaimsPrincipal
+  nameWithType: ClaimsPrincipal
+  fullName: System.Security.Claims.ClaimsPrincipal
+- uid: System.Threading.Tasks.Task{{TUser}}
+  commentId: T:System.Threading.Tasks.Task{`0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TUser>
+  nameWithType: Task<TUser>
+  fullName: System.Threading.Tasks.Task<TUser>
+  nameWithType.vb: Task(Of TUser)
+  fullName.vb: System.Threading.Tasks.Task(Of TUser)
+  name.vb: Task(Of TUser)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TUser
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TUser
+  - name: )
+- uid: System.Security.Claims
+  commentId: N:System.Security.Claims
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Security.Claims
+  nameWithType: System.Security.Claims
+  fullName: System.Security.Claims
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Claims
+    name: Claims
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.claims
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Claims
+    name: Claims
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.claims
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUserAsync*
+  commentId: Overload:Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUserAsync
+  href: Innova.Rest.Server.Security.CachedUserProviderBase-1.GetCurrentUserAsync.html#Innova_Rest_Server_Security_CachedUserProviderBase_1_GetCurrentUserAsync
+  name: GetCurrentUserAsync
+  nameWithType: CachedUserProviderBase<TUser>.GetCurrentUserAsync
+  fullName: Innova.Rest.Server.Security.CachedUserProviderBase<TUser>.GetCurrentUserAsync
+  nameWithType.vb: CachedUserProviderBase(Of TUser).GetCurrentUserAsync
+  fullName.vb: Innova.Rest.Server.Security.CachedUserProviderBase(Of TUser).GetCurrentUserAsync
+- uid: Innova.Data.Security.IUserProvider.GetCurrentUserAsync
+  commentId: M:Innova.Data.Security.IUserProvider.GetCurrentUserAsync
+  parent: Innova.Data.Security.IUserProvider
+  href: Innova.Data.Security.IUserProvider.GetCurrentUserAsync.html#Innova_Data_Security_IUserProvider_GetCurrentUserAsync
+  name: GetCurrentUserAsync()
+  nameWithType: IUserProvider.GetCurrentUserAsync()
+  fullName: Innova.Data.Security.IUserProvider.GetCurrentUserAsync()
+  spec.csharp:
+  - uid: Innova.Data.Security.IUserProvider.GetCurrentUserAsync
+    name: GetCurrentUserAsync
+    href: Innova.Data.Security.IUserProvider.GetCurrentUserAsync.html#Innova_Data_Security_IUserProvider_GetCurrentUserAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Security.IUserProvider.GetCurrentUserAsync
+    name: GetCurrentUserAsync
+    href: Innova.Data.Security.IUserProvider.GetCurrentUserAsync.html#Innova_Data_Security_IUserProvider_GetCurrentUserAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task{Innova.Data.Security.ICurrentUser}
+  commentId: T:System.Threading.Tasks.Task{Innova.Data.Security.ICurrentUser}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ICurrentUser>
+  nameWithType: Task<ICurrentUser>
+  fullName: System.Threading.Tasks.Task<Innova.Data.Security.ICurrentUser>
+  nameWithType.vb: Task(Of ICurrentUser)
+  fullName.vb: System.Threading.Tasks.Task(Of Innova.Data.Security.ICurrentUser)
+  name.vb: Task(Of ICurrentUser)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Innova.Data.Security.ICurrentUser
+    name: ICurrentUser
+    href: Innova.Data.Security.ICurrentUser.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.Security.ICurrentUser
+    name: ICurrentUser
+    href: Innova.Data.Security.ICurrentUser.html
+  - name: )
+- uid: Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUser*
+  commentId: Overload:Innova.Rest.Server.Security.CachedUserProviderBase`1.GetCurrentUser
+  href: Innova.Rest.Server.Security.CachedUserProviderBase-1.GetCurrentUser.html#Innova_Rest_Server_Security_CachedUserProviderBase_1_GetCurrentUser
+  name: GetCurrentUser
+  nameWithType: CachedUserProviderBase<TUser>.GetCurrentUser
+  fullName: Innova.Rest.Server.Security.CachedUserProviderBase<TUser>.GetCurrentUser
+  nameWithType.vb: CachedUserProviderBase(Of TUser).GetCurrentUser
+  fullName.vb: Innova.Rest.Server.Security.CachedUserProviderBase(Of TUser).GetCurrentUser
+- uid: Innova.Data.Security.IUserProvider.GetCurrentUser
+  commentId: M:Innova.Data.Security.IUserProvider.GetCurrentUser
+  parent: Innova.Data.Security.IUserProvider
+  href: Innova.Data.Security.IUserProvider.GetCurrentUser.html#Innova_Data_Security_IUserProvider_GetCurrentUser
+  name: GetCurrentUser()
+  nameWithType: IUserProvider.GetCurrentUser()
+  fullName: Innova.Data.Security.IUserProvider.GetCurrentUser()
+  spec.csharp:
+  - uid: Innova.Data.Security.IUserProvider.GetCurrentUser
+    name: GetCurrentUser
+    href: Innova.Data.Security.IUserProvider.GetCurrentUser.html#Innova_Data_Security_IUserProvider_GetCurrentUser
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Security.IUserProvider.GetCurrentUser
+    name: GetCurrentUser
+    href: Innova.Data.Security.IUserProvider.GetCurrentUser.html#Innova_Data_Security_IUserProvider_GetCurrentUser
+  - name: (
+  - name: )
+- uid: Innova.Data.Security.ICurrentUser
+  commentId: T:Innova.Data.Security.ICurrentUser
+  parent: Innova.Data.Security
+  href: Innova.Data.Security.ICurrentUser.html
+  name: ICurrentUser
+  nameWithType: ICurrentUser
+  fullName: Innova.Data.Security.ICurrentUser
+memberLayout: SeparatePages

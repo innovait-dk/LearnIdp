@@ -1,0 +1,298 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder
+  commentId: T:Innova.Prism.Telerik.Expressions.FilterExpressionBuilder
+  id: FilterExpressionBuilder
+  parent: Innova.Prism.Telerik.Expressions
+  children:
+  - Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.#ctor(System.Linq.Expressions.ParameterExpression)
+  - Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateBodyExpression
+  - Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateFilterExpression
+  langs:
+  - csharp
+  - vb
+  name: FilterExpressionBuilder
+  nameWithType: FilterExpressionBuilder
+  fullName: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder
+  type: Class
+  source:
+    id: FilterExpressionBuilder
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Telerik\Expressions\FilterExpressionBuilder.cs
+    startLine: 9
+  assemblies:
+  - Innova.Prism.Telerik
+  namespace: Innova.Prism.Telerik.Expressions
+  summary: Represents an abstract base class for building filter expressions.
+  example: []
+  syntax:
+    content: 'public abstract class FilterExpressionBuilder : ExpressionBuilderBase'
+    content.vb: Public MustInherit Class FilterExpressionBuilder Inherits ExpressionBuilderBase
+  inheritance:
+  - System.Object
+  - Innova.Prism.Telerik.Expressions.ExpressionBuilderBase
+  derivedClasses:
+  - Innova.Prism.Telerik.Expressions.FilterDescriptorCollectionExpressionBuilder
+  inheritedMembers:
+  - Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.Options
+  - Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.ItemType
+  - Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.ParameterExpression
+- uid: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.#ctor(System.Linq.Expressions.ParameterExpression)
+  commentId: M:Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.#ctor(System.Linq.Expressions.ParameterExpression)
+  id: '#ctor(System.Linq.Expressions.ParameterExpression)'
+  parent: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder
+  langs:
+  - csharp
+  - vb
+  name: FilterExpressionBuilder(ParameterExpression)
+  nameWithType: FilterExpressionBuilder.FilterExpressionBuilder(ParameterExpression)
+  fullName: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.FilterExpressionBuilder(System.Linq.Expressions.ParameterExpression)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Telerik\Expressions\FilterExpressionBuilder.cs
+    startLine: 15
+  assemblies:
+  - Innova.Prism.Telerik
+  namespace: Innova.Prism.Telerik.Expressions
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Telerik.Expressions.FilterExpressionBuilder" data-throw-if-not-resolved="false"></xref> class with the specified parameter expression.
+  example: []
+  syntax:
+    content: protected FilterExpressionBuilder(ParameterExpression parameterExpression)
+    parameters:
+    - id: parameterExpression
+      type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
+    content.vb: Protected Sub New(parameterExpression As ParameterExpression)
+  overload: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.#ctor*
+  nameWithType.vb: FilterExpressionBuilder.New(ParameterExpression)
+  fullName.vb: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.New(System.Linq.Expressions.ParameterExpression)
+  name.vb: New(ParameterExpression)
+- uid: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateBodyExpression
+  commentId: M:Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateBodyExpression
+  id: CreateBodyExpression
+  parent: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder
+  langs:
+  - csharp
+  - vb
+  name: CreateBodyExpression()
+  nameWithType: FilterExpressionBuilder.CreateBodyExpression()
+  fullName: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateBodyExpression()
+  type: Method
+  source:
+    id: CreateBodyExpression
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Telerik\Expressions\FilterExpressionBuilder.cs
+    startLine: 25
+  assemblies:
+  - Innova.Prism.Telerik
+  namespace: Innova.Prism.Telerik.Expressions
+  summary: Creates the body expression for the filter.
+  example: []
+  syntax:
+    content: public abstract Expression CreateBodyExpression()
+    return:
+      type: System.Linq.Expressions.Expression
+      description: The body expression.
+    content.vb: Public MustOverride Function CreateBodyExpression() As Expression
+  overload: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateBodyExpression*
+- uid: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateFilterExpression
+  commentId: M:Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateFilterExpression
+  id: CreateFilterExpression
+  parent: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder
+  langs:
+  - csharp
+  - vb
+  name: CreateFilterExpression()
+  nameWithType: FilterExpressionBuilder.CreateFilterExpression()
+  fullName: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateFilterExpression()
+  type: Method
+  source:
+    id: CreateFilterExpression
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Telerik\Expressions\FilterExpressionBuilder.cs
+    startLine: 31
+  assemblies:
+  - Innova.Prism.Telerik
+  namespace: Innova.Prism.Telerik.Expressions
+  summary: Creates the filter expression.
+  example: []
+  syntax:
+    content: public LambdaExpression CreateFilterExpression()
+    return:
+      type: System.Linq.Expressions.LambdaExpression
+      description: The filter expression.
+    content.vb: Public Function CreateFilterExpression() As LambdaExpression
+  overload: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateFilterExpression*
+references:
+- uid: Innova.Prism.Telerik.Expressions
+  commentId: N:Innova.Prism.Telerik.Expressions
+  href: Innova.html
+  name: Innova.Prism.Telerik.Expressions
+  nameWithType: Innova.Prism.Telerik.Expressions
+  fullName: Innova.Prism.Telerik.Expressions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Telerik
+    name: Telerik
+    href: Innova.Prism.Telerik.html
+  - name: .
+  - uid: Innova.Prism.Telerik.Expressions
+    name: Expressions
+    href: Innova.Prism.Telerik.Expressions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Telerik
+    name: Telerik
+    href: Innova.Prism.Telerik.html
+  - name: .
+  - uid: Innova.Prism.Telerik.Expressions
+    name: Expressions
+    href: Innova.Prism.Telerik.Expressions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase
+  commentId: T:Innova.Prism.Telerik.Expressions.ExpressionBuilderBase
+  parent: Innova.Prism.Telerik.Expressions
+  href: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.html
+  name: ExpressionBuilderBase
+  nameWithType: ExpressionBuilderBase
+  fullName: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase
+- uid: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.Options
+  commentId: P:Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.Options
+  parent: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase
+  href: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.Options.html#Innova_Prism_Telerik_Expressions_ExpressionBuilderBase_Options
+  name: Options
+  nameWithType: ExpressionBuilderBase.Options
+  fullName: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.Options
+- uid: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.ItemType
+  commentId: P:Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.ItemType
+  parent: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase
+  href: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.ItemType.html#Innova_Prism_Telerik_Expressions_ExpressionBuilderBase_ItemType
+  name: ItemType
+  nameWithType: ExpressionBuilderBase.ItemType
+  fullName: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.ItemType
+- uid: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.ParameterExpression
+  commentId: P:Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.ParameterExpression
+  parent: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase
+  href: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.ParameterExpression.html#Innova_Prism_Telerik_Expressions_ExpressionBuilderBase_ParameterExpression
+  name: ParameterExpression
+  nameWithType: ExpressionBuilderBase.ParameterExpression
+  fullName: Innova.Prism.Telerik.Expressions.ExpressionBuilderBase.ParameterExpression
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder
+  commentId: T:Innova.Prism.Telerik.Expressions.FilterExpressionBuilder
+  parent: Innova.Prism.Telerik.Expressions
+  href: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.html
+  name: FilterExpressionBuilder
+  nameWithType: FilterExpressionBuilder
+  fullName: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder
+- uid: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.#ctor*
+  commentId: Overload:Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.#ctor
+  href: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.-ctor.html#Innova_Prism_Telerik_Expressions_FilterExpressionBuilder__ctor_System_Linq_Expressions_ParameterExpression_
+  name: FilterExpressionBuilder
+  nameWithType: FilterExpressionBuilder.FilterExpressionBuilder
+  fullName: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.FilterExpressionBuilder
+  nameWithType.vb: FilterExpressionBuilder.New
+  fullName.vb: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.New
+  name.vb: New
+- uid: System.Linq.Expressions.ParameterExpression
+  commentId: T:System.Linq.Expressions.ParameterExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.parameterexpression
+  name: ParameterExpression
+  nameWithType: ParameterExpression
+  fullName: System.Linq.Expressions.ParameterExpression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateBodyExpression*
+  commentId: Overload:Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateBodyExpression
+  href: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateBodyExpression.html#Innova_Prism_Telerik_Expressions_FilterExpressionBuilder_CreateBodyExpression
+  name: CreateBodyExpression
+  nameWithType: FilterExpressionBuilder.CreateBodyExpression
+  fullName: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateBodyExpression
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateFilterExpression*
+  commentId: Overload:Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateFilterExpression
+  href: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateFilterExpression.html#Innova_Prism_Telerik_Expressions_FilterExpressionBuilder_CreateFilterExpression
+  name: CreateFilterExpression
+  nameWithType: FilterExpressionBuilder.CreateFilterExpression
+  fullName: Innova.Prism.Telerik.Expressions.FilterExpressionBuilder.CreateFilterExpression
+- uid: System.Linq.Expressions.LambdaExpression
+  commentId: T:System.Linq.Expressions.LambdaExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.lambdaexpression
+  name: LambdaExpression
+  nameWithType: LambdaExpression
+  fullName: System.Linq.Expressions.LambdaExpression
+memberLayout: SeparatePages

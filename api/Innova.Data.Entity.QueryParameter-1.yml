@@ -39,6 +39,8 @@ items:
     content.vb: Public Class QueryParameter(Of T As Class) Implements IQueryParameter, ICloneable
   inheritance:
   - System.Object
+  derivedClasses:
+  - Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
   implements:
   - Innova.Data.Entity.Interfaces.IQueryParameter
   - System.ICloneable
@@ -51,6 +53,7 @@ items:
   - Innova.Data.Entity.QueryParameter`1.Innova.Data.Entity.QueryParameterExtensions.HasValidSearchQuery``1
   - Innova.Data.Entity.QueryParameter`1.Innova.Data.Entity.QueryParameterExtensions.SetWhereByPrimaryKeys``1(Innova.Data.Entity.IPrimaryKey)
   - Innova.Data.Entity.QueryParameter`1.Innova.Data.Entity.QueryParameterExtensions.SetWhereByPrimaryKeys``1(System.Collections.Generic.List{Innova.Data.Entity.IPrimaryKey})
+  - Innova.Data.Entity.QueryParameter`1.Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter``1
   nameWithType.vb: QueryParameter(Of T)
   fullName.vb: Innova.Data.Entity.QueryParameter(Of T)
   name.vb: QueryParameter(Of T)
@@ -857,6 +860,51 @@ references:
     href: Innova.Data.Entity.IPrimaryKey.html
   - name: )
   - name: )
+- uid: Innova.Data.Entity.QueryParameter`1.Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter``1
+  commentId: M:Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter``1(Innova.Data.Entity.QueryParameter{``0})
+  parent: Innova.Rest.Abstractions.ExtensionMethods
+  definition: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter``1(Innova.Data.Entity.QueryParameter{``0})
+  href: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter.html#Innova_Rest_Abstractions_ExtensionMethods_ToRestQueryParameter__1_Innova_Data_Entity_QueryParameter___0__
+  name: ToRestQueryParameter<T>(QueryParameter<T>)
+  nameWithType: ExtensionMethods.ToRestQueryParameter<T>(QueryParameter<T>)
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter<T>(Innova.Data.Entity.QueryParameter<T>)
+  nameWithType.vb: ExtensionMethods.ToRestQueryParameter(Of T)(QueryParameter(Of T))
+  fullName.vb: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter(Of T)(Innova.Data.Entity.QueryParameter(Of T))
+  name.vb: ToRestQueryParameter(Of T)(QueryParameter(Of T))
+  spec.csharp:
+  - uid: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter``1(Innova.Data.Entity.QueryParameter{`0})
+    name: ToRestQueryParameter
+    href: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter.html#Innova_Rest_Abstractions_ExtensionMethods_ToRestQueryParameter__1_Innova_Data_Entity_QueryParameter___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter``1(Innova.Data.Entity.QueryParameter{`0})
+    name: ToRestQueryParameter
+    href: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter.html#Innova_Rest_Abstractions_ExtensionMethods_ToRestQueryParameter__1_Innova_Data_Entity_QueryParameter___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -1348,6 +1396,86 @@ references:
     href: Innova.Data.Entity.IPrimaryKey.html
   - name: )
   - name: )
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter``1(Innova.Data.Entity.QueryParameter{``0})
+  commentId: M:Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter``1(Innova.Data.Entity.QueryParameter{``0})
+  href: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter.html#Innova_Rest_Abstractions_ExtensionMethods_ToRestQueryParameter__1_Innova_Data_Entity_QueryParameter___0__
+  name: ToRestQueryParameter<T>(QueryParameter<T>)
+  nameWithType: ExtensionMethods.ToRestQueryParameter<T>(QueryParameter<T>)
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter<T>(Innova.Data.Entity.QueryParameter<T>)
+  nameWithType.vb: ExtensionMethods.ToRestQueryParameter(Of T)(QueryParameter(Of T))
+  fullName.vb: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter(Of T)(Innova.Data.Entity.QueryParameter(Of T))
+  name.vb: ToRestQueryParameter(Of T)(QueryParameter(Of T))
+  spec.csharp:
+  - uid: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter``1(Innova.Data.Entity.QueryParameter{``0})
+    name: ToRestQueryParameter
+    href: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter.html#Innova_Rest_Abstractions_ExtensionMethods_ToRestQueryParameter__1_Innova_Data_Entity_QueryParameter___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter``1(Innova.Data.Entity.QueryParameter{``0})
+    name: ToRestQueryParameter
+    href: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter.html#Innova_Rest_Abstractions_ExtensionMethods_ToRestQueryParameter__1_Innova_Data_Entity_QueryParameter___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Rest.Abstractions.ExtensionMethods
+  commentId: T:Innova.Rest.Abstractions.ExtensionMethods
+  parent: Innova.Rest.Abstractions
+  href: Innova.Rest.Abstractions.ExtensionMethods.html
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Innova.Rest.Abstractions.ExtensionMethods
+- uid: Innova.Rest.Abstractions
+  commentId: N:Innova.Rest.Abstractions
+  href: Innova.html
+  name: Innova.Rest.Abstractions
+  nameWithType: Innova.Rest.Abstractions
+  fullName: Innova.Rest.Abstractions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Abstractions
+    name: Abstractions
+    href: Innova.Rest.Abstractions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Abstractions
+    name: Abstractions
+    href: Innova.Rest.Abstractions.html
 - uid: Innova.Data.Entity.QueryParameter`1.PrimaryKeys*
   commentId: Overload:Innova.Data.Entity.QueryParameter`1.PrimaryKeys
   href: Innova.Data.Entity.QueryParameter-1.PrimaryKeys.html#Innova_Data_Entity_QueryParameter_1_PrimaryKeys

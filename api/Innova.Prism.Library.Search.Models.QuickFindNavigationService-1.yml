@@ -1,0 +1,813 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1
+  commentId: T:Innova.Prism.Library.Search.Models.QuickFindNavigationService`1
+  id: QuickFindNavigationService`1
+  parent: Innova.Prism.Library.Search.Models
+  children:
+  - Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.#ctor(Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IWindowDialogService,Innova.Data.Entity.IEntityService{`0},Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Search.Models.QuickFindNavigationService{`0}})
+  - Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0})
+  - Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.ShowResult(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0},System.Collections.Generic.List{Innova.Data.Entity.PrimaryKeys{`0}})
+  langs:
+  - csharp
+  - vb
+  name: QuickFindNavigationService<T>
+  nameWithType: QuickFindNavigationService<T>
+  fullName: Innova.Prism.Library.Search.Models.QuickFindNavigationService<T>
+  type: Class
+  source:
+    id: QuickFindNavigationService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Search\Models\QuickFindNavigationService.cs
+    startLine: 15
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Search.Models
+  syntax:
+    content: 'public class QuickFindNavigationService<T> : IQuickFindNavigationService<T> where T : class'
+    typeParameters:
+    - id: T
+    content.vb: Public Class QuickFindNavigationService(Of T As Class) Implements IQuickFindNavigationService(Of T)
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Prism.Library.Search.Models.IQuickFindNavigationService{{T}}
+  nameWithType.vb: QuickFindNavigationService(Of T)
+  fullName.vb: Innova.Prism.Library.Search.Models.QuickFindNavigationService(Of T)
+  name.vb: QuickFindNavigationService(Of T)
+- uid: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.#ctor(Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IWindowDialogService,Innova.Data.Entity.IEntityService{`0},Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Search.Models.QuickFindNavigationService{`0}})
+  commentId: M:Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.#ctor(Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IWindowDialogService,Innova.Data.Entity.IEntityService{`0},Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Search.Models.QuickFindNavigationService{`0}})
+  id: '#ctor(Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IWindowDialogService,Innova.Data.Entity.IEntityService{`0},Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Search.Models.QuickFindNavigationService{`0}})'
+  parent: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1
+  langs:
+  - csharp
+  - vb
+  name: QuickFindNavigationService(IEventAggregator, IWindowDialogService, IEntityService<T>, ILogger<QuickFindNavigationService<T>>)
+  nameWithType: QuickFindNavigationService<T>.QuickFindNavigationService(IEventAggregator, IWindowDialogService, IEntityService<T>, ILogger<QuickFindNavigationService<T>>)
+  fullName: Innova.Prism.Library.Search.Models.QuickFindNavigationService<T>.QuickFindNavigationService(Prism.Events.IEventAggregator, Innova.Prism.Library.Services.IWindowDialogService, Innova.Data.Entity.IEntityService<T>, Microsoft.Extensions.Logging.ILogger<Innova.Prism.Library.Search.Models.QuickFindNavigationService<T>>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Search\Models\QuickFindNavigationService.cs
+    startLine: 22
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Search.Models
+  syntax:
+    content: public QuickFindNavigationService(IEventAggregator eventAggregator, IWindowDialogService dialogService, IEntityService<T> entityService, ILogger<QuickFindNavigationService<T>> logger)
+    parameters:
+    - id: eventAggregator
+      type: Prism.Events.IEventAggregator
+    - id: dialogService
+      type: Innova.Prism.Library.Services.IWindowDialogService
+    - id: entityService
+      type: Innova.Data.Entity.IEntityService{{T}}
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Search.Models.QuickFindNavigationService`1}
+    content.vb: Public Sub New(eventAggregator As IEventAggregator, dialogService As IWindowDialogService, entityService As IEntityService(Of T), logger As ILogger(Of QuickFindNavigationService(Of T)))
+  overload: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.#ctor*
+  nameWithType.vb: QuickFindNavigationService(Of T).New(IEventAggregator, IWindowDialogService, IEntityService(Of T), ILogger(Of QuickFindNavigationService(Of T)))
+  fullName.vb: Innova.Prism.Library.Search.Models.QuickFindNavigationService(Of T).New(Prism.Events.IEventAggregator, Innova.Prism.Library.Services.IWindowDialogService, Innova.Data.Entity.IEntityService(Of T), Microsoft.Extensions.Logging.ILogger(Of Innova.Prism.Library.Search.Models.QuickFindNavigationService(Of T)))
+  name.vb: New(IEventAggregator, IWindowDialogService, IEntityService(Of T), ILogger(Of QuickFindNavigationService(Of T)))
+- uid: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0})
+  commentId: M:Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0})
+  id: Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0})
+  parent: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1
+  langs:
+  - csharp
+  - vb
+  name: Search(QuickFindSearchItemViewModel<T>)
+  nameWithType: QuickFindNavigationService<T>.Search(QuickFindSearchItemViewModel<T>)
+  fullName: Innova.Prism.Library.Search.Models.QuickFindNavigationService<T>.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel<T>)
+  type: Method
+  source:
+    id: Search
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Search\Models\QuickFindNavigationService.cs
+    startLine: 30
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Search.Models
+  example: []
+  syntax:
+    content: public Task Search(QuickFindSearchItemViewModel<T> quickFindSearchItem)
+    parameters:
+    - id: quickFindSearchItem
+      type: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{{T}}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Search(quickFindSearchItem As QuickFindSearchItemViewModel(Of T)) As Task
+  overload: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.Search*
+  implements:
+  - Innova.Prism.Library.Search.Models.IQuickFindNavigationService{{T}}.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{{T}})
+  nameWithType.vb: QuickFindNavigationService(Of T).Search(QuickFindSearchItemViewModel(Of T))
+  fullName.vb: Innova.Prism.Library.Search.Models.QuickFindNavigationService(Of T).Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel(Of T))
+  name.vb: Search(QuickFindSearchItemViewModel(Of T))
+- uid: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.ShowResult(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0},System.Collections.Generic.List{Innova.Data.Entity.PrimaryKeys{`0}})
+  commentId: M:Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.ShowResult(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0},System.Collections.Generic.List{Innova.Data.Entity.PrimaryKeys{`0}})
+  id: ShowResult(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0},System.Collections.Generic.List{Innova.Data.Entity.PrimaryKeys{`0}})
+  parent: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1
+  langs:
+  - csharp
+  - vb
+  name: ShowResult(QuickFindSearchItemViewModel<T>, List<PrimaryKeys<T>>)
+  nameWithType: QuickFindNavigationService<T>.ShowResult(QuickFindSearchItemViewModel<T>, List<PrimaryKeys<T>>)
+  fullName: Innova.Prism.Library.Search.Models.QuickFindNavigationService<T>.ShowResult(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel<T>, System.Collections.Generic.List<Innova.Data.Entity.PrimaryKeys<T>>)
+  type: Method
+  source:
+    id: ShowResult
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Search\Models\QuickFindNavigationService.cs
+    startLine: 45
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Search.Models
+  syntax:
+    content: protected virtual void ShowResult(QuickFindSearchItemViewModel<T> searchViewModel, List<PrimaryKeys<T>> primarykeys)
+    parameters:
+    - id: searchViewModel
+      type: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{{T}}
+    - id: primarykeys
+      type: System.Collections.Generic.List{Innova.Data.Entity.PrimaryKeys{{T}}}
+    content.vb: Protected Overridable Sub ShowResult(searchViewModel As QuickFindSearchItemViewModel(Of T), primarykeys As List(Of PrimaryKeys(Of T)))
+  overload: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.ShowResult*
+  nameWithType.vb: QuickFindNavigationService(Of T).ShowResult(QuickFindSearchItemViewModel(Of T), List(Of PrimaryKeys(Of T)))
+  fullName.vb: Innova.Prism.Library.Search.Models.QuickFindNavigationService(Of T).ShowResult(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel(Of T), System.Collections.Generic.List(Of Innova.Data.Entity.PrimaryKeys(Of T)))
+  name.vb: ShowResult(QuickFindSearchItemViewModel(Of T), List(Of PrimaryKeys(Of T)))
+references:
+- uid: Innova.Prism.Library.Search.Models
+  commentId: N:Innova.Prism.Library.Search.Models
+  href: Innova.html
+  name: Innova.Prism.Library.Search.Models
+  nameWithType: Innova.Prism.Library.Search.Models
+  fullName: Innova.Prism.Library.Search.Models
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Search
+    name: Search
+    href: Innova.Prism.Library.Search.html
+  - name: .
+  - uid: Innova.Prism.Library.Search.Models
+    name: Models
+    href: Innova.Prism.Library.Search.Models.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Search
+    name: Search
+    href: Innova.Prism.Library.Search.html
+  - name: .
+  - uid: Innova.Prism.Library.Search.Models
+    name: Models
+    href: Innova.Prism.Library.Search.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Prism.Library.Search.Models.IQuickFindNavigationService{{T}}
+  commentId: T:Innova.Prism.Library.Search.Models.IQuickFindNavigationService{`0}
+  parent: Innova.Prism.Library.Search.Models
+  definition: Innova.Prism.Library.Search.Models.IQuickFindNavigationService`1
+  href: Innova.Prism.Library.Search.Models.IQuickFindNavigationService-1.html
+  name: IQuickFindNavigationService<T>
+  nameWithType: IQuickFindNavigationService<T>
+  fullName: Innova.Prism.Library.Search.Models.IQuickFindNavigationService<T>
+  nameWithType.vb: IQuickFindNavigationService(Of T)
+  fullName.vb: Innova.Prism.Library.Search.Models.IQuickFindNavigationService(Of T)
+  name.vb: IQuickFindNavigationService(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Search.Models.IQuickFindNavigationService`1
+    name: IQuickFindNavigationService
+    href: Innova.Prism.Library.Search.Models.IQuickFindNavigationService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Search.Models.IQuickFindNavigationService`1
+    name: IQuickFindNavigationService
+    href: Innova.Prism.Library.Search.Models.IQuickFindNavigationService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Library.Search.Models.IQuickFindNavigationService`1
+  commentId: T:Innova.Prism.Library.Search.Models.IQuickFindNavigationService`1
+  href: Innova.Prism.Library.Search.Models.IQuickFindNavigationService-1.html
+  name: IQuickFindNavigationService<T>
+  nameWithType: IQuickFindNavigationService<T>
+  fullName: Innova.Prism.Library.Search.Models.IQuickFindNavigationService<T>
+  nameWithType.vb: IQuickFindNavigationService(Of T)
+  fullName.vb: Innova.Prism.Library.Search.Models.IQuickFindNavigationService(Of T)
+  name.vb: IQuickFindNavigationService(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Search.Models.IQuickFindNavigationService`1
+    name: IQuickFindNavigationService
+    href: Innova.Prism.Library.Search.Models.IQuickFindNavigationService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Search.Models.IQuickFindNavigationService`1
+    name: IQuickFindNavigationService
+    href: Innova.Prism.Library.Search.Models.IQuickFindNavigationService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.#ctor*
+  commentId: Overload:Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.#ctor
+  href: Innova.Prism.Library.Search.Models.QuickFindNavigationService-1.-ctor.html#Innova_Prism_Library_Search_Models_QuickFindNavigationService_1__ctor_Prism_Events_IEventAggregator_Innova_Prism_Library_Services_IWindowDialogService_Innova_Data_Entity_IEntityService__0__Microsoft_Extensions_Logging_ILogger_Innova_Prism_Library_Search_Models_QuickFindNavigationService__0___
+  name: QuickFindNavigationService
+  nameWithType: QuickFindNavigationService<T>.QuickFindNavigationService
+  fullName: Innova.Prism.Library.Search.Models.QuickFindNavigationService<T>.QuickFindNavigationService
+  nameWithType.vb: QuickFindNavigationService(Of T).New
+  fullName.vb: Innova.Prism.Library.Search.Models.QuickFindNavigationService(Of T).New
+  name.vb: New
+- uid: Prism.Events.IEventAggregator
+  commentId: T:Prism.Events.IEventAggregator
+  parent: Prism.Events
+  isExternal: true
+  name: IEventAggregator
+  nameWithType: IEventAggregator
+  fullName: Prism.Events.IEventAggregator
+- uid: Innova.Prism.Library.Services.IWindowDialogService
+  commentId: T:Innova.Prism.Library.Services.IWindowDialogService
+  parent: Innova.Prism.Library.Services
+  href: Innova.Prism.Library.Services.IWindowDialogService.html
+  name: IWindowDialogService
+  nameWithType: IWindowDialogService
+  fullName: Innova.Prism.Library.Services.IWindowDialogService
+- uid: Innova.Data.Entity.IEntityService{{T}}
+  commentId: T:Innova.Data.Entity.IEntityService{`0}
+  parent: Innova.Data.Entity
+  definition: Innova.Data.Entity.IEntityService`1
+  href: Innova.Data.Entity.IEntityService-1.html
+  name: IEntityService<T>
+  nameWithType: IEntityService<T>
+  fullName: Innova.Data.Entity.IEntityService<T>
+  nameWithType.vb: IEntityService(Of T)
+  fullName.vb: Innova.Data.Entity.IEntityService(Of T)
+  name.vb: IEntityService(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityService`1
+    name: IEntityService
+    href: Innova.Data.Entity.IEntityService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityService`1
+    name: IEntityService
+    href: Innova.Data.Entity.IEntityService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Search.Models.QuickFindNavigationService`1}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Search.Models.QuickFindNavigationService`1}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<QuickFindNavigationService<T>>
+  nameWithType: ILogger<QuickFindNavigationService<T>>
+  fullName: Microsoft.Extensions.Logging.ILogger<Innova.Prism.Library.Search.Models.QuickFindNavigationService<T>>
+  nameWithType.vb: ILogger(Of QuickFindNavigationService(Of T))
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Innova.Prism.Library.Search.Models.QuickFindNavigationService(Of T))
+  name.vb: ILogger(Of QuickFindNavigationService(Of T))
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1
+    name: QuickFindNavigationService
+    href: Innova.Prism.Library.Search.Models.QuickFindNavigationService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1
+    name: QuickFindNavigationService
+    href: Innova.Prism.Library.Search.Models.QuickFindNavigationService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Prism.Events
+  commentId: N:Prism.Events
+  isExternal: true
+  name: Prism.Events
+  nameWithType: Prism.Events
+  fullName: Prism.Events
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+- uid: Innova.Prism.Library.Services
+  commentId: N:Innova.Prism.Library.Services
+  href: Innova.html
+  name: Innova.Prism.Library.Services
+  nameWithType: Innova.Prism.Library.Services
+  fullName: Innova.Prism.Library.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+- uid: Innova.Data.Entity.IEntityService`1
+  commentId: T:Innova.Data.Entity.IEntityService`1
+  href: Innova.Data.Entity.IEntityService-1.html
+  name: IEntityService<T>
+  nameWithType: IEntityService<T>
+  fullName: Innova.Data.Entity.IEntityService<T>
+  nameWithType.vb: IEntityService(Of T)
+  fullName.vb: Innova.Data.Entity.IEntityService(Of T)
+  name.vb: IEntityService(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityService`1
+    name: IEntityService
+    href: Innova.Data.Entity.IEntityService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityService`1
+    name: IEntityService
+    href: Innova.Data.Entity.IEntityService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.Entity
+  commentId: N:Innova.Data.Entity
+  href: Innova.html
+  name: Innova.Data.Entity
+  nameWithType: Innova.Data.Entity
+  fullName: Innova.Data.Entity
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.Search*
+  commentId: Overload:Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.Search
+  href: Innova.Prism.Library.Search.Models.QuickFindNavigationService-1.Search.html#Innova_Prism_Library_Search_Models_QuickFindNavigationService_1_Search_Innova_Prism_Library_Search_Models_QuickFindSearchItemViewModel__0__
+  name: Search
+  nameWithType: QuickFindNavigationService<T>.Search
+  fullName: Innova.Prism.Library.Search.Models.QuickFindNavigationService<T>.Search
+  nameWithType.vb: QuickFindNavigationService(Of T).Search
+  fullName.vb: Innova.Prism.Library.Search.Models.QuickFindNavigationService(Of T).Search
+- uid: Innova.Prism.Library.Search.Models.IQuickFindNavigationService{{T}}.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{{T}})
+  commentId: M:Innova.Prism.Library.Search.Models.IQuickFindNavigationService{`0}.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0})
+  parent: Innova.Prism.Library.Search.Models.IQuickFindNavigationService{{T}}
+  definition: Innova.Prism.Library.Search.Models.IQuickFindNavigationService`1.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0})
+  href: Innova.Prism.Library.Search.Models.IQuickFindNavigationService-1.Search.html#Innova_Prism_Library_Search_Models_IQuickFindNavigationService_1_Search_Innova_Prism_Library_Search_Models_QuickFindSearchItemViewModel__0__
+  name: Search(QuickFindSearchItemViewModel<T>)
+  nameWithType: IQuickFindNavigationService<T>.Search(QuickFindSearchItemViewModel<T>)
+  fullName: Innova.Prism.Library.Search.Models.IQuickFindNavigationService<T>.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel<T>)
+  nameWithType.vb: IQuickFindNavigationService(Of T).Search(QuickFindSearchItemViewModel(Of T))
+  fullName.vb: Innova.Prism.Library.Search.Models.IQuickFindNavigationService(Of T).Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel(Of T))
+  name.vb: Search(QuickFindSearchItemViewModel(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.Search.Models.IQuickFindNavigationService{`0}.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0})
+    name: Search
+    href: Innova.Prism.Library.Search.Models.IQuickFindNavigationService-1.Search.html#Innova_Prism_Library_Search_Models_IQuickFindNavigationService_1_Search_Innova_Prism_Library_Search_Models_QuickFindSearchItemViewModel__0__
+  - name: (
+  - uid: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel`1
+    name: QuickFindSearchItemViewModel
+    href: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Search.Models.IQuickFindNavigationService{`0}.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0})
+    name: Search
+    href: Innova.Prism.Library.Search.Models.IQuickFindNavigationService-1.Search.html#Innova_Prism_Library_Search_Models_IQuickFindNavigationService_1_Search_Innova_Prism_Library_Search_Models_QuickFindSearchItemViewModel__0__
+  - name: (
+  - uid: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel`1
+    name: QuickFindSearchItemViewModel
+    href: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{{T}}
+  commentId: T:Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0}
+  parent: Innova.Prism.Library.Search.Models
+  definition: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel`1
+  href: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel-1.html
+  name: QuickFindSearchItemViewModel<T>
+  nameWithType: QuickFindSearchItemViewModel<T>
+  fullName: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel<T>
+  nameWithType.vb: QuickFindSearchItemViewModel(Of T)
+  fullName.vb: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel(Of T)
+  name.vb: QuickFindSearchItemViewModel(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel`1
+    name: QuickFindSearchItemViewModel
+    href: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel`1
+    name: QuickFindSearchItemViewModel
+    href: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Innova.Prism.Library.Search.Models.IQuickFindNavigationService`1.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0})
+  commentId: M:Innova.Prism.Library.Search.Models.IQuickFindNavigationService`1.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0})
+  href: Innova.Prism.Library.Search.Models.IQuickFindNavigationService-1.Search.html#Innova_Prism_Library_Search_Models_IQuickFindNavigationService_1_Search_Innova_Prism_Library_Search_Models_QuickFindSearchItemViewModel__0__
+  name: Search(QuickFindSearchItemViewModel<T>)
+  nameWithType: IQuickFindNavigationService<T>.Search(QuickFindSearchItemViewModel<T>)
+  fullName: Innova.Prism.Library.Search.Models.IQuickFindNavigationService<T>.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel<T>)
+  nameWithType.vb: IQuickFindNavigationService(Of T).Search(QuickFindSearchItemViewModel(Of T))
+  fullName.vb: Innova.Prism.Library.Search.Models.IQuickFindNavigationService(Of T).Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel(Of T))
+  name.vb: Search(QuickFindSearchItemViewModel(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.Search.Models.IQuickFindNavigationService`1.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0})
+    name: Search
+    href: Innova.Prism.Library.Search.Models.IQuickFindNavigationService-1.Search.html#Innova_Prism_Library_Search_Models_IQuickFindNavigationService_1_Search_Innova_Prism_Library_Search_Models_QuickFindSearchItemViewModel__0__
+  - name: (
+  - uid: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel`1
+    name: QuickFindSearchItemViewModel
+    href: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Search.Models.IQuickFindNavigationService`1.Search(Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel{`0})
+    name: Search
+    href: Innova.Prism.Library.Search.Models.IQuickFindNavigationService-1.Search.html#Innova_Prism_Library_Search_Models_IQuickFindNavigationService_1_Search_Innova_Prism_Library_Search_Models_QuickFindSearchItemViewModel__0__
+  - name: (
+  - uid: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel`1
+    name: QuickFindSearchItemViewModel
+    href: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel`1
+  commentId: T:Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel`1
+  href: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel-1.html
+  name: QuickFindSearchItemViewModel<T>
+  nameWithType: QuickFindSearchItemViewModel<T>
+  fullName: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel<T>
+  nameWithType.vb: QuickFindSearchItemViewModel(Of T)
+  fullName.vb: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel(Of T)
+  name.vb: QuickFindSearchItemViewModel(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel`1
+    name: QuickFindSearchItemViewModel
+    href: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel`1
+    name: QuickFindSearchItemViewModel
+    href: Innova.Prism.Library.Search.Models.QuickFindSearchItemViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.ShowResult*
+  commentId: Overload:Innova.Prism.Library.Search.Models.QuickFindNavigationService`1.ShowResult
+  href: Innova.Prism.Library.Search.Models.QuickFindNavigationService-1.ShowResult.html#Innova_Prism_Library_Search_Models_QuickFindNavigationService_1_ShowResult_Innova_Prism_Library_Search_Models_QuickFindSearchItemViewModel__0__System_Collections_Generic_List_Innova_Data_Entity_PrimaryKeys__0___
+  name: ShowResult
+  nameWithType: QuickFindNavigationService<T>.ShowResult
+  fullName: Innova.Prism.Library.Search.Models.QuickFindNavigationService<T>.ShowResult
+  nameWithType.vb: QuickFindNavigationService(Of T).ShowResult
+  fullName.vb: Innova.Prism.Library.Search.Models.QuickFindNavigationService(Of T).ShowResult
+- uid: System.Collections.Generic.List{Innova.Data.Entity.PrimaryKeys{{T}}}
+  commentId: T:System.Collections.Generic.List{Innova.Data.Entity.PrimaryKeys{``0}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<PrimaryKeys<T>>
+  nameWithType: List<PrimaryKeys<T>>
+  fullName: System.Collections.Generic.List<Innova.Data.Entity.PrimaryKeys<T>>
+  nameWithType.vb: List(Of PrimaryKeys(Of T))
+  fullName.vb: System.Collections.Generic.List(Of Innova.Data.Entity.PrimaryKeys(Of T))
+  name.vb: List(Of PrimaryKeys(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+    href: Innova.Data.Entity.PrimaryKeys-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+    href: Innova.Data.Entity.PrimaryKeys-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+memberLayout: SeparatePages

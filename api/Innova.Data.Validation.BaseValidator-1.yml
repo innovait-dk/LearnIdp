@@ -43,6 +43,8 @@ items:
   inheritance:
   - System.Object
   - FluentValidation.AbstractValidator{{T}}
+  derivedClasses:
+  - Innova.Prism.Library.StructuredSearch.Views.EntitySavedQueryValidator
   implements:
   - System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}
   - System.Collections.IEnumerable
@@ -89,7 +91,14 @@ items:
   - FluentValidation.IValidator{`0}.Innova.Data.Validation.ValidationExtensions.Validate``1({T},System.String,System.String)
   - FluentValidation.IValidator{`0}.Innova.Data.Validation.ValidationExtensions.Validate``1({T},System.String,System.String[])
   - System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}.Innova.Data.ExtensionMethods.Batch``1(System.Int32)
+  - System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1
+  - System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1
+  - System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1
+  - System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}.Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Action{FluentValidation.IValidationRule})
   - System.Collections.IEnumerable.Innova.Data.ExtensionMethods.FastCast``1
+  - System.Collections.IEnumerable.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count
+  - System.Collections.IEnumerable.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Int32)
+  - System.Collections.IEnumerable.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Int32)
   nameWithType.vb: BaseValidator(Of T)
   fullName.vb: Innova.Data.Validation.BaseValidator(Of T)
   name.vb: BaseValidator(Of T)
@@ -3038,6 +3047,250 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
+- uid: System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  definition: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{``0})
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AsBindingList__1_System_Collections_Generic_IEnumerable___0__
+  name: AsBindingList<IValidationRule>(IEnumerable<IValidationRule>)
+  nameWithType: ExtensionMethods.AsBindingList<IValidationRule>(IEnumerable<IValidationRule>)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList<FluentValidation.IValidationRule>(System.Collections.Generic.IEnumerable<FluentValidation.IValidationRule>)
+  nameWithType.vb: ExtensionMethods.AsBindingList(Of IValidationRule)(IEnumerable(Of IValidationRule))
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList(Of FluentValidation.IValidationRule)(System.Collections.Generic.IEnumerable(Of FluentValidation.IValidationRule))
+  name.vb: AsBindingList(Of IValidationRule)(IEnumerable(Of IValidationRule))
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule})
+    name: AsBindingList
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AsBindingList__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule})
+    name: AsBindingList
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AsBindingList__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  definition: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  name: ToObservableCollection<IValidationRule>(IEnumerable<IValidationRule>)
+  nameWithType: ExtensionMethods.ToObservableCollection<IValidationRule>(IEnumerable<IValidationRule>)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection<FluentValidation.IValidationRule>(System.Collections.Generic.IEnumerable<FluentValidation.IValidationRule>)
+  nameWithType.vb: ExtensionMethods.ToObservableCollection(Of IValidationRule)(IEnumerable(Of IValidationRule))
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection(Of FluentValidation.IValidationRule)(System.Collections.Generic.IEnumerable(Of FluentValidation.IValidationRule))
+  name.vb: ToObservableCollection(Of IValidationRule)(IEnumerable(Of IValidationRule))
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule})
+    name: ToObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule})
+    name: ToObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  definition: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToReadOnlyObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  name: ToReadOnlyObservableCollection<IValidationRule>(IEnumerable<IValidationRule>)
+  nameWithType: ExtensionMethods.ToReadOnlyObservableCollection<IValidationRule>(IEnumerable<IValidationRule>)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection<FluentValidation.IValidationRule>(System.Collections.Generic.IEnumerable<FluentValidation.IValidationRule>)
+  nameWithType.vb: ExtensionMethods.ToReadOnlyObservableCollection(Of IValidationRule)(IEnumerable(Of IValidationRule))
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection(Of FluentValidation.IValidationRule)(System.Collections.Generic.IEnumerable(Of FluentValidation.IValidationRule))
+  name.vb: ToReadOnlyObservableCollection(Of IValidationRule)(IEnumerable(Of IValidationRule))
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule})
+    name: ToReadOnlyObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToReadOnlyObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule})
+    name: ToReadOnlyObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToReadOnlyObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}.Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Action{FluentValidation.IValidationRule})
+  commentId: M:Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  parent: Innova.Prism.Library.Extensions.CollectionExtensions
+  definition: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  href: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach.html#Innova_Prism_Library_Extensions_CollectionExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  name: ForEach<IValidationRule>(IEnumerable<IValidationRule>, Action<IValidationRule>)
+  nameWithType: CollectionExtensions.ForEach<IValidationRule>(IEnumerable<IValidationRule>, Action<IValidationRule>)
+  fullName: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach<FluentValidation.IValidationRule>(System.Collections.Generic.IEnumerable<FluentValidation.IValidationRule>, System.Action<FluentValidation.IValidationRule>)
+  nameWithType.vb: CollectionExtensions.ForEach(Of IValidationRule)(IEnumerable(Of IValidationRule), Action(Of IValidationRule))
+  fullName.vb: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach(Of FluentValidation.IValidationRule)(System.Collections.Generic.IEnumerable(Of FluentValidation.IValidationRule), System.Action(Of FluentValidation.IValidationRule))
+  name.vb: ForEach(Of IValidationRule)(IEnumerable(Of IValidationRule), Action(Of IValidationRule))
+  spec.csharp:
+  - uid: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule},System.Action{FluentValidation.IValidationRule})
+    name: ForEach
+    href: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach.html#Innova_Prism_Library_Extensions_CollectionExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  - name: <
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule},System.Action{FluentValidation.IValidationRule})
+    name: ForEach
+    href: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach.html#Innova_Prism_Library_Extensions_CollectionExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: )
+  - name: )
 - uid: System.Collections.IEnumerable.Innova.Data.ExtensionMethods.FastCast``1
   commentId: M:Innova.Data.ExtensionMethods.FastCast``1(System.Collections.IEnumerable)
   parent: Innova.Data.ExtensionMethods
@@ -3076,6 +3329,120 @@ references:
     name: IEnumerable
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+- uid: System.Collections.IEnumerable.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+  parent: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  definition: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Count_System_Collections_IEnumerable_
+  name: Count(IEnumerable)
+  nameWithType: ExtensionMethods.Count(IEnumerable)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+    name: Count
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Count_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+    name: Count
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Count_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+- uid: System.Collections.IEnumerable.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Int32)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+  parent: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  definition: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Skip_System_Collections_IEnumerable_System_Int32_
+  name: Skip(IEnumerable, int)
+  nameWithType: ExtensionMethods.Skip(IEnumerable, int)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable, int)
+  nameWithType.vb: ExtensionMethods.Skip(IEnumerable, Integer)
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable, Integer)
+  name.vb: Skip(IEnumerable, Integer)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+    name: Skip
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Skip_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+    name: Skip
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Skip_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.IEnumerable.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Int32)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+  parent: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  definition: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Take_System_Collections_IEnumerable_System_Int32_
+  name: Take(IEnumerable, int)
+  nameWithType: ExtensionMethods.Take(IEnumerable, int)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable, int)
+  nameWithType.vb: ExtensionMethods.Take(IEnumerable, Integer)
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable, Integer)
+  name.vb: Take(IEnumerable, Integer)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+    name: Take
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Take_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+    name: Take
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Take_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
 - uid: System
   commentId: N:System
@@ -5570,6 +5937,224 @@ references:
   name: ExtensionMethods
   nameWithType: ExtensionMethods
   fullName: Innova.Data.ExtensionMethods
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AsBindingList__1_System_Collections_Generic_IEnumerable___0__
+  name: AsBindingList<T>(IEnumerable<T>)
+  nameWithType: ExtensionMethods.AsBindingList<T>(IEnumerable<T>)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ExtensionMethods.AsBindingList(Of T)(IEnumerable(Of T))
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: AsBindingList(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{``0})
+    name: AsBindingList
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AsBindingList__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{``0})
+    name: AsBindingList
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AsBindingList__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  commentId: T:Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  parent: Innova.Prism.Library.ExtensionMethods
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.html
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  name: ToObservableCollection<T>(IEnumerable<T>)
+  nameWithType: ExtensionMethods.ToObservableCollection<T>(IEnumerable<T>)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ExtensionMethods.ToObservableCollection(Of T)(IEnumerable(Of T))
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ToObservableCollection(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToReadOnlyObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  name: ToReadOnlyObservableCollection<T>(IEnumerable<T>)
+  nameWithType: ExtensionMethods.ToReadOnlyObservableCollection<T>(IEnumerable<T>)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ExtensionMethods.ToReadOnlyObservableCollection(Of T)(IEnumerable(Of T))
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ToReadOnlyObservableCollection(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToReadOnlyObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToReadOnlyObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToReadOnlyObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToReadOnlyObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  commentId: M:Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  isExternal: true
+  href: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach.html#Innova_Prism_Library_Extensions_CollectionExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  name: ForEach<T>(IEnumerable<T>, Action<T>)
+  nameWithType: CollectionExtensions.ForEach<T>(IEnumerable<T>, Action<T>)
+  fullName: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T>)
+  nameWithType.vb: CollectionExtensions.ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName.vb: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
+  name.vb: ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+    name: ForEach
+    href: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach.html#Innova_Prism_Library_Extensions_CollectionExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+    name: ForEach
+    href: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach.html#Innova_Prism_Library_Extensions_CollectionExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Extensions.CollectionExtensions
+  commentId: T:Innova.Prism.Library.Extensions.CollectionExtensions
+  parent: Innova.Prism.Library.Extensions
+  href: Innova.Prism.Library.Extensions.CollectionExtensions.html
+  name: CollectionExtensions
+  nameWithType: CollectionExtensions
+  fullName: Innova.Prism.Library.Extensions.CollectionExtensions
 - uid: Innova.Data.ExtensionMethods.FastCast``1(System.Collections.IEnumerable)
   commentId: M:Innova.Data.ExtensionMethods.FastCast``1(System.Collections.IEnumerable)
   isExternal: true
@@ -5608,6 +6193,117 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
   - name: )
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+  isExternal: true
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Count_System_Collections_IEnumerable_
+  name: Count(IEnumerable)
+  nameWithType: ExtensionMethods.Count(IEnumerable)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+    name: Count
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Count_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+    name: Count
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Count_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+  isExternal: true
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Skip_System_Collections_IEnumerable_System_Int32_
+  name: Skip(IEnumerable, int)
+  nameWithType: ExtensionMethods.Skip(IEnumerable, int)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable, int)
+  nameWithType.vb: ExtensionMethods.Skip(IEnumerable, Integer)
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable, Integer)
+  name.vb: Skip(IEnumerable, Integer)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+    name: Skip
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Skip_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+    name: Skip
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Skip_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+  isExternal: true
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Take_System_Collections_IEnumerable_System_Int32_
+  name: Take(IEnumerable, int)
+  nameWithType: ExtensionMethods.Take(IEnumerable, int)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable, int)
+  nameWithType.vb: ExtensionMethods.Take(IEnumerable, Integer)
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable, Integer)
+  name.vb: Take(IEnumerable, Integer)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+    name: Take
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Take_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+    name: Take
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Take_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
 - uid: Innova.Data
   commentId: N:Innova.Data
   href: Innova.html
@@ -5630,6 +6326,82 @@ references:
   - uid: Innova.Data
     name: Data
     href: Innova.Data.html
+- uid: Innova.Prism.Library.ExtensionMethods
+  commentId: N:Innova.Prism.Library.ExtensionMethods
+  href: Innova.html
+  name: Innova.Prism.Library.ExtensionMethods
+  nameWithType: Innova.Prism.Library.ExtensionMethods
+  fullName: Innova.Prism.Library.ExtensionMethods
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ExtensionMethods
+    name: ExtensionMethods
+    href: Innova.Prism.Library.ExtensionMethods.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ExtensionMethods
+    name: ExtensionMethods
+    href: Innova.Prism.Library.ExtensionMethods.html
+- uid: Innova.Prism.Library.Extensions
+  commentId: N:Innova.Prism.Library.Extensions
+  href: Innova.html
+  name: Innova.Prism.Library.Extensions
+  nameWithType: Innova.Prism.Library.Extensions
+  fullName: Innova.Prism.Library.Extensions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Extensions
+    name: Extensions
+    href: Innova.Prism.Library.Extensions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Extensions
+    name: Extensions
+    href: Innova.Prism.Library.Extensions.html
 - uid: Innova.Data.Validation.BaseValidator`1.IgnoreProperties*
   commentId: Overload:Innova.Data.Validation.BaseValidator`1.IgnoreProperties
   href: Innova.Data.Validation.BaseValidator-1.IgnoreProperties.html#Innova_Data_Validation_BaseValidator_1_IgnoreProperties

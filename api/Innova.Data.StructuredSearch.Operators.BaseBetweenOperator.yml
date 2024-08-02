@@ -23,10 +23,12 @@ items:
   source:
     id: BaseBetweenOperator
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\BaseBetweenOperator.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Represents a base class for the between operator in structured search.
+  example: []
   syntax:
     content: 'public class BaseBetweenOperator : TertiaryOperator, INotifyPropertyChanged'
     content.vb: Public Class BaseBetweenOperator Inherits TertiaryOperator Implements INotifyPropertyChanged
@@ -75,17 +77,21 @@ items:
   source:
     id: .ctor
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\BaseBetweenOperator.cs
-    startLine: 10
+    startLine: 17
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Initializes a new instance of the <xref href="Innova.Data.StructuredSearch.Operators.BaseBetweenOperator" data-throw-if-not-resolved="false"></xref> class with the specified field name and parameters.
+  example: []
   syntax:
     content: public BaseBetweenOperator(string fieldName, List<object> parameters)
     parameters:
     - id: fieldName
       type: System.String
+      description: The name of the field.
     - id: parameters
       type: System.Collections.Generic.List{System.Object}
+      description: The list of parameters.
     content.vb: Public Sub New(fieldName As String, parameters As List(Of Object))
   overload: Innova.Data.StructuredSearch.Operators.BaseBetweenOperator.#ctor*
   nameWithType.vb: BaseBetweenOperator.New(String, List(Of Object))
@@ -105,19 +111,24 @@ items:
   source:
     id: .ctor
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\BaseBetweenOperator.cs
-    startLine: 17
+    startLine: 30
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Initializes a new instance of the <xref href="Innova.Data.StructuredSearch.Operators.BaseBetweenOperator" data-throw-if-not-resolved="false"></xref> class with the specified field name, lower value, and upper value.
+  example: []
   syntax:
     content: public BaseBetweenOperator(string fieldName, object lowerValue, object upperValue)
     parameters:
     - id: fieldName
       type: System.String
+      description: The name of the field.
     - id: lowerValue
       type: System.Object
+      description: The lower value.
     - id: upperValue
       type: System.Object
+      description: The upper value.
     content.vb: Public Sub New(fieldName As String, lowerValue As Object, upperValue As Object)
   overload: Innova.Data.StructuredSearch.Operators.BaseBetweenOperator.#ctor*
   nameWithType.vb: BaseBetweenOperator.New(String, Object, Object)
@@ -137,10 +148,12 @@ items:
   source:
     id: LowerValue
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\BaseBetweenOperator.cs
-    startLine: 22
+    startLine: 38
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the lower value.
+  example: []
   syntax:
     content: public object LowerValue { get; }
     parameters: []
@@ -162,10 +175,12 @@ items:
   source:
     id: UpperValue
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\BaseBetweenOperator.cs
-    startLine: 23
+    startLine: 43
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the upper value.
+  example: []
   syntax:
     content: public object UpperValue { get; }
     parameters: []
@@ -187,10 +202,12 @@ items:
   source:
     id: LowerValueDescription
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\BaseBetweenOperator.cs
-    startLine: 26
+    startLine: 50
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets or sets the description of the lower value.
+  example: []
   syntax:
     content: public string LowerValueDescription { get; set; }
     parameters: []
@@ -212,10 +229,12 @@ items:
   source:
     id: UpperValueDescription
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\BaseBetweenOperator.cs
-    startLine: 43
+    startLine: 71
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets or sets the description of the upper value.
+  example: []
   syntax:
     content: public string UpperValueDescription { get; set; }
     parameters: []
@@ -237,11 +256,11 @@ items:
   source:
     id: GetWhereExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\BaseBetweenOperator.cs
-    startLine: 66
+    startLine: 96
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
-  summary: Gets the where expression for the specified type.
+  summary: Gets the where expression for the between operator.
   example: []
   syntax:
     content: 'public override Expression<Func<T, bool>> GetWhereExpression<T>(ParameterExpression parameter) where T : class'
@@ -251,7 +270,7 @@ items:
       description: The parameter expression.
     typeParameters:
     - id: T
-      description: The type.
+      description: The type of the parameter.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
       description: The where expression.
@@ -275,11 +294,11 @@ items:
   source:
     id: ValueDescription
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\BaseBetweenOperator.cs
-    startLine: 76
+    startLine: 108
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
-  summary: Gets or sets the value description for this operator.
+  summary: Gets the value description for the between operator.
   example: []
   syntax:
     content: public override string ValueDescription { get; }
@@ -754,6 +773,13 @@ references:
     name: ComponentModel
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Innova.Data.StructuredSearch.Operators.BaseBetweenOperator
+  commentId: T:Innova.Data.StructuredSearch.Operators.BaseBetweenOperator
+  parent: Innova.Data.StructuredSearch.Operators
+  href: Innova.Data.StructuredSearch.Operators.BaseBetweenOperator.html
+  name: BaseBetweenOperator
+  nameWithType: BaseBetweenOperator
+  fullName: Innova.Data.StructuredSearch.Operators.BaseBetweenOperator
 - uid: Innova.Data.StructuredSearch.Operators.BaseBetweenOperator.#ctor*
   commentId: Overload:Innova.Data.StructuredSearch.Operators.BaseBetweenOperator.#ctor
   href: Innova.Data.StructuredSearch.Operators.BaseBetweenOperator.-ctor.html#Innova_Data_StructuredSearch_Operators_BaseBetweenOperator__ctor_System_String_System_Collections_Generic_List_System_Object__

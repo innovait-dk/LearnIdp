@@ -1,0 +1,317 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Extensions.TranslateExtension
+  commentId: T:Innova.Prism.Library.Extensions.TranslateExtension
+  id: TranslateExtension
+  parent: Innova.Prism.Library.Extensions
+  children:
+  - Innova.Prism.Library.Extensions.TranslateExtension.#ctor(System.String)
+  - Innova.Prism.Library.Extensions.TranslateExtension.#ctor(System.String,System.String)
+  - Innova.Prism.Library.Extensions.TranslateExtension.ProvideValue(System.IServiceProvider)
+  langs:
+  - csharp
+  - vb
+  name: TranslateExtension
+  nameWithType: TranslateExtension
+  fullName: Innova.Prism.Library.Extensions.TranslateExtension
+  type: Class
+  source:
+    id: TranslateExtension
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Extensions\TranslateExtension.cs
+    startLine: 24
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Extensions
+  summary: >-
+    This markupextension is used for implementing localization in xaml files.
+
+    It is used as shown in the following:
+
+     <TextBlock Text="{Translate propertyname, entityshortname}"></TextBlock>
+     propertyname: propertyname used as key for fetching the corresponding ressource setting (Ex. "DateEnded")
+     EntityName: Name of the EntityName in which the property Resides. (Ex. "Case")
+
+    NOTE!
+
+    In order to work you must assign the delegate ("Translator.Instance"), when starting up your solution, which is actually 
+
+    executing the translation.
+
+    This delegate must return the string to be used, and accept 2 parameters: typename and propertyname.
+  example: []
+  syntax:
+    content: 'public class TranslateExtension : MarkupExtension'
+    content.vb: Public Class TranslateExtension Inherits MarkupExtension
+  inheritance:
+  - System.Object
+  - System.Windows.Markup.MarkupExtension
+- uid: Innova.Prism.Library.Extensions.TranslateExtension.#ctor(System.String)
+  commentId: M:Innova.Prism.Library.Extensions.TranslateExtension.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Innova.Prism.Library.Extensions.TranslateExtension
+  langs:
+  - csharp
+  - vb
+  name: TranslateExtension(string)
+  nameWithType: TranslateExtension.TranslateExtension(string)
+  fullName: Innova.Prism.Library.Extensions.TranslateExtension.TranslateExtension(string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Extensions\TranslateExtension.cs
+    startLine: 34
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Extensions
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Extensions.TranslateExtension" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public TranslateExtension(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The property name used as key for fetching the corresponding resource setting.
+    content.vb: Public Sub New(key As String)
+  overload: Innova.Prism.Library.Extensions.TranslateExtension.#ctor*
+  nameWithType.vb: TranslateExtension.New(String)
+  fullName.vb: Innova.Prism.Library.Extensions.TranslateExtension.New(String)
+  name.vb: New(String)
+- uid: Innova.Prism.Library.Extensions.TranslateExtension.#ctor(System.String,System.String)
+  commentId: M:Innova.Prism.Library.Extensions.TranslateExtension.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Innova.Prism.Library.Extensions.TranslateExtension
+  langs:
+  - csharp
+  - vb
+  name: TranslateExtension(string, string)
+  nameWithType: TranslateExtension.TranslateExtension(string, string)
+  fullName: Innova.Prism.Library.Extensions.TranslateExtension.TranslateExtension(string, string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Extensions\TranslateExtension.cs
+    startLine: 44
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Extensions
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Extensions.TranslateExtension" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public TranslateExtension(string key, string typename)
+    parameters:
+    - id: key
+      type: System.String
+      description: The property name used as key for fetching the corresponding resource setting.
+    - id: typename
+      type: System.String
+      description: The name of the entity in which the property resides.
+    content.vb: Public Sub New(key As String, typename As String)
+  overload: Innova.Prism.Library.Extensions.TranslateExtension.#ctor*
+  nameWithType.vb: TranslateExtension.New(String, String)
+  fullName.vb: Innova.Prism.Library.Extensions.TranslateExtension.New(String, String)
+  name.vb: New(String, String)
+- uid: Innova.Prism.Library.Extensions.TranslateExtension.ProvideValue(System.IServiceProvider)
+  commentId: M:Innova.Prism.Library.Extensions.TranslateExtension.ProvideValue(System.IServiceProvider)
+  id: ProvideValue(System.IServiceProvider)
+  parent: Innova.Prism.Library.Extensions.TranslateExtension
+  langs:
+  - csharp
+  - vb
+  name: ProvideValue(IServiceProvider)
+  nameWithType: TranslateExtension.ProvideValue(IServiceProvider)
+  fullName: Innova.Prism.Library.Extensions.TranslateExtension.ProvideValue(System.IServiceProvider)
+  type: Method
+  source:
+    id: ProvideValue
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Extensions\TranslateExtension.cs
+    startLine: 54
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Extensions
+  summary: Provides the translated value for the specified property name.
+  example: []
+  syntax:
+    content: public override object ProvideValue(IServiceProvider serviceProvider)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+      description: The service provider.
+    return:
+      type: System.Object
+      description: The translated value for the specified property name.
+    content.vb: Public Overrides Function ProvideValue(serviceProvider As IServiceProvider) As Object
+  overridden: System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)
+  overload: Innova.Prism.Library.Extensions.TranslateExtension.ProvideValue*
+references:
+- uid: Innova.Prism.Library.Extensions
+  commentId: N:Innova.Prism.Library.Extensions
+  href: Innova.html
+  name: Innova.Prism.Library.Extensions
+  nameWithType: Innova.Prism.Library.Extensions
+  fullName: Innova.Prism.Library.Extensions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Extensions
+    name: Extensions
+    href: Innova.Prism.Library.Extensions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Extensions
+    name: Extensions
+    href: Innova.Prism.Library.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Windows.Markup.MarkupExtension
+  commentId: T:System.Windows.Markup.MarkupExtension
+  parent: System.Windows.Markup
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.markup.markupextension
+  name: MarkupExtension
+  nameWithType: MarkupExtension
+  fullName: System.Windows.Markup.MarkupExtension
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Windows.Markup
+  commentId: N:System.Windows.Markup
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Markup
+  nameWithType: System.Windows.Markup
+  fullName: System.Windows.Markup
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Markup
+    name: Markup
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.markup
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Markup
+    name: Markup
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.markup
+- uid: Innova.Prism.Library.Extensions.TranslateExtension
+  commentId: T:Innova.Prism.Library.Extensions.TranslateExtension
+  href: Innova.Prism.Library.Extensions.TranslateExtension.html
+  name: TranslateExtension
+  nameWithType: TranslateExtension
+  fullName: Innova.Prism.Library.Extensions.TranslateExtension
+- uid: Innova.Prism.Library.Extensions.TranslateExtension.#ctor*
+  commentId: Overload:Innova.Prism.Library.Extensions.TranslateExtension.#ctor
+  href: Innova.Prism.Library.Extensions.TranslateExtension.-ctor.html#Innova_Prism_Library_Extensions_TranslateExtension__ctor_System_String_
+  name: TranslateExtension
+  nameWithType: TranslateExtension.TranslateExtension
+  fullName: Innova.Prism.Library.Extensions.TranslateExtension.TranslateExtension
+  nameWithType.vb: TranslateExtension.New
+  fullName.vb: Innova.Prism.Library.Extensions.TranslateExtension.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)
+  commentId: M:System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)
+  parent: System.Windows.Markup.MarkupExtension
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.markup.markupextension.providevalue
+  name: ProvideValue(IServiceProvider)
+  nameWithType: MarkupExtension.ProvideValue(IServiceProvider)
+  fullName: System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)
+  spec.csharp:
+  - uid: System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)
+    name: ProvideValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.markup.markupextension.providevalue
+  - name: (
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)
+    name: ProvideValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.markup.markupextension.providevalue
+  - name: (
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: )
+- uid: Innova.Prism.Library.Extensions.TranslateExtension.ProvideValue*
+  commentId: Overload:Innova.Prism.Library.Extensions.TranslateExtension.ProvideValue
+  href: Innova.Prism.Library.Extensions.TranslateExtension.ProvideValue.html#Innova_Prism_Library_Extensions_TranslateExtension_ProvideValue_System_IServiceProvider_
+  name: ProvideValue
+  nameWithType: TranslateExtension.ProvideValue
+  fullName: Innova.Prism.Library.Extensions.TranslateExtension.ProvideValue
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+memberLayout: SeparatePages

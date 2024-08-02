@@ -1,0 +1,183 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Utilities.User32
+  commentId: T:Innova.Prism.Library.Utilities.User32
+  id: User32
+  parent: Innova.Prism.Library.Utilities
+  children:
+  - Innova.Prism.Library.Utilities.User32.DestroyIcon(System.IntPtr)
+  - Innova.Prism.Library.Utilities.User32.SendMessage(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)
+  langs:
+  - csharp
+  - vb
+  name: User32
+  nameWithType: User32
+  fullName: Innova.Prism.Library.Utilities.User32
+  type: Class
+  source:
+    id: User32
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 565
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  summary: Wraps necessary functions imported from User32.dll. Code courtesy of MSDN Cold Rooster Consulting example.
+  example: []
+  syntax:
+    content: public class User32
+    content.vb: Public Class User32
+  inheritance:
+  - System.Object
+- uid: Innova.Prism.Library.Utilities.User32.SendMessage(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)
+  commentId: M:Innova.Prism.Library.Utilities.User32.SendMessage(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)
+  id: SendMessage(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)
+  parent: Innova.Prism.Library.Utilities.User32
+  langs:
+  - csharp
+  - vb
+  name: SendMessage(IntPtr, int, IntPtr, IntPtr)
+  nameWithType: User32.SendMessage(IntPtr, int, IntPtr, IntPtr)
+  fullName: Innova.Prism.Library.Utilities.User32.SendMessage(System.IntPtr, int, System.IntPtr, System.IntPtr)
+  type: Method
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public static extern IntPtr SendMessage(IntPtr handle, int Msg, IntPtr wParam, IntPtr lParam)
+    parameters:
+    - id: handle
+      type: System.IntPtr
+    - id: Msg
+      type: System.Int32
+    - id: wParam
+      type: System.IntPtr
+    - id: lParam
+      type: System.IntPtr
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function SendMessage(handle As IntPtr, Msg As Integer, wParam As IntPtr, lParam As IntPtr) As IntPtr
+  overload: Innova.Prism.Library.Utilities.User32.SendMessage*
+  nameWithType.vb: User32.SendMessage(IntPtr, Integer, IntPtr, IntPtr)
+  fullName.vb: Innova.Prism.Library.Utilities.User32.SendMessage(System.IntPtr, Integer, System.IntPtr, System.IntPtr)
+  name.vb: SendMessage(IntPtr, Integer, IntPtr, IntPtr)
+- uid: Innova.Prism.Library.Utilities.User32.DestroyIcon(System.IntPtr)
+  commentId: M:Innova.Prism.Library.Utilities.User32.DestroyIcon(System.IntPtr)
+  id: DestroyIcon(System.IntPtr)
+  parent: Innova.Prism.Library.Utilities.User32
+  langs:
+  - csharp
+  - vb
+  name: DestroyIcon(IntPtr)
+  nameWithType: User32.DestroyIcon(IntPtr)
+  fullName: Innova.Prism.Library.Utilities.User32.DestroyIcon(System.IntPtr)
+  type: Method
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  summary: >-
+    Provides access to function required to delete handle. This method is used internally
+
+    and is not required to be called separately.
+  example: []
+  syntax:
+    content: public static extern int DestroyIcon(IntPtr hIcon)
+    parameters:
+    - id: hIcon
+      type: System.IntPtr
+      description: Pointer to icon handle.
+    return:
+      type: System.Int32
+      description: N/A
+    content.vb: Public Shared Function DestroyIcon(hIcon As IntPtr) As Integer
+  overload: Innova.Prism.Library.Utilities.User32.DestroyIcon*
+references:
+- uid: Innova.Prism.Library.Utilities
+  commentId: N:Innova.Prism.Library.Utilities
+  href: Innova.html
+  name: Innova.Prism.Library.Utilities
+  nameWithType: Innova.Prism.Library.Utilities
+  fullName: Innova.Prism.Library.Utilities
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Utilities
+    name: Utilities
+    href: Innova.Prism.Library.Utilities.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Utilities
+    name: Utilities
+    href: Innova.Prism.Library.Utilities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Library.Utilities.User32.SendMessage*
+  commentId: Overload:Innova.Prism.Library.Utilities.User32.SendMessage
+  isExternal: true
+  href: Innova.Prism.Library.Utilities.User32.SendMessage.html#Innova_Prism_Library_Utilities_User32_SendMessage_System_IntPtr_System_Int32_System_IntPtr_System_IntPtr_
+  name: SendMessage
+  nameWithType: User32.SendMessage
+  fullName: Innova.Prism.Library.Utilities.User32.SendMessage
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Innova.Prism.Library.Utilities.User32.DestroyIcon*
+  commentId: Overload:Innova.Prism.Library.Utilities.User32.DestroyIcon
+  isExternal: true
+  href: Innova.Prism.Library.Utilities.User32.DestroyIcon.html#Innova_Prism_Library_Utilities_User32_DestroyIcon_System_IntPtr_
+  name: DestroyIcon
+  nameWithType: User32.DestroyIcon
+  fullName: Innova.Prism.Library.Utilities.User32.DestroyIcon
+memberLayout: SeparatePages

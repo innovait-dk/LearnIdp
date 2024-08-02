@@ -1,0 +1,1172 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Rest.Client.RestEntityRevisionService`1
+  commentId: T:Innova.Rest.Client.RestEntityRevisionService`1
+  id: RestEntityRevisionService`1
+  parent: Innova.Rest.Client
+  children:
+  - Innova.Rest.Client.RestEntityRevisionService`1.#ctor(Innova.Data.Security.IEntitySecurity{`0},Innova.Rest.Abstractions.IRestClient)
+  - Innova.Rest.Client.RestEntityRevisionService`1.CheckPermissionsThrowWarningIfNot(Innova.Data.Security.Operation,`0)
+  - Innova.Rest.Client.RestEntityRevisionService`1.EntityName
+  - Innova.Rest.Client.RestEntityRevisionService`1.EntitySecurity
+  - Innova.Rest.Client.RestEntityRevisionService`1.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  - Innova.Rest.Client.RestEntityRevisionService`1.GetRevision(Innova.Data.Entity.IPrimaryKey,System.Int32,System.Collections.Generic.List{System.String},System.String)
+  - Innova.Rest.Client.RestEntityRevisionService`1.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  - Innova.Rest.Client.RestEntityRevisionService`1.RestClient
+  langs:
+  - csharp
+  - vb
+  name: RestEntityRevisionService<T>
+  nameWithType: RestEntityRevisionService<T>
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>
+  type: Class
+  source:
+    id: RestEntityRevisionService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestEntityRevisionService.cs
+    startLine: 14
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  syntax:
+    content: 'public class RestEntityRevisionService<T> : IEntityRevisionService<T> where T : class'
+    typeParameters:
+    - id: T
+    content.vb: Public Class RestEntityRevisionService(Of T As Class) Implements IEntityRevisionService(Of T)
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Data.Revision.IEntityRevisionService{{T}}
+  nameWithType.vb: RestEntityRevisionService(Of T)
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T)
+  name.vb: RestEntityRevisionService(Of T)
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.EntityName
+  commentId: P:Innova.Rest.Client.RestEntityRevisionService`1.EntityName
+  id: EntityName
+  parent: Innova.Rest.Client.RestEntityRevisionService`1
+  langs:
+  - csharp
+  - vb
+  name: EntityName
+  nameWithType: RestEntityRevisionService<T>.EntityName
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.EntityName
+  type: Property
+  source:
+    id: EntityName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestEntityRevisionService.cs
+    startLine: 16
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  syntax:
+    content: protected string EntityName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly Property EntityName As String
+  overload: Innova.Rest.Client.RestEntityRevisionService`1.EntityName*
+  nameWithType.vb: RestEntityRevisionService(Of T).EntityName
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).EntityName
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.EntitySecurity
+  commentId: P:Innova.Rest.Client.RestEntityRevisionService`1.EntitySecurity
+  id: EntitySecurity
+  parent: Innova.Rest.Client.RestEntityRevisionService`1
+  langs:
+  - csharp
+  - vb
+  name: EntitySecurity
+  nameWithType: RestEntityRevisionService<T>.EntitySecurity
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.EntitySecurity
+  type: Property
+  source:
+    id: EntitySecurity
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestEntityRevisionService.cs
+    startLine: 17
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  syntax:
+    content: public IEntitySecurity<T> EntitySecurity { get; }
+    parameters: []
+    return:
+      type: Innova.Data.Security.IEntitySecurity{{T}}
+    content.vb: Public ReadOnly Property EntitySecurity As IEntitySecurity(Of T)
+  overload: Innova.Rest.Client.RestEntityRevisionService`1.EntitySecurity*
+  nameWithType.vb: RestEntityRevisionService(Of T).EntitySecurity
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).EntitySecurity
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.RestClient
+  commentId: P:Innova.Rest.Client.RestEntityRevisionService`1.RestClient
+  id: RestClient
+  parent: Innova.Rest.Client.RestEntityRevisionService`1
+  langs:
+  - csharp
+  - vb
+  name: RestClient
+  nameWithType: RestEntityRevisionService<T>.RestClient
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.RestClient
+  type: Property
+  source:
+    id: RestClient
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestEntityRevisionService.cs
+    startLine: 18
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  syntax:
+    content: public IRestClient RestClient { get; }
+    parameters: []
+    return:
+      type: Innova.Rest.Abstractions.IRestClient
+    content.vb: Public ReadOnly Property RestClient As IRestClient
+  overload: Innova.Rest.Client.RestEntityRevisionService`1.RestClient*
+  nameWithType.vb: RestEntityRevisionService(Of T).RestClient
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).RestClient
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.#ctor(Innova.Data.Security.IEntitySecurity{`0},Innova.Rest.Abstractions.IRestClient)
+  commentId: M:Innova.Rest.Client.RestEntityRevisionService`1.#ctor(Innova.Data.Security.IEntitySecurity{`0},Innova.Rest.Abstractions.IRestClient)
+  id: '#ctor(Innova.Data.Security.IEntitySecurity{`0},Innova.Rest.Abstractions.IRestClient)'
+  parent: Innova.Rest.Client.RestEntityRevisionService`1
+  langs:
+  - csharp
+  - vb
+  name: RestEntityRevisionService(IEntitySecurity<T>, IRestClient)
+  nameWithType: RestEntityRevisionService<T>.RestEntityRevisionService(IEntitySecurity<T>, IRestClient)
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.RestEntityRevisionService(Innova.Data.Security.IEntitySecurity<T>, Innova.Rest.Abstractions.IRestClient)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestEntityRevisionService.cs
+    startLine: 20
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  syntax:
+    content: public RestEntityRevisionService(IEntitySecurity<T> entitySecurity, IRestClient restClient)
+    parameters:
+    - id: entitySecurity
+      type: Innova.Data.Security.IEntitySecurity{{T}}
+    - id: restClient
+      type: Innova.Rest.Abstractions.IRestClient
+    content.vb: Public Sub New(entitySecurity As IEntitySecurity(Of T), restClient As IRestClient)
+  overload: Innova.Rest.Client.RestEntityRevisionService`1.#ctor*
+  nameWithType.vb: RestEntityRevisionService(Of T).New(IEntitySecurity(Of T), IRestClient)
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).New(Innova.Data.Security.IEntitySecurity(Of T), Innova.Rest.Abstractions.IRestClient)
+  name.vb: New(IEntitySecurity(Of T), IRestClient)
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.CheckPermissionsThrowWarningIfNot(Innova.Data.Security.Operation,`0)
+  commentId: M:Innova.Rest.Client.RestEntityRevisionService`1.CheckPermissionsThrowWarningIfNot(Innova.Data.Security.Operation,`0)
+  id: CheckPermissionsThrowWarningIfNot(Innova.Data.Security.Operation,`0)
+  parent: Innova.Rest.Client.RestEntityRevisionService`1
+  langs:
+  - csharp
+  - vb
+  name: CheckPermissionsThrowWarningIfNot(Operation, T)
+  nameWithType: RestEntityRevisionService<T>.CheckPermissionsThrowWarningIfNot(Operation, T)
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.CheckPermissionsThrowWarningIfNot(Innova.Data.Security.Operation, T)
+  type: Method
+  source:
+    id: CheckPermissionsThrowWarningIfNot
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestEntityRevisionService.cs
+    startLine: 29
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  syntax:
+    content: protected void CheckPermissionsThrowWarningIfNot(Operation operation, T entity = null)
+    parameters:
+    - id: operation
+      type: Innova.Data.Security.Operation
+    - id: entity
+      type: '{T}'
+    content.vb: Protected Sub CheckPermissionsThrowWarningIfNot(operation As Operation, entity As T = Nothing)
+  overload: Innova.Rest.Client.RestEntityRevisionService`1.CheckPermissionsThrowWarningIfNot*
+  nameWithType.vb: RestEntityRevisionService(Of T).CheckPermissionsThrowWarningIfNot(Operation, T)
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).CheckPermissionsThrowWarningIfNot(Innova.Data.Security.Operation, T)
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  commentId: M:Innova.Rest.Client.RestEntityRevisionService`1.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  id: GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  parent: Innova.Rest.Client.RestEntityRevisionService`1
+  langs:
+  - csharp
+  - vb
+  name: GetReadRevision(IPrimaryKey)
+  nameWithType: RestEntityRevisionService<T>.GetReadRevision(IPrimaryKey)
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  type: Method
+  source:
+    id: GetReadRevision
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestEntityRevisionService.cs
+    startLine: 35
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  summary: Retrieves the read revision history for the specified primary keys.
+  example: []
+  syntax:
+    content: public Task<List<RevisionItem>> GetReadRevision(IPrimaryKey primarykeys)
+    parameters:
+    - id: primarykeys
+      type: Innova.Data.Entity.IPrimaryKey
+      description: The primary keys of the entity.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.Revision.RevisionItem}}
+      description: A list of revision items.
+    content.vb: Public Function GetReadRevision(primarykeys As IPrimaryKey) As Task(Of List(Of RevisionItem))
+  overload: Innova.Rest.Client.RestEntityRevisionService`1.GetReadRevision*
+  implements:
+  - Innova.Data.Revision.IEntityRevisionService{{T}}.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  nameWithType.vb: RestEntityRevisionService(Of T).GetReadRevision(IPrimaryKey)
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.GetRevision(Innova.Data.Entity.IPrimaryKey,System.Int32,System.Collections.Generic.List{System.String},System.String)
+  commentId: M:Innova.Rest.Client.RestEntityRevisionService`1.GetRevision(Innova.Data.Entity.IPrimaryKey,System.Int32,System.Collections.Generic.List{System.String},System.String)
+  id: GetRevision(Innova.Data.Entity.IPrimaryKey,System.Int32,System.Collections.Generic.List{System.String},System.String)
+  parent: Innova.Rest.Client.RestEntityRevisionService`1
+  langs:
+  - csharp
+  - vb
+  name: GetRevision(IPrimaryKey, int, List<string>, string)
+  nameWithType: RestEntityRevisionService<T>.GetRevision(IPrimaryKey, int, List<string>, string)
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.GetRevision(Innova.Data.Entity.IPrimaryKey, int, System.Collections.Generic.List<string>, string)
+  type: Method
+  source:
+    id: GetRevision
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestEntityRevisionService.cs
+    startLine: 44
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  summary: Retrieves the revision history for the specified primary keys.
+  example: []
+  syntax:
+    content: public Task<List<RevisionItem>> GetRevision(IPrimaryKey primarykeys, int top = -1, List<string> extraColumns = null, string extraWhere = null)
+    parameters:
+    - id: primarykeys
+      type: Innova.Data.Entity.IPrimaryKey
+      description: The primary keys of the entity.
+    - id: top
+      type: System.Int32
+      description: The maximum number of revision items to retrieve. Default is -1 (retrieve all).
+    - id: extraColumns
+      type: System.Collections.Generic.List{System.String}
+      description: Additional columns to include in the revision items.
+    - id: extraWhere
+      type: System.String
+      description: Additional WHERE clause to filter the revision items.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.Revision.RevisionItem}}
+      description: A list of revision items.
+    content.vb: Public Function GetRevision(primarykeys As IPrimaryKey, top As Integer = -1, extraColumns As List(Of String) = Nothing, extraWhere As String = Nothing) As Task(Of List(Of RevisionItem))
+  overload: Innova.Rest.Client.RestEntityRevisionService`1.GetRevision*
+  implements:
+  - Innova.Data.Revision.IEntityRevisionService{{T}}.GetRevision(Innova.Data.Entity.IPrimaryKey,System.Int32,System.Collections.Generic.List{System.String},System.String)
+  nameWithType.vb: RestEntityRevisionService(Of T).GetRevision(IPrimaryKey, Integer, List(Of String), String)
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).GetRevision(Innova.Data.Entity.IPrimaryKey, Integer, System.Collections.Generic.List(Of String), String)
+  name.vb: GetRevision(IPrimaryKey, Integer, List(Of String), String)
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  commentId: M:Innova.Rest.Client.RestEntityRevisionService`1.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  id: InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  parent: Innova.Rest.Client.RestEntityRevisionService`1
+  langs:
+  - csharp
+  - vb
+  name: InsertReadRevision(IPrimaryKey)
+  nameWithType: RestEntityRevisionService<T>.InsertReadRevision(IPrimaryKey)
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  type: Method
+  source:
+    id: InsertReadRevision
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestEntityRevisionService.cs
+    startLine: 75
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  summary: Inserts a read revision for the specified primary keys.
+  example: []
+  syntax:
+    content: public Task InsertReadRevision(IPrimaryKey primarykeys)
+    parameters:
+    - id: primarykeys
+      type: Innova.Data.Entity.IPrimaryKey
+      description: The primary keys of the entity.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function InsertReadRevision(primarykeys As IPrimaryKey) As Task
+  overload: Innova.Rest.Client.RestEntityRevisionService`1.InsertReadRevision*
+  implements:
+  - Innova.Data.Revision.IEntityRevisionService{{T}}.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  nameWithType.vb: RestEntityRevisionService(Of T).InsertReadRevision(IPrimaryKey)
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+references:
+- uid: Innova.Rest.Client
+  commentId: N:Innova.Rest.Client
+  href: Innova.html
+  name: Innova.Rest.Client
+  nameWithType: Innova.Rest.Client
+  fullName: Innova.Rest.Client
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Client
+    name: Client
+    href: Innova.Rest.Client.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Client
+    name: Client
+    href: Innova.Rest.Client.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Data.Revision.IEntityRevisionService{{T}}
+  commentId: T:Innova.Data.Revision.IEntityRevisionService{`0}
+  parent: Innova.Data.Revision
+  definition: Innova.Data.Revision.IEntityRevisionService`1
+  href: Innova.Data.Revision.IEntityRevisionService-1.html
+  name: IEntityRevisionService<T>
+  nameWithType: IEntityRevisionService<T>
+  fullName: Innova.Data.Revision.IEntityRevisionService<T>
+  nameWithType.vb: IEntityRevisionService(Of T)
+  fullName.vb: Innova.Data.Revision.IEntityRevisionService(Of T)
+  name.vb: IEntityRevisionService(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Revision.IEntityRevisionService`1
+    name: IEntityRevisionService
+    href: Innova.Data.Revision.IEntityRevisionService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Revision.IEntityRevisionService`1
+    name: IEntityRevisionService
+    href: Innova.Data.Revision.IEntityRevisionService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.Revision.IEntityRevisionService`1
+  commentId: T:Innova.Data.Revision.IEntityRevisionService`1
+  href: Innova.Data.Revision.IEntityRevisionService-1.html
+  name: IEntityRevisionService<T>
+  nameWithType: IEntityRevisionService<T>
+  fullName: Innova.Data.Revision.IEntityRevisionService<T>
+  nameWithType.vb: IEntityRevisionService(Of T)
+  fullName.vb: Innova.Data.Revision.IEntityRevisionService(Of T)
+  name.vb: IEntityRevisionService(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Revision.IEntityRevisionService`1
+    name: IEntityRevisionService
+    href: Innova.Data.Revision.IEntityRevisionService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Revision.IEntityRevisionService`1
+    name: IEntityRevisionService
+    href: Innova.Data.Revision.IEntityRevisionService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.Revision
+  commentId: N:Innova.Data.Revision
+  href: Innova.html
+  name: Innova.Data.Revision
+  nameWithType: Innova.Data.Revision
+  fullName: Innova.Data.Revision
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Revision
+    name: Revision
+    href: Innova.Data.Revision.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Revision
+    name: Revision
+    href: Innova.Data.Revision.html
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.EntityName*
+  commentId: Overload:Innova.Rest.Client.RestEntityRevisionService`1.EntityName
+  href: Innova.Rest.Client.RestEntityRevisionService-1.EntityName.html#Innova_Rest_Client_RestEntityRevisionService_1_EntityName
+  name: EntityName
+  nameWithType: RestEntityRevisionService<T>.EntityName
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.EntityName
+  nameWithType.vb: RestEntityRevisionService(Of T).EntityName
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).EntityName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.EntitySecurity*
+  commentId: Overload:Innova.Rest.Client.RestEntityRevisionService`1.EntitySecurity
+  href: Innova.Rest.Client.RestEntityRevisionService-1.EntitySecurity.html#Innova_Rest_Client_RestEntityRevisionService_1_EntitySecurity
+  name: EntitySecurity
+  nameWithType: RestEntityRevisionService<T>.EntitySecurity
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.EntitySecurity
+  nameWithType.vb: RestEntityRevisionService(Of T).EntitySecurity
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).EntitySecurity
+- uid: Innova.Data.Security.IEntitySecurity{{T}}
+  commentId: T:Innova.Data.Security.IEntitySecurity{`0}
+  parent: Innova.Data.Security
+  definition: Innova.Data.Security.IEntitySecurity`1
+  href: Innova.Data.Security.IEntitySecurity-1.html
+  name: IEntitySecurity<T>
+  nameWithType: IEntitySecurity<T>
+  fullName: Innova.Data.Security.IEntitySecurity<T>
+  nameWithType.vb: IEntitySecurity(Of T)
+  fullName.vb: Innova.Data.Security.IEntitySecurity(Of T)
+  name.vb: IEntitySecurity(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Security.IEntitySecurity`1
+    name: IEntitySecurity
+    href: Innova.Data.Security.IEntitySecurity-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Security.IEntitySecurity`1
+    name: IEntitySecurity
+    href: Innova.Data.Security.IEntitySecurity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.Security.IEntitySecurity`1
+  commentId: T:Innova.Data.Security.IEntitySecurity`1
+  href: Innova.Data.Security.IEntitySecurity-1.html
+  name: IEntitySecurity<T>
+  nameWithType: IEntitySecurity<T>
+  fullName: Innova.Data.Security.IEntitySecurity<T>
+  nameWithType.vb: IEntitySecurity(Of T)
+  fullName.vb: Innova.Data.Security.IEntitySecurity(Of T)
+  name.vb: IEntitySecurity(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Security.IEntitySecurity`1
+    name: IEntitySecurity
+    href: Innova.Data.Security.IEntitySecurity-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Security.IEntitySecurity`1
+    name: IEntitySecurity
+    href: Innova.Data.Security.IEntitySecurity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.Security
+  commentId: N:Innova.Data.Security
+  href: Innova.html
+  name: Innova.Data.Security
+  nameWithType: Innova.Data.Security
+  fullName: Innova.Data.Security
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Security
+    name: Security
+    href: Innova.Data.Security.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Security
+    name: Security
+    href: Innova.Data.Security.html
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.RestClient*
+  commentId: Overload:Innova.Rest.Client.RestEntityRevisionService`1.RestClient
+  href: Innova.Rest.Client.RestEntityRevisionService-1.RestClient.html#Innova_Rest_Client_RestEntityRevisionService_1_RestClient
+  name: RestClient
+  nameWithType: RestEntityRevisionService<T>.RestClient
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.RestClient
+  nameWithType.vb: RestEntityRevisionService(Of T).RestClient
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).RestClient
+- uid: Innova.Rest.Abstractions.IRestClient
+  commentId: T:Innova.Rest.Abstractions.IRestClient
+  parent: Innova.Rest.Abstractions
+  href: Innova.Rest.Abstractions.IRestClient.html
+  name: IRestClient
+  nameWithType: IRestClient
+  fullName: Innova.Rest.Abstractions.IRestClient
+- uid: Innova.Rest.Abstractions
+  commentId: N:Innova.Rest.Abstractions
+  href: Innova.html
+  name: Innova.Rest.Abstractions
+  nameWithType: Innova.Rest.Abstractions
+  fullName: Innova.Rest.Abstractions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Abstractions
+    name: Abstractions
+    href: Innova.Rest.Abstractions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Abstractions
+    name: Abstractions
+    href: Innova.Rest.Abstractions.html
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.#ctor*
+  commentId: Overload:Innova.Rest.Client.RestEntityRevisionService`1.#ctor
+  href: Innova.Rest.Client.RestEntityRevisionService-1.-ctor.html#Innova_Rest_Client_RestEntityRevisionService_1__ctor_Innova_Data_Security_IEntitySecurity__0__Innova_Rest_Abstractions_IRestClient_
+  name: RestEntityRevisionService
+  nameWithType: RestEntityRevisionService<T>.RestEntityRevisionService
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.RestEntityRevisionService
+  nameWithType.vb: RestEntityRevisionService(Of T).New
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).New
+  name.vb: New
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.CheckPermissionsThrowWarningIfNot*
+  commentId: Overload:Innova.Rest.Client.RestEntityRevisionService`1.CheckPermissionsThrowWarningIfNot
+  href: Innova.Rest.Client.RestEntityRevisionService-1.CheckPermissionsThrowWarningIfNot.html#Innova_Rest_Client_RestEntityRevisionService_1_CheckPermissionsThrowWarningIfNot_Innova_Data_Security_Operation__0_
+  name: CheckPermissionsThrowWarningIfNot
+  nameWithType: RestEntityRevisionService<T>.CheckPermissionsThrowWarningIfNot
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.CheckPermissionsThrowWarningIfNot
+  nameWithType.vb: RestEntityRevisionService(Of T).CheckPermissionsThrowWarningIfNot
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).CheckPermissionsThrowWarningIfNot
+- uid: Innova.Data.Security.Operation
+  commentId: T:Innova.Data.Security.Operation
+  parent: Innova.Data.Security
+  href: Innova.Data.Security.Operation.html
+  name: Operation
+  nameWithType: Operation
+  fullName: Innova.Data.Security.Operation
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.GetReadRevision*
+  commentId: Overload:Innova.Rest.Client.RestEntityRevisionService`1.GetReadRevision
+  href: Innova.Rest.Client.RestEntityRevisionService-1.GetReadRevision.html#Innova_Rest_Client_RestEntityRevisionService_1_GetReadRevision_Innova_Data_Entity_IPrimaryKey_
+  name: GetReadRevision
+  nameWithType: RestEntityRevisionService<T>.GetReadRevision
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.GetReadRevision
+  nameWithType.vb: RestEntityRevisionService(Of T).GetReadRevision
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).GetReadRevision
+- uid: Innova.Data.Revision.IEntityRevisionService{{T}}.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  commentId: M:Innova.Data.Revision.IEntityRevisionService{`0}.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  parent: Innova.Data.Revision.IEntityRevisionService{{T}}
+  definition: Innova.Data.Revision.IEntityRevisionService`1.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  href: Innova.Data.Revision.IEntityRevisionService-1.GetReadRevision.html#Innova_Data_Revision_IEntityRevisionService_1_GetReadRevision_Innova_Data_Entity_IPrimaryKey_
+  name: GetReadRevision(IPrimaryKey)
+  nameWithType: IEntityRevisionService<T>.GetReadRevision(IPrimaryKey)
+  fullName: Innova.Data.Revision.IEntityRevisionService<T>.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  nameWithType.vb: IEntityRevisionService(Of T).GetReadRevision(IPrimaryKey)
+  fullName.vb: Innova.Data.Revision.IEntityRevisionService(Of T).GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  spec.csharp:
+  - uid: Innova.Data.Revision.IEntityRevisionService{`0}.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+    name: GetReadRevision
+    href: Innova.Data.Revision.IEntityRevisionService-1.GetReadRevision.html#Innova_Data_Revision_IEntityRevisionService_1_GetReadRevision_Innova_Data_Entity_IPrimaryKey_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Revision.IEntityRevisionService{`0}.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+    name: GetReadRevision
+    href: Innova.Data.Revision.IEntityRevisionService-1.GetReadRevision.html#Innova_Data_Revision_IEntityRevisionService_1_GetReadRevision_Innova_Data_Entity_IPrimaryKey_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+- uid: Innova.Data.Entity.IPrimaryKey
+  commentId: T:Innova.Data.Entity.IPrimaryKey
+  parent: Innova.Data.Entity
+  href: Innova.Data.Entity.IPrimaryKey.html
+  name: IPrimaryKey
+  nameWithType: IPrimaryKey
+  fullName: Innova.Data.Entity.IPrimaryKey
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.Revision.RevisionItem}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.Revision.RevisionItem}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<RevisionItem>>
+  nameWithType: Task<List<RevisionItem>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Innova.Data.Revision.RevisionItem>>
+  nameWithType.vb: Task(Of List(Of RevisionItem))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Innova.Data.Revision.RevisionItem))
+  name.vb: Task(Of List(Of RevisionItem))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.Revision.RevisionItem
+    name: RevisionItem
+    href: Innova.Data.Revision.RevisionItem.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.Revision.RevisionItem
+    name: RevisionItem
+    href: Innova.Data.Revision.RevisionItem.html
+  - name: )
+  - name: )
+- uid: Innova.Data.Revision.IEntityRevisionService`1.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  commentId: M:Innova.Data.Revision.IEntityRevisionService`1.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  href: Innova.Data.Revision.IEntityRevisionService-1.GetReadRevision.html#Innova_Data_Revision_IEntityRevisionService_1_GetReadRevision_Innova_Data_Entity_IPrimaryKey_
+  name: GetReadRevision(IPrimaryKey)
+  nameWithType: IEntityRevisionService<T>.GetReadRevision(IPrimaryKey)
+  fullName: Innova.Data.Revision.IEntityRevisionService<T>.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  nameWithType.vb: IEntityRevisionService(Of T).GetReadRevision(IPrimaryKey)
+  fullName.vb: Innova.Data.Revision.IEntityRevisionService(Of T).GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+  spec.csharp:
+  - uid: Innova.Data.Revision.IEntityRevisionService`1.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+    name: GetReadRevision
+    href: Innova.Data.Revision.IEntityRevisionService-1.GetReadRevision.html#Innova_Data_Revision_IEntityRevisionService_1_GetReadRevision_Innova_Data_Entity_IPrimaryKey_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Revision.IEntityRevisionService`1.GetReadRevision(Innova.Data.Entity.IPrimaryKey)
+    name: GetReadRevision
+    href: Innova.Data.Revision.IEntityRevisionService-1.GetReadRevision.html#Innova_Data_Revision_IEntityRevisionService_1_GetReadRevision_Innova_Data_Entity_IPrimaryKey_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+- uid: Innova.Data.Entity
+  commentId: N:Innova.Data.Entity
+  href: Innova.html
+  name: Innova.Data.Entity
+  nameWithType: Innova.Data.Entity
+  fullName: Innova.Data.Entity
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.GetRevision*
+  commentId: Overload:Innova.Rest.Client.RestEntityRevisionService`1.GetRevision
+  href: Innova.Rest.Client.RestEntityRevisionService-1.GetRevision.html#Innova_Rest_Client_RestEntityRevisionService_1_GetRevision_Innova_Data_Entity_IPrimaryKey_System_Int32_System_Collections_Generic_List_System_String__System_String_
+  name: GetRevision
+  nameWithType: RestEntityRevisionService<T>.GetRevision
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.GetRevision
+  nameWithType.vb: RestEntityRevisionService(Of T).GetRevision
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).GetRevision
+- uid: Innova.Data.Revision.IEntityRevisionService{{T}}.GetRevision(Innova.Data.Entity.IPrimaryKey,System.Int32,System.Collections.Generic.List{System.String},System.String)
+  commentId: M:Innova.Data.Revision.IEntityRevisionService{`0}.GetRevision(Innova.Data.Entity.IPrimaryKey,System.Int32,System.Collections.Generic.List{System.String},System.String)
+  parent: Innova.Data.Revision.IEntityRevisionService{{T}}
+  definition: Innova.Data.Revision.IEntityRevisionService`1.GetRevision(Innova.Data.Entity.IPrimaryKey,System.Int32,System.Collections.Generic.List{System.String},System.String)
+  href: Innova.Data.Revision.IEntityRevisionService-1.GetRevision.html#Innova_Data_Revision_IEntityRevisionService_1_GetRevision_Innova_Data_Entity_IPrimaryKey_System_Int32_System_Collections_Generic_List_System_String__System_String_
+  name: GetRevision(IPrimaryKey, int, List<string>, string)
+  nameWithType: IEntityRevisionService<T>.GetRevision(IPrimaryKey, int, List<string>, string)
+  fullName: Innova.Data.Revision.IEntityRevisionService<T>.GetRevision(Innova.Data.Entity.IPrimaryKey, int, System.Collections.Generic.List<string>, string)
+  nameWithType.vb: IEntityRevisionService(Of T).GetRevision(IPrimaryKey, Integer, List(Of String), String)
+  fullName.vb: Innova.Data.Revision.IEntityRevisionService(Of T).GetRevision(Innova.Data.Entity.IPrimaryKey, Integer, System.Collections.Generic.List(Of String), String)
+  name.vb: GetRevision(IPrimaryKey, Integer, List(Of String), String)
+  spec.csharp:
+  - uid: Innova.Data.Revision.IEntityRevisionService{`0}.GetRevision(Innova.Data.Entity.IPrimaryKey,System.Int32,System.Collections.Generic.List{System.String},System.String)
+    name: GetRevision
+    href: Innova.Data.Revision.IEntityRevisionService-1.GetRevision.html#Innova_Data_Revision_IEntityRevisionService_1_GetRevision_Innova_Data_Entity_IPrimaryKey_System_Int32_System_Collections_Generic_List_System_String__System_String_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Revision.IEntityRevisionService{`0}.GetRevision(Innova.Data.Entity.IPrimaryKey,System.Int32,System.Collections.Generic.List{System.String},System.String)
+    name: GetRevision
+    href: Innova.Data.Revision.IEntityRevisionService-1.GetRevision.html#Innova_Data_Revision_IEntityRevisionService_1_GetRevision_Innova_Data_Entity_IPrimaryKey_System_Int32_System_Collections_Generic_List_System_String__System_String_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Data.Revision.IEntityRevisionService`1.GetRevision(Innova.Data.Entity.IPrimaryKey,System.Int32,System.Collections.Generic.List{System.String},System.String)
+  commentId: M:Innova.Data.Revision.IEntityRevisionService`1.GetRevision(Innova.Data.Entity.IPrimaryKey,System.Int32,System.Collections.Generic.List{System.String},System.String)
+  isExternal: true
+  href: Innova.Data.Revision.IEntityRevisionService-1.GetRevision.html#Innova_Data_Revision_IEntityRevisionService_1_GetRevision_Innova_Data_Entity_IPrimaryKey_System_Int32_System_Collections_Generic_List_System_String__System_String_
+  name: GetRevision(IPrimaryKey, int, List<string>, string)
+  nameWithType: IEntityRevisionService<T>.GetRevision(IPrimaryKey, int, List<string>, string)
+  fullName: Innova.Data.Revision.IEntityRevisionService<T>.GetRevision(Innova.Data.Entity.IPrimaryKey, int, System.Collections.Generic.List<string>, string)
+  nameWithType.vb: IEntityRevisionService(Of T).GetRevision(IPrimaryKey, Integer, List(Of String), String)
+  fullName.vb: Innova.Data.Revision.IEntityRevisionService(Of T).GetRevision(Innova.Data.Entity.IPrimaryKey, Integer, System.Collections.Generic.List(Of String), String)
+  name.vb: GetRevision(IPrimaryKey, Integer, List(Of String), String)
+  spec.csharp:
+  - uid: Innova.Data.Revision.IEntityRevisionService`1.GetRevision(Innova.Data.Entity.IPrimaryKey,System.Int32,System.Collections.Generic.List{System.String},System.String)
+    name: GetRevision
+    href: Innova.Data.Revision.IEntityRevisionService-1.GetRevision.html#Innova_Data_Revision_IEntityRevisionService_1_GetRevision_Innova_Data_Entity_IPrimaryKey_System_Int32_System_Collections_Generic_List_System_String__System_String_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Revision.IEntityRevisionService`1.GetRevision(Innova.Data.Entity.IPrimaryKey,System.Int32,System.Collections.Generic.List{System.String},System.String)
+    name: GetRevision
+    href: Innova.Data.Revision.IEntityRevisionService-1.GetRevision.html#Innova_Data_Revision_IEntityRevisionService_1_GetRevision_Innova_Data_Entity_IPrimaryKey_System_Int32_System_Collections_Generic_List_System_String__System_String_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Rest.Client.RestEntityRevisionService`1.InsertReadRevision*
+  commentId: Overload:Innova.Rest.Client.RestEntityRevisionService`1.InsertReadRevision
+  href: Innova.Rest.Client.RestEntityRevisionService-1.InsertReadRevision.html#Innova_Rest_Client_RestEntityRevisionService_1_InsertReadRevision_Innova_Data_Entity_IPrimaryKey_
+  name: InsertReadRevision
+  nameWithType: RestEntityRevisionService<T>.InsertReadRevision
+  fullName: Innova.Rest.Client.RestEntityRevisionService<T>.InsertReadRevision
+  nameWithType.vb: RestEntityRevisionService(Of T).InsertReadRevision
+  fullName.vb: Innova.Rest.Client.RestEntityRevisionService(Of T).InsertReadRevision
+- uid: Innova.Data.Revision.IEntityRevisionService{{T}}.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  commentId: M:Innova.Data.Revision.IEntityRevisionService{`0}.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  parent: Innova.Data.Revision.IEntityRevisionService{{T}}
+  definition: Innova.Data.Revision.IEntityRevisionService`1.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  href: Innova.Data.Revision.IEntityRevisionService-1.InsertReadRevision.html#Innova_Data_Revision_IEntityRevisionService_1_InsertReadRevision_Innova_Data_Entity_IPrimaryKey_
+  name: InsertReadRevision(IPrimaryKey)
+  nameWithType: IEntityRevisionService<T>.InsertReadRevision(IPrimaryKey)
+  fullName: Innova.Data.Revision.IEntityRevisionService<T>.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  nameWithType.vb: IEntityRevisionService(Of T).InsertReadRevision(IPrimaryKey)
+  fullName.vb: Innova.Data.Revision.IEntityRevisionService(Of T).InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  spec.csharp:
+  - uid: Innova.Data.Revision.IEntityRevisionService{`0}.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+    name: InsertReadRevision
+    href: Innova.Data.Revision.IEntityRevisionService-1.InsertReadRevision.html#Innova_Data_Revision_IEntityRevisionService_1_InsertReadRevision_Innova_Data_Entity_IPrimaryKey_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Revision.IEntityRevisionService{`0}.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+    name: InsertReadRevision
+    href: Innova.Data.Revision.IEntityRevisionService-1.InsertReadRevision.html#Innova_Data_Revision_IEntityRevisionService_1_InsertReadRevision_Innova_Data_Entity_IPrimaryKey_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Innova.Data.Revision.IEntityRevisionService`1.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  commentId: M:Innova.Data.Revision.IEntityRevisionService`1.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  href: Innova.Data.Revision.IEntityRevisionService-1.InsertReadRevision.html#Innova_Data_Revision_IEntityRevisionService_1_InsertReadRevision_Innova_Data_Entity_IPrimaryKey_
+  name: InsertReadRevision(IPrimaryKey)
+  nameWithType: IEntityRevisionService<T>.InsertReadRevision(IPrimaryKey)
+  fullName: Innova.Data.Revision.IEntityRevisionService<T>.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  nameWithType.vb: IEntityRevisionService(Of T).InsertReadRevision(IPrimaryKey)
+  fullName.vb: Innova.Data.Revision.IEntityRevisionService(Of T).InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+  spec.csharp:
+  - uid: Innova.Data.Revision.IEntityRevisionService`1.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+    name: InsertReadRevision
+    href: Innova.Data.Revision.IEntityRevisionService-1.InsertReadRevision.html#Innova_Data_Revision_IEntityRevisionService_1_InsertReadRevision_Innova_Data_Entity_IPrimaryKey_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.Revision.IEntityRevisionService`1.InsertReadRevision(Innova.Data.Entity.IPrimaryKey)
+    name: InsertReadRevision
+    href: Innova.Data.Revision.IEntityRevisionService-1.InsertReadRevision.html#Innova_Data_Revision_IEntityRevisionService_1_InsertReadRevision_Innova_Data_Entity_IPrimaryKey_
+  - name: (
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+    href: Innova.Data.Entity.IPrimaryKey.html
+  - name: )
+memberLayout: SeparatePages

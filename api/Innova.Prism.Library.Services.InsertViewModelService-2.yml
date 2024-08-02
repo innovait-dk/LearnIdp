@@ -1,0 +1,2043 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Services.InsertViewModelService`2
+  commentId: T:Innova.Prism.Library.Services.InsertViewModelService`2
+  id: InsertViewModelService`2
+  parent: Innova.Prism.Library.Services
+  children:
+  - Innova.Prism.Library.Services.InsertViewModelService`2.#ctor(Innova.Data.Entity.IInsertEntityService{`0,`1},Innova.Data.Entity.IEntityServiceConfiguration{`0},Innova.Prism.Library.Services.ILookupService,Innova.Prism.Library.Services.IWindowDialogService,Prism.Events.IEventAggregator,Innova.Data.Entity.IEntityValidatorService,Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Services.InsertViewModelService{`0,`1}})
+  - Innova.Prism.Library.Services.InsertViewModelService`2.EntityService
+  - Innova.Prism.Library.Services.InsertViewModelService`2.GetInsert(Innova.Data.Entity.IPropertyValues,System.Threading.CancellationToken)
+  - Innova.Prism.Library.Services.InsertViewModelService`2.Insert(`1,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: InsertViewModelService<T, TInsert>
+  nameWithType: InsertViewModelService<T, TInsert>
+  fullName: Innova.Prism.Library.Services.InsertViewModelService<T, TInsert>
+  type: Class
+  source:
+    id: InsertViewModelService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\InsertViewModelService.cs
+    startLine: 19
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Base class for insert view model services.
+  example: []
+  syntax:
+    content: 'public abstract class InsertViewModelService<T, TInsert> : ViewModelService<T>, IInsertViewModelService<T, TInsert>, IViewModelService<T> where T : class where TInsert : class'
+    typeParameters:
+    - id: T
+      description: The type of the entity.
+    - id: TInsert
+      description: The type of the entity to insert.
+    content.vb: Public MustInherit Class InsertViewModelService(Of T As Class, TInsert As Class) Inherits ViewModelService(Of T) Implements IInsertViewModelService(Of T, TInsert), IViewModelService(Of T)
+  inheritance:
+  - System.Object
+  - Innova.Prism.Library.Services.ViewModelService{{T}}
+  implements:
+  - Innova.Prism.Library.Services.IInsertViewModelService{{T},{TInsert}}
+  - Innova.Prism.Library.Services.IViewModelService{{T}}
+  inheritedMembers:
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.LookupService
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.WindowDialogService
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.EventAggregator
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.EntityValidatorService
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.Logger
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.EntityServiceConfiguration
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.GetEntityService``1
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.DefaultOrderBy
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{{TOther}}[])
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.GetQueryParameterWithOrderBy
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.ConfirmDeletion(System.Collections.IList)
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.PublishDeletion(System.Collections.Generic.List{Innova.Data.Entity.IPrimaryKey},System.Boolean)
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.ClearCacheIfIsCached
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.SetValidator(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{{T}}},System.Boolean,System.Threading.CancellationToken)
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.SetMainBusyText(System.String)
+  - Innova.Prism.Library.Services.ViewModelService{{T}}.HandleException(System.Exception)
+  nameWithType.vb: InsertViewModelService(Of T, TInsert)
+  fullName.vb: Innova.Prism.Library.Services.InsertViewModelService(Of T, TInsert)
+  name.vb: InsertViewModelService(Of T, TInsert)
+- uid: Innova.Prism.Library.Services.InsertViewModelService`2.EntityService
+  commentId: P:Innova.Prism.Library.Services.InsertViewModelService`2.EntityService
+  id: EntityService
+  parent: Innova.Prism.Library.Services.InsertViewModelService`2
+  langs:
+  - csharp
+  - vb
+  name: EntityService
+  nameWithType: InsertViewModelService<T, TInsert>.EntityService
+  fullName: Innova.Prism.Library.Services.InsertViewModelService<T, TInsert>.EntityService
+  type: Property
+  source:
+    id: EntityService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\InsertViewModelService.cs
+    startLine: 24
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Gets the entity service for inserting entities.
+  example: []
+  syntax:
+    content: public IInsertEntityService<T, TInsert> EntityService { get; }
+    parameters: []
+    return:
+      type: Innova.Data.Entity.IInsertEntityService{{T},{TInsert}}
+    content.vb: Public ReadOnly Property EntityService As IInsertEntityService(Of T, TInsert)
+  overload: Innova.Prism.Library.Services.InsertViewModelService`2.EntityService*
+  implements:
+  - Innova.Prism.Library.Services.IInsertViewModelService{{T},{TInsert}}.EntityService
+  nameWithType.vb: InsertViewModelService(Of T, TInsert).EntityService
+  fullName.vb: Innova.Prism.Library.Services.InsertViewModelService(Of T, TInsert).EntityService
+- uid: Innova.Prism.Library.Services.InsertViewModelService`2.#ctor(Innova.Data.Entity.IInsertEntityService{`0,`1},Innova.Data.Entity.IEntityServiceConfiguration{`0},Innova.Prism.Library.Services.ILookupService,Innova.Prism.Library.Services.IWindowDialogService,Prism.Events.IEventAggregator,Innova.Data.Entity.IEntityValidatorService,Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Services.InsertViewModelService{`0,`1}})
+  commentId: M:Innova.Prism.Library.Services.InsertViewModelService`2.#ctor(Innova.Data.Entity.IInsertEntityService{`0,`1},Innova.Data.Entity.IEntityServiceConfiguration{`0},Innova.Prism.Library.Services.ILookupService,Innova.Prism.Library.Services.IWindowDialogService,Prism.Events.IEventAggregator,Innova.Data.Entity.IEntityValidatorService,Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Services.InsertViewModelService{`0,`1}})
+  id: '#ctor(Innova.Data.Entity.IInsertEntityService{`0,`1},Innova.Data.Entity.IEntityServiceConfiguration{`0},Innova.Prism.Library.Services.ILookupService,Innova.Prism.Library.Services.IWindowDialogService,Prism.Events.IEventAggregator,Innova.Data.Entity.IEntityValidatorService,Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Services.InsertViewModelService{`0,`1}})'
+  parent: Innova.Prism.Library.Services.InsertViewModelService`2
+  langs:
+  - csharp
+  - vb
+  name: InsertViewModelService(IInsertEntityService<T, TInsert>, IEntityServiceConfiguration<T>, ILookupService, IWindowDialogService, IEventAggregator, IEntityValidatorService, ILogger<InsertViewModelService<T, TInsert>>)
+  nameWithType: InsertViewModelService<T, TInsert>.InsertViewModelService(IInsertEntityService<T, TInsert>, IEntityServiceConfiguration<T>, ILookupService, IWindowDialogService, IEventAggregator, IEntityValidatorService, ILogger<InsertViewModelService<T, TInsert>>)
+  fullName: Innova.Prism.Library.Services.InsertViewModelService<T, TInsert>.InsertViewModelService(Innova.Data.Entity.IInsertEntityService<T, TInsert>, Innova.Data.Entity.IEntityServiceConfiguration<T>, Innova.Prism.Library.Services.ILookupService, Innova.Prism.Library.Services.IWindowDialogService, Prism.Events.IEventAggregator, Innova.Data.Entity.IEntityValidatorService, Microsoft.Extensions.Logging.ILogger<Innova.Prism.Library.Services.InsertViewModelService<T, TInsert>>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\InsertViewModelService.cs
+    startLine: 36
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Services.InsertViewModelService%602" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: protected InsertViewModelService(IInsertEntityService<T, TInsert> entityService, IEntityServiceConfiguration<T> entityServiceConfiguration, ILookupService lookupService, IWindowDialogService windowDialogService, IEventAggregator eventAggregator, IEntityValidatorService entityValidatorService, ILogger<InsertViewModelService<T, TInsert>> logger)
+    parameters:
+    - id: entityService
+      type: Innova.Data.Entity.IInsertEntityService{{T},{TInsert}}
+      description: The entity service for inserting entities.
+    - id: entityServiceConfiguration
+      type: Innova.Data.Entity.IEntityServiceConfiguration{{T}}
+      description: The entity service configuration.
+    - id: lookupService
+      type: Innova.Prism.Library.Services.ILookupService
+      description: The lookup service.
+    - id: windowDialogService
+      type: Innova.Prism.Library.Services.IWindowDialogService
+      description: The window dialog service.
+    - id: eventAggregator
+      type: Prism.Events.IEventAggregator
+      description: The event aggregator.
+    - id: entityValidatorService
+      type: Innova.Data.Entity.IEntityValidatorService
+      description: The entity validator service.
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Services.InsertViewModelService`2}
+      description: The logger.
+    content.vb: Protected Sub New(entityService As IInsertEntityService(Of T, TInsert), entityServiceConfiguration As IEntityServiceConfiguration(Of T), lookupService As ILookupService, windowDialogService As IWindowDialogService, eventAggregator As IEventAggregator, entityValidatorService As IEntityValidatorService, logger As ILogger(Of InsertViewModelService(Of T, TInsert)))
+  overload: Innova.Prism.Library.Services.InsertViewModelService`2.#ctor*
+  nameWithType.vb: InsertViewModelService(Of T, TInsert).New(IInsertEntityService(Of T, TInsert), IEntityServiceConfiguration(Of T), ILookupService, IWindowDialogService, IEventAggregator, IEntityValidatorService, ILogger(Of InsertViewModelService(Of T, TInsert)))
+  fullName.vb: Innova.Prism.Library.Services.InsertViewModelService(Of T, TInsert).New(Innova.Data.Entity.IInsertEntityService(Of T, TInsert), Innova.Data.Entity.IEntityServiceConfiguration(Of T), Innova.Prism.Library.Services.ILookupService, Innova.Prism.Library.Services.IWindowDialogService, Prism.Events.IEventAggregator, Innova.Data.Entity.IEntityValidatorService, Microsoft.Extensions.Logging.ILogger(Of Innova.Prism.Library.Services.InsertViewModelService(Of T, TInsert)))
+  name.vb: New(IInsertEntityService(Of T, TInsert), IEntityServiceConfiguration(Of T), ILookupService, IWindowDialogService, IEventAggregator, IEntityValidatorService, ILogger(Of InsertViewModelService(Of T, TInsert)))
+- uid: Innova.Prism.Library.Services.InsertViewModelService`2.GetInsert(Innova.Data.Entity.IPropertyValues,System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.InsertViewModelService`2.GetInsert(Innova.Data.Entity.IPropertyValues,System.Threading.CancellationToken)
+  id: GetInsert(Innova.Data.Entity.IPropertyValues,System.Threading.CancellationToken)
+  parent: Innova.Prism.Library.Services.InsertViewModelService`2
+  langs:
+  - csharp
+  - vb
+  name: GetInsert(IPropertyValues, CancellationToken)
+  nameWithType: InsertViewModelService<T, TInsert>.GetInsert(IPropertyValues, CancellationToken)
+  fullName: Innova.Prism.Library.Services.InsertViewModelService<T, TInsert>.GetInsert(Innova.Data.Entity.IPropertyValues, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetInsert
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\InsertViewModelService.cs
+    startLine: 50
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Gets the entity to insert based on the provided property values.
+  example: []
+  syntax:
+    content: public Task<TInsert> GetInsert(IPropertyValues propertyValues, CancellationToken cancellationToken = default)
+    parameters:
+    - id: propertyValues
+      type: Innova.Data.Entity.IPropertyValues
+      description: The property values.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{{TInsert}}
+      description: The entity to insert.
+    content.vb: Public Function GetInsert(propertyValues As IPropertyValues, cancellationToken As CancellationToken = Nothing) As Task(Of TInsert)
+  overload: Innova.Prism.Library.Services.InsertViewModelService`2.GetInsert*
+  implements:
+  - Innova.Prism.Library.Services.IInsertViewModelService{{T},{TInsert}}.GetInsert(Innova.Data.Entity.IPropertyValues,System.Threading.CancellationToken)
+  nameWithType.vb: InsertViewModelService(Of T, TInsert).GetInsert(IPropertyValues, CancellationToken)
+  fullName.vb: Innova.Prism.Library.Services.InsertViewModelService(Of T, TInsert).GetInsert(Innova.Data.Entity.IPropertyValues, System.Threading.CancellationToken)
+- uid: Innova.Prism.Library.Services.InsertViewModelService`2.Insert(`1,System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.InsertViewModelService`2.Insert(`1,System.Threading.CancellationToken)
+  id: Insert(`1,System.Threading.CancellationToken)
+  parent: Innova.Prism.Library.Services.InsertViewModelService`2
+  langs:
+  - csharp
+  - vb
+  name: Insert(TInsert, CancellationToken)
+  nameWithType: InsertViewModelService<T, TInsert>.Insert(TInsert, CancellationToken)
+  fullName: Innova.Prism.Library.Services.InsertViewModelService<T, TInsert>.Insert(TInsert, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: Insert
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\InsertViewModelService.cs
+    startLine: 63
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Inserts the specified entity.
+  example: []
+  syntax:
+    content: public virtual Task<PrimaryKeys<T>> Insert(TInsert entity, CancellationToken cancellationToken = default)
+    parameters:
+    - id: entity
+      type: '{TInsert}'
+      description: The entity to insert.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Innova.Data.Entity.PrimaryKeys{{T}}}
+      description: The primary keys of the inserted entity.
+    content.vb: Public Overridable Function Insert(entity As TInsert, cancellationToken As CancellationToken = Nothing) As Task(Of PrimaryKeys(Of T))
+  overload: Innova.Prism.Library.Services.InsertViewModelService`2.Insert*
+  implements:
+  - Innova.Prism.Library.Services.IInsertViewModelService{{T},{TInsert}}.Insert({TInsert},System.Threading.CancellationToken)
+  nameWithType.vb: InsertViewModelService(Of T, TInsert).Insert(TInsert, CancellationToken)
+  fullName.vb: Innova.Prism.Library.Services.InsertViewModelService(Of T, TInsert).Insert(TInsert, System.Threading.CancellationToken)
+references:
+- uid: Innova.Prism.Library.Services
+  commentId: N:Innova.Prism.Library.Services
+  href: Innova.html
+  name: Innova.Prism.Library.Services
+  nameWithType: Innova.Prism.Library.Services
+  fullName: Innova.Prism.Library.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}
+  commentId: T:Innova.Prism.Library.Services.ViewModelService{`0}
+  parent: Innova.Prism.Library.Services
+  definition: Innova.Prism.Library.Services.ViewModelService`1
+  href: Innova.Prism.Library.Services.ViewModelService-1.html
+  name: ViewModelService<T>
+  nameWithType: ViewModelService<T>
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>
+  nameWithType.vb: ViewModelService(Of T)
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T)
+  name.vb: ViewModelService(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1
+    name: ViewModelService
+    href: Innova.Prism.Library.Services.ViewModelService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1
+    name: ViewModelService
+    href: Innova.Prism.Library.Services.ViewModelService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Services.IInsertViewModelService{{T},{TInsert}}
+  commentId: T:Innova.Prism.Library.Services.IInsertViewModelService{`0,`1}
+  parent: Innova.Prism.Library.Services
+  definition: Innova.Prism.Library.Services.IInsertViewModelService`2
+  href: Innova.Prism.Library.Services.IInsertViewModelService-2.html
+  name: IInsertViewModelService<T, TInsert>
+  nameWithType: IInsertViewModelService<T, TInsert>
+  fullName: Innova.Prism.Library.Services.IInsertViewModelService<T, TInsert>
+  nameWithType.vb: IInsertViewModelService(Of T, TInsert)
+  fullName.vb: Innova.Prism.Library.Services.IInsertViewModelService(Of T, TInsert)
+  name.vb: IInsertViewModelService(Of T, TInsert)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IInsertViewModelService`2
+    name: IInsertViewModelService
+    href: Innova.Prism.Library.Services.IInsertViewModelService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInsert
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IInsertViewModelService`2
+    name: IInsertViewModelService
+    href: Innova.Prism.Library.Services.IInsertViewModelService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInsert
+  - name: )
+- uid: Innova.Prism.Library.Services.IViewModelService{{T}}
+  commentId: T:Innova.Prism.Library.Services.IViewModelService{`0}
+  parent: Innova.Prism.Library.Services
+  definition: Innova.Prism.Library.Services.IViewModelService`1
+  href: Innova.Prism.Library.Services.IViewModelService-1.html
+  name: IViewModelService<T>
+  nameWithType: IViewModelService<T>
+  fullName: Innova.Prism.Library.Services.IViewModelService<T>
+  nameWithType.vb: IViewModelService(Of T)
+  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T)
+  name.vb: IViewModelService(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IViewModelService`1
+    name: IViewModelService
+    href: Innova.Prism.Library.Services.IViewModelService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IViewModelService`1
+    name: IViewModelService
+    href: Innova.Prism.Library.Services.IViewModelService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.LookupService
+  commentId: F:Innova.Prism.Library.Services.ViewModelService{`0}.LookupService
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.LookupService
+  href: Innova.Prism.Library.Services.ViewModelService-1.LookupService.html#Innova_Prism_Library_Services_ViewModelService_1_LookupService
+  name: LookupService
+  nameWithType: ViewModelService<T>.LookupService
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.LookupService
+  nameWithType.vb: ViewModelService(Of T).LookupService
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).LookupService
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.WindowDialogService
+  commentId: F:Innova.Prism.Library.Services.ViewModelService{`0}.WindowDialogService
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.WindowDialogService
+  href: Innova.Prism.Library.Services.ViewModelService-1.WindowDialogService.html#Innova_Prism_Library_Services_ViewModelService_1_WindowDialogService
+  name: WindowDialogService
+  nameWithType: ViewModelService<T>.WindowDialogService
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.WindowDialogService
+  nameWithType.vb: ViewModelService(Of T).WindowDialogService
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).WindowDialogService
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.EventAggregator
+  commentId: F:Innova.Prism.Library.Services.ViewModelService{`0}.EventAggregator
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.EventAggregator
+  href: Innova.Prism.Library.Services.ViewModelService-1.EventAggregator.html#Innova_Prism_Library_Services_ViewModelService_1_EventAggregator
+  name: EventAggregator
+  nameWithType: ViewModelService<T>.EventAggregator
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.EventAggregator
+  nameWithType.vb: ViewModelService(Of T).EventAggregator
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).EventAggregator
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.EntityValidatorService
+  commentId: F:Innova.Prism.Library.Services.ViewModelService{`0}.EntityValidatorService
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.EntityValidatorService
+  href: Innova.Prism.Library.Services.ViewModelService-1.EntityValidatorService.html#Innova_Prism_Library_Services_ViewModelService_1_EntityValidatorService
+  name: EntityValidatorService
+  nameWithType: ViewModelService<T>.EntityValidatorService
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.EntityValidatorService
+  nameWithType.vb: ViewModelService(Of T).EntityValidatorService
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).EntityValidatorService
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.Logger
+  commentId: F:Innova.Prism.Library.Services.ViewModelService{`0}.Logger
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.Logger
+  href: Innova.Prism.Library.Services.ViewModelService-1.Logger.html#Innova_Prism_Library_Services_ViewModelService_1_Logger
+  name: Logger
+  nameWithType: ViewModelService<T>.Logger
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.Logger
+  nameWithType.vb: ViewModelService(Of T).Logger
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).Logger
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.EntityServiceConfiguration
+  commentId: F:Innova.Prism.Library.Services.ViewModelService{`0}.EntityServiceConfiguration
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.EntityServiceConfiguration
+  href: Innova.Prism.Library.Services.ViewModelService-1.EntityServiceConfiguration.html#Innova_Prism_Library_Services_ViewModelService_1_EntityServiceConfiguration
+  name: EntityServiceConfiguration
+  nameWithType: ViewModelService<T>.EntityServiceConfiguration
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.EntityServiceConfiguration
+  nameWithType.vb: ViewModelService(Of T).EntityServiceConfiguration
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).EntityServiceConfiguration
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.GetEntityService``1
+  commentId: M:Innova.Prism.Library.Services.ViewModelService{`0}.GetEntityService``1
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.GetEntityService``1
+  href: Innova.Prism.Library.Services.ViewModelService-1.GetEntityService.html#Innova_Prism_Library_Services_ViewModelService_1_GetEntityService__1
+  name: GetEntityService<TEntityService1>()
+  nameWithType: ViewModelService<T>.GetEntityService<TEntityService1>()
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.GetEntityService<TEntityService1>()
+  nameWithType.vb: ViewModelService(Of T).GetEntityService(Of TEntityService1)()
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).GetEntityService(Of TEntityService1)()
+  name.vb: GetEntityService(Of TEntityService1)()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.GetEntityService``1
+    name: GetEntityService
+    href: Innova.Prism.Library.Services.ViewModelService-1.GetEntityService.html#Innova_Prism_Library_Services_ViewModelService_1_GetEntityService__1
+  - name: <
+  - name: TEntityService1
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.GetEntityService``1
+    name: GetEntityService
+    href: Innova.Prism.Library.Services.ViewModelService-1.GetEntityService.html#Innova_Prism_Library_Services_ViewModelService_1_GetEntityService__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntityService1
+  - name: )
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.DefaultOrderBy
+  commentId: P:Innova.Prism.Library.Services.ViewModelService{`0}.DefaultOrderBy
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.DefaultOrderBy
+  href: Innova.Prism.Library.Services.ViewModelService-1.DefaultOrderBy.html#Innova_Prism_Library_Services_ViewModelService_1_DefaultOrderBy
+  name: DefaultOrderBy
+  nameWithType: ViewModelService<T>.DefaultOrderBy
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.DefaultOrderBy
+  nameWithType.vb: ViewModelService(Of T).DefaultOrderBy
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).DefaultOrderBy
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{{TOther}}[])
+  commentId: M:Innova.Prism.Library.Services.ViewModelService{`0}.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  href: Innova.Prism.Library.Services.ViewModelService-1.GetLookupList.html#Innova_Prism_Library_Services_ViewModelService_1_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  name: GetLookupList<TOther>(params PrimaryKeys<TOther>[])
+  nameWithType: ViewModelService<T>.GetLookupList<TOther>(params PrimaryKeys<TOther>[])
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.GetLookupList<TOther>(params Innova.Data.Entity.PrimaryKeys<TOther>[])
+  nameWithType.vb: ViewModelService(Of T).GetLookupList(Of TOther)(ParamArray PrimaryKeys(Of TOther)())
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).GetLookupList(Of TOther)(ParamArray Innova.Data.Entity.PrimaryKeys(Of TOther)())
+  name.vb: GetLookupList(Of TOther)(ParamArray PrimaryKeys(Of TOther)())
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+    name: GetLookupList
+    href: Innova.Prism.Library.Services.ViewModelService-1.GetLookupList.html#Innova_Prism_Library_Services_ViewModelService_1_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  - name: <
+  - name: TOther
+  - name: '>'
+  - name: (
+  - name: params
+  - name: " "
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+  - name: <
+  - name: TOther
+  - name: '>'
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+    name: GetLookupList
+    href: Innova.Prism.Library.Services.ViewModelService-1.GetLookupList.html#Innova_Prism_Library_Services_ViewModelService_1_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOther
+  - name: )
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOther
+  - name: )
+  - name: (
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.GetQueryParameterWithOrderBy
+  commentId: M:Innova.Prism.Library.Services.ViewModelService{`0}.GetQueryParameterWithOrderBy
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.GetQueryParameterWithOrderBy
+  href: Innova.Prism.Library.Services.ViewModelService-1.GetQueryParameterWithOrderBy.html#Innova_Prism_Library_Services_ViewModelService_1_GetQueryParameterWithOrderBy
+  name: GetQueryParameterWithOrderBy()
+  nameWithType: ViewModelService<T>.GetQueryParameterWithOrderBy()
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.GetQueryParameterWithOrderBy()
+  nameWithType.vb: ViewModelService(Of T).GetQueryParameterWithOrderBy()
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).GetQueryParameterWithOrderBy()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.GetQueryParameterWithOrderBy
+    name: GetQueryParameterWithOrderBy
+    href: Innova.Prism.Library.Services.ViewModelService-1.GetQueryParameterWithOrderBy.html#Innova_Prism_Library_Services_ViewModelService_1_GetQueryParameterWithOrderBy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.GetQueryParameterWithOrderBy
+    name: GetQueryParameterWithOrderBy
+    href: Innova.Prism.Library.Services.ViewModelService-1.GetQueryParameterWithOrderBy.html#Innova_Prism_Library_Services_ViewModelService_1_GetQueryParameterWithOrderBy
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.ConfirmDeletion(System.Collections.IList)
+  commentId: M:Innova.Prism.Library.Services.ViewModelService{`0}.ConfirmDeletion(System.Collections.IList)
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.ConfirmDeletion(System.Collections.IList)
+  href: Innova.Prism.Library.Services.ViewModelService-1.ConfirmDeletion.html#Innova_Prism_Library_Services_ViewModelService_1_ConfirmDeletion_System_Collections_IList_
+  name: ConfirmDeletion(IList)
+  nameWithType: ViewModelService<T>.ConfirmDeletion(IList)
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.ConfirmDeletion(System.Collections.IList)
+  nameWithType.vb: ViewModelService(Of T).ConfirmDeletion(IList)
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).ConfirmDeletion(System.Collections.IList)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.ConfirmDeletion(System.Collections.IList)
+    name: ConfirmDeletion
+    href: Innova.Prism.Library.Services.ViewModelService-1.ConfirmDeletion.html#Innova_Prism_Library_Services_ViewModelService_1_ConfirmDeletion_System_Collections_IList_
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.ConfirmDeletion(System.Collections.IList)
+    name: ConfirmDeletion
+    href: Innova.Prism.Library.Services.ViewModelService-1.ConfirmDeletion.html#Innova_Prism_Library_Services_ViewModelService_1_ConfirmDeletion_System_Collections_IList_
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.PublishDeletion(System.Collections.Generic.List{Innova.Data.Entity.IPrimaryKey},System.Boolean)
+  commentId: M:Innova.Prism.Library.Services.ViewModelService{`0}.PublishDeletion(System.Collections.Generic.List{Innova.Data.Entity.IPrimaryKey},System.Boolean)
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.PublishDeletion(System.Collections.Generic.List{Innova.Data.Entity.IPrimaryKey},System.Boolean)
+  href: Innova.Prism.Library.Services.ViewModelService-1.PublishDeletion.html#Innova_Prism_Library_Services_ViewModelService_1_PublishDeletion_System_Collections_Generic_List_Innova_Data_Entity_IPrimaryKey__System_Boolean_
+  name: PublishDeletion(List<IPrimaryKey>, bool)
+  nameWithType: ViewModelService<T>.PublishDeletion(List<IPrimaryKey>, bool)
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.PublishDeletion(System.Collections.Generic.List<Innova.Data.Entity.IPrimaryKey>, bool)
+  nameWithType.vb: ViewModelService(Of T).PublishDeletion(List(Of IPrimaryKey), Boolean)
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).PublishDeletion(System.Collections.Generic.List(Of Innova.Data.Entity.IPrimaryKey), Boolean)
+  name.vb: PublishDeletion(List(Of IPrimaryKey), Boolean)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.PublishDeletion(System.Collections.Generic.List{Innova.Data.Entity.IPrimaryKey},System.Boolean)
+    name: PublishDeletion
+    href: Innova.Prism.Library.Services.ViewModelService-1.PublishDeletion.html#Innova_Prism_Library_Services_ViewModelService_1_PublishDeletion_System_Collections_Generic_List_Innova_Data_Entity_IPrimaryKey__System_Boolean_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.PublishDeletion(System.Collections.Generic.List{Innova.Data.Entity.IPrimaryKey},System.Boolean)
+    name: PublishDeletion
+    href: Innova.Prism.Library.Services.ViewModelService-1.PublishDeletion.html#Innova_Prism_Library_Services_ViewModelService_1_PublishDeletion_System_Collections_Generic_List_Innova_Data_Entity_IPrimaryKey__System_Boolean_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.ClearCacheIfIsCached
+  commentId: M:Innova.Prism.Library.Services.ViewModelService{`0}.ClearCacheIfIsCached
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.ClearCacheIfIsCached
+  href: Innova.Prism.Library.Services.ViewModelService-1.ClearCacheIfIsCached.html#Innova_Prism_Library_Services_ViewModelService_1_ClearCacheIfIsCached
+  name: ClearCacheIfIsCached()
+  nameWithType: ViewModelService<T>.ClearCacheIfIsCached()
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.ClearCacheIfIsCached()
+  nameWithType.vb: ViewModelService(Of T).ClearCacheIfIsCached()
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).ClearCacheIfIsCached()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.ClearCacheIfIsCached
+    name: ClearCacheIfIsCached
+    href: Innova.Prism.Library.Services.ViewModelService-1.ClearCacheIfIsCached.html#Innova_Prism_Library_Services_ViewModelService_1_ClearCacheIfIsCached
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.ClearCacheIfIsCached
+    name: ClearCacheIfIsCached
+    href: Innova.Prism.Library.Services.ViewModelService-1.ClearCacheIfIsCached.html#Innova_Prism_Library_Services_ViewModelService_1_ClearCacheIfIsCached
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.SetValidator(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+  commentId: M:Innova.Prism.Library.Services.ViewModelService{`0}.SetValidator(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.SetValidator(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+  href: Innova.Prism.Library.Services.ViewModelService-1.SetValidator.html#Innova_Prism_Library_Services_ViewModelService_1_SetValidator_System_Object_Innova_Data_Validation_ValidationRuleSetEnum_
+  name: SetValidator(object, ValidationRuleSetEnum)
+  nameWithType: ViewModelService<T>.SetValidator(object, ValidationRuleSetEnum)
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.SetValidator(object, Innova.Data.Validation.ValidationRuleSetEnum)
+  nameWithType.vb: ViewModelService(Of T).SetValidator(Object, ValidationRuleSetEnum)
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).SetValidator(Object, Innova.Data.Validation.ValidationRuleSetEnum)
+  name.vb: SetValidator(Object, ValidationRuleSetEnum)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.SetValidator(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+    name: SetValidator
+    href: Innova.Prism.Library.Services.ViewModelService-1.SetValidator.html#Innova_Prism_Library_Services_ViewModelService_1_SetValidator_System_Object_Innova_Data_Validation_ValidationRuleSetEnum_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Validation.ValidationRuleSetEnum
+    name: ValidationRuleSetEnum
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.SetValidator(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+    name: SetValidator
+    href: Innova.Prism.Library.Services.ViewModelService-1.SetValidator.html#Innova_Prism_Library_Services_ViewModelService_1_SetValidator_System_Object_Innova_Data_Validation_ValidationRuleSetEnum_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Validation.ValidationRuleSetEnum
+    name: ValidationRuleSetEnum
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{{T}}},System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.ViewModelService{`0}.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+  href: Innova.Prism.Library.Services.ViewModelService-1.Delete.html#Innova_Prism_Library_Services_ViewModelService_1_Delete_System_Collections_Generic_List_Innova_Data_Entity_IEntityWithKey__0___System_Boolean_System_Threading_CancellationToken_
+  name: Delete(List<IEntityWithKey<T>>, bool, CancellationToken)
+  nameWithType: ViewModelService<T>.Delete(List<IEntityWithKey<T>>, bool, CancellationToken)
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.Delete(System.Collections.Generic.List<Innova.Data.Entity.IEntityWithKey<T>>, bool, System.Threading.CancellationToken)
+  nameWithType.vb: ViewModelService(Of T).Delete(List(Of IEntityWithKey(Of T)), Boolean, CancellationToken)
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).Delete(System.Collections.Generic.List(Of Innova.Data.Entity.IEntityWithKey(Of T)), Boolean, System.Threading.CancellationToken)
+  name.vb: Delete(List(Of IEntityWithKey(Of T)), Boolean, CancellationToken)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+    name: Delete
+    href: Innova.Prism.Library.Services.ViewModelService-1.Delete.html#Innova_Prism_Library_Services_ViewModelService_1_Delete_System_Collections_Generic_List_Innova_Data_Entity_IEntityWithKey__0___System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.Entity.IEntityWithKey`1
+    name: IEntityWithKey
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+    name: Delete
+    href: Innova.Prism.Library.Services.ViewModelService-1.Delete.html#Innova_Prism_Library_Services_ViewModelService_1_Delete_System_Collections_Generic_List_Innova_Data_Entity_IEntityWithKey__0___System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.Entity.IEntityWithKey`1
+    name: IEntityWithKey
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.SetMainBusyText(System.String)
+  commentId: M:Innova.Prism.Library.Services.ViewModelService{`0}.SetMainBusyText(System.String)
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.SetMainBusyText(System.String)
+  href: Innova.Prism.Library.Services.ViewModelService-1.SetMainBusyText.html#Innova_Prism_Library_Services_ViewModelService_1_SetMainBusyText_System_String_
+  name: SetMainBusyText(string)
+  nameWithType: ViewModelService<T>.SetMainBusyText(string)
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.SetMainBusyText(string)
+  nameWithType.vb: ViewModelService(Of T).SetMainBusyText(String)
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).SetMainBusyText(String)
+  name.vb: SetMainBusyText(String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.SetMainBusyText(System.String)
+    name: SetMainBusyText
+    href: Innova.Prism.Library.Services.ViewModelService-1.SetMainBusyText.html#Innova_Prism_Library_Services_ViewModelService_1_SetMainBusyText_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.SetMainBusyText(System.String)
+    name: SetMainBusyText
+    href: Innova.Prism.Library.Services.ViewModelService-1.SetMainBusyText.html#Innova_Prism_Library_Services_ViewModelService_1_SetMainBusyText_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService{{T}}.HandleException(System.Exception)
+  commentId: M:Innova.Prism.Library.Services.ViewModelService{`0}.HandleException(System.Exception)
+  parent: Innova.Prism.Library.Services.ViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.ViewModelService`1.HandleException(System.Exception)
+  href: Innova.Prism.Library.Services.ViewModelService-1.HandleException.html#Innova_Prism_Library_Services_ViewModelService_1_HandleException_System_Exception_
+  name: HandleException(Exception)
+  nameWithType: ViewModelService<T>.HandleException(Exception)
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.HandleException(System.Exception)
+  nameWithType.vb: ViewModelService(Of T).HandleException(Exception)
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).HandleException(System.Exception)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.HandleException(System.Exception)
+    name: HandleException
+    href: Innova.Prism.Library.Services.ViewModelService-1.HandleException.html#Innova_Prism_Library_Services_ViewModelService_1_HandleException_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService{`0}.HandleException(System.Exception)
+    name: HandleException
+    href: Innova.Prism.Library.Services.ViewModelService-1.HandleException.html#Innova_Prism_Library_Services_ViewModelService_1_HandleException_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Library.Services.ViewModelService`1
+  commentId: T:Innova.Prism.Library.Services.ViewModelService`1
+  href: Innova.Prism.Library.Services.ViewModelService-1.html
+  name: ViewModelService<T>
+  nameWithType: ViewModelService<T>
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>
+  nameWithType.vb: ViewModelService(Of T)
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T)
+  name.vb: ViewModelService(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1
+    name: ViewModelService
+    href: Innova.Prism.Library.Services.ViewModelService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1
+    name: ViewModelService
+    href: Innova.Prism.Library.Services.ViewModelService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Services.IInsertViewModelService`2
+  commentId: T:Innova.Prism.Library.Services.IInsertViewModelService`2
+  href: Innova.Prism.Library.Services.IInsertViewModelService-2.html
+  name: IInsertViewModelService<T, TInsert>
+  nameWithType: IInsertViewModelService<T, TInsert>
+  fullName: Innova.Prism.Library.Services.IInsertViewModelService<T, TInsert>
+  nameWithType.vb: IInsertViewModelService(Of T, TInsert)
+  fullName.vb: Innova.Prism.Library.Services.IInsertViewModelService(Of T, TInsert)
+  name.vb: IInsertViewModelService(Of T, TInsert)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IInsertViewModelService`2
+    name: IInsertViewModelService
+    href: Innova.Prism.Library.Services.IInsertViewModelService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInsert
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IInsertViewModelService`2
+    name: IInsertViewModelService
+    href: Innova.Prism.Library.Services.IInsertViewModelService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInsert
+  - name: )
+- uid: Innova.Prism.Library.Services.IViewModelService`1
+  commentId: T:Innova.Prism.Library.Services.IViewModelService`1
+  href: Innova.Prism.Library.Services.IViewModelService-1.html
+  name: IViewModelService<T>
+  nameWithType: IViewModelService<T>
+  fullName: Innova.Prism.Library.Services.IViewModelService<T>
+  nameWithType.vb: IViewModelService(Of T)
+  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T)
+  name.vb: IViewModelService(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IViewModelService`1
+    name: IViewModelService
+    href: Innova.Prism.Library.Services.IViewModelService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IViewModelService`1
+    name: IViewModelService
+    href: Innova.Prism.Library.Services.IViewModelService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService`1.LookupService
+  commentId: F:Innova.Prism.Library.Services.ViewModelService`1.LookupService
+  href: Innova.Prism.Library.Services.ViewModelService-1.LookupService.html#Innova_Prism_Library_Services_ViewModelService_1_LookupService
+  name: LookupService
+  nameWithType: ViewModelService<T>.LookupService
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.LookupService
+  nameWithType.vb: ViewModelService(Of T).LookupService
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).LookupService
+- uid: Innova.Prism.Library.Services.ViewModelService`1.WindowDialogService
+  commentId: F:Innova.Prism.Library.Services.ViewModelService`1.WindowDialogService
+  href: Innova.Prism.Library.Services.ViewModelService-1.WindowDialogService.html#Innova_Prism_Library_Services_ViewModelService_1_WindowDialogService
+  name: WindowDialogService
+  nameWithType: ViewModelService<T>.WindowDialogService
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.WindowDialogService
+  nameWithType.vb: ViewModelService(Of T).WindowDialogService
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).WindowDialogService
+- uid: Innova.Prism.Library.Services.ViewModelService`1.EventAggregator
+  commentId: F:Innova.Prism.Library.Services.ViewModelService`1.EventAggregator
+  href: Innova.Prism.Library.Services.ViewModelService-1.EventAggregator.html#Innova_Prism_Library_Services_ViewModelService_1_EventAggregator
+  name: EventAggregator
+  nameWithType: ViewModelService<T>.EventAggregator
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.EventAggregator
+  nameWithType.vb: ViewModelService(Of T).EventAggregator
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).EventAggregator
+- uid: Innova.Prism.Library.Services.ViewModelService`1.EntityValidatorService
+  commentId: F:Innova.Prism.Library.Services.ViewModelService`1.EntityValidatorService
+  href: Innova.Prism.Library.Services.ViewModelService-1.EntityValidatorService.html#Innova_Prism_Library_Services_ViewModelService_1_EntityValidatorService
+  name: EntityValidatorService
+  nameWithType: ViewModelService<T>.EntityValidatorService
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.EntityValidatorService
+  nameWithType.vb: ViewModelService(Of T).EntityValidatorService
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).EntityValidatorService
+- uid: Innova.Prism.Library.Services.ViewModelService`1.Logger
+  commentId: F:Innova.Prism.Library.Services.ViewModelService`1.Logger
+  href: Innova.Prism.Library.Services.ViewModelService-1.Logger.html#Innova_Prism_Library_Services_ViewModelService_1_Logger
+  name: Logger
+  nameWithType: ViewModelService<T>.Logger
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.Logger
+  nameWithType.vb: ViewModelService(Of T).Logger
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).Logger
+- uid: Innova.Prism.Library.Services.ViewModelService`1.EntityServiceConfiguration
+  commentId: F:Innova.Prism.Library.Services.ViewModelService`1.EntityServiceConfiguration
+  href: Innova.Prism.Library.Services.ViewModelService-1.EntityServiceConfiguration.html#Innova_Prism_Library_Services_ViewModelService_1_EntityServiceConfiguration
+  name: EntityServiceConfiguration
+  nameWithType: ViewModelService<T>.EntityServiceConfiguration
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.EntityServiceConfiguration
+  nameWithType.vb: ViewModelService(Of T).EntityServiceConfiguration
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).EntityServiceConfiguration
+- uid: Innova.Prism.Library.Services.ViewModelService`1.GetEntityService``1
+  commentId: M:Innova.Prism.Library.Services.ViewModelService`1.GetEntityService``1
+  href: Innova.Prism.Library.Services.ViewModelService-1.GetEntityService.html#Innova_Prism_Library_Services_ViewModelService_1_GetEntityService__1
+  name: GetEntityService<TEntityService1>()
+  nameWithType: ViewModelService<T>.GetEntityService<TEntityService1>()
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.GetEntityService<TEntityService1>()
+  nameWithType.vb: ViewModelService(Of T).GetEntityService(Of TEntityService1)()
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).GetEntityService(Of TEntityService1)()
+  name.vb: GetEntityService(Of TEntityService1)()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.GetEntityService``1
+    name: GetEntityService
+    href: Innova.Prism.Library.Services.ViewModelService-1.GetEntityService.html#Innova_Prism_Library_Services_ViewModelService_1_GetEntityService__1
+  - name: <
+  - name: TEntityService1
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.GetEntityService``1
+    name: GetEntityService
+    href: Innova.Prism.Library.Services.ViewModelService-1.GetEntityService.html#Innova_Prism_Library_Services_ViewModelService_1_GetEntityService__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntityService1
+  - name: )
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService`1.DefaultOrderBy
+  commentId: P:Innova.Prism.Library.Services.ViewModelService`1.DefaultOrderBy
+  href: Innova.Prism.Library.Services.ViewModelService-1.DefaultOrderBy.html#Innova_Prism_Library_Services_ViewModelService_1_DefaultOrderBy
+  name: DefaultOrderBy
+  nameWithType: ViewModelService<T>.DefaultOrderBy
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.DefaultOrderBy
+  nameWithType.vb: ViewModelService(Of T).DefaultOrderBy
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).DefaultOrderBy
+- uid: Innova.Prism.Library.Services.ViewModelService`1.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  commentId: M:Innova.Prism.Library.Services.ViewModelService`1.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  href: Innova.Prism.Library.Services.ViewModelService-1.GetLookupList.html#Innova_Prism_Library_Services_ViewModelService_1_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  name: GetLookupList<TOther>(params PrimaryKeys<TOther>[])
+  nameWithType: ViewModelService<T>.GetLookupList<TOther>(params PrimaryKeys<TOther>[])
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.GetLookupList<TOther>(params Innova.Data.Entity.PrimaryKeys<TOther>[])
+  nameWithType.vb: ViewModelService(Of T).GetLookupList(Of TOther)(ParamArray PrimaryKeys(Of TOther)())
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).GetLookupList(Of TOther)(ParamArray Innova.Data.Entity.PrimaryKeys(Of TOther)())
+  name.vb: GetLookupList(Of TOther)(ParamArray PrimaryKeys(Of TOther)())
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+    name: GetLookupList
+    href: Innova.Prism.Library.Services.ViewModelService-1.GetLookupList.html#Innova_Prism_Library_Services_ViewModelService_1_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  - name: <
+  - name: TOther
+  - name: '>'
+  - name: (
+  - name: params
+  - name: " "
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+  - name: <
+  - name: TOther
+  - name: '>'
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+    name: GetLookupList
+    href: Innova.Prism.Library.Services.ViewModelService-1.GetLookupList.html#Innova_Prism_Library_Services_ViewModelService_1_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOther
+  - name: )
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOther
+  - name: )
+  - name: (
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService`1.GetQueryParameterWithOrderBy
+  commentId: M:Innova.Prism.Library.Services.ViewModelService`1.GetQueryParameterWithOrderBy
+  href: Innova.Prism.Library.Services.ViewModelService-1.GetQueryParameterWithOrderBy.html#Innova_Prism_Library_Services_ViewModelService_1_GetQueryParameterWithOrderBy
+  name: GetQueryParameterWithOrderBy()
+  nameWithType: ViewModelService<T>.GetQueryParameterWithOrderBy()
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.GetQueryParameterWithOrderBy()
+  nameWithType.vb: ViewModelService(Of T).GetQueryParameterWithOrderBy()
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).GetQueryParameterWithOrderBy()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.GetQueryParameterWithOrderBy
+    name: GetQueryParameterWithOrderBy
+    href: Innova.Prism.Library.Services.ViewModelService-1.GetQueryParameterWithOrderBy.html#Innova_Prism_Library_Services_ViewModelService_1_GetQueryParameterWithOrderBy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.GetQueryParameterWithOrderBy
+    name: GetQueryParameterWithOrderBy
+    href: Innova.Prism.Library.Services.ViewModelService-1.GetQueryParameterWithOrderBy.html#Innova_Prism_Library_Services_ViewModelService_1_GetQueryParameterWithOrderBy
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService`1.ConfirmDeletion(System.Collections.IList)
+  commentId: M:Innova.Prism.Library.Services.ViewModelService`1.ConfirmDeletion(System.Collections.IList)
+  isExternal: true
+  href: Innova.Prism.Library.Services.ViewModelService-1.ConfirmDeletion.html#Innova_Prism_Library_Services_ViewModelService_1_ConfirmDeletion_System_Collections_IList_
+  name: ConfirmDeletion(IList)
+  nameWithType: ViewModelService<T>.ConfirmDeletion(IList)
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.ConfirmDeletion(System.Collections.IList)
+  nameWithType.vb: ViewModelService(Of T).ConfirmDeletion(IList)
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).ConfirmDeletion(System.Collections.IList)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.ConfirmDeletion(System.Collections.IList)
+    name: ConfirmDeletion
+    href: Innova.Prism.Library.Services.ViewModelService-1.ConfirmDeletion.html#Innova_Prism_Library_Services_ViewModelService_1_ConfirmDeletion_System_Collections_IList_
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.ConfirmDeletion(System.Collections.IList)
+    name: ConfirmDeletion
+    href: Innova.Prism.Library.Services.ViewModelService-1.ConfirmDeletion.html#Innova_Prism_Library_Services_ViewModelService_1_ConfirmDeletion_System_Collections_IList_
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService`1.PublishDeletion(System.Collections.Generic.List{Innova.Data.Entity.IPrimaryKey},System.Boolean)
+  commentId: M:Innova.Prism.Library.Services.ViewModelService`1.PublishDeletion(System.Collections.Generic.List{Innova.Data.Entity.IPrimaryKey},System.Boolean)
+  isExternal: true
+  href: Innova.Prism.Library.Services.ViewModelService-1.PublishDeletion.html#Innova_Prism_Library_Services_ViewModelService_1_PublishDeletion_System_Collections_Generic_List_Innova_Data_Entity_IPrimaryKey__System_Boolean_
+  name: PublishDeletion(List<IPrimaryKey>, bool)
+  nameWithType: ViewModelService<T>.PublishDeletion(List<IPrimaryKey>, bool)
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.PublishDeletion(System.Collections.Generic.List<Innova.Data.Entity.IPrimaryKey>, bool)
+  nameWithType.vb: ViewModelService(Of T).PublishDeletion(List(Of IPrimaryKey), Boolean)
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).PublishDeletion(System.Collections.Generic.List(Of Innova.Data.Entity.IPrimaryKey), Boolean)
+  name.vb: PublishDeletion(List(Of IPrimaryKey), Boolean)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.PublishDeletion(System.Collections.Generic.List{Innova.Data.Entity.IPrimaryKey},System.Boolean)
+    name: PublishDeletion
+    href: Innova.Prism.Library.Services.ViewModelService-1.PublishDeletion.html#Innova_Prism_Library_Services_ViewModelService_1_PublishDeletion_System_Collections_Generic_List_Innova_Data_Entity_IPrimaryKey__System_Boolean_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.PublishDeletion(System.Collections.Generic.List{Innova.Data.Entity.IPrimaryKey},System.Boolean)
+    name: PublishDeletion
+    href: Innova.Prism.Library.Services.ViewModelService-1.PublishDeletion.html#Innova_Prism_Library_Services_ViewModelService_1_PublishDeletion_System_Collections_Generic_List_Innova_Data_Entity_IPrimaryKey__System_Boolean_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.Entity.IPrimaryKey
+    name: IPrimaryKey
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService`1.ClearCacheIfIsCached
+  commentId: M:Innova.Prism.Library.Services.ViewModelService`1.ClearCacheIfIsCached
+  href: Innova.Prism.Library.Services.ViewModelService-1.ClearCacheIfIsCached.html#Innova_Prism_Library_Services_ViewModelService_1_ClearCacheIfIsCached
+  name: ClearCacheIfIsCached()
+  nameWithType: ViewModelService<T>.ClearCacheIfIsCached()
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.ClearCacheIfIsCached()
+  nameWithType.vb: ViewModelService(Of T).ClearCacheIfIsCached()
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).ClearCacheIfIsCached()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.ClearCacheIfIsCached
+    name: ClearCacheIfIsCached
+    href: Innova.Prism.Library.Services.ViewModelService-1.ClearCacheIfIsCached.html#Innova_Prism_Library_Services_ViewModelService_1_ClearCacheIfIsCached
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.ClearCacheIfIsCached
+    name: ClearCacheIfIsCached
+    href: Innova.Prism.Library.Services.ViewModelService-1.ClearCacheIfIsCached.html#Innova_Prism_Library_Services_ViewModelService_1_ClearCacheIfIsCached
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService`1.SetValidator(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+  commentId: M:Innova.Prism.Library.Services.ViewModelService`1.SetValidator(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+  isExternal: true
+  href: Innova.Prism.Library.Services.ViewModelService-1.SetValidator.html#Innova_Prism_Library_Services_ViewModelService_1_SetValidator_System_Object_Innova_Data_Validation_ValidationRuleSetEnum_
+  name: SetValidator(object, ValidationRuleSetEnum)
+  nameWithType: ViewModelService<T>.SetValidator(object, ValidationRuleSetEnum)
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.SetValidator(object, Innova.Data.Validation.ValidationRuleSetEnum)
+  nameWithType.vb: ViewModelService(Of T).SetValidator(Object, ValidationRuleSetEnum)
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).SetValidator(Object, Innova.Data.Validation.ValidationRuleSetEnum)
+  name.vb: SetValidator(Object, ValidationRuleSetEnum)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.SetValidator(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+    name: SetValidator
+    href: Innova.Prism.Library.Services.ViewModelService-1.SetValidator.html#Innova_Prism_Library_Services_ViewModelService_1_SetValidator_System_Object_Innova_Data_Validation_ValidationRuleSetEnum_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Validation.ValidationRuleSetEnum
+    name: ValidationRuleSetEnum
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.SetValidator(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
+    name: SetValidator
+    href: Innova.Prism.Library.Services.ViewModelService-1.SetValidator.html#Innova_Prism_Library_Services_ViewModelService_1_SetValidator_System_Object_Innova_Data_Validation_ValidationRuleSetEnum_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Validation.ValidationRuleSetEnum
+    name: ValidationRuleSetEnum
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService`1.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.ViewModelService`1.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+  isExternal: true
+  href: Innova.Prism.Library.Services.ViewModelService-1.Delete.html#Innova_Prism_Library_Services_ViewModelService_1_Delete_System_Collections_Generic_List_Innova_Data_Entity_IEntityWithKey__0___System_Boolean_System_Threading_CancellationToken_
+  name: Delete(List<IEntityWithKey<T>>, bool, CancellationToken)
+  nameWithType: ViewModelService<T>.Delete(List<IEntityWithKey<T>>, bool, CancellationToken)
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.Delete(System.Collections.Generic.List<Innova.Data.Entity.IEntityWithKey<T>>, bool, System.Threading.CancellationToken)
+  nameWithType.vb: ViewModelService(Of T).Delete(List(Of IEntityWithKey(Of T)), Boolean, CancellationToken)
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).Delete(System.Collections.Generic.List(Of Innova.Data.Entity.IEntityWithKey(Of T)), Boolean, System.Threading.CancellationToken)
+  name.vb: Delete(List(Of IEntityWithKey(Of T)), Boolean, CancellationToken)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+    name: Delete
+    href: Innova.Prism.Library.Services.ViewModelService-1.Delete.html#Innova_Prism_Library_Services_ViewModelService_1_Delete_System_Collections_Generic_List_Innova_Data_Entity_IEntityWithKey__0___System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.Entity.IEntityWithKey`1
+    name: IEntityWithKey
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+    name: Delete
+    href: Innova.Prism.Library.Services.ViewModelService-1.Delete.html#Innova_Prism_Library_Services_ViewModelService_1_Delete_System_Collections_Generic_List_Innova_Data_Entity_IEntityWithKey__0___System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.Entity.IEntityWithKey`1
+    name: IEntityWithKey
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService`1.SetMainBusyText(System.String)
+  commentId: M:Innova.Prism.Library.Services.ViewModelService`1.SetMainBusyText(System.String)
+  isExternal: true
+  href: Innova.Prism.Library.Services.ViewModelService-1.SetMainBusyText.html#Innova_Prism_Library_Services_ViewModelService_1_SetMainBusyText_System_String_
+  name: SetMainBusyText(string)
+  nameWithType: ViewModelService<T>.SetMainBusyText(string)
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.SetMainBusyText(string)
+  nameWithType.vb: ViewModelService(Of T).SetMainBusyText(String)
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).SetMainBusyText(String)
+  name.vb: SetMainBusyText(String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.SetMainBusyText(System.String)
+    name: SetMainBusyText
+    href: Innova.Prism.Library.Services.ViewModelService-1.SetMainBusyText.html#Innova_Prism_Library_Services_ViewModelService_1_SetMainBusyText_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.SetMainBusyText(System.String)
+    name: SetMainBusyText
+    href: Innova.Prism.Library.Services.ViewModelService-1.SetMainBusyText.html#Innova_Prism_Library_Services_ViewModelService_1_SetMainBusyText_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.Services.ViewModelService`1.HandleException(System.Exception)
+  commentId: M:Innova.Prism.Library.Services.ViewModelService`1.HandleException(System.Exception)
+  isExternal: true
+  href: Innova.Prism.Library.Services.ViewModelService-1.HandleException.html#Innova_Prism_Library_Services_ViewModelService_1_HandleException_System_Exception_
+  name: HandleException(Exception)
+  nameWithType: ViewModelService<T>.HandleException(Exception)
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.HandleException(System.Exception)
+  nameWithType.vb: ViewModelService(Of T).HandleException(Exception)
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).HandleException(System.Exception)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.HandleException(System.Exception)
+    name: HandleException
+    href: Innova.Prism.Library.Services.ViewModelService-1.HandleException.html#Innova_Prism_Library_Services_ViewModelService_1_HandleException_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ViewModelService`1.HandleException(System.Exception)
+    name: HandleException
+    href: Innova.Prism.Library.Services.ViewModelService-1.HandleException.html#Innova_Prism_Library_Services_ViewModelService_1_HandleException_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: Innova.Prism.Library.Services.InsertViewModelService`2.EntityService*
+  commentId: Overload:Innova.Prism.Library.Services.InsertViewModelService`2.EntityService
+  href: Innova.Prism.Library.Services.InsertViewModelService-2.EntityService.html#Innova_Prism_Library_Services_InsertViewModelService_2_EntityService
+  name: EntityService
+  nameWithType: InsertViewModelService<T, TInsert>.EntityService
+  fullName: Innova.Prism.Library.Services.InsertViewModelService<T, TInsert>.EntityService
+  nameWithType.vb: InsertViewModelService(Of T, TInsert).EntityService
+  fullName.vb: Innova.Prism.Library.Services.InsertViewModelService(Of T, TInsert).EntityService
+- uid: Innova.Prism.Library.Services.IInsertViewModelService{{T},{TInsert}}.EntityService
+  commentId: P:Innova.Prism.Library.Services.IInsertViewModelService{`0,`1}.EntityService
+  parent: Innova.Prism.Library.Services.IInsertViewModelService{{T},{TInsert}}
+  definition: Innova.Prism.Library.Services.IInsertViewModelService`2.EntityService
+  href: Innova.Prism.Library.Services.IInsertViewModelService-2.EntityService.html#Innova_Prism_Library_Services_IInsertViewModelService_2_EntityService
+  name: EntityService
+  nameWithType: IInsertViewModelService<T, TInsert>.EntityService
+  fullName: Innova.Prism.Library.Services.IInsertViewModelService<T, TInsert>.EntityService
+  nameWithType.vb: IInsertViewModelService(Of T, TInsert).EntityService
+  fullName.vb: Innova.Prism.Library.Services.IInsertViewModelService(Of T, TInsert).EntityService
+- uid: Innova.Data.Entity.IInsertEntityService{{T},{TInsert}}
+  commentId: T:Innova.Data.Entity.IInsertEntityService{`0,`3}
+  parent: Innova.Data.Entity
+  definition: Innova.Data.Entity.IInsertEntityService`2
+  href: Innova.Data.Entity.IInsertEntityService-2.html
+  name: IInsertEntityService<T, TInsert>
+  nameWithType: IInsertEntityService<T, TInsert>
+  fullName: Innova.Data.Entity.IInsertEntityService<T, TInsert>
+  nameWithType.vb: IInsertEntityService(Of T, TInsert)
+  fullName.vb: Innova.Data.Entity.IInsertEntityService(Of T, TInsert)
+  name.vb: IInsertEntityService(Of T, TInsert)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IInsertEntityService`2
+    name: IInsertEntityService
+    href: Innova.Data.Entity.IInsertEntityService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInsert
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.IInsertEntityService`2
+    name: IInsertEntityService
+    href: Innova.Data.Entity.IInsertEntityService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInsert
+  - name: )
+- uid: Innova.Prism.Library.Services.IInsertViewModelService`2.EntityService
+  commentId: P:Innova.Prism.Library.Services.IInsertViewModelService`2.EntityService
+  href: Innova.Prism.Library.Services.IInsertViewModelService-2.EntityService.html#Innova_Prism_Library_Services_IInsertViewModelService_2_EntityService
+  name: EntityService
+  nameWithType: IInsertViewModelService<T, TInsert>.EntityService
+  fullName: Innova.Prism.Library.Services.IInsertViewModelService<T, TInsert>.EntityService
+  nameWithType.vb: IInsertViewModelService(Of T, TInsert).EntityService
+  fullName.vb: Innova.Prism.Library.Services.IInsertViewModelService(Of T, TInsert).EntityService
+- uid: Innova.Data.Entity.IInsertEntityService`2
+  commentId: T:Innova.Data.Entity.IInsertEntityService`2
+  href: Innova.Data.Entity.IInsertEntityService-2.html
+  name: IInsertEntityService<T, TInsert>
+  nameWithType: IInsertEntityService<T, TInsert>
+  fullName: Innova.Data.Entity.IInsertEntityService<T, TInsert>
+  nameWithType.vb: IInsertEntityService(Of T, TInsert)
+  fullName.vb: Innova.Data.Entity.IInsertEntityService(Of T, TInsert)
+  name.vb: IInsertEntityService(Of T, TInsert)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IInsertEntityService`2
+    name: IInsertEntityService
+    href: Innova.Data.Entity.IInsertEntityService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInsert
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.IInsertEntityService`2
+    name: IInsertEntityService
+    href: Innova.Data.Entity.IInsertEntityService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInsert
+  - name: )
+- uid: Innova.Data.Entity
+  commentId: N:Innova.Data.Entity
+  href: Innova.html
+  name: Innova.Data.Entity
+  nameWithType: Innova.Data.Entity
+  fullName: Innova.Data.Entity
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+- uid: Innova.Prism.Library.Services.InsertViewModelService`2
+  commentId: T:Innova.Prism.Library.Services.InsertViewModelService`2
+  href: Innova.Prism.Library.Services.InsertViewModelService-2.html
+  name: InsertViewModelService<T, TInsert>
+  nameWithType: InsertViewModelService<T, TInsert>
+  fullName: Innova.Prism.Library.Services.InsertViewModelService<T, TInsert>
+  nameWithType.vb: InsertViewModelService(Of T, TInsert)
+  fullName.vb: Innova.Prism.Library.Services.InsertViewModelService(Of T, TInsert)
+  name.vb: InsertViewModelService(Of T, TInsert)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.InsertViewModelService`2
+    name: InsertViewModelService
+    href: Innova.Prism.Library.Services.InsertViewModelService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInsert
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.InsertViewModelService`2
+    name: InsertViewModelService
+    href: Innova.Prism.Library.Services.InsertViewModelService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInsert
+  - name: )
+- uid: Innova.Prism.Library.Services.InsertViewModelService`2.#ctor*
+  commentId: Overload:Innova.Prism.Library.Services.InsertViewModelService`2.#ctor
+  href: Innova.Prism.Library.Services.InsertViewModelService-2.-ctor.html#Innova_Prism_Library_Services_InsertViewModelService_2__ctor_Innova_Data_Entity_IInsertEntityService__0__1__Innova_Data_Entity_IEntityServiceConfiguration__0__Innova_Prism_Library_Services_ILookupService_Innova_Prism_Library_Services_IWindowDialogService_Prism_Events_IEventAggregator_Innova_Data_Entity_IEntityValidatorService_Microsoft_Extensions_Logging_ILogger_Innova_Prism_Library_Services_InsertViewModelService__0__1___
+  name: InsertViewModelService
+  nameWithType: InsertViewModelService<T, TInsert>.InsertViewModelService
+  fullName: Innova.Prism.Library.Services.InsertViewModelService<T, TInsert>.InsertViewModelService
+  nameWithType.vb: InsertViewModelService(Of T, TInsert).New
+  fullName.vb: Innova.Prism.Library.Services.InsertViewModelService(Of T, TInsert).New
+  name.vb: New
+- uid: Innova.Data.Entity.IEntityServiceConfiguration{{T}}
+  commentId: T:Innova.Data.Entity.IEntityServiceConfiguration{`0}
+  parent: Innova.Data.Entity
+  definition: Innova.Data.Entity.IEntityServiceConfiguration`1
+  href: Innova.Data.Entity.IEntityServiceConfiguration-1.html
+  name: IEntityServiceConfiguration<T>
+  nameWithType: IEntityServiceConfiguration<T>
+  fullName: Innova.Data.Entity.IEntityServiceConfiguration<T>
+  nameWithType.vb: IEntityServiceConfiguration(Of T)
+  fullName.vb: Innova.Data.Entity.IEntityServiceConfiguration(Of T)
+  name.vb: IEntityServiceConfiguration(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityServiceConfiguration`1
+    name: IEntityServiceConfiguration
+    href: Innova.Data.Entity.IEntityServiceConfiguration-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityServiceConfiguration`1
+    name: IEntityServiceConfiguration
+    href: Innova.Data.Entity.IEntityServiceConfiguration-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Services.ILookupService
+  commentId: T:Innova.Prism.Library.Services.ILookupService
+  parent: Innova.Prism.Library.Services
+  href: Innova.Prism.Library.Services.ILookupService.html
+  name: ILookupService
+  nameWithType: ILookupService
+  fullName: Innova.Prism.Library.Services.ILookupService
+- uid: Innova.Prism.Library.Services.IWindowDialogService
+  commentId: T:Innova.Prism.Library.Services.IWindowDialogService
+  parent: Innova.Prism.Library.Services
+  href: Innova.Prism.Library.Services.IWindowDialogService.html
+  name: IWindowDialogService
+  nameWithType: IWindowDialogService
+  fullName: Innova.Prism.Library.Services.IWindowDialogService
+- uid: Prism.Events.IEventAggregator
+  commentId: T:Prism.Events.IEventAggregator
+  parent: Prism.Events
+  isExternal: true
+  name: IEventAggregator
+  nameWithType: IEventAggregator
+  fullName: Prism.Events.IEventAggregator
+- uid: Innova.Data.Entity.IEntityValidatorService
+  commentId: T:Innova.Data.Entity.IEntityValidatorService
+  parent: Innova.Data.Entity
+  href: Innova.Data.Entity.IEntityValidatorService.html
+  name: IEntityValidatorService
+  nameWithType: IEntityValidatorService
+  fullName: Innova.Data.Entity.IEntityValidatorService
+- uid: Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Services.InsertViewModelService`2}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Services.InsertViewModelService`2}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<InsertViewModelService<T, TInsert>>
+  nameWithType: ILogger<InsertViewModelService<T, TInsert>>
+  fullName: Microsoft.Extensions.Logging.ILogger<Innova.Prism.Library.Services.InsertViewModelService<T, TInsert>>
+  nameWithType.vb: ILogger(Of InsertViewModelService(Of T, TInsert))
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Innova.Prism.Library.Services.InsertViewModelService(Of T, TInsert))
+  name.vb: ILogger(Of InsertViewModelService(Of T, TInsert))
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Innova.Prism.Library.Services.InsertViewModelService`2
+    name: InsertViewModelService
+    href: Innova.Prism.Library.Services.InsertViewModelService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInsert
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Services.InsertViewModelService`2
+    name: InsertViewModelService
+    href: Innova.Prism.Library.Services.InsertViewModelService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TInsert
+  - name: )
+  - name: )
+- uid: Innova.Data.Entity.IEntityServiceConfiguration`1
+  commentId: T:Innova.Data.Entity.IEntityServiceConfiguration`1
+  href: Innova.Data.Entity.IEntityServiceConfiguration-1.html
+  name: IEntityServiceConfiguration<T>
+  nameWithType: IEntityServiceConfiguration<T>
+  fullName: Innova.Data.Entity.IEntityServiceConfiguration<T>
+  nameWithType.vb: IEntityServiceConfiguration(Of T)
+  fullName.vb: Innova.Data.Entity.IEntityServiceConfiguration(Of T)
+  name.vb: IEntityServiceConfiguration(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IEntityServiceConfiguration`1
+    name: IEntityServiceConfiguration
+    href: Innova.Data.Entity.IEntityServiceConfiguration-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.IEntityServiceConfiguration`1
+    name: IEntityServiceConfiguration
+    href: Innova.Data.Entity.IEntityServiceConfiguration-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Prism.Events
+  commentId: N:Prism.Events
+  isExternal: true
+  name: Prism.Events
+  nameWithType: Prism.Events
+  fullName: Prism.Events
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Innova.Prism.Library.Services.InsertViewModelService`2.GetInsert*
+  commentId: Overload:Innova.Prism.Library.Services.InsertViewModelService`2.GetInsert
+  href: Innova.Prism.Library.Services.InsertViewModelService-2.GetInsert.html#Innova_Prism_Library_Services_InsertViewModelService_2_GetInsert_Innova_Data_Entity_IPropertyValues_System_Threading_CancellationToken_
+  name: GetInsert
+  nameWithType: InsertViewModelService<T, TInsert>.GetInsert
+  fullName: Innova.Prism.Library.Services.InsertViewModelService<T, TInsert>.GetInsert
+  nameWithType.vb: InsertViewModelService(Of T, TInsert).GetInsert
+  fullName.vb: Innova.Prism.Library.Services.InsertViewModelService(Of T, TInsert).GetInsert
+- uid: Innova.Prism.Library.Services.IInsertViewModelService{{T},{TInsert}}.GetInsert(Innova.Data.Entity.IPropertyValues,System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.IInsertViewModelService{`0,`1}.GetInsert(Innova.Data.Entity.IPropertyValues,System.Threading.CancellationToken)
+  parent: Innova.Prism.Library.Services.IInsertViewModelService{{T},{TInsert}}
+  definition: Innova.Prism.Library.Services.IInsertViewModelService`2.GetInsert(Innova.Data.Entity.IPropertyValues,System.Threading.CancellationToken)
+  href: Innova.Prism.Library.Services.IInsertViewModelService-2.GetInsert.html#Innova_Prism_Library_Services_IInsertViewModelService_2_GetInsert_Innova_Data_Entity_IPropertyValues_System_Threading_CancellationToken_
+  name: GetInsert(IPropertyValues, CancellationToken)
+  nameWithType: IInsertViewModelService<T, TInsert>.GetInsert(IPropertyValues, CancellationToken)
+  fullName: Innova.Prism.Library.Services.IInsertViewModelService<T, TInsert>.GetInsert(Innova.Data.Entity.IPropertyValues, System.Threading.CancellationToken)
+  nameWithType.vb: IInsertViewModelService(Of T, TInsert).GetInsert(IPropertyValues, CancellationToken)
+  fullName.vb: Innova.Prism.Library.Services.IInsertViewModelService(Of T, TInsert).GetInsert(Innova.Data.Entity.IPropertyValues, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IInsertViewModelService{`0,`1}.GetInsert(Innova.Data.Entity.IPropertyValues,System.Threading.CancellationToken)
+    name: GetInsert
+    href: Innova.Prism.Library.Services.IInsertViewModelService-2.GetInsert.html#Innova_Prism_Library_Services_IInsertViewModelService_2_GetInsert_Innova_Data_Entity_IPropertyValues_System_Threading_CancellationToken_
+  - name: (
+  - uid: Innova.Data.Entity.IPropertyValues
+    name: IPropertyValues
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IInsertViewModelService{`0,`1}.GetInsert(Innova.Data.Entity.IPropertyValues,System.Threading.CancellationToken)
+    name: GetInsert
+    href: Innova.Prism.Library.Services.IInsertViewModelService-2.GetInsert.html#Innova_Prism_Library_Services_IInsertViewModelService_2_GetInsert_Innova_Data_Entity_IPropertyValues_System_Threading_CancellationToken_
+  - name: (
+  - uid: Innova.Data.Entity.IPropertyValues
+    name: IPropertyValues
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Innova.Data.Entity.IPropertyValues
+  commentId: T:Innova.Data.Entity.IPropertyValues
+  parent: Innova.Data.Entity
+  href: Innova.Data.Entity.IPropertyValues.html
+  name: IPropertyValues
+  nameWithType: IPropertyValues
+  fullName: Innova.Data.Entity.IPropertyValues
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{{TInsert}}
+  commentId: T:System.Threading.Tasks.Task{`3}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TInsert>
+  nameWithType: Task<TInsert>
+  fullName: System.Threading.Tasks.Task<TInsert>
+  nameWithType.vb: Task(Of TInsert)
+  fullName.vb: System.Threading.Tasks.Task(Of TInsert)
+  name.vb: Task(Of TInsert)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TInsert
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInsert
+  - name: )
+- uid: Innova.Prism.Library.Services.IInsertViewModelService`2.GetInsert(Innova.Data.Entity.IPropertyValues,System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.IInsertViewModelService`2.GetInsert(Innova.Data.Entity.IPropertyValues,System.Threading.CancellationToken)
+  isExternal: true
+  href: Innova.Prism.Library.Services.IInsertViewModelService-2.GetInsert.html#Innova_Prism_Library_Services_IInsertViewModelService_2_GetInsert_Innova_Data_Entity_IPropertyValues_System_Threading_CancellationToken_
+  name: GetInsert(IPropertyValues, CancellationToken)
+  nameWithType: IInsertViewModelService<T, TInsert>.GetInsert(IPropertyValues, CancellationToken)
+  fullName: Innova.Prism.Library.Services.IInsertViewModelService<T, TInsert>.GetInsert(Innova.Data.Entity.IPropertyValues, System.Threading.CancellationToken)
+  nameWithType.vb: IInsertViewModelService(Of T, TInsert).GetInsert(IPropertyValues, CancellationToken)
+  fullName.vb: Innova.Prism.Library.Services.IInsertViewModelService(Of T, TInsert).GetInsert(Innova.Data.Entity.IPropertyValues, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IInsertViewModelService`2.GetInsert(Innova.Data.Entity.IPropertyValues,System.Threading.CancellationToken)
+    name: GetInsert
+    href: Innova.Prism.Library.Services.IInsertViewModelService-2.GetInsert.html#Innova_Prism_Library_Services_IInsertViewModelService_2_GetInsert_Innova_Data_Entity_IPropertyValues_System_Threading_CancellationToken_
+  - name: (
+  - uid: Innova.Data.Entity.IPropertyValues
+    name: IPropertyValues
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IInsertViewModelService`2.GetInsert(Innova.Data.Entity.IPropertyValues,System.Threading.CancellationToken)
+    name: GetInsert
+    href: Innova.Prism.Library.Services.IInsertViewModelService-2.GetInsert.html#Innova_Prism_Library_Services_IInsertViewModelService_2_GetInsert_Innova_Data_Entity_IPropertyValues_System_Threading_CancellationToken_
+  - name: (
+  - uid: Innova.Data.Entity.IPropertyValues
+    name: IPropertyValues
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Prism.Library.Services.InsertViewModelService`2.Insert*
+  commentId: Overload:Innova.Prism.Library.Services.InsertViewModelService`2.Insert
+  href: Innova.Prism.Library.Services.InsertViewModelService-2.Insert.html#Innova_Prism_Library_Services_InsertViewModelService_2_Insert__1_System_Threading_CancellationToken_
+  name: Insert
+  nameWithType: InsertViewModelService<T, TInsert>.Insert
+  fullName: Innova.Prism.Library.Services.InsertViewModelService<T, TInsert>.Insert
+  nameWithType.vb: InsertViewModelService(Of T, TInsert).Insert
+  fullName.vb: Innova.Prism.Library.Services.InsertViewModelService(Of T, TInsert).Insert
+- uid: Innova.Prism.Library.Services.IInsertViewModelService{{T},{TInsert}}.Insert({TInsert},System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.IInsertViewModelService{`0,`1}.Insert(`1,System.Threading.CancellationToken)
+  parent: Innova.Prism.Library.Services.IInsertViewModelService{{T},{TInsert}}
+  definition: Innova.Prism.Library.Services.IInsertViewModelService`2.Insert(`1,System.Threading.CancellationToken)
+  href: Innova.Prism.Library.Services.IInsertViewModelService-2.Insert.html#Innova_Prism_Library_Services_IInsertViewModelService_2_Insert__1_System_Threading_CancellationToken_
+  name: Insert(TInsert, CancellationToken)
+  nameWithType: IInsertViewModelService<T, TInsert>.Insert(TInsert, CancellationToken)
+  fullName: Innova.Prism.Library.Services.IInsertViewModelService<T, TInsert>.Insert(TInsert, System.Threading.CancellationToken)
+  nameWithType.vb: IInsertViewModelService(Of T, TInsert).Insert(TInsert, CancellationToken)
+  fullName.vb: Innova.Prism.Library.Services.IInsertViewModelService(Of T, TInsert).Insert(TInsert, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IInsertViewModelService{`0,`1}.Insert(`1,System.Threading.CancellationToken)
+    name: Insert
+    href: Innova.Prism.Library.Services.IInsertViewModelService-2.Insert.html#Innova_Prism_Library_Services_IInsertViewModelService_2_Insert__1_System_Threading_CancellationToken_
+  - name: (
+  - name: TInsert
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IInsertViewModelService{`0,`1}.Insert(`1,System.Threading.CancellationToken)
+    name: Insert
+    href: Innova.Prism.Library.Services.IInsertViewModelService-2.Insert.html#Innova_Prism_Library_Services_IInsertViewModelService_2_Insert__1_System_Threading_CancellationToken_
+  - name: (
+  - name: TInsert
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: '{TInsert}'
+  commentId: '!:TInsert'
+  definition: TInsert
+  name: TInsert
+  nameWithType: TInsert
+  fullName: TInsert
+- uid: System.Threading.Tasks.Task{Innova.Data.Entity.PrimaryKeys{{T}}}
+  commentId: T:System.Threading.Tasks.Task{Innova.Data.Entity.PrimaryKeys{``0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<PrimaryKeys<T>>
+  nameWithType: Task<PrimaryKeys<T>>
+  fullName: System.Threading.Tasks.Task<Innova.Data.Entity.PrimaryKeys<T>>
+  nameWithType.vb: Task(Of PrimaryKeys(Of T))
+  fullName.vb: System.Threading.Tasks.Task(Of Innova.Data.Entity.PrimaryKeys(Of T))
+  name.vb: Task(Of PrimaryKeys(Of T))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+    href: Innova.Data.Entity.PrimaryKeys-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+    href: Innova.Data.Entity.PrimaryKeys-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Services.IInsertViewModelService`2.Insert(`1,System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.IInsertViewModelService`2.Insert(`1,System.Threading.CancellationToken)
+  isExternal: true
+  href: Innova.Prism.Library.Services.IInsertViewModelService-2.Insert.html#Innova_Prism_Library_Services_IInsertViewModelService_2_Insert__1_System_Threading_CancellationToken_
+  name: Insert(TInsert, CancellationToken)
+  nameWithType: IInsertViewModelService<T, TInsert>.Insert(TInsert, CancellationToken)
+  fullName: Innova.Prism.Library.Services.IInsertViewModelService<T, TInsert>.Insert(TInsert, System.Threading.CancellationToken)
+  nameWithType.vb: IInsertViewModelService(Of T, TInsert).Insert(TInsert, CancellationToken)
+  fullName.vb: Innova.Prism.Library.Services.IInsertViewModelService(Of T, TInsert).Insert(TInsert, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IInsertViewModelService`2.Insert(`1,System.Threading.CancellationToken)
+    name: Insert
+    href: Innova.Prism.Library.Services.IInsertViewModelService-2.Insert.html#Innova_Prism_Library_Services_IInsertViewModelService_2_Insert__1_System_Threading_CancellationToken_
+  - name: (
+  - name: TInsert
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IInsertViewModelService`2.Insert(`1,System.Threading.CancellationToken)
+    name: Insert
+    href: Innova.Prism.Library.Services.IInsertViewModelService-2.Insert.html#Innova_Prism_Library_Services_IInsertViewModelService_2_Insert__1_System_Threading_CancellationToken_
+  - name: (
+  - name: TInsert
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: TInsert
+  name: TInsert
+  nameWithType: TInsert
+  fullName: TInsert
+memberLayout: SeparatePages

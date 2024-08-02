@@ -1,0 +1,434 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting
+  commentId: T:Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting
+  id: AutoCompleteComboBoxSetting
+  parent: Innova.Prism.Library.Controls
+  children:
+  - Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Default
+  - Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Delay
+  - Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.GetFilter(System.String,System.Func{System.Object,System.String})
+  - Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.MaxSuggestionCount
+  langs:
+  - csharp
+  - vb
+  name: AutoCompleteComboBoxSetting
+  nameWithType: AutoCompleteComboBoxSetting
+  fullName: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting
+  type: Class
+  source:
+    id: AutoCompleteComboBoxSetting
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\ComboBox\AutoCompleteComboBoxSetting.cs
+    startLine: 7
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls
+  summary: Represents an object to configure AutoCompleteComboBox.
+  example: []
+  syntax:
+    content: public class AutoCompleteComboBoxSetting
+    content.vb: Public Class AutoCompleteComboBoxSetting
+  inheritance:
+  - System.Object
+- uid: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.GetFilter(System.String,System.Func{System.Object,System.String})
+  commentId: M:Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.GetFilter(System.String,System.Func{System.Object,System.String})
+  id: GetFilter(System.String,System.Func{System.Object,System.String})
+  parent: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting
+  langs:
+  - csharp
+  - vb
+  name: GetFilter(string, Func<object, string>)
+  nameWithType: AutoCompleteComboBoxSetting.GetFilter(string, Func<object, string>)
+  fullName: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.GetFilter(string, System.Func<object, string>)
+  type: Method
+  source:
+    id: GetFilter
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\ComboBox\AutoCompleteComboBoxSetting.cs
+    startLine: 22
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls
+  summary: >-
+    Gets a filter function which determines whether items should be suggested or not
+
+    for the specified query.
+
+    Default: Gets the filter which maps an item to <code>true</code>
+
+    if its text contains the query (case insensitive).
+  example: []
+  syntax:
+    content: public virtual Predicate<object> GetFilter(string query, Func<object, string> stringFromItem)
+    parameters:
+    - id: query
+      type: System.String
+      description: The string input by user.
+    - id: stringFromItem
+      type: System.Func{System.Object,System.String}
+      description: The function to get a string which identifies the specified item.
+    return:
+      type: System.Predicate{System.Object}
+      description: ''
+    content.vb: Public Overridable Function GetFilter(query As String, stringFromItem As Func(Of Object, String)) As Predicate(Of Object)
+  overload: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.GetFilter*
+  nameWithType.vb: AutoCompleteComboBoxSetting.GetFilter(String, Func(Of Object, String))
+  fullName.vb: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.GetFilter(String, System.Func(Of Object, String))
+  name.vb: GetFilter(String, Func(Of Object, String))
+- uid: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.MaxSuggestionCount
+  commentId: P:Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.MaxSuggestionCount
+  id: MaxSuggestionCount
+  parent: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting
+  langs:
+  - csharp
+  - vb
+  name: MaxSuggestionCount
+  nameWithType: AutoCompleteComboBoxSetting.MaxSuggestionCount
+  fullName: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.MaxSuggestionCount
+  type: Property
+  source:
+    id: MaxSuggestionCount
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\ComboBox\AutoCompleteComboBoxSetting.cs
+    startLine: 34
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls
+  summary: >-
+    Gets an integer.
+
+    The combobox opens the drop down
+
+    if the number of suggested items is less than the value.
+
+    Note that the value is larger, it's heavier to open the drop down.
+
+    Default: 100.
+  example: []
+  syntax:
+    content: public virtual int MaxSuggestionCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property MaxSuggestionCount As Integer
+  overload: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.MaxSuggestionCount*
+- uid: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Delay
+  commentId: P:Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Delay
+  id: Delay
+  parent: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting
+  langs:
+  - csharp
+  - vb
+  name: Delay
+  nameWithType: AutoCompleteComboBoxSetting.Delay
+  fullName: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Delay
+  type: Property
+  source:
+    id: Delay
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\ComboBox\AutoCompleteComboBoxSetting.cs
+    startLine: 44
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls
+  summary: >-
+    Gets the duration to delay updating the suggestion list.
+
+    Returns <code>Zero</code> if no delay.
+
+    Default: 300ms.
+  example: []
+  syntax:
+    content: public virtual TimeSpan Delay { get; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Overridable ReadOnly Property Delay As TimeSpan
+  overload: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Delay*
+- uid: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Default
+  commentId: P:Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Default
+  id: Default
+  parent: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: AutoCompleteComboBoxSetting.Default
+  fullName: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Default
+  type: Property
+  source:
+    id: Default
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\ComboBox\AutoCompleteComboBoxSetting.cs
+    startLine: 54
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls
+  summary: Gets the default setting.
+  example: []
+  syntax:
+    content: public static AutoCompleteComboBoxSetting Default { get; set; }
+    parameters: []
+    return:
+      type: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting
+    content.vb: Public Shared Property [Default] As AutoCompleteComboBoxSetting
+  overload: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Default*
+references:
+- uid: Innova.Prism.Library.Controls
+  commentId: N:Innova.Prism.Library.Controls
+  href: Innova.html
+  name: Innova.Prism.Library.Controls
+  nameWithType: Innova.Prism.Library.Controls
+  fullName: Innova.Prism.Library.Controls
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Controls
+    name: Controls
+    href: Innova.Prism.Library.Controls.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Controls
+    name: Controls
+    href: Innova.Prism.Library.Controls.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.GetFilter*
+  commentId: Overload:Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.GetFilter
+  href: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.GetFilter.html#Innova_Prism_Library_Controls_AutoCompleteComboBoxSetting_GetFilter_System_String_System_Func_System_Object_System_String__
+  name: GetFilter
+  nameWithType: AutoCompleteComboBoxSetting.GetFilter
+  fullName: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.GetFilter
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Func{System.Object,System.String}
+  commentId: T:System.Func{System.Object,System.String}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<object, string>
+  nameWithType: Func<object, string>
+  fullName: System.Func<object, string>
+  nameWithType.vb: Func(Of Object, String)
+  fullName.vb: System.Func(Of Object, String)
+  name.vb: Func(Of Object, String)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Predicate{System.Object}
+  commentId: T:System.Predicate{System.Object}
+  parent: System
+  definition: System.Predicate`1
+  href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  name: Predicate<object>
+  nameWithType: Predicate<object>
+  fullName: System.Predicate<object>
+  nameWithType.vb: Predicate(Of Object)
+  fullName.vb: System.Predicate(Of Object)
+  name.vb: Predicate(Of Object)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Predicate`1
+  commentId: T:System.Predicate`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  name: Predicate<T>
+  nameWithType: Predicate<T>
+  fullName: System.Predicate<T>
+  nameWithType.vb: Predicate(Of T)
+  fullName.vb: System.Predicate(Of T)
+  name.vb: Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.MaxSuggestionCount*
+  commentId: Overload:Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.MaxSuggestionCount
+  href: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.MaxSuggestionCount.html#Innova_Prism_Library_Controls_AutoCompleteComboBoxSetting_MaxSuggestionCount
+  name: MaxSuggestionCount
+  nameWithType: AutoCompleteComboBoxSetting.MaxSuggestionCount
+  fullName: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.MaxSuggestionCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Delay*
+  commentId: Overload:Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Delay
+  href: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Delay.html#Innova_Prism_Library_Controls_AutoCompleteComboBoxSetting_Delay
+  name: Delay
+  nameWithType: AutoCompleteComboBoxSetting.Delay
+  fullName: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Delay
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Default*
+  commentId: Overload:Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Default
+  href: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Default.html#Innova_Prism_Library_Controls_AutoCompleteComboBoxSetting_Default
+  name: Default
+  nameWithType: AutoCompleteComboBoxSetting.Default
+  fullName: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.Default
+- uid: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting
+  commentId: T:Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting
+  parent: Innova.Prism.Library.Controls
+  href: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting.html
+  name: AutoCompleteComboBoxSetting
+  nameWithType: AutoCompleteComboBoxSetting
+  fullName: Innova.Prism.Library.Controls.AutoCompleteComboBoxSetting
+memberLayout: SeparatePages

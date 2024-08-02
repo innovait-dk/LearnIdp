@@ -1,0 +1,954 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1
+  commentId: T:Innova.Prism.Library.ClassDefinitions.BaseModule`1
+  id: BaseModule`1
+  parent: Innova.Prism.Library.ClassDefinitions
+  children:
+  - Innova.Prism.Library.ClassDefinitions.BaseModule`1.AddDefaultControlToRegion(System.String,System.Type)
+  - Innova.Prism.Library.ClassDefinitions.BaseModule`1.AddDefaultControlToRegion``1(System.String)
+  - Innova.Prism.Library.ClassDefinitions.BaseModule`1.ConfigureMenuService(Innova.Prism.Library.Services.IMenuService)
+  - Innova.Prism.Library.ClassDefinitions.BaseModule`1.Controller
+  - Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized(Prism.Ioc.IContainerProvider)
+  - Innova.Prism.Library.ClassDefinitions.BaseModule`1.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  - Innova.Prism.Library.ClassDefinitions.BaseModule`1.regionManager
+  langs:
+  - csharp
+  - vb
+  name: BaseModule<C>
+  nameWithType: BaseModule<C>
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>
+  type: Class
+  source:
+    id: BaseModule
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\BaseModule.cs
+    startLine: 12
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  syntax:
+    content: 'public abstract class BaseModule<C> : BaseModule, INotifyPropertyChanged, IModule where C : class'
+    typeParameters:
+    - id: C
+    content.vb: Public MustInherit Class BaseModule(Of C As Class) Inherits BaseModule Implements INotifyPropertyChanged, IModule
+  inheritance:
+  - System.Object
+  - Prism.Mvvm.BindableBase
+  - Innova.Prism.Library.ClassDefinitions.BaseModule
+  derivedClasses:
+  - Innova.Prism.Library.Modules.BaseAdministrationModule
+  - Innova.Prism.Library.Modules.BaseMainModule`1
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - Prism.Modularity.IModule
+  inheritedMembers:
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  - Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  - Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  - Prism.Mvvm.BindableBase.PropertyChanged
+  nameWithType.vb: BaseModule(Of C)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C)
+  name.vb: BaseModule(Of C)
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.regionManager
+  commentId: F:Innova.Prism.Library.ClassDefinitions.BaseModule`1.regionManager
+  id: regionManager
+  parent: Innova.Prism.Library.ClassDefinitions.BaseModule`1
+  langs:
+  - csharp
+  - vb
+  name: regionManager
+  nameWithType: BaseModule<C>.regionManager
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.regionManager
+  type: Field
+  source:
+    id: regionManager
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\BaseModule.cs
+    startLine: 15
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  syntax:
+    content: protected IRegionManager regionManager
+    return:
+      type: Prism.Regions.IRegionManager
+    content.vb: Protected regionManager As IRegionManager
+  nameWithType.vb: BaseModule(Of C).regionManager
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).regionManager
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.Controller
+  commentId: P:Innova.Prism.Library.ClassDefinitions.BaseModule`1.Controller
+  id: Controller
+  parent: Innova.Prism.Library.ClassDefinitions.BaseModule`1
+  langs:
+  - csharp
+  - vb
+  name: Controller
+  nameWithType: BaseModule<C>.Controller
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.Controller
+  type: Property
+  source:
+    id: Controller
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\BaseModule.cs
+    startLine: 17
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  syntax:
+    content: public C Controller { get; set; }
+    parameters: []
+    return:
+      type: '{C}'
+    content.vb: Public Property Controller As C
+  overload: Innova.Prism.Library.ClassDefinitions.BaseModule`1.Controller*
+  nameWithType.vb: BaseModule(Of C).Controller
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).Controller
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized(Prism.Ioc.IContainerProvider)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized(Prism.Ioc.IContainerProvider)
+  id: OnInitialized(Prism.Ioc.IContainerProvider)
+  parent: Innova.Prism.Library.ClassDefinitions.BaseModule`1
+  langs:
+  - csharp
+  - vb
+  name: OnInitialized(IContainerProvider)
+  nameWithType: BaseModule<C>.OnInitialized(IContainerProvider)
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.OnInitialized(Prism.Ioc.IContainerProvider)
+  type: Method
+  source:
+    id: OnInitialized
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\BaseModule.cs
+    startLine: 20
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Notifies the module that it has been initialized.
+  example: []
+  syntax:
+    content: public override void OnInitialized(IContainerProvider containerProvider)
+    parameters:
+    - id: containerProvider
+      type: Prism.Ioc.IContainerProvider
+    content.vb: Public Overrides Sub OnInitialized(containerProvider As IContainerProvider)
+  overridden: Innova.Prism.Library.ClassDefinitions.BaseModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  overload: Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized*
+  nameWithType.vb: BaseModule(Of C).OnInitialized(IContainerProvider)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).OnInitialized(Prism.Ioc.IContainerProvider)
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.ConfigureMenuService(Innova.Prism.Library.Services.IMenuService)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule`1.ConfigureMenuService(Innova.Prism.Library.Services.IMenuService)
+  id: ConfigureMenuService(Innova.Prism.Library.Services.IMenuService)
+  parent: Innova.Prism.Library.ClassDefinitions.BaseModule`1
+  langs:
+  - csharp
+  - vb
+  name: ConfigureMenuService(IMenuService)
+  nameWithType: BaseModule<C>.ConfigureMenuService(IMenuService)
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.ConfigureMenuService(Innova.Prism.Library.Services.IMenuService)
+  type: Method
+  source:
+    id: ConfigureMenuService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\BaseModule.cs
+    startLine: 37
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  syntax:
+    content: protected virtual void ConfigureMenuService(IMenuService menuservice)
+    parameters:
+    - id: menuservice
+      type: Innova.Prism.Library.Services.IMenuService
+    content.vb: Protected Overridable Sub ConfigureMenuService(menuservice As IMenuService)
+  overload: Innova.Prism.Library.ClassDefinitions.BaseModule`1.ConfigureMenuService*
+  nameWithType.vb: BaseModule(Of C).ConfigureMenuService(IMenuService)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).ConfigureMenuService(Innova.Prism.Library.Services.IMenuService)
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.AddDefaultControlToRegion``1(System.String)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule`1.AddDefaultControlToRegion``1(System.String)
+  id: AddDefaultControlToRegion``1(System.String)
+  parent: Innova.Prism.Library.ClassDefinitions.BaseModule`1
+  langs:
+  - csharp
+  - vb
+  name: AddDefaultControlToRegion<T>(string)
+  nameWithType: BaseModule<C>.AddDefaultControlToRegion<T>(string)
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.AddDefaultControlToRegion<T>(string)
+  type: Method
+  source:
+    id: AddDefaultControlToRegion
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\BaseModule.cs
+    startLine: 42
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  syntax:
+    content: public void AddDefaultControlToRegion<T>(string regionName)
+    parameters:
+    - id: regionName
+      type: System.String
+    typeParameters:
+    - id: T
+    content.vb: Public Sub AddDefaultControlToRegion(Of T)(regionName As String)
+  overload: Innova.Prism.Library.ClassDefinitions.BaseModule`1.AddDefaultControlToRegion*
+  nameWithType.vb: BaseModule(Of C).AddDefaultControlToRegion(Of T)(String)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).AddDefaultControlToRegion(Of T)(String)
+  name.vb: AddDefaultControlToRegion(Of T)(String)
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.AddDefaultControlToRegion(System.String,System.Type)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule`1.AddDefaultControlToRegion(System.String,System.Type)
+  id: AddDefaultControlToRegion(System.String,System.Type)
+  parent: Innova.Prism.Library.ClassDefinitions.BaseModule`1
+  langs:
+  - csharp
+  - vb
+  name: AddDefaultControlToRegion(string, Type)
+  nameWithType: BaseModule<C>.AddDefaultControlToRegion(string, Type)
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.AddDefaultControlToRegion(string, System.Type)
+  type: Method
+  source:
+    id: AddDefaultControlToRegion
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\BaseModule.cs
+    startLine: 47
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  syntax:
+    content: public void AddDefaultControlToRegion(string regionName, Type controlType)
+    parameters:
+    - id: regionName
+      type: System.String
+    - id: controlType
+      type: System.Type
+    content.vb: Public Sub AddDefaultControlToRegion(regionName As String, controlType As Type)
+  overload: Innova.Prism.Library.ClassDefinitions.BaseModule`1.AddDefaultControlToRegion*
+  nameWithType.vb: BaseModule(Of C).AddDefaultControlToRegion(String, Type)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).AddDefaultControlToRegion(String, System.Type)
+  name.vb: AddDefaultControlToRegion(String, Type)
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule`1.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  id: RegisterTypes(Prism.Ioc.IContainerRegistry)
+  parent: Innova.Prism.Library.ClassDefinitions.BaseModule`1
+  langs:
+  - csharp
+  - vb
+  name: RegisterTypes(IContainerRegistry)
+  nameWithType: BaseModule<C>.RegisterTypes(IContainerRegistry)
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  type: Method
+  source:
+    id: RegisterTypes
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\BaseModule.cs
+    startLine: 62
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Used to register types with the container that will be used by your application.
+  example: []
+  syntax:
+    content: public override void RegisterTypes(IContainerRegistry containerRegistry)
+    parameters:
+    - id: containerRegistry
+      type: Prism.Ioc.IContainerRegistry
+    content.vb: Public Overrides Sub RegisterTypes(containerRegistry As IContainerRegistry)
+  overridden: Innova.Prism.Library.ClassDefinitions.BaseModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  overload: Innova.Prism.Library.ClassDefinitions.BaseModule`1.RegisterTypes*
+  nameWithType.vb: BaseModule(Of C).RegisterTypes(IContainerRegistry)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).RegisterTypes(Prism.Ioc.IContainerRegistry)
+references:
+- uid: Innova.Prism.Library.ClassDefinitions
+  commentId: N:Innova.Prism.Library.ClassDefinitions
+  href: Innova.html
+  name: Innova.Prism.Library.ClassDefinitions
+  nameWithType: Innova.Prism.Library.ClassDefinitions
+  fullName: Innova.Prism.Library.ClassDefinitions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Prism.Mvvm.BindableBase
+  commentId: T:Prism.Mvvm.BindableBase
+  parent: Prism.Mvvm
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: BindableBase
+  nameWithType: BindableBase
+  fullName: Prism.Mvvm.BindableBase
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule
+  commentId: T:Innova.Prism.Library.ClassDefinitions.BaseModule
+  parent: Innova.Prism.Library.ClassDefinitions
+  href: Innova.Prism.Library.ClassDefinitions.BaseModule.html
+  name: BaseModule
+  nameWithType: BaseModule
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Prism.Modularity.IModule
+  commentId: T:Prism.Modularity.IModule
+  parent: Prism.Modularity
+  isExternal: true
+  name: IModule
+  nameWithType: IModule
+  fullName: Prism.Modularity.IModule
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  commentId: M:Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: RaisePropertyChanged(string)
+  nameWithType: BindableBase.RaisePropertyChanged(string)
+  fullName: Prism.Mvvm.BindableBase.RaisePropertyChanged(string)
+  nameWithType.vb: BindableBase.RaisePropertyChanged(String)
+  fullName.vb: Prism.Mvvm.BindableBase.RaisePropertyChanged(String)
+  name.vb: RaisePropertyChanged(String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: OnPropertyChanged(PropertyChangedEventArgs)
+  nameWithType: BindableBase.OnPropertyChanged(PropertyChangedEventArgs)
+  fullName: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: Prism.Mvvm.BindableBase.PropertyChanged
+  commentId: E:Prism.Mvvm.BindableBase.PropertyChanged
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: PropertyChanged
+  nameWithType: BindableBase.PropertyChanged
+  fullName: Prism.Mvvm.BindableBase.PropertyChanged
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Prism.Mvvm
+  commentId: N:Prism.Mvvm
+  isExternal: true
+  name: Prism.Mvvm
+  nameWithType: Prism.Mvvm
+  fullName: Prism.Mvvm
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Prism.Modularity
+  commentId: N:Prism.Modularity
+  isExternal: true
+  name: Prism.Modularity
+  nameWithType: Prism.Modularity
+  fullName: Prism.Modularity
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Modularity
+    name: Modularity
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Modularity
+    name: Modularity
+    isExternal: true
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Regions.IRegionManager
+  commentId: T:Prism.Regions.IRegionManager
+  parent: Prism.Regions
+  isExternal: true
+  name: IRegionManager
+  nameWithType: IRegionManager
+  fullName: Prism.Regions.IRegionManager
+- uid: Prism.Regions
+  commentId: N:Prism.Regions
+  href: Prism.html
+  name: Prism.Regions
+  nameWithType: Prism.Regions
+  fullName: Prism.Regions
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Regions
+    name: Regions
+    href: Prism.Regions.html
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Regions
+    name: Regions
+    href: Prism.Regions.html
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.Controller*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.BaseModule`1.Controller
+  href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.Controller.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_Controller
+  name: Controller
+  nameWithType: BaseModule<C>.Controller
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.Controller
+  nameWithType.vb: BaseModule(Of C).Controller
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).Controller
+- uid: '{C}'
+  commentId: '!:C'
+  definition: C
+  name: C
+  nameWithType: C
+  fullName: C
+- uid: C
+  name: C
+  nameWithType: C
+  fullName: C
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  parent: Innova.Prism.Library.ClassDefinitions.BaseModule
+  isExternal: true
+  href: Innova.Prism.Library.ClassDefinitions.BaseModule.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_OnInitialized_Prism_Ioc_IContainerProvider_
+  name: OnInitialized(IContainerProvider)
+  nameWithType: BaseModule.OnInitialized(IContainerProvider)
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule.OnInitialized(Prism.Ioc.IContainerProvider)
+    name: OnInitialized
+    href: Innova.Prism.Library.ClassDefinitions.BaseModule.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_OnInitialized_Prism_Ioc_IContainerProvider_
+  - name: (
+  - uid: Prism.Ioc.IContainerProvider
+    name: IContainerProvider
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule.OnInitialized(Prism.Ioc.IContainerProvider)
+    name: OnInitialized
+    href: Innova.Prism.Library.ClassDefinitions.BaseModule.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_OnInitialized_Prism_Ioc_IContainerProvider_
+  - name: (
+  - uid: Prism.Ioc.IContainerProvider
+    name: IContainerProvider
+    isExternal: true
+  - name: )
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized
+  href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_OnInitialized_Prism_Ioc_IContainerProvider_
+  name: OnInitialized
+  nameWithType: BaseModule<C>.OnInitialized
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.OnInitialized
+  nameWithType.vb: BaseModule(Of C).OnInitialized
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).OnInitialized
+- uid: Prism.Ioc.IContainerProvider
+  commentId: T:Prism.Ioc.IContainerProvider
+  parent: Prism.Ioc
+  isExternal: true
+  name: IContainerProvider
+  nameWithType: IContainerProvider
+  fullName: Prism.Ioc.IContainerProvider
+- uid: Prism.Ioc
+  commentId: N:Prism.Ioc
+  isExternal: true
+  name: Prism.Ioc
+  nameWithType: Prism.Ioc
+  fullName: Prism.Ioc
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Ioc
+    name: Ioc
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Ioc
+    name: Ioc
+    isExternal: true
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.ConfigureMenuService*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.BaseModule`1.ConfigureMenuService
+  href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.ConfigureMenuService.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_ConfigureMenuService_Innova_Prism_Library_Services_IMenuService_
+  name: ConfigureMenuService
+  nameWithType: BaseModule<C>.ConfigureMenuService
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.ConfigureMenuService
+  nameWithType.vb: BaseModule(Of C).ConfigureMenuService
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).ConfigureMenuService
+- uid: Innova.Prism.Library.Services.IMenuService
+  commentId: T:Innova.Prism.Library.Services.IMenuService
+  parent: Innova.Prism.Library.Services
+  href: Innova.Prism.Library.Services.IMenuService.html
+  name: IMenuService
+  nameWithType: IMenuService
+  fullName: Innova.Prism.Library.Services.IMenuService
+- uid: Innova.Prism.Library.Services
+  commentId: N:Innova.Prism.Library.Services
+  href: Innova.html
+  name: Innova.Prism.Library.Services
+  nameWithType: Innova.Prism.Library.Services
+  fullName: Innova.Prism.Library.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.AddDefaultControlToRegion*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.BaseModule`1.AddDefaultControlToRegion
+  href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.AddDefaultControlToRegion.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_AddDefaultControlToRegion__1_System_String_
+  name: AddDefaultControlToRegion
+  nameWithType: BaseModule<C>.AddDefaultControlToRegion
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.AddDefaultControlToRegion
+  nameWithType.vb: BaseModule(Of C).AddDefaultControlToRegion
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).AddDefaultControlToRegion
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  parent: Innova.Prism.Library.ClassDefinitions.BaseModule
+  isExternal: true
+  href: Innova.Prism.Library.ClassDefinitions.BaseModule.RegisterTypes.html#Innova_Prism_Library_ClassDefinitions_BaseModule_RegisterTypes_Prism_Ioc_IContainerRegistry_
+  name: RegisterTypes(IContainerRegistry)
+  nameWithType: BaseModule.RegisterTypes(IContainerRegistry)
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+    name: RegisterTypes
+    href: Innova.Prism.Library.ClassDefinitions.BaseModule.RegisterTypes.html#Innova_Prism_Library_ClassDefinitions_BaseModule_RegisterTypes_Prism_Ioc_IContainerRegistry_
+  - name: (
+  - uid: Prism.Ioc.IContainerRegistry
+    name: IContainerRegistry
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+    name: RegisterTypes
+    href: Innova.Prism.Library.ClassDefinitions.BaseModule.RegisterTypes.html#Innova_Prism_Library_ClassDefinitions_BaseModule_RegisterTypes_Prism_Ioc_IContainerRegistry_
+  - name: (
+  - uid: Prism.Ioc.IContainerRegistry
+    name: IContainerRegistry
+    isExternal: true
+  - name: )
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.RegisterTypes*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.BaseModule`1.RegisterTypes
+  href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.RegisterTypes.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_RegisterTypes_Prism_Ioc_IContainerRegistry_
+  name: RegisterTypes
+  nameWithType: BaseModule<C>.RegisterTypes
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.RegisterTypes
+  nameWithType.vb: BaseModule(Of C).RegisterTypes
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).RegisterTypes
+- uid: Prism.Ioc.IContainerRegistry
+  commentId: T:Prism.Ioc.IContainerRegistry
+  parent: Prism.Ioc
+  isExternal: true
+  name: IContainerRegistry
+  nameWithType: IContainerRegistry
+  fullName: Prism.Ioc.IContainerRegistry
+memberLayout: SeparatePages

@@ -1,0 +1,1168 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Services.ListFilterService`2
+  commentId: T:Innova.Prism.Library.Services.ListFilterService`2
+  id: ListFilterService`2
+  parent: Innova.Prism.Library.Services
+  children:
+  - Innova.Prism.Library.Services.ListFilterService`2.#ctor(Innova.Prism.Library.Services.IListViewModelService{`0,`1})
+  - Innova.Prism.Library.Services.ListFilterService`2.EntityType
+  - Innova.Prism.Library.Services.ListFilterService`2.ExtractAndSetFilter(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},Innova.Prism.Library.ClassDefinitions.ListQueryParameter{`0})
+  - Innova.Prism.Library.Services.ListFilterService`2.GetDistinctFilterValues(System.String,System.Type,Innova.Data.Entity.QueryParameter{`0})
+  - Innova.Prism.Library.Services.ListFilterService`2.GetFilterExpression(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},System.Linq.Expressions.ParameterExpression)
+  - Innova.Prism.Library.Services.ListFilterService`2.GetPropertySelectorExpression(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ListFilterService<T, TList>
+  nameWithType: ListFilterService<T, TList>
+  fullName: Innova.Prism.Library.Services.ListFilterService<T, TList>
+  type: Class
+  source:
+    id: ListFilterService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ListFilterService.cs
+    startLine: 22
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  syntax:
+    content: 'public class ListFilterService<T, TList> : IListFilterService<T, TList> where T : class where TList : class'
+    typeParameters:
+    - id: T
+    - id: TList
+    content.vb: Public Class ListFilterService(Of T As Class, TList As Class) Implements IListFilterService(Of T, TList)
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Prism.Library.Services.IListFilterService{{T},{TList}}
+  nameWithType.vb: ListFilterService(Of T, TList)
+  fullName.vb: Innova.Prism.Library.Services.ListFilterService(Of T, TList)
+  name.vb: ListFilterService(Of T, TList)
+- uid: Innova.Prism.Library.Services.ListFilterService`2.EntityType
+  commentId: P:Innova.Prism.Library.Services.ListFilterService`2.EntityType
+  id: EntityType
+  parent: Innova.Prism.Library.Services.ListFilterService`2
+  langs:
+  - csharp
+  - vb
+  name: EntityType
+  nameWithType: ListFilterService<T, TList>.EntityType
+  fullName: Innova.Prism.Library.Services.ListFilterService<T, TList>.EntityType
+  type: Property
+  source:
+    id: EntityType
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ListFilterService.cs
+    startLine: 29
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  syntax:
+    content: public Type EntityType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property EntityType As Type
+  overload: Innova.Prism.Library.Services.ListFilterService`2.EntityType*
+  nameWithType.vb: ListFilterService(Of T, TList).EntityType
+  fullName.vb: Innova.Prism.Library.Services.ListFilterService(Of T, TList).EntityType
+- uid: Innova.Prism.Library.Services.ListFilterService`2.#ctor(Innova.Prism.Library.Services.IListViewModelService{`0,`1})
+  commentId: M:Innova.Prism.Library.Services.ListFilterService`2.#ctor(Innova.Prism.Library.Services.IListViewModelService{`0,`1})
+  id: '#ctor(Innova.Prism.Library.Services.IListViewModelService{`0,`1})'
+  parent: Innova.Prism.Library.Services.ListFilterService`2
+  langs:
+  - csharp
+  - vb
+  name: ListFilterService(IListViewModelService<T, TList>)
+  nameWithType: ListFilterService<T, TList>.ListFilterService(IListViewModelService<T, TList>)
+  fullName: Innova.Prism.Library.Services.ListFilterService<T, TList>.ListFilterService(Innova.Prism.Library.Services.IListViewModelService<T, TList>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ListFilterService.cs
+    startLine: 42
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  syntax:
+    content: public ListFilterService(IListViewModelService<T, TList> listViewModelService)
+    parameters:
+    - id: listViewModelService
+      type: Innova.Prism.Library.Services.IListViewModelService{{T},{TList}}
+    content.vb: Public Sub New(listViewModelService As IListViewModelService(Of T, TList))
+  overload: Innova.Prism.Library.Services.ListFilterService`2.#ctor*
+  nameWithType.vb: ListFilterService(Of T, TList).New(IListViewModelService(Of T, TList))
+  fullName.vb: Innova.Prism.Library.Services.ListFilterService(Of T, TList).New(Innova.Prism.Library.Services.IListViewModelService(Of T, TList))
+  name.vb: New(IListViewModelService(Of T, TList))
+- uid: Innova.Prism.Library.Services.ListFilterService`2.GetDistinctFilterValues(System.String,System.Type,Innova.Data.Entity.QueryParameter{`0})
+  commentId: M:Innova.Prism.Library.Services.ListFilterService`2.GetDistinctFilterValues(System.String,System.Type,Innova.Data.Entity.QueryParameter{`0})
+  id: GetDistinctFilterValues(System.String,System.Type,Innova.Data.Entity.QueryParameter{`0})
+  parent: Innova.Prism.Library.Services.ListFilterService`2
+  langs:
+  - csharp
+  - vb
+  name: GetDistinctFilterValues(string, Type, QueryParameter<T>)
+  nameWithType: ListFilterService<T, TList>.GetDistinctFilterValues(string, Type, QueryParameter<T>)
+  fullName: Innova.Prism.Library.Services.ListFilterService<T, TList>.GetDistinctFilterValues(string, System.Type, Innova.Data.Entity.QueryParameter<T>)
+  type: Method
+  source:
+    id: GetDistinctFilterValues
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ListFilterService.cs
+    startLine: 48
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Gets the distinct filter values for the specified column.
+  example: []
+  syntax:
+    content: public virtual IEnumerable GetDistinctFilterValues(string columnName, Type columnType, QueryParameter<T> queryParameter)
+    parameters:
+    - id: columnName
+      type: System.String
+      description: The name of the column.
+    - id: columnType
+      type: System.Type
+      description: The type of the column.
+    - id: queryParameter
+      type: Innova.Data.Entity.QueryParameter{{T}}
+      description: The query parameter.
+    return:
+      type: System.Collections.IEnumerable
+      description: The distinct filter values.
+    content.vb: Public Overridable Function GetDistinctFilterValues(columnName As String, columnType As Type, queryParameter As QueryParameter(Of T)) As IEnumerable
+  overload: Innova.Prism.Library.Services.ListFilterService`2.GetDistinctFilterValues*
+  implements:
+  - Innova.Prism.Library.Services.IListFilterService{{T},{TList}}.GetDistinctFilterValues(System.String,System.Type,Innova.Data.Entity.QueryParameter{{T}})
+  nameWithType.vb: ListFilterService(Of T, TList).GetDistinctFilterValues(String, Type, QueryParameter(Of T))
+  fullName.vb: Innova.Prism.Library.Services.ListFilterService(Of T, TList).GetDistinctFilterValues(String, System.Type, Innova.Data.Entity.QueryParameter(Of T))
+  name.vb: GetDistinctFilterValues(String, Type, QueryParameter(Of T))
+- uid: Innova.Prism.Library.Services.ListFilterService`2.ExtractAndSetFilter(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},Innova.Prism.Library.ClassDefinitions.ListQueryParameter{`0})
+  commentId: M:Innova.Prism.Library.Services.ListFilterService`2.ExtractAndSetFilter(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},Innova.Prism.Library.ClassDefinitions.ListQueryParameter{`0})
+  id: ExtractAndSetFilter(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},Innova.Prism.Library.ClassDefinitions.ListQueryParameter{`0})
+  parent: Innova.Prism.Library.Services.ListFilterService`2
+  langs:
+  - csharp
+  - vb
+  name: ExtractAndSetFilter(IEnumerable<ListFilter>, ListQueryParameter<T>)
+  nameWithType: ListFilterService<T, TList>.ExtractAndSetFilter(IEnumerable<ListFilter>, ListQueryParameter<T>)
+  fullName: Innova.Prism.Library.Services.ListFilterService<T, TList>.ExtractAndSetFilter(System.Collections.Generic.IEnumerable<Innova.Prism.Library.BaseViewModels.ListFilter>, Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>)
+  type: Method
+  source:
+    id: ExtractAndSetFilter
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ListFilterService.cs
+    startLine: 102
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Extracts and sets the filters for the list query parameter.
+  example: []
+  syntax:
+    content: public void ExtractAndSetFilter(IEnumerable<ListFilter> filters, ListQueryParameter<T> listQueryParameter)
+    parameters:
+    - id: filters
+      type: System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter}
+      description: The list of filters to apply.
+    - id: listQueryParameter
+      type: Innova.Prism.Library.ClassDefinitions.ListQueryParameter{{T}}
+      description: The list query parameter.
+    content.vb: Public Sub ExtractAndSetFilter(filters As IEnumerable(Of ListFilter), listQueryParameter As ListQueryParameter(Of T))
+  overload: Innova.Prism.Library.Services.ListFilterService`2.ExtractAndSetFilter*
+  implements:
+  - Innova.Prism.Library.Services.IListFilterService{{T},{TList}}.ExtractAndSetFilter(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},Innova.Prism.Library.ClassDefinitions.ListQueryParameter{{T}})
+  nameWithType.vb: ListFilterService(Of T, TList).ExtractAndSetFilter(IEnumerable(Of ListFilter), ListQueryParameter(Of T))
+  fullName.vb: Innova.Prism.Library.Services.ListFilterService(Of T, TList).ExtractAndSetFilter(System.Collections.Generic.IEnumerable(Of Innova.Prism.Library.BaseViewModels.ListFilter), Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T))
+  name.vb: ExtractAndSetFilter(IEnumerable(Of ListFilter), ListQueryParameter(Of T))
+- uid: Innova.Prism.Library.Services.ListFilterService`2.GetPropertySelectorExpression(System.String)
+  commentId: M:Innova.Prism.Library.Services.ListFilterService`2.GetPropertySelectorExpression(System.String)
+  id: GetPropertySelectorExpression(System.String)
+  parent: Innova.Prism.Library.Services.ListFilterService`2
+  langs:
+  - csharp
+  - vb
+  name: GetPropertySelectorExpression(string)
+  nameWithType: ListFilterService<T, TList>.GetPropertySelectorExpression(string)
+  fullName: Innova.Prism.Library.Services.ListFilterService<T, TList>.GetPropertySelectorExpression(string)
+  type: Method
+  source:
+    id: GetPropertySelectorExpression
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ListFilterService.cs
+    startLine: 119
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  syntax:
+    content: public LambdaExpression GetPropertySelectorExpression(string propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+    return:
+      type: System.Linq.Expressions.LambdaExpression
+    content.vb: Public Function GetPropertySelectorExpression(propertyName As String) As LambdaExpression
+  overload: Innova.Prism.Library.Services.ListFilterService`2.GetPropertySelectorExpression*
+  nameWithType.vb: ListFilterService(Of T, TList).GetPropertySelectorExpression(String)
+  fullName.vb: Innova.Prism.Library.Services.ListFilterService(Of T, TList).GetPropertySelectorExpression(String)
+  name.vb: GetPropertySelectorExpression(String)
+- uid: Innova.Prism.Library.Services.ListFilterService`2.GetFilterExpression(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},System.Linq.Expressions.ParameterExpression)
+  commentId: M:Innova.Prism.Library.Services.ListFilterService`2.GetFilterExpression(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},System.Linq.Expressions.ParameterExpression)
+  id: GetFilterExpression(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},System.Linq.Expressions.ParameterExpression)
+  parent: Innova.Prism.Library.Services.ListFilterService`2
+  langs:
+  - csharp
+  - vb
+  name: GetFilterExpression(IEnumerable<ListFilter>, ParameterExpression)
+  nameWithType: ListFilterService<T, TList>.GetFilterExpression(IEnumerable<ListFilter>, ParameterExpression)
+  fullName: Innova.Prism.Library.Services.ListFilterService<T, TList>.GetFilterExpression(System.Collections.Generic.IEnumerable<Innova.Prism.Library.BaseViewModels.ListFilter>, System.Linq.Expressions.ParameterExpression)
+  type: Method
+  source:
+    id: GetFilterExpression
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ListFilterService.cs
+    startLine: 130
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  syntax:
+    content: public Expression<Func<T, bool>> GetFilterExpression(IEnumerable<ListFilter> filters, ParameterExpression parameter)
+    parameters:
+    - id: filters
+      type: System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter}
+    - id: parameter
+      type: System.Linq.Expressions.ParameterExpression
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+    content.vb: Public Function GetFilterExpression(filters As IEnumerable(Of ListFilter), parameter As ParameterExpression) As Expression(Of Func(Of T, Boolean))
+  overload: Innova.Prism.Library.Services.ListFilterService`2.GetFilterExpression*
+  nameWithType.vb: ListFilterService(Of T, TList).GetFilterExpression(IEnumerable(Of ListFilter), ParameterExpression)
+  fullName.vb: Innova.Prism.Library.Services.ListFilterService(Of T, TList).GetFilterExpression(System.Collections.Generic.IEnumerable(Of Innova.Prism.Library.BaseViewModels.ListFilter), System.Linq.Expressions.ParameterExpression)
+  name.vb: GetFilterExpression(IEnumerable(Of ListFilter), ParameterExpression)
+references:
+- uid: Innova.Prism.Library.Services
+  commentId: N:Innova.Prism.Library.Services
+  href: Innova.html
+  name: Innova.Prism.Library.Services
+  nameWithType: Innova.Prism.Library.Services
+  fullName: Innova.Prism.Library.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Prism.Library.Services.IListFilterService{{T},{TList}}
+  commentId: T:Innova.Prism.Library.Services.IListFilterService{`0,`1}
+  parent: Innova.Prism.Library.Services
+  definition: Innova.Prism.Library.Services.IListFilterService`2
+  href: Innova.Prism.Library.Services.IListFilterService-2.html
+  name: IListFilterService<T, TList>
+  nameWithType: IListFilterService<T, TList>
+  fullName: Innova.Prism.Library.Services.IListFilterService<T, TList>
+  nameWithType.vb: IListFilterService(Of T, TList)
+  fullName.vb: Innova.Prism.Library.Services.IListFilterService(Of T, TList)
+  name.vb: IListFilterService(Of T, TList)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IListFilterService`2
+    name: IListFilterService
+    href: Innova.Prism.Library.Services.IListFilterService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TList
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IListFilterService`2
+    name: IListFilterService
+    href: Innova.Prism.Library.Services.IListFilterService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TList
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Library.Services.IListFilterService`2
+  commentId: T:Innova.Prism.Library.Services.IListFilterService`2
+  href: Innova.Prism.Library.Services.IListFilterService-2.html
+  name: IListFilterService<T, TList>
+  nameWithType: IListFilterService<T, TList>
+  fullName: Innova.Prism.Library.Services.IListFilterService<T, TList>
+  nameWithType.vb: IListFilterService(Of T, TList)
+  fullName.vb: Innova.Prism.Library.Services.IListFilterService(Of T, TList)
+  name.vb: IListFilterService(Of T, TList)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IListFilterService`2
+    name: IListFilterService
+    href: Innova.Prism.Library.Services.IListFilterService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TList
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IListFilterService`2
+    name: IListFilterService
+    href: Innova.Prism.Library.Services.IListFilterService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TList
+  - name: )
+- uid: Innova.Prism.Library.Services.ListFilterService`2.EntityType*
+  commentId: Overload:Innova.Prism.Library.Services.ListFilterService`2.EntityType
+  href: Innova.Prism.Library.Services.ListFilterService-2.EntityType.html#Innova_Prism_Library_Services_ListFilterService_2_EntityType
+  name: EntityType
+  nameWithType: ListFilterService<T, TList>.EntityType
+  fullName: Innova.Prism.Library.Services.ListFilterService<T, TList>.EntityType
+  nameWithType.vb: ListFilterService(Of T, TList).EntityType
+  fullName.vb: Innova.Prism.Library.Services.ListFilterService(Of T, TList).EntityType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Innova.Prism.Library.Services.ListFilterService`2.#ctor*
+  commentId: Overload:Innova.Prism.Library.Services.ListFilterService`2.#ctor
+  href: Innova.Prism.Library.Services.ListFilterService-2.-ctor.html#Innova_Prism_Library_Services_ListFilterService_2__ctor_Innova_Prism_Library_Services_IListViewModelService__0__1__
+  name: ListFilterService
+  nameWithType: ListFilterService<T, TList>.ListFilterService
+  fullName: Innova.Prism.Library.Services.ListFilterService<T, TList>.ListFilterService
+  nameWithType.vb: ListFilterService(Of T, TList).New
+  fullName.vb: Innova.Prism.Library.Services.ListFilterService(Of T, TList).New
+  name.vb: New
+- uid: Innova.Prism.Library.Services.IListViewModelService{{T},{TList}}
+  commentId: T:Innova.Prism.Library.Services.IListViewModelService{`0,`1}
+  parent: Innova.Prism.Library.Services
+  definition: Innova.Prism.Library.Services.IListViewModelService`2
+  href: Innova.Prism.Library.Services.IListViewModelService-2.html
+  name: IListViewModelService<T, TList>
+  nameWithType: IListViewModelService<T, TList>
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>
+  nameWithType.vb: IListViewModelService(Of T, TList)
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList)
+  name.vb: IListViewModelService(Of T, TList)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IListViewModelService`2
+    name: IListViewModelService
+    href: Innova.Prism.Library.Services.IListViewModelService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TList
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IListViewModelService`2
+    name: IListViewModelService
+    href: Innova.Prism.Library.Services.IListViewModelService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TList
+  - name: )
+- uid: Innova.Prism.Library.Services.IListViewModelService`2
+  commentId: T:Innova.Prism.Library.Services.IListViewModelService`2
+  href: Innova.Prism.Library.Services.IListViewModelService-2.html
+  name: IListViewModelService<T, TList>
+  nameWithType: IListViewModelService<T, TList>
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>
+  nameWithType.vb: IListViewModelService(Of T, TList)
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList)
+  name.vb: IListViewModelService(Of T, TList)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IListViewModelService`2
+    name: IListViewModelService
+    href: Innova.Prism.Library.Services.IListViewModelService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TList
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IListViewModelService`2
+    name: IListViewModelService
+    href: Innova.Prism.Library.Services.IListViewModelService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TList
+  - name: )
+- uid: Innova.Prism.Library.Services.ListFilterService`2.GetDistinctFilterValues*
+  commentId: Overload:Innova.Prism.Library.Services.ListFilterService`2.GetDistinctFilterValues
+  href: Innova.Prism.Library.Services.ListFilterService-2.GetDistinctFilterValues.html#Innova_Prism_Library_Services_ListFilterService_2_GetDistinctFilterValues_System_String_System_Type_Innova_Data_Entity_QueryParameter__0__
+  name: GetDistinctFilterValues
+  nameWithType: ListFilterService<T, TList>.GetDistinctFilterValues
+  fullName: Innova.Prism.Library.Services.ListFilterService<T, TList>.GetDistinctFilterValues
+  nameWithType.vb: ListFilterService(Of T, TList).GetDistinctFilterValues
+  fullName.vb: Innova.Prism.Library.Services.ListFilterService(Of T, TList).GetDistinctFilterValues
+- uid: Innova.Prism.Library.Services.IListFilterService{{T},{TList}}.GetDistinctFilterValues(System.String,System.Type,Innova.Data.Entity.QueryParameter{{T}})
+  commentId: M:Innova.Prism.Library.Services.IListFilterService{`0,`1}.GetDistinctFilterValues(System.String,System.Type,Innova.Data.Entity.QueryParameter{`0})
+  parent: Innova.Prism.Library.Services.IListFilterService{{T},{TList}}
+  definition: Innova.Prism.Library.Services.IListFilterService`2.GetDistinctFilterValues(System.String,System.Type,Innova.Data.Entity.QueryParameter{`0})
+  href: Innova.Prism.Library.Services.IListFilterService-2.GetDistinctFilterValues.html#Innova_Prism_Library_Services_IListFilterService_2_GetDistinctFilterValues_System_String_System_Type_Innova_Data_Entity_QueryParameter__0__
+  name: GetDistinctFilterValues(string, Type, QueryParameter<T>)
+  nameWithType: IListFilterService<T, TList>.GetDistinctFilterValues(string, Type, QueryParameter<T>)
+  fullName: Innova.Prism.Library.Services.IListFilterService<T, TList>.GetDistinctFilterValues(string, System.Type, Innova.Data.Entity.QueryParameter<T>)
+  nameWithType.vb: IListFilterService(Of T, TList).GetDistinctFilterValues(String, Type, QueryParameter(Of T))
+  fullName.vb: Innova.Prism.Library.Services.IListFilterService(Of T, TList).GetDistinctFilterValues(String, System.Type, Innova.Data.Entity.QueryParameter(Of T))
+  name.vb: GetDistinctFilterValues(String, Type, QueryParameter(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IListFilterService{`0,`1}.GetDistinctFilterValues(System.String,System.Type,Innova.Data.Entity.QueryParameter{`0})
+    name: GetDistinctFilterValues
+    href: Innova.Prism.Library.Services.IListFilterService-2.GetDistinctFilterValues.html#Innova_Prism_Library_Services_IListFilterService_2_GetDistinctFilterValues_System_String_System_Type_Innova_Data_Entity_QueryParameter__0__
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IListFilterService{`0,`1}.GetDistinctFilterValues(System.String,System.Type,Innova.Data.Entity.QueryParameter{`0})
+    name: GetDistinctFilterValues
+    href: Innova.Prism.Library.Services.IListFilterService-2.GetDistinctFilterValues.html#Innova_Prism_Library_Services_IListFilterService_2_GetDistinctFilterValues_System_String_System_Type_Innova_Data_Entity_QueryParameter__0__
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Data.Entity.QueryParameter{{T}}
+  commentId: T:Innova.Data.Entity.QueryParameter{`0}
+  parent: Innova.Data.Entity
+  definition: Innova.Data.Entity.QueryParameter`1
+  href: Innova.Data.Entity.QueryParameter-1.html
+  name: QueryParameter<T>
+  nameWithType: QueryParameter<T>
+  fullName: Innova.Data.Entity.QueryParameter<T>
+  nameWithType.vb: QueryParameter(Of T)
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T)
+  name.vb: QueryParameter(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: Innova.Prism.Library.Services.IListFilterService`2.GetDistinctFilterValues(System.String,System.Type,Innova.Data.Entity.QueryParameter{`0})
+  commentId: M:Innova.Prism.Library.Services.IListFilterService`2.GetDistinctFilterValues(System.String,System.Type,Innova.Data.Entity.QueryParameter{`0})
+  isExternal: true
+  href: Innova.Prism.Library.Services.IListFilterService-2.GetDistinctFilterValues.html#Innova_Prism_Library_Services_IListFilterService_2_GetDistinctFilterValues_System_String_System_Type_Innova_Data_Entity_QueryParameter__0__
+  name: GetDistinctFilterValues(string, Type, QueryParameter<T>)
+  nameWithType: IListFilterService<T, TList>.GetDistinctFilterValues(string, Type, QueryParameter<T>)
+  fullName: Innova.Prism.Library.Services.IListFilterService<T, TList>.GetDistinctFilterValues(string, System.Type, Innova.Data.Entity.QueryParameter<T>)
+  nameWithType.vb: IListFilterService(Of T, TList).GetDistinctFilterValues(String, Type, QueryParameter(Of T))
+  fullName.vb: Innova.Prism.Library.Services.IListFilterService(Of T, TList).GetDistinctFilterValues(String, System.Type, Innova.Data.Entity.QueryParameter(Of T))
+  name.vb: GetDistinctFilterValues(String, Type, QueryParameter(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IListFilterService`2.GetDistinctFilterValues(System.String,System.Type,Innova.Data.Entity.QueryParameter{`0})
+    name: GetDistinctFilterValues
+    href: Innova.Prism.Library.Services.IListFilterService-2.GetDistinctFilterValues.html#Innova_Prism_Library_Services_IListFilterService_2_GetDistinctFilterValues_System_String_System_Type_Innova_Data_Entity_QueryParameter__0__
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IListFilterService`2.GetDistinctFilterValues(System.String,System.Type,Innova.Data.Entity.QueryParameter{`0})
+    name: GetDistinctFilterValues
+    href: Innova.Prism.Library.Services.IListFilterService-2.GetDistinctFilterValues.html#Innova_Prism_Library_Services_IListFilterService_2_GetDistinctFilterValues_System_String_System_Type_Innova_Data_Entity_QueryParameter__0__
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Data.Entity.QueryParameter`1
+  commentId: T:Innova.Data.Entity.QueryParameter`1
+  href: Innova.Data.Entity.QueryParameter-1.html
+  name: QueryParameter<T>
+  nameWithType: QueryParameter<T>
+  fullName: Innova.Data.Entity.QueryParameter<T>
+  nameWithType.vb: QueryParameter(Of T)
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T)
+  name.vb: QueryParameter(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.Entity
+  commentId: N:Innova.Data.Entity
+  href: Innova.html
+  name: Innova.Data.Entity
+  nameWithType: Innova.Data.Entity
+  fullName: Innova.Data.Entity
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: Innova.Prism.Library.Services.ListFilterService`2.ExtractAndSetFilter*
+  commentId: Overload:Innova.Prism.Library.Services.ListFilterService`2.ExtractAndSetFilter
+  href: Innova.Prism.Library.Services.ListFilterService-2.ExtractAndSetFilter.html#Innova_Prism_Library_Services_ListFilterService_2_ExtractAndSetFilter_System_Collections_Generic_IEnumerable_Innova_Prism_Library_BaseViewModels_ListFilter__Innova_Prism_Library_ClassDefinitions_ListQueryParameter__0__
+  name: ExtractAndSetFilter
+  nameWithType: ListFilterService<T, TList>.ExtractAndSetFilter
+  fullName: Innova.Prism.Library.Services.ListFilterService<T, TList>.ExtractAndSetFilter
+  nameWithType.vb: ListFilterService(Of T, TList).ExtractAndSetFilter
+  fullName.vb: Innova.Prism.Library.Services.ListFilterService(Of T, TList).ExtractAndSetFilter
+- uid: Innova.Prism.Library.Services.IListFilterService{{T},{TList}}.ExtractAndSetFilter(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},Innova.Prism.Library.ClassDefinitions.ListQueryParameter{{T}})
+  commentId: M:Innova.Prism.Library.Services.IListFilterService{`0,`1}.ExtractAndSetFilter(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},Innova.Prism.Library.ClassDefinitions.ListQueryParameter{`0})
+  parent: Innova.Prism.Library.Services.IListFilterService{{T},{TList}}
+  definition: Innova.Prism.Library.Services.IListFilterService`2.ExtractAndSetFilter(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},Innova.Prism.Library.ClassDefinitions.ListQueryParameter{`0})
+  href: Innova.Prism.Library.Services.IListFilterService-2.ExtractAndSetFilter.html#Innova_Prism_Library_Services_IListFilterService_2_ExtractAndSetFilter_System_Collections_Generic_IEnumerable_Innova_Prism_Library_BaseViewModels_ListFilter__Innova_Prism_Library_ClassDefinitions_ListQueryParameter__0__
+  name: ExtractAndSetFilter(IEnumerable<ListFilter>, ListQueryParameter<T>)
+  nameWithType: IListFilterService<T, TList>.ExtractAndSetFilter(IEnumerable<ListFilter>, ListQueryParameter<T>)
+  fullName: Innova.Prism.Library.Services.IListFilterService<T, TList>.ExtractAndSetFilter(System.Collections.Generic.IEnumerable<Innova.Prism.Library.BaseViewModels.ListFilter>, Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>)
+  nameWithType.vb: IListFilterService(Of T, TList).ExtractAndSetFilter(IEnumerable(Of ListFilter), ListQueryParameter(Of T))
+  fullName.vb: Innova.Prism.Library.Services.IListFilterService(Of T, TList).ExtractAndSetFilter(System.Collections.Generic.IEnumerable(Of Innova.Prism.Library.BaseViewModels.ListFilter), Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T))
+  name.vb: ExtractAndSetFilter(IEnumerable(Of ListFilter), ListQueryParameter(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IListFilterService{`0,`1}.ExtractAndSetFilter(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},Innova.Prism.Library.ClassDefinitions.ListQueryParameter{`0})
+    name: ExtractAndSetFilter
+    href: Innova.Prism.Library.Services.IListFilterService-2.ExtractAndSetFilter.html#Innova_Prism_Library_Services_IListFilterService_2_ExtractAndSetFilter_System_Collections_Generic_IEnumerable_Innova_Prism_Library_BaseViewModels_ListFilter__Innova_Prism_Library_ClassDefinitions_ListQueryParameter__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Innova.Prism.Library.BaseViewModels.ListFilter
+    name: ListFilter
+    href: Innova.Prism.Library.BaseViewModels.ListFilter.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+    name: ListQueryParameter
+    href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IListFilterService{`0,`1}.ExtractAndSetFilter(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},Innova.Prism.Library.ClassDefinitions.ListQueryParameter{`0})
+    name: ExtractAndSetFilter
+    href: Innova.Prism.Library.Services.IListFilterService-2.ExtractAndSetFilter.html#Innova_Prism_Library_Services_IListFilterService_2_ExtractAndSetFilter_System_Collections_Generic_IEnumerable_Innova_Prism_Library_BaseViewModels_ListFilter__Innova_Prism_Library_ClassDefinitions_ListQueryParameter__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.BaseViewModels.ListFilter
+    name: ListFilter
+    href: Innova.Prism.Library.BaseViewModels.ListFilter.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+    name: ListQueryParameter
+    href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter}
+  commentId: T:System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ListFilter>
+  nameWithType: IEnumerable<ListFilter>
+  fullName: System.Collections.Generic.IEnumerable<Innova.Prism.Library.BaseViewModels.ListFilter>
+  nameWithType.vb: IEnumerable(Of ListFilter)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Innova.Prism.Library.BaseViewModels.ListFilter)
+  name.vb: IEnumerable(Of ListFilter)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Innova.Prism.Library.BaseViewModels.ListFilter
+    name: ListFilter
+    href: Innova.Prism.Library.BaseViewModels.ListFilter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.BaseViewModels.ListFilter
+    name: ListFilter
+    href: Innova.Prism.Library.BaseViewModels.ListFilter.html
+  - name: )
+- uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter{{T}}
+  commentId: T:Innova.Prism.Library.ClassDefinitions.ListQueryParameter{`0}
+  parent: Innova.Prism.Library.ClassDefinitions
+  definition: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+  href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.html
+  name: ListQueryParameter<T>
+  nameWithType: ListQueryParameter<T>
+  fullName: Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>
+  nameWithType.vb: ListQueryParameter(Of T)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T)
+  name.vb: ListQueryParameter(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+    name: ListQueryParameter
+    href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+    name: ListQueryParameter
+    href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Services.IListFilterService`2.ExtractAndSetFilter(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},Innova.Prism.Library.ClassDefinitions.ListQueryParameter{`0})
+  commentId: M:Innova.Prism.Library.Services.IListFilterService`2.ExtractAndSetFilter(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},Innova.Prism.Library.ClassDefinitions.ListQueryParameter{`0})
+  isExternal: true
+  href: Innova.Prism.Library.Services.IListFilterService-2.ExtractAndSetFilter.html#Innova_Prism_Library_Services_IListFilterService_2_ExtractAndSetFilter_System_Collections_Generic_IEnumerable_Innova_Prism_Library_BaseViewModels_ListFilter__Innova_Prism_Library_ClassDefinitions_ListQueryParameter__0__
+  name: ExtractAndSetFilter(IEnumerable<ListFilter>, ListQueryParameter<T>)
+  nameWithType: IListFilterService<T, TList>.ExtractAndSetFilter(IEnumerable<ListFilter>, ListQueryParameter<T>)
+  fullName: Innova.Prism.Library.Services.IListFilterService<T, TList>.ExtractAndSetFilter(System.Collections.Generic.IEnumerable<Innova.Prism.Library.BaseViewModels.ListFilter>, Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>)
+  nameWithType.vb: IListFilterService(Of T, TList).ExtractAndSetFilter(IEnumerable(Of ListFilter), ListQueryParameter(Of T))
+  fullName.vb: Innova.Prism.Library.Services.IListFilterService(Of T, TList).ExtractAndSetFilter(System.Collections.Generic.IEnumerable(Of Innova.Prism.Library.BaseViewModels.ListFilter), Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T))
+  name.vb: ExtractAndSetFilter(IEnumerable(Of ListFilter), ListQueryParameter(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IListFilterService`2.ExtractAndSetFilter(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},Innova.Prism.Library.ClassDefinitions.ListQueryParameter{`0})
+    name: ExtractAndSetFilter
+    href: Innova.Prism.Library.Services.IListFilterService-2.ExtractAndSetFilter.html#Innova_Prism_Library_Services_IListFilterService_2_ExtractAndSetFilter_System_Collections_Generic_IEnumerable_Innova_Prism_Library_BaseViewModels_ListFilter__Innova_Prism_Library_ClassDefinitions_ListQueryParameter__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Innova.Prism.Library.BaseViewModels.ListFilter
+    name: ListFilter
+    href: Innova.Prism.Library.BaseViewModels.ListFilter.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+    name: ListQueryParameter
+    href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IListFilterService`2.ExtractAndSetFilter(System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.ListFilter},Innova.Prism.Library.ClassDefinitions.ListQueryParameter{`0})
+    name: ExtractAndSetFilter
+    href: Innova.Prism.Library.Services.IListFilterService-2.ExtractAndSetFilter.html#Innova_Prism_Library_Services_IListFilterService_2_ExtractAndSetFilter_System_Collections_Generic_IEnumerable_Innova_Prism_Library_BaseViewModels_ListFilter__Innova_Prism_Library_ClassDefinitions_ListQueryParameter__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.BaseViewModels.ListFilter
+    name: ListFilter
+    href: Innova.Prism.Library.BaseViewModels.ListFilter.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+    name: ListQueryParameter
+    href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+  commentId: T:Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+  href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.html
+  name: ListQueryParameter<T>
+  nameWithType: ListQueryParameter<T>
+  fullName: Innova.Prism.Library.ClassDefinitions.ListQueryParameter<T>
+  nameWithType.vb: ListQueryParameter(Of T)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.ListQueryParameter(Of T)
+  name.vb: ListQueryParameter(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+    name: ListQueryParameter
+    href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.ClassDefinitions.ListQueryParameter`1
+    name: ListQueryParameter
+    href: Innova.Prism.Library.ClassDefinitions.ListQueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.ClassDefinitions
+  commentId: N:Innova.Prism.Library.ClassDefinitions
+  href: Innova.html
+  name: Innova.Prism.Library.ClassDefinitions
+  nameWithType: Innova.Prism.Library.ClassDefinitions
+  fullName: Innova.Prism.Library.ClassDefinitions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+- uid: Innova.Prism.Library.Services.ListFilterService`2.GetPropertySelectorExpression*
+  commentId: Overload:Innova.Prism.Library.Services.ListFilterService`2.GetPropertySelectorExpression
+  href: Innova.Prism.Library.Services.ListFilterService-2.GetPropertySelectorExpression.html#Innova_Prism_Library_Services_ListFilterService_2_GetPropertySelectorExpression_System_String_
+  name: GetPropertySelectorExpression
+  nameWithType: ListFilterService<T, TList>.GetPropertySelectorExpression
+  fullName: Innova.Prism.Library.Services.ListFilterService<T, TList>.GetPropertySelectorExpression
+  nameWithType.vb: ListFilterService(Of T, TList).GetPropertySelectorExpression
+  fullName.vb: Innova.Prism.Library.Services.ListFilterService(Of T, TList).GetPropertySelectorExpression
+- uid: System.Linq.Expressions.LambdaExpression
+  commentId: T:System.Linq.Expressions.LambdaExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.lambdaexpression
+  name: LambdaExpression
+  nameWithType: LambdaExpression
+  fullName: System.Linq.Expressions.LambdaExpression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: Innova.Prism.Library.Services.ListFilterService`2.GetFilterExpression*
+  commentId: Overload:Innova.Prism.Library.Services.ListFilterService`2.GetFilterExpression
+  href: Innova.Prism.Library.Services.ListFilterService-2.GetFilterExpression.html#Innova_Prism_Library_Services_ListFilterService_2_GetFilterExpression_System_Collections_Generic_IEnumerable_Innova_Prism_Library_BaseViewModels_ListFilter__System_Linq_Expressions_ParameterExpression_
+  name: GetFilterExpression
+  nameWithType: ListFilterService<T, TList>.GetFilterExpression
+  fullName: Innova.Prism.Library.Services.ListFilterService<T, TList>.GetFilterExpression
+  nameWithType.vb: ListFilterService(Of T, TList).GetFilterExpression
+  fullName.vb: Innova.Prism.Library.Services.ListFilterService(Of T, TList).GetFilterExpression
+- uid: System.Linq.Expressions.ParameterExpression
+  commentId: T:System.Linq.Expressions.ParameterExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.parameterexpression
+  name: ParameterExpression
+  nameWithType: ParameterExpression
+  fullName: System.Linq.Expressions.ParameterExpression
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, bool>>
+  nameWithType: Expression<Func<T, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, bool>>
+  nameWithType.vb: Expression(Of Func(Of T, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean))
+  name.vb: Expression(Of Func(Of T, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+memberLayout: SeparatePages

@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: Prism.Services.Dialogs.IDialogExtensions
+  commentId: T:Prism.Services.Dialogs.IDialogExtensions
+  id: IDialogExtensions
+  parent: Prism.Services.Dialogs
+  children:
+  - Prism.Services.Dialogs.IDialogExtensions.GetDialogParameter``1(Prism.Services.Dialogs.IDialogParameters)
+  - Prism.Services.Dialogs.IDialogExtensions.SetDialogParameter``1(Prism.Services.Dialogs.IDialogParameters,``0)
+  langs:
+  - csharp
+  - vb
+  name: IDialogExtensions
+  nameWithType: IDialogExtensions
+  fullName: Prism.Services.Dialogs.IDialogExtensions
+  type: Class
+  source:
+    id: IDialogExtensions
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Extensions\IDialogExtensions.cs
+    startLine: 8
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Prism.Services.Dialogs
+  summary: Extension methods for IDialogParameters.
+  example: []
+  syntax:
+    content: public static class IDialogExtensions
+    content.vb: Public Module IDialogExtensions
+  inheritance:
+  - System.Object
+- uid: Prism.Services.Dialogs.IDialogExtensions.GetDialogParameter``1(Prism.Services.Dialogs.IDialogParameters)
+  commentId: M:Prism.Services.Dialogs.IDialogExtensions.GetDialogParameter``1(Prism.Services.Dialogs.IDialogParameters)
+  id: GetDialogParameter``1(Prism.Services.Dialogs.IDialogParameters)
+  isExtensionMethod: true
+  parent: Prism.Services.Dialogs.IDialogExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDialogParameter<T>(IDialogParameters)
+  nameWithType: IDialogExtensions.GetDialogParameter<T>(IDialogParameters)
+  fullName: Prism.Services.Dialogs.IDialogExtensions.GetDialogParameter<T>(Prism.Services.Dialogs.IDialogParameters)
+  type: Method
+  source:
+    id: GetDialogParameter
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Extensions\IDialogExtensions.cs
+    startLine: 16
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Prism.Services.Dialogs
+  summary: Gets the dialog parameter of type T from the IDialogParameters.
+  example: []
+  syntax:
+    content: 'public static T GetDialogParameter<T>(this IDialogParameters dialogParameters) where T : class'
+    parameters:
+    - id: dialogParameters
+      type: Prism.Services.Dialogs.IDialogParameters
+      description: The IDialogParameters instance.
+    typeParameters:
+    - id: T
+      description: The type of the dialog parameter.
+    return:
+      type: '{T}'
+      description: The dialog parameter of type T if found; otherwise, null.
+    content.vb: Public Shared Function GetDialogParameter(Of T As Class)(dialogParameters As IDialogParameters) As T
+  overload: Prism.Services.Dialogs.IDialogExtensions.GetDialogParameter*
+  nameWithType.vb: IDialogExtensions.GetDialogParameter(Of T)(IDialogParameters)
+  fullName.vb: Prism.Services.Dialogs.IDialogExtensions.GetDialogParameter(Of T)(Prism.Services.Dialogs.IDialogParameters)
+  name.vb: GetDialogParameter(Of T)(IDialogParameters)
+- uid: Prism.Services.Dialogs.IDialogExtensions.SetDialogParameter``1(Prism.Services.Dialogs.IDialogParameters,``0)
+  commentId: M:Prism.Services.Dialogs.IDialogExtensions.SetDialogParameter``1(Prism.Services.Dialogs.IDialogParameters,``0)
+  id: SetDialogParameter``1(Prism.Services.Dialogs.IDialogParameters,``0)
+  isExtensionMethod: true
+  parent: Prism.Services.Dialogs.IDialogExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetDialogParameter<T>(IDialogParameters, T)
+  nameWithType: IDialogExtensions.SetDialogParameter<T>(IDialogParameters, T)
+  fullName: Prism.Services.Dialogs.IDialogExtensions.SetDialogParameter<T>(Prism.Services.Dialogs.IDialogParameters, T)
+  type: Method
+  source:
+    id: SetDialogParameter
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Extensions\IDialogExtensions.cs
+    startLine: 42
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Prism.Services.Dialogs
+  summary: Sets the dialog parameter of type T in the IDialogParameters.
+  example: []
+  syntax:
+    content: 'public static IDialogParameters SetDialogParameter<T>(this IDialogParameters dialogParameters, T parameter) where T : class'
+    parameters:
+    - id: dialogParameters
+      type: Prism.Services.Dialogs.IDialogParameters
+      description: The IDialogParameters instance.
+    - id: parameter
+      type: '{T}'
+      description: The dialog parameter of type T.
+    typeParameters:
+    - id: T
+      description: The type of the dialog parameter.
+    return:
+      type: Prism.Services.Dialogs.IDialogParameters
+      description: The updated IDialogParameters instance.
+    content.vb: Public Shared Function SetDialogParameter(Of T As Class)(dialogParameters As IDialogParameters, parameter As T) As IDialogParameters
+  overload: Prism.Services.Dialogs.IDialogExtensions.SetDialogParameter*
+  nameWithType.vb: IDialogExtensions.SetDialogParameter(Of T)(IDialogParameters, T)
+  fullName.vb: Prism.Services.Dialogs.IDialogExtensions.SetDialogParameter(Of T)(Prism.Services.Dialogs.IDialogParameters, T)
+  name.vb: SetDialogParameter(Of T)(IDialogParameters, T)
+references:
+- uid: Prism.Services.Dialogs
+  commentId: N:Prism.Services.Dialogs
+  href: Prism.html
+  name: Prism.Services.Dialogs
+  nameWithType: Prism.Services.Dialogs
+  fullName: Prism.Services.Dialogs
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Services
+    name: Services
+    href: Prism.Services.html
+  - name: .
+  - uid: Prism.Services.Dialogs
+    name: Dialogs
+    href: Prism.Services.Dialogs.html
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Services
+    name: Services
+    href: Prism.Services.html
+  - name: .
+  - uid: Prism.Services.Dialogs
+    name: Dialogs
+    href: Prism.Services.Dialogs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Prism.Services.Dialogs.IDialogExtensions.GetDialogParameter*
+  commentId: Overload:Prism.Services.Dialogs.IDialogExtensions.GetDialogParameter
+  href: Prism.Services.Dialogs.IDialogExtensions.GetDialogParameter.html#Prism_Services_Dialogs_IDialogExtensions_GetDialogParameter__1_Prism_Services_Dialogs_IDialogParameters_
+  name: GetDialogParameter
+  nameWithType: IDialogExtensions.GetDialogParameter
+  fullName: Prism.Services.Dialogs.IDialogExtensions.GetDialogParameter
+- uid: Prism.Services.Dialogs.IDialogParameters
+  commentId: T:Prism.Services.Dialogs.IDialogParameters
+  parent: Prism.Services.Dialogs
+  isExternal: true
+  name: IDialogParameters
+  nameWithType: IDialogParameters
+  fullName: Prism.Services.Dialogs.IDialogParameters
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Prism.Services.Dialogs.IDialogExtensions.SetDialogParameter*
+  commentId: Overload:Prism.Services.Dialogs.IDialogExtensions.SetDialogParameter
+  href: Prism.Services.Dialogs.IDialogExtensions.SetDialogParameter.html#Prism_Services_Dialogs_IDialogExtensions_SetDialogParameter__1_Prism_Services_Dialogs_IDialogParameters___0_
+  name: SetDialogParameter
+  nameWithType: IDialogExtensions.SetDialogParameter
+  fullName: Prism.Services.Dialogs.IDialogExtensions.SetDialogParameter
+memberLayout: SeparatePages

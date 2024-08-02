@@ -1,0 +1,733 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1
+  commentId: T:Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1
+  id: EntityTileViewModel`1
+  parent: Innova.Prism.Library.Controls.Tile
+  children:
+  - Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.#ctor(Prism.Events.IEventAggregator)
+  - Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.EventAggregator
+  - Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.TileSelected
+  langs:
+  - csharp
+  - vb
+  name: EntityTileViewModel<T>
+  nameWithType: EntityTileViewModel<T>
+  fullName: Innova.Prism.Library.Controls.Tile.EntityTileViewModel<T>
+  type: Class
+  source:
+    id: EntityTileViewModel
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Tile\TileViewModel.cs
+    startLine: 30
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.Tile
+  syntax:
+    content: 'public class EntityTileViewModel<T> : TileViewModel, INotifyPropertyChanged, ITileViewModel where T : class'
+    typeParameters:
+    - id: T
+    content.vb: Public Class EntityTileViewModel(Of T As Class) Inherits TileViewModel Implements INotifyPropertyChanged, ITileViewModel
+  inheritance:
+  - System.Object
+  - Prism.Mvvm.BindableBase
+  - Innova.Prism.Library.Controls.Tile.TileViewModel
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - Innova.Prism.Library.Controls.Tile.ITileViewModel
+  inheritedMembers:
+  - Innova.Prism.Library.Controls.Tile.TileViewModel.Name
+  - Innova.Prism.Library.Controls.Tile.TileViewModel.Header
+  - Innova.Prism.Library.Controls.Tile.TileViewModel.Description
+  - Innova.Prism.Library.Controls.Tile.TileViewModel.Image
+  - Innova.Prism.Library.Controls.Tile.TileViewModel.TileSelectedCommand
+  - Innova.Prism.Library.Controls.Tile.TileViewModel.BackgroundColor
+  - Innova.Prism.Library.Controls.Tile.TileViewModel.Foreground
+  - Innova.Prism.Library.Controls.Tile.TileViewModel.CanSelectTile
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  - Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  - Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  - Prism.Mvvm.BindableBase.PropertyChanged
+  nameWithType.vb: EntityTileViewModel(Of T)
+  fullName.vb: Innova.Prism.Library.Controls.Tile.EntityTileViewModel(Of T)
+  name.vb: EntityTileViewModel(Of T)
+- uid: Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.EventAggregator
+  commentId: P:Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.EventAggregator
+  id: EventAggregator
+  parent: Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: EventAggregator
+  nameWithType: EntityTileViewModel<T>.EventAggregator
+  fullName: Innova.Prism.Library.Controls.Tile.EntityTileViewModel<T>.EventAggregator
+  type: Property
+  source:
+    id: EventAggregator
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Tile\TileViewModel.cs
+    startLine: 32
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.Tile
+  syntax:
+    content: protected IEventAggregator EventAggregator { get; }
+    parameters: []
+    return:
+      type: Prism.Events.IEventAggregator
+    content.vb: Protected ReadOnly Property EventAggregator As IEventAggregator
+  overload: Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.EventAggregator*
+  nameWithType.vb: EntityTileViewModel(Of T).EventAggregator
+  fullName.vb: Innova.Prism.Library.Controls.Tile.EntityTileViewModel(Of T).EventAggregator
+- uid: Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.#ctor(Prism.Events.IEventAggregator)
+  commentId: M:Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.#ctor(Prism.Events.IEventAggregator)
+  id: '#ctor(Prism.Events.IEventAggregator)'
+  parent: Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: EntityTileViewModel(IEventAggregator)
+  nameWithType: EntityTileViewModel<T>.EntityTileViewModel(IEventAggregator)
+  fullName: Innova.Prism.Library.Controls.Tile.EntityTileViewModel<T>.EntityTileViewModel(Prism.Events.IEventAggregator)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Tile\TileViewModel.cs
+    startLine: 34
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.Tile
+  syntax:
+    content: public EntityTileViewModel(IEventAggregator eventAggregator)
+    parameters:
+    - id: eventAggregator
+      type: Prism.Events.IEventAggregator
+    content.vb: Public Sub New(eventAggregator As IEventAggregator)
+  overload: Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.#ctor*
+  nameWithType.vb: EntityTileViewModel(Of T).New(IEventAggregator)
+  fullName.vb: Innova.Prism.Library.Controls.Tile.EntityTileViewModel(Of T).New(Prism.Events.IEventAggregator)
+  name.vb: New(IEventAggregator)
+- uid: Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.TileSelected
+  commentId: M:Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.TileSelected
+  id: TileSelected
+  parent: Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: TileSelected()
+  nameWithType: EntityTileViewModel<T>.TileSelected()
+  fullName: Innova.Prism.Library.Controls.Tile.EntityTileViewModel<T>.TileSelected()
+  type: Method
+  source:
+    id: TileSelected
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Tile\TileViewModel.cs
+    startLine: 48
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.Tile
+  example: []
+  syntax:
+    content: protected override void TileSelected()
+    content.vb: Protected Overrides Sub TileSelected()
+  overridden: Innova.Prism.Library.Controls.Tile.TileViewModel.TileSelected
+  overload: Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.TileSelected*
+  nameWithType.vb: EntityTileViewModel(Of T).TileSelected()
+  fullName.vb: Innova.Prism.Library.Controls.Tile.EntityTileViewModel(Of T).TileSelected()
+references:
+- uid: Innova.Prism.Library.Controls.Tile
+  commentId: N:Innova.Prism.Library.Controls.Tile
+  href: Innova.html
+  name: Innova.Prism.Library.Controls.Tile
+  nameWithType: Innova.Prism.Library.Controls.Tile
+  fullName: Innova.Prism.Library.Controls.Tile
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Controls
+    name: Controls
+    href: Innova.Prism.Library.Controls.html
+  - name: .
+  - uid: Innova.Prism.Library.Controls.Tile
+    name: Tile
+    href: Innova.Prism.Library.Controls.Tile.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Controls
+    name: Controls
+    href: Innova.Prism.Library.Controls.html
+  - name: .
+  - uid: Innova.Prism.Library.Controls.Tile
+    name: Tile
+    href: Innova.Prism.Library.Controls.Tile.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Prism.Mvvm.BindableBase
+  commentId: T:Prism.Mvvm.BindableBase
+  parent: Prism.Mvvm
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: BindableBase
+  nameWithType: BindableBase
+  fullName: Prism.Mvvm.BindableBase
+- uid: Innova.Prism.Library.Controls.Tile.TileViewModel
+  commentId: T:Innova.Prism.Library.Controls.Tile.TileViewModel
+  parent: Innova.Prism.Library.Controls.Tile
+  href: Innova.Prism.Library.Controls.Tile.TileViewModel.html
+  name: TileViewModel
+  nameWithType: TileViewModel
+  fullName: Innova.Prism.Library.Controls.Tile.TileViewModel
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Innova.Prism.Library.Controls.Tile.ITileViewModel
+  commentId: T:Innova.Prism.Library.Controls.Tile.ITileViewModel
+  parent: Innova.Prism.Library.Controls.Tile
+  href: Innova.Prism.Library.Controls.Tile.ITileViewModel.html
+  name: ITileViewModel
+  nameWithType: ITileViewModel
+  fullName: Innova.Prism.Library.Controls.Tile.ITileViewModel
+- uid: Innova.Prism.Library.Controls.Tile.TileViewModel.Name
+  commentId: P:Innova.Prism.Library.Controls.Tile.TileViewModel.Name
+  parent: Innova.Prism.Library.Controls.Tile.TileViewModel
+  href: Innova.Prism.Library.Controls.Tile.TileViewModel.Name.html#Innova_Prism_Library_Controls_Tile_TileViewModel_Name
+  name: Name
+  nameWithType: TileViewModel.Name
+  fullName: Innova.Prism.Library.Controls.Tile.TileViewModel.Name
+- uid: Innova.Prism.Library.Controls.Tile.TileViewModel.Header
+  commentId: P:Innova.Prism.Library.Controls.Tile.TileViewModel.Header
+  parent: Innova.Prism.Library.Controls.Tile.TileViewModel
+  href: Innova.Prism.Library.Controls.Tile.TileViewModel.Header.html#Innova_Prism_Library_Controls_Tile_TileViewModel_Header
+  name: Header
+  nameWithType: TileViewModel.Header
+  fullName: Innova.Prism.Library.Controls.Tile.TileViewModel.Header
+- uid: Innova.Prism.Library.Controls.Tile.TileViewModel.Description
+  commentId: P:Innova.Prism.Library.Controls.Tile.TileViewModel.Description
+  parent: Innova.Prism.Library.Controls.Tile.TileViewModel
+  href: Innova.Prism.Library.Controls.Tile.TileViewModel.Description.html#Innova_Prism_Library_Controls_Tile_TileViewModel_Description
+  name: Description
+  nameWithType: TileViewModel.Description
+  fullName: Innova.Prism.Library.Controls.Tile.TileViewModel.Description
+- uid: Innova.Prism.Library.Controls.Tile.TileViewModel.Image
+  commentId: P:Innova.Prism.Library.Controls.Tile.TileViewModel.Image
+  parent: Innova.Prism.Library.Controls.Tile.TileViewModel
+  href: Innova.Prism.Library.Controls.Tile.TileViewModel.Image.html#Innova_Prism_Library_Controls_Tile_TileViewModel_Image
+  name: Image
+  nameWithType: TileViewModel.Image
+  fullName: Innova.Prism.Library.Controls.Tile.TileViewModel.Image
+- uid: Innova.Prism.Library.Controls.Tile.TileViewModel.TileSelectedCommand
+  commentId: P:Innova.Prism.Library.Controls.Tile.TileViewModel.TileSelectedCommand
+  parent: Innova.Prism.Library.Controls.Tile.TileViewModel
+  href: Innova.Prism.Library.Controls.Tile.TileViewModel.TileSelectedCommand.html#Innova_Prism_Library_Controls_Tile_TileViewModel_TileSelectedCommand
+  name: TileSelectedCommand
+  nameWithType: TileViewModel.TileSelectedCommand
+  fullName: Innova.Prism.Library.Controls.Tile.TileViewModel.TileSelectedCommand
+- uid: Innova.Prism.Library.Controls.Tile.TileViewModel.BackgroundColor
+  commentId: P:Innova.Prism.Library.Controls.Tile.TileViewModel.BackgroundColor
+  parent: Innova.Prism.Library.Controls.Tile.TileViewModel
+  href: Innova.Prism.Library.Controls.Tile.TileViewModel.BackgroundColor.html#Innova_Prism_Library_Controls_Tile_TileViewModel_BackgroundColor
+  name: BackgroundColor
+  nameWithType: TileViewModel.BackgroundColor
+  fullName: Innova.Prism.Library.Controls.Tile.TileViewModel.BackgroundColor
+- uid: Innova.Prism.Library.Controls.Tile.TileViewModel.Foreground
+  commentId: P:Innova.Prism.Library.Controls.Tile.TileViewModel.Foreground
+  parent: Innova.Prism.Library.Controls.Tile.TileViewModel
+  href: Innova.Prism.Library.Controls.Tile.TileViewModel.Foreground.html#Innova_Prism_Library_Controls_Tile_TileViewModel_Foreground
+  name: Foreground
+  nameWithType: TileViewModel.Foreground
+  fullName: Innova.Prism.Library.Controls.Tile.TileViewModel.Foreground
+- uid: Innova.Prism.Library.Controls.Tile.TileViewModel.CanSelectTile
+  commentId: M:Innova.Prism.Library.Controls.Tile.TileViewModel.CanSelectTile
+  parent: Innova.Prism.Library.Controls.Tile.TileViewModel
+  href: Innova.Prism.Library.Controls.Tile.TileViewModel.CanSelectTile.html#Innova_Prism_Library_Controls_Tile_TileViewModel_CanSelectTile
+  name: CanSelectTile()
+  nameWithType: TileViewModel.CanSelectTile()
+  fullName: Innova.Prism.Library.Controls.Tile.TileViewModel.CanSelectTile()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Controls.Tile.TileViewModel.CanSelectTile
+    name: CanSelectTile
+    href: Innova.Prism.Library.Controls.Tile.TileViewModel.CanSelectTile.html#Innova_Prism_Library_Controls_Tile_TileViewModel_CanSelectTile
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Controls.Tile.TileViewModel.CanSelectTile
+    name: CanSelectTile
+    href: Innova.Prism.Library.Controls.Tile.TileViewModel.CanSelectTile.html#Innova_Prism_Library_Controls_Tile_TileViewModel_CanSelectTile
+  - name: (
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  commentId: M:Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: RaisePropertyChanged(string)
+  nameWithType: BindableBase.RaisePropertyChanged(string)
+  fullName: Prism.Mvvm.BindableBase.RaisePropertyChanged(string)
+  nameWithType.vb: BindableBase.RaisePropertyChanged(String)
+  fullName.vb: Prism.Mvvm.BindableBase.RaisePropertyChanged(String)
+  name.vb: RaisePropertyChanged(String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: OnPropertyChanged(PropertyChangedEventArgs)
+  nameWithType: BindableBase.OnPropertyChanged(PropertyChangedEventArgs)
+  fullName: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: Prism.Mvvm.BindableBase.PropertyChanged
+  commentId: E:Prism.Mvvm.BindableBase.PropertyChanged
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: PropertyChanged
+  nameWithType: BindableBase.PropertyChanged
+  fullName: Prism.Mvvm.BindableBase.PropertyChanged
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Prism.Mvvm
+  commentId: N:Prism.Mvvm
+  isExternal: true
+  name: Prism.Mvvm
+  nameWithType: Prism.Mvvm
+  fullName: Prism.Mvvm
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.EventAggregator*
+  commentId: Overload:Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.EventAggregator
+  href: Innova.Prism.Library.Controls.Tile.EntityTileViewModel-1.EventAggregator.html#Innova_Prism_Library_Controls_Tile_EntityTileViewModel_1_EventAggregator
+  name: EventAggregator
+  nameWithType: EntityTileViewModel<T>.EventAggregator
+  fullName: Innova.Prism.Library.Controls.Tile.EntityTileViewModel<T>.EventAggregator
+  nameWithType.vb: EntityTileViewModel(Of T).EventAggregator
+  fullName.vb: Innova.Prism.Library.Controls.Tile.EntityTileViewModel(Of T).EventAggregator
+- uid: Prism.Events.IEventAggregator
+  commentId: T:Prism.Events.IEventAggregator
+  parent: Prism.Events
+  isExternal: true
+  name: IEventAggregator
+  nameWithType: IEventAggregator
+  fullName: Prism.Events.IEventAggregator
+- uid: Prism.Events
+  commentId: N:Prism.Events
+  isExternal: true
+  name: Prism.Events
+  nameWithType: Prism.Events
+  fullName: Prism.Events
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+- uid: Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.#ctor*
+  commentId: Overload:Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.#ctor
+  href: Innova.Prism.Library.Controls.Tile.EntityTileViewModel-1.-ctor.html#Innova_Prism_Library_Controls_Tile_EntityTileViewModel_1__ctor_Prism_Events_IEventAggregator_
+  name: EntityTileViewModel
+  nameWithType: EntityTileViewModel<T>.EntityTileViewModel
+  fullName: Innova.Prism.Library.Controls.Tile.EntityTileViewModel<T>.EntityTileViewModel
+  nameWithType.vb: EntityTileViewModel(Of T).New
+  fullName.vb: Innova.Prism.Library.Controls.Tile.EntityTileViewModel(Of T).New
+  name.vb: New
+- uid: Innova.Prism.Library.Controls.Tile.TileViewModel.TileSelected
+  commentId: M:Innova.Prism.Library.Controls.Tile.TileViewModel.TileSelected
+  parent: Innova.Prism.Library.Controls.Tile.TileViewModel
+  href: Innova.Prism.Library.Controls.Tile.TileViewModel.TileSelected.html#Innova_Prism_Library_Controls_Tile_TileViewModel_TileSelected
+  name: TileSelected()
+  nameWithType: TileViewModel.TileSelected()
+  fullName: Innova.Prism.Library.Controls.Tile.TileViewModel.TileSelected()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Controls.Tile.TileViewModel.TileSelected
+    name: TileSelected
+    href: Innova.Prism.Library.Controls.Tile.TileViewModel.TileSelected.html#Innova_Prism_Library_Controls_Tile_TileViewModel_TileSelected
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Controls.Tile.TileViewModel.TileSelected
+    name: TileSelected
+    href: Innova.Prism.Library.Controls.Tile.TileViewModel.TileSelected.html#Innova_Prism_Library_Controls_Tile_TileViewModel_TileSelected
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.TileSelected*
+  commentId: Overload:Innova.Prism.Library.Controls.Tile.EntityTileViewModel`1.TileSelected
+  href: Innova.Prism.Library.Controls.Tile.EntityTileViewModel-1.TileSelected.html#Innova_Prism_Library_Controls_Tile_EntityTileViewModel_1_TileSelected
+  name: TileSelected
+  nameWithType: EntityTileViewModel<T>.TileSelected
+  fullName: Innova.Prism.Library.Controls.Tile.EntityTileViewModel<T>.TileSelected
+  nameWithType.vb: EntityTileViewModel(Of T).TileSelected
+  fullName.vb: Innova.Prism.Library.Controls.Tile.EntityTileViewModel(Of T).TileSelected
+memberLayout: SeparatePages

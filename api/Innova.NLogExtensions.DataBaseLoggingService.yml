@@ -1,0 +1,633 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.NLogExtensions.DataBaseLoggingService
+  commentId: T:Innova.NLogExtensions.DataBaseLoggingService
+  id: DataBaseLoggingService
+  parent: Innova.NLogExtensions
+  children:
+  - Innova.NLogExtensions.DataBaseLoggingService.#ctor(Innova.Data.IDbContextFactory{Innova.AppExtensions.Log.Data.Entity.LogDbContext})
+  - Innova.NLogExtensions.DataBaseLoggingService.Map(NLog.LogEventInfo)
+  langs:
+  - csharp
+  - vb
+  name: DataBaseLoggingService
+  nameWithType: DataBaseLoggingService
+  fullName: Innova.NLogExtensions.DataBaseLoggingService
+  type: Class
+  source:
+    id: DataBaseLoggingService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\DataBaseLoggingService.cs
+    startLine: 11
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Represents a service for logging to a database.
+  example: []
+  syntax:
+    content: 'public class DataBaseLoggingService : DataBaseLoggingServiceBase<InnovaStandardLog, LogDbContext>, IDataBaseLoggingService'
+    content.vb: Public Class DataBaseLoggingService Inherits DataBaseLoggingServiceBase(Of InnovaStandardLog, LogDbContext) Implements IDataBaseLoggingService
+  inheritance:
+  - System.Object
+  - Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}
+  implements:
+  - Innova.NLogExtensions.IDataBaseLoggingService
+  inheritedMembers:
+  - Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}._dbContextFactory
+  - Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  - Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.Map(System.Collections.Generic.List{NLog.LogEventInfo})
+  - Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.Map(NLog.LogEventInfo)
+- uid: Innova.NLogExtensions.DataBaseLoggingService.#ctor(Innova.Data.IDbContextFactory{Innova.AppExtensions.Log.Data.Entity.LogDbContext})
+  commentId: M:Innova.NLogExtensions.DataBaseLoggingService.#ctor(Innova.Data.IDbContextFactory{Innova.AppExtensions.Log.Data.Entity.LogDbContext})
+  id: '#ctor(Innova.Data.IDbContextFactory{Innova.AppExtensions.Log.Data.Entity.LogDbContext})'
+  parent: Innova.NLogExtensions.DataBaseLoggingService
+  langs:
+  - csharp
+  - vb
+  name: DataBaseLoggingService(IDbContextFactory<LogDbContext>)
+  nameWithType: DataBaseLoggingService.DataBaseLoggingService(IDbContextFactory<LogDbContext>)
+  fullName: Innova.NLogExtensions.DataBaseLoggingService.DataBaseLoggingService(Innova.Data.IDbContextFactory<Innova.AppExtensions.Log.Data.Entity.LogDbContext>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\DataBaseLoggingService.cs
+    startLine: 17
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Initializes a new instance of the <xref href="Innova.NLogExtensions.DataBaseLoggingService" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public DataBaseLoggingService(IDbContextFactory<LogDbContext> logDbContextFactory)
+    parameters:
+    - id: logDbContextFactory
+      type: Innova.Data.IDbContextFactory{Innova.AppExtensions.Log.Data.Entity.LogDbContext}
+      description: The factory for creating the log database context.
+    content.vb: Public Sub New(logDbContextFactory As IDbContextFactory(Of LogDbContext))
+  overload: Innova.NLogExtensions.DataBaseLoggingService.#ctor*
+  nameWithType.vb: DataBaseLoggingService.New(IDbContextFactory(Of LogDbContext))
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingService.New(Innova.Data.IDbContextFactory(Of Innova.AppExtensions.Log.Data.Entity.LogDbContext))
+  name.vb: New(IDbContextFactory(Of LogDbContext))
+- uid: Innova.NLogExtensions.DataBaseLoggingService.Map(NLog.LogEventInfo)
+  commentId: M:Innova.NLogExtensions.DataBaseLoggingService.Map(NLog.LogEventInfo)
+  id: Map(NLog.LogEventInfo)
+  parent: Innova.NLogExtensions.DataBaseLoggingService
+  langs:
+  - csharp
+  - vb
+  name: Map(LogEventInfo)
+  nameWithType: DataBaseLoggingService.Map(LogEventInfo)
+  fullName: Innova.NLogExtensions.DataBaseLoggingService.Map(NLog.LogEventInfo)
+  type: Method
+  source:
+    id: Map
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\DataBaseLoggingService.cs
+    startLine: 26
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Maps the log event information to an instance of <xref href="Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected override InnovaStandardLog Map(LogEventInfo logEvent)
+    parameters:
+    - id: logEvent
+      type: NLog.LogEventInfo
+      description: The log event information.
+    return:
+      type: Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog
+      description: An instance of <xref href="Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Protected Overrides Function Map(logEvent As LogEventInfo) As InnovaStandardLog
+  overridden: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.Map(NLog.LogEventInfo)
+  overload: Innova.NLogExtensions.DataBaseLoggingService.Map*
+references:
+- uid: Innova.NLogExtensions
+  commentId: N:Innova.NLogExtensions
+  href: Innova.html
+  name: Innova.NLogExtensions
+  nameWithType: Innova.NLogExtensions
+  fullName: Innova.NLogExtensions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.NLogExtensions
+    name: NLogExtensions
+    href: Innova.NLogExtensions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.NLogExtensions
+    name: NLogExtensions
+    href: Innova.NLogExtensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}
+  commentId: T:Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}
+  parent: Innova.NLogExtensions
+  definition: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+  href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.html
+  name: DataBaseLoggingServiceBase<InnovaStandardLog, LogDbContext>
+  nameWithType: DataBaseLoggingServiceBase<InnovaStandardLog, LogDbContext>
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog, Innova.AppExtensions.Log.Data.Entity.LogDbContext>
+  nameWithType.vb: DataBaseLoggingServiceBase(Of InnovaStandardLog, LogDbContext)
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog, Innova.AppExtensions.Log.Data.Entity.LogDbContext)
+  name.vb: DataBaseLoggingServiceBase(Of InnovaStandardLog, LogDbContext)
+  spec.csharp:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+    name: DataBaseLoggingServiceBase
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.html
+  - name: <
+  - uid: Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog
+    name: InnovaStandardLog
+  - name: ','
+  - name: " "
+  - uid: Innova.AppExtensions.Log.Data.Entity.LogDbContext
+    name: LogDbContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+    name: DataBaseLoggingServiceBase
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog
+    name: InnovaStandardLog
+  - name: ','
+  - name: " "
+  - uid: Innova.AppExtensions.Log.Data.Entity.LogDbContext
+    name: LogDbContext
+  - name: )
+- uid: Innova.NLogExtensions.IDataBaseLoggingService
+  commentId: T:Innova.NLogExtensions.IDataBaseLoggingService
+  parent: Innova.NLogExtensions
+  href: Innova.NLogExtensions.IDataBaseLoggingService.html
+  name: IDataBaseLoggingService
+  nameWithType: IDataBaseLoggingService
+  fullName: Innova.NLogExtensions.IDataBaseLoggingService
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}._dbContextFactory
+  commentId: F:Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}._dbContextFactory
+  parent: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}
+  definition: Innova.NLogExtensions.DataBaseLoggingServiceBase`2._dbContextFactory
+  href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2._dbContextFactory.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2__dbContextFactory
+  name: _dbContextFactory
+  nameWithType: DataBaseLoggingServiceBase<InnovaStandardLog, LogDbContext>._dbContextFactory
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog, Innova.AppExtensions.Log.Data.Entity.LogDbContext>._dbContextFactory
+  nameWithType.vb: DataBaseLoggingServiceBase(Of InnovaStandardLog, LogDbContext)._dbContextFactory
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog, Innova.AppExtensions.Log.Data.Entity.LogDbContext)._dbContextFactory
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  commentId: M:Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  parent: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}
+  definition: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.LogAsync.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_LogAsync_System_Collections_Generic_List_NLog_LogEventInfo__System_Threading_CancellationToken_
+  name: LogAsync(List<LogEventInfo>, CancellationToken)
+  nameWithType: DataBaseLoggingServiceBase<InnovaStandardLog, LogDbContext>.LogAsync(List<LogEventInfo>, CancellationToken)
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog, Innova.AppExtensions.Log.Data.Entity.LogDbContext>.LogAsync(System.Collections.Generic.List<NLog.LogEventInfo>, System.Threading.CancellationToken)
+  nameWithType.vb: DataBaseLoggingServiceBase(Of InnovaStandardLog, LogDbContext).LogAsync(List(Of LogEventInfo), CancellationToken)
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog, Innova.AppExtensions.Log.Data.Entity.LogDbContext).LogAsync(System.Collections.Generic.List(Of NLog.LogEventInfo), System.Threading.CancellationToken)
+  name.vb: LogAsync(List(Of LogEventInfo), CancellationToken)
+  spec.csharp:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+    name: LogAsync
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.LogAsync.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_LogAsync_System_Collections_Generic_List_NLog_LogEventInfo__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+    name: LogAsync
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.LogAsync.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_LogAsync_System_Collections_Generic_List_NLog_LogEventInfo__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.Map(System.Collections.Generic.List{NLog.LogEventInfo})
+  commentId: M:Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.Map(System.Collections.Generic.List{NLog.LogEventInfo})
+  parent: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}
+  definition: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(System.Collections.Generic.List{NLog.LogEventInfo})
+  href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.Map.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_Map_System_Collections_Generic_List_NLog_LogEventInfo__
+  name: Map(List<LogEventInfo>)
+  nameWithType: DataBaseLoggingServiceBase<InnovaStandardLog, LogDbContext>.Map(List<LogEventInfo>)
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog, Innova.AppExtensions.Log.Data.Entity.LogDbContext>.Map(System.Collections.Generic.List<NLog.LogEventInfo>)
+  nameWithType.vb: DataBaseLoggingServiceBase(Of InnovaStandardLog, LogDbContext).Map(List(Of LogEventInfo))
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog, Innova.AppExtensions.Log.Data.Entity.LogDbContext).Map(System.Collections.Generic.List(Of NLog.LogEventInfo))
+  name.vb: Map(List(Of LogEventInfo))
+  spec.csharp:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.Map(System.Collections.Generic.List{NLog.LogEventInfo})
+    name: Map
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.Map.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_Map_System_Collections_Generic_List_NLog_LogEventInfo__
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.Map(System.Collections.Generic.List{NLog.LogEventInfo})
+    name: Map
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.Map.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_Map_System_Collections_Generic_List_NLog_LogEventInfo__
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.Map(NLog.LogEventInfo)
+  commentId: M:Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.Map(NLog.LogEventInfo)
+  parent: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}
+  definition: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(NLog.LogEventInfo)
+  href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.Map.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_Map_NLog_LogEventInfo_
+  name: Map(LogEventInfo)
+  nameWithType: DataBaseLoggingServiceBase<InnovaStandardLog, LogDbContext>.Map(LogEventInfo)
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog, Innova.AppExtensions.Log.Data.Entity.LogDbContext>.Map(NLog.LogEventInfo)
+  nameWithType.vb: DataBaseLoggingServiceBase(Of InnovaStandardLog, LogDbContext).Map(LogEventInfo)
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog, Innova.AppExtensions.Log.Data.Entity.LogDbContext).Map(NLog.LogEventInfo)
+  spec.csharp:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.Map(NLog.LogEventInfo)
+    name: Map
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.Map.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_Map_NLog_LogEventInfo_
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase{Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog,Innova.AppExtensions.Log.Data.Entity.LogDbContext}.Map(NLog.LogEventInfo)
+    name: Map
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.Map.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_Map_NLog_LogEventInfo_
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+  commentId: T:Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+  href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.html
+  name: DataBaseLoggingServiceBase<T, TContext>
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext)
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext)
+  name.vb: DataBaseLoggingServiceBase(Of T, TContext)
+  spec.csharp:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+    name: DataBaseLoggingServiceBase
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+    name: DataBaseLoggingServiceBase
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2._dbContextFactory
+  commentId: F:Innova.NLogExtensions.DataBaseLoggingServiceBase`2._dbContextFactory
+  href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2._dbContextFactory.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2__dbContextFactory
+  name: _dbContextFactory
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>._dbContextFactory
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>._dbContextFactory
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext)._dbContextFactory
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext)._dbContextFactory
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  commentId: M:Innova.NLogExtensions.DataBaseLoggingServiceBase`2.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  isExternal: true
+  href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.LogAsync.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_LogAsync_System_Collections_Generic_List_NLog_LogEventInfo__System_Threading_CancellationToken_
+  name: LogAsync(List<LogEventInfo>, CancellationToken)
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>.LogAsync(List<LogEventInfo>, CancellationToken)
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>.LogAsync(System.Collections.Generic.List<NLog.LogEventInfo>, System.Threading.CancellationToken)
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext).LogAsync(List(Of LogEventInfo), CancellationToken)
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext).LogAsync(System.Collections.Generic.List(Of NLog.LogEventInfo), System.Threading.CancellationToken)
+  name.vb: LogAsync(List(Of LogEventInfo), CancellationToken)
+  spec.csharp:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+    name: LogAsync
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.LogAsync.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_LogAsync_System_Collections_Generic_List_NLog_LogEventInfo__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+    name: LogAsync
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.LogAsync.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_LogAsync_System_Collections_Generic_List_NLog_LogEventInfo__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(System.Collections.Generic.List{NLog.LogEventInfo})
+  commentId: M:Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(System.Collections.Generic.List{NLog.LogEventInfo})
+  isExternal: true
+  href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.Map.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_Map_System_Collections_Generic_List_NLog_LogEventInfo__
+  name: Map(List<LogEventInfo>)
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>.Map(List<LogEventInfo>)
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>.Map(System.Collections.Generic.List<NLog.LogEventInfo>)
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext).Map(List(Of LogEventInfo))
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext).Map(System.Collections.Generic.List(Of NLog.LogEventInfo))
+  name.vb: Map(List(Of LogEventInfo))
+  spec.csharp:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(System.Collections.Generic.List{NLog.LogEventInfo})
+    name: Map
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.Map.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_Map_System_Collections_Generic_List_NLog_LogEventInfo__
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(System.Collections.Generic.List{NLog.LogEventInfo})
+    name: Map
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.Map.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_Map_System_Collections_Generic_List_NLog_LogEventInfo__
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(NLog.LogEventInfo)
+  commentId: M:Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(NLog.LogEventInfo)
+  isExternal: true
+  href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.Map.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_Map_NLog_LogEventInfo_
+  name: Map(LogEventInfo)
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>.Map(LogEventInfo)
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>.Map(NLog.LogEventInfo)
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext).Map(LogEventInfo)
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext).Map(NLog.LogEventInfo)
+  spec.csharp:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(NLog.LogEventInfo)
+    name: Map
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.Map.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_Map_NLog_LogEventInfo_
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(NLog.LogEventInfo)
+    name: Map
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.Map.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_Map_NLog_LogEventInfo_
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+- uid: Innova.NLogExtensions.DataBaseLoggingService
+  commentId: T:Innova.NLogExtensions.DataBaseLoggingService
+  href: Innova.NLogExtensions.DataBaseLoggingService.html
+  name: DataBaseLoggingService
+  nameWithType: DataBaseLoggingService
+  fullName: Innova.NLogExtensions.DataBaseLoggingService
+- uid: Innova.NLogExtensions.DataBaseLoggingService.#ctor*
+  commentId: Overload:Innova.NLogExtensions.DataBaseLoggingService.#ctor
+  href: Innova.NLogExtensions.DataBaseLoggingService.-ctor.html#Innova_NLogExtensions_DataBaseLoggingService__ctor_Innova_Data_IDbContextFactory_Innova_AppExtensions_Log_Data_Entity_LogDbContext__
+  name: DataBaseLoggingService
+  nameWithType: DataBaseLoggingService.DataBaseLoggingService
+  fullName: Innova.NLogExtensions.DataBaseLoggingService.DataBaseLoggingService
+  nameWithType.vb: DataBaseLoggingService.New
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingService.New
+  name.vb: New
+- uid: Innova.Data.IDbContextFactory{Innova.AppExtensions.Log.Data.Entity.LogDbContext}
+  commentId: T:Innova.Data.IDbContextFactory{Innova.AppExtensions.Log.Data.Entity.LogDbContext}
+  parent: Innova.Data
+  definition: Innova.Data.IDbContextFactory`1
+  name: IDbContextFactory<LogDbContext>
+  nameWithType: IDbContextFactory<LogDbContext>
+  fullName: Innova.Data.IDbContextFactory<Innova.AppExtensions.Log.Data.Entity.LogDbContext>
+  nameWithType.vb: IDbContextFactory(Of LogDbContext)
+  fullName.vb: Innova.Data.IDbContextFactory(Of Innova.AppExtensions.Log.Data.Entity.LogDbContext)
+  name.vb: IDbContextFactory(Of LogDbContext)
+  spec.csharp:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+  - name: <
+  - uid: Innova.AppExtensions.Log.Data.Entity.LogDbContext
+    name: LogDbContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.AppExtensions.Log.Data.Entity.LogDbContext
+    name: LogDbContext
+  - name: )
+- uid: Innova.Data.IDbContextFactory`1
+  commentId: T:Innova.Data.IDbContextFactory`1
+  href: Innova.Data.IDbContextFactory-1.html
+  name: IDbContextFactory<TContext>
+  nameWithType: IDbContextFactory<TContext>
+  fullName: Innova.Data.IDbContextFactory<TContext>
+  nameWithType.vb: IDbContextFactory(Of TContext)
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext)
+  name.vb: IDbContextFactory(Of TContext)
+  spec.csharp:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+    href: Innova.Data.IDbContextFactory-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+    href: Innova.Data.IDbContextFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Innova.Data
+  commentId: N:Innova.Data
+  href: Innova.html
+  name: Innova.Data
+  nameWithType: Innova.Data
+  fullName: Innova.Data
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+- uid: Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog
+  commentId: T:Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog
+  parent: Innova.AppExtensions.Log.Data.Entity
+  name: InnovaStandardLog
+  nameWithType: InnovaStandardLog
+  fullName: Innova.AppExtensions.Log.Data.Entity.InnovaStandardLog
+- uid: Innova.NLogExtensions.DataBaseLoggingService.Map*
+  commentId: Overload:Innova.NLogExtensions.DataBaseLoggingService.Map
+  href: Innova.NLogExtensions.DataBaseLoggingService.Map.html#Innova_NLogExtensions_DataBaseLoggingService_Map_NLog_LogEventInfo_
+  name: Map
+  nameWithType: DataBaseLoggingService.Map
+  fullName: Innova.NLogExtensions.DataBaseLoggingService.Map
+- uid: NLog.LogEventInfo
+  commentId: T:NLog.LogEventInfo
+  parent: NLog
+  isExternal: true
+  name: LogEventInfo
+  nameWithType: LogEventInfo
+  fullName: NLog.LogEventInfo
+- uid: Innova.AppExtensions.Log.Data.Entity
+  commentId: N:Innova.AppExtensions.Log.Data.Entity
+  name: Innova.AppExtensions.Log.Data.Entity
+  nameWithType: Innova.AppExtensions.Log.Data.Entity
+  fullName: Innova.AppExtensions.Log.Data.Entity
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+  - name: .
+  - uid: Innova.AppExtensions
+    name: AppExtensions
+  - name: .
+  - uid: Innova.AppExtensions.Log
+    name: Log
+  - name: .
+  - uid: Innova.AppExtensions.Log.Data
+    name: Data
+  - name: .
+  - uid: Innova.AppExtensions.Log.Data.Entity
+    name: Entity
+  spec.vb:
+  - uid: Innova
+    name: Innova
+  - name: .
+  - uid: Innova.AppExtensions
+    name: AppExtensions
+  - name: .
+  - uid: Innova.AppExtensions.Log
+    name: Log
+  - name: .
+  - uid: Innova.AppExtensions.Log.Data
+    name: Data
+  - name: .
+  - uid: Innova.AppExtensions.Log.Data.Entity
+    name: Entity
+- uid: NLog
+  commentId: N:NLog
+  isExternal: true
+  name: NLog
+  nameWithType: NLog
+  fullName: NLog
+memberLayout: SeparatePages

@@ -1,0 +1,692 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Services.LookupService
+  commentId: T:Innova.Prism.Library.Services.LookupService
+  id: LookupService
+  parent: Innova.Prism.Library.Services
+  children:
+  - Innova.Prism.Library.Services.LookupService.#ctor(System.IServiceProvider,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  - Innova.Prism.Library.Services.LookupService.ClearCache``1
+  - Innova.Prism.Library.Services.LookupService.GetActiveFilteredList``1(System.Collections.Generic.List{``0},Innova.Data.Entity.PrimaryKeys{``0}[])
+  - Innova.Prism.Library.Services.LookupService.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  langs:
+  - csharp
+  - vb
+  name: LookupService
+  nameWithType: LookupService
+  fullName: Innova.Prism.Library.Services.LookupService
+  type: Class
+  source:
+    id: LookupService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\LookupService.cs
+    startLine: 17
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Service for retrieving lookup lists.
+  example: []
+  syntax:
+    content: 'public class LookupService : ILookupService'
+    content.vb: Public Class LookupService Implements ILookupService
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Prism.Library.Services.ILookupService
+- uid: Innova.Prism.Library.Services.LookupService.#ctor(System.IServiceProvider,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  commentId: M:Innova.Prism.Library.Services.LookupService.#ctor(System.IServiceProvider,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  id: '#ctor(System.IServiceProvider,Microsoft.Extensions.Caching.Memory.IMemoryCache)'
+  parent: Innova.Prism.Library.Services.LookupService
+  langs:
+  - csharp
+  - vb
+  name: LookupService(IServiceProvider, IMemoryCache)
+  nameWithType: LookupService.LookupService(IServiceProvider, IMemoryCache)
+  fullName: Innova.Prism.Library.Services.LookupService.LookupService(System.IServiceProvider, Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\LookupService.cs
+    startLine: 27
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Services.LookupService" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public LookupService(IServiceProvider serviceProvider, IMemoryCache memoryCache)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+      description: The service provider.
+    - id: memoryCache
+      type: Microsoft.Extensions.Caching.Memory.IMemoryCache
+      description: The memory cache.
+    content.vb: Public Sub New(serviceProvider As IServiceProvider, memoryCache As IMemoryCache)
+  overload: Innova.Prism.Library.Services.LookupService.#ctor*
+  nameWithType.vb: LookupService.New(IServiceProvider, IMemoryCache)
+  fullName.vb: Innova.Prism.Library.Services.LookupService.New(System.IServiceProvider, Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  name.vb: New(IServiceProvider, IMemoryCache)
+- uid: Innova.Prism.Library.Services.LookupService.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  commentId: M:Innova.Prism.Library.Services.LookupService.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  id: GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  parent: Innova.Prism.Library.Services.LookupService
+  langs:
+  - csharp
+  - vb
+  name: GetLookupList<T>(params PrimaryKeys<T>[])
+  nameWithType: LookupService.GetLookupList<T>(params PrimaryKeys<T>[])
+  fullName: Innova.Prism.Library.Services.LookupService.GetLookupList<T>(params Innova.Data.Entity.PrimaryKeys<T>[])
+  type: Method
+  source:
+    id: GetLookupList
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\LookupService.cs
+    startLine: 39
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Gets the lookup list for the specified entity type.
+  example: []
+  syntax:
+    content: 'public Task<ObservableCollection<T>> GetLookupList<T>(params PrimaryKeys<T>[] keys) where T : class'
+    parameters:
+    - id: keys
+      type: Innova.Data.Entity.PrimaryKeys{{T}}[]
+      description: The primary keys.
+    typeParameters:
+    - id: T
+      description: The entity type.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.ObjectModel.ObservableCollection{{T}}}
+      description: The lookup list as an observable collection.
+    content.vb: Public Function GetLookupList(Of T As Class)(ParamArray keys As PrimaryKeys(Of T)()) As Task(Of ObservableCollection(Of T))
+  overload: Innova.Prism.Library.Services.LookupService.GetLookupList*
+  implements:
+  - Innova.Prism.Library.Services.ILookupService.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{{T}}[])
+  nameWithType.vb: LookupService.GetLookupList(Of T)(ParamArray PrimaryKeys(Of T)())
+  fullName.vb: Innova.Prism.Library.Services.LookupService.GetLookupList(Of T)(ParamArray Innova.Data.Entity.PrimaryKeys(Of T)())
+  name.vb: GetLookupList(Of T)(ParamArray PrimaryKeys(Of T)())
+- uid: Innova.Prism.Library.Services.LookupService.ClearCache``1
+  commentId: M:Innova.Prism.Library.Services.LookupService.ClearCache``1
+  id: ClearCache``1
+  parent: Innova.Prism.Library.Services.LookupService
+  langs:
+  - csharp
+  - vb
+  name: ClearCache<T>()
+  nameWithType: LookupService.ClearCache<T>()
+  fullName: Innova.Prism.Library.Services.LookupService.ClearCache<T>()
+  type: Method
+  source:
+    id: ClearCache
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\LookupService.cs
+    startLine: 71
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Clears the cache for the specified entity type.
+  example: []
+  syntax:
+    content: 'public void ClearCache<T>() where T : class'
+    typeParameters:
+    - id: T
+      description: The entity type.
+    content.vb: Public Sub ClearCache(Of T As Class)()
+  overload: Innova.Prism.Library.Services.LookupService.ClearCache*
+  implements:
+  - Innova.Prism.Library.Services.ILookupService.ClearCache``1
+  nameWithType.vb: LookupService.ClearCache(Of T)()
+  fullName.vb: Innova.Prism.Library.Services.LookupService.ClearCache(Of T)()
+  name.vb: ClearCache(Of T)()
+- uid: Innova.Prism.Library.Services.LookupService.GetActiveFilteredList``1(System.Collections.Generic.List{``0},Innova.Data.Entity.PrimaryKeys{``0}[])
+  commentId: M:Innova.Prism.Library.Services.LookupService.GetActiveFilteredList``1(System.Collections.Generic.List{``0},Innova.Data.Entity.PrimaryKeys{``0}[])
+  id: GetActiveFilteredList``1(System.Collections.Generic.List{``0},Innova.Data.Entity.PrimaryKeys{``0}[])
+  parent: Innova.Prism.Library.Services.LookupService
+  langs:
+  - csharp
+  - vb
+  name: GetActiveFilteredList<T>(List<T>, params PrimaryKeys<T>[])
+  nameWithType: LookupService.GetActiveFilteredList<T>(List<T>, params PrimaryKeys<T>[])
+  fullName: Innova.Prism.Library.Services.LookupService.GetActiveFilteredList<T>(System.Collections.Generic.List<T>, params Innova.Data.Entity.PrimaryKeys<T>[])
+  type: Method
+  source:
+    id: GetActiveFilteredList
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\LookupService.cs
+    startLine: 95
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  syntax:
+    content: 'public List<T> GetActiveFilteredList<T>(List<T> baseItems, params PrimaryKeys<T>[] keys) where T : class'
+    parameters:
+    - id: baseItems
+      type: System.Collections.Generic.List{{T}}
+    - id: keys
+      type: Innova.Data.Entity.PrimaryKeys{{T}}[]
+    typeParameters:
+    - id: T
+    return:
+      type: System.Collections.Generic.List{{T}}
+    content.vb: Public Function GetActiveFilteredList(Of T As Class)(baseItems As List(Of T), ParamArray keys As PrimaryKeys(Of T)()) As List(Of T)
+  overload: Innova.Prism.Library.Services.LookupService.GetActiveFilteredList*
+  nameWithType.vb: LookupService.GetActiveFilteredList(Of T)(List(Of T), ParamArray PrimaryKeys(Of T)())
+  fullName.vb: Innova.Prism.Library.Services.LookupService.GetActiveFilteredList(Of T)(System.Collections.Generic.List(Of T), ParamArray Innova.Data.Entity.PrimaryKeys(Of T)())
+  name.vb: GetActiveFilteredList(Of T)(List(Of T), ParamArray PrimaryKeys(Of T)())
+references:
+- uid: Innova.Prism.Library.Services
+  commentId: N:Innova.Prism.Library.Services
+  href: Innova.html
+  name: Innova.Prism.Library.Services
+  nameWithType: Innova.Prism.Library.Services
+  fullName: Innova.Prism.Library.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Prism.Library.Services.ILookupService
+  commentId: T:Innova.Prism.Library.Services.ILookupService
+  parent: Innova.Prism.Library.Services
+  href: Innova.Prism.Library.Services.ILookupService.html
+  name: ILookupService
+  nameWithType: ILookupService
+  fullName: Innova.Prism.Library.Services.ILookupService
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Library.Services.LookupService
+  commentId: T:Innova.Prism.Library.Services.LookupService
+  href: Innova.Prism.Library.Services.LookupService.html
+  name: LookupService
+  nameWithType: LookupService
+  fullName: Innova.Prism.Library.Services.LookupService
+- uid: Innova.Prism.Library.Services.LookupService.#ctor*
+  commentId: Overload:Innova.Prism.Library.Services.LookupService.#ctor
+  href: Innova.Prism.Library.Services.LookupService.-ctor.html#Innova_Prism_Library_Services_LookupService__ctor_System_IServiceProvider_Microsoft_Extensions_Caching_Memory_IMemoryCache_
+  name: LookupService
+  nameWithType: LookupService.LookupService
+  fullName: Innova.Prism.Library.Services.LookupService.LookupService
+  nameWithType.vb: LookupService.New
+  fullName.vb: Innova.Prism.Library.Services.LookupService.New
+  name.vb: New
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+  commentId: T:Microsoft.Extensions.Caching.Memory.IMemoryCache
+  parent: Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  name: IMemoryCache
+  nameWithType: IMemoryCache
+  fullName: Microsoft.Extensions.Caching.Memory.IMemoryCache
+- uid: Microsoft.Extensions.Caching.Memory
+  commentId: N:Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Memory
+  nameWithType: Microsoft.Extensions.Caching.Memory
+  fullName: Microsoft.Extensions.Caching.Memory
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+- uid: Innova.Prism.Library.Services.LookupService.GetLookupList*
+  commentId: Overload:Innova.Prism.Library.Services.LookupService.GetLookupList
+  href: Innova.Prism.Library.Services.LookupService.GetLookupList.html#Innova_Prism_Library_Services_LookupService_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  name: GetLookupList
+  nameWithType: LookupService.GetLookupList
+  fullName: Innova.Prism.Library.Services.LookupService.GetLookupList
+- uid: Innova.Prism.Library.Services.ILookupService.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{{T}}[])
+  commentId: M:Innova.Prism.Library.Services.ILookupService.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  parent: Innova.Prism.Library.Services.ILookupService
+  definition: Innova.Prism.Library.Services.ILookupService.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  href: Innova.Prism.Library.Services.ILookupService.GetLookupList.html#Innova_Prism_Library_Services_ILookupService_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  name: GetLookupList<T>(params PrimaryKeys<T>[])
+  nameWithType: ILookupService.GetLookupList<T>(params PrimaryKeys<T>[])
+  fullName: Innova.Prism.Library.Services.ILookupService.GetLookupList<T>(params Innova.Data.Entity.PrimaryKeys<T>[])
+  nameWithType.vb: ILookupService.GetLookupList(Of T)(ParamArray PrimaryKeys(Of T)())
+  fullName.vb: Innova.Prism.Library.Services.ILookupService.GetLookupList(Of T)(ParamArray Innova.Data.Entity.PrimaryKeys(Of T)())
+  name.vb: GetLookupList(Of T)(ParamArray PrimaryKeys(Of T)())
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ILookupService.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+    name: GetLookupList
+    href: Innova.Prism.Library.Services.ILookupService.GetLookupList.html#Innova_Prism_Library_Services_ILookupService_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: params
+  - name: " "
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ILookupService.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+    name: GetLookupList
+    href: Innova.Prism.Library.Services.ILookupService.GetLookupList.html#Innova_Prism_Library_Services_ILookupService_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+  - name: )
+- uid: Innova.Data.Entity.PrimaryKeys{{T}}[]
+  isExternal: true
+  name: PrimaryKeys<T>[]
+  nameWithType: PrimaryKeys<T>[]
+  fullName: Innova.Data.Entity.PrimaryKeys<T>[]
+  nameWithType.vb: PrimaryKeys(Of T)()
+  fullName.vb: Innova.Data.Entity.PrimaryKeys(Of T)()
+  name.vb: PrimaryKeys(Of T)()
+  spec.csharp:
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.ObjectModel.ObservableCollection{{T}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.ObjectModel.ObservableCollection{``0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ObservableCollection<T>>
+  nameWithType: Task<ObservableCollection<T>>
+  fullName: System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<T>>
+  nameWithType.vb: Task(Of ObservableCollection(Of T))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.ObjectModel.ObservableCollection(Of T))
+  name.vb: Task(Of ObservableCollection(Of T))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Services.ILookupService.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  commentId: M:Innova.Prism.Library.Services.ILookupService.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  href: Innova.Prism.Library.Services.ILookupService.GetLookupList.html#Innova_Prism_Library_Services_ILookupService_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  name: GetLookupList<T>(params PrimaryKeys<T>[])
+  nameWithType: ILookupService.GetLookupList<T>(params PrimaryKeys<T>[])
+  fullName: Innova.Prism.Library.Services.ILookupService.GetLookupList<T>(params Innova.Data.Entity.PrimaryKeys<T>[])
+  nameWithType.vb: ILookupService.GetLookupList(Of T)(ParamArray PrimaryKeys(Of T)())
+  fullName.vb: Innova.Prism.Library.Services.ILookupService.GetLookupList(Of T)(ParamArray Innova.Data.Entity.PrimaryKeys(Of T)())
+  name.vb: GetLookupList(Of T)(ParamArray PrimaryKeys(Of T)())
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ILookupService.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+    name: GetLookupList
+    href: Innova.Prism.Library.Services.ILookupService.GetLookupList.html#Innova_Prism_Library_Services_ILookupService_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: params
+  - name: " "
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ILookupService.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+    name: GetLookupList
+    href: Innova.Prism.Library.Services.ILookupService.GetLookupList.html#Innova_Prism_Library_Services_ILookupService_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Prism.Library.Services.LookupService.ClearCache*
+  commentId: Overload:Innova.Prism.Library.Services.LookupService.ClearCache
+  href: Innova.Prism.Library.Services.LookupService.ClearCache.html#Innova_Prism_Library_Services_LookupService_ClearCache__1
+  name: ClearCache
+  nameWithType: LookupService.ClearCache
+  fullName: Innova.Prism.Library.Services.LookupService.ClearCache
+- uid: Innova.Prism.Library.Services.ILookupService.ClearCache``1
+  commentId: M:Innova.Prism.Library.Services.ILookupService.ClearCache``1
+  parent: Innova.Prism.Library.Services.ILookupService
+  href: Innova.Prism.Library.Services.ILookupService.ClearCache.html#Innova_Prism_Library_Services_ILookupService_ClearCache__1
+  name: ClearCache<T>()
+  nameWithType: ILookupService.ClearCache<T>()
+  fullName: Innova.Prism.Library.Services.ILookupService.ClearCache<T>()
+  nameWithType.vb: ILookupService.ClearCache(Of T)()
+  fullName.vb: Innova.Prism.Library.Services.ILookupService.ClearCache(Of T)()
+  name.vb: ClearCache(Of T)()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.ILookupService.ClearCache``1
+    name: ClearCache
+    href: Innova.Prism.Library.Services.ILookupService.ClearCache.html#Innova_Prism_Library_Services_ILookupService_ClearCache__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.ILookupService.ClearCache``1
+    name: ClearCache
+    href: Innova.Prism.Library.Services.ILookupService.ClearCache.html#Innova_Prism_Library_Services_ILookupService_ClearCache__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Services.LookupService.GetActiveFilteredList*
+  commentId: Overload:Innova.Prism.Library.Services.LookupService.GetActiveFilteredList
+  href: Innova.Prism.Library.Services.LookupService.GetActiveFilteredList.html#Innova_Prism_Library_Services_LookupService_GetActiveFilteredList__1_System_Collections_Generic_List___0__Innova_Data_Entity_PrimaryKeys___0____
+  name: GetActiveFilteredList
+  nameWithType: LookupService.GetActiveFilteredList
+  fullName: Innova.Prism.Library.Services.LookupService.GetActiveFilteredList
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+memberLayout: SeparatePages

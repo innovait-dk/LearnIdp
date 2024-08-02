@@ -1,0 +1,1013 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Rest.Client.RestClient
+  commentId: T:Innova.Rest.Client.RestClient
+  id: RestClient
+  parent: Innova.Rest.Client
+  children:
+  - Innova.Rest.Client.RestClient.#ctor(System.String,System.Net.Http.IHttpClientFactory)
+  - Innova.Rest.Client.RestClient.GetAsync``1(System.String,System.Threading.CancellationToken)
+  - Innova.Rest.Client.RestClient.PostAsync(System.String,System.Threading.CancellationToken)
+  - Innova.Rest.Client.RestClient.PostAsync``1(System.String,``0,System.Threading.CancellationToken)
+  - Innova.Rest.Client.RestClient.PostAsync``2(System.String,``0,System.Threading.CancellationToken)
+  - Innova.Rest.Client.RestClient.PutAsync``2(System.String,``0,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: RestClient
+  nameWithType: RestClient
+  fullName: Innova.Rest.Client.RestClient
+  type: Class
+  source:
+    id: RestClient
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestClient.cs
+    startLine: 11
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  syntax:
+    content: 'public class RestClient : IRestClient'
+    content.vb: Public Class RestClient Implements IRestClient
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Rest.Abstractions.IRestClient
+- uid: Innova.Rest.Client.RestClient.#ctor(System.String,System.Net.Http.IHttpClientFactory)
+  commentId: M:Innova.Rest.Client.RestClient.#ctor(System.String,System.Net.Http.IHttpClientFactory)
+  id: '#ctor(System.String,System.Net.Http.IHttpClientFactory)'
+  parent: Innova.Rest.Client.RestClient
+  langs:
+  - csharp
+  - vb
+  name: RestClient(string, IHttpClientFactory)
+  nameWithType: RestClient.RestClient(string, IHttpClientFactory)
+  fullName: Innova.Rest.Client.RestClient.RestClient(string, System.Net.Http.IHttpClientFactory)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestClient.cs
+    startLine: 21
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  syntax:
+    content: public RestClient(string apiServerBaseUrl, IHttpClientFactory httpClientFactory)
+    parameters:
+    - id: apiServerBaseUrl
+      type: System.String
+    - id: httpClientFactory
+      type: System.Net.Http.IHttpClientFactory
+    content.vb: Public Sub New(apiServerBaseUrl As String, httpClientFactory As IHttpClientFactory)
+  overload: Innova.Rest.Client.RestClient.#ctor*
+  nameWithType.vb: RestClient.New(String, IHttpClientFactory)
+  fullName.vb: Innova.Rest.Client.RestClient.New(String, System.Net.Http.IHttpClientFactory)
+  name.vb: New(String, IHttpClientFactory)
+- uid: Innova.Rest.Client.RestClient.GetAsync``1(System.String,System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Client.RestClient.GetAsync``1(System.String,System.Threading.CancellationToken)
+  id: GetAsync``1(System.String,System.Threading.CancellationToken)
+  parent: Innova.Rest.Client.RestClient
+  langs:
+  - csharp
+  - vb
+  name: GetAsync<GetType>(string, CancellationToken)
+  nameWithType: RestClient.GetAsync<GetType>(string, CancellationToken)
+  fullName: Innova.Rest.Client.RestClient.GetAsync<GetType>(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestClient.cs
+    startLine: 223
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  example: []
+  syntax:
+    content: public Task<GetType> GetAsync<GetType>(string path, CancellationToken cancellationToken = default)
+    parameters:
+    - id: path
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    typeParameters:
+    - id: GetType
+    return:
+      type: System.Threading.Tasks.Task{{GetType}}
+    content.vb: Public Function GetAsync(Of [GetType])(path As String, cancellationToken As CancellationToken = Nothing) As Task(Of [GetType])
+  overload: Innova.Rest.Client.RestClient.GetAsync*
+  implements:
+  - Innova.Rest.Abstractions.IRestClient.GetAsync``1(System.String,System.Threading.CancellationToken)
+  nameWithType.vb: RestClient.GetAsync(Of GetType)(String, CancellationToken)
+  fullName.vb: Innova.Rest.Client.RestClient.GetAsync(Of GetType)(String, System.Threading.CancellationToken)
+  name.vb: GetAsync(Of GetType)(String, CancellationToken)
+- uid: Innova.Rest.Client.RestClient.PutAsync``2(System.String,``0,System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Client.RestClient.PutAsync``2(System.String,``0,System.Threading.CancellationToken)
+  id: PutAsync``2(System.String,``0,System.Threading.CancellationToken)
+  parent: Innova.Rest.Client.RestClient
+  langs:
+  - csharp
+  - vb
+  name: PutAsync<PostType, GetType>(string, PostType, CancellationToken)
+  nameWithType: RestClient.PutAsync<PostType, GetType>(string, PostType, CancellationToken)
+  fullName: Innova.Rest.Client.RestClient.PutAsync<PostType, GetType>(string, PostType, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: PutAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestClient.cs
+    startLine: 245
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  example: []
+  syntax:
+    content: public Task<GetType> PutAsync<PostType, GetType>(string path, PostType itemToPut, CancellationToken cancellationToken = default)
+    parameters:
+    - id: path
+      type: System.String
+    - id: itemToPut
+      type: '{PostType}'
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    typeParameters:
+    - id: PostType
+    - id: GetType
+    return:
+      type: System.Threading.Tasks.Task{{GetType}}
+    content.vb: Public Function PutAsync(Of PostType, [GetType])(path As String, itemToPut As PostType, cancellationToken As CancellationToken = Nothing) As Task(Of [GetType])
+  overload: Innova.Rest.Client.RestClient.PutAsync*
+  implements:
+  - Innova.Rest.Abstractions.IRestClient.PutAsync``2(System.String,{PostType},System.Threading.CancellationToken)
+  nameWithType.vb: RestClient.PutAsync(Of PostType, GetType)(String, PostType, CancellationToken)
+  fullName.vb: Innova.Rest.Client.RestClient.PutAsync(Of PostType, GetType)(String, PostType, System.Threading.CancellationToken)
+  name.vb: PutAsync(Of PostType, GetType)(String, PostType, CancellationToken)
+- uid: Innova.Rest.Client.RestClient.PostAsync``2(System.String,``0,System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Client.RestClient.PostAsync``2(System.String,``0,System.Threading.CancellationToken)
+  id: PostAsync``2(System.String,``0,System.Threading.CancellationToken)
+  parent: Innova.Rest.Client.RestClient
+  langs:
+  - csharp
+  - vb
+  name: PostAsync<PostType, GetType>(string, PostType, CancellationToken)
+  nameWithType: RestClient.PostAsync<PostType, GetType>(string, PostType, CancellationToken)
+  fullName: Innova.Rest.Client.RestClient.PostAsync<PostType, GetType>(string, PostType, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: PostAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestClient.cs
+    startLine: 258
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  example: []
+  syntax:
+    content: public Task<GetType> PostAsync<PostType, GetType>(string path, PostType itemToPost, CancellationToken cancellationToken = default)
+    parameters:
+    - id: path
+      type: System.String
+    - id: itemToPost
+      type: '{PostType}'
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    typeParameters:
+    - id: PostType
+    - id: GetType
+    return:
+      type: System.Threading.Tasks.Task{{GetType}}
+    content.vb: Public Function PostAsync(Of PostType, [GetType])(path As String, itemToPost As PostType, cancellationToken As CancellationToken = Nothing) As Task(Of [GetType])
+  overload: Innova.Rest.Client.RestClient.PostAsync*
+  implements:
+  - Innova.Rest.Abstractions.IRestClient.PostAsync``2(System.String,{PostType},System.Threading.CancellationToken)
+  nameWithType.vb: RestClient.PostAsync(Of PostType, GetType)(String, PostType, CancellationToken)
+  fullName.vb: Innova.Rest.Client.RestClient.PostAsync(Of PostType, GetType)(String, PostType, System.Threading.CancellationToken)
+  name.vb: PostAsync(Of PostType, GetType)(String, PostType, CancellationToken)
+- uid: Innova.Rest.Client.RestClient.PostAsync``1(System.String,``0,System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Client.RestClient.PostAsync``1(System.String,``0,System.Threading.CancellationToken)
+  id: PostAsync``1(System.String,``0,System.Threading.CancellationToken)
+  parent: Innova.Rest.Client.RestClient
+  langs:
+  - csharp
+  - vb
+  name: PostAsync<PostType>(string, PostType, CancellationToken)
+  nameWithType: RestClient.PostAsync<PostType>(string, PostType, CancellationToken)
+  fullName: Innova.Rest.Client.RestClient.PostAsync<PostType>(string, PostType, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: PostAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestClient.cs
+    startLine: 270
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  example: []
+  syntax:
+    content: public Task PostAsync<PostType>(string path, PostType itemToPost, CancellationToken cancellationToken = default)
+    parameters:
+    - id: path
+      type: System.String
+    - id: itemToPost
+      type: '{PostType}'
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    typeParameters:
+    - id: PostType
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function PostAsync(Of PostType)(path As String, itemToPost As PostType, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Rest.Client.RestClient.PostAsync*
+  implements:
+  - Innova.Rest.Abstractions.IRestClient.PostAsync``1(System.String,{PostType},System.Threading.CancellationToken)
+  nameWithType.vb: RestClient.PostAsync(Of PostType)(String, PostType, CancellationToken)
+  fullName.vb: Innova.Rest.Client.RestClient.PostAsync(Of PostType)(String, PostType, System.Threading.CancellationToken)
+  name.vb: PostAsync(Of PostType)(String, PostType, CancellationToken)
+- uid: Innova.Rest.Client.RestClient.PostAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Client.RestClient.PostAsync(System.String,System.Threading.CancellationToken)
+  id: PostAsync(System.String,System.Threading.CancellationToken)
+  parent: Innova.Rest.Client.RestClient
+  langs:
+  - csharp
+  - vb
+  name: PostAsync(string, CancellationToken)
+  nameWithType: RestClient.PostAsync(string, CancellationToken)
+  fullName: Innova.Rest.Client.RestClient.PostAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: PostAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestClient.cs
+    startLine: 284
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  example: []
+  syntax:
+    content: public Task PostAsync(string path, CancellationToken cancellationToken = default)
+    parameters:
+    - id: path
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function PostAsync(path As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Rest.Client.RestClient.PostAsync*
+  implements:
+  - Innova.Rest.Abstractions.IRestClient.PostAsync(System.String,System.Threading.CancellationToken)
+  nameWithType.vb: RestClient.PostAsync(String, CancellationToken)
+  fullName.vb: Innova.Rest.Client.RestClient.PostAsync(String, System.Threading.CancellationToken)
+  name.vb: PostAsync(String, CancellationToken)
+references:
+- uid: Innova.Rest.Client
+  commentId: N:Innova.Rest.Client
+  href: Innova.html
+  name: Innova.Rest.Client
+  nameWithType: Innova.Rest.Client
+  fullName: Innova.Rest.Client
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Client
+    name: Client
+    href: Innova.Rest.Client.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Client
+    name: Client
+    href: Innova.Rest.Client.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Rest.Abstractions.IRestClient
+  commentId: T:Innova.Rest.Abstractions.IRestClient
+  parent: Innova.Rest.Abstractions
+  href: Innova.Rest.Abstractions.IRestClient.html
+  name: IRestClient
+  nameWithType: IRestClient
+  fullName: Innova.Rest.Abstractions.IRestClient
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Rest.Abstractions
+  commentId: N:Innova.Rest.Abstractions
+  href: Innova.html
+  name: Innova.Rest.Abstractions
+  nameWithType: Innova.Rest.Abstractions
+  fullName: Innova.Rest.Abstractions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Abstractions
+    name: Abstractions
+    href: Innova.Rest.Abstractions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Abstractions
+    name: Abstractions
+    href: Innova.Rest.Abstractions.html
+- uid: Innova.Rest.Client.RestClient.#ctor*
+  commentId: Overload:Innova.Rest.Client.RestClient.#ctor
+  href: Innova.Rest.Client.RestClient.-ctor.html#Innova_Rest_Client_RestClient__ctor_System_String_System_Net_Http_IHttpClientFactory_
+  name: RestClient
+  nameWithType: RestClient.RestClient
+  fullName: Innova.Rest.Client.RestClient.RestClient
+  nameWithType.vb: RestClient.New
+  fullName.vb: Innova.Rest.Client.RestClient.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Net.Http.IHttpClientFactory
+  commentId: T:System.Net.Http.IHttpClientFactory
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.ihttpclientfactory
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: System.Net.Http.IHttpClientFactory
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+- uid: Innova.Rest.Client.RestClient.GetAsync*
+  commentId: Overload:Innova.Rest.Client.RestClient.GetAsync
+  href: Innova.Rest.Client.RestClient.GetAsync.html#Innova_Rest_Client_RestClient_GetAsync__1_System_String_System_Threading_CancellationToken_
+  name: GetAsync
+  nameWithType: RestClient.GetAsync
+  fullName: Innova.Rest.Client.RestClient.GetAsync
+- uid: Innova.Rest.Abstractions.IRestClient.GetAsync``1(System.String,System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Abstractions.IRestClient.GetAsync``1(System.String,System.Threading.CancellationToken)
+  parent: Innova.Rest.Abstractions.IRestClient
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetAsync<GetType>(string, CancellationToken)
+  nameWithType: IRestClient.GetAsync<GetType>(string, CancellationToken)
+  fullName: Innova.Rest.Abstractions.IRestClient.GetAsync<GetType>(string, System.Threading.CancellationToken)
+  nameWithType.vb: IRestClient.GetAsync(Of GetType)(String, CancellationToken)
+  fullName.vb: Innova.Rest.Abstractions.IRestClient.GetAsync(Of GetType)(String, System.Threading.CancellationToken)
+  name.vb: GetAsync(Of GetType)(String, CancellationToken)
+  spec.csharp:
+  - uid: Innova.Rest.Abstractions.IRestClient.GetAsync``1(System.String,System.Threading.CancellationToken)
+    name: GetAsync
+  - name: <
+  - name: GetType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Rest.Abstractions.IRestClient.GetAsync``1(System.String,System.Threading.CancellationToken)
+    name: GetAsync
+  - name: (
+  - name: Of
+  - name: " "
+  - name: GetType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{{GetType}}
+  commentId: T:System.Threading.Tasks.Task{``1}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GetType>
+  nameWithType: Task<GetType>
+  fullName: System.Threading.Tasks.Task<GetType>
+  nameWithType.vb: Task(Of GetType)
+  fullName.vb: System.Threading.Tasks.Task(Of GetType)
+  name.vb: Task(Of GetType)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: GetType
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: GetType
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Rest.Client.RestClient.PutAsync*
+  commentId: Overload:Innova.Rest.Client.RestClient.PutAsync
+  href: Innova.Rest.Client.RestClient.PutAsync.html#Innova_Rest_Client_RestClient_PutAsync__2_System_String___0_System_Threading_CancellationToken_
+  name: PutAsync
+  nameWithType: RestClient.PutAsync
+  fullName: Innova.Rest.Client.RestClient.PutAsync
+- uid: Innova.Rest.Abstractions.IRestClient.PutAsync``2(System.String,{PostType},System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Abstractions.IRestClient.PutAsync``2(System.String,``0,System.Threading.CancellationToken)
+  parent: Innova.Rest.Abstractions.IRestClient
+  definition: Innova.Rest.Abstractions.IRestClient.PutAsync``2(System.String,``0,System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: PutAsync<PostType, GetType>(string, PostType, CancellationToken)
+  nameWithType: IRestClient.PutAsync<PostType, GetType>(string, PostType, CancellationToken)
+  fullName: Innova.Rest.Abstractions.IRestClient.PutAsync<PostType, GetType>(string, PostType, System.Threading.CancellationToken)
+  nameWithType.vb: IRestClient.PutAsync(Of PostType, GetType)(String, PostType, CancellationToken)
+  fullName.vb: Innova.Rest.Abstractions.IRestClient.PutAsync(Of PostType, GetType)(String, PostType, System.Threading.CancellationToken)
+  name.vb: PutAsync(Of PostType, GetType)(String, PostType, CancellationToken)
+  spec.csharp:
+  - uid: Innova.Rest.Abstractions.IRestClient.PutAsync``2(System.String,``0,System.Threading.CancellationToken)
+    name: PutAsync
+  - name: <
+  - name: PostType
+  - name: ','
+  - name: " "
+  - name: GetType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Rest.Abstractions.IRestClient.PutAsync``2(System.String,``0,System.Threading.CancellationToken)
+    name: PutAsync
+  - name: (
+  - name: Of
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - name: GetType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: '{PostType}'
+  commentId: '!:PostType'
+  definition: PostType
+  name: PostType
+  nameWithType: PostType
+  fullName: PostType
+- uid: Innova.Rest.Abstractions.IRestClient.PutAsync``2(System.String,``0,System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Abstractions.IRestClient.PutAsync``2(System.String,``0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: PutAsync<PostType, GetType>(string, PostType, CancellationToken)
+  nameWithType: IRestClient.PutAsync<PostType, GetType>(string, PostType, CancellationToken)
+  fullName: Innova.Rest.Abstractions.IRestClient.PutAsync<PostType, GetType>(string, PostType, System.Threading.CancellationToken)
+  nameWithType.vb: IRestClient.PutAsync(Of PostType, GetType)(String, PostType, CancellationToken)
+  fullName.vb: Innova.Rest.Abstractions.IRestClient.PutAsync(Of PostType, GetType)(String, PostType, System.Threading.CancellationToken)
+  name.vb: PutAsync(Of PostType, GetType)(String, PostType, CancellationToken)
+  spec.csharp:
+  - uid: Innova.Rest.Abstractions.IRestClient.PutAsync``2(System.String,``0,System.Threading.CancellationToken)
+    name: PutAsync
+  - name: <
+  - name: PostType
+  - name: ','
+  - name: " "
+  - name: GetType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Rest.Abstractions.IRestClient.PutAsync``2(System.String,``0,System.Threading.CancellationToken)
+    name: PutAsync
+  - name: (
+  - name: Of
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - name: GetType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: PostType
+  name: PostType
+  nameWithType: PostType
+  fullName: PostType
+- uid: Innova.Rest.Client.RestClient.PostAsync*
+  commentId: Overload:Innova.Rest.Client.RestClient.PostAsync
+  href: Innova.Rest.Client.RestClient.PostAsync.html#Innova_Rest_Client_RestClient_PostAsync__2_System_String___0_System_Threading_CancellationToken_
+  name: PostAsync
+  nameWithType: RestClient.PostAsync
+  fullName: Innova.Rest.Client.RestClient.PostAsync
+- uid: Innova.Rest.Abstractions.IRestClient.PostAsync``2(System.String,{PostType},System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Abstractions.IRestClient.PostAsync``2(System.String,``0,System.Threading.CancellationToken)
+  parent: Innova.Rest.Abstractions.IRestClient
+  definition: Innova.Rest.Abstractions.IRestClient.PostAsync``2(System.String,``0,System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: PostAsync<PostType, GetType>(string, PostType, CancellationToken)
+  nameWithType: IRestClient.PostAsync<PostType, GetType>(string, PostType, CancellationToken)
+  fullName: Innova.Rest.Abstractions.IRestClient.PostAsync<PostType, GetType>(string, PostType, System.Threading.CancellationToken)
+  nameWithType.vb: IRestClient.PostAsync(Of PostType, GetType)(String, PostType, CancellationToken)
+  fullName.vb: Innova.Rest.Abstractions.IRestClient.PostAsync(Of PostType, GetType)(String, PostType, System.Threading.CancellationToken)
+  name.vb: PostAsync(Of PostType, GetType)(String, PostType, CancellationToken)
+  spec.csharp:
+  - uid: Innova.Rest.Abstractions.IRestClient.PostAsync``2(System.String,``0,System.Threading.CancellationToken)
+    name: PostAsync
+  - name: <
+  - name: PostType
+  - name: ','
+  - name: " "
+  - name: GetType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Rest.Abstractions.IRestClient.PostAsync``2(System.String,``0,System.Threading.CancellationToken)
+    name: PostAsync
+  - name: (
+  - name: Of
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - name: GetType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Innova.Rest.Abstractions.IRestClient.PostAsync``2(System.String,``0,System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Abstractions.IRestClient.PostAsync``2(System.String,``0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: PostAsync<PostType, GetType>(string, PostType, CancellationToken)
+  nameWithType: IRestClient.PostAsync<PostType, GetType>(string, PostType, CancellationToken)
+  fullName: Innova.Rest.Abstractions.IRestClient.PostAsync<PostType, GetType>(string, PostType, System.Threading.CancellationToken)
+  nameWithType.vb: IRestClient.PostAsync(Of PostType, GetType)(String, PostType, CancellationToken)
+  fullName.vb: Innova.Rest.Abstractions.IRestClient.PostAsync(Of PostType, GetType)(String, PostType, System.Threading.CancellationToken)
+  name.vb: PostAsync(Of PostType, GetType)(String, PostType, CancellationToken)
+  spec.csharp:
+  - uid: Innova.Rest.Abstractions.IRestClient.PostAsync``2(System.String,``0,System.Threading.CancellationToken)
+    name: PostAsync
+  - name: <
+  - name: PostType
+  - name: ','
+  - name: " "
+  - name: GetType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Rest.Abstractions.IRestClient.PostAsync``2(System.String,``0,System.Threading.CancellationToken)
+    name: PostAsync
+  - name: (
+  - name: Of
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - name: GetType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Innova.Rest.Abstractions.IRestClient.PostAsync``1(System.String,{PostType},System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Abstractions.IRestClient.PostAsync``1(System.String,``0,System.Threading.CancellationToken)
+  parent: Innova.Rest.Abstractions.IRestClient
+  definition: Innova.Rest.Abstractions.IRestClient.PostAsync``1(System.String,``0,System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: PostAsync<PostType>(string, PostType, CancellationToken)
+  nameWithType: IRestClient.PostAsync<PostType>(string, PostType, CancellationToken)
+  fullName: Innova.Rest.Abstractions.IRestClient.PostAsync<PostType>(string, PostType, System.Threading.CancellationToken)
+  nameWithType.vb: IRestClient.PostAsync(Of PostType)(String, PostType, CancellationToken)
+  fullName.vb: Innova.Rest.Abstractions.IRestClient.PostAsync(Of PostType)(String, PostType, System.Threading.CancellationToken)
+  name.vb: PostAsync(Of PostType)(String, PostType, CancellationToken)
+  spec.csharp:
+  - uid: Innova.Rest.Abstractions.IRestClient.PostAsync``1(System.String,``0,System.Threading.CancellationToken)
+    name: PostAsync
+  - name: <
+  - name: PostType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Rest.Abstractions.IRestClient.PostAsync``1(System.String,``0,System.Threading.CancellationToken)
+    name: PostAsync
+  - name: (
+  - name: Of
+  - name: " "
+  - name: PostType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Innova.Rest.Abstractions.IRestClient.PostAsync``1(System.String,``0,System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Abstractions.IRestClient.PostAsync``1(System.String,``0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: PostAsync<PostType>(string, PostType, CancellationToken)
+  nameWithType: IRestClient.PostAsync<PostType>(string, PostType, CancellationToken)
+  fullName: Innova.Rest.Abstractions.IRestClient.PostAsync<PostType>(string, PostType, System.Threading.CancellationToken)
+  nameWithType.vb: IRestClient.PostAsync(Of PostType)(String, PostType, CancellationToken)
+  fullName.vb: Innova.Rest.Abstractions.IRestClient.PostAsync(Of PostType)(String, PostType, System.Threading.CancellationToken)
+  name.vb: PostAsync(Of PostType)(String, PostType, CancellationToken)
+  spec.csharp:
+  - uid: Innova.Rest.Abstractions.IRestClient.PostAsync``1(System.String,``0,System.Threading.CancellationToken)
+    name: PostAsync
+  - name: <
+  - name: PostType
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Rest.Abstractions.IRestClient.PostAsync``1(System.String,``0,System.Threading.CancellationToken)
+    name: PostAsync
+  - name: (
+  - name: Of
+  - name: " "
+  - name: PostType
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: PostType
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Innova.Rest.Abstractions.IRestClient.PostAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Abstractions.IRestClient.PostAsync(System.String,System.Threading.CancellationToken)
+  parent: Innova.Rest.Abstractions.IRestClient
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: PostAsync(string, CancellationToken)
+  nameWithType: IRestClient.PostAsync(string, CancellationToken)
+  fullName: Innova.Rest.Abstractions.IRestClient.PostAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: IRestClient.PostAsync(String, CancellationToken)
+  fullName.vb: Innova.Rest.Abstractions.IRestClient.PostAsync(String, System.Threading.CancellationToken)
+  name.vb: PostAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Innova.Rest.Abstractions.IRestClient.PostAsync(System.String,System.Threading.CancellationToken)
+    name: PostAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Rest.Abstractions.IRestClient.PostAsync(System.String,System.Threading.CancellationToken)
+    name: PostAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+memberLayout: SeparatePages

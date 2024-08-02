@@ -1,0 +1,660 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Helpers.TaskHelper
+  commentId: T:Innova.Prism.Library.Helpers.TaskHelper
+  id: TaskHelper
+  parent: Innova.Prism.Library.Helpers
+  children:
+  - Innova.Prism.Library.Helpers.TaskHelper.#ctor(Prism.Events.IEventAggregator)
+  - Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask(System.Action,System.Threading.CancellationTokenSource)
+  - Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask(System.Action{System.Object},System.Object)
+  - Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask``1(System.Func{System.Object,``0},System.Object)
+  - Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask``1(System.Func{``0})
+  langs:
+  - csharp
+  - vb
+  name: TaskHelper
+  nameWithType: TaskHelper
+  fullName: Innova.Prism.Library.Helpers.TaskHelper
+  type: Class
+  source:
+    id: TaskHelper
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Helpers\TaskHelper.cs
+    startLine: 13
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Helpers
+  summary: Helper class for executing tasks asynchronously.
+  example: []
+  syntax:
+    content: public class TaskHelper
+    content.vb: Public Class TaskHelper
+  inheritance:
+  - System.Object
+- uid: Innova.Prism.Library.Helpers.TaskHelper.#ctor(Prism.Events.IEventAggregator)
+  commentId: M:Innova.Prism.Library.Helpers.TaskHelper.#ctor(Prism.Events.IEventAggregator)
+  id: '#ctor(Prism.Events.IEventAggregator)'
+  parent: Innova.Prism.Library.Helpers.TaskHelper
+  langs:
+  - csharp
+  - vb
+  name: TaskHelper(IEventAggregator)
+  nameWithType: TaskHelper.TaskHelper(IEventAggregator)
+  fullName: Innova.Prism.Library.Helpers.TaskHelper.TaskHelper(Prism.Events.IEventAggregator)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Helpers\TaskHelper.cs
+    startLine: 21
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Helpers
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Helpers.TaskHelper" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public TaskHelper(IEventAggregator EventAggregator)
+    parameters:
+    - id: EventAggregator
+      type: Prism.Events.IEventAggregator
+      description: The event aggregator.
+    content.vb: Public Sub New(EventAggregator As IEventAggregator)
+  overload: Innova.Prism.Library.Helpers.TaskHelper.#ctor*
+  nameWithType.vb: TaskHelper.New(IEventAggregator)
+  fullName.vb: Innova.Prism.Library.Helpers.TaskHelper.New(Prism.Events.IEventAggregator)
+  name.vb: New(IEventAggregator)
+- uid: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask``1(System.Func{``0})
+  commentId: M:Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask``1(System.Func{``0})
+  id: ExecuteTask``1(System.Func{``0})
+  parent: Innova.Prism.Library.Helpers.TaskHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteTask<T>(Func<T>)
+  nameWithType: TaskHelper.ExecuteTask<T>(Func<T>)
+  fullName: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask<T>(System.Func<T>)
+  type: Method
+  source:
+    id: ExecuteTask
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Helpers\TaskHelper.cs
+    startLine: 32
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Helpers
+  summary: Executes a task asynchronously and returns the result.
+  example: []
+  syntax:
+    content: public Task<T> ExecuteTask<T>(Func<T> action)
+    parameters:
+    - id: action
+      type: System.Func{{T}}
+      description: The action to be executed.
+    typeParameters:
+    - id: T
+      description: The type of the result.
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: A task representing the asynchronous operation.
+    content.vb: Public Function ExecuteTask(Of T)(action As Func(Of T)) As Task(Of T)
+  overload: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask*
+  nameWithType.vb: TaskHelper.ExecuteTask(Of T)(Func(Of T))
+  fullName.vb: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask(Of T)(System.Func(Of T))
+  name.vb: ExecuteTask(Of T)(Func(Of T))
+- uid: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask``1(System.Func{System.Object,``0},System.Object)
+  commentId: M:Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask``1(System.Func{System.Object,``0},System.Object)
+  id: ExecuteTask``1(System.Func{System.Object,``0},System.Object)
+  parent: Innova.Prism.Library.Helpers.TaskHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteTask<T>(Func<object, T>, object)
+  nameWithType: TaskHelper.ExecuteTask<T>(Func<object, T>, object)
+  fullName: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask<T>(System.Func<object, T>, object)
+  type: Method
+  source:
+    id: ExecuteTask
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Helpers\TaskHelper.cs
+    startLine: 65
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Helpers
+  summary: Executes a task asynchronously with an argument and returns the result.
+  example: []
+  syntax:
+    content: public Task<T> ExecuteTask<T>(Func<object, T> action, object argument)
+    parameters:
+    - id: action
+      type: System.Func{System.Object,{T}}
+      description: The action to be executed.
+    - id: argument
+      type: System.Object
+      description: The argument to be passed to the action.
+    typeParameters:
+    - id: T
+      description: The type of the result.
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: A task representing the asynchronous operation.
+    content.vb: Public Function ExecuteTask(Of T)(action As Func(Of Object, T), argument As Object) As Task(Of T)
+  overload: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask*
+  nameWithType.vb: TaskHelper.ExecuteTask(Of T)(Func(Of Object, T), Object)
+  fullName.vb: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask(Of T)(System.Func(Of Object, T), Object)
+  name.vb: ExecuteTask(Of T)(Func(Of Object, T), Object)
+- uid: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask(System.Action{System.Object},System.Object)
+  commentId: M:Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask(System.Action{System.Object},System.Object)
+  id: ExecuteTask(System.Action{System.Object},System.Object)
+  parent: Innova.Prism.Library.Helpers.TaskHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteTask(Action<object>, object)
+  nameWithType: TaskHelper.ExecuteTask(Action<object>, object)
+  fullName: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask(System.Action<object>, object)
+  type: Method
+  source:
+    id: ExecuteTask
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Helpers\TaskHelper.cs
+    startLine: 97
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Helpers
+  summary: Executes a task asynchronously with an argument.
+  example: []
+  syntax:
+    content: public Task ExecuteTask(Action<object> action, object argument)
+    parameters:
+    - id: action
+      type: System.Action{System.Object}
+      description: The action to be executed.
+    - id: argument
+      type: System.Object
+      description: The argument to be passed to the action.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Public Function ExecuteTask(action As Action(Of Object), argument As Object) As Task
+  overload: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask*
+  nameWithType.vb: TaskHelper.ExecuteTask(Action(Of Object), Object)
+  fullName.vb: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask(System.Action(Of Object), Object)
+  name.vb: ExecuteTask(Action(Of Object), Object)
+- uid: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask(System.Action,System.Threading.CancellationTokenSource)
+  commentId: M:Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask(System.Action,System.Threading.CancellationTokenSource)
+  id: ExecuteTask(System.Action,System.Threading.CancellationTokenSource)
+  parent: Innova.Prism.Library.Helpers.TaskHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteTask(Action, CancellationTokenSource)
+  nameWithType: TaskHelper.ExecuteTask(Action, CancellationTokenSource)
+  fullName: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask(System.Action, System.Threading.CancellationTokenSource)
+  type: Method
+  source:
+    id: ExecuteTask
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Helpers\TaskHelper.cs
+    startLine: 125
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Helpers
+  summary: Executes a task asynchronously.
+  example: []
+  syntax:
+    content: public Task ExecuteTask(Action action, CancellationTokenSource tokenSource = null)
+    parameters:
+    - id: action
+      type: System.Action
+      description: The action to be executed.
+    - id: tokenSource
+      type: System.Threading.CancellationTokenSource
+      description: The cancellation token source.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Public Function ExecuteTask(action As Action, tokenSource As CancellationTokenSource = Nothing) As Task
+  overload: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask*
+references:
+- uid: Innova.Prism.Library.Helpers
+  commentId: N:Innova.Prism.Library.Helpers
+  href: Innova.html
+  name: Innova.Prism.Library.Helpers
+  nameWithType: Innova.Prism.Library.Helpers
+  fullName: Innova.Prism.Library.Helpers
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Helpers
+    name: Helpers
+    href: Innova.Prism.Library.Helpers.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Helpers
+    name: Helpers
+    href: Innova.Prism.Library.Helpers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Library.Helpers.TaskHelper
+  commentId: T:Innova.Prism.Library.Helpers.TaskHelper
+  href: Innova.Prism.Library.Helpers.TaskHelper.html
+  name: TaskHelper
+  nameWithType: TaskHelper
+  fullName: Innova.Prism.Library.Helpers.TaskHelper
+- uid: Innova.Prism.Library.Helpers.TaskHelper.#ctor*
+  commentId: Overload:Innova.Prism.Library.Helpers.TaskHelper.#ctor
+  href: Innova.Prism.Library.Helpers.TaskHelper.-ctor.html#Innova_Prism_Library_Helpers_TaskHelper__ctor_Prism_Events_IEventAggregator_
+  name: TaskHelper
+  nameWithType: TaskHelper.TaskHelper
+  fullName: Innova.Prism.Library.Helpers.TaskHelper.TaskHelper
+  nameWithType.vb: TaskHelper.New
+  fullName.vb: Innova.Prism.Library.Helpers.TaskHelper.New
+  name.vb: New
+- uid: Prism.Events.IEventAggregator
+  commentId: T:Prism.Events.IEventAggregator
+  parent: Prism.Events
+  isExternal: true
+  name: IEventAggregator
+  nameWithType: IEventAggregator
+  fullName: Prism.Events.IEventAggregator
+- uid: Prism.Events
+  commentId: N:Prism.Events
+  isExternal: true
+  name: Prism.Events
+  nameWithType: Prism.Events
+  fullName: Prism.Events
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+- uid: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask*
+  commentId: Overload:Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask
+  href: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask.html#Innova_Prism_Library_Helpers_TaskHelper_ExecuteTask__1_System_Func___0__
+  name: ExecuteTask
+  nameWithType: TaskHelper.ExecuteTask
+  fullName: Innova.Prism.Library.Helpers.TaskHelper.ExecuteTask
+- uid: System.Func{{T}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<T>
+  nameWithType: Func<T>
+  fullName: System.Func<T>
+  nameWithType.vb: Func(Of T)
+  fullName.vb: System.Func(Of T)
+  name.vb: Func(Of T)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{`0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Func{System.Object,{T}}
+  commentId: T:System.Func{System.Object,``0}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<object, T>
+  nameWithType: Func<object, T>
+  fullName: System.Func<object, T>
+  nameWithType.vb: Func(Of Object, T)
+  fullName.vb: System.Func(Of Object, T)
+  name.vb: Func(Of Object, T)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Action{System.Object}
+  commentId: T:System.Action{System.Object}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<object>
+  nameWithType: Action<object>
+  fullName: System.Action<object>
+  nameWithType.vb: Action(Of Object)
+  fullName.vb: System.Action(Of Object)
+  name.vb: Action(Of Object)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Threading.CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  name: CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+memberLayout: SeparatePages

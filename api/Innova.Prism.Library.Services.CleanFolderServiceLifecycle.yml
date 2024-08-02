@@ -1,0 +1,687 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle
+  commentId: T:Innova.Prism.Library.Services.CleanFolderServiceLifecycle
+  id: CleanFolderServiceLifecycle
+  parent: Innova.Prism.Library.Services
+  children:
+  - Innova.Prism.Library.Services.CleanFolderServiceLifecycle.#ctor(Innova.Data.File.IFileService)
+  - Innova.Prism.Library.Services.CleanFolderServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  - Innova.Prism.Library.Services.CleanFolderServiceLifecycle.FileService
+  - Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Start(System.Threading.CancellationToken)
+  - Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StartOrder
+  - Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Stop(System.Threading.CancellationToken)
+  - Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StopOrder
+  langs:
+  - csharp
+  - vb
+  name: CleanFolderServiceLifecycle
+  nameWithType: CleanFolderServiceLifecycle
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle
+  type: Class
+  source:
+    id: CleanFolderServiceLifecycle
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\CleanFolderHostedService.cs
+    startLine: 10
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Represents the service lifecycle for cleaning a folder.
+  example: []
+  syntax:
+    content: 'public class CleanFolderServiceLifecycle : IServiceLifecycle'
+    content.vb: Public Class CleanFolderServiceLifecycle Implements IServiceLifecycle
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.FileService
+  commentId: P:Innova.Prism.Library.Services.CleanFolderServiceLifecycle.FileService
+  id: FileService
+  parent: Innova.Prism.Library.Services.CleanFolderServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: FileService
+  nameWithType: CleanFolderServiceLifecycle.FileService
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.FileService
+  type: Property
+  source:
+    id: FileService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\CleanFolderHostedService.cs
+    startLine: 15
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Gets the file service used for cleaning the folder.
+  example: []
+  syntax:
+    content: public IFileService FileService { get; }
+    parameters: []
+    return:
+      type: Innova.Data.File.IFileService
+    content.vb: Public ReadOnly Property FileService As IFileService
+  overload: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.FileService*
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StopOrder
+  commentId: P:Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StopOrder
+  id: StopOrder
+  parent: Innova.Prism.Library.Services.CleanFolderServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: StopOrder
+  nameWithType: CleanFolderServiceLifecycle.StopOrder
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StopOrder
+  type: Property
+  source:
+    id: StopOrder
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\CleanFolderHostedService.cs
+    startLine: 20
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Gets the stop order of the service.
+  example: []
+  syntax:
+    content: public int StopOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property StopOrder As Integer
+  overload: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StopOrder*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StartOrder
+  commentId: P:Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StartOrder
+  id: StartOrder
+  parent: Innova.Prism.Library.Services.CleanFolderServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: StartOrder
+  nameWithType: CleanFolderServiceLifecycle.StartOrder
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StartOrder
+  type: Property
+  source:
+    id: StartOrder
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\CleanFolderHostedService.cs
+    startLine: 25
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Gets the start order of the service.
+  example: []
+  syntax:
+    content: public int StartOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property StartOrder As Integer
+  overload: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StartOrder*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.#ctor(Innova.Data.File.IFileService)
+  commentId: M:Innova.Prism.Library.Services.CleanFolderServiceLifecycle.#ctor(Innova.Data.File.IFileService)
+  id: '#ctor(Innova.Data.File.IFileService)'
+  parent: Innova.Prism.Library.Services.CleanFolderServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: CleanFolderServiceLifecycle(IFileService)
+  nameWithType: CleanFolderServiceLifecycle.CleanFolderServiceLifecycle(IFileService)
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.CleanFolderServiceLifecycle(Innova.Data.File.IFileService)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\CleanFolderHostedService.cs
+    startLine: 31
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Services.CleanFolderServiceLifecycle" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public CleanFolderServiceLifecycle(IFileService fileService)
+    parameters:
+    - id: fileService
+      type: Innova.Data.File.IFileService
+      description: The file service used for cleaning the folder.
+    content.vb: Public Sub New(fileService As IFileService)
+  overload: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.#ctor*
+  nameWithType.vb: CleanFolderServiceLifecycle.New(IFileService)
+  fullName.vb: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.New(Innova.Data.File.IFileService)
+  name.vb: New(IFileService)
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.CleanFolderServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  id: CanStop(System.Threading.CancellationToken)
+  parent: Innova.Prism.Library.Services.CleanFolderServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: CanStop(CancellationToken)
+  nameWithType: CleanFolderServiceLifecycle.CanStop(CancellationToken)
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: CanStop
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\CleanFolderHostedService.cs
+    startLine: 41
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Determines whether the service can be stopped.
+  example: []
+  syntax:
+    content: public Task<bool> CanStop(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: A task that represents the asynchronous operation. The task result contains a value indicating whether the service can be stopped.
+    content.vb: Public Function CanStop(cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.CanStop*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Stop(System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Stop(System.Threading.CancellationToken)
+  id: Stop(System.Threading.CancellationToken)
+  parent: Innova.Prism.Library.Services.CleanFolderServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: Stop(CancellationToken)
+  nameWithType: CleanFolderServiceLifecycle.Stop(CancellationToken)
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Stop(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: Stop
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\CleanFolderHostedService.cs
+    startLine: 51
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Stops the service.
+  example: []
+  syntax:
+    content: public Task Stop(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Public Function [Stop](cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Stop*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Start(System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Start(System.Threading.CancellationToken)
+  id: Start(System.Threading.CancellationToken)
+  parent: Innova.Prism.Library.Services.CleanFolderServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: Start(CancellationToken)
+  nameWithType: CleanFolderServiceLifecycle.Start(CancellationToken)
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Start(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: Start
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\CleanFolderHostedService.cs
+    startLine: 69
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Starts the service.
+  example: []
+  syntax:
+    content: public Task Start(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Public Function Start(cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Start*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+references:
+- uid: Innova.Prism.Library.Services
+  commentId: N:Innova.Prism.Library.Services
+  href: Innova.html
+  name: Innova.Prism.Library.Services
+  nameWithType: Innova.Prism.Library.Services
+  fullName: Innova.Prism.Library.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Abstractions.Builder.IServiceLifecycle
+  commentId: T:Innova.Abstractions.Builder.IServiceLifecycle
+  parent: Innova.Abstractions.Builder
+  href: Innova.Abstractions.Builder.IServiceLifecycle.html
+  name: IServiceLifecycle
+  nameWithType: IServiceLifecycle
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Abstractions.Builder
+  commentId: N:Innova.Abstractions.Builder
+  href: Innova.html
+  name: Innova.Abstractions.Builder
+  nameWithType: Innova.Abstractions.Builder
+  fullName: Innova.Abstractions.Builder
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Abstractions
+    name: Abstractions
+    href: Innova.Abstractions.html
+  - name: .
+  - uid: Innova.Abstractions.Builder
+    name: Builder
+    href: Innova.Abstractions.Builder.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Abstractions
+    name: Abstractions
+    href: Innova.Abstractions.html
+  - name: .
+  - uid: Innova.Abstractions.Builder
+    name: Builder
+    href: Innova.Abstractions.Builder.html
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.FileService*
+  commentId: Overload:Innova.Prism.Library.Services.CleanFolderServiceLifecycle.FileService
+  href: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.FileService.html#Innova_Prism_Library_Services_CleanFolderServiceLifecycle_FileService
+  name: FileService
+  nameWithType: CleanFolderServiceLifecycle.FileService
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.FileService
+- uid: Innova.Data.File.IFileService
+  commentId: T:Innova.Data.File.IFileService
+  parent: Innova.Data.File
+  href: Innova.Data.File.IFileService.html
+  name: IFileService
+  nameWithType: IFileService
+  fullName: Innova.Data.File.IFileService
+- uid: Innova.Data.File
+  commentId: N:Innova.Data.File
+  href: Innova.html
+  name: Innova.Data.File
+  nameWithType: Innova.Data.File
+  fullName: Innova.Data.File
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.File
+    name: File
+    href: Innova.Data.File.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.File
+    name: File
+    href: Innova.Data.File.html
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StopOrder*
+  commentId: Overload:Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StopOrder
+  href: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StopOrder.html#Innova_Prism_Library_Services_CleanFolderServiceLifecycle_StopOrder
+  name: StopOrder
+  nameWithType: CleanFolderServiceLifecycle.StopOrder
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StopOrder
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+  commentId: P:Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  href: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder.html#Innova_Abstractions_Builder_IServiceLifecycle_StopOrder
+  name: StopOrder
+  nameWithType: IServiceLifecycle.StopOrder
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StartOrder*
+  commentId: Overload:Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StartOrder
+  href: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StartOrder.html#Innova_Prism_Library_Services_CleanFolderServiceLifecycle_StartOrder
+  name: StartOrder
+  nameWithType: CleanFolderServiceLifecycle.StartOrder
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.StartOrder
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+  commentId: P:Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  href: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder.html#Innova_Abstractions_Builder_IServiceLifecycle_StartOrder
+  name: StartOrder
+  nameWithType: IServiceLifecycle.StartOrder
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle
+  commentId: T:Innova.Prism.Library.Services.CleanFolderServiceLifecycle
+  href: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.html
+  name: CleanFolderServiceLifecycle
+  nameWithType: CleanFolderServiceLifecycle
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.#ctor*
+  commentId: Overload:Innova.Prism.Library.Services.CleanFolderServiceLifecycle.#ctor
+  href: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.-ctor.html#Innova_Prism_Library_Services_CleanFolderServiceLifecycle__ctor_Innova_Data_File_IFileService_
+  name: CleanFolderServiceLifecycle
+  nameWithType: CleanFolderServiceLifecycle.CleanFolderServiceLifecycle
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.CleanFolderServiceLifecycle
+  nameWithType.vb: CleanFolderServiceLifecycle.New
+  fullName.vb: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.New
+  name.vb: New
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.CanStop*
+  commentId: Overload:Innova.Prism.Library.Services.CleanFolderServiceLifecycle.CanStop
+  href: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.CanStop.html#Innova_Prism_Library_Services_CleanFolderServiceLifecycle_CanStop_System_Threading_CancellationToken_
+  name: CanStop
+  nameWithType: CleanFolderServiceLifecycle.CanStop
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.CanStop
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  isExternal: true
+  href: Innova.Abstractions.Builder.IServiceLifecycle.CanStop.html#Innova_Abstractions_Builder_IServiceLifecycle_CanStop_System_Threading_CancellationToken_
+  name: CanStop(CancellationToken)
+  nameWithType: IServiceLifecycle.CanStop(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+    name: CanStop
+    href: Innova.Abstractions.Builder.IServiceLifecycle.CanStop.html#Innova_Abstractions_Builder_IServiceLifecycle_CanStop_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+    name: CanStop
+    href: Innova.Abstractions.Builder.IServiceLifecycle.CanStop.html#Innova_Abstractions_Builder_IServiceLifecycle_CanStop_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Stop*
+  commentId: Overload:Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Stop
+  href: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Stop.html#Innova_Prism_Library_Services_CleanFolderServiceLifecycle_Stop_System_Threading_CancellationToken_
+  name: Stop
+  nameWithType: CleanFolderServiceLifecycle.Stop
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Stop
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  isExternal: true
+  href: Innova.Abstractions.Builder.IServiceLifecycle.Stop.html#Innova_Abstractions_Builder_IServiceLifecycle_Stop_System_Threading_CancellationToken_
+  name: Stop(CancellationToken)
+  nameWithType: IServiceLifecycle.Stop(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+    name: Stop
+    href: Innova.Abstractions.Builder.IServiceLifecycle.Stop.html#Innova_Abstractions_Builder_IServiceLifecycle_Stop_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+    name: Stop
+    href: Innova.Abstractions.Builder.IServiceLifecycle.Stop.html#Innova_Abstractions_Builder_IServiceLifecycle_Stop_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Start*
+  commentId: Overload:Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Start
+  href: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Start.html#Innova_Prism_Library_Services_CleanFolderServiceLifecycle_Start_System_Threading_CancellationToken_
+  name: Start
+  nameWithType: CleanFolderServiceLifecycle.Start
+  fullName: Innova.Prism.Library.Services.CleanFolderServiceLifecycle.Start
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  isExternal: true
+  href: Innova.Abstractions.Builder.IServiceLifecycle.Start.html#Innova_Abstractions_Builder_IServiceLifecycle_Start_System_Threading_CancellationToken_
+  name: Start(CancellationToken)
+  nameWithType: IServiceLifecycle.Start(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+    name: Start
+    href: Innova.Abstractions.Builder.IServiceLifecycle.Start.html#Innova_Abstractions_Builder_IServiceLifecycle_Start_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+    name: Start
+    href: Innova.Abstractions.Builder.IServiceLifecycle.Start.html#Innova_Abstractions_Builder_IServiceLifecycle_Start_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+memberLayout: SeparatePages

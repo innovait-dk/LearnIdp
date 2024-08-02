@@ -1,0 +1,390 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.ClassDefinitions.EventProgressReporter
+  commentId: T:Innova.Prism.Library.ClassDefinitions.EventProgressReporter
+  id: EventProgressReporter
+  parent: Innova.Prism.Library.ClassDefinitions
+  children:
+  - Innova.Prism.Library.ClassDefinitions.EventProgressReporter.#ctor(Prism.Events.IEventAggregator)
+  - Innova.Prism.Library.ClassDefinitions.EventProgressReporter.EventAggregator
+  - Innova.Prism.Library.ClassDefinitions.EventProgressReporter.Report(Innova.Data.ProgressInfo)
+  langs:
+  - csharp
+  - vb
+  name: EventProgressReporter
+  nameWithType: EventProgressReporter
+  fullName: Innova.Prism.Library.ClassDefinitions.EventProgressReporter
+  type: Class
+  source:
+    id: EventProgressReporter
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\EventProgressReporter.cs
+    startLine: 14
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Represents a progress reporter that publishes progress information using Prism events.
+  example: []
+  syntax:
+    content: 'public class EventProgressReporter : IProgress<ProgressInfo>'
+    content.vb: Public Class EventProgressReporter Implements IProgress(Of ProgressInfo)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Innova.Prism.Library.ClassDefinitions.DialogEventProgressReporter
+  implements:
+  - System.IProgress{Innova.Data.ProgressInfo}
+- uid: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.EventAggregator
+  commentId: P:Innova.Prism.Library.ClassDefinitions.EventProgressReporter.EventAggregator
+  id: EventAggregator
+  parent: Innova.Prism.Library.ClassDefinitions.EventProgressReporter
+  langs:
+  - csharp
+  - vb
+  name: EventAggregator
+  nameWithType: EventProgressReporter.EventAggregator
+  fullName: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.EventAggregator
+  type: Property
+  source:
+    id: EventAggregator
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\EventProgressReporter.cs
+    startLine: 16
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  syntax:
+    content: protected IEventAggregator EventAggregator { get; }
+    parameters: []
+    return:
+      type: Prism.Events.IEventAggregator
+    content.vb: Protected ReadOnly Property EventAggregator As IEventAggregator
+  overload: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.EventAggregator*
+- uid: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.#ctor(Prism.Events.IEventAggregator)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.EventProgressReporter.#ctor(Prism.Events.IEventAggregator)
+  id: '#ctor(Prism.Events.IEventAggregator)'
+  parent: Innova.Prism.Library.ClassDefinitions.EventProgressReporter
+  langs:
+  - csharp
+  - vb
+  name: EventProgressReporter(IEventAggregator)
+  nameWithType: EventProgressReporter.EventProgressReporter(IEventAggregator)
+  fullName: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.EventProgressReporter(Prism.Events.IEventAggregator)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\EventProgressReporter.cs
+    startLine: 23
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.ClassDefinitions.EventProgressReporter" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public EventProgressReporter(IEventAggregator eventAggregator)
+    parameters:
+    - id: eventAggregator
+      type: Prism.Events.IEventAggregator
+      description: The event aggregator used to publish progress events.
+    content.vb: Public Sub New(eventAggregator As IEventAggregator)
+  overload: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">eventAggregator</code> is null.
+  nameWithType.vb: EventProgressReporter.New(IEventAggregator)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.New(Prism.Events.IEventAggregator)
+  name.vb: New(IEventAggregator)
+- uid: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.Report(Innova.Data.ProgressInfo)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.EventProgressReporter.Report(Innova.Data.ProgressInfo)
+  id: Report(Innova.Data.ProgressInfo)
+  parent: Innova.Prism.Library.ClassDefinitions.EventProgressReporter
+  langs:
+  - csharp
+  - vb
+  name: Report(ProgressInfo)
+  nameWithType: EventProgressReporter.Report(ProgressInfo)
+  fullName: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.Report(Innova.Data.ProgressInfo)
+  type: Method
+  source:
+    id: Report
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\EventProgressReporter.cs
+    startLine: 36
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Reports progress by publishing a progress event.
+  example: []
+  syntax:
+    content: public virtual void Report(ProgressInfo value)
+    parameters:
+    - id: value
+      type: Innova.Data.ProgressInfo
+      description: The progress information to report.
+    content.vb: Public Overridable Sub Report(value As ProgressInfo)
+  overload: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.Report*
+  implements:
+  - System.IProgress{Innova.Data.ProgressInfo}.Report(Innova.Data.ProgressInfo)
+references:
+- uid: Innova.Prism.Library.ClassDefinitions
+  commentId: N:Innova.Prism.Library.ClassDefinitions
+  href: Innova.html
+  name: Innova.Prism.Library.ClassDefinitions
+  nameWithType: Innova.Prism.Library.ClassDefinitions
+  fullName: Innova.Prism.Library.ClassDefinitions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IProgress{Innova.Data.ProgressInfo}
+  commentId: T:System.IProgress{Innova.Data.ProgressInfo}
+  parent: System
+  definition: System.IProgress`1
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  name: IProgress<ProgressInfo>
+  nameWithType: IProgress<ProgressInfo>
+  fullName: System.IProgress<Innova.Data.ProgressInfo>
+  nameWithType.vb: IProgress(Of ProgressInfo)
+  fullName.vb: System.IProgress(Of Innova.Data.ProgressInfo)
+  name.vb: IProgress(Of ProgressInfo)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: Innova.Data.ProgressInfo
+    name: ProgressInfo
+    href: Innova.Data.ProgressInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.ProgressInfo
+    name: ProgressInfo
+    href: Innova.Data.ProgressInfo.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IProgress`1
+  commentId: T:System.IProgress`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  name: IProgress<T>
+  nameWithType: IProgress<T>
+  fullName: System.IProgress<T>
+  nameWithType.vb: IProgress(Of T)
+  fullName.vb: System.IProgress(Of T)
+  name.vb: IProgress(Of T)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.EventAggregator*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.EventProgressReporter.EventAggregator
+  href: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.EventAggregator.html#Innova_Prism_Library_ClassDefinitions_EventProgressReporter_EventAggregator
+  name: EventAggregator
+  nameWithType: EventProgressReporter.EventAggregator
+  fullName: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.EventAggregator
+- uid: Prism.Events.IEventAggregator
+  commentId: T:Prism.Events.IEventAggregator
+  parent: Prism.Events
+  isExternal: true
+  name: IEventAggregator
+  nameWithType: IEventAggregator
+  fullName: Prism.Events.IEventAggregator
+- uid: Prism.Events
+  commentId: N:Prism.Events
+  isExternal: true
+  name: Prism.Events
+  nameWithType: Prism.Events
+  fullName: Prism.Events
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+- uid: Innova.Prism.Library.ClassDefinitions.EventProgressReporter
+  commentId: T:Innova.Prism.Library.ClassDefinitions.EventProgressReporter
+  parent: Innova.Prism.Library.ClassDefinitions
+  href: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.html
+  name: EventProgressReporter
+  nameWithType: EventProgressReporter
+  fullName: Innova.Prism.Library.ClassDefinitions.EventProgressReporter
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.#ctor*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.EventProgressReporter.#ctor
+  href: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.-ctor.html#Innova_Prism_Library_ClassDefinitions_EventProgressReporter__ctor_Prism_Events_IEventAggregator_
+  name: EventProgressReporter
+  nameWithType: EventProgressReporter.EventProgressReporter
+  fullName: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.EventProgressReporter
+  nameWithType.vb: EventProgressReporter.New
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.New
+  name.vb: New
+- uid: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.Report*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.EventProgressReporter.Report
+  href: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.Report.html#Innova_Prism_Library_ClassDefinitions_EventProgressReporter_Report_Innova_Data_ProgressInfo_
+  name: Report
+  nameWithType: EventProgressReporter.Report
+  fullName: Innova.Prism.Library.ClassDefinitions.EventProgressReporter.Report
+- uid: System.IProgress{Innova.Data.ProgressInfo}.Report(Innova.Data.ProgressInfo)
+  commentId: M:System.IProgress{Innova.Data.ProgressInfo}.Report(Innova.Data.ProgressInfo)
+  parent: System.IProgress{Innova.Data.ProgressInfo}
+  definition: System.IProgress`1.Report(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1.report
+  name: Report(ProgressInfo)
+  nameWithType: IProgress<ProgressInfo>.Report(ProgressInfo)
+  fullName: System.IProgress<Innova.Data.ProgressInfo>.Report(Innova.Data.ProgressInfo)
+  nameWithType.vb: IProgress(Of ProgressInfo).Report(ProgressInfo)
+  fullName.vb: System.IProgress(Of Innova.Data.ProgressInfo).Report(Innova.Data.ProgressInfo)
+  spec.csharp:
+  - uid: System.IProgress{Innova.Data.ProgressInfo}.Report(Innova.Data.ProgressInfo)
+    name: Report
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1.report
+  - name: (
+  - uid: Innova.Data.ProgressInfo
+    name: ProgressInfo
+  - name: )
+  spec.vb:
+  - uid: System.IProgress{Innova.Data.ProgressInfo}.Report(Innova.Data.ProgressInfo)
+    name: Report
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1.report
+  - name: (
+  - uid: Innova.Data.ProgressInfo
+    name: ProgressInfo
+  - name: )
+- uid: Innova.Data.ProgressInfo
+  commentId: T:Innova.Data.ProgressInfo
+  parent: Innova.Data
+  href: Innova.Data.ProgressInfo.html
+  name: ProgressInfo
+  nameWithType: ProgressInfo
+  fullName: Innova.Data.ProgressInfo
+- uid: System.IProgress`1.Report(`0)
+  commentId: M:System.IProgress`1.Report(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1.report
+  name: Report(T)
+  nameWithType: IProgress<T>.Report(T)
+  fullName: System.IProgress<T>.Report(T)
+  nameWithType.vb: IProgress(Of T).Report(T)
+  fullName.vb: System.IProgress(Of T).Report(T)
+  spec.csharp:
+  - uid: System.IProgress`1.Report(`0)
+    name: Report
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1.report
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IProgress`1.Report(`0)
+    name: Report
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1.report
+  - name: (
+  - name: T
+  - name: )
+- uid: Innova.Data
+  commentId: N:Innova.Data
+  href: Innova.html
+  name: Innova.Data
+  nameWithType: Innova.Data
+  fullName: Innova.Data
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+memberLayout: SeparatePages

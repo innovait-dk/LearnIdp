@@ -1,0 +1,543 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.ImageProvider
+  commentId: T:Innova.Prism.Library.ImageProvider
+  id: ImageProvider
+  parent: Innova.Prism.Library
+  children:
+  - Innova.Prism.Library.ImageProvider.GetEntityHeaderImage(System.String,System.Int32)
+  - Innova.Prism.Library.ImageProvider.GetEntityMenuImage(System.String,System.Int32)
+  - Innova.Prism.Library.ImageProvider.GetEntityTabImage(System.String,System.Int32)
+  - Innova.Prism.Library.ImageProvider.GetImage(System.String)
+  - Innova.Prism.Library.ImageProvider.GetImage(System.String,System.Int32)
+  - Innova.Prism.Library.ImageProvider.GetImageDelegate
+  - Innova.Prism.Library.ImageProvider.GetImage``1
+  - Innova.Prism.Library.ImageProvider.GetImage``1(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ImageProvider
+  nameWithType: ImageProvider
+  fullName: Innova.Prism.Library.ImageProvider
+  type: Class
+  source:
+    id: ImageProvider
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ImageProvider.cs
+    startLine: 13
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Provides methods to retrieve and cache images for the application.
+  example: []
+  syntax:
+    content: public static class ImageProvider
+    content.vb: Public Module ImageProvider
+  inheritance:
+  - System.Object
+- uid: Innova.Prism.Library.ImageProvider.GetImageDelegate
+  commentId: P:Innova.Prism.Library.ImageProvider.GetImageDelegate
+  id: GetImageDelegate
+  parent: Innova.Prism.Library.ImageProvider
+  langs:
+  - csharp
+  - vb
+  name: GetImageDelegate
+  nameWithType: ImageProvider.GetImageDelegate
+  fullName: Innova.Prism.Library.ImageProvider.GetImageDelegate
+  type: Property
+  source:
+    id: GetImageDelegate
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ImageProvider.cs
+    startLine: 22
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Gets or sets the delegate function to retrieve an image by its name.
+  example: []
+  syntax:
+    content: public static Func<string, Bitmap> GetImageDelegate { get; set; }
+    parameters: []
+    return:
+      type: System.Func{System.String,System.Drawing.Bitmap}
+    content.vb: Public Shared Property GetImageDelegate As Func(Of String, Bitmap)
+  overload: Innova.Prism.Library.ImageProvider.GetImageDelegate*
+- uid: Innova.Prism.Library.ImageProvider.GetImage``1
+  commentId: M:Innova.Prism.Library.ImageProvider.GetImage``1
+  id: GetImage``1
+  parent: Innova.Prism.Library.ImageProvider
+  langs:
+  - csharp
+  - vb
+  name: GetImage<EntityType>()
+  nameWithType: ImageProvider.GetImage<EntityType>()
+  fullName: Innova.Prism.Library.ImageProvider.GetImage<EntityType>()
+  type: Method
+  source:
+    id: GetImage
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ImageProvider.cs
+    startLine: 29
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Gets an image for the specified entity type.
+  example: []
+  syntax:
+    content: public static Image GetImage<EntityType>()
+    typeParameters:
+    - id: EntityType
+      description: The type of the entity.
+    return:
+      type: System.Windows.Controls.Image
+      description: The image associated with the entity type.
+    content.vb: Public Shared Function GetImage(Of EntityType)() As Image
+  overload: Innova.Prism.Library.ImageProvider.GetImage*
+  nameWithType.vb: ImageProvider.GetImage(Of EntityType)()
+  fullName.vb: Innova.Prism.Library.ImageProvider.GetImage(Of EntityType)()
+  name.vb: GetImage(Of EntityType)()
+- uid: Innova.Prism.Library.ImageProvider.GetImage(System.String)
+  commentId: M:Innova.Prism.Library.ImageProvider.GetImage(System.String)
+  id: GetImage(System.String)
+  parent: Innova.Prism.Library.ImageProvider
+  langs:
+  - csharp
+  - vb
+  name: GetImage(string)
+  nameWithType: ImageProvider.GetImage(string)
+  fullName: Innova.Prism.Library.ImageProvider.GetImage(string)
+  type: Method
+  source:
+    id: GetImage
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ImageProvider.cs
+    startLine: 39
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Gets an image by its name.
+  example: []
+  syntax:
+    content: public static Image GetImage(string imageName)
+    parameters:
+    - id: imageName
+      type: System.String
+      description: The name of the image.
+    return:
+      type: System.Windows.Controls.Image
+      description: The image with the specified name.
+    content.vb: Public Shared Function GetImage(imageName As String) As Image
+  overload: Innova.Prism.Library.ImageProvider.GetImage*
+  nameWithType.vb: ImageProvider.GetImage(String)
+  fullName.vb: Innova.Prism.Library.ImageProvider.GetImage(String)
+  name.vb: GetImage(String)
+- uid: Innova.Prism.Library.ImageProvider.GetImage``1(System.Int32)
+  commentId: M:Innova.Prism.Library.ImageProvider.GetImage``1(System.Int32)
+  id: GetImage``1(System.Int32)
+  parent: Innova.Prism.Library.ImageProvider
+  langs:
+  - csharp
+  - vb
+  name: GetImage<EntityType>(int)
+  nameWithType: ImageProvider.GetImage<EntityType>(int)
+  fullName: Innova.Prism.Library.ImageProvider.GetImage<EntityType>(int)
+  type: Method
+  source:
+    id: GetImage
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ImageProvider.cs
+    startLine: 50
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Gets an image for the specified entity type and size.
+  example: []
+  syntax:
+    content: public static Image GetImage<EntityType>(int size)
+    parameters:
+    - id: size
+      type: System.Int32
+      description: The size of the image.
+    typeParameters:
+    - id: EntityType
+      description: The type of the entity.
+    return:
+      type: System.Windows.Controls.Image
+      description: The image associated with the entity type and size.
+    content.vb: Public Shared Function GetImage(Of EntityType)(size As Integer) As Image
+  overload: Innova.Prism.Library.ImageProvider.GetImage*
+  nameWithType.vb: ImageProvider.GetImage(Of EntityType)(Integer)
+  fullName.vb: Innova.Prism.Library.ImageProvider.GetImage(Of EntityType)(Integer)
+  name.vb: GetImage(Of EntityType)(Integer)
+- uid: Innova.Prism.Library.ImageProvider.GetEntityHeaderImage(System.String,System.Int32)
+  commentId: M:Innova.Prism.Library.ImageProvider.GetEntityHeaderImage(System.String,System.Int32)
+  id: GetEntityHeaderImage(System.String,System.Int32)
+  parent: Innova.Prism.Library.ImageProvider
+  langs:
+  - csharp
+  - vb
+  name: GetEntityHeaderImage(string, int)
+  nameWithType: ImageProvider.GetEntityHeaderImage(string, int)
+  fullName: Innova.Prism.Library.ImageProvider.GetEntityHeaderImage(string, int)
+  type: Method
+  source:
+    id: GetEntityHeaderImage
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ImageProvider.cs
+    startLine: 61
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Gets an entity header image by its name and size.
+  example: []
+  syntax:
+    content: public static Image GetEntityHeaderImage(string imageName, int size)
+    parameters:
+    - id: imageName
+      type: System.String
+      description: The name of the image.
+    - id: size
+      type: System.Int32
+      description: The size of the image.
+    return:
+      type: System.Windows.Controls.Image
+      description: The entity header image with the specified name and size.
+    content.vb: Public Shared Function GetEntityHeaderImage(imageName As String, size As Integer) As Image
+  overload: Innova.Prism.Library.ImageProvider.GetEntityHeaderImage*
+  nameWithType.vb: ImageProvider.GetEntityHeaderImage(String, Integer)
+  fullName.vb: Innova.Prism.Library.ImageProvider.GetEntityHeaderImage(String, Integer)
+  name.vb: GetEntityHeaderImage(String, Integer)
+- uid: Innova.Prism.Library.ImageProvider.GetEntityTabImage(System.String,System.Int32)
+  commentId: M:Innova.Prism.Library.ImageProvider.GetEntityTabImage(System.String,System.Int32)
+  id: GetEntityTabImage(System.String,System.Int32)
+  parent: Innova.Prism.Library.ImageProvider
+  langs:
+  - csharp
+  - vb
+  name: GetEntityTabImage(string, int)
+  nameWithType: ImageProvider.GetEntityTabImage(string, int)
+  fullName: Innova.Prism.Library.ImageProvider.GetEntityTabImage(string, int)
+  type: Method
+  source:
+    id: GetEntityTabImage
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ImageProvider.cs
+    startLine: 72
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Gets an entity tab image by its name and size.
+  example: []
+  syntax:
+    content: public static Image GetEntityTabImage(string imageName, int size)
+    parameters:
+    - id: imageName
+      type: System.String
+      description: The name of the image.
+    - id: size
+      type: System.Int32
+      description: The size of the image.
+    return:
+      type: System.Windows.Controls.Image
+      description: The entity tab image with the specified name and size.
+    content.vb: Public Shared Function GetEntityTabImage(imageName As String, size As Integer) As Image
+  overload: Innova.Prism.Library.ImageProvider.GetEntityTabImage*
+  nameWithType.vb: ImageProvider.GetEntityTabImage(String, Integer)
+  fullName.vb: Innova.Prism.Library.ImageProvider.GetEntityTabImage(String, Integer)
+  name.vb: GetEntityTabImage(String, Integer)
+- uid: Innova.Prism.Library.ImageProvider.GetEntityMenuImage(System.String,System.Int32)
+  commentId: M:Innova.Prism.Library.ImageProvider.GetEntityMenuImage(System.String,System.Int32)
+  id: GetEntityMenuImage(System.String,System.Int32)
+  parent: Innova.Prism.Library.ImageProvider
+  langs:
+  - csharp
+  - vb
+  name: GetEntityMenuImage(string, int)
+  nameWithType: ImageProvider.GetEntityMenuImage(string, int)
+  fullName: Innova.Prism.Library.ImageProvider.GetEntityMenuImage(string, int)
+  type: Method
+  source:
+    id: GetEntityMenuImage
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ImageProvider.cs
+    startLine: 83
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Gets an entity menu image by its name and size.
+  example: []
+  syntax:
+    content: public static Image GetEntityMenuImage(string imageName, int size)
+    parameters:
+    - id: imageName
+      type: System.String
+      description: The name of the image.
+    - id: size
+      type: System.Int32
+      description: The size of the image.
+    return:
+      type: System.Windows.Controls.Image
+      description: The entity menu image with the specified name and size.
+    content.vb: Public Shared Function GetEntityMenuImage(imageName As String, size As Integer) As Image
+  overload: Innova.Prism.Library.ImageProvider.GetEntityMenuImage*
+  nameWithType.vb: ImageProvider.GetEntityMenuImage(String, Integer)
+  fullName.vb: Innova.Prism.Library.ImageProvider.GetEntityMenuImage(String, Integer)
+  name.vb: GetEntityMenuImage(String, Integer)
+- uid: Innova.Prism.Library.ImageProvider.GetImage(System.String,System.Int32)
+  commentId: M:Innova.Prism.Library.ImageProvider.GetImage(System.String,System.Int32)
+  id: GetImage(System.String,System.Int32)
+  parent: Innova.Prism.Library.ImageProvider
+  langs:
+  - csharp
+  - vb
+  name: GetImage(string, int)
+  nameWithType: ImageProvider.GetImage(string, int)
+  fullName: Innova.Prism.Library.ImageProvider.GetImage(string, int)
+  type: Method
+  source:
+    id: GetImage
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ImageProvider.cs
+    startLine: 111
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Gets an image by its name and size.
+  example: []
+  syntax:
+    content: public static Image GetImage(string imageName, int size)
+    parameters:
+    - id: imageName
+      type: System.String
+      description: The name of the image.
+    - id: size
+      type: System.Int32
+      description: The size of the image.
+    return:
+      type: System.Windows.Controls.Image
+      description: The image with the specified name and size.
+    content.vb: Public Shared Function GetImage(imageName As String, size As Integer) As Image
+  overload: Innova.Prism.Library.ImageProvider.GetImage*
+  nameWithType.vb: ImageProvider.GetImage(String, Integer)
+  fullName.vb: Innova.Prism.Library.ImageProvider.GetImage(String, Integer)
+  name.vb: GetImage(String, Integer)
+references:
+- uid: Innova.Prism.Library
+  commentId: N:Innova.Prism.Library
+  href: Innova.html
+  name: Innova.Prism.Library
+  nameWithType: Innova.Prism.Library
+  fullName: Innova.Prism.Library
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Library.ImageProvider.GetImageDelegate*
+  commentId: Overload:Innova.Prism.Library.ImageProvider.GetImageDelegate
+  href: Innova.Prism.Library.ImageProvider.GetImageDelegate.html#Innova_Prism_Library_ImageProvider_GetImageDelegate
+  name: GetImageDelegate
+  nameWithType: ImageProvider.GetImageDelegate
+  fullName: Innova.Prism.Library.ImageProvider.GetImageDelegate
+- uid: System.Func{System.String,System.Drawing.Bitmap}
+  commentId: T:System.Func{System.String,System.Drawing.Bitmap}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<string, Bitmap>
+  nameWithType: Func<string, Bitmap>
+  fullName: System.Func<string, System.Drawing.Bitmap>
+  nameWithType.vb: Func(Of String, Bitmap)
+  fullName.vb: System.Func(Of String, System.Drawing.Bitmap)
+  name.vb: Func(Of String, Bitmap)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Drawing.Bitmap
+    name: Bitmap
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.bitmap
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Drawing.Bitmap
+    name: Bitmap
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.bitmap
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Innova.Prism.Library.ImageProvider.GetImage*
+  commentId: Overload:Innova.Prism.Library.ImageProvider.GetImage
+  href: Innova.Prism.Library.ImageProvider.GetImage.html#Innova_Prism_Library_ImageProvider_GetImage__1
+  name: GetImage
+  nameWithType: ImageProvider.GetImage
+  fullName: Innova.Prism.Library.ImageProvider.GetImage
+- uid: System.Windows.Controls.Image
+  commentId: T:System.Windows.Controls.Image
+  parent: System.Windows.Controls
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.controls.image
+  name: Image
+  nameWithType: Image
+  fullName: System.Windows.Controls.Image
+- uid: System.Windows.Controls
+  commentId: N:System.Windows.Controls
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Controls
+  nameWithType: System.Windows.Controls
+  fullName: System.Windows.Controls
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Controls
+    name: Controls
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.controls
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Controls
+    name: Controls
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.controls
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Innova.Prism.Library.ImageProvider.GetEntityHeaderImage*
+  commentId: Overload:Innova.Prism.Library.ImageProvider.GetEntityHeaderImage
+  href: Innova.Prism.Library.ImageProvider.GetEntityHeaderImage.html#Innova_Prism_Library_ImageProvider_GetEntityHeaderImage_System_String_System_Int32_
+  name: GetEntityHeaderImage
+  nameWithType: ImageProvider.GetEntityHeaderImage
+  fullName: Innova.Prism.Library.ImageProvider.GetEntityHeaderImage
+- uid: Innova.Prism.Library.ImageProvider.GetEntityTabImage*
+  commentId: Overload:Innova.Prism.Library.ImageProvider.GetEntityTabImage
+  href: Innova.Prism.Library.ImageProvider.GetEntityTabImage.html#Innova_Prism_Library_ImageProvider_GetEntityTabImage_System_String_System_Int32_
+  name: GetEntityTabImage
+  nameWithType: ImageProvider.GetEntityTabImage
+  fullName: Innova.Prism.Library.ImageProvider.GetEntityTabImage
+- uid: Innova.Prism.Library.ImageProvider.GetEntityMenuImage*
+  commentId: Overload:Innova.Prism.Library.ImageProvider.GetEntityMenuImage
+  href: Innova.Prism.Library.ImageProvider.GetEntityMenuImage.html#Innova_Prism_Library_ImageProvider_GetEntityMenuImage_System_String_System_Int32_
+  name: GetEntityMenuImage
+  nameWithType: ImageProvider.GetEntityMenuImage
+  fullName: Innova.Prism.Library.ImageProvider.GetEntityMenuImage
+memberLayout: SeparatePages

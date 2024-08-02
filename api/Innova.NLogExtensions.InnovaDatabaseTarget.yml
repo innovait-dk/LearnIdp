@@ -1,0 +1,2402 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget
+  commentId: T:Innova.NLogExtensions.InnovaDatabaseTarget
+  id: InnovaDatabaseTarget
+  parent: Innova.NLogExtensions
+  children:
+  - Innova.NLogExtensions.InnovaDatabaseTarget.#ctor
+  - Innova.NLogExtensions.InnovaDatabaseTarget.ApplicationName
+  - Innova.NLogExtensions.InnovaDatabaseTarget.InitializeTarget
+  - Innova.NLogExtensions.InnovaDatabaseTarget.OnDatabaseError(System.Exception)
+  - Innova.NLogExtensions.InnovaDatabaseTarget.Parameters
+  - Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask(NLog.LogEventInfo,System.Threading.CancellationToken)
+  - Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask(System.Collections.Generic.IList{NLog.LogEventInfo},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: InnovaDatabaseTarget
+  nameWithType: InnovaDatabaseTarget
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget
+  type: Class
+  source:
+    id: InnovaDatabaseTarget
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\InnovaDatabaseTarget.cs
+    startLine: 22
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Represents a custom NLog target for logging to a database.
+  example: []
+  syntax:
+    content: >-
+      [Target("InnovaDatabase")]
+
+      public class InnovaDatabaseTarget : AsyncTaskTarget, IDisposable
+    content.vb: >-
+      <Target("InnovaDatabase")>
+
+      Public Class InnovaDatabaseTarget Inherits AsyncTaskTarget Implements IDisposable
+  inheritance:
+  - System.Object
+  - NLog.Targets.Target
+  - NLog.Targets.TargetWithLayout
+  - NLog.Targets.TargetWithContext
+  - NLog.Targets.AsyncTaskTarget
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - NLog.Targets.AsyncTaskTarget.RetryFailedAsyncTask(System.Exception,System.Threading.CancellationToken,System.Int32,System.TimeSpan@)
+  - NLog.Targets.AsyncTaskTarget.Write(NLog.LogEventInfo)
+  - NLog.Targets.AsyncTaskTarget.Write(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+  - NLog.Targets.AsyncTaskTarget.Write(NLog.Common.AsyncLogEventInfo)
+  - NLog.Targets.AsyncTaskTarget.WriteAsyncThreadSafe(NLog.Common.AsyncLogEventInfo)
+  - NLog.Targets.AsyncTaskTarget.WriteAsyncThreadSafe(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+  - NLog.Targets.AsyncTaskTarget.WriteFailedNotInitialized(NLog.Common.AsyncLogEventInfo,System.Exception)
+  - NLog.Targets.AsyncTaskTarget.FlushAsync(NLog.Common.AsyncContinuation)
+  - NLog.Targets.AsyncTaskTarget.CloseTarget
+  - NLog.Targets.AsyncTaskTarget.Dispose(System.Boolean)
+  - NLog.Targets.AsyncTaskTarget.TaskDelayMilliseconds
+  - NLog.Targets.AsyncTaskTarget.TaskTimeoutSeconds
+  - NLog.Targets.AsyncTaskTarget.RetryCount
+  - NLog.Targets.AsyncTaskTarget.RetryDelayMilliseconds
+  - NLog.Targets.AsyncTaskTarget.ForceLockingQueue
+  - NLog.Targets.AsyncTaskTarget.OverflowAction
+  - NLog.Targets.AsyncTaskTarget.QueueLimit
+  - NLog.Targets.AsyncTaskTarget.BatchSize
+  - NLog.Targets.AsyncTaskTarget.TaskScheduler
+  - NLog.Targets.TargetWithContext.ShouldIncludeProperties(NLog.LogEventInfo)
+  - NLog.Targets.TargetWithContext.GetContextProperties(NLog.LogEventInfo)
+  - NLog.Targets.TargetWithContext.GetContextProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+  - NLog.Targets.TargetWithContext.GetAllProperties(NLog.LogEventInfo)
+  - NLog.Targets.TargetWithContext.GetAllProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+  - NLog.Targets.TargetWithContext.GenerateUniqueItemName(NLog.LogEventInfo,System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
+  - NLog.Targets.TargetWithContext.GetScopeContextProperties(NLog.LogEventInfo)
+  - NLog.Targets.TargetWithContext.GetScopeContextNested(NLog.LogEventInfo)
+  - NLog.Targets.TargetWithContext.CaptureContextGdc(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+  - NLog.Targets.TargetWithContext.CaptureScopeContextProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+  - NLog.Targets.TargetWithContext.SerializeScopeContextProperty(NLog.LogEventInfo,System.String,System.Object,System.Object@)
+  - NLog.Targets.TargetWithContext.CaptureScopeContextNested(NLog.LogEventInfo)
+  - NLog.Targets.TargetWithContext.SerializeScopeContextNestedState(NLog.LogEventInfo,System.Object,System.Object@)
+  - NLog.Targets.TargetWithContext.SerializeItemValue(NLog.LogEventInfo,System.String,System.Object,System.Object@)
+  - NLog.Targets.TargetWithContext.Layout
+  - NLog.Targets.TargetWithContext.IncludeEventProperties
+  - NLog.Targets.TargetWithContext.IncludeScopeProperties
+  - NLog.Targets.TargetWithContext.IncludeScopeNested
+  - NLog.Targets.TargetWithContext.IncludeGdc
+  - NLog.Targets.TargetWithContext.IncludeCallSite
+  - NLog.Targets.TargetWithContext.IncludeCallSiteStackTrace
+  - NLog.Targets.TargetWithContext.ContextProperties
+  - NLog.Targets.TargetWithContext.ExcludeProperties
+  - NLog.Targets.Target.Dispose
+  - NLog.Targets.Target.Flush(NLog.Common.AsyncContinuation)
+  - NLog.Targets.Target.PrecalculateVolatileLayouts(NLog.LogEventInfo)
+  - NLog.Targets.Target.ToString
+  - NLog.Targets.Target.WriteAsyncLogEvent(NLog.Common.AsyncLogEventInfo)
+  - NLog.Targets.Target.WriteAsyncLogEvents(NLog.Common.AsyncLogEventInfo[])
+  - NLog.Targets.Target.WriteAsyncLogEvents(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+  - NLog.Targets.Target.RenderLogEvent(NLog.Layouts.Layout,NLog.LogEventInfo)
+  - NLog.Targets.Target.RenderLogEvent``1(NLog.Layouts.Layout{{T}},NLog.LogEventInfo,{T})
+  - NLog.Targets.Target.ResolveService``1
+  - NLog.Targets.Target.Name
+  - NLog.Targets.Target.SyncRoot
+  - NLog.Targets.Target.LoggingConfiguration
+  - NLog.Targets.Target.IsInitialized
+  attributes:
+  - type: NLog.Targets.TargetAttribute
+    ctor: NLog.Targets.TargetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: InnovaDatabase
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget.ApplicationName
+  commentId: P:Innova.NLogExtensions.InnovaDatabaseTarget.ApplicationName
+  id: ApplicationName
+  parent: Innova.NLogExtensions.InnovaDatabaseTarget
+  langs:
+  - csharp
+  - vb
+  name: ApplicationName
+  nameWithType: InnovaDatabaseTarget.ApplicationName
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget.ApplicationName
+  type: Property
+  source:
+    id: ApplicationName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\InnovaDatabaseTarget.cs
+    startLine: 31
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Gets or sets the application name.
+  example: []
+  syntax:
+    content: public string ApplicationName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ApplicationName As String
+  overload: Innova.NLogExtensions.InnovaDatabaseTarget.ApplicationName*
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget.Parameters
+  commentId: P:Innova.NLogExtensions.InnovaDatabaseTarget.Parameters
+  id: Parameters
+  parent: Innova.NLogExtensions.InnovaDatabaseTarget
+  langs:
+  - csharp
+  - vb
+  name: Parameters
+  nameWithType: InnovaDatabaseTarget.Parameters
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget.Parameters
+  type: Property
+  source:
+    id: Parameters
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\InnovaDatabaseTarget.cs
+    startLine: 36
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Gets the list of database parameters.
+  example: []
+  syntax:
+    content: >-
+      [ArrayParameter(typeof(DatabaseParameterInfo), "parameter")]
+
+      public IList<DatabaseParameterInfo> Parameters { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{NLog.Targets.DatabaseParameterInfo}
+    content.vb: >-
+      <ArrayParameter(GetType(DatabaseParameterInfo), "parameter")>
+
+      Public ReadOnly Property Parameters As IList(Of DatabaseParameterInfo)
+  overload: Innova.NLogExtensions.InnovaDatabaseTarget.Parameters*
+  attributes:
+  - type: NLog.Config.ArrayParameterAttribute
+    ctor: NLog.Config.ArrayParameterAttribute.#ctor(System.Type,System.String)
+    arguments:
+    - type: System.Type
+      value: NLog.Targets.DatabaseParameterInfo
+    - type: System.String
+      value: parameter
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget.#ctor
+  commentId: M:Innova.NLogExtensions.InnovaDatabaseTarget.#ctor
+  id: '#ctor'
+  parent: Innova.NLogExtensions.InnovaDatabaseTarget
+  langs:
+  - csharp
+  - vb
+  name: InnovaDatabaseTarget()
+  nameWithType: InnovaDatabaseTarget.InnovaDatabaseTarget()
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget.InnovaDatabaseTarget()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\InnovaDatabaseTarget.cs
+    startLine: 42
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Initializes a new instance of the <xref href="Innova.NLogExtensions.InnovaDatabaseTarget" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public InnovaDatabaseTarget()
+    content.vb: Public Sub New()
+  overload: Innova.NLogExtensions.InnovaDatabaseTarget.#ctor*
+  nameWithType.vb: InnovaDatabaseTarget.New()
+  fullName.vb: Innova.NLogExtensions.InnovaDatabaseTarget.New()
+  name.vb: New()
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget.InitializeTarget
+  commentId: M:Innova.NLogExtensions.InnovaDatabaseTarget.InitializeTarget
+  id: InitializeTarget
+  parent: Innova.NLogExtensions.InnovaDatabaseTarget
+  langs:
+  - csharp
+  - vb
+  name: InitializeTarget()
+  nameWithType: InnovaDatabaseTarget.InitializeTarget()
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget.InitializeTarget()
+  type: Method
+  source:
+    id: InitializeTarget
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\InnovaDatabaseTarget.cs
+    startLine: 50
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Initializes the target.
+  example: []
+  syntax:
+    content: protected override void InitializeTarget()
+    content.vb: Protected Overrides Sub InitializeTarget()
+  overridden: NLog.Targets.AsyncTaskTarget.InitializeTarget
+  overload: Innova.NLogExtensions.InnovaDatabaseTarget.InitializeTarget*
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask(System.Collections.Generic.IList{NLog.LogEventInfo},System.Threading.CancellationToken)
+  commentId: M:Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask(System.Collections.Generic.IList{NLog.LogEventInfo},System.Threading.CancellationToken)
+  id: WriteAsyncTask(System.Collections.Generic.IList{NLog.LogEventInfo},System.Threading.CancellationToken)
+  parent: Innova.NLogExtensions.InnovaDatabaseTarget
+  langs:
+  - csharp
+  - vb
+  name: WriteAsyncTask(IList<LogEventInfo>, CancellationToken)
+  nameWithType: InnovaDatabaseTarget.WriteAsyncTask(IList<LogEventInfo>, CancellationToken)
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask(System.Collections.Generic.IList<NLog.LogEventInfo>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: WriteAsyncTask
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\InnovaDatabaseTarget.cs
+    startLine: 63
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Writes the log events to the database asynchronously.
+  example: []
+  syntax:
+    content: protected override Task WriteAsyncTask(IList<LogEventInfo> logEvents, CancellationToken cancellationToken)
+    parameters:
+    - id: logEvents
+      type: System.Collections.Generic.IList{NLog.LogEventInfo}
+      description: The list of log events to write.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous write operation.
+    content.vb: Protected Overrides Function WriteAsyncTask(logEvents As IList(Of LogEventInfo), cancellationToken As CancellationToken) As Task
+  overridden: NLog.Targets.AsyncTaskTarget.WriteAsyncTask(System.Collections.Generic.IList{NLog.LogEventInfo},System.Threading.CancellationToken)
+  overload: Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask*
+  nameWithType.vb: InnovaDatabaseTarget.WriteAsyncTask(IList(Of LogEventInfo), CancellationToken)
+  fullName.vb: Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask(System.Collections.Generic.IList(Of NLog.LogEventInfo), System.Threading.CancellationToken)
+  name.vb: WriteAsyncTask(IList(Of LogEventInfo), CancellationToken)
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget.OnDatabaseError(System.Exception)
+  commentId: M:Innova.NLogExtensions.InnovaDatabaseTarget.OnDatabaseError(System.Exception)
+  id: OnDatabaseError(System.Exception)
+  parent: Innova.NLogExtensions.InnovaDatabaseTarget
+  langs:
+  - csharp
+  - vb
+  name: OnDatabaseError(Exception)
+  nameWithType: InnovaDatabaseTarget.OnDatabaseError(Exception)
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget.OnDatabaseError(System.Exception)
+  type: Method
+  source:
+    id: OnDatabaseError
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\InnovaDatabaseTarget.cs
+    startLine: 88
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Handles the database error.
+  example: []
+  syntax:
+    content: protected virtual void OnDatabaseError(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+      description: The exception that occurred.
+    content.vb: Protected Overridable Sub OnDatabaseError(ex As Exception)
+  overload: Innova.NLogExtensions.InnovaDatabaseTarget.OnDatabaseError*
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask(NLog.LogEventInfo,System.Threading.CancellationToken)
+  commentId: M:Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask(NLog.LogEventInfo,System.Threading.CancellationToken)
+  id: WriteAsyncTask(NLog.LogEventInfo,System.Threading.CancellationToken)
+  parent: Innova.NLogExtensions.InnovaDatabaseTarget
+  langs:
+  - csharp
+  - vb
+  name: WriteAsyncTask(LogEventInfo, CancellationToken)
+  nameWithType: InnovaDatabaseTarget.WriteAsyncTask(LogEventInfo, CancellationToken)
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask(NLog.LogEventInfo, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: WriteAsyncTask
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\InnovaDatabaseTarget.cs
+    startLine: 100
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Writes the log event to the database asynchronously.
+  example: []
+  syntax:
+    content: protected override Task WriteAsyncTask(LogEventInfo logEvent, CancellationToken cancellationToken)
+    parameters:
+    - id: logEvent
+      type: NLog.LogEventInfo
+      description: The log event to write.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous write operation.
+    content.vb: Protected Overrides Function WriteAsyncTask(logEvent As LogEventInfo, cancellationToken As CancellationToken) As Task
+  overridden: NLog.Targets.AsyncTaskTarget.WriteAsyncTask(NLog.LogEventInfo,System.Threading.CancellationToken)
+  overload: Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask*
+references:
+- uid: Innova.NLogExtensions
+  commentId: N:Innova.NLogExtensions
+  href: Innova.html
+  name: Innova.NLogExtensions
+  nameWithType: Innova.NLogExtensions
+  fullName: Innova.NLogExtensions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.NLogExtensions
+    name: NLogExtensions
+    href: Innova.NLogExtensions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.NLogExtensions
+    name: NLogExtensions
+    href: Innova.NLogExtensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: NLog.Targets.Target
+  commentId: T:NLog.Targets.Target
+  parent: NLog.Targets
+  isExternal: true
+  name: Target
+  nameWithType: Target
+  fullName: NLog.Targets.Target
+- uid: NLog.Targets.TargetWithLayout
+  commentId: T:NLog.Targets.TargetWithLayout
+  parent: NLog.Targets
+  isExternal: true
+  name: TargetWithLayout
+  nameWithType: TargetWithLayout
+  fullName: NLog.Targets.TargetWithLayout
+- uid: NLog.Targets.TargetWithContext
+  commentId: T:NLog.Targets.TargetWithContext
+  parent: NLog.Targets
+  isExternal: true
+  name: TargetWithContext
+  nameWithType: TargetWithContext
+  fullName: NLog.Targets.TargetWithContext
+- uid: NLog.Targets.AsyncTaskTarget
+  commentId: T:NLog.Targets.AsyncTaskTarget
+  parent: NLog.Targets
+  isExternal: true
+  name: AsyncTaskTarget
+  nameWithType: AsyncTaskTarget
+  fullName: NLog.Targets.AsyncTaskTarget
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: NLog.Targets.AsyncTaskTarget.RetryFailedAsyncTask(System.Exception,System.Threading.CancellationToken,System.Int32,System.TimeSpan@)
+  commentId: M:NLog.Targets.AsyncTaskTarget.RetryFailedAsyncTask(System.Exception,System.Threading.CancellationToken,System.Int32,System.TimeSpan@)
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: RetryFailedAsyncTask(Exception, CancellationToken, int, out TimeSpan)
+  nameWithType: AsyncTaskTarget.RetryFailedAsyncTask(Exception, CancellationToken, int, out TimeSpan)
+  fullName: NLog.Targets.AsyncTaskTarget.RetryFailedAsyncTask(System.Exception, System.Threading.CancellationToken, int, out System.TimeSpan)
+  nameWithType.vb: AsyncTaskTarget.RetryFailedAsyncTask(Exception, CancellationToken, Integer, TimeSpan)
+  fullName.vb: NLog.Targets.AsyncTaskTarget.RetryFailedAsyncTask(System.Exception, System.Threading.CancellationToken, Integer, System.TimeSpan)
+  name.vb: RetryFailedAsyncTask(Exception, CancellationToken, Integer, TimeSpan)
+  spec.csharp:
+  - uid: NLog.Targets.AsyncTaskTarget.RetryFailedAsyncTask(System.Exception,System.Threading.CancellationToken,System.Int32,System.TimeSpan@)
+    name: RetryFailedAsyncTask
+    isExternal: true
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.AsyncTaskTarget.RetryFailedAsyncTask(System.Exception,System.Threading.CancellationToken,System.Int32,System.TimeSpan@)
+    name: RetryFailedAsyncTask
+    isExternal: true
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+- uid: NLog.Targets.AsyncTaskTarget.Write(NLog.LogEventInfo)
+  commentId: M:NLog.Targets.AsyncTaskTarget.Write(NLog.LogEventInfo)
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: Write(LogEventInfo)
+  nameWithType: AsyncTaskTarget.Write(LogEventInfo)
+  fullName: NLog.Targets.AsyncTaskTarget.Write(NLog.LogEventInfo)
+  spec.csharp:
+  - uid: NLog.Targets.AsyncTaskTarget.Write(NLog.LogEventInfo)
+    name: Write
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.AsyncTaskTarget.Write(NLog.LogEventInfo)
+    name: Write
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+- uid: NLog.Targets.AsyncTaskTarget.Write(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+  commentId: M:NLog.Targets.AsyncTaskTarget.Write(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: Write(IList<AsyncLogEventInfo>)
+  nameWithType: AsyncTaskTarget.Write(IList<AsyncLogEventInfo>)
+  fullName: NLog.Targets.AsyncTaskTarget.Write(System.Collections.Generic.IList<NLog.Common.AsyncLogEventInfo>)
+  nameWithType.vb: AsyncTaskTarget.Write(IList(Of AsyncLogEventInfo))
+  fullName.vb: NLog.Targets.AsyncTaskTarget.Write(System.Collections.Generic.IList(Of NLog.Common.AsyncLogEventInfo))
+  name.vb: Write(IList(Of AsyncLogEventInfo))
+  spec.csharp:
+  - uid: NLog.Targets.AsyncTaskTarget.Write(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+    name: Write
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.AsyncTaskTarget.Write(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+    name: Write
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: )
+  - name: )
+- uid: NLog.Targets.AsyncTaskTarget.Write(NLog.Common.AsyncLogEventInfo)
+  commentId: M:NLog.Targets.AsyncTaskTarget.Write(NLog.Common.AsyncLogEventInfo)
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: Write(AsyncLogEventInfo)
+  nameWithType: AsyncTaskTarget.Write(AsyncLogEventInfo)
+  fullName: NLog.Targets.AsyncTaskTarget.Write(NLog.Common.AsyncLogEventInfo)
+  spec.csharp:
+  - uid: NLog.Targets.AsyncTaskTarget.Write(NLog.Common.AsyncLogEventInfo)
+    name: Write
+    isExternal: true
+  - name: (
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.AsyncTaskTarget.Write(NLog.Common.AsyncLogEventInfo)
+    name: Write
+    isExternal: true
+  - name: (
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: )
+- uid: NLog.Targets.AsyncTaskTarget.WriteAsyncThreadSafe(NLog.Common.AsyncLogEventInfo)
+  commentId: M:NLog.Targets.AsyncTaskTarget.WriteAsyncThreadSafe(NLog.Common.AsyncLogEventInfo)
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: WriteAsyncThreadSafe(AsyncLogEventInfo)
+  nameWithType: AsyncTaskTarget.WriteAsyncThreadSafe(AsyncLogEventInfo)
+  fullName: NLog.Targets.AsyncTaskTarget.WriteAsyncThreadSafe(NLog.Common.AsyncLogEventInfo)
+  spec.csharp:
+  - uid: NLog.Targets.AsyncTaskTarget.WriteAsyncThreadSafe(NLog.Common.AsyncLogEventInfo)
+    name: WriteAsyncThreadSafe
+    isExternal: true
+  - name: (
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.AsyncTaskTarget.WriteAsyncThreadSafe(NLog.Common.AsyncLogEventInfo)
+    name: WriteAsyncThreadSafe
+    isExternal: true
+  - name: (
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: )
+- uid: NLog.Targets.AsyncTaskTarget.WriteAsyncThreadSafe(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+  commentId: M:NLog.Targets.AsyncTaskTarget.WriteAsyncThreadSafe(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: WriteAsyncThreadSafe(IList<AsyncLogEventInfo>)
+  nameWithType: AsyncTaskTarget.WriteAsyncThreadSafe(IList<AsyncLogEventInfo>)
+  fullName: NLog.Targets.AsyncTaskTarget.WriteAsyncThreadSafe(System.Collections.Generic.IList<NLog.Common.AsyncLogEventInfo>)
+  nameWithType.vb: AsyncTaskTarget.WriteAsyncThreadSafe(IList(Of AsyncLogEventInfo))
+  fullName.vb: NLog.Targets.AsyncTaskTarget.WriteAsyncThreadSafe(System.Collections.Generic.IList(Of NLog.Common.AsyncLogEventInfo))
+  name.vb: WriteAsyncThreadSafe(IList(Of AsyncLogEventInfo))
+  spec.csharp:
+  - uid: NLog.Targets.AsyncTaskTarget.WriteAsyncThreadSafe(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+    name: WriteAsyncThreadSafe
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.AsyncTaskTarget.WriteAsyncThreadSafe(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+    name: WriteAsyncThreadSafe
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: )
+  - name: )
+- uid: NLog.Targets.AsyncTaskTarget.WriteFailedNotInitialized(NLog.Common.AsyncLogEventInfo,System.Exception)
+  commentId: M:NLog.Targets.AsyncTaskTarget.WriteFailedNotInitialized(NLog.Common.AsyncLogEventInfo,System.Exception)
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: WriteFailedNotInitialized(AsyncLogEventInfo, Exception)
+  nameWithType: AsyncTaskTarget.WriteFailedNotInitialized(AsyncLogEventInfo, Exception)
+  fullName: NLog.Targets.AsyncTaskTarget.WriteFailedNotInitialized(NLog.Common.AsyncLogEventInfo, System.Exception)
+  spec.csharp:
+  - uid: NLog.Targets.AsyncTaskTarget.WriteFailedNotInitialized(NLog.Common.AsyncLogEventInfo,System.Exception)
+    name: WriteFailedNotInitialized
+    isExternal: true
+  - name: (
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.AsyncTaskTarget.WriteFailedNotInitialized(NLog.Common.AsyncLogEventInfo,System.Exception)
+    name: WriteFailedNotInitialized
+    isExternal: true
+  - name: (
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: NLog.Targets.AsyncTaskTarget.FlushAsync(NLog.Common.AsyncContinuation)
+  commentId: M:NLog.Targets.AsyncTaskTarget.FlushAsync(NLog.Common.AsyncContinuation)
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: FlushAsync(AsyncContinuation)
+  nameWithType: AsyncTaskTarget.FlushAsync(AsyncContinuation)
+  fullName: NLog.Targets.AsyncTaskTarget.FlushAsync(NLog.Common.AsyncContinuation)
+  spec.csharp:
+  - uid: NLog.Targets.AsyncTaskTarget.FlushAsync(NLog.Common.AsyncContinuation)
+    name: FlushAsync
+    isExternal: true
+  - name: (
+  - uid: NLog.Common.AsyncContinuation
+    name: AsyncContinuation
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.AsyncTaskTarget.FlushAsync(NLog.Common.AsyncContinuation)
+    name: FlushAsync
+    isExternal: true
+  - name: (
+  - uid: NLog.Common.AsyncContinuation
+    name: AsyncContinuation
+    isExternal: true
+  - name: )
+- uid: NLog.Targets.AsyncTaskTarget.CloseTarget
+  commentId: M:NLog.Targets.AsyncTaskTarget.CloseTarget
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: CloseTarget()
+  nameWithType: AsyncTaskTarget.CloseTarget()
+  fullName: NLog.Targets.AsyncTaskTarget.CloseTarget()
+  spec.csharp:
+  - uid: NLog.Targets.AsyncTaskTarget.CloseTarget
+    name: CloseTarget
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.AsyncTaskTarget.CloseTarget
+    name: CloseTarget
+    isExternal: true
+  - name: (
+  - name: )
+- uid: NLog.Targets.AsyncTaskTarget.Dispose(System.Boolean)
+  commentId: M:NLog.Targets.AsyncTaskTarget.Dispose(System.Boolean)
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Dispose(bool)
+  nameWithType: AsyncTaskTarget.Dispose(bool)
+  fullName: NLog.Targets.AsyncTaskTarget.Dispose(bool)
+  nameWithType.vb: AsyncTaskTarget.Dispose(Boolean)
+  fullName.vb: NLog.Targets.AsyncTaskTarget.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: NLog.Targets.AsyncTaskTarget.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.AsyncTaskTarget.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: NLog.Targets.AsyncTaskTarget.TaskDelayMilliseconds
+  commentId: P:NLog.Targets.AsyncTaskTarget.TaskDelayMilliseconds
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: TaskDelayMilliseconds
+  nameWithType: AsyncTaskTarget.TaskDelayMilliseconds
+  fullName: NLog.Targets.AsyncTaskTarget.TaskDelayMilliseconds
+- uid: NLog.Targets.AsyncTaskTarget.TaskTimeoutSeconds
+  commentId: P:NLog.Targets.AsyncTaskTarget.TaskTimeoutSeconds
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: TaskTimeoutSeconds
+  nameWithType: AsyncTaskTarget.TaskTimeoutSeconds
+  fullName: NLog.Targets.AsyncTaskTarget.TaskTimeoutSeconds
+- uid: NLog.Targets.AsyncTaskTarget.RetryCount
+  commentId: P:NLog.Targets.AsyncTaskTarget.RetryCount
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: RetryCount
+  nameWithType: AsyncTaskTarget.RetryCount
+  fullName: NLog.Targets.AsyncTaskTarget.RetryCount
+- uid: NLog.Targets.AsyncTaskTarget.RetryDelayMilliseconds
+  commentId: P:NLog.Targets.AsyncTaskTarget.RetryDelayMilliseconds
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: RetryDelayMilliseconds
+  nameWithType: AsyncTaskTarget.RetryDelayMilliseconds
+  fullName: NLog.Targets.AsyncTaskTarget.RetryDelayMilliseconds
+- uid: NLog.Targets.AsyncTaskTarget.ForceLockingQueue
+  commentId: P:NLog.Targets.AsyncTaskTarget.ForceLockingQueue
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: ForceLockingQueue
+  nameWithType: AsyncTaskTarget.ForceLockingQueue
+  fullName: NLog.Targets.AsyncTaskTarget.ForceLockingQueue
+- uid: NLog.Targets.AsyncTaskTarget.OverflowAction
+  commentId: P:NLog.Targets.AsyncTaskTarget.OverflowAction
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: OverflowAction
+  nameWithType: AsyncTaskTarget.OverflowAction
+  fullName: NLog.Targets.AsyncTaskTarget.OverflowAction
+- uid: NLog.Targets.AsyncTaskTarget.QueueLimit
+  commentId: P:NLog.Targets.AsyncTaskTarget.QueueLimit
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: QueueLimit
+  nameWithType: AsyncTaskTarget.QueueLimit
+  fullName: NLog.Targets.AsyncTaskTarget.QueueLimit
+- uid: NLog.Targets.AsyncTaskTarget.BatchSize
+  commentId: P:NLog.Targets.AsyncTaskTarget.BatchSize
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: BatchSize
+  nameWithType: AsyncTaskTarget.BatchSize
+  fullName: NLog.Targets.AsyncTaskTarget.BatchSize
+- uid: NLog.Targets.AsyncTaskTarget.TaskScheduler
+  commentId: P:NLog.Targets.AsyncTaskTarget.TaskScheduler
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: TaskScheduler
+  nameWithType: AsyncTaskTarget.TaskScheduler
+  fullName: NLog.Targets.AsyncTaskTarget.TaskScheduler
+- uid: NLog.Targets.TargetWithContext.ShouldIncludeProperties(NLog.LogEventInfo)
+  commentId: M:NLog.Targets.TargetWithContext.ShouldIncludeProperties(NLog.LogEventInfo)
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: ShouldIncludeProperties(LogEventInfo)
+  nameWithType: TargetWithContext.ShouldIncludeProperties(LogEventInfo)
+  fullName: NLog.Targets.TargetWithContext.ShouldIncludeProperties(NLog.LogEventInfo)
+  spec.csharp:
+  - uid: NLog.Targets.TargetWithContext.ShouldIncludeProperties(NLog.LogEventInfo)
+    name: ShouldIncludeProperties
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.TargetWithContext.ShouldIncludeProperties(NLog.LogEventInfo)
+    name: ShouldIncludeProperties
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+- uid: NLog.Targets.TargetWithContext.GetContextProperties(NLog.LogEventInfo)
+  commentId: M:NLog.Targets.TargetWithContext.GetContextProperties(NLog.LogEventInfo)
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: GetContextProperties(LogEventInfo)
+  nameWithType: TargetWithContext.GetContextProperties(LogEventInfo)
+  fullName: NLog.Targets.TargetWithContext.GetContextProperties(NLog.LogEventInfo)
+  spec.csharp:
+  - uid: NLog.Targets.TargetWithContext.GetContextProperties(NLog.LogEventInfo)
+    name: GetContextProperties
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.TargetWithContext.GetContextProperties(NLog.LogEventInfo)
+    name: GetContextProperties
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+- uid: NLog.Targets.TargetWithContext.GetContextProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:NLog.Targets.TargetWithContext.GetContextProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: GetContextProperties(LogEventInfo, IDictionary<string, object>)
+  nameWithType: TargetWithContext.GetContextProperties(LogEventInfo, IDictionary<string, object>)
+  fullName: NLog.Targets.TargetWithContext.GetContextProperties(NLog.LogEventInfo, System.Collections.Generic.IDictionary<string, object>)
+  nameWithType.vb: TargetWithContext.GetContextProperties(LogEventInfo, IDictionary(Of String, Object))
+  fullName.vb: NLog.Targets.TargetWithContext.GetContextProperties(NLog.LogEventInfo, System.Collections.Generic.IDictionary(Of String, Object))
+  name.vb: GetContextProperties(LogEventInfo, IDictionary(Of String, Object))
+  spec.csharp:
+  - uid: NLog.Targets.TargetWithContext.GetContextProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+    name: GetContextProperties
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.TargetWithContext.GetContextProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+    name: GetContextProperties
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: NLog.Targets.TargetWithContext.GetAllProperties(NLog.LogEventInfo)
+  commentId: M:NLog.Targets.TargetWithContext.GetAllProperties(NLog.LogEventInfo)
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: GetAllProperties(LogEventInfo)
+  nameWithType: TargetWithContext.GetAllProperties(LogEventInfo)
+  fullName: NLog.Targets.TargetWithContext.GetAllProperties(NLog.LogEventInfo)
+  spec.csharp:
+  - uid: NLog.Targets.TargetWithContext.GetAllProperties(NLog.LogEventInfo)
+    name: GetAllProperties
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.TargetWithContext.GetAllProperties(NLog.LogEventInfo)
+    name: GetAllProperties
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+- uid: NLog.Targets.TargetWithContext.GetAllProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:NLog.Targets.TargetWithContext.GetAllProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: GetAllProperties(LogEventInfo, IDictionary<string, object>)
+  nameWithType: TargetWithContext.GetAllProperties(LogEventInfo, IDictionary<string, object>)
+  fullName: NLog.Targets.TargetWithContext.GetAllProperties(NLog.LogEventInfo, System.Collections.Generic.IDictionary<string, object>)
+  nameWithType.vb: TargetWithContext.GetAllProperties(LogEventInfo, IDictionary(Of String, Object))
+  fullName.vb: NLog.Targets.TargetWithContext.GetAllProperties(NLog.LogEventInfo, System.Collections.Generic.IDictionary(Of String, Object))
+  name.vb: GetAllProperties(LogEventInfo, IDictionary(Of String, Object))
+  spec.csharp:
+  - uid: NLog.Targets.TargetWithContext.GetAllProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+    name: GetAllProperties
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.TargetWithContext.GetAllProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+    name: GetAllProperties
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: NLog.Targets.TargetWithContext.GenerateUniqueItemName(NLog.LogEventInfo,System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:NLog.Targets.TargetWithContext.GenerateUniqueItemName(NLog.LogEventInfo,System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GenerateUniqueItemName(LogEventInfo, string, object, IDictionary<string, object>)
+  nameWithType: TargetWithContext.GenerateUniqueItemName(LogEventInfo, string, object, IDictionary<string, object>)
+  fullName: NLog.Targets.TargetWithContext.GenerateUniqueItemName(NLog.LogEventInfo, string, object, System.Collections.Generic.IDictionary<string, object>)
+  nameWithType.vb: TargetWithContext.GenerateUniqueItemName(LogEventInfo, String, Object, IDictionary(Of String, Object))
+  fullName.vb: NLog.Targets.TargetWithContext.GenerateUniqueItemName(NLog.LogEventInfo, String, Object, System.Collections.Generic.IDictionary(Of String, Object))
+  name.vb: GenerateUniqueItemName(LogEventInfo, String, Object, IDictionary(Of String, Object))
+  spec.csharp:
+  - uid: NLog.Targets.TargetWithContext.GenerateUniqueItemName(NLog.LogEventInfo,System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
+    name: GenerateUniqueItemName
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.TargetWithContext.GenerateUniqueItemName(NLog.LogEventInfo,System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
+    name: GenerateUniqueItemName
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: NLog.Targets.TargetWithContext.GetScopeContextProperties(NLog.LogEventInfo)
+  commentId: M:NLog.Targets.TargetWithContext.GetScopeContextProperties(NLog.LogEventInfo)
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: GetScopeContextProperties(LogEventInfo)
+  nameWithType: TargetWithContext.GetScopeContextProperties(LogEventInfo)
+  fullName: NLog.Targets.TargetWithContext.GetScopeContextProperties(NLog.LogEventInfo)
+  spec.csharp:
+  - uid: NLog.Targets.TargetWithContext.GetScopeContextProperties(NLog.LogEventInfo)
+    name: GetScopeContextProperties
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.TargetWithContext.GetScopeContextProperties(NLog.LogEventInfo)
+    name: GetScopeContextProperties
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+- uid: NLog.Targets.TargetWithContext.GetScopeContextNested(NLog.LogEventInfo)
+  commentId: M:NLog.Targets.TargetWithContext.GetScopeContextNested(NLog.LogEventInfo)
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: GetScopeContextNested(LogEventInfo)
+  nameWithType: TargetWithContext.GetScopeContextNested(LogEventInfo)
+  fullName: NLog.Targets.TargetWithContext.GetScopeContextNested(NLog.LogEventInfo)
+  spec.csharp:
+  - uid: NLog.Targets.TargetWithContext.GetScopeContextNested(NLog.LogEventInfo)
+    name: GetScopeContextNested
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.TargetWithContext.GetScopeContextNested(NLog.LogEventInfo)
+    name: GetScopeContextNested
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+- uid: NLog.Targets.TargetWithContext.CaptureContextGdc(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:NLog.Targets.TargetWithContext.CaptureContextGdc(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: CaptureContextGdc(LogEventInfo, IDictionary<string, object>)
+  nameWithType: TargetWithContext.CaptureContextGdc(LogEventInfo, IDictionary<string, object>)
+  fullName: NLog.Targets.TargetWithContext.CaptureContextGdc(NLog.LogEventInfo, System.Collections.Generic.IDictionary<string, object>)
+  nameWithType.vb: TargetWithContext.CaptureContextGdc(LogEventInfo, IDictionary(Of String, Object))
+  fullName.vb: NLog.Targets.TargetWithContext.CaptureContextGdc(NLog.LogEventInfo, System.Collections.Generic.IDictionary(Of String, Object))
+  name.vb: CaptureContextGdc(LogEventInfo, IDictionary(Of String, Object))
+  spec.csharp:
+  - uid: NLog.Targets.TargetWithContext.CaptureContextGdc(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+    name: CaptureContextGdc
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.TargetWithContext.CaptureContextGdc(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+    name: CaptureContextGdc
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: NLog.Targets.TargetWithContext.CaptureScopeContextProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:NLog.Targets.TargetWithContext.CaptureScopeContextProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: CaptureScopeContextProperties(LogEventInfo, IDictionary<string, object>)
+  nameWithType: TargetWithContext.CaptureScopeContextProperties(LogEventInfo, IDictionary<string, object>)
+  fullName: NLog.Targets.TargetWithContext.CaptureScopeContextProperties(NLog.LogEventInfo, System.Collections.Generic.IDictionary<string, object>)
+  nameWithType.vb: TargetWithContext.CaptureScopeContextProperties(LogEventInfo, IDictionary(Of String, Object))
+  fullName.vb: NLog.Targets.TargetWithContext.CaptureScopeContextProperties(NLog.LogEventInfo, System.Collections.Generic.IDictionary(Of String, Object))
+  name.vb: CaptureScopeContextProperties(LogEventInfo, IDictionary(Of String, Object))
+  spec.csharp:
+  - uid: NLog.Targets.TargetWithContext.CaptureScopeContextProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+    name: CaptureScopeContextProperties
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.TargetWithContext.CaptureScopeContextProperties(NLog.LogEventInfo,System.Collections.Generic.IDictionary{System.String,System.Object})
+    name: CaptureScopeContextProperties
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: NLog.Targets.TargetWithContext.SerializeScopeContextProperty(NLog.LogEventInfo,System.String,System.Object,System.Object@)
+  commentId: M:NLog.Targets.TargetWithContext.SerializeScopeContextProperty(NLog.LogEventInfo,System.String,System.Object,System.Object@)
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SerializeScopeContextProperty(LogEventInfo, string, object, out object)
+  nameWithType: TargetWithContext.SerializeScopeContextProperty(LogEventInfo, string, object, out object)
+  fullName: NLog.Targets.TargetWithContext.SerializeScopeContextProperty(NLog.LogEventInfo, string, object, out object)
+  nameWithType.vb: TargetWithContext.SerializeScopeContextProperty(LogEventInfo, String, Object, Object)
+  fullName.vb: NLog.Targets.TargetWithContext.SerializeScopeContextProperty(NLog.LogEventInfo, String, Object, Object)
+  name.vb: SerializeScopeContextProperty(LogEventInfo, String, Object, Object)
+  spec.csharp:
+  - uid: NLog.Targets.TargetWithContext.SerializeScopeContextProperty(NLog.LogEventInfo,System.String,System.Object,System.Object@)
+    name: SerializeScopeContextProperty
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.TargetWithContext.SerializeScopeContextProperty(NLog.LogEventInfo,System.String,System.Object,System.Object@)
+    name: SerializeScopeContextProperty
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NLog.Targets.TargetWithContext.CaptureScopeContextNested(NLog.LogEventInfo)
+  commentId: M:NLog.Targets.TargetWithContext.CaptureScopeContextNested(NLog.LogEventInfo)
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: CaptureScopeContextNested(LogEventInfo)
+  nameWithType: TargetWithContext.CaptureScopeContextNested(LogEventInfo)
+  fullName: NLog.Targets.TargetWithContext.CaptureScopeContextNested(NLog.LogEventInfo)
+  spec.csharp:
+  - uid: NLog.Targets.TargetWithContext.CaptureScopeContextNested(NLog.LogEventInfo)
+    name: CaptureScopeContextNested
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.TargetWithContext.CaptureScopeContextNested(NLog.LogEventInfo)
+    name: CaptureScopeContextNested
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+- uid: NLog.Targets.TargetWithContext.SerializeScopeContextNestedState(NLog.LogEventInfo,System.Object,System.Object@)
+  commentId: M:NLog.Targets.TargetWithContext.SerializeScopeContextNestedState(NLog.LogEventInfo,System.Object,System.Object@)
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: SerializeScopeContextNestedState(LogEventInfo, object, out object)
+  nameWithType: TargetWithContext.SerializeScopeContextNestedState(LogEventInfo, object, out object)
+  fullName: NLog.Targets.TargetWithContext.SerializeScopeContextNestedState(NLog.LogEventInfo, object, out object)
+  nameWithType.vb: TargetWithContext.SerializeScopeContextNestedState(LogEventInfo, Object, Object)
+  fullName.vb: NLog.Targets.TargetWithContext.SerializeScopeContextNestedState(NLog.LogEventInfo, Object, Object)
+  name.vb: SerializeScopeContextNestedState(LogEventInfo, Object, Object)
+  spec.csharp:
+  - uid: NLog.Targets.TargetWithContext.SerializeScopeContextNestedState(NLog.LogEventInfo,System.Object,System.Object@)
+    name: SerializeScopeContextNestedState
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.TargetWithContext.SerializeScopeContextNestedState(NLog.LogEventInfo,System.Object,System.Object@)
+    name: SerializeScopeContextNestedState
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NLog.Targets.TargetWithContext.SerializeItemValue(NLog.LogEventInfo,System.String,System.Object,System.Object@)
+  commentId: M:NLog.Targets.TargetWithContext.SerializeItemValue(NLog.LogEventInfo,System.String,System.Object,System.Object@)
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SerializeItemValue(LogEventInfo, string, object, out object)
+  nameWithType: TargetWithContext.SerializeItemValue(LogEventInfo, string, object, out object)
+  fullName: NLog.Targets.TargetWithContext.SerializeItemValue(NLog.LogEventInfo, string, object, out object)
+  nameWithType.vb: TargetWithContext.SerializeItemValue(LogEventInfo, String, Object, Object)
+  fullName.vb: NLog.Targets.TargetWithContext.SerializeItemValue(NLog.LogEventInfo, String, Object, Object)
+  name.vb: SerializeItemValue(LogEventInfo, String, Object, Object)
+  spec.csharp:
+  - uid: NLog.Targets.TargetWithContext.SerializeItemValue(NLog.LogEventInfo,System.String,System.Object,System.Object@)
+    name: SerializeItemValue
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.TargetWithContext.SerializeItemValue(NLog.LogEventInfo,System.String,System.Object,System.Object@)
+    name: SerializeItemValue
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NLog.Targets.TargetWithContext.Layout
+  commentId: P:NLog.Targets.TargetWithContext.Layout
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: Layout
+  nameWithType: TargetWithContext.Layout
+  fullName: NLog.Targets.TargetWithContext.Layout
+- uid: NLog.Targets.TargetWithContext.IncludeEventProperties
+  commentId: P:NLog.Targets.TargetWithContext.IncludeEventProperties
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: IncludeEventProperties
+  nameWithType: TargetWithContext.IncludeEventProperties
+  fullName: NLog.Targets.TargetWithContext.IncludeEventProperties
+- uid: NLog.Targets.TargetWithContext.IncludeScopeProperties
+  commentId: P:NLog.Targets.TargetWithContext.IncludeScopeProperties
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: IncludeScopeProperties
+  nameWithType: TargetWithContext.IncludeScopeProperties
+  fullName: NLog.Targets.TargetWithContext.IncludeScopeProperties
+- uid: NLog.Targets.TargetWithContext.IncludeScopeNested
+  commentId: P:NLog.Targets.TargetWithContext.IncludeScopeNested
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: IncludeScopeNested
+  nameWithType: TargetWithContext.IncludeScopeNested
+  fullName: NLog.Targets.TargetWithContext.IncludeScopeNested
+- uid: NLog.Targets.TargetWithContext.IncludeGdc
+  commentId: P:NLog.Targets.TargetWithContext.IncludeGdc
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: IncludeGdc
+  nameWithType: TargetWithContext.IncludeGdc
+  fullName: NLog.Targets.TargetWithContext.IncludeGdc
+- uid: NLog.Targets.TargetWithContext.IncludeCallSite
+  commentId: P:NLog.Targets.TargetWithContext.IncludeCallSite
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: IncludeCallSite
+  nameWithType: TargetWithContext.IncludeCallSite
+  fullName: NLog.Targets.TargetWithContext.IncludeCallSite
+- uid: NLog.Targets.TargetWithContext.IncludeCallSiteStackTrace
+  commentId: P:NLog.Targets.TargetWithContext.IncludeCallSiteStackTrace
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: IncludeCallSiteStackTrace
+  nameWithType: TargetWithContext.IncludeCallSiteStackTrace
+  fullName: NLog.Targets.TargetWithContext.IncludeCallSiteStackTrace
+- uid: NLog.Targets.TargetWithContext.ContextProperties
+  commentId: P:NLog.Targets.TargetWithContext.ContextProperties
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: ContextProperties
+  nameWithType: TargetWithContext.ContextProperties
+  fullName: NLog.Targets.TargetWithContext.ContextProperties
+- uid: NLog.Targets.TargetWithContext.ExcludeProperties
+  commentId: P:NLog.Targets.TargetWithContext.ExcludeProperties
+  parent: NLog.Targets.TargetWithContext
+  isExternal: true
+  name: ExcludeProperties
+  nameWithType: TargetWithContext.ExcludeProperties
+  fullName: NLog.Targets.TargetWithContext.ExcludeProperties
+- uid: NLog.Targets.Target.Dispose
+  commentId: M:NLog.Targets.Target.Dispose
+  parent: NLog.Targets.Target
+  isExternal: true
+  name: Dispose()
+  nameWithType: Target.Dispose()
+  fullName: NLog.Targets.Target.Dispose()
+  spec.csharp:
+  - uid: NLog.Targets.Target.Dispose
+    name: Dispose
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.Target.Dispose
+    name: Dispose
+    isExternal: true
+  - name: (
+  - name: )
+- uid: NLog.Targets.Target.Flush(NLog.Common.AsyncContinuation)
+  commentId: M:NLog.Targets.Target.Flush(NLog.Common.AsyncContinuation)
+  parent: NLog.Targets.Target
+  isExternal: true
+  name: Flush(AsyncContinuation)
+  nameWithType: Target.Flush(AsyncContinuation)
+  fullName: NLog.Targets.Target.Flush(NLog.Common.AsyncContinuation)
+  spec.csharp:
+  - uid: NLog.Targets.Target.Flush(NLog.Common.AsyncContinuation)
+    name: Flush
+    isExternal: true
+  - name: (
+  - uid: NLog.Common.AsyncContinuation
+    name: AsyncContinuation
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.Target.Flush(NLog.Common.AsyncContinuation)
+    name: Flush
+    isExternal: true
+  - name: (
+  - uid: NLog.Common.AsyncContinuation
+    name: AsyncContinuation
+    isExternal: true
+  - name: )
+- uid: NLog.Targets.Target.PrecalculateVolatileLayouts(NLog.LogEventInfo)
+  commentId: M:NLog.Targets.Target.PrecalculateVolatileLayouts(NLog.LogEventInfo)
+  parent: NLog.Targets.Target
+  isExternal: true
+  name: PrecalculateVolatileLayouts(LogEventInfo)
+  nameWithType: Target.PrecalculateVolatileLayouts(LogEventInfo)
+  fullName: NLog.Targets.Target.PrecalculateVolatileLayouts(NLog.LogEventInfo)
+  spec.csharp:
+  - uid: NLog.Targets.Target.PrecalculateVolatileLayouts(NLog.LogEventInfo)
+    name: PrecalculateVolatileLayouts
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.Target.PrecalculateVolatileLayouts(NLog.LogEventInfo)
+    name: PrecalculateVolatileLayouts
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+- uid: NLog.Targets.Target.ToString
+  commentId: M:NLog.Targets.Target.ToString
+  parent: NLog.Targets.Target
+  isExternal: true
+  name: ToString()
+  nameWithType: Target.ToString()
+  fullName: NLog.Targets.Target.ToString()
+  spec.csharp:
+  - uid: NLog.Targets.Target.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.Target.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: NLog.Targets.Target.WriteAsyncLogEvent(NLog.Common.AsyncLogEventInfo)
+  commentId: M:NLog.Targets.Target.WriteAsyncLogEvent(NLog.Common.AsyncLogEventInfo)
+  parent: NLog.Targets.Target
+  isExternal: true
+  name: WriteAsyncLogEvent(AsyncLogEventInfo)
+  nameWithType: Target.WriteAsyncLogEvent(AsyncLogEventInfo)
+  fullName: NLog.Targets.Target.WriteAsyncLogEvent(NLog.Common.AsyncLogEventInfo)
+  spec.csharp:
+  - uid: NLog.Targets.Target.WriteAsyncLogEvent(NLog.Common.AsyncLogEventInfo)
+    name: WriteAsyncLogEvent
+    isExternal: true
+  - name: (
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.Target.WriteAsyncLogEvent(NLog.Common.AsyncLogEventInfo)
+    name: WriteAsyncLogEvent
+    isExternal: true
+  - name: (
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: )
+- uid: NLog.Targets.Target.WriteAsyncLogEvents(NLog.Common.AsyncLogEventInfo[])
+  commentId: M:NLog.Targets.Target.WriteAsyncLogEvents(NLog.Common.AsyncLogEventInfo[])
+  parent: NLog.Targets.Target
+  isExternal: true
+  name: WriteAsyncLogEvents(params AsyncLogEventInfo[])
+  nameWithType: Target.WriteAsyncLogEvents(params AsyncLogEventInfo[])
+  fullName: NLog.Targets.Target.WriteAsyncLogEvents(params NLog.Common.AsyncLogEventInfo[])
+  nameWithType.vb: Target.WriteAsyncLogEvents(ParamArray AsyncLogEventInfo())
+  fullName.vb: NLog.Targets.Target.WriteAsyncLogEvents(ParamArray NLog.Common.AsyncLogEventInfo())
+  name.vb: WriteAsyncLogEvents(ParamArray AsyncLogEventInfo())
+  spec.csharp:
+  - uid: NLog.Targets.Target.WriteAsyncLogEvents(NLog.Common.AsyncLogEventInfo[])
+    name: WriteAsyncLogEvents
+    isExternal: true
+  - name: (
+  - name: params
+  - name: " "
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.Target.WriteAsyncLogEvents(NLog.Common.AsyncLogEventInfo[])
+    name: WriteAsyncLogEvents
+    isExternal: true
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: NLog.Targets.Target.WriteAsyncLogEvents(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+  commentId: M:NLog.Targets.Target.WriteAsyncLogEvents(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+  parent: NLog.Targets.Target
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: WriteAsyncLogEvents(IList<AsyncLogEventInfo>)
+  nameWithType: Target.WriteAsyncLogEvents(IList<AsyncLogEventInfo>)
+  fullName: NLog.Targets.Target.WriteAsyncLogEvents(System.Collections.Generic.IList<NLog.Common.AsyncLogEventInfo>)
+  nameWithType.vb: Target.WriteAsyncLogEvents(IList(Of AsyncLogEventInfo))
+  fullName.vb: NLog.Targets.Target.WriteAsyncLogEvents(System.Collections.Generic.IList(Of NLog.Common.AsyncLogEventInfo))
+  name.vb: WriteAsyncLogEvents(IList(Of AsyncLogEventInfo))
+  spec.csharp:
+  - uid: NLog.Targets.Target.WriteAsyncLogEvents(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+    name: WriteAsyncLogEvents
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.Target.WriteAsyncLogEvents(System.Collections.Generic.IList{NLog.Common.AsyncLogEventInfo})
+    name: WriteAsyncLogEvents
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NLog.Common.AsyncLogEventInfo
+    name: AsyncLogEventInfo
+    isExternal: true
+  - name: )
+  - name: )
+- uid: NLog.Targets.Target.RenderLogEvent(NLog.Layouts.Layout,NLog.LogEventInfo)
+  commentId: M:NLog.Targets.Target.RenderLogEvent(NLog.Layouts.Layout,NLog.LogEventInfo)
+  parent: NLog.Targets.Target
+  isExternal: true
+  name: RenderLogEvent(Layout, LogEventInfo)
+  nameWithType: Target.RenderLogEvent(Layout, LogEventInfo)
+  fullName: NLog.Targets.Target.RenderLogEvent(NLog.Layouts.Layout, NLog.LogEventInfo)
+  spec.csharp:
+  - uid: NLog.Targets.Target.RenderLogEvent(NLog.Layouts.Layout,NLog.LogEventInfo)
+    name: RenderLogEvent
+    isExternal: true
+  - name: (
+  - uid: NLog.Layouts.Layout
+    name: Layout
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.Target.RenderLogEvent(NLog.Layouts.Layout,NLog.LogEventInfo)
+    name: RenderLogEvent
+    isExternal: true
+  - name: (
+  - uid: NLog.Layouts.Layout
+    name: Layout
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+- uid: NLog.Targets.Target.RenderLogEvent``1(NLog.Layouts.Layout{{T}},NLog.LogEventInfo,{T})
+  commentId: M:NLog.Targets.Target.RenderLogEvent``1(NLog.Layouts.Layout{``0},NLog.LogEventInfo,``0)
+  parent: NLog.Targets.Target
+  definition: NLog.Targets.Target.RenderLogEvent``1(NLog.Layouts.Layout{``0},NLog.LogEventInfo,``0)
+  name: RenderLogEvent<T>(Layout<T>, LogEventInfo, T)
+  nameWithType: Target.RenderLogEvent<T>(Layout<T>, LogEventInfo, T)
+  fullName: NLog.Targets.Target.RenderLogEvent<T>(NLog.Layouts.Layout<T>, NLog.LogEventInfo, T)
+  nameWithType.vb: Target.RenderLogEvent(Of T)(Layout(Of T), LogEventInfo, T)
+  fullName.vb: NLog.Targets.Target.RenderLogEvent(Of T)(NLog.Layouts.Layout(Of T), NLog.LogEventInfo, T)
+  name.vb: RenderLogEvent(Of T)(Layout(Of T), LogEventInfo, T)
+  spec.csharp:
+  - uid: NLog.Targets.Target.RenderLogEvent``1(NLog.Layouts.Layout{``0},NLog.LogEventInfo,``0)
+    name: RenderLogEvent
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: NLog.Layouts.Layout`1
+    name: Layout
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.Target.RenderLogEvent``1(NLog.Layouts.Layout{``0},NLog.LogEventInfo,``0)
+    name: RenderLogEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: NLog.Layouts.Layout`1
+    name: Layout
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: NLog.Targets.Target.ResolveService``1
+  commentId: M:NLog.Targets.Target.ResolveService``1
+  parent: NLog.Targets.Target
+  isExternal: true
+  name: ResolveService<T>()
+  nameWithType: Target.ResolveService<T>()
+  fullName: NLog.Targets.Target.ResolveService<T>()
+  nameWithType.vb: Target.ResolveService(Of T)()
+  fullName.vb: NLog.Targets.Target.ResolveService(Of T)()
+  name.vb: ResolveService(Of T)()
+  spec.csharp:
+  - uid: NLog.Targets.Target.ResolveService``1
+    name: ResolveService
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.Target.ResolveService``1
+    name: ResolveService
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: NLog.Targets.Target.Name
+  commentId: P:NLog.Targets.Target.Name
+  parent: NLog.Targets.Target
+  isExternal: true
+  name: Name
+  nameWithType: Target.Name
+  fullName: NLog.Targets.Target.Name
+- uid: NLog.Targets.Target.SyncRoot
+  commentId: P:NLog.Targets.Target.SyncRoot
+  parent: NLog.Targets.Target
+  isExternal: true
+  name: SyncRoot
+  nameWithType: Target.SyncRoot
+  fullName: NLog.Targets.Target.SyncRoot
+- uid: NLog.Targets.Target.LoggingConfiguration
+  commentId: P:NLog.Targets.Target.LoggingConfiguration
+  parent: NLog.Targets.Target
+  isExternal: true
+  name: LoggingConfiguration
+  nameWithType: Target.LoggingConfiguration
+  fullName: NLog.Targets.Target.LoggingConfiguration
+- uid: NLog.Targets.Target.IsInitialized
+  commentId: P:NLog.Targets.Target.IsInitialized
+  parent: NLog.Targets.Target
+  isExternal: true
+  name: IsInitialized
+  nameWithType: Target.IsInitialized
+  fullName: NLog.Targets.Target.IsInitialized
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NLog.Targets
+  commentId: N:NLog.Targets
+  isExternal: true
+  name: NLog.Targets
+  nameWithType: NLog.Targets
+  fullName: NLog.Targets
+  spec.csharp:
+  - uid: NLog
+    name: NLog
+    isExternal: true
+  - name: .
+  - uid: NLog.Targets
+    name: Targets
+    isExternal: true
+  spec.vb:
+  - uid: NLog
+    name: NLog
+    isExternal: true
+  - name: .
+  - uid: NLog.Targets
+    name: Targets
+    isExternal: true
+- uid: NLog.Targets.Target.RenderLogEvent``1(NLog.Layouts.Layout{``0},NLog.LogEventInfo,``0)
+  commentId: M:NLog.Targets.Target.RenderLogEvent``1(NLog.Layouts.Layout{``0},NLog.LogEventInfo,``0)
+  isExternal: true
+  name: RenderLogEvent<T>(Layout<T>, LogEventInfo, T)
+  nameWithType: Target.RenderLogEvent<T>(Layout<T>, LogEventInfo, T)
+  fullName: NLog.Targets.Target.RenderLogEvent<T>(NLog.Layouts.Layout<T>, NLog.LogEventInfo, T)
+  nameWithType.vb: Target.RenderLogEvent(Of T)(Layout(Of T), LogEventInfo, T)
+  fullName.vb: NLog.Targets.Target.RenderLogEvent(Of T)(NLog.Layouts.Layout(Of T), NLog.LogEventInfo, T)
+  name.vb: RenderLogEvent(Of T)(Layout(Of T), LogEventInfo, T)
+  spec.csharp:
+  - uid: NLog.Targets.Target.RenderLogEvent``1(NLog.Layouts.Layout{``0},NLog.LogEventInfo,``0)
+    name: RenderLogEvent
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: NLog.Layouts.Layout`1
+    name: Layout
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.Target.RenderLogEvent``1(NLog.Layouts.Layout{``0},NLog.LogEventInfo,``0)
+    name: RenderLogEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: NLog.Layouts.Layout`1
+    name: Layout
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget.ApplicationName*
+  commentId: Overload:Innova.NLogExtensions.InnovaDatabaseTarget.ApplicationName
+  href: Innova.NLogExtensions.InnovaDatabaseTarget.ApplicationName.html#Innova_NLogExtensions_InnovaDatabaseTarget_ApplicationName
+  name: ApplicationName
+  nameWithType: InnovaDatabaseTarget.ApplicationName
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget.ApplicationName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget.Parameters*
+  commentId: Overload:Innova.NLogExtensions.InnovaDatabaseTarget.Parameters
+  href: Innova.NLogExtensions.InnovaDatabaseTarget.Parameters.html#Innova_NLogExtensions_InnovaDatabaseTarget_Parameters
+  name: Parameters
+  nameWithType: InnovaDatabaseTarget.Parameters
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget.Parameters
+- uid: System.Collections.Generic.IList{NLog.Targets.DatabaseParameterInfo}
+  commentId: T:System.Collections.Generic.IList{NLog.Targets.DatabaseParameterInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<DatabaseParameterInfo>
+  nameWithType: IList<DatabaseParameterInfo>
+  fullName: System.Collections.Generic.IList<NLog.Targets.DatabaseParameterInfo>
+  nameWithType.vb: IList(Of DatabaseParameterInfo)
+  fullName.vb: System.Collections.Generic.IList(Of NLog.Targets.DatabaseParameterInfo)
+  name.vb: IList(Of DatabaseParameterInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: NLog.Targets.DatabaseParameterInfo
+    name: DatabaseParameterInfo
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NLog.Targets.DatabaseParameterInfo
+    name: DatabaseParameterInfo
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget
+  commentId: T:Innova.NLogExtensions.InnovaDatabaseTarget
+  href: Innova.NLogExtensions.InnovaDatabaseTarget.html
+  name: InnovaDatabaseTarget
+  nameWithType: InnovaDatabaseTarget
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget.#ctor*
+  commentId: Overload:Innova.NLogExtensions.InnovaDatabaseTarget.#ctor
+  href: Innova.NLogExtensions.InnovaDatabaseTarget.-ctor.html#Innova_NLogExtensions_InnovaDatabaseTarget__ctor
+  name: InnovaDatabaseTarget
+  nameWithType: InnovaDatabaseTarget.InnovaDatabaseTarget
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget.InnovaDatabaseTarget
+  nameWithType.vb: InnovaDatabaseTarget.New
+  fullName.vb: Innova.NLogExtensions.InnovaDatabaseTarget.New
+  name.vb: New
+- uid: NLog.Targets.AsyncTaskTarget.InitializeTarget
+  commentId: M:NLog.Targets.AsyncTaskTarget.InitializeTarget
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  name: InitializeTarget()
+  nameWithType: AsyncTaskTarget.InitializeTarget()
+  fullName: NLog.Targets.AsyncTaskTarget.InitializeTarget()
+  spec.csharp:
+  - uid: NLog.Targets.AsyncTaskTarget.InitializeTarget
+    name: InitializeTarget
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.AsyncTaskTarget.InitializeTarget
+    name: InitializeTarget
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget.InitializeTarget*
+  commentId: Overload:Innova.NLogExtensions.InnovaDatabaseTarget.InitializeTarget
+  href: Innova.NLogExtensions.InnovaDatabaseTarget.InitializeTarget.html#Innova_NLogExtensions_InnovaDatabaseTarget_InitializeTarget
+  name: InitializeTarget
+  nameWithType: InnovaDatabaseTarget.InitializeTarget
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget.InitializeTarget
+- uid: NLog.Targets.AsyncTaskTarget.WriteAsyncTask(System.Collections.Generic.IList{NLog.LogEventInfo},System.Threading.CancellationToken)
+  commentId: M:NLog.Targets.AsyncTaskTarget.WriteAsyncTask(System.Collections.Generic.IList{NLog.LogEventInfo},System.Threading.CancellationToken)
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: WriteAsyncTask(IList<LogEventInfo>, CancellationToken)
+  nameWithType: AsyncTaskTarget.WriteAsyncTask(IList<LogEventInfo>, CancellationToken)
+  fullName: NLog.Targets.AsyncTaskTarget.WriteAsyncTask(System.Collections.Generic.IList<NLog.LogEventInfo>, System.Threading.CancellationToken)
+  nameWithType.vb: AsyncTaskTarget.WriteAsyncTask(IList(Of LogEventInfo), CancellationToken)
+  fullName.vb: NLog.Targets.AsyncTaskTarget.WriteAsyncTask(System.Collections.Generic.IList(Of NLog.LogEventInfo), System.Threading.CancellationToken)
+  name.vb: WriteAsyncTask(IList(Of LogEventInfo), CancellationToken)
+  spec.csharp:
+  - uid: NLog.Targets.AsyncTaskTarget.WriteAsyncTask(System.Collections.Generic.IList{NLog.LogEventInfo},System.Threading.CancellationToken)
+    name: WriteAsyncTask
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.AsyncTaskTarget.WriteAsyncTask(System.Collections.Generic.IList{NLog.LogEventInfo},System.Threading.CancellationToken)
+    name: WriteAsyncTask
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask*
+  commentId: Overload:Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask
+  href: Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask.html#Innova_NLogExtensions_InnovaDatabaseTarget_WriteAsyncTask_System_Collections_Generic_IList_NLog_LogEventInfo__System_Threading_CancellationToken_
+  name: WriteAsyncTask
+  nameWithType: InnovaDatabaseTarget.WriteAsyncTask
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget.WriteAsyncTask
+- uid: System.Collections.Generic.IList{NLog.LogEventInfo}
+  commentId: T:System.Collections.Generic.IList{NLog.LogEventInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<LogEventInfo>
+  nameWithType: IList<LogEventInfo>
+  fullName: System.Collections.Generic.IList<NLog.LogEventInfo>
+  nameWithType.vb: IList(Of LogEventInfo)
+  fullName.vb: System.Collections.Generic.IList(Of NLog.LogEventInfo)
+  name.vb: IList(Of LogEventInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.NLogExtensions.InnovaDatabaseTarget.OnDatabaseError*
+  commentId: Overload:Innova.NLogExtensions.InnovaDatabaseTarget.OnDatabaseError
+  href: Innova.NLogExtensions.InnovaDatabaseTarget.OnDatabaseError.html#Innova_NLogExtensions_InnovaDatabaseTarget_OnDatabaseError_System_Exception_
+  name: OnDatabaseError
+  nameWithType: InnovaDatabaseTarget.OnDatabaseError
+  fullName: Innova.NLogExtensions.InnovaDatabaseTarget.OnDatabaseError
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: NLog.Targets.AsyncTaskTarget.WriteAsyncTask(NLog.LogEventInfo,System.Threading.CancellationToken)
+  commentId: M:NLog.Targets.AsyncTaskTarget.WriteAsyncTask(NLog.LogEventInfo,System.Threading.CancellationToken)
+  parent: NLog.Targets.AsyncTaskTarget
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: WriteAsyncTask(LogEventInfo, CancellationToken)
+  nameWithType: AsyncTaskTarget.WriteAsyncTask(LogEventInfo, CancellationToken)
+  fullName: NLog.Targets.AsyncTaskTarget.WriteAsyncTask(NLog.LogEventInfo, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: NLog.Targets.AsyncTaskTarget.WriteAsyncTask(NLog.LogEventInfo,System.Threading.CancellationToken)
+    name: WriteAsyncTask
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: NLog.Targets.AsyncTaskTarget.WriteAsyncTask(NLog.LogEventInfo,System.Threading.CancellationToken)
+    name: WriteAsyncTask
+    isExternal: true
+  - name: (
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: NLog.LogEventInfo
+  commentId: T:NLog.LogEventInfo
+  parent: NLog
+  isExternal: true
+  name: LogEventInfo
+  nameWithType: LogEventInfo
+  fullName: NLog.LogEventInfo
+- uid: NLog
+  commentId: N:NLog
+  isExternal: true
+  name: NLog
+  nameWithType: NLog
+  fullName: NLog
+memberLayout: SeparatePages

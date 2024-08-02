@@ -1,0 +1,494 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel`2
+  commentId: T:Innova.Prism.Infrastructure.Interfaces.IListViewModel`2
+  id: IListViewModel`2
+  parent: Innova.Prism.Infrastructure.Interfaces
+  children:
+  - Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.InsertItemAsync(`1)
+  - Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.RefreshItems(System.Collections.Generic.IEnumerable{`1})
+  - Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.UpdateItemsAsync(System.Collections.Generic.IEnumerable{`1})
+  langs:
+  - csharp
+  - vb
+  name: IListViewModel<T, TResult>
+  nameWithType: IListViewModel<T, TResult>
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListViewModel<T, TResult>
+  type: Interface
+  source:
+    id: IListViewModel
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Infrastructure\Interfaces\IListViewModel.cs
+    startLine: 40
+  assemblies:
+  - Innova.Prism.Infrastructure
+  namespace: Innova.Prism.Infrastructure.Interfaces
+  summary: Represents a view model for a list of items with specific types.
+  example: []
+  syntax:
+    content: 'public interface IListViewModel<T, TResult> : IListViewModel, IListDeleteViewModel'
+    typeParameters:
+    - id: T
+      description: The type of the items.
+    - id: TResult
+      description: The type of the result.
+    content.vb: Public Interface IListViewModel(Of T, TResult) Inherits IListViewModel, IListDeleteViewModel
+  inheritedMembers:
+  - Innova.Prism.Infrastructure.Interfaces.IListViewModel.MakeEntityUpdatable(System.Object)
+  - Innova.Prism.Infrastructure.Interfaces.IListViewModel.UpdateItemsAsync(System.Collections.Generic.IEnumerable{System.Object})
+  - Innova.Prism.Infrastructure.Interfaces.IListViewModel.CanUpdate
+  - Innova.Prism.Infrastructure.Interfaces.IListViewModel.EnablePaging
+  - Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.CanDelete
+  - Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.DeleteItemsAsync(System.Collections.IEnumerable)
+  nameWithType.vb: IListViewModel(Of T, TResult)
+  fullName.vb: Innova.Prism.Infrastructure.Interfaces.IListViewModel(Of T, TResult)
+  name.vb: IListViewModel(Of T, TResult)
+- uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.RefreshItems(System.Collections.Generic.IEnumerable{`1})
+  commentId: M:Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.RefreshItems(System.Collections.Generic.IEnumerable{`1})
+  id: RefreshItems(System.Collections.Generic.IEnumerable{`1})
+  parent: Innova.Prism.Infrastructure.Interfaces.IListViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: RefreshItems(IEnumerable<TResult>)
+  nameWithType: IListViewModel<T, TResult>.RefreshItems(IEnumerable<TResult>)
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListViewModel<T, TResult>.RefreshItems(System.Collections.Generic.IEnumerable<TResult>)
+  type: Method
+  source:
+    id: RefreshItems
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Infrastructure\Interfaces\IListViewModel.cs
+    startLine: 46
+  assemblies:
+  - Innova.Prism.Infrastructure
+  namespace: Innova.Prism.Infrastructure.Interfaces
+  summary: Refreshes the items with the specified results.
+  example: []
+  syntax:
+    content: void RefreshItems(IEnumerable<TResult> items)
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IEnumerable{{TResult}}
+      description: The items to refresh.
+    content.vb: Sub RefreshItems(items As IEnumerable(Of TResult))
+  overload: Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.RefreshItems*
+  nameWithType.vb: IListViewModel(Of T, TResult).RefreshItems(IEnumerable(Of TResult))
+  fullName.vb: Innova.Prism.Infrastructure.Interfaces.IListViewModel(Of T, TResult).RefreshItems(System.Collections.Generic.IEnumerable(Of TResult))
+  name.vb: RefreshItems(IEnumerable(Of TResult))
+- uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.UpdateItemsAsync(System.Collections.Generic.IEnumerable{`1})
+  commentId: M:Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.UpdateItemsAsync(System.Collections.Generic.IEnumerable{`1})
+  id: UpdateItemsAsync(System.Collections.Generic.IEnumerable{`1})
+  parent: Innova.Prism.Infrastructure.Interfaces.IListViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: UpdateItemsAsync(IEnumerable<TResult>)
+  nameWithType: IListViewModel<T, TResult>.UpdateItemsAsync(IEnumerable<TResult>)
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListViewModel<T, TResult>.UpdateItemsAsync(System.Collections.Generic.IEnumerable<TResult>)
+  type: Method
+  source:
+    id: UpdateItemsAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Infrastructure\Interfaces\IListViewModel.cs
+    startLine: 53
+  assemblies:
+  - Innova.Prism.Infrastructure
+  namespace: Innova.Prism.Infrastructure.Interfaces
+  summary: Updates the specified items asynchronously.
+  example: []
+  syntax:
+    content: Task UpdateItemsAsync(IEnumerable<TResult> items)
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IEnumerable{{TResult}}
+      description: The items to be updated.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Function UpdateItemsAsync(items As IEnumerable(Of TResult)) As Task
+  overload: Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.UpdateItemsAsync*
+  nameWithType.vb: IListViewModel(Of T, TResult).UpdateItemsAsync(IEnumerable(Of TResult))
+  fullName.vb: Innova.Prism.Infrastructure.Interfaces.IListViewModel(Of T, TResult).UpdateItemsAsync(System.Collections.Generic.IEnumerable(Of TResult))
+  name.vb: UpdateItemsAsync(IEnumerable(Of TResult))
+- uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.InsertItemAsync(`1)
+  commentId: M:Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.InsertItemAsync(`1)
+  id: InsertItemAsync(`1)
+  parent: Innova.Prism.Infrastructure.Interfaces.IListViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: InsertItemAsync(TResult)
+  nameWithType: IListViewModel<T, TResult>.InsertItemAsync(TResult)
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListViewModel<T, TResult>.InsertItemAsync(TResult)
+  type: Method
+  source:
+    id: InsertItemAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Infrastructure\Interfaces\IListViewModel.cs
+    startLine: 60
+  assemblies:
+  - Innova.Prism.Infrastructure
+  namespace: Innova.Prism.Infrastructure.Interfaces
+  summary: Inserts the specified item asynchronously.
+  example: []
+  syntax:
+    content: Task InsertItemAsync(TResult item)
+    parameters:
+    - id: item
+      type: '{TResult}'
+      description: The item to be inserted.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Function InsertItemAsync(item As TResult) As Task
+  overload: Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.InsertItemAsync*
+  nameWithType.vb: IListViewModel(Of T, TResult).InsertItemAsync(TResult)
+  fullName.vb: Innova.Prism.Infrastructure.Interfaces.IListViewModel(Of T, TResult).InsertItemAsync(TResult)
+references:
+- uid: Innova.Prism.Infrastructure.Interfaces
+  commentId: N:Innova.Prism.Infrastructure.Interfaces
+  href: Innova.html
+  name: Innova.Prism.Infrastructure.Interfaces
+  nameWithType: Innova.Prism.Infrastructure.Interfaces
+  fullName: Innova.Prism.Infrastructure.Interfaces
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure
+    name: Infrastructure
+    href: Innova.Prism.Infrastructure.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure.Interfaces
+    name: Interfaces
+    href: Innova.Prism.Infrastructure.Interfaces.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure
+    name: Infrastructure
+    href: Innova.Prism.Infrastructure.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure.Interfaces
+    name: Interfaces
+    href: Innova.Prism.Infrastructure.Interfaces.html
+- uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel.MakeEntityUpdatable(System.Object)
+  commentId: M:Innova.Prism.Infrastructure.Interfaces.IListViewModel.MakeEntityUpdatable(System.Object)
+  parent: Innova.Prism.Infrastructure.Interfaces.IListViewModel
+  isExternal: true
+  href: Innova.Prism.Infrastructure.Interfaces.IListViewModel.MakeEntityUpdatable.html#Innova_Prism_Infrastructure_Interfaces_IListViewModel_MakeEntityUpdatable_System_Object_
+  name: MakeEntityUpdatable(object)
+  nameWithType: IListViewModel.MakeEntityUpdatable(object)
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListViewModel.MakeEntityUpdatable(object)
+  nameWithType.vb: IListViewModel.MakeEntityUpdatable(Object)
+  fullName.vb: Innova.Prism.Infrastructure.Interfaces.IListViewModel.MakeEntityUpdatable(Object)
+  name.vb: MakeEntityUpdatable(Object)
+  spec.csharp:
+  - uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel.MakeEntityUpdatable(System.Object)
+    name: MakeEntityUpdatable
+    href: Innova.Prism.Infrastructure.Interfaces.IListViewModel.MakeEntityUpdatable.html#Innova_Prism_Infrastructure_Interfaces_IListViewModel_MakeEntityUpdatable_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel.MakeEntityUpdatable(System.Object)
+    name: MakeEntityUpdatable
+    href: Innova.Prism.Infrastructure.Interfaces.IListViewModel.MakeEntityUpdatable.html#Innova_Prism_Infrastructure_Interfaces_IListViewModel_MakeEntityUpdatable_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel.UpdateItemsAsync(System.Collections.Generic.IEnumerable{System.Object})
+  commentId: M:Innova.Prism.Infrastructure.Interfaces.IListViewModel.UpdateItemsAsync(System.Collections.Generic.IEnumerable{System.Object})
+  parent: Innova.Prism.Infrastructure.Interfaces.IListViewModel
+  isExternal: true
+  href: Innova.Prism.Infrastructure.Interfaces.IListViewModel.UpdateItemsAsync.html#Innova_Prism_Infrastructure_Interfaces_IListViewModel_UpdateItemsAsync_System_Collections_Generic_IEnumerable_System_Object__
+  name: UpdateItemsAsync(IEnumerable<object>)
+  nameWithType: IListViewModel.UpdateItemsAsync(IEnumerable<object>)
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListViewModel.UpdateItemsAsync(System.Collections.Generic.IEnumerable<object>)
+  nameWithType.vb: IListViewModel.UpdateItemsAsync(IEnumerable(Of Object))
+  fullName.vb: Innova.Prism.Infrastructure.Interfaces.IListViewModel.UpdateItemsAsync(System.Collections.Generic.IEnumerable(Of Object))
+  name.vb: UpdateItemsAsync(IEnumerable(Of Object))
+  spec.csharp:
+  - uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel.UpdateItemsAsync(System.Collections.Generic.IEnumerable{System.Object})
+    name: UpdateItemsAsync
+    href: Innova.Prism.Infrastructure.Interfaces.IListViewModel.UpdateItemsAsync.html#Innova_Prism_Infrastructure_Interfaces_IListViewModel_UpdateItemsAsync_System_Collections_Generic_IEnumerable_System_Object__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel.UpdateItemsAsync(System.Collections.Generic.IEnumerable{System.Object})
+    name: UpdateItemsAsync
+    href: Innova.Prism.Infrastructure.Interfaces.IListViewModel.UpdateItemsAsync.html#Innova_Prism_Infrastructure_Interfaces_IListViewModel_UpdateItemsAsync_System_Collections_Generic_IEnumerable_System_Object__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel.CanUpdate
+  commentId: P:Innova.Prism.Infrastructure.Interfaces.IListViewModel.CanUpdate
+  parent: Innova.Prism.Infrastructure.Interfaces.IListViewModel
+  href: Innova.Prism.Infrastructure.Interfaces.IListViewModel.CanUpdate.html#Innova_Prism_Infrastructure_Interfaces_IListViewModel_CanUpdate
+  name: CanUpdate
+  nameWithType: IListViewModel.CanUpdate
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListViewModel.CanUpdate
+- uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel.EnablePaging
+  commentId: P:Innova.Prism.Infrastructure.Interfaces.IListViewModel.EnablePaging
+  parent: Innova.Prism.Infrastructure.Interfaces.IListViewModel
+  href: Innova.Prism.Infrastructure.Interfaces.IListViewModel.EnablePaging.html#Innova_Prism_Infrastructure_Interfaces_IListViewModel_EnablePaging
+  name: EnablePaging
+  nameWithType: IListViewModel.EnablePaging
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListViewModel.EnablePaging
+- uid: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.CanDelete
+  commentId: P:Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.CanDelete
+  parent: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel
+  href: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.CanDelete.html#Innova_Prism_Infrastructure_Interfaces_IListDeleteViewModel_CanDelete
+  name: CanDelete
+  nameWithType: IListDeleteViewModel.CanDelete
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.CanDelete
+- uid: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.DeleteItemsAsync(System.Collections.IEnumerable)
+  commentId: M:Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.DeleteItemsAsync(System.Collections.IEnumerable)
+  parent: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel
+  isExternal: true
+  href: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.DeleteItemsAsync.html#Innova_Prism_Infrastructure_Interfaces_IListDeleteViewModel_DeleteItemsAsync_System_Collections_IEnumerable_
+  name: DeleteItemsAsync(IEnumerable)
+  nameWithType: IListDeleteViewModel.DeleteItemsAsync(IEnumerable)
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.DeleteItemsAsync(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.DeleteItemsAsync(System.Collections.IEnumerable)
+    name: DeleteItemsAsync
+    href: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.DeleteItemsAsync.html#Innova_Prism_Infrastructure_Interfaces_IListDeleteViewModel_DeleteItemsAsync_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.DeleteItemsAsync(System.Collections.IEnumerable)
+    name: DeleteItemsAsync
+    href: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.DeleteItemsAsync.html#Innova_Prism_Infrastructure_Interfaces_IListDeleteViewModel_DeleteItemsAsync_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+- uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel
+  commentId: T:Innova.Prism.Infrastructure.Interfaces.IListViewModel
+  parent: Innova.Prism.Infrastructure.Interfaces
+  href: Innova.Prism.Infrastructure.Interfaces.IListViewModel.html
+  name: IListViewModel
+  nameWithType: IListViewModel
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListViewModel
+- uid: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel
+  commentId: T:Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel
+  parent: Innova.Prism.Infrastructure.Interfaces
+  href: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel.html
+  name: IListDeleteViewModel
+  nameWithType: IListDeleteViewModel
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListDeleteViewModel
+- uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.RefreshItems*
+  commentId: Overload:Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.RefreshItems
+  href: Innova.Prism.Infrastructure.Interfaces.IListViewModel-2.RefreshItems.html#Innova_Prism_Infrastructure_Interfaces_IListViewModel_2_RefreshItems_System_Collections_Generic_IEnumerable__1__
+  name: RefreshItems
+  nameWithType: IListViewModel<T, TResult>.RefreshItems
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListViewModel<T, TResult>.RefreshItems
+  nameWithType.vb: IListViewModel(Of T, TResult).RefreshItems
+  fullName.vb: Innova.Prism.Infrastructure.Interfaces.IListViewModel(Of T, TResult).RefreshItems
+- uid: System.Collections.Generic.IEnumerable{{TResult}}
+  commentId: T:System.Collections.Generic.IEnumerable{`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TResult>
+  nameWithType: IEnumerable<TResult>
+  fullName: System.Collections.Generic.IEnumerable<TResult>
+  nameWithType.vb: IEnumerable(Of TResult)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TResult)
+  name.vb: IEnumerable(Of TResult)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.UpdateItemsAsync*
+  commentId: Overload:Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.UpdateItemsAsync
+  href: Innova.Prism.Infrastructure.Interfaces.IListViewModel-2.UpdateItemsAsync.html#Innova_Prism_Infrastructure_Interfaces_IListViewModel_2_UpdateItemsAsync_System_Collections_Generic_IEnumerable__1__
+  name: UpdateItemsAsync
+  nameWithType: IListViewModel<T, TResult>.UpdateItemsAsync
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListViewModel<T, TResult>.UpdateItemsAsync
+  nameWithType.vb: IListViewModel(Of T, TResult).UpdateItemsAsync
+  fullName.vb: Innova.Prism.Infrastructure.Interfaces.IListViewModel(Of T, TResult).UpdateItemsAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.InsertItemAsync*
+  commentId: Overload:Innova.Prism.Infrastructure.Interfaces.IListViewModel`2.InsertItemAsync
+  href: Innova.Prism.Infrastructure.Interfaces.IListViewModel-2.InsertItemAsync.html#Innova_Prism_Infrastructure_Interfaces_IListViewModel_2_InsertItemAsync__1_
+  name: InsertItemAsync
+  nameWithType: IListViewModel<T, TResult>.InsertItemAsync
+  fullName: Innova.Prism.Infrastructure.Interfaces.IListViewModel<T, TResult>.InsertItemAsync
+  nameWithType.vb: IListViewModel(Of T, TResult).InsertItemAsync
+  fullName.vb: Innova.Prism.Infrastructure.Interfaces.IListViewModel(Of T, TResult).InsertItemAsync
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+memberLayout: SeparatePages

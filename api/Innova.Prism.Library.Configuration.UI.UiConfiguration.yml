@@ -1,0 +1,1002 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  commentId: T:Innova.Prism.Library.Configuration.UI.UiConfiguration
+  id: UiConfiguration
+  parent: Innova.Prism.Library.Configuration.UI
+  children:
+  - Innova.Prism.Library.Configuration.UI.UiConfiguration.#ctor
+  - Innova.Prism.Library.Configuration.UI.UiConfiguration.AddEntity(System.String)
+  - Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateConfiguration
+  - Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateIndex
+  - Innova.Prism.Library.Configuration.UI.UiConfiguration.CustomizeConfiguration
+  - Innova.Prism.Library.Configuration.UI.UiConfiguration.Entities
+  - Innova.Prism.Library.Configuration.UI.UiConfiguration.GetField(System.String,System.String)
+  - Innova.Prism.Library.Configuration.UI.UiConfiguration.IsFieldVisible(System.String,System.String)
+  - Innova.Prism.Library.Configuration.UI.UiConfiguration.IsGroupVisible(System.String,System.String)
+  - Innova.Prism.Library.Configuration.UI.UiConfiguration.ReIndex
+  - Innova.Prism.Library.Configuration.UI.UiConfiguration.dicEntities
+  - Innova.Prism.Library.Configuration.UI.UiConfiguration.dicFields
+  langs:
+  - csharp
+  - vb
+  name: UiConfiguration
+  nameWithType: UiConfiguration
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  type: Class
+  source:
+    id: UiConfiguration
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Configuration\UI\UiConfiguration.cs
+    startLine: 63
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Configuration.UI
+  summary: Represents the base class for UI configuration.
+  example: []
+  syntax:
+    content: 'public abstract class UiConfiguration : IUiConfiguration'
+    content.vb: Public MustInherit Class UiConfiguration Implements IUiConfiguration
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Prism.Library.Configuration.UI.IUiConfiguration
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.dicFields
+  commentId: F:Innova.Prism.Library.Configuration.UI.UiConfiguration.dicFields
+  id: dicFields
+  parent: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  langs:
+  - csharp
+  - vb
+  name: dicFields
+  nameWithType: UiConfiguration.dicFields
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.dicFields
+  type: Field
+  source:
+    id: dicFields
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Configuration\UI\UiConfiguration.cs
+    startLine: 66
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Configuration.UI
+  syntax:
+    content: protected Dictionary<string, UiField> dicFields
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,Innova.Prism.Library.Configuration.UI.UiField}
+    content.vb: Protected dicFields As Dictionary(Of String, UiField)
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.dicEntities
+  commentId: F:Innova.Prism.Library.Configuration.UI.UiConfiguration.dicEntities
+  id: dicEntities
+  parent: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  langs:
+  - csharp
+  - vb
+  name: dicEntities
+  nameWithType: UiConfiguration.dicEntities
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.dicEntities
+  type: Field
+  source:
+    id: dicEntities
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Configuration\UI\UiConfiguration.cs
+    startLine: 67
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Configuration.UI
+  syntax:
+    content: protected Dictionary<string, UiEntity> dicEntities
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,Innova.Prism.Library.Configuration.UI.UiEntity}
+    content.vb: Protected dicEntities As Dictionary(Of String, UiEntity)
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.Entities
+  commentId: P:Innova.Prism.Library.Configuration.UI.UiConfiguration.Entities
+  id: Entities
+  parent: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Entities
+  nameWithType: UiConfiguration.Entities
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.Entities
+  type: Property
+  source:
+    id: Entities
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Configuration\UI\UiConfiguration.cs
+    startLine: 75
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Configuration.UI
+  summary: Gets or sets the list of UI entities.
+  example: []
+  syntax:
+    content: public List<UiEntity> Entities { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Innova.Prism.Library.Configuration.UI.UiEntity}
+    content.vb: Public Property Entities As List(Of UiEntity)
+  overload: Innova.Prism.Library.Configuration.UI.UiConfiguration.Entities*
+  implements:
+  - Innova.Prism.Library.Configuration.UI.IUiConfiguration.Entities
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.#ctor
+  commentId: M:Innova.Prism.Library.Configuration.UI.UiConfiguration.#ctor
+  id: '#ctor'
+  parent: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  langs:
+  - csharp
+  - vb
+  name: UiConfiguration()
+  nameWithType: UiConfiguration.UiConfiguration()
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.UiConfiguration()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Configuration\UI\UiConfiguration.cs
+    startLine: 80
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Configuration.UI
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Configuration.UI.UiConfiguration" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public UiConfiguration()
+    content.vb: Public Sub New()
+  overload: Innova.Prism.Library.Configuration.UI.UiConfiguration.#ctor*
+  nameWithType.vb: UiConfiguration.New()
+  fullName.vb: Innova.Prism.Library.Configuration.UI.UiConfiguration.New()
+  name.vb: New()
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.CustomizeConfiguration
+  commentId: M:Innova.Prism.Library.Configuration.UI.UiConfiguration.CustomizeConfiguration
+  id: CustomizeConfiguration
+  parent: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CustomizeConfiguration()
+  nameWithType: UiConfiguration.CustomizeConfiguration()
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.CustomizeConfiguration()
+  type: Method
+  source:
+    id: CustomizeConfiguration
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Configuration\UI\UiConfiguration.cs
+    startLine: 90
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Configuration.UI
+  summary: Customizes the UI configuration.
+  example: []
+  syntax:
+    content: public virtual void CustomizeConfiguration()
+    content.vb: Public Overridable Sub CustomizeConfiguration()
+  overload: Innova.Prism.Library.Configuration.UI.UiConfiguration.CustomizeConfiguration*
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateConfiguration
+  commentId: M:Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateConfiguration
+  id: CreateConfiguration
+  parent: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CreateConfiguration()
+  nameWithType: UiConfiguration.CreateConfiguration()
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateConfiguration()
+  type: Method
+  source:
+    id: CreateConfiguration
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Configuration\UI\UiConfiguration.cs
+    startLine: 98
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Configuration.UI
+  summary: Creates the UI configuration.
+  example: []
+  syntax:
+    content: public virtual void CreateConfiguration()
+    content.vb: Public Overridable Sub CreateConfiguration()
+  overload: Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateConfiguration*
+  implements:
+  - Innova.Prism.Library.Configuration.UI.IUiConfiguration.CreateConfiguration
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.ReIndex
+  commentId: M:Innova.Prism.Library.Configuration.UI.UiConfiguration.ReIndex
+  id: ReIndex
+  parent: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ReIndex()
+  nameWithType: UiConfiguration.ReIndex()
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.ReIndex()
+  type: Method
+  source:
+    id: ReIndex
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Configuration\UI\UiConfiguration.cs
+    startLine: 106
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Configuration.UI
+  summary: Reindexes the UI configuration.
+  example: []
+  syntax:
+    content: public void ReIndex()
+    content.vb: Public Sub ReIndex()
+  overload: Innova.Prism.Library.Configuration.UI.UiConfiguration.ReIndex*
+  implements:
+  - Innova.Prism.Library.Configuration.UI.IUiConfiguration.ReIndex
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateIndex
+  commentId: M:Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateIndex
+  id: CreateIndex
+  parent: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CreateIndex()
+  nameWithType: UiConfiguration.CreateIndex()
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateIndex()
+  type: Method
+  source:
+    id: CreateIndex
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Configuration\UI\UiConfiguration.cs
+    startLine: 114
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Configuration.UI
+  summary: Creates the index for UI fields and entities.
+  example: []
+  syntax:
+    content: protected void CreateIndex()
+    content.vb: Protected Sub CreateIndex()
+  overload: Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateIndex*
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.AddEntity(System.String)
+  commentId: M:Innova.Prism.Library.Configuration.UI.UiConfiguration.AddEntity(System.String)
+  id: AddEntity(System.String)
+  parent: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AddEntity(string)
+  nameWithType: UiConfiguration.AddEntity(string)
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.AddEntity(string)
+  type: Method
+  source:
+    id: AddEntity
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Configuration\UI\UiConfiguration.cs
+    startLine: 148
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Configuration.UI
+  summary: Adds a new UI entity with the specified name.
+  example: []
+  syntax:
+    content: public UiEntity AddEntity(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the entity.
+    return:
+      type: Innova.Prism.Library.Configuration.UI.UiEntity
+      description: The newly added UI entity.
+    content.vb: Public Function AddEntity(name As String) As UiEntity
+  overload: Innova.Prism.Library.Configuration.UI.UiConfiguration.AddEntity*
+  implements:
+  - Innova.Prism.Library.Configuration.UI.IUiConfiguration.AddEntity(System.String)
+  nameWithType.vb: UiConfiguration.AddEntity(String)
+  fullName.vb: Innova.Prism.Library.Configuration.UI.UiConfiguration.AddEntity(String)
+  name.vb: AddEntity(String)
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.IsFieldVisible(System.String,System.String)
+  commentId: M:Innova.Prism.Library.Configuration.UI.UiConfiguration.IsFieldVisible(System.String,System.String)
+  id: IsFieldVisible(System.String,System.String)
+  parent: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IsFieldVisible(string, string)
+  nameWithType: UiConfiguration.IsFieldVisible(string, string)
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.IsFieldVisible(string, string)
+  type: Method
+  source:
+    id: IsFieldVisible
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Configuration\UI\UiConfiguration.cs
+    startLine: 168
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Configuration.UI
+  summary: Checks if the UI field with the specified entity name and field name is visible.
+  example: []
+  syntax:
+    content: public bool IsFieldVisible(string entityname, string fieldname)
+    parameters:
+    - id: entityname
+      type: System.String
+      description: The name of the entity.
+    - id: fieldname
+      type: System.String
+      description: The name of the field.
+    return:
+      type: System.Boolean
+      description: True if the field is visible, otherwise false.
+    content.vb: Public Function IsFieldVisible(entityname As String, fieldname As String) As Boolean
+  overload: Innova.Prism.Library.Configuration.UI.UiConfiguration.IsFieldVisible*
+  implements:
+  - Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsFieldVisible(System.String,System.String)
+  nameWithType.vb: UiConfiguration.IsFieldVisible(String, String)
+  fullName.vb: Innova.Prism.Library.Configuration.UI.UiConfiguration.IsFieldVisible(String, String)
+  name.vb: IsFieldVisible(String, String)
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.IsGroupVisible(System.String,System.String)
+  commentId: M:Innova.Prism.Library.Configuration.UI.UiConfiguration.IsGroupVisible(System.String,System.String)
+  id: IsGroupVisible(System.String,System.String)
+  parent: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IsGroupVisible(string, string)
+  nameWithType: UiConfiguration.IsGroupVisible(string, string)
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.IsGroupVisible(string, string)
+  type: Method
+  source:
+    id: IsGroupVisible
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Configuration\UI\UiConfiguration.cs
+    startLine: 180
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Configuration.UI
+  summary: Checks if the UI group with the specified entity name and group name is visible.
+  example: []
+  syntax:
+    content: public bool IsGroupVisible(string entityname, string groupName)
+    parameters:
+    - id: entityname
+      type: System.String
+      description: The name of the entity.
+    - id: groupName
+      type: System.String
+      description: The name of the group.
+    return:
+      type: System.Boolean
+      description: True if the group is visible, otherwise false.
+    content.vb: Public Function IsGroupVisible(entityname As String, groupName As String) As Boolean
+  overload: Innova.Prism.Library.Configuration.UI.UiConfiguration.IsGroupVisible*
+  implements:
+  - Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsGroupVisible(System.String,System.String)
+  nameWithType.vb: UiConfiguration.IsGroupVisible(String, String)
+  fullName.vb: Innova.Prism.Library.Configuration.UI.UiConfiguration.IsGroupVisible(String, String)
+  name.vb: IsGroupVisible(String, String)
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.GetField(System.String,System.String)
+  commentId: M:Innova.Prism.Library.Configuration.UI.UiConfiguration.GetField(System.String,System.String)
+  id: GetField(System.String,System.String)
+  parent: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GetField(string, string)
+  nameWithType: UiConfiguration.GetField(string, string)
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.GetField(string, string)
+  type: Method
+  source:
+    id: GetField
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Configuration\UI\UiConfiguration.cs
+    startLine: 192
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Configuration.UI
+  summary: Gets the UI field with the specified entity name and field name.
+  example: []
+  syntax:
+    content: public UiField GetField(string entityname, string fieldname)
+    parameters:
+    - id: entityname
+      type: System.String
+      description: The name of the entity.
+    - id: fieldname
+      type: System.String
+      description: The name of the field.
+    return:
+      type: Innova.Prism.Library.Configuration.UI.UiField
+      description: The UI field.
+    content.vb: Public Function GetField(entityname As String, fieldname As String) As UiField
+  overload: Innova.Prism.Library.Configuration.UI.UiConfiguration.GetField*
+  implements:
+  - Innova.Prism.Library.Configuration.UI.IUiConfiguration.GetField(System.String,System.String)
+  nameWithType.vb: UiConfiguration.GetField(String, String)
+  fullName.vb: Innova.Prism.Library.Configuration.UI.UiConfiguration.GetField(String, String)
+  name.vb: GetField(String, String)
+references:
+- uid: Innova.Prism.Library.Configuration.UI
+  commentId: N:Innova.Prism.Library.Configuration.UI
+  href: Innova.html
+  name: Innova.Prism.Library.Configuration.UI
+  nameWithType: Innova.Prism.Library.Configuration.UI
+  fullName: Innova.Prism.Library.Configuration.UI
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Configuration
+    name: Configuration
+    href: Innova.Prism.Library.Configuration.html
+  - name: .
+  - uid: Innova.Prism.Library.Configuration.UI
+    name: UI
+    href: Innova.Prism.Library.Configuration.UI.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Configuration
+    name: Configuration
+    href: Innova.Prism.Library.Configuration.html
+  - name: .
+  - uid: Innova.Prism.Library.Configuration.UI
+    name: UI
+    href: Innova.Prism.Library.Configuration.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration
+  commentId: T:Innova.Prism.Library.Configuration.UI.IUiConfiguration
+  parent: Innova.Prism.Library.Configuration.UI
+  href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.html
+  name: IUiConfiguration
+  nameWithType: IUiConfiguration
+  fullName: Innova.Prism.Library.Configuration.UI.IUiConfiguration
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.Dictionary{System.String,Innova.Prism.Library.Configuration.UI.UiField}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,Innova.Prism.Library.Configuration.UI.UiField}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, UiField>
+  nameWithType: Dictionary<string, UiField>
+  fullName: System.Collections.Generic.Dictionary<string, Innova.Prism.Library.Configuration.UI.UiField>
+  nameWithType.vb: Dictionary(Of String, UiField)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Innova.Prism.Library.Configuration.UI.UiField)
+  name.vb: Dictionary(Of String, UiField)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Innova.Prism.Library.Configuration.UI.UiField
+    name: UiField
+    href: Innova.Prism.Library.Configuration.UI.UiField.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Innova.Prism.Library.Configuration.UI.UiField
+    name: UiField
+    href: Innova.Prism.Library.Configuration.UI.UiField.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.Dictionary{System.String,Innova.Prism.Library.Configuration.UI.UiEntity}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,Innova.Prism.Library.Configuration.UI.UiEntity}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, UiEntity>
+  nameWithType: Dictionary<string, UiEntity>
+  fullName: System.Collections.Generic.Dictionary<string, Innova.Prism.Library.Configuration.UI.UiEntity>
+  nameWithType.vb: Dictionary(Of String, UiEntity)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Innova.Prism.Library.Configuration.UI.UiEntity)
+  name.vb: Dictionary(Of String, UiEntity)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Innova.Prism.Library.Configuration.UI.UiEntity
+    name: UiEntity
+    href: Innova.Prism.Library.Configuration.UI.UiEntity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Innova.Prism.Library.Configuration.UI.UiEntity
+    name: UiEntity
+    href: Innova.Prism.Library.Configuration.UI.UiEntity.html
+  - name: )
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.Entities*
+  commentId: Overload:Innova.Prism.Library.Configuration.UI.UiConfiguration.Entities
+  href: Innova.Prism.Library.Configuration.UI.UiConfiguration.Entities.html#Innova_Prism_Library_Configuration_UI_UiConfiguration_Entities
+  name: Entities
+  nameWithType: UiConfiguration.Entities
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.Entities
+- uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.Entities
+  commentId: P:Innova.Prism.Library.Configuration.UI.IUiConfiguration.Entities
+  parent: Innova.Prism.Library.Configuration.UI.IUiConfiguration
+  href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.Entities.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_Entities
+  name: Entities
+  nameWithType: IUiConfiguration.Entities
+  fullName: Innova.Prism.Library.Configuration.UI.IUiConfiguration.Entities
+- uid: System.Collections.Generic.List{Innova.Prism.Library.Configuration.UI.UiEntity}
+  commentId: T:System.Collections.Generic.List{Innova.Prism.Library.Configuration.UI.UiEntity}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<UiEntity>
+  nameWithType: List<UiEntity>
+  fullName: System.Collections.Generic.List<Innova.Prism.Library.Configuration.UI.UiEntity>
+  nameWithType.vb: List(Of UiEntity)
+  fullName.vb: System.Collections.Generic.List(Of Innova.Prism.Library.Configuration.UI.UiEntity)
+  name.vb: List(Of UiEntity)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Prism.Library.Configuration.UI.UiEntity
+    name: UiEntity
+    href: Innova.Prism.Library.Configuration.UI.UiEntity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Configuration.UI.UiEntity
+    name: UiEntity
+    href: Innova.Prism.Library.Configuration.UI.UiEntity.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration
+  commentId: T:Innova.Prism.Library.Configuration.UI.UiConfiguration
+  href: Innova.Prism.Library.Configuration.UI.UiConfiguration.html
+  name: UiConfiguration
+  nameWithType: UiConfiguration
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.#ctor*
+  commentId: Overload:Innova.Prism.Library.Configuration.UI.UiConfiguration.#ctor
+  href: Innova.Prism.Library.Configuration.UI.UiConfiguration.-ctor.html#Innova_Prism_Library_Configuration_UI_UiConfiguration__ctor
+  name: UiConfiguration
+  nameWithType: UiConfiguration.UiConfiguration
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.UiConfiguration
+  nameWithType.vb: UiConfiguration.New
+  fullName.vb: Innova.Prism.Library.Configuration.UI.UiConfiguration.New
+  name.vb: New
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.CustomizeConfiguration*
+  commentId: Overload:Innova.Prism.Library.Configuration.UI.UiConfiguration.CustomizeConfiguration
+  href: Innova.Prism.Library.Configuration.UI.UiConfiguration.CustomizeConfiguration.html#Innova_Prism_Library_Configuration_UI_UiConfiguration_CustomizeConfiguration
+  name: CustomizeConfiguration
+  nameWithType: UiConfiguration.CustomizeConfiguration
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.CustomizeConfiguration
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateConfiguration*
+  commentId: Overload:Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateConfiguration
+  href: Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateConfiguration.html#Innova_Prism_Library_Configuration_UI_UiConfiguration_CreateConfiguration
+  name: CreateConfiguration
+  nameWithType: UiConfiguration.CreateConfiguration
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateConfiguration
+- uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.CreateConfiguration
+  commentId: M:Innova.Prism.Library.Configuration.UI.IUiConfiguration.CreateConfiguration
+  parent: Innova.Prism.Library.Configuration.UI.IUiConfiguration
+  href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.CreateConfiguration.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_CreateConfiguration
+  name: CreateConfiguration()
+  nameWithType: IUiConfiguration.CreateConfiguration()
+  fullName: Innova.Prism.Library.Configuration.UI.IUiConfiguration.CreateConfiguration()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.CreateConfiguration
+    name: CreateConfiguration
+    href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.CreateConfiguration.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_CreateConfiguration
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.CreateConfiguration
+    name: CreateConfiguration
+    href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.CreateConfiguration.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_CreateConfiguration
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.ReIndex*
+  commentId: Overload:Innova.Prism.Library.Configuration.UI.UiConfiguration.ReIndex
+  href: Innova.Prism.Library.Configuration.UI.UiConfiguration.ReIndex.html#Innova_Prism_Library_Configuration_UI_UiConfiguration_ReIndex
+  name: ReIndex
+  nameWithType: UiConfiguration.ReIndex
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.ReIndex
+- uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.ReIndex
+  commentId: M:Innova.Prism.Library.Configuration.UI.IUiConfiguration.ReIndex
+  parent: Innova.Prism.Library.Configuration.UI.IUiConfiguration
+  href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.ReIndex.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_ReIndex
+  name: ReIndex()
+  nameWithType: IUiConfiguration.ReIndex()
+  fullName: Innova.Prism.Library.Configuration.UI.IUiConfiguration.ReIndex()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.ReIndex
+    name: ReIndex
+    href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.ReIndex.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_ReIndex
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.ReIndex
+    name: ReIndex
+    href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.ReIndex.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_ReIndex
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateIndex*
+  commentId: Overload:Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateIndex
+  href: Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateIndex.html#Innova_Prism_Library_Configuration_UI_UiConfiguration_CreateIndex
+  name: CreateIndex
+  nameWithType: UiConfiguration.CreateIndex
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.CreateIndex
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.AddEntity*
+  commentId: Overload:Innova.Prism.Library.Configuration.UI.UiConfiguration.AddEntity
+  href: Innova.Prism.Library.Configuration.UI.UiConfiguration.AddEntity.html#Innova_Prism_Library_Configuration_UI_UiConfiguration_AddEntity_System_String_
+  name: AddEntity
+  nameWithType: UiConfiguration.AddEntity
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.AddEntity
+- uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.AddEntity(System.String)
+  commentId: M:Innova.Prism.Library.Configuration.UI.IUiConfiguration.AddEntity(System.String)
+  parent: Innova.Prism.Library.Configuration.UI.IUiConfiguration
+  isExternal: true
+  href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.AddEntity.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_AddEntity_System_String_
+  name: AddEntity(string)
+  nameWithType: IUiConfiguration.AddEntity(string)
+  fullName: Innova.Prism.Library.Configuration.UI.IUiConfiguration.AddEntity(string)
+  nameWithType.vb: IUiConfiguration.AddEntity(String)
+  fullName.vb: Innova.Prism.Library.Configuration.UI.IUiConfiguration.AddEntity(String)
+  name.vb: AddEntity(String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.AddEntity(System.String)
+    name: AddEntity
+    href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.AddEntity.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_AddEntity_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.AddEntity(System.String)
+    name: AddEntity
+    href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.AddEntity.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_AddEntity_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Prism.Library.Configuration.UI.UiEntity
+  commentId: T:Innova.Prism.Library.Configuration.UI.UiEntity
+  parent: Innova.Prism.Library.Configuration.UI
+  href: Innova.Prism.Library.Configuration.UI.UiEntity.html
+  name: UiEntity
+  nameWithType: UiEntity
+  fullName: Innova.Prism.Library.Configuration.UI.UiEntity
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.IsFieldVisible*
+  commentId: Overload:Innova.Prism.Library.Configuration.UI.UiConfiguration.IsFieldVisible
+  href: Innova.Prism.Library.Configuration.UI.UiConfiguration.IsFieldVisible.html#Innova_Prism_Library_Configuration_UI_UiConfiguration_IsFieldVisible_System_String_System_String_
+  name: IsFieldVisible
+  nameWithType: UiConfiguration.IsFieldVisible
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.IsFieldVisible
+- uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsFieldVisible(System.String,System.String)
+  commentId: M:Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsFieldVisible(System.String,System.String)
+  parent: Innova.Prism.Library.Configuration.UI.IUiConfiguration
+  isExternal: true
+  href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsFieldVisible.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_IsFieldVisible_System_String_System_String_
+  name: IsFieldVisible(string, string)
+  nameWithType: IUiConfiguration.IsFieldVisible(string, string)
+  fullName: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsFieldVisible(string, string)
+  nameWithType.vb: IUiConfiguration.IsFieldVisible(String, String)
+  fullName.vb: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsFieldVisible(String, String)
+  name.vb: IsFieldVisible(String, String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsFieldVisible(System.String,System.String)
+    name: IsFieldVisible
+    href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsFieldVisible.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_IsFieldVisible_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsFieldVisible(System.String,System.String)
+    name: IsFieldVisible
+    href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsFieldVisible.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_IsFieldVisible_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.IsGroupVisible*
+  commentId: Overload:Innova.Prism.Library.Configuration.UI.UiConfiguration.IsGroupVisible
+  href: Innova.Prism.Library.Configuration.UI.UiConfiguration.IsGroupVisible.html#Innova_Prism_Library_Configuration_UI_UiConfiguration_IsGroupVisible_System_String_System_String_
+  name: IsGroupVisible
+  nameWithType: UiConfiguration.IsGroupVisible
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.IsGroupVisible
+- uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsGroupVisible(System.String,System.String)
+  commentId: M:Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsGroupVisible(System.String,System.String)
+  parent: Innova.Prism.Library.Configuration.UI.IUiConfiguration
+  isExternal: true
+  href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsGroupVisible.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_IsGroupVisible_System_String_System_String_
+  name: IsGroupVisible(string, string)
+  nameWithType: IUiConfiguration.IsGroupVisible(string, string)
+  fullName: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsGroupVisible(string, string)
+  nameWithType.vb: IUiConfiguration.IsGroupVisible(String, String)
+  fullName.vb: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsGroupVisible(String, String)
+  name.vb: IsGroupVisible(String, String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsGroupVisible(System.String,System.String)
+    name: IsGroupVisible
+    href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsGroupVisible.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_IsGroupVisible_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsGroupVisible(System.String,System.String)
+    name: IsGroupVisible
+    href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.IsGroupVisible.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_IsGroupVisible_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.Configuration.UI.UiConfiguration.GetField*
+  commentId: Overload:Innova.Prism.Library.Configuration.UI.UiConfiguration.GetField
+  href: Innova.Prism.Library.Configuration.UI.UiConfiguration.GetField.html#Innova_Prism_Library_Configuration_UI_UiConfiguration_GetField_System_String_System_String_
+  name: GetField
+  nameWithType: UiConfiguration.GetField
+  fullName: Innova.Prism.Library.Configuration.UI.UiConfiguration.GetField
+- uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.GetField(System.String,System.String)
+  commentId: M:Innova.Prism.Library.Configuration.UI.IUiConfiguration.GetField(System.String,System.String)
+  parent: Innova.Prism.Library.Configuration.UI.IUiConfiguration
+  isExternal: true
+  href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.GetField.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_GetField_System_String_System_String_
+  name: GetField(string, string)
+  nameWithType: IUiConfiguration.GetField(string, string)
+  fullName: Innova.Prism.Library.Configuration.UI.IUiConfiguration.GetField(string, string)
+  nameWithType.vb: IUiConfiguration.GetField(String, String)
+  fullName.vb: Innova.Prism.Library.Configuration.UI.IUiConfiguration.GetField(String, String)
+  name.vb: GetField(String, String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.GetField(System.String,System.String)
+    name: GetField
+    href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.GetField.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_GetField_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Configuration.UI.IUiConfiguration.GetField(System.String,System.String)
+    name: GetField
+    href: Innova.Prism.Library.Configuration.UI.IUiConfiguration.GetField.html#Innova_Prism_Library_Configuration_UI_IUiConfiguration_GetField_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.Configuration.UI.UiField
+  commentId: T:Innova.Prism.Library.Configuration.UI.UiField
+  parent: Innova.Prism.Library.Configuration.UI
+  href: Innova.Prism.Library.Configuration.UI.UiField.html
+  name: UiField
+  nameWithType: UiField
+  fullName: Innova.Prism.Library.Configuration.UI.UiField
+memberLayout: SeparatePages

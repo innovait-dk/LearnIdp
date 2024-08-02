@@ -1,0 +1,961 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject
+  commentId: T:Innova.Prism.Library.Utilities.VirtualFileDataObject
+  id: VirtualFileDataObject
+  parent: Innova.Prism.Library.Utilities
+  children:
+  - Innova.Prism.Library.Utilities.VirtualFileDataObject.#ctor
+  - Innova.Prism.Library.Utilities.VirtualFileDataObject.#ctor(System.Action{Innova.Prism.Library.Utilities.VirtualFileDataObject},System.Action{Innova.Prism.Library.Utilities.VirtualFileDataObject})
+  - Innova.Prism.Library.Utilities.VirtualFileDataObject.CleanUp
+  - Innova.Prism.Library.Utilities.VirtualFileDataObject.DoDragDrop(System.Windows.DependencyObject,System.Runtime.InteropServices.ComTypes.IDataObject,System.Windows.DragDropEffects)
+  - Innova.Prism.Library.Utilities.VirtualFileDataObject.EndOperation
+  - Innova.Prism.Library.Utilities.VirtualFileDataObject.IsAsynchronous
+  - Innova.Prism.Library.Utilities.VirtualFileDataObject.PasteSucceeded
+  - Innova.Prism.Library.Utilities.VirtualFileDataObject.PerformedDropEffect
+  - Innova.Prism.Library.Utilities.VirtualFileDataObject.PreferredDropEffect
+  - Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(System.Collections.Generic.IEnumerable{Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor})
+  - Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(System.Int16,System.Collections.Generic.IEnumerable{System.Byte})
+  - Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(System.Int16,System.Int32,System.Func{System.IO.Stream})
+  langs:
+  - csharp
+  - vb
+  name: VirtualFileDataObject
+  nameWithType: VirtualFileDataObject
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject
+  type: Class
+  source:
+    id: VirtualFileDataObject
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\VirtualFileDataObject.cs
+    startLine: 15
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  summary: >-
+    Class implementing drag/drop and clipboard support for virtual files.
+
+    Also offers an alternate interface to the IDataObject interface.
+  example: []
+  syntax:
+    content: 'public sealed class VirtualFileDataObject : IDataObject'
+    content.vb: Public NotInheritable Class VirtualFileDataObject Implements IDataObject
+  inheritance:
+  - System.Object
+  implements:
+  - System.Runtime.InteropServices.ComTypes.IDataObject
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.IsAsynchronous
+  commentId: P:Innova.Prism.Library.Utilities.VirtualFileDataObject.IsAsynchronous
+  id: IsAsynchronous
+  parent: Innova.Prism.Library.Utilities.VirtualFileDataObject
+  langs:
+  - csharp
+  - vb
+  name: IsAsynchronous
+  nameWithType: VirtualFileDataObject.IsAsynchronous
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.IsAsynchronous
+  type: Property
+  source:
+    id: IsAsynchronous
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\VirtualFileDataObject.cs
+    startLine: 20
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  summary: Gets or sets a value indicating whether the data object can be used asynchronously.
+  example: []
+  syntax:
+    content: public bool IsAsynchronous { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsAsynchronous As Boolean
+  overload: Innova.Prism.Library.Utilities.VirtualFileDataObject.IsAsynchronous*
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.#ctor
+  commentId: M:Innova.Prism.Library.Utilities.VirtualFileDataObject.#ctor
+  id: '#ctor'
+  parent: Innova.Prism.Library.Utilities.VirtualFileDataObject
+  langs:
+  - csharp
+  - vb
+  name: VirtualFileDataObject()
+  nameWithType: VirtualFileDataObject.VirtualFileDataObject()
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.VirtualFileDataObject()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\VirtualFileDataObject.cs
+    startLine: 70
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  summary: Initializes a new instance of the VirtualFileDataObject class.
+  example: []
+  syntax:
+    content: public VirtualFileDataObject()
+    content.vb: Public Sub New()
+  overload: Innova.Prism.Library.Utilities.VirtualFileDataObject.#ctor*
+  nameWithType.vb: VirtualFileDataObject.New()
+  fullName.vb: Innova.Prism.Library.Utilities.VirtualFileDataObject.New()
+  name.vb: New()
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.#ctor(System.Action{Innova.Prism.Library.Utilities.VirtualFileDataObject},System.Action{Innova.Prism.Library.Utilities.VirtualFileDataObject})
+  commentId: M:Innova.Prism.Library.Utilities.VirtualFileDataObject.#ctor(System.Action{Innova.Prism.Library.Utilities.VirtualFileDataObject},System.Action{Innova.Prism.Library.Utilities.VirtualFileDataObject})
+  id: '#ctor(System.Action{Innova.Prism.Library.Utilities.VirtualFileDataObject},System.Action{Innova.Prism.Library.Utilities.VirtualFileDataObject})'
+  parent: Innova.Prism.Library.Utilities.VirtualFileDataObject
+  langs:
+  - csharp
+  - vb
+  name: VirtualFileDataObject(Action<VirtualFileDataObject>, Action<VirtualFileDataObject>)
+  nameWithType: VirtualFileDataObject.VirtualFileDataObject(Action<VirtualFileDataObject>, Action<VirtualFileDataObject>)
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.VirtualFileDataObject(System.Action<Innova.Prism.Library.Utilities.VirtualFileDataObject>, System.Action<Innova.Prism.Library.Utilities.VirtualFileDataObject>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\VirtualFileDataObject.cs
+    startLine: 80
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  summary: Initializes a new instance of the VirtualFileDataObject class.
+  example: []
+  syntax:
+    content: public VirtualFileDataObject(Action<VirtualFileDataObject> startAction, Action<VirtualFileDataObject> endAction)
+    parameters:
+    - id: startAction
+      type: System.Action{Innova.Prism.Library.Utilities.VirtualFileDataObject}
+      description: Optional action to run at the start of the data transfer.
+    - id: endAction
+      type: System.Action{Innova.Prism.Library.Utilities.VirtualFileDataObject}
+      description: Optional action to run at the end of the data transfer.
+    content.vb: Public Sub New(startAction As Action(Of VirtualFileDataObject), endAction As Action(Of VirtualFileDataObject))
+  overload: Innova.Prism.Library.Utilities.VirtualFileDataObject.#ctor*
+  nameWithType.vb: VirtualFileDataObject.New(Action(Of VirtualFileDataObject), Action(Of VirtualFileDataObject))
+  fullName.vb: Innova.Prism.Library.Utilities.VirtualFileDataObject.New(System.Action(Of Innova.Prism.Library.Utilities.VirtualFileDataObject), System.Action(Of Innova.Prism.Library.Utilities.VirtualFileDataObject))
+  name.vb: New(Action(Of VirtualFileDataObject), Action(Of VirtualFileDataObject))
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.EndOperation
+  commentId: M:Innova.Prism.Library.Utilities.VirtualFileDataObject.EndOperation
+  id: EndOperation
+  parent: Innova.Prism.Library.Utilities.VirtualFileDataObject
+  langs:
+  - csharp
+  - vb
+  name: EndOperation()
+  nameWithType: VirtualFileDataObject.EndOperation()
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.EndOperation()
+  type: Method
+  source:
+    id: EndOperation
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\VirtualFileDataObject.cs
+    startLine: 314
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public void EndOperation()
+    content.vb: Public Sub EndOperation()
+  overload: Innova.Prism.Library.Utilities.VirtualFileDataObject.EndOperation*
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(System.Int16,System.Collections.Generic.IEnumerable{System.Byte})
+  commentId: M:Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(System.Int16,System.Collections.Generic.IEnumerable{System.Byte})
+  id: SetData(System.Int16,System.Collections.Generic.IEnumerable{System.Byte})
+  parent: Innova.Prism.Library.Utilities.VirtualFileDataObject
+  langs:
+  - csharp
+  - vb
+  name: SetData(short, IEnumerable<byte>)
+  nameWithType: VirtualFileDataObject.SetData(short, IEnumerable<byte>)
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(short, System.Collections.Generic.IEnumerable<byte>)
+  type: Method
+  source:
+    id: SetData
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\VirtualFileDataObject.cs
+    startLine: 331
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  summary: Provides data for the specified data format (HGLOBAL).
+  example: []
+  syntax:
+    content: public void SetData(short dataFormat, IEnumerable<byte> data)
+    parameters:
+    - id: dataFormat
+      type: System.Int16
+      description: Data format.
+    - id: data
+      type: System.Collections.Generic.IEnumerable{System.Byte}
+      description: Sequence of data.
+    content.vb: Public Sub SetData(dataFormat As Short, data As IEnumerable(Of Byte))
+  overload: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData*
+  nameWithType.vb: VirtualFileDataObject.SetData(Short, IEnumerable(Of Byte))
+  fullName.vb: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(Short, System.Collections.Generic.IEnumerable(Of Byte))
+  name.vb: SetData(Short, IEnumerable(Of Byte))
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(System.Int16,System.Int32,System.Func{System.IO.Stream})
+  commentId: M:Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(System.Int16,System.Int32,System.Func{System.IO.Stream})
+  id: SetData(System.Int16,System.Int32,System.Func{System.IO.Stream})
+  parent: Innova.Prism.Library.Utilities.VirtualFileDataObject
+  langs:
+  - csharp
+  - vb
+  name: SetData(short, int, Func<Stream>)
+  nameWithType: VirtualFileDataObject.SetData(short, int, Func<Stream>)
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(short, int, System.Func<System.IO.Stream>)
+  type: Method
+  source:
+    id: SetData
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\VirtualFileDataObject.cs
+    startLine: 364
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  summary: Provides data for the specified data format and index (ISTREAM).
+  remarks: >-
+    Uses Stream instead of IEnumerable(T) because Stream is more likely
+
+    to be natural for the expected scenarios.
+  example: []
+  syntax:
+    content: public void SetData(short dataFormat, int index, Func<Stream> streamData)
+    parameters:
+    - id: dataFormat
+      type: System.Int16
+      description: Data format.
+    - id: index
+      type: System.Int32
+      description: Index of data.
+    - id: streamData
+      type: System.Func{System.IO.Stream}
+      description: Action generating the data.
+    content.vb: Public Sub SetData(dataFormat As Short, index As Integer, streamData As Func(Of Stream))
+  overload: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData*
+  nameWithType.vb: VirtualFileDataObject.SetData(Short, Integer, Func(Of Stream))
+  fullName.vb: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(Short, Integer, System.Func(Of System.IO.Stream))
+  name.vb: SetData(Short, Integer, Func(Of Stream))
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(System.Collections.Generic.IEnumerable{Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor})
+  commentId: M:Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(System.Collections.Generic.IEnumerable{Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor})
+  id: SetData(System.Collections.Generic.IEnumerable{Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor})
+  parent: Innova.Prism.Library.Utilities.VirtualFileDataObject
+  langs:
+  - csharp
+  - vb
+  name: SetData(IEnumerable<FileDescriptor>)
+  nameWithType: VirtualFileDataObject.SetData(IEnumerable<VirtualFileDataObject.FileDescriptor>)
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(System.Collections.Generic.IEnumerable<Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor>)
+  type: Method
+  source:
+    id: SetData
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\VirtualFileDataObject.cs
+    startLine: 399
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  summary: Provides data for the specified data format (FILEGROUPDESCRIPTOR/FILEDESCRIPTOR)
+  example: []
+  syntax:
+    content: public void SetData(IEnumerable<VirtualFileDataObject.FileDescriptor> fileDescriptors)
+    parameters:
+    - id: fileDescriptors
+      type: System.Collections.Generic.IEnumerable{Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor}
+      description: Collection of virtual files.
+    content.vb: Public Sub SetData(fileDescriptors As IEnumerable(Of VirtualFileDataObject.FileDescriptor))
+  overload: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData*
+  nameWithType.vb: VirtualFileDataObject.SetData(IEnumerable(Of VirtualFileDataObject.FileDescriptor))
+  fullName.vb: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData(System.Collections.Generic.IEnumerable(Of Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor))
+  name.vb: SetData(IEnumerable(Of FileDescriptor))
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.PasteSucceeded
+  commentId: P:Innova.Prism.Library.Utilities.VirtualFileDataObject.PasteSucceeded
+  id: PasteSucceeded
+  parent: Innova.Prism.Library.Utilities.VirtualFileDataObject
+  langs:
+  - csharp
+  - vb
+  name: PasteSucceeded
+  nameWithType: VirtualFileDataObject.PasteSucceeded
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.PasteSucceeded
+  type: Property
+  source:
+    id: PasteSucceeded
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\VirtualFileDataObject.cs
+    startLine: 452
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  summary: Gets or sets the CFSTR_PASTESUCCEEDED value for the object.
+  example: []
+  syntax:
+    content: public DragDropEffects? PasteSucceeded { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Windows.DragDropEffects}
+    content.vb: Public Property PasteSucceeded As DragDropEffects?
+  overload: Innova.Prism.Library.Utilities.VirtualFileDataObject.PasteSucceeded*
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.CleanUp
+  commentId: M:Innova.Prism.Library.Utilities.VirtualFileDataObject.CleanUp
+  id: CleanUp
+  parent: Innova.Prism.Library.Utilities.VirtualFileDataObject
+  langs:
+  - csharp
+  - vb
+  name: CleanUp()
+  nameWithType: VirtualFileDataObject.CleanUp()
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.CleanUp()
+  type: Method
+  source:
+    id: CleanUp
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\VirtualFileDataObject.cs
+    startLine: 459
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public void CleanUp()
+    content.vb: Public Sub CleanUp()
+  overload: Innova.Prism.Library.Utilities.VirtualFileDataObject.CleanUp*
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.PerformedDropEffect
+  commentId: P:Innova.Prism.Library.Utilities.VirtualFileDataObject.PerformedDropEffect
+  id: PerformedDropEffect
+  parent: Innova.Prism.Library.Utilities.VirtualFileDataObject
+  langs:
+  - csharp
+  - vb
+  name: PerformedDropEffect
+  nameWithType: VirtualFileDataObject.PerformedDropEffect
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.PerformedDropEffect
+  type: Property
+  source:
+    id: PerformedDropEffect
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\VirtualFileDataObject.cs
+    startLine: 474
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  summary: Gets or sets the CFSTR_PERFORMEDDROPEFFECT value for the object.
+  example: []
+  syntax:
+    content: public DragDropEffects? PerformedDropEffect { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Windows.DragDropEffects}
+    content.vb: Public Property PerformedDropEffect As DragDropEffects?
+  overload: Innova.Prism.Library.Utilities.VirtualFileDataObject.PerformedDropEffect*
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.PreferredDropEffect
+  commentId: P:Innova.Prism.Library.Utilities.VirtualFileDataObject.PreferredDropEffect
+  id: PreferredDropEffect
+  parent: Innova.Prism.Library.Utilities.VirtualFileDataObject
+  langs:
+  - csharp
+  - vb
+  name: PreferredDropEffect
+  nameWithType: VirtualFileDataObject.PreferredDropEffect
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.PreferredDropEffect
+  type: Property
+  source:
+    id: PreferredDropEffect
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\VirtualFileDataObject.cs
+    startLine: 483
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  summary: Gets or sets the CFSTR_PREFERREDDROPEFFECT value for the object.
+  example: []
+  syntax:
+    content: public DragDropEffects? PreferredDropEffect { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Windows.DragDropEffects}
+    content.vb: Public Property PreferredDropEffect As DragDropEffects?
+  overload: Innova.Prism.Library.Utilities.VirtualFileDataObject.PreferredDropEffect*
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.DoDragDrop(System.Windows.DependencyObject,System.Runtime.InteropServices.ComTypes.IDataObject,System.Windows.DragDropEffects)
+  commentId: M:Innova.Prism.Library.Utilities.VirtualFileDataObject.DoDragDrop(System.Windows.DependencyObject,System.Runtime.InteropServices.ComTypes.IDataObject,System.Windows.DragDropEffects)
+  id: DoDragDrop(System.Windows.DependencyObject,System.Runtime.InteropServices.ComTypes.IDataObject,System.Windows.DragDropEffects)
+  parent: Innova.Prism.Library.Utilities.VirtualFileDataObject
+  langs:
+  - csharp
+  - vb
+  name: DoDragDrop(DependencyObject, IDataObject, DragDropEffects)
+  nameWithType: VirtualFileDataObject.DoDragDrop(DependencyObject, IDataObject, DragDropEffects)
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.DoDragDrop(System.Windows.DependencyObject, System.Runtime.InteropServices.ComTypes.IDataObject, System.Windows.DragDropEffects)
+  type: Method
+  source:
+    id: DoDragDrop
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\VirtualFileDataObject.cs
+    startLine: 899
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  summary: Initiates a drag-and-drop operation.
+  remarks: Call this method instead of System.Windows.DragDrop.DoDragDrop because this method handles IDataObject better.
+  example: []
+  syntax:
+    content: public static DragDropEffects DoDragDrop(DependencyObject dragSource, IDataObject dataObject, DragDropEffects allowedEffects)
+    parameters:
+    - id: dragSource
+      type: System.Windows.DependencyObject
+      description: A reference to the dependency object that is the source of the data being dragged.
+    - id: dataObject
+      type: System.Runtime.InteropServices.ComTypes.IDataObject
+      description: A data object that contains the data being dragged.
+    - id: allowedEffects
+      type: System.Windows.DragDropEffects
+      description: One of the DragDropEffects values that specifies permitted effects of the drag-and-drop operation.
+    return:
+      type: System.Windows.DragDropEffects
+      description: One of the DragDropEffects values that specifies the final effect that was performed during the drag-and-drop operation.
+    content.vb: Public Shared Function DoDragDrop(dragSource As DependencyObject, dataObject As IDataObject, allowedEffects As DragDropEffects) As DragDropEffects
+  overload: Innova.Prism.Library.Utilities.VirtualFileDataObject.DoDragDrop*
+references:
+- uid: Innova.Prism.Library.Utilities
+  commentId: N:Innova.Prism.Library.Utilities
+  href: Innova.html
+  name: Innova.Prism.Library.Utilities
+  nameWithType: Innova.Prism.Library.Utilities
+  fullName: Innova.Prism.Library.Utilities
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Utilities
+    name: Utilities
+    href: Innova.Prism.Library.Utilities.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Utilities
+    name: Utilities
+    href: Innova.Prism.Library.Utilities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Runtime.InteropServices.ComTypes.IDataObject
+  commentId: T:System.Runtime.InteropServices.ComTypes.IDataObject
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.comtypes.idataobject
+  name: IDataObject
+  nameWithType: IDataObject
+  fullName: System.Runtime.InteropServices.ComTypes.IDataObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.InteropServices.ComTypes
+  commentId: N:System.Runtime.InteropServices.ComTypes
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.ComTypes
+  nameWithType: System.Runtime.InteropServices.ComTypes
+  fullName: System.Runtime.InteropServices.ComTypes
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.ComTypes
+    name: ComTypes
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.comtypes
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.ComTypes
+    name: ComTypes
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.comtypes
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.IsAsynchronous*
+  commentId: Overload:Innova.Prism.Library.Utilities.VirtualFileDataObject.IsAsynchronous
+  href: Innova.Prism.Library.Utilities.VirtualFileDataObject.IsAsynchronous.html#Innova_Prism_Library_Utilities_VirtualFileDataObject_IsAsynchronous
+  name: IsAsynchronous
+  nameWithType: VirtualFileDataObject.IsAsynchronous
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.IsAsynchronous
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.#ctor*
+  commentId: Overload:Innova.Prism.Library.Utilities.VirtualFileDataObject.#ctor
+  href: Innova.Prism.Library.Utilities.VirtualFileDataObject.-ctor.html#Innova_Prism_Library_Utilities_VirtualFileDataObject__ctor
+  name: VirtualFileDataObject
+  nameWithType: VirtualFileDataObject.VirtualFileDataObject
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.VirtualFileDataObject
+  nameWithType.vb: VirtualFileDataObject.New
+  fullName.vb: Innova.Prism.Library.Utilities.VirtualFileDataObject.New
+  name.vb: New
+- uid: System.Action{Innova.Prism.Library.Utilities.VirtualFileDataObject}
+  commentId: T:System.Action{Innova.Prism.Library.Utilities.VirtualFileDataObject}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<VirtualFileDataObject>
+  nameWithType: Action<VirtualFileDataObject>
+  fullName: System.Action<Innova.Prism.Library.Utilities.VirtualFileDataObject>
+  nameWithType.vb: Action(Of VirtualFileDataObject)
+  fullName.vb: System.Action(Of Innova.Prism.Library.Utilities.VirtualFileDataObject)
+  name.vb: Action(Of VirtualFileDataObject)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Innova.Prism.Library.Utilities.VirtualFileDataObject
+    name: VirtualFileDataObject
+    href: Innova.Prism.Library.Utilities.VirtualFileDataObject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Utilities.VirtualFileDataObject
+    name: VirtualFileDataObject
+    href: Innova.Prism.Library.Utilities.VirtualFileDataObject.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.EndOperation*
+  commentId: Overload:Innova.Prism.Library.Utilities.VirtualFileDataObject.EndOperation
+  href: Innova.Prism.Library.Utilities.VirtualFileDataObject.EndOperation.html#Innova_Prism_Library_Utilities_VirtualFileDataObject_EndOperation
+  name: EndOperation
+  nameWithType: VirtualFileDataObject.EndOperation
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.EndOperation
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData*
+  commentId: Overload:Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData
+  href: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData.html#Innova_Prism_Library_Utilities_VirtualFileDataObject_SetData_System_Int16_System_Collections_Generic_IEnumerable_System_Byte__
+  name: SetData
+  nameWithType: VirtualFileDataObject.SetData
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.SetData
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: System.Collections.Generic.IEnumerable{System.Byte}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Byte}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<byte>
+  nameWithType: IEnumerable<byte>
+  fullName: System.Collections.Generic.IEnumerable<byte>
+  nameWithType.vb: IEnumerable(Of Byte)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Byte)
+  name.vb: IEnumerable(Of Byte)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Func{System.IO.Stream}
+  commentId: T:System.Func{System.IO.Stream}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<Stream>
+  nameWithType: Func<Stream>
+  fullName: System.Func<System.IO.Stream>
+  nameWithType.vb: Func(Of Stream)
+  fullName.vb: System.Func(Of System.IO.Stream)
+  name.vb: Func(Of Stream)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor}
+  commentId: T:System.Collections.Generic.IEnumerable{Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<VirtualFileDataObject.FileDescriptor>
+  nameWithType: IEnumerable<VirtualFileDataObject.FileDescriptor>
+  fullName: System.Collections.Generic.IEnumerable<Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor>
+  nameWithType.vb: IEnumerable(Of VirtualFileDataObject.FileDescriptor)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor)
+  name.vb: IEnumerable(Of VirtualFileDataObject.FileDescriptor)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Innova.Prism.Library.Utilities.VirtualFileDataObject
+    name: VirtualFileDataObject
+    href: Innova.Prism.Library.Utilities.VirtualFileDataObject.html
+  - name: .
+  - uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor
+    name: FileDescriptor
+    href: Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Utilities.VirtualFileDataObject
+    name: VirtualFileDataObject
+    href: Innova.Prism.Library.Utilities.VirtualFileDataObject.html
+  - name: .
+  - uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor
+    name: FileDescriptor
+    href: Innova.Prism.Library.Utilities.VirtualFileDataObject.FileDescriptor.html
+  - name: )
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.PasteSucceeded*
+  commentId: Overload:Innova.Prism.Library.Utilities.VirtualFileDataObject.PasteSucceeded
+  href: Innova.Prism.Library.Utilities.VirtualFileDataObject.PasteSucceeded.html#Innova_Prism_Library_Utilities_VirtualFileDataObject_PasteSucceeded
+  name: PasteSucceeded
+  nameWithType: VirtualFileDataObject.PasteSucceeded
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.PasteSucceeded
+- uid: System.Nullable{System.Windows.DragDropEffects}
+  commentId: T:System.Nullable{System.Windows.DragDropEffects}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.windows.dragdropeffects
+  name: DragDropEffects?
+  nameWithType: DragDropEffects?
+  fullName: System.Windows.DragDropEffects?
+  spec.csharp:
+  - uid: System.Windows.DragDropEffects
+    name: DragDropEffects
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.dragdropeffects
+  - name: '?'
+  spec.vb:
+  - uid: System.Windows.DragDropEffects
+    name: DragDropEffects
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.dragdropeffects
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.CleanUp*
+  commentId: Overload:Innova.Prism.Library.Utilities.VirtualFileDataObject.CleanUp
+  href: Innova.Prism.Library.Utilities.VirtualFileDataObject.CleanUp.html#Innova_Prism_Library_Utilities_VirtualFileDataObject_CleanUp
+  name: CleanUp
+  nameWithType: VirtualFileDataObject.CleanUp
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.CleanUp
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.PerformedDropEffect*
+  commentId: Overload:Innova.Prism.Library.Utilities.VirtualFileDataObject.PerformedDropEffect
+  href: Innova.Prism.Library.Utilities.VirtualFileDataObject.PerformedDropEffect.html#Innova_Prism_Library_Utilities_VirtualFileDataObject_PerformedDropEffect
+  name: PerformedDropEffect
+  nameWithType: VirtualFileDataObject.PerformedDropEffect
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.PerformedDropEffect
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.PreferredDropEffect*
+  commentId: Overload:Innova.Prism.Library.Utilities.VirtualFileDataObject.PreferredDropEffect
+  href: Innova.Prism.Library.Utilities.VirtualFileDataObject.PreferredDropEffect.html#Innova_Prism_Library_Utilities_VirtualFileDataObject_PreferredDropEffect
+  name: PreferredDropEffect
+  nameWithType: VirtualFileDataObject.PreferredDropEffect
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.PreferredDropEffect
+- uid: Innova.Prism.Library.Utilities.VirtualFileDataObject.DoDragDrop*
+  commentId: Overload:Innova.Prism.Library.Utilities.VirtualFileDataObject.DoDragDrop
+  href: Innova.Prism.Library.Utilities.VirtualFileDataObject.DoDragDrop.html#Innova_Prism_Library_Utilities_VirtualFileDataObject_DoDragDrop_System_Windows_DependencyObject_System_Runtime_InteropServices_ComTypes_IDataObject_System_Windows_DragDropEffects_
+  name: DoDragDrop
+  nameWithType: VirtualFileDataObject.DoDragDrop
+  fullName: Innova.Prism.Library.Utilities.VirtualFileDataObject.DoDragDrop
+- uid: System.Windows.DependencyObject
+  commentId: T:System.Windows.DependencyObject
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: System.Windows.DependencyObject
+- uid: System.Windows.DragDropEffects
+  commentId: T:System.Windows.DragDropEffects
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.dragdropeffects
+  name: DragDropEffects
+  nameWithType: DragDropEffects
+  fullName: System.Windows.DragDropEffects
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+memberLayout: SeparatePages

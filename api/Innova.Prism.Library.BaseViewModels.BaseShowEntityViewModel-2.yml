@@ -1,0 +1,2896 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  commentId: T:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  id: BaseShowEntityViewModel`2
+  parent: Innova.Prism.Library.BaseViewModels
+  children:
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.#ctor(Innova.Prism.Infrastructure.Views.IViewStateManager,Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IShowViewModelService{`0,`1},Innova.Prism.Library.Menus.Models.IShowMenuService{`0,`1},System.Collections.Generic.List{Innova.Prism.Library.BaseViewModels.IRelatedViewModel{`0}},Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`1}})
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.AfterGetMainEntity
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.AfterOnMainEntityChanged
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.CheckVisibility(System.Data.DataTable)
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetExportDataTable
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetMainEntityKeys
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetRelatedListViewModels
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.LoadDataAsync
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.LoadMainEntityAsync
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MainEntity
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MainEntityKey
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MenuService
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnEntityReload(Innova.Data.Entity.PrimaryKeys{`0})
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnEntityUpdated(Innova.Data.Entity.PrimaryKeys{`0})
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnMainEntityChanged
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnMainEntityKeyChanged
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnNavigatedTo(Prism.Regions.NavigationContext)
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.RelatedLists
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.RelatedViewModels
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetEventSubscription
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetHeader(System.String)
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetRelatedIsSelectedDefault
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ViewModelService
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.logger
+  langs:
+  - csharp
+  - vb
+  name: BaseShowEntityViewModel<T, TResult>
+  nameWithType: BaseShowEntityViewModel<T, TResult>
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>
+  type: Class
+  source:
+    id: BaseShowEntityViewModel
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 59
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: 'public class BaseShowEntityViewModel<T, TResult> : BaseDataViewModelNavigationAware, INotifyPropertyChanged, IConfirmNavigationRequest, INavigationAware, IRegionMemberLifetime where T : class where TResult : class, IEntityWithKey<T>'
+    typeParameters:
+    - id: T
+    - id: TResult
+    content.vb: Public Class BaseShowEntityViewModel(Of T As Class, TResult As {Class, IEntityWithKey(Of T)}) Inherits BaseDataViewModelNavigationAware Implements INotifyPropertyChanged, IConfirmNavigationRequest, INavigationAware, IRegionMemberLifetime
+  inheritance:
+  - System.Object
+  - Prism.Mvvm.BindableBase
+  - Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  derivedClasses:
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`1
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - Prism.Regions.IConfirmNavigationRequest
+  - Prism.Regions.INavigationAware
+  - Prism.Regions.IRegionMemberLifetime
+  inheritedMembers:
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.EventAggregator
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.Tokens
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ViewState
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.KeepAlive
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities``1(System.Collections.ObjectModel.ObservableCollection{{T}})
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.HandleException(System.Exception)
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.GetViewState(Prism.Regions.NavigationContext)
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetViewState(Prism.Regions.NavigationContext)
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ConfirmNavigationRequest(Prism.Regions.NavigationContext,System.Action{System.Boolean})
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnIsNavigationTarget(Prism.Regions.NavigationContext)
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.IsNavigationTarget(Prism.Regions.NavigationContext)
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext,Innova.Prism.Infrastructure.Views.ViewState)
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetBusyText(System.String)
+  - Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.PropertyBag
+  - Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.Header
+  - Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.HeaderImage
+  - Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage(System.String)
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  - Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  - Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  - Prism.Mvvm.BindableBase.PropertyChanged
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult)
+  name.vb: BaseShowEntityViewModel(Of T, TResult)
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.logger
+  commentId: F:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.logger
+  id: logger
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: logger
+  nameWithType: BaseShowEntityViewModel<T, TResult>.logger
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.logger
+  type: Field
+  source:
+    id: logger
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 68
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected readonly ILogger<BaseShowEntityViewModel<T, TResult>> logger
+    return:
+      type: Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2}
+    content.vb: Protected ReadOnly logger As ILogger(Of BaseShowEntityViewModel(Of T, TResult))
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).logger
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).logger
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MenuService
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MenuService
+  id: MenuService
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: MenuService
+  nameWithType: BaseShowEntityViewModel<T, TResult>.MenuService
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.MenuService
+  type: Property
+  source:
+    id: MenuService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 77
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public IShowMenuService<T, TResult> MenuService { get; set; }
+    parameters: []
+    return:
+      type: Innova.Prism.Library.Menus.Models.IShowMenuService{{T},{TResult}}
+    content.vb: Public Property MenuService As IShowMenuService(Of T, TResult)
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MenuService*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).MenuService
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).MenuService
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.RelatedViewModels
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.RelatedViewModels
+  id: RelatedViewModels
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: RelatedViewModels
+  nameWithType: BaseShowEntityViewModel<T, TResult>.RelatedViewModels
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.RelatedViewModels
+  type: Property
+  source:
+    id: RelatedViewModels
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 78
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected IEnumerable<IRelatedViewModel<T>> RelatedViewModels { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.IRelatedViewModel{{T}}}
+    content.vb: Protected ReadOnly Property RelatedViewModels As IEnumerable(Of IRelatedViewModel(Of T))
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.RelatedViewModels*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).RelatedViewModels
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).RelatedViewModels
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MainEntity
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MainEntity
+  id: MainEntity
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: MainEntity
+  nameWithType: BaseShowEntityViewModel<T, TResult>.MainEntity
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.MainEntity
+  type: Property
+  source:
+    id: MainEntity
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 80
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public TResult MainEntity { get; set; }
+    parameters: []
+    return:
+      type: '{TResult}'
+    content.vb: Public Property MainEntity As TResult
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MainEntity*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).MainEntity
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).MainEntity
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MainEntityKey
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MainEntityKey
+  id: MainEntityKey
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: MainEntityKey
+  nameWithType: BaseShowEntityViewModel<T, TResult>.MainEntityKey
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.MainEntityKey
+  type: Property
+  source:
+    id: MainEntityKey
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 93
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected PrimaryKeys<T> MainEntityKey { get; set; }
+    parameters: []
+    return:
+      type: Innova.Data.Entity.PrimaryKeys{{T}}
+    content.vb: Protected Property MainEntityKey As PrimaryKeys(Of T)
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MainEntityKey*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).MainEntityKey
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).MainEntityKey
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ViewModelService
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ViewModelService
+  id: ViewModelService
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: ViewModelService
+  nameWithType: BaseShowEntityViewModel<T, TResult>.ViewModelService
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.ViewModelService
+  type: Property
+  source:
+    id: ViewModelService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 104
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected IShowViewModelService<T, TResult> ViewModelService { get; }
+    parameters: []
+    return:
+      type: Innova.Prism.Library.Services.IShowViewModelService{{T},{TResult}}
+    content.vb: Protected ReadOnly Property ViewModelService As IShowViewModelService(Of T, TResult)
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ViewModelService*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).ViewModelService
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).ViewModelService
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.RelatedLists
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.RelatedLists
+  id: RelatedLists
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: RelatedLists
+  nameWithType: BaseShowEntityViewModel<T, TResult>.RelatedLists
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.RelatedLists
+  type: Property
+  source:
+    id: RelatedLists
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 106
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public ObservableCollection<IRelatedData> RelatedLists { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Relations.IRelatedData}
+    content.vb: Public Property RelatedLists As ObservableCollection(Of IRelatedData)
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.RelatedLists*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).RelatedLists
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).RelatedLists
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.#ctor(Innova.Prism.Infrastructure.Views.IViewStateManager,Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IShowViewModelService{`0,`1},Innova.Prism.Library.Menus.Models.IShowMenuService{`0,`1},System.Collections.Generic.List{Innova.Prism.Library.BaseViewModels.IRelatedViewModel{`0}},Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`1}})
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.#ctor(Innova.Prism.Infrastructure.Views.IViewStateManager,Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IShowViewModelService{`0,`1},Innova.Prism.Library.Menus.Models.IShowMenuService{`0,`1},System.Collections.Generic.List{Innova.Prism.Library.BaseViewModels.IRelatedViewModel{`0}},Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`1}})
+  id: '#ctor(Innova.Prism.Infrastructure.Views.IViewStateManager,Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IShowViewModelService{`0,`1},Innova.Prism.Library.Menus.Models.IShowMenuService{`0,`1},System.Collections.Generic.List{Innova.Prism.Library.BaseViewModels.IRelatedViewModel{`0}},Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`1}})'
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: BaseShowEntityViewModel(IViewStateManager, IEventAggregator, IShowViewModelService<T, TResult>, IShowMenuService<T, TResult>, List<IRelatedViewModel<T>>, ILogger<BaseShowEntityViewModel<T, TResult>>)
+  nameWithType: BaseShowEntityViewModel<T, TResult>.BaseShowEntityViewModel(IViewStateManager, IEventAggregator, IShowViewModelService<T, TResult>, IShowMenuService<T, TResult>, List<IRelatedViewModel<T>>, ILogger<BaseShowEntityViewModel<T, TResult>>)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.BaseShowEntityViewModel(Innova.Prism.Infrastructure.Views.IViewStateManager, Prism.Events.IEventAggregator, Innova.Prism.Library.Services.IShowViewModelService<T, TResult>, Innova.Prism.Library.Menus.Models.IShowMenuService<T, TResult>, System.Collections.Generic.List<Innova.Prism.Library.BaseViewModels.IRelatedViewModel<T>>, Microsoft.Extensions.Logging.ILogger<Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 124
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public BaseShowEntityViewModel(IViewStateManager viewStateManager, IEventAggregator eventAggregator, IShowViewModelService<T, TResult> viewModelService, IShowMenuService<T, TResult> menuService, List<IRelatedViewModel<T>> relatedViewModels, ILogger<BaseShowEntityViewModel<T, TResult>> logger)
+    parameters:
+    - id: viewStateManager
+      type: Innova.Prism.Infrastructure.Views.IViewStateManager
+    - id: eventAggregator
+      type: Prism.Events.IEventAggregator
+    - id: viewModelService
+      type: Innova.Prism.Library.Services.IShowViewModelService{{T},{TResult}}
+    - id: menuService
+      type: Innova.Prism.Library.Menus.Models.IShowMenuService{{T},{TResult}}
+    - id: relatedViewModels
+      type: System.Collections.Generic.List{Innova.Prism.Library.BaseViewModels.IRelatedViewModel{{T}}}
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2}
+    content.vb: Public Sub New(viewStateManager As IViewStateManager, eventAggregator As IEventAggregator, viewModelService As IShowViewModelService(Of T, TResult), menuService As IShowMenuService(Of T, TResult), relatedViewModels As List(Of IRelatedViewModel(Of T)), logger As ILogger(Of BaseShowEntityViewModel(Of T, TResult)))
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.#ctor*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).New(IViewStateManager, IEventAggregator, IShowViewModelService(Of T, TResult), IShowMenuService(Of T, TResult), List(Of IRelatedViewModel(Of T)), ILogger(Of BaseShowEntityViewModel(Of T, TResult)))
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).New(Innova.Prism.Infrastructure.Views.IViewStateManager, Prism.Events.IEventAggregator, Innova.Prism.Library.Services.IShowViewModelService(Of T, TResult), Innova.Prism.Library.Menus.Models.IShowMenuService(Of T, TResult), System.Collections.Generic.List(Of Innova.Prism.Library.BaseViewModels.IRelatedViewModel(Of T)), Microsoft.Extensions.Logging.ILogger(Of Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult)))
+  name.vb: New(IViewStateManager, IEventAggregator, IShowViewModelService(Of T, TResult), IShowMenuService(Of T, TResult), List(Of IRelatedViewModel(Of T)), ILogger(Of BaseShowEntityViewModel(Of T, TResult)))
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetEventSubscription
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetEventSubscription
+  id: SetEventSubscription
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: SetEventSubscription()
+  nameWithType: BaseShowEntityViewModel<T, TResult>.SetEventSubscription()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetEventSubscription()
+  type: Method
+  source:
+    id: SetEventSubscription
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 150
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  example: []
+  syntax:
+    content: protected override void SetEventSubscription()
+    content.vb: Protected Overrides Sub SetEventSubscription()
+  overridden: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEventSubscription
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetEventSubscription*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetEventSubscription()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetEventSubscription()
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnMainEntityKeyChanged
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnMainEntityKeyChanged
+  id: OnMainEntityKeyChanged
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: OnMainEntityKeyChanged()
+  nameWithType: BaseShowEntityViewModel<T, TResult>.OnMainEntityKeyChanged()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.OnMainEntityKeyChanged()
+  type: Method
+  source:
+    id: OnMainEntityKeyChanged
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 159
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual void OnMainEntityKeyChanged()
+    content.vb: Protected Overridable Sub OnMainEntityKeyChanged()
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnMainEntityKeyChanged*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).OnMainEntityKeyChanged()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).OnMainEntityKeyChanged()
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnNavigatedTo(Prism.Regions.NavigationContext)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnNavigatedTo(Prism.Regions.NavigationContext)
+  id: OnNavigatedTo(Prism.Regions.NavigationContext)
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: OnNavigatedTo(NavigationContext)
+  nameWithType: BaseShowEntityViewModel<T, TResult>.OnNavigatedTo(NavigationContext)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.OnNavigatedTo(Prism.Regions.NavigationContext)
+  type: Method
+  source:
+    id: OnNavigatedTo
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 166
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  summary: Called when the implementer has been navigated to.
+  example: []
+  syntax:
+    content: public override void OnNavigatedTo(NavigationContext navigationContext)
+    parameters:
+    - id: navigationContext
+      type: Prism.Regions.NavigationContext
+      description: The navigation context.
+    content.vb: Public Overrides Sub OnNavigatedTo(navigationContext As NavigationContext)
+  overridden: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedTo(Prism.Regions.NavigationContext)
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnNavigatedTo*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).OnNavigatedTo(NavigationContext)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).OnNavigatedTo(Prism.Regions.NavigationContext)
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  id: OnNavigatedFrom(Prism.Regions.NavigationContext)
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: OnNavigatedFrom(NavigationContext)
+  nameWithType: BaseShowEntityViewModel<T, TResult>.OnNavigatedFrom(NavigationContext)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  type: Method
+  source:
+    id: OnNavigatedFrom
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 180
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  summary: Called when the implementer is being navigated away from.
+  example: []
+  syntax:
+    content: public override void OnNavigatedFrom(NavigationContext navigationContext)
+    parameters:
+    - id: navigationContext
+      type: Prism.Regions.NavigationContext
+      description: The navigation context.
+    content.vb: Public Overrides Sub OnNavigatedFrom(navigationContext As NavigationContext)
+  overridden: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnNavigatedFrom*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).OnNavigatedFrom(NavigationContext)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).OnNavigatedFrom(Prism.Regions.NavigationContext)
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetMainEntityKeys
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetMainEntityKeys
+  id: GetMainEntityKeys
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: GetMainEntityKeys()
+  nameWithType: BaseShowEntityViewModel<T, TResult>.GetMainEntityKeys()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.GetMainEntityKeys()
+  type: Method
+  source:
+    id: GetMainEntityKeys
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 221
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected PrimaryKeys<T> GetMainEntityKeys()
+    return:
+      type: Innova.Data.Entity.PrimaryKeys{{T}}
+    content.vb: Protected Function GetMainEntityKeys() As PrimaryKeys(Of T)
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetMainEntityKeys*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).GetMainEntityKeys()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).GetMainEntityKeys()
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetHeader(System.String)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetHeader(System.String)
+  id: SetHeader(System.String)
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: SetHeader(string)
+  nameWithType: BaseShowEntityViewModel<T, TResult>.SetHeader(string)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetHeader(string)
+  type: Method
+  source:
+    id: SetHeader
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 232
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  example: []
+  syntax:
+    content: protected override void SetHeader(string header)
+    parameters:
+    - id: header
+      type: System.String
+    content.vb: Protected Overrides Sub SetHeader(header As String)
+  overridden: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader(System.String)
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetHeader*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetHeader(String)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetHeader(String)
+  name.vb: SetHeader(String)
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.CheckVisibility(System.Data.DataTable)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.CheckVisibility(System.Data.DataTable)
+  id: CheckVisibility(System.Data.DataTable)
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: CheckVisibility(DataTable)
+  nameWithType: BaseShowEntityViewModel<T, TResult>.CheckVisibility(DataTable)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.CheckVisibility(System.Data.DataTable)
+  type: Method
+  source:
+    id: CheckVisibility
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 256
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected void CheckVisibility(DataTable table)
+    parameters:
+    - id: table
+      type: System.Data.DataTable
+    content.vb: Protected Sub CheckVisibility(table As DataTable)
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.CheckVisibility*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).CheckVisibility(DataTable)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).CheckVisibility(System.Data.DataTable)
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetRelatedListViewModels
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetRelatedListViewModels
+  id: GetRelatedListViewModels
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: GetRelatedListViewModels()
+  nameWithType: BaseShowEntityViewModel<T, TResult>.GetRelatedListViewModels()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.GetRelatedListViewModels()
+  type: Method
+  source:
+    id: GetRelatedListViewModels
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 261
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected IEnumerable<IRelatedListViewModel> GetRelatedListViewModels()
+    return:
+      type: System.Collections.Generic.IEnumerable{Innova.Prism.Library.Relations.IRelatedListViewModel}
+    content.vb: Protected Function GetRelatedListViewModels() As IEnumerable(Of IRelatedListViewModel)
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetRelatedListViewModels*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).GetRelatedListViewModels()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).GetRelatedListViewModels()
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetRelatedIsSelectedDefault
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetRelatedIsSelectedDefault
+  id: SetRelatedIsSelectedDefault
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: SetRelatedIsSelectedDefault()
+  nameWithType: BaseShowEntityViewModel<T, TResult>.SetRelatedIsSelectedDefault()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetRelatedIsSelectedDefault()
+  type: Method
+  source:
+    id: SetRelatedIsSelectedDefault
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 278
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual void SetRelatedIsSelectedDefault()
+    content.vb: Protected Overridable Sub SetRelatedIsSelectedDefault()
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetRelatedIsSelectedDefault*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetRelatedIsSelectedDefault()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetRelatedIsSelectedDefault()
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnMainEntityChanged
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnMainEntityChanged
+  id: OnMainEntityChanged
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: OnMainEntityChanged()
+  nameWithType: BaseShowEntityViewModel<T, TResult>.OnMainEntityChanged()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.OnMainEntityChanged()
+  type: Method
+  source:
+    id: OnMainEntityChanged
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 292
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual void OnMainEntityChanged()
+    content.vb: Protected Overridable Sub OnMainEntityChanged()
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnMainEntityChanged*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).OnMainEntityChanged()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).OnMainEntityChanged()
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.AfterOnMainEntityChanged
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.AfterOnMainEntityChanged
+  id: AfterOnMainEntityChanged
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: AfterOnMainEntityChanged()
+  nameWithType: BaseShowEntityViewModel<T, TResult>.AfterOnMainEntityChanged()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.AfterOnMainEntityChanged()
+  type: Method
+  source:
+    id: AfterOnMainEntityChanged
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 298
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual void AfterOnMainEntityChanged()
+    content.vb: Protected Overridable Sub AfterOnMainEntityChanged()
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.AfterOnMainEntityChanged*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).AfterOnMainEntityChanged()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).AfterOnMainEntityChanged()
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.LoadDataAsync
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.LoadDataAsync
+  id: LoadDataAsync
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: LoadDataAsync()
+  nameWithType: BaseShowEntityViewModel<T, TResult>.LoadDataAsync()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.LoadDataAsync()
+  type: Method
+  source:
+    id: LoadDataAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 301
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual Task LoadDataAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Overridable Function LoadDataAsync() As Task
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.LoadDataAsync*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).LoadDataAsync()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).LoadDataAsync()
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.AfterGetMainEntity
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.AfterGetMainEntity
+  id: AfterGetMainEntity
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: AfterGetMainEntity()
+  nameWithType: BaseShowEntityViewModel<T, TResult>.AfterGetMainEntity()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.AfterGetMainEntity()
+  type: Method
+  source:
+    id: AfterGetMainEntity
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 324
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual Task AfterGetMainEntity()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Overridable Function AfterGetMainEntity() As Task
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.AfterGetMainEntity*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).AfterGetMainEntity()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).AfterGetMainEntity()
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.LoadMainEntityAsync
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.LoadMainEntityAsync
+  id: LoadMainEntityAsync
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: LoadMainEntityAsync()
+  nameWithType: BaseShowEntityViewModel<T, TResult>.LoadMainEntityAsync()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.LoadMainEntityAsync()
+  type: Method
+  source:
+    id: LoadMainEntityAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 329
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual Task LoadMainEntityAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Overridable Function LoadMainEntityAsync() As Task
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.LoadMainEntityAsync*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).LoadMainEntityAsync()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).LoadMainEntityAsync()
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetExportDataTable
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetExportDataTable
+  id: GetExportDataTable
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: GetExportDataTable()
+  nameWithType: BaseShowEntityViewModel<T, TResult>.GetExportDataTable()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.GetExportDataTable()
+  type: Method
+  source:
+    id: GetExportDataTable
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 342
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual DataTable GetExportDataTable()
+    return:
+      type: System.Data.DataTable
+    content.vb: Protected Overridable Function GetExportDataTable() As DataTable
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetExportDataTable*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).GetExportDataTable()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).GetExportDataTable()
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnEntityReload(Innova.Data.Entity.PrimaryKeys{`0})
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnEntityReload(Innova.Data.Entity.PrimaryKeys{`0})
+  id: OnEntityReload(Innova.Data.Entity.PrimaryKeys{`0})
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: OnEntityReload(PrimaryKeys<T>)
+  nameWithType: BaseShowEntityViewModel<T, TResult>.OnEntityReload(PrimaryKeys<T>)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.OnEntityReload(Innova.Data.Entity.PrimaryKeys<T>)
+  type: Method
+  source:
+    id: OnEntityReload
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 347
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual Task OnEntityReload(PrimaryKeys<T> obj)
+    parameters:
+    - id: obj
+      type: Innova.Data.Entity.PrimaryKeys{{T}}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Overridable Function OnEntityReload(obj As PrimaryKeys(Of T)) As Task
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnEntityReload*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).OnEntityReload(PrimaryKeys(Of T))
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).OnEntityReload(Innova.Data.Entity.PrimaryKeys(Of T))
+  name.vb: OnEntityReload(PrimaryKeys(Of T))
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnEntityUpdated(Innova.Data.Entity.PrimaryKeys{`0})
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnEntityUpdated(Innova.Data.Entity.PrimaryKeys{`0})
+  id: OnEntityUpdated(Innova.Data.Entity.PrimaryKeys{`0})
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: OnEntityUpdated(PrimaryKeys<T>)
+  nameWithType: BaseShowEntityViewModel<T, TResult>.OnEntityUpdated(PrimaryKeys<T>)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.OnEntityUpdated(Innova.Data.Entity.PrimaryKeys<T>)
+  type: Method
+  source:
+    id: OnEntityUpdated
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 368
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual Task OnEntityUpdated(PrimaryKeys<T> obj)
+    parameters:
+    - id: obj
+      type: Innova.Data.Entity.PrimaryKeys{{T}}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Overridable Function OnEntityUpdated(obj As PrimaryKeys(Of T)) As Task
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnEntityUpdated*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).OnEntityUpdated(PrimaryKeys(Of T))
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).OnEntityUpdated(Innova.Data.Entity.PrimaryKeys(Of T))
+  name.vb: OnEntityUpdated(PrimaryKeys(Of T))
+references:
+- uid: Innova.Prism.Library.BaseViewModels
+  commentId: N:Innova.Prism.Library.BaseViewModels
+  href: Innova.html
+  name: Innova.Prism.Library.BaseViewModels
+  nameWithType: Innova.Prism.Library.BaseViewModels
+  fullName: Innova.Prism.Library.BaseViewModels
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.BaseViewModels
+    name: BaseViewModels
+    href: Innova.Prism.Library.BaseViewModels.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.BaseViewModels
+    name: BaseViewModels
+    href: Innova.Prism.Library.BaseViewModels.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Prism.Mvvm.BindableBase
+  commentId: T:Prism.Mvvm.BindableBase
+  parent: Prism.Mvvm
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: BindableBase
+  nameWithType: BindableBase
+  fullName: Prism.Mvvm.BindableBase
+- uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  commentId: T:Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  parent: Innova.Prism.Library.BaseViewModels
+  href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.html
+  name: BaseHeaderViewModel
+  nameWithType: BaseHeaderViewModel
+  fullName: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  commentId: T:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  parent: Innova.Prism.Library.BaseViewModels
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.html
+  name: BaseDataViewModelNavigationAware
+  nameWithType: BaseDataViewModelNavigationAware
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Prism.Regions.IConfirmNavigationRequest
+  commentId: T:Prism.Regions.IConfirmNavigationRequest
+  parent: Prism.Regions
+  isExternal: true
+  name: IConfirmNavigationRequest
+  nameWithType: IConfirmNavigationRequest
+  fullName: Prism.Regions.IConfirmNavigationRequest
+- uid: Prism.Regions.INavigationAware
+  commentId: T:Prism.Regions.INavigationAware
+  parent: Prism.Regions
+  isExternal: true
+  name: INavigationAware
+  nameWithType: INavigationAware
+  fullName: Prism.Regions.INavigationAware
+- uid: Prism.Regions.IRegionMemberLifetime
+  commentId: T:Prism.Regions.IRegionMemberLifetime
+  parent: Prism.Regions
+  isExternal: true
+  name: IRegionMemberLifetime
+  nameWithType: IRegionMemberLifetime
+  fullName: Prism.Regions.IRegionMemberLifetime
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.EventAggregator
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.EventAggregator
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.EventAggregator.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_EventAggregator
+  name: EventAggregator
+  nameWithType: BaseDataViewModelNavigationAware.EventAggregator
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.EventAggregator
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.Tokens
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.Tokens
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.Tokens.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_Tokens
+  name: Tokens
+  nameWithType: BaseDataViewModelNavigationAware.Tokens
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.Tokens
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ViewState
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ViewState
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ViewState.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_ViewState
+  name: ViewState
+  nameWithType: BaseDataViewModelNavigationAware.ViewState
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ViewState
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.KeepAlive
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.KeepAlive
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.KeepAlive.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_KeepAlive
+  name: KeepAlive
+  nameWithType: BaseDataViewModelNavigationAware.KeepAlive
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.KeepAlive
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities``1(System.Collections.ObjectModel.ObservableCollection{{T}})
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities``1(System.Collections.ObjectModel.ObservableCollection{``0})
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  definition: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities``1(System.Collections.ObjectModel.ObservableCollection{``0})
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetEntities__1_System_Collections_ObjectModel_ObservableCollection___0__
+  name: SetEntities<T>(ObservableCollection<T>)
+  nameWithType: BaseDataViewModelNavigationAware.SetEntities<T>(ObservableCollection<T>)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities<T>(System.Collections.ObjectModel.ObservableCollection<T>)
+  nameWithType.vb: BaseDataViewModelNavigationAware.SetEntities(Of T)(ObservableCollection(Of T))
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities(Of T)(System.Collections.ObjectModel.ObservableCollection(Of T))
+  name.vb: SetEntities(Of T)(ObservableCollection(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities``1(System.Collections.ObjectModel.ObservableCollection{``0})
+    name: SetEntities
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetEntities__1_System_Collections_ObjectModel_ObservableCollection___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities``1(System.Collections.ObjectModel.ObservableCollection{``0})
+    name: SetEntities
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetEntities__1_System_Collections_ObjectModel_ObservableCollection___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.HandleException(System.Exception)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.HandleException(System.Exception)
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.HandleException.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_HandleException_System_Exception_
+  name: HandleException(Exception)
+  nameWithType: BaseDataViewModelNavigationAware.HandleException(Exception)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.HandleException(System.Exception)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.HandleException(System.Exception)
+    name: HandleException
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.HandleException.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_HandleException_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.HandleException(System.Exception)
+    name: HandleException
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.HandleException.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_HandleException_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.GetViewState(Prism.Regions.NavigationContext)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.GetViewState(Prism.Regions.NavigationContext)
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.GetViewState.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_GetViewState_Prism_Regions_NavigationContext_
+  name: GetViewState(NavigationContext)
+  nameWithType: BaseDataViewModelNavigationAware.GetViewState(NavigationContext)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.GetViewState(Prism.Regions.NavigationContext)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.GetViewState(Prism.Regions.NavigationContext)
+    name: GetViewState
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.GetViewState.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_GetViewState_Prism_Regions_NavigationContext_
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.GetViewState(Prism.Regions.NavigationContext)
+    name: GetViewState
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.GetViewState.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_GetViewState_Prism_Regions_NavigationContext_
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetViewState(Prism.Regions.NavigationContext)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetViewState(Prism.Regions.NavigationContext)
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetViewState.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetViewState_Prism_Regions_NavigationContext_
+  name: SetViewState(NavigationContext)
+  nameWithType: BaseDataViewModelNavigationAware.SetViewState(NavigationContext)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetViewState(Prism.Regions.NavigationContext)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetViewState(Prism.Regions.NavigationContext)
+    name: SetViewState
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetViewState.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetViewState_Prism_Regions_NavigationContext_
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetViewState(Prism.Regions.NavigationContext)
+    name: SetViewState
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetViewState.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetViewState_Prism_Regions_NavigationContext_
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ConfirmNavigationRequest(Prism.Regions.NavigationContext,System.Action{System.Boolean})
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ConfirmNavigationRequest(Prism.Regions.NavigationContext,System.Action{System.Boolean})
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ConfirmNavigationRequest.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_ConfirmNavigationRequest_Prism_Regions_NavigationContext_System_Action_System_Boolean__
+  name: ConfirmNavigationRequest(NavigationContext, Action<bool>)
+  nameWithType: BaseDataViewModelNavigationAware.ConfirmNavigationRequest(NavigationContext, Action<bool>)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ConfirmNavigationRequest(Prism.Regions.NavigationContext, System.Action<bool>)
+  nameWithType.vb: BaseDataViewModelNavigationAware.ConfirmNavigationRequest(NavigationContext, Action(Of Boolean))
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ConfirmNavigationRequest(Prism.Regions.NavigationContext, System.Action(Of Boolean))
+  name.vb: ConfirmNavigationRequest(NavigationContext, Action(Of Boolean))
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ConfirmNavigationRequest(Prism.Regions.NavigationContext,System.Action{System.Boolean})
+    name: ConfirmNavigationRequest
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ConfirmNavigationRequest.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_ConfirmNavigationRequest_Prism_Regions_NavigationContext_System_Action_System_Boolean__
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ConfirmNavigationRequest(Prism.Regions.NavigationContext,System.Action{System.Boolean})
+    name: ConfirmNavigationRequest
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.ConfirmNavigationRequest.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_ConfirmNavigationRequest_Prism_Regions_NavigationContext_System_Action_System_Boolean__
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnIsNavigationTarget(Prism.Regions.NavigationContext)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnIsNavigationTarget(Prism.Regions.NavigationContext)
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnIsNavigationTarget.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_OnIsNavigationTarget_Prism_Regions_NavigationContext_
+  name: OnIsNavigationTarget(NavigationContext)
+  nameWithType: BaseDataViewModelNavigationAware.OnIsNavigationTarget(NavigationContext)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnIsNavigationTarget(Prism.Regions.NavigationContext)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnIsNavigationTarget(Prism.Regions.NavigationContext)
+    name: OnIsNavigationTarget
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnIsNavigationTarget.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_OnIsNavigationTarget_Prism_Regions_NavigationContext_
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnIsNavigationTarget(Prism.Regions.NavigationContext)
+    name: OnIsNavigationTarget
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnIsNavigationTarget.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_OnIsNavigationTarget_Prism_Regions_NavigationContext_
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.IsNavigationTarget(Prism.Regions.NavigationContext)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.IsNavigationTarget(Prism.Regions.NavigationContext)
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.IsNavigationTarget.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_IsNavigationTarget_Prism_Regions_NavigationContext_
+  name: IsNavigationTarget(NavigationContext)
+  nameWithType: BaseDataViewModelNavigationAware.IsNavigationTarget(NavigationContext)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.IsNavigationTarget(Prism.Regions.NavigationContext)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.IsNavigationTarget(Prism.Regions.NavigationContext)
+    name: IsNavigationTarget
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.IsNavigationTarget.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_IsNavigationTarget_Prism_Regions_NavigationContext_
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.IsNavigationTarget(Prism.Regions.NavigationContext)
+    name: IsNavigationTarget
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.IsNavigationTarget.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_IsNavigationTarget_Prism_Regions_NavigationContext_
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext,Innova.Prism.Infrastructure.Views.ViewState)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext,Innova.Prism.Infrastructure.Views.ViewState)
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_OnNavigatedFrom_Prism_Regions_NavigationContext_Innova_Prism_Infrastructure_Views_ViewState_
+  name: OnNavigatedFrom(NavigationContext, ViewState)
+  nameWithType: BaseDataViewModelNavigationAware.OnNavigatedFrom(NavigationContext, ViewState)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext, Innova.Prism.Infrastructure.Views.ViewState)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext,Innova.Prism.Infrastructure.Views.ViewState)
+    name: OnNavigatedFrom
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_OnNavigatedFrom_Prism_Regions_NavigationContext_Innova_Prism_Infrastructure_Views_ViewState_
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: ','
+  - name: " "
+  - uid: Innova.Prism.Infrastructure.Views.ViewState
+    name: ViewState
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext,Innova.Prism.Infrastructure.Views.ViewState)
+    name: OnNavigatedFrom
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_OnNavigatedFrom_Prism_Regions_NavigationContext_Innova_Prism_Infrastructure_Views_ViewState_
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: ','
+  - name: " "
+  - uid: Innova.Prism.Infrastructure.Views.ViewState
+    name: ViewState
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetBusyText(System.String)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetBusyText(System.String)
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetBusyText.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetBusyText_System_String_
+  name: SetBusyText(string)
+  nameWithType: BaseDataViewModelNavigationAware.SetBusyText(string)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetBusyText(string)
+  nameWithType.vb: BaseDataViewModelNavigationAware.SetBusyText(String)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetBusyText(String)
+  name.vb: SetBusyText(String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetBusyText(System.String)
+    name: SetBusyText
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetBusyText.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetBusyText_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetBusyText(System.String)
+    name: SetBusyText
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetBusyText.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetBusyText_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.PropertyBag
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.PropertyBag
+  parent: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.PropertyBag.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_PropertyBag
+  name: PropertyBag
+  nameWithType: BaseHeaderViewModel.PropertyBag
+  fullName: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.PropertyBag
+- uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.Header
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.Header
+  parent: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.Header.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_Header
+  name: Header
+  nameWithType: BaseHeaderViewModel.Header
+  fullName: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.Header
+- uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.HeaderImage
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.HeaderImage
+  parent: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.HeaderImage.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_HeaderImage
+  name: HeaderImage
+  nameWithType: BaseHeaderViewModel.HeaderImage
+  fullName: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.HeaderImage
+- uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage(System.String)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage(System.String)
+  parent: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_SetHeaderImage_System_String_
+  name: SetHeaderImage(string)
+  nameWithType: BaseHeaderViewModel.SetHeaderImage(string)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage(string)
+  nameWithType.vb: BaseHeaderViewModel.SetHeaderImage(String)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage(String)
+  name.vb: SetHeaderImage(String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage(System.String)
+    name: SetHeaderImage
+    href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_SetHeaderImage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage(System.String)
+    name: SetHeaderImage
+    href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_SetHeaderImage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  commentId: M:Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: RaisePropertyChanged(string)
+  nameWithType: BindableBase.RaisePropertyChanged(string)
+  fullName: Prism.Mvvm.BindableBase.RaisePropertyChanged(string)
+  nameWithType.vb: BindableBase.RaisePropertyChanged(String)
+  fullName.vb: Prism.Mvvm.BindableBase.RaisePropertyChanged(String)
+  name.vb: RaisePropertyChanged(String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: OnPropertyChanged(PropertyChangedEventArgs)
+  nameWithType: BindableBase.OnPropertyChanged(PropertyChangedEventArgs)
+  fullName: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: Prism.Mvvm.BindableBase.PropertyChanged
+  commentId: E:Prism.Mvvm.BindableBase.PropertyChanged
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: PropertyChanged
+  nameWithType: BindableBase.PropertyChanged
+  fullName: Prism.Mvvm.BindableBase.PropertyChanged
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Prism.Mvvm
+  commentId: N:Prism.Mvvm
+  isExternal: true
+  name: Prism.Mvvm
+  nameWithType: Prism.Mvvm
+  fullName: Prism.Mvvm
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Prism.Regions
+  commentId: N:Prism.Regions
+  href: Prism.html
+  name: Prism.Regions
+  nameWithType: Prism.Regions
+  fullName: Prism.Regions
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Regions
+    name: Regions
+    href: Prism.Regions.html
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Regions
+    name: Regions
+    href: Prism.Regions.html
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities``1(System.Collections.ObjectModel.ObservableCollection{``0})
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities``1(System.Collections.ObjectModel.ObservableCollection{``0})
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetEntities__1_System_Collections_ObjectModel_ObservableCollection___0__
+  name: SetEntities<T>(ObservableCollection<T>)
+  nameWithType: BaseDataViewModelNavigationAware.SetEntities<T>(ObservableCollection<T>)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities<T>(System.Collections.ObjectModel.ObservableCollection<T>)
+  nameWithType.vb: BaseDataViewModelNavigationAware.SetEntities(Of T)(ObservableCollection(Of T))
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities(Of T)(System.Collections.ObjectModel.ObservableCollection(Of T))
+  name.vb: SetEntities(Of T)(ObservableCollection(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities``1(System.Collections.ObjectModel.ObservableCollection{``0})
+    name: SetEntities
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetEntities__1_System_Collections_ObjectModel_ObservableCollection___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities``1(System.Collections.ObjectModel.ObservableCollection{``0})
+    name: SetEntities
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEntities.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetEntities__1_System_Collections_ObjectModel_ObservableCollection___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<BaseShowEntityViewModel<T, TResult>>
+  nameWithType: ILogger<BaseShowEntityViewModel<T, TResult>>
+  fullName: Microsoft.Extensions.Logging.ILogger<Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>>
+  nameWithType.vb: ILogger(Of BaseShowEntityViewModel(Of T, TResult))
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult))
+  name.vb: ILogger(Of BaseShowEntityViewModel(Of T, TResult))
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+    name: BaseShowEntityViewModel
+    href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+    name: BaseShowEntityViewModel
+    href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MenuService*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MenuService
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.MenuService.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_MenuService
+  name: MenuService
+  nameWithType: BaseShowEntityViewModel<T, TResult>.MenuService
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.MenuService
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).MenuService
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).MenuService
+- uid: Innova.Prism.Library.Menus.Models.IShowMenuService{{T},{TResult}}
+  commentId: T:Innova.Prism.Library.Menus.Models.IShowMenuService{`0,`1}
+  parent: Innova.Prism.Library.Menus.Models
+  definition: Innova.Prism.Library.Menus.Models.IShowMenuService`2
+  href: Innova.Prism.Library.Menus.Models.IShowMenuService-2.html
+  name: IShowMenuService<T, TResult>
+  nameWithType: IShowMenuService<T, TResult>
+  fullName: Innova.Prism.Library.Menus.Models.IShowMenuService<T, TResult>
+  nameWithType.vb: IShowMenuService(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.Models.IShowMenuService(Of T, TResult)
+  name.vb: IShowMenuService(Of T, TResult)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Menus.Models.IShowMenuService`2
+    name: IShowMenuService
+    href: Innova.Prism.Library.Menus.Models.IShowMenuService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Menus.Models.IShowMenuService`2
+    name: IShowMenuService
+    href: Innova.Prism.Library.Menus.Models.IShowMenuService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Innova.Prism.Library.Menus.Models.IShowMenuService`2
+  commentId: T:Innova.Prism.Library.Menus.Models.IShowMenuService`2
+  href: Innova.Prism.Library.Menus.Models.IShowMenuService-2.html
+  name: IShowMenuService<T, TResult>
+  nameWithType: IShowMenuService<T, TResult>
+  fullName: Innova.Prism.Library.Menus.Models.IShowMenuService<T, TResult>
+  nameWithType.vb: IShowMenuService(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.Models.IShowMenuService(Of T, TResult)
+  name.vb: IShowMenuService(Of T, TResult)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Menus.Models.IShowMenuService`2
+    name: IShowMenuService
+    href: Innova.Prism.Library.Menus.Models.IShowMenuService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Menus.Models.IShowMenuService`2
+    name: IShowMenuService
+    href: Innova.Prism.Library.Menus.Models.IShowMenuService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Innova.Prism.Library.Menus.Models
+  commentId: N:Innova.Prism.Library.Menus.Models
+  href: Innova.html
+  name: Innova.Prism.Library.Menus.Models
+  nameWithType: Innova.Prism.Library.Menus.Models
+  fullName: Innova.Prism.Library.Menus.Models
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Menus
+    name: Menus
+    href: Innova.Prism.Library.Menus.html
+  - name: .
+  - uid: Innova.Prism.Library.Menus.Models
+    name: Models
+    href: Innova.Prism.Library.Menus.Models.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Menus
+    name: Menus
+    href: Innova.Prism.Library.Menus.html
+  - name: .
+  - uid: Innova.Prism.Library.Menus.Models
+    name: Models
+    href: Innova.Prism.Library.Menus.Models.html
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.RelatedViewModels*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.RelatedViewModels
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.RelatedViewModels.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_RelatedViewModels
+  name: RelatedViewModels
+  nameWithType: BaseShowEntityViewModel<T, TResult>.RelatedViewModels
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.RelatedViewModels
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).RelatedViewModels
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).RelatedViewModels
+- uid: System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.IRelatedViewModel{{T}}}
+  commentId: T:System.Collections.Generic.IEnumerable{Innova.Prism.Library.BaseViewModels.IRelatedViewModel{`0}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IRelatedViewModel<T>>
+  nameWithType: IEnumerable<IRelatedViewModel<T>>
+  fullName: System.Collections.Generic.IEnumerable<Innova.Prism.Library.BaseViewModels.IRelatedViewModel<T>>
+  nameWithType.vb: IEnumerable(Of IRelatedViewModel(Of T))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Innova.Prism.Library.BaseViewModels.IRelatedViewModel(Of T))
+  name.vb: IEnumerable(Of IRelatedViewModel(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Innova.Prism.Library.BaseViewModels.IRelatedViewModel`1
+    name: IRelatedViewModel
+    href: Innova.Prism.Library.BaseViewModels.IRelatedViewModel-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.BaseViewModels.IRelatedViewModel`1
+    name: IRelatedViewModel
+    href: Innova.Prism.Library.BaseViewModels.IRelatedViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MainEntity*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MainEntity
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.MainEntity.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_MainEntity
+  name: MainEntity
+  nameWithType: BaseShowEntityViewModel<T, TResult>.MainEntity
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.MainEntity
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).MainEntity
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).MainEntity
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MainEntityKey*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MainEntityKey
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.MainEntityKey.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_MainEntityKey
+  name: MainEntityKey
+  nameWithType: BaseShowEntityViewModel<T, TResult>.MainEntityKey
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.MainEntityKey
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).MainEntityKey
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).MainEntityKey
+- uid: Innova.Data.Entity.PrimaryKeys{{T}}
+  commentId: T:Innova.Data.Entity.PrimaryKeys{``0}
+  parent: Innova.Data.Entity
+  definition: Innova.Data.Entity.PrimaryKeys`1
+  href: Innova.Data.Entity.PrimaryKeys-1.html
+  name: PrimaryKeys<T>
+  nameWithType: PrimaryKeys<T>
+  fullName: Innova.Data.Entity.PrimaryKeys<T>
+  nameWithType.vb: PrimaryKeys(Of T)
+  fullName.vb: Innova.Data.Entity.PrimaryKeys(Of T)
+  name.vb: PrimaryKeys(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+    href: Innova.Data.Entity.PrimaryKeys-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+    href: Innova.Data.Entity.PrimaryKeys-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.Entity.PrimaryKeys`1
+  commentId: T:Innova.Data.Entity.PrimaryKeys`1
+  href: Innova.Data.Entity.PrimaryKeys-1.html
+  name: PrimaryKeys<T>
+  nameWithType: PrimaryKeys<T>
+  fullName: Innova.Data.Entity.PrimaryKeys<T>
+  nameWithType.vb: PrimaryKeys(Of T)
+  fullName.vb: Innova.Data.Entity.PrimaryKeys(Of T)
+  name.vb: PrimaryKeys(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+    href: Innova.Data.Entity.PrimaryKeys-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+    href: Innova.Data.Entity.PrimaryKeys-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.Entity
+  commentId: N:Innova.Data.Entity
+  href: Innova.html
+  name: Innova.Data.Entity
+  nameWithType: Innova.Data.Entity
+  fullName: Innova.Data.Entity
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ViewModelService*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ViewModelService
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.ViewModelService.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_ViewModelService
+  name: ViewModelService
+  nameWithType: BaseShowEntityViewModel<T, TResult>.ViewModelService
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.ViewModelService
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).ViewModelService
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).ViewModelService
+- uid: Innova.Prism.Library.Services.IShowViewModelService{{T},{TResult}}
+  commentId: T:Innova.Prism.Library.Services.IShowViewModelService{`0,`1}
+  parent: Innova.Prism.Library.Services
+  definition: Innova.Prism.Library.Services.IShowViewModelService`2
+  href: Innova.Prism.Library.Services.IShowViewModelService-2.html
+  name: IShowViewModelService<T, TResult>
+  nameWithType: IShowViewModelService<T, TResult>
+  fullName: Innova.Prism.Library.Services.IShowViewModelService<T, TResult>
+  nameWithType.vb: IShowViewModelService(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Services.IShowViewModelService(Of T, TResult)
+  name.vb: IShowViewModelService(Of T, TResult)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IShowViewModelService`2
+    name: IShowViewModelService
+    href: Innova.Prism.Library.Services.IShowViewModelService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IShowViewModelService`2
+    name: IShowViewModelService
+    href: Innova.Prism.Library.Services.IShowViewModelService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Innova.Prism.Library.Services.IShowViewModelService`2
+  commentId: T:Innova.Prism.Library.Services.IShowViewModelService`2
+  href: Innova.Prism.Library.Services.IShowViewModelService-2.html
+  name: IShowViewModelService<T, TShow>
+  nameWithType: IShowViewModelService<T, TShow>
+  fullName: Innova.Prism.Library.Services.IShowViewModelService<T, TShow>
+  nameWithType.vb: IShowViewModelService(Of T, TShow)
+  fullName.vb: Innova.Prism.Library.Services.IShowViewModelService(Of T, TShow)
+  name.vb: IShowViewModelService(Of T, TShow)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IShowViewModelService`2
+    name: IShowViewModelService
+    href: Innova.Prism.Library.Services.IShowViewModelService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TShow
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IShowViewModelService`2
+    name: IShowViewModelService
+    href: Innova.Prism.Library.Services.IShowViewModelService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TShow
+  - name: )
+- uid: Innova.Prism.Library.Services
+  commentId: N:Innova.Prism.Library.Services
+  href: Innova.html
+  name: Innova.Prism.Library.Services
+  nameWithType: Innova.Prism.Library.Services
+  fullName: Innova.Prism.Library.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.RelatedLists*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.RelatedLists
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.RelatedLists.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_RelatedLists
+  name: RelatedLists
+  nameWithType: BaseShowEntityViewModel<T, TResult>.RelatedLists
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.RelatedLists
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).RelatedLists
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).RelatedLists
+- uid: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Relations.IRelatedData}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Relations.IRelatedData}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<IRelatedData>
+  nameWithType: ObservableCollection<IRelatedData>
+  fullName: System.Collections.ObjectModel.ObservableCollection<Innova.Prism.Library.Relations.IRelatedData>
+  nameWithType.vb: ObservableCollection(Of IRelatedData)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of Innova.Prism.Library.Relations.IRelatedData)
+  name.vb: ObservableCollection(Of IRelatedData)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: Innova.Prism.Library.Relations.IRelatedData
+    name: IRelatedData
+    href: Innova.Prism.Library.Relations.IRelatedData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Relations.IRelatedData
+    name: IRelatedData
+    href: Innova.Prism.Library.Relations.IRelatedData.html
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.#ctor*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.#ctor
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.-ctor.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2__ctor_Innova_Prism_Infrastructure_Views_IViewStateManager_Prism_Events_IEventAggregator_Innova_Prism_Library_Services_IShowViewModelService__0__1__Innova_Prism_Library_Menus_Models_IShowMenuService__0__1__System_Collections_Generic_List_Innova_Prism_Library_BaseViewModels_IRelatedViewModel__0___Microsoft_Extensions_Logging_ILogger_Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel__0__1___
+  name: BaseShowEntityViewModel
+  nameWithType: BaseShowEntityViewModel<T, TResult>.BaseShowEntityViewModel
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.BaseShowEntityViewModel
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).New
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).New
+  name.vb: New
+- uid: Innova.Prism.Infrastructure.Views.IViewStateManager
+  commentId: T:Innova.Prism.Infrastructure.Views.IViewStateManager
+  parent: Innova.Prism.Infrastructure.Views
+  href: Innova.Prism.Infrastructure.Views.IViewStateManager.html
+  name: IViewStateManager
+  nameWithType: IViewStateManager
+  fullName: Innova.Prism.Infrastructure.Views.IViewStateManager
+- uid: Prism.Events.IEventAggregator
+  commentId: T:Prism.Events.IEventAggregator
+  parent: Prism.Events
+  isExternal: true
+  name: IEventAggregator
+  nameWithType: IEventAggregator
+  fullName: Prism.Events.IEventAggregator
+- uid: System.Collections.Generic.List{Innova.Prism.Library.BaseViewModels.IRelatedViewModel{{T}}}
+  commentId: T:System.Collections.Generic.List{Innova.Prism.Library.BaseViewModels.IRelatedViewModel{`0}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<IRelatedViewModel<T>>
+  nameWithType: List<IRelatedViewModel<T>>
+  fullName: System.Collections.Generic.List<Innova.Prism.Library.BaseViewModels.IRelatedViewModel<T>>
+  nameWithType.vb: List(Of IRelatedViewModel(Of T))
+  fullName.vb: System.Collections.Generic.List(Of Innova.Prism.Library.BaseViewModels.IRelatedViewModel(Of T))
+  name.vb: List(Of IRelatedViewModel(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Prism.Library.BaseViewModels.IRelatedViewModel`1
+    name: IRelatedViewModel
+    href: Innova.Prism.Library.BaseViewModels.IRelatedViewModel-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.BaseViewModels.IRelatedViewModel`1
+    name: IRelatedViewModel
+    href: Innova.Prism.Library.BaseViewModels.IRelatedViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Infrastructure.Views
+  commentId: N:Innova.Prism.Infrastructure.Views
+  href: Innova.html
+  name: Innova.Prism.Infrastructure.Views
+  nameWithType: Innova.Prism.Infrastructure.Views
+  fullName: Innova.Prism.Infrastructure.Views
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure
+    name: Infrastructure
+    href: Innova.Prism.Infrastructure.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure.Views
+    name: Views
+    href: Innova.Prism.Infrastructure.Views.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure
+    name: Infrastructure
+    href: Innova.Prism.Infrastructure.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure.Views
+    name: Views
+    href: Innova.Prism.Infrastructure.Views.html
+- uid: Prism.Events
+  commentId: N:Prism.Events
+  isExternal: true
+  name: Prism.Events
+  nameWithType: Prism.Events
+  fullName: Prism.Events
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEventSubscription
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEventSubscription
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEventSubscription.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetEventSubscription
+  name: SetEventSubscription()
+  nameWithType: BaseDataViewModelNavigationAware.SetEventSubscription()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEventSubscription()
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEventSubscription
+    name: SetEventSubscription
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEventSubscription.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetEventSubscription
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEventSubscription
+    name: SetEventSubscription
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.SetEventSubscription.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_SetEventSubscription
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetEventSubscription*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetEventSubscription
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetEventSubscription.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetEventSubscription
+  name: SetEventSubscription
+  nameWithType: BaseShowEntityViewModel<T, TResult>.SetEventSubscription
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetEventSubscription
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetEventSubscription
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetEventSubscription
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnMainEntityKeyChanged*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnMainEntityKeyChanged
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.OnMainEntityKeyChanged.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_OnMainEntityKeyChanged
+  name: OnMainEntityKeyChanged
+  nameWithType: BaseShowEntityViewModel<T, TResult>.OnMainEntityKeyChanged
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.OnMainEntityKeyChanged
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).OnMainEntityKeyChanged
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).OnMainEntityKeyChanged
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedTo(Prism.Regions.NavigationContext)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedTo(Prism.Regions.NavigationContext)
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedTo.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_OnNavigatedTo_Prism_Regions_NavigationContext_
+  name: OnNavigatedTo(NavigationContext)
+  nameWithType: BaseDataViewModelNavigationAware.OnNavigatedTo(NavigationContext)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedTo(Prism.Regions.NavigationContext)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedTo(Prism.Regions.NavigationContext)
+    name: OnNavigatedTo
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedTo.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_OnNavigatedTo_Prism_Regions_NavigationContext_
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedTo(Prism.Regions.NavigationContext)
+    name: OnNavigatedTo
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedTo.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_OnNavigatedTo_Prism_Regions_NavigationContext_
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnNavigatedTo*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnNavigatedTo
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.OnNavigatedTo.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_OnNavigatedTo_Prism_Regions_NavigationContext_
+  name: OnNavigatedTo
+  nameWithType: BaseShowEntityViewModel<T, TResult>.OnNavigatedTo
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.OnNavigatedTo
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).OnNavigatedTo
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).OnNavigatedTo
+- uid: Prism.Regions.NavigationContext
+  commentId: T:Prism.Regions.NavigationContext
+  parent: Prism.Regions
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  name: NavigationContext
+  nameWithType: NavigationContext
+  fullName: Prism.Regions.NavigationContext
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_OnNavigatedFrom_Prism_Regions_NavigationContext_
+  name: OnNavigatedFrom(NavigationContext)
+  nameWithType: BaseDataViewModelNavigationAware.OnNavigatedFrom(NavigationContext)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext)
+    name: OnNavigatedFrom
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_OnNavigatedFrom_Prism_Regions_NavigationContext_
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext)
+    name: OnNavigatedFrom
+    href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelNavigationAware.OnNavigatedFrom.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelNavigationAware_OnNavigatedFrom_Prism_Regions_NavigationContext_
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnNavigatedFrom*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnNavigatedFrom
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.OnNavigatedFrom.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_OnNavigatedFrom_Prism_Regions_NavigationContext_
+  name: OnNavigatedFrom
+  nameWithType: BaseShowEntityViewModel<T, TResult>.OnNavigatedFrom
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.OnNavigatedFrom
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).OnNavigatedFrom
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).OnNavigatedFrom
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetMainEntityKeys*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetMainEntityKeys
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.GetMainEntityKeys.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_GetMainEntityKeys
+  name: GetMainEntityKeys
+  nameWithType: BaseShowEntityViewModel<T, TResult>.GetMainEntityKeys
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.GetMainEntityKeys
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).GetMainEntityKeys
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).GetMainEntityKeys
+- uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader(System.String)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader(System.String)
+  parent: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_SetHeader_System_String_
+  name: SetHeader(string)
+  nameWithType: BaseHeaderViewModel.SetHeader(string)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader(string)
+  nameWithType.vb: BaseHeaderViewModel.SetHeader(String)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader(String)
+  name.vb: SetHeader(String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader(System.String)
+    name: SetHeader
+    href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_SetHeader_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader(System.String)
+    name: SetHeader
+    href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_SetHeader_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetHeader*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetHeader
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetHeader.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetHeader_System_String_
+  name: SetHeader
+  nameWithType: BaseShowEntityViewModel<T, TResult>.SetHeader
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetHeader
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetHeader
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetHeader
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.CheckVisibility*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.CheckVisibility
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.CheckVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_CheckVisibility_System_Data_DataTable_
+  name: CheckVisibility
+  nameWithType: BaseShowEntityViewModel<T, TResult>.CheckVisibility
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.CheckVisibility
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).CheckVisibility
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).CheckVisibility
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.datatable
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetRelatedListViewModels*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetRelatedListViewModels
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.GetRelatedListViewModels.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_GetRelatedListViewModels
+  name: GetRelatedListViewModels
+  nameWithType: BaseShowEntityViewModel<T, TResult>.GetRelatedListViewModels
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.GetRelatedListViewModels
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).GetRelatedListViewModels
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).GetRelatedListViewModels
+- uid: System.Collections.Generic.IEnumerable{Innova.Prism.Library.Relations.IRelatedListViewModel}
+  commentId: T:System.Collections.Generic.IEnumerable{Innova.Prism.Library.Relations.IRelatedListViewModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IRelatedListViewModel>
+  nameWithType: IEnumerable<IRelatedListViewModel>
+  fullName: System.Collections.Generic.IEnumerable<Innova.Prism.Library.Relations.IRelatedListViewModel>
+  nameWithType.vb: IEnumerable(Of IRelatedListViewModel)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Innova.Prism.Library.Relations.IRelatedListViewModel)
+  name.vb: IEnumerable(Of IRelatedListViewModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Innova.Prism.Library.Relations.IRelatedListViewModel
+    name: IRelatedListViewModel
+    href: Innova.Prism.Library.Relations.IRelatedListViewModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Relations.IRelatedListViewModel
+    name: IRelatedListViewModel
+    href: Innova.Prism.Library.Relations.IRelatedListViewModel.html
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetRelatedIsSelectedDefault*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetRelatedIsSelectedDefault
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetRelatedIsSelectedDefault.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetRelatedIsSelectedDefault
+  name: SetRelatedIsSelectedDefault
+  nameWithType: BaseShowEntityViewModel<T, TResult>.SetRelatedIsSelectedDefault
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetRelatedIsSelectedDefault
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetRelatedIsSelectedDefault
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetRelatedIsSelectedDefault
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnMainEntityChanged*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnMainEntityChanged
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.OnMainEntityChanged.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_OnMainEntityChanged
+  name: OnMainEntityChanged
+  nameWithType: BaseShowEntityViewModel<T, TResult>.OnMainEntityChanged
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.OnMainEntityChanged
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).OnMainEntityChanged
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).OnMainEntityChanged
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.AfterOnMainEntityChanged*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.AfterOnMainEntityChanged
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.AfterOnMainEntityChanged.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_AfterOnMainEntityChanged
+  name: AfterOnMainEntityChanged
+  nameWithType: BaseShowEntityViewModel<T, TResult>.AfterOnMainEntityChanged
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.AfterOnMainEntityChanged
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).AfterOnMainEntityChanged
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).AfterOnMainEntityChanged
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.LoadDataAsync*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.LoadDataAsync
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.LoadDataAsync.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_LoadDataAsync
+  name: LoadDataAsync
+  nameWithType: BaseShowEntityViewModel<T, TResult>.LoadDataAsync
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.LoadDataAsync
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).LoadDataAsync
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).LoadDataAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.AfterGetMainEntity*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.AfterGetMainEntity
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.AfterGetMainEntity.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_AfterGetMainEntity
+  name: AfterGetMainEntity
+  nameWithType: BaseShowEntityViewModel<T, TResult>.AfterGetMainEntity
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.AfterGetMainEntity
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).AfterGetMainEntity
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).AfterGetMainEntity
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.LoadMainEntityAsync*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.LoadMainEntityAsync
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.LoadMainEntityAsync.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_LoadMainEntityAsync
+  name: LoadMainEntityAsync
+  nameWithType: BaseShowEntityViewModel<T, TResult>.LoadMainEntityAsync
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.LoadMainEntityAsync
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).LoadMainEntityAsync
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).LoadMainEntityAsync
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetExportDataTable*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetExportDataTable
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.GetExportDataTable.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_GetExportDataTable
+  name: GetExportDataTable
+  nameWithType: BaseShowEntityViewModel<T, TResult>.GetExportDataTable
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.GetExportDataTable
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).GetExportDataTable
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).GetExportDataTable
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnEntityReload*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnEntityReload
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.OnEntityReload.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_OnEntityReload_Innova_Data_Entity_PrimaryKeys__0__
+  name: OnEntityReload
+  nameWithType: BaseShowEntityViewModel<T, TResult>.OnEntityReload
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.OnEntityReload
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).OnEntityReload
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).OnEntityReload
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnEntityUpdated*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnEntityUpdated
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.OnEntityUpdated.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_OnEntityUpdated_Innova_Data_Entity_PrimaryKeys__0__
+  name: OnEntityUpdated
+  nameWithType: BaseShowEntityViewModel<T, TResult>.OnEntityUpdated
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.OnEntityUpdated
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).OnEntityUpdated
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).OnEntityUpdated
+memberLayout: SeparatePages

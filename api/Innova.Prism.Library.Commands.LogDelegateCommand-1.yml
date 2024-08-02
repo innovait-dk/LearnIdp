@@ -1,0 +1,874 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Commands.LogDelegateCommand`1
+  commentId: T:Innova.Prism.Library.Commands.LogDelegateCommand`1
+  id: LogDelegateCommand`1
+  parent: Innova.Prism.Library.Commands
+  children:
+  - Innova.Prism.Library.Commands.LogDelegateCommand`1.#ctor(System.Action{`0})
+  - Innova.Prism.Library.Commands.LogDelegateCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})
+  langs:
+  - csharp
+  - vb
+  name: LogDelegateCommand<T>
+  nameWithType: LogDelegateCommand<T>
+  fullName: Innova.Prism.Library.Commands.LogDelegateCommand<T>
+  type: Class
+  source:
+    id: LogDelegateCommand
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Commands\LogDelegateCommand.cs
+    startLine: 10
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Commands
+  summary: Represents a delegate command that logs the method execution.
+  example: []
+  syntax:
+    content: 'public sealed class LogDelegateCommand<T> : DelegateCommand<T>, ICommand, IActiveAware'
+    typeParameters:
+    - id: T
+      description: The type of the command parameter.
+    content.vb: Public NotInheritable Class LogDelegateCommand(Of T) Inherits DelegateCommand(Of T) Implements ICommand, IActiveAware
+  inheritance:
+  - System.Object
+  - Prism.Commands.DelegateCommandBase
+  - Prism.Commands.DelegateCommand{{T}}
+  implements:
+  - System.Windows.Input.ICommand
+  - Prism.IActiveAware
+  inheritedMembers:
+  - Prism.Commands.DelegateCommand{{T}}.Execute({T})
+  - Prism.Commands.DelegateCommand{{T}}.CanExecute({T})
+  - Prism.Commands.DelegateCommand{{T}}.ObservesProperty``1(System.Linq.Expressions.Expression{System.Func{{TType}}})
+  - Prism.Commands.DelegateCommand{{T}}.ObservesCanExecute(System.Linq.Expressions.Expression{System.Func{System.Boolean}})
+  - Prism.Commands.DelegateCommandBase.RaiseCanExecuteChanged
+  - Prism.Commands.DelegateCommandBase.IsActive
+  - Prism.Commands.DelegateCommandBase.CanExecuteChanged
+  - Prism.Commands.DelegateCommandBase.IsActiveChanged
+  nameWithType.vb: LogDelegateCommand(Of T)
+  fullName.vb: Innova.Prism.Library.Commands.LogDelegateCommand(Of T)
+  name.vb: LogDelegateCommand(Of T)
+- uid: Innova.Prism.Library.Commands.LogDelegateCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})
+  commentId: M:Innova.Prism.Library.Commands.LogDelegateCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})
+  id: '#ctor(System.Action{`0},System.Func{`0,System.Boolean})'
+  parent: Innova.Prism.Library.Commands.LogDelegateCommand`1
+  langs:
+  - csharp
+  - vb
+  name: LogDelegateCommand(Action<T>, Func<T, bool>)
+  nameWithType: LogDelegateCommand<T>.LogDelegateCommand(Action<T>, Func<T, bool>)
+  fullName: Innova.Prism.Library.Commands.LogDelegateCommand<T>.LogDelegateCommand(System.Action<T>, System.Func<T, bool>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Commands\LogDelegateCommand.cs
+    startLine: 19
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Commands
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Commands.LogDelegateCommand%601" data-throw-if-not-resolved="false"></xref> class with the specified execute method and can execute method.
+  example: []
+  syntax:
+    content: public LogDelegateCommand(Action<T> executeMethod, Func<T, bool> canExecuteMethod)
+    parameters:
+    - id: executeMethod
+      type: System.Action{{T}}
+      description: The execute method.
+    - id: canExecuteMethod
+      type: System.Func{{T},System.Boolean}
+      description: The can execute method.
+    content.vb: Public Sub New(executeMethod As Action(Of T), canExecuteMethod As Func(Of T, Boolean))
+  overload: Innova.Prism.Library.Commands.LogDelegateCommand`1.#ctor*
+  nameWithType.vb: LogDelegateCommand(Of T).New(Action(Of T), Func(Of T, Boolean))
+  fullName.vb: Innova.Prism.Library.Commands.LogDelegateCommand(Of T).New(System.Action(Of T), System.Func(Of T, Boolean))
+  name.vb: New(Action(Of T), Func(Of T, Boolean))
+- uid: Innova.Prism.Library.Commands.LogDelegateCommand`1.#ctor(System.Action{`0})
+  commentId: M:Innova.Prism.Library.Commands.LogDelegateCommand`1.#ctor(System.Action{`0})
+  id: '#ctor(System.Action{`0})'
+  parent: Innova.Prism.Library.Commands.LogDelegateCommand`1
+  langs:
+  - csharp
+  - vb
+  name: LogDelegateCommand(Action<T>)
+  nameWithType: LogDelegateCommand<T>.LogDelegateCommand(Action<T>)
+  fullName: Innova.Prism.Library.Commands.LogDelegateCommand<T>.LogDelegateCommand(System.Action<T>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Commands\LogDelegateCommand.cs
+    startLine: 33
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Commands
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Commands.LogDelegateCommand%601" data-throw-if-not-resolved="false"></xref> class with the specified execute method.
+  example: []
+  syntax:
+    content: public LogDelegateCommand(Action<T> executeMethod)
+    parameters:
+    - id: executeMethod
+      type: System.Action{{T}}
+      description: The execute method.
+    content.vb: Public Sub New(executeMethod As Action(Of T))
+  overload: Innova.Prism.Library.Commands.LogDelegateCommand`1.#ctor*
+  nameWithType.vb: LogDelegateCommand(Of T).New(Action(Of T))
+  fullName.vb: Innova.Prism.Library.Commands.LogDelegateCommand(Of T).New(System.Action(Of T))
+  name.vb: New(Action(Of T))
+references:
+- uid: Innova.Prism.Library.Commands
+  commentId: N:Innova.Prism.Library.Commands
+  href: Innova.html
+  name: Innova.Prism.Library.Commands
+  nameWithType: Innova.Prism.Library.Commands
+  fullName: Innova.Prism.Library.Commands
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Commands
+    name: Commands
+    href: Innova.Prism.Library.Commands.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Commands
+    name: Commands
+    href: Innova.Prism.Library.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Prism.Commands.DelegateCommandBase
+  commentId: T:Prism.Commands.DelegateCommandBase
+  parent: Prism.Commands
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommandBase.cs
+  name: DelegateCommandBase
+  nameWithType: DelegateCommandBase
+  fullName: Prism.Commands.DelegateCommandBase
+- uid: Prism.Commands.DelegateCommand{{T}}
+  commentId: T:Prism.Commands.DelegateCommand{`0}
+  parent: Prism.Commands
+  definition: Prism.Commands.DelegateCommand`1
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  name: DelegateCommand<T>
+  nameWithType: DelegateCommand<T>
+  fullName: Prism.Commands.DelegateCommand<T>
+  nameWithType.vb: DelegateCommand(Of T)
+  fullName.vb: Prism.Commands.DelegateCommand(Of T)
+  name.vb: DelegateCommand(Of T)
+  spec.csharp:
+  - uid: Prism.Commands.DelegateCommand`1
+    name: DelegateCommand
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Prism.Commands.DelegateCommand`1
+    name: DelegateCommand
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Windows.Input.ICommand
+  commentId: T:System.Windows.Input.ICommand
+  parent: System.Windows.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.input.icommand
+  name: ICommand
+  nameWithType: ICommand
+  fullName: System.Windows.Input.ICommand
+- uid: Prism.IActiveAware
+  commentId: T:Prism.IActiveAware
+  parent: Prism
+  isExternal: true
+  name: IActiveAware
+  nameWithType: IActiveAware
+  fullName: Prism.IActiveAware
+- uid: Prism.Commands.DelegateCommand{{T}}.Execute({T})
+  commentId: M:Prism.Commands.DelegateCommand{`0}.Execute(`0)
+  parent: Prism.Commands.DelegateCommand{{T}}
+  definition: Prism.Commands.DelegateCommand`1.Execute(`0)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  name: Execute(T)
+  nameWithType: DelegateCommand<T>.Execute(T)
+  fullName: Prism.Commands.DelegateCommand<T>.Execute(T)
+  nameWithType.vb: DelegateCommand(Of T).Execute(T)
+  fullName.vb: Prism.Commands.DelegateCommand(Of T).Execute(T)
+  spec.csharp:
+  - uid: Prism.Commands.DelegateCommand{`0}.Execute(`0)
+    name: Execute
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Prism.Commands.DelegateCommand{`0}.Execute(`0)
+    name: Execute
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - name: T
+  - name: )
+- uid: Prism.Commands.DelegateCommand{{T}}.CanExecute({T})
+  commentId: M:Prism.Commands.DelegateCommand{`0}.CanExecute(`0)
+  parent: Prism.Commands.DelegateCommand{{T}}
+  definition: Prism.Commands.DelegateCommand`1.CanExecute(`0)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  name: CanExecute(T)
+  nameWithType: DelegateCommand<T>.CanExecute(T)
+  fullName: Prism.Commands.DelegateCommand<T>.CanExecute(T)
+  nameWithType.vb: DelegateCommand(Of T).CanExecute(T)
+  fullName.vb: Prism.Commands.DelegateCommand(Of T).CanExecute(T)
+  spec.csharp:
+  - uid: Prism.Commands.DelegateCommand{`0}.CanExecute(`0)
+    name: CanExecute
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Prism.Commands.DelegateCommand{`0}.CanExecute(`0)
+    name: CanExecute
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - name: T
+  - name: )
+- uid: Prism.Commands.DelegateCommand{{T}}.ObservesProperty``1(System.Linq.Expressions.Expression{System.Func{{TType}}})
+  commentId: M:Prism.Commands.DelegateCommand{`0}.ObservesProperty``1(System.Linq.Expressions.Expression{System.Func{``0}})
+  parent: Prism.Commands.DelegateCommand{{T}}
+  definition: Prism.Commands.DelegateCommand`1.ObservesProperty``1(System.Linq.Expressions.Expression{System.Func{``0}})
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  name: ObservesProperty<TType>(Expression<Func<TType>>)
+  nameWithType: DelegateCommand<T>.ObservesProperty<TType>(Expression<Func<TType>>)
+  fullName: Prism.Commands.DelegateCommand<T>.ObservesProperty<TType>(System.Linq.Expressions.Expression<System.Func<TType>>)
+  nameWithType.vb: DelegateCommand(Of T).ObservesProperty(Of TType)(Expression(Of Func(Of TType)))
+  fullName.vb: Prism.Commands.DelegateCommand(Of T).ObservesProperty(Of TType)(System.Linq.Expressions.Expression(Of System.Func(Of TType)))
+  name.vb: ObservesProperty(Of TType)(Expression(Of Func(Of TType)))
+  spec.csharp:
+  - uid: Prism.Commands.DelegateCommand{`0}.ObservesProperty``1(System.Linq.Expressions.Expression{System.Func{``0}})
+    name: ObservesProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Prism.Commands.DelegateCommand{`0}.ObservesProperty``1(System.Linq.Expressions.Expression{System.Func{``0}})
+    name: ObservesProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: )
+  - name: )
+- uid: Prism.Commands.DelegateCommand{{T}}.ObservesCanExecute(System.Linq.Expressions.Expression{System.Func{System.Boolean}})
+  commentId: M:Prism.Commands.DelegateCommand{`0}.ObservesCanExecute(System.Linq.Expressions.Expression{System.Func{System.Boolean}})
+  parent: Prism.Commands.DelegateCommand{{T}}
+  definition: Prism.Commands.DelegateCommand`1.ObservesCanExecute(System.Linq.Expressions.Expression{System.Func{System.Boolean}})
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  name: ObservesCanExecute(Expression<Func<bool>>)
+  nameWithType: DelegateCommand<T>.ObservesCanExecute(Expression<Func<bool>>)
+  fullName: Prism.Commands.DelegateCommand<T>.ObservesCanExecute(System.Linq.Expressions.Expression<System.Func<bool>>)
+  nameWithType.vb: DelegateCommand(Of T).ObservesCanExecute(Expression(Of Func(Of Boolean)))
+  fullName.vb: Prism.Commands.DelegateCommand(Of T).ObservesCanExecute(System.Linq.Expressions.Expression(Of System.Func(Of Boolean)))
+  name.vb: ObservesCanExecute(Expression(Of Func(Of Boolean)))
+  spec.csharp:
+  - uid: Prism.Commands.DelegateCommand{`0}.ObservesCanExecute(System.Linq.Expressions.Expression{System.Func{System.Boolean}})
+    name: ObservesCanExecute
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Prism.Commands.DelegateCommand{`0}.ObservesCanExecute(System.Linq.Expressions.Expression{System.Func{System.Boolean}})
+    name: ObservesCanExecute
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: )
+- uid: Prism.Commands.DelegateCommandBase.RaiseCanExecuteChanged
+  commentId: M:Prism.Commands.DelegateCommandBase.RaiseCanExecuteChanged
+  parent: Prism.Commands.DelegateCommandBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommandBase.cs
+  name: RaiseCanExecuteChanged()
+  nameWithType: DelegateCommandBase.RaiseCanExecuteChanged()
+  fullName: Prism.Commands.DelegateCommandBase.RaiseCanExecuteChanged()
+  spec.csharp:
+  - uid: Prism.Commands.DelegateCommandBase.RaiseCanExecuteChanged
+    name: RaiseCanExecuteChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommandBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.Commands.DelegateCommandBase.RaiseCanExecuteChanged
+    name: RaiseCanExecuteChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommandBase.cs
+  - name: (
+  - name: )
+- uid: Prism.Commands.DelegateCommandBase.IsActive
+  commentId: P:Prism.Commands.DelegateCommandBase.IsActive
+  parent: Prism.Commands.DelegateCommandBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommandBase.cs
+  name: IsActive
+  nameWithType: DelegateCommandBase.IsActive
+  fullName: Prism.Commands.DelegateCommandBase.IsActive
+- uid: Prism.Commands.DelegateCommandBase.CanExecuteChanged
+  commentId: E:Prism.Commands.DelegateCommandBase.CanExecuteChanged
+  parent: Prism.Commands.DelegateCommandBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommandBase.cs
+  name: CanExecuteChanged
+  nameWithType: DelegateCommandBase.CanExecuteChanged
+  fullName: Prism.Commands.DelegateCommandBase.CanExecuteChanged
+- uid: Prism.Commands.DelegateCommandBase.IsActiveChanged
+  commentId: E:Prism.Commands.DelegateCommandBase.IsActiveChanged
+  parent: Prism.Commands.DelegateCommandBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommandBase.cs
+  name: IsActiveChanged
+  nameWithType: DelegateCommandBase.IsActiveChanged
+  fullName: Prism.Commands.DelegateCommandBase.IsActiveChanged
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Prism.Commands
+  commentId: N:Prism.Commands
+  isExternal: true
+  name: Prism.Commands
+  nameWithType: Prism.Commands
+  fullName: Prism.Commands
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Commands
+    name: Commands
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Commands
+    name: Commands
+    isExternal: true
+- uid: Prism.Commands.DelegateCommand`1
+  commentId: T:Prism.Commands.DelegateCommand`1
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  name: DelegateCommand<T>
+  nameWithType: DelegateCommand<T>
+  fullName: Prism.Commands.DelegateCommand<T>
+  nameWithType.vb: DelegateCommand(Of T)
+  fullName.vb: Prism.Commands.DelegateCommand(Of T)
+  name.vb: DelegateCommand(Of T)
+  spec.csharp:
+  - uid: Prism.Commands.DelegateCommand`1
+    name: DelegateCommand
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Prism.Commands.DelegateCommand`1
+    name: DelegateCommand
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Input
+    name: Input
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Input
+    name: Input
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input
+- uid: Prism
+  isExternal: true
+- uid: Prism.Commands.DelegateCommand`1.Execute(`0)
+  commentId: M:Prism.Commands.DelegateCommand`1.Execute(`0)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  name: Execute(T)
+  nameWithType: DelegateCommand<T>.Execute(T)
+  fullName: Prism.Commands.DelegateCommand<T>.Execute(T)
+  nameWithType.vb: DelegateCommand(Of T).Execute(T)
+  fullName.vb: Prism.Commands.DelegateCommand(Of T).Execute(T)
+  spec.csharp:
+  - uid: Prism.Commands.DelegateCommand`1.Execute(`0)
+    name: Execute
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Prism.Commands.DelegateCommand`1.Execute(`0)
+    name: Execute
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - name: T
+  - name: )
+- uid: Prism.Commands.DelegateCommand`1.CanExecute(`0)
+  commentId: M:Prism.Commands.DelegateCommand`1.CanExecute(`0)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  name: CanExecute(T)
+  nameWithType: DelegateCommand<T>.CanExecute(T)
+  fullName: Prism.Commands.DelegateCommand<T>.CanExecute(T)
+  nameWithType.vb: DelegateCommand(Of T).CanExecute(T)
+  fullName.vb: Prism.Commands.DelegateCommand(Of T).CanExecute(T)
+  spec.csharp:
+  - uid: Prism.Commands.DelegateCommand`1.CanExecute(`0)
+    name: CanExecute
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Prism.Commands.DelegateCommand`1.CanExecute(`0)
+    name: CanExecute
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - name: T
+  - name: )
+- uid: Prism.Commands.DelegateCommand`1.ObservesProperty``1(System.Linq.Expressions.Expression{System.Func{``0}})
+  commentId: M:Prism.Commands.DelegateCommand`1.ObservesProperty``1(System.Linq.Expressions.Expression{System.Func{``0}})
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  name: ObservesProperty<TType>(Expression<Func<TType>>)
+  nameWithType: DelegateCommand<T>.ObservesProperty<TType>(Expression<Func<TType>>)
+  fullName: Prism.Commands.DelegateCommand<T>.ObservesProperty<TType>(System.Linq.Expressions.Expression<System.Func<TType>>)
+  nameWithType.vb: DelegateCommand(Of T).ObservesProperty(Of TType)(Expression(Of Func(Of TType)))
+  fullName.vb: Prism.Commands.DelegateCommand(Of T).ObservesProperty(Of TType)(System.Linq.Expressions.Expression(Of System.Func(Of TType)))
+  name.vb: ObservesProperty(Of TType)(Expression(Of Func(Of TType)))
+  spec.csharp:
+  - uid: Prism.Commands.DelegateCommand`1.ObservesProperty``1(System.Linq.Expressions.Expression{System.Func{``0}})
+    name: ObservesProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TType
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Prism.Commands.DelegateCommand`1.ObservesProperty``1(System.Linq.Expressions.Expression{System.Func{``0}})
+    name: ObservesProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TType
+  - name: )
+  - name: )
+  - name: )
+- uid: Prism.Commands.DelegateCommand`1.ObservesCanExecute(System.Linq.Expressions.Expression{System.Func{System.Boolean}})
+  commentId: M:Prism.Commands.DelegateCommand`1.ObservesCanExecute(System.Linq.Expressions.Expression{System.Func{System.Boolean}})
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  name: ObservesCanExecute(Expression<Func<bool>>)
+  nameWithType: DelegateCommand<T>.ObservesCanExecute(Expression<Func<bool>>)
+  fullName: Prism.Commands.DelegateCommand<T>.ObservesCanExecute(System.Linq.Expressions.Expression<System.Func<bool>>)
+  nameWithType.vb: DelegateCommand(Of T).ObservesCanExecute(Expression(Of Func(Of Boolean)))
+  fullName.vb: Prism.Commands.DelegateCommand(Of T).ObservesCanExecute(System.Linq.Expressions.Expression(Of System.Func(Of Boolean)))
+  name.vb: ObservesCanExecute(Expression(Of Func(Of Boolean)))
+  spec.csharp:
+  - uid: Prism.Commands.DelegateCommand`1.ObservesCanExecute(System.Linq.Expressions.Expression{System.Func{System.Boolean}})
+    name: ObservesCanExecute
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Prism.Commands.DelegateCommand`1.ObservesCanExecute(System.Linq.Expressions.Expression{System.Func{System.Boolean}})
+    name: ObservesCanExecute
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Commands/DelegateCommand%7BT%7D.cs
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Commands.LogDelegateCommand`1
+  commentId: T:Innova.Prism.Library.Commands.LogDelegateCommand`1
+  href: Innova.Prism.Library.Commands.LogDelegateCommand-1.html
+  name: LogDelegateCommand<T>
+  nameWithType: LogDelegateCommand<T>
+  fullName: Innova.Prism.Library.Commands.LogDelegateCommand<T>
+  nameWithType.vb: LogDelegateCommand(Of T)
+  fullName.vb: Innova.Prism.Library.Commands.LogDelegateCommand(Of T)
+  name.vb: LogDelegateCommand(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Commands.LogDelegateCommand`1
+    name: LogDelegateCommand
+    href: Innova.Prism.Library.Commands.LogDelegateCommand-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Commands.LogDelegateCommand`1
+    name: LogDelegateCommand
+    href: Innova.Prism.Library.Commands.LogDelegateCommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Commands.LogDelegateCommand`1.#ctor*
+  commentId: Overload:Innova.Prism.Library.Commands.LogDelegateCommand`1.#ctor
+  href: Innova.Prism.Library.Commands.LogDelegateCommand-1.-ctor.html#Innova_Prism_Library_Commands_LogDelegateCommand_1__ctor_System_Action__0__System_Func__0_System_Boolean__
+  name: LogDelegateCommand
+  nameWithType: LogDelegateCommand<T>.LogDelegateCommand
+  fullName: Innova.Prism.Library.Commands.LogDelegateCommand<T>.LogDelegateCommand
+  nameWithType.vb: LogDelegateCommand(Of T).New
+  fullName.vb: Innova.Prism.Library.Commands.LogDelegateCommand(Of T).New
+  name.vb: New
+- uid: System.Action{{T}}
+  commentId: T:System.Action{``0}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Func{{T},System.Boolean}
+  commentId: T:System.Func{`0,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, bool>
+  nameWithType: Func<T, bool>
+  fullName: System.Func<T, bool>
+  nameWithType.vb: Func(Of T, Boolean)
+  fullName.vb: System.Func(Of T, Boolean)
+  name.vb: Func(Of T, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+memberLayout: SeparatePages

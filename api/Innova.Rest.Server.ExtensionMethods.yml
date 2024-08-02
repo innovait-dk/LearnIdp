@@ -1,0 +1,402 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Rest.Server.ExtensionMethods
+  commentId: T:Innova.Rest.Server.ExtensionMethods
+  id: ExtensionMethods
+  parent: Innova.Rest.Server
+  children:
+  - Innova.Rest.Server.ExtensionMethods.AddBaseApplicationSecurity``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Innova.Rest.Server.ExtensionMethods.AddRestServer(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Innova.Rest.Server.ExtensionMethods.GetName(System.Security.Claims.ClaimsPrincipal)
+  - Innova.Rest.Server.ExtensionMethods.GetUserId(System.Security.Claims.ClaimsPrincipal)
+  - Innova.Rest.Server.ExtensionMethods.UseRestServer(Microsoft.AspNetCore.Builder.WebApplication)
+  langs:
+  - csharp
+  - vb
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Innova.Rest.Server.ExtensionMethods
+  type: Class
+  source:
+    id: ExtensionMethods
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\ExtensionMethods.cs
+    startLine: 15
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  syntax:
+    content: public static class ExtensionMethods
+    content.vb: Public Module ExtensionMethods
+  inheritance:
+  - System.Object
+- uid: Innova.Rest.Server.ExtensionMethods.GetUserId(System.Security.Claims.ClaimsPrincipal)
+  commentId: M:Innova.Rest.Server.ExtensionMethods.GetUserId(System.Security.Claims.ClaimsPrincipal)
+  id: GetUserId(System.Security.Claims.ClaimsPrincipal)
+  isExtensionMethod: true
+  parent: Innova.Rest.Server.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: GetUserId(ClaimsPrincipal)
+  nameWithType: ExtensionMethods.GetUserId(ClaimsPrincipal)
+  fullName: Innova.Rest.Server.ExtensionMethods.GetUserId(System.Security.Claims.ClaimsPrincipal)
+  type: Method
+  source:
+    id: GetUserId
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\ExtensionMethods.cs
+    startLine: 18
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  syntax:
+    content: public static string GetUserId(this ClaimsPrincipal principal)
+    parameters:
+    - id: principal
+      type: System.Security.Claims.ClaimsPrincipal
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetUserId(principal As ClaimsPrincipal) As String
+  overload: Innova.Rest.Server.ExtensionMethods.GetUserId*
+- uid: Innova.Rest.Server.ExtensionMethods.GetName(System.Security.Claims.ClaimsPrincipal)
+  commentId: M:Innova.Rest.Server.ExtensionMethods.GetName(System.Security.Claims.ClaimsPrincipal)
+  id: GetName(System.Security.Claims.ClaimsPrincipal)
+  isExtensionMethod: true
+  parent: Innova.Rest.Server.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: GetName(ClaimsPrincipal)
+  nameWithType: ExtensionMethods.GetName(ClaimsPrincipal)
+  fullName: Innova.Rest.Server.ExtensionMethods.GetName(System.Security.Claims.ClaimsPrincipal)
+  type: Method
+  source:
+    id: GetName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\ExtensionMethods.cs
+    startLine: 24
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  syntax:
+    content: public static string GetName(this ClaimsPrincipal principal)
+    parameters:
+    - id: principal
+      type: System.Security.Claims.ClaimsPrincipal
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetName(principal As ClaimsPrincipal) As String
+  overload: Innova.Rest.Server.ExtensionMethods.GetName*
+- uid: Innova.Rest.Server.ExtensionMethods.AddBaseApplicationSecurity``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Innova.Rest.Server.ExtensionMethods.AddBaseApplicationSecurity``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddBaseApplicationSecurity``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Innova.Rest.Server.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: AddBaseApplicationSecurity<T>(IServiceCollection)
+  nameWithType: ExtensionMethods.AddBaseApplicationSecurity<T>(IServiceCollection)
+  fullName: Innova.Rest.Server.ExtensionMethods.AddBaseApplicationSecurity<T>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    id: AddBaseApplicationSecurity
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\ExtensionMethods.cs
+    startLine: 30
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  syntax:
+    content: 'public static IServiceCollection AddBaseApplicationSecurity<T>(this IServiceCollection services) where T : class'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    typeParameters:
+    - id: T
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function AddBaseApplicationSecurity(Of T As Class)(services As IServiceCollection) As IServiceCollection
+  overload: Innova.Rest.Server.ExtensionMethods.AddBaseApplicationSecurity*
+  nameWithType.vb: ExtensionMethods.AddBaseApplicationSecurity(Of T)(IServiceCollection)
+  fullName.vb: Innova.Rest.Server.ExtensionMethods.AddBaseApplicationSecurity(Of T)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddBaseApplicationSecurity(Of T)(IServiceCollection)
+- uid: Innova.Rest.Server.ExtensionMethods.UseRestServer(Microsoft.AspNetCore.Builder.WebApplication)
+  commentId: M:Innova.Rest.Server.ExtensionMethods.UseRestServer(Microsoft.AspNetCore.Builder.WebApplication)
+  id: UseRestServer(Microsoft.AspNetCore.Builder.WebApplication)
+  isExtensionMethod: true
+  parent: Innova.Rest.Server.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: UseRestServer(WebApplication)
+  nameWithType: ExtensionMethods.UseRestServer(WebApplication)
+  fullName: Innova.Rest.Server.ExtensionMethods.UseRestServer(Microsoft.AspNetCore.Builder.WebApplication)
+  type: Method
+  source:
+    id: UseRestServer
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\ExtensionMethods.cs
+    startLine: 43
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  syntax:
+    content: public static WebApplication UseRestServer(this WebApplication app)
+    parameters:
+    - id: app
+      type: Microsoft.AspNetCore.Builder.WebApplication
+    return:
+      type: Microsoft.AspNetCore.Builder.WebApplication
+    content.vb: Public Shared Function UseRestServer(app As WebApplication) As WebApplication
+  overload: Innova.Rest.Server.ExtensionMethods.UseRestServer*
+- uid: Innova.Rest.Server.ExtensionMethods.AddRestServer(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Innova.Rest.Server.ExtensionMethods.AddRestServer(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddRestServer(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Innova.Rest.Server.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: AddRestServer(IServiceCollection)
+  nameWithType: ExtensionMethods.AddRestServer(IServiceCollection)
+  fullName: Innova.Rest.Server.ExtensionMethods.AddRestServer(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    id: AddRestServer
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\ExtensionMethods.cs
+    startLine: 56
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  syntax:
+    content: public static IServiceCollection AddRestServer(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function AddRestServer(services As IServiceCollection) As IServiceCollection
+  overload: Innova.Rest.Server.ExtensionMethods.AddRestServer*
+references:
+- uid: Innova.Rest.Server
+  commentId: N:Innova.Rest.Server
+  href: Innova.html
+  name: Innova.Rest.Server
+  nameWithType: Innova.Rest.Server
+  fullName: Innova.Rest.Server
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Server
+    name: Server
+    href: Innova.Rest.Server.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Server
+    name: Server
+    href: Innova.Rest.Server.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Rest.Server.ExtensionMethods.GetUserId*
+  commentId: Overload:Innova.Rest.Server.ExtensionMethods.GetUserId
+  href: Innova.Rest.Server.ExtensionMethods.GetUserId.html#Innova_Rest_Server_ExtensionMethods_GetUserId_System_Security_Claims_ClaimsPrincipal_
+  name: GetUserId
+  nameWithType: ExtensionMethods.GetUserId
+  fullName: Innova.Rest.Server.ExtensionMethods.GetUserId
+- uid: System.Security.Claims.ClaimsPrincipal
+  commentId: T:System.Security.Claims.ClaimsPrincipal
+  parent: System.Security.Claims
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal
+  name: ClaimsPrincipal
+  nameWithType: ClaimsPrincipal
+  fullName: System.Security.Claims.ClaimsPrincipal
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Security.Claims
+  commentId: N:System.Security.Claims
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Security.Claims
+  nameWithType: System.Security.Claims
+  fullName: System.Security.Claims
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Claims
+    name: Claims
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.claims
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Claims
+    name: Claims
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.claims
+- uid: Innova.Rest.Server.ExtensionMethods.GetName*
+  commentId: Overload:Innova.Rest.Server.ExtensionMethods.GetName
+  href: Innova.Rest.Server.ExtensionMethods.GetName.html#Innova_Rest_Server_ExtensionMethods_GetName_System_Security_Claims_ClaimsPrincipal_
+  name: GetName
+  nameWithType: ExtensionMethods.GetName
+  fullName: Innova.Rest.Server.ExtensionMethods.GetName
+- uid: Innova.Rest.Server.ExtensionMethods.AddBaseApplicationSecurity*
+  commentId: Overload:Innova.Rest.Server.ExtensionMethods.AddBaseApplicationSecurity
+  href: Innova.Rest.Server.ExtensionMethods.AddBaseApplicationSecurity.html#Innova_Rest_Server_ExtensionMethods_AddBaseApplicationSecurity__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddBaseApplicationSecurity
+  nameWithType: ExtensionMethods.AddBaseApplicationSecurity
+  fullName: Innova.Rest.Server.ExtensionMethods.AddBaseApplicationSecurity
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: Innova.Rest.Server.ExtensionMethods.UseRestServer*
+  commentId: Overload:Innova.Rest.Server.ExtensionMethods.UseRestServer
+  href: Innova.Rest.Server.ExtensionMethods.UseRestServer.html#Innova_Rest_Server_ExtensionMethods_UseRestServer_Microsoft_AspNetCore_Builder_WebApplication_
+  name: UseRestServer
+  nameWithType: ExtensionMethods.UseRestServer
+  fullName: Innova.Rest.Server.ExtensionMethods.UseRestServer
+- uid: Microsoft.AspNetCore.Builder.WebApplication
+  commentId: T:Microsoft.AspNetCore.Builder.WebApplication
+  parent: Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplication
+  name: WebApplication
+  nameWithType: WebApplication
+  fullName: Microsoft.AspNetCore.Builder.WebApplication
+- uid: Microsoft.AspNetCore.Builder
+  commentId: N:Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder
+- uid: Innova.Rest.Server.ExtensionMethods.AddRestServer*
+  commentId: Overload:Innova.Rest.Server.ExtensionMethods.AddRestServer
+  href: Innova.Rest.Server.ExtensionMethods.AddRestServer.html#Innova_Rest_Server_ExtensionMethods_AddRestServer_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddRestServer
+  nameWithType: ExtensionMethods.AddRestServer
+  fullName: Innova.Rest.Server.ExtensionMethods.AddRestServer
+memberLayout: SeparatePages

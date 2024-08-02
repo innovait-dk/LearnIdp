@@ -1,0 +1,412 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Rest.Server.ICachedUserData
+  commentId: T:Innova.Rest.Server.ICachedUserData
+  id: ICachedUserData
+  parent: Innova.Rest.Server
+  children:
+  - Innova.Rest.Server.ICachedUserData.GetOrCreateAsync``1(System.String,System.Int32,System.Func{System.Threading.Tasks.Task{``0}})
+  - Innova.Rest.Server.ICachedUserData.GetOrCreate``1(System.String,System.Int32,System.Func{``0})
+  - Innova.Rest.Server.ICachedUserData.RemoveCache(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ICachedUserData
+  nameWithType: ICachedUserData
+  fullName: Innova.Rest.Server.ICachedUserData
+  type: Interface
+  source:
+    id: ICachedUserData
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\ICachedUserData.cs
+    startLine: 3
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  syntax:
+    content: public interface ICachedUserData
+    content.vb: Public Interface ICachedUserData
+- uid: Innova.Rest.Server.ICachedUserData.GetOrCreateAsync``1(System.String,System.Int32,System.Func{System.Threading.Tasks.Task{``0}})
+  commentId: M:Innova.Rest.Server.ICachedUserData.GetOrCreateAsync``1(System.String,System.Int32,System.Func{System.Threading.Tasks.Task{``0}})
+  id: GetOrCreateAsync``1(System.String,System.Int32,System.Func{System.Threading.Tasks.Task{``0}})
+  parent: Innova.Rest.Server.ICachedUserData
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreateAsync<T>(string, int, Func<Task<T>>)
+  nameWithType: ICachedUserData.GetOrCreateAsync<T>(string, int, Func<Task<T>>)
+  fullName: Innova.Rest.Server.ICachedUserData.GetOrCreateAsync<T>(string, int, System.Func<System.Threading.Tasks.Task<T>>)
+  type: Method
+  source:
+    id: GetOrCreateAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\ICachedUserData.cs
+    startLine: 5
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  syntax:
+    content: ValueTask<T> GetOrCreateAsync<T>(string cacheKeyPrefix, int cacheTimeoutInMinutes, Func<Task<T>> itemFunc)
+    parameters:
+    - id: cacheKeyPrefix
+      type: System.String
+    - id: cacheTimeoutInMinutes
+      type: System.Int32
+    - id: itemFunc
+      type: System.Func{System.Threading.Tasks.Task{{T}}}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.ValueTask{{T}}
+    content.vb: Function GetOrCreateAsync(Of T)(cacheKeyPrefix As String, cacheTimeoutInMinutes As Integer, itemFunc As Func(Of Task(Of T))) As ValueTask(Of T)
+  overload: Innova.Rest.Server.ICachedUserData.GetOrCreateAsync*
+  nameWithType.vb: ICachedUserData.GetOrCreateAsync(Of T)(String, Integer, Func(Of Task(Of T)))
+  fullName.vb: Innova.Rest.Server.ICachedUserData.GetOrCreateAsync(Of T)(String, Integer, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  name.vb: GetOrCreateAsync(Of T)(String, Integer, Func(Of Task(Of T)))
+- uid: Innova.Rest.Server.ICachedUserData.GetOrCreate``1(System.String,System.Int32,System.Func{``0})
+  commentId: M:Innova.Rest.Server.ICachedUserData.GetOrCreate``1(System.String,System.Int32,System.Func{``0})
+  id: GetOrCreate``1(System.String,System.Int32,System.Func{``0})
+  parent: Innova.Rest.Server.ICachedUserData
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreate<T>(string, int, Func<T>)
+  nameWithType: ICachedUserData.GetOrCreate<T>(string, int, Func<T>)
+  fullName: Innova.Rest.Server.ICachedUserData.GetOrCreate<T>(string, int, System.Func<T>)
+  type: Method
+  source:
+    id: GetOrCreate
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\ICachedUserData.cs
+    startLine: 6
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  syntax:
+    content: T GetOrCreate<T>(string cacheKeyPrefix, int cacheTimeoutInMinutes, Func<T> itemFunc)
+    parameters:
+    - id: cacheKeyPrefix
+      type: System.String
+    - id: cacheTimeoutInMinutes
+      type: System.Int32
+    - id: itemFunc
+      type: System.Func{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Function GetOrCreate(Of T)(cacheKeyPrefix As String, cacheTimeoutInMinutes As Integer, itemFunc As Func(Of T)) As T
+  overload: Innova.Rest.Server.ICachedUserData.GetOrCreate*
+  nameWithType.vb: ICachedUserData.GetOrCreate(Of T)(String, Integer, Func(Of T))
+  fullName.vb: Innova.Rest.Server.ICachedUserData.GetOrCreate(Of T)(String, Integer, System.Func(Of T))
+  name.vb: GetOrCreate(Of T)(String, Integer, Func(Of T))
+- uid: Innova.Rest.Server.ICachedUserData.RemoveCache(System.String,System.String)
+  commentId: M:Innova.Rest.Server.ICachedUserData.RemoveCache(System.String,System.String)
+  id: RemoveCache(System.String,System.String)
+  parent: Innova.Rest.Server.ICachedUserData
+  langs:
+  - csharp
+  - vb
+  name: RemoveCache(string, string)
+  nameWithType: ICachedUserData.RemoveCache(string, string)
+  fullName: Innova.Rest.Server.ICachedUserData.RemoveCache(string, string)
+  type: Method
+  source:
+    id: RemoveCache
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\ICachedUserData.cs
+    startLine: 8
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  syntax:
+    content: void RemoveCache(string cacheKeyPrefix, string userId = null)
+    parameters:
+    - id: cacheKeyPrefix
+      type: System.String
+    - id: userId
+      type: System.String
+    content.vb: Sub RemoveCache(cacheKeyPrefix As String, userId As String = Nothing)
+  overload: Innova.Rest.Server.ICachedUserData.RemoveCache*
+  nameWithType.vb: ICachedUserData.RemoveCache(String, String)
+  fullName.vb: Innova.Rest.Server.ICachedUserData.RemoveCache(String, String)
+  name.vb: RemoveCache(String, String)
+references:
+- uid: Innova.Rest.Server
+  commentId: N:Innova.Rest.Server
+  href: Innova.html
+  name: Innova.Rest.Server
+  nameWithType: Innova.Rest.Server
+  fullName: Innova.Rest.Server
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Server
+    name: Server
+    href: Innova.Rest.Server.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Server
+    name: Server
+    href: Innova.Rest.Server.html
+- uid: Innova.Rest.Server.ICachedUserData.GetOrCreateAsync*
+  commentId: Overload:Innova.Rest.Server.ICachedUserData.GetOrCreateAsync
+  href: Innova.Rest.Server.ICachedUserData.GetOrCreateAsync.html#Innova_Rest_Server_ICachedUserData_GetOrCreateAsync__1_System_String_System_Int32_System_Func_System_Threading_Tasks_Task___0___
+  name: GetOrCreateAsync
+  nameWithType: ICachedUserData.GetOrCreateAsync
+  fullName: Innova.Rest.Server.ICachedUserData.GetOrCreateAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Func{System.Threading.Tasks.Task{{T}}}
+  commentId: T:System.Func{System.Threading.Tasks.Task{``0}}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<Task<T>>
+  nameWithType: Func<Task<T>>
+  fullName: System.Func<System.Threading.Tasks.Task<T>>
+  nameWithType.vb: Func(Of Task(Of T))
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task(Of T))
+  name.vb: Func(Of Task(Of T))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.ValueTask{{T}}
+  commentId: T:System.Threading.Tasks.ValueTask{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<T>
+  nameWithType: ValueTask<T>
+  fullName: System.Threading.Tasks.ValueTask<T>
+  nameWithType.vb: ValueTask(Of T)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of T)
+  name.vb: ValueTask(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Rest.Server.ICachedUserData.GetOrCreate*
+  commentId: Overload:Innova.Rest.Server.ICachedUserData.GetOrCreate
+  href: Innova.Rest.Server.ICachedUserData.GetOrCreate.html#Innova_Rest_Server_ICachedUserData_GetOrCreate__1_System_String_System_Int32_System_Func___0__
+  name: GetOrCreate
+  nameWithType: ICachedUserData.GetOrCreate
+  fullName: Innova.Rest.Server.ICachedUserData.GetOrCreate
+- uid: System.Func{{T}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<T>
+  nameWithType: Func<T>
+  fullName: System.Func<T>
+  nameWithType.vb: Func(Of T)
+  fullName.vb: System.Func(Of T)
+  name.vb: Func(Of T)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Innova.Rest.Server.ICachedUserData.RemoveCache*
+  commentId: Overload:Innova.Rest.Server.ICachedUserData.RemoveCache
+  href: Innova.Rest.Server.ICachedUserData.RemoveCache.html#Innova_Rest_Server_ICachedUserData_RemoveCache_System_String_System_String_
+  name: RemoveCache
+  nameWithType: ICachedUserData.RemoveCache
+  fullName: Innova.Rest.Server.ICachedUserData.RemoveCache
+memberLayout: SeparatePages

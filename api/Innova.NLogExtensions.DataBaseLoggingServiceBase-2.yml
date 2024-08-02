@@ -1,0 +1,673 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+  commentId: T:Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+  id: DataBaseLoggingServiceBase`2
+  parent: Innova.NLogExtensions
+  children:
+  - Innova.NLogExtensions.DataBaseLoggingServiceBase`2.#ctor(Innova.Data.IDbContextFactory{`1})
+  - Innova.NLogExtensions.DataBaseLoggingServiceBase`2.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  - Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(NLog.LogEventInfo)
+  - Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(System.Collections.Generic.List{NLog.LogEventInfo})
+  - Innova.NLogExtensions.DataBaseLoggingServiceBase`2._dbContextFactory
+  langs:
+  - csharp
+  - vb
+  name: DataBaseLoggingServiceBase<T, TContext>
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>
+  type: Class
+  source:
+    id: DataBaseLoggingServiceBase
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\DataBaseLoggingServiceBase.cs
+    startLine: 16
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Base class for database logging service.
+  example: []
+  syntax:
+    content: 'public abstract class DataBaseLoggingServiceBase<T, TContext> : IDataBaseLoggingService where T : class where TContext : DbContext'
+    typeParameters:
+    - id: T
+      description: The type of log entity.
+    - id: TContext
+      description: The type of database context.
+    content.vb: Public MustInherit Class DataBaseLoggingServiceBase(Of T As Class, TContext As DbContext) Implements IDataBaseLoggingService
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Innova.NLogExtensions.DataBaseLoggingService
+  implements:
+  - Innova.NLogExtensions.IDataBaseLoggingService
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext)
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext)
+  name.vb: DataBaseLoggingServiceBase(Of T, TContext)
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2._dbContextFactory
+  commentId: F:Innova.NLogExtensions.DataBaseLoggingServiceBase`2._dbContextFactory
+  id: _dbContextFactory
+  parent: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+  langs:
+  - csharp
+  - vb
+  name: _dbContextFactory
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>._dbContextFactory
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>._dbContextFactory
+  type: Field
+  source:
+    id: _dbContextFactory
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\DataBaseLoggingServiceBase.cs
+    startLine: 21
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: The database context factory.
+  example: []
+  syntax:
+    content: protected readonly IDbContextFactory<TContext> _dbContextFactory
+    return:
+      type: Innova.Data.IDbContextFactory{{TContext}}
+    content.vb: Protected ReadOnly _dbContextFactory As IDbContextFactory(Of TContext)
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext)._dbContextFactory
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext)._dbContextFactory
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.#ctor(Innova.Data.IDbContextFactory{`1})
+  commentId: M:Innova.NLogExtensions.DataBaseLoggingServiceBase`2.#ctor(Innova.Data.IDbContextFactory{`1})
+  id: '#ctor(Innova.Data.IDbContextFactory{`1})'
+  parent: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+  langs:
+  - csharp
+  - vb
+  name: DataBaseLoggingServiceBase(IDbContextFactory<TContext>)
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>.DataBaseLoggingServiceBase(IDbContextFactory<TContext>)
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>.DataBaseLoggingServiceBase(Innova.Data.IDbContextFactory<TContext>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\DataBaseLoggingServiceBase.cs
+    startLine: 27
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Initializes a new instance of the <xref href="Innova.NLogExtensions.DataBaseLoggingServiceBase%602" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public DataBaseLoggingServiceBase(IDbContextFactory<TContext> dbContextFactory)
+    parameters:
+    - id: dbContextFactory
+      type: Innova.Data.IDbContextFactory{{TContext}}
+      description: The database context factory.
+    content.vb: Public Sub New(dbContextFactory As IDbContextFactory(Of TContext))
+  overload: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.#ctor*
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext).New(IDbContextFactory(Of TContext))
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext).New(Innova.Data.IDbContextFactory(Of TContext))
+  name.vb: New(IDbContextFactory(Of TContext))
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  commentId: M:Innova.NLogExtensions.DataBaseLoggingServiceBase`2.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  id: LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  parent: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+  langs:
+  - csharp
+  - vb
+  name: LogAsync(List<LogEventInfo>, CancellationToken)
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>.LogAsync(List<LogEventInfo>, CancellationToken)
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>.LogAsync(System.Collections.Generic.List<NLog.LogEventInfo>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: LogAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\DataBaseLoggingServiceBase.cs
+    startLine: 38
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Logs the list of log events asynchronously.
+  example: []
+  syntax:
+    content: public Task LogAsync(List<LogEventInfo> logEvents, CancellationToken cancellationToken)
+    parameters:
+    - id: logEvents
+      type: System.Collections.Generic.List{NLog.LogEventInfo}
+      description: The list of log events to be logged.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Public Function LogAsync(logEvents As List(Of LogEventInfo), cancellationToken As CancellationToken) As Task
+  overload: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.LogAsync*
+  implements:
+  - Innova.NLogExtensions.IDataBaseLoggingService.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext).LogAsync(List(Of LogEventInfo), CancellationToken)
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext).LogAsync(System.Collections.Generic.List(Of NLog.LogEventInfo), System.Threading.CancellationToken)
+  name.vb: LogAsync(List(Of LogEventInfo), CancellationToken)
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(System.Collections.Generic.List{NLog.LogEventInfo})
+  commentId: M:Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(System.Collections.Generic.List{NLog.LogEventInfo})
+  id: Map(System.Collections.Generic.List{NLog.LogEventInfo})
+  parent: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+  langs:
+  - csharp
+  - vb
+  name: Map(List<LogEventInfo>)
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>.Map(List<LogEventInfo>)
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>.Map(System.Collections.Generic.List<NLog.LogEventInfo>)
+  type: Method
+  source:
+    id: Map
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\DataBaseLoggingServiceBase.cs
+    startLine: 59
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Maps the list of log events to the list of log entities.
+  example: []
+  syntax:
+    content: protected virtual List<T> Map(List<LogEventInfo> logEvents)
+    parameters:
+    - id: logEvents
+      type: System.Collections.Generic.List{NLog.LogEventInfo}
+      description: The list of log events to be mapped.
+    return:
+      type: System.Collections.Generic.List{{T}}
+      description: The list of log entities.
+    content.vb: Protected Overridable Function Map(logEvents As List(Of LogEventInfo)) As List(Of T)
+  overload: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map*
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext).Map(List(Of LogEventInfo))
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext).Map(System.Collections.Generic.List(Of NLog.LogEventInfo))
+  name.vb: Map(List(Of LogEventInfo))
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(NLog.LogEventInfo)
+  commentId: M:Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map(NLog.LogEventInfo)
+  id: Map(NLog.LogEventInfo)
+  parent: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+  langs:
+  - csharp
+  - vb
+  name: Map(LogEventInfo)
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>.Map(LogEventInfo)
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>.Map(NLog.LogEventInfo)
+  type: Method
+  source:
+    id: Map
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\DataBaseLoggingServiceBase.cs
+    startLine: 69
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Maps the log event to the log entity.
+  example: []
+  syntax:
+    content: protected abstract T Map(LogEventInfo logEvent)
+    parameters:
+    - id: logEvent
+      type: NLog.LogEventInfo
+      description: The log event to be mapped.
+    return:
+      type: '{T}'
+      description: The log entity.
+    content.vb: Protected MustOverride Function Map(logEvent As LogEventInfo) As T
+  overload: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map*
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext).Map(LogEventInfo)
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext).Map(NLog.LogEventInfo)
+references:
+- uid: Innova.NLogExtensions
+  commentId: N:Innova.NLogExtensions
+  href: Innova.html
+  name: Innova.NLogExtensions
+  nameWithType: Innova.NLogExtensions
+  fullName: Innova.NLogExtensions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.NLogExtensions
+    name: NLogExtensions
+    href: Innova.NLogExtensions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.NLogExtensions
+    name: NLogExtensions
+    href: Innova.NLogExtensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.NLogExtensions.IDataBaseLoggingService
+  commentId: T:Innova.NLogExtensions.IDataBaseLoggingService
+  parent: Innova.NLogExtensions
+  href: Innova.NLogExtensions.IDataBaseLoggingService.html
+  name: IDataBaseLoggingService
+  nameWithType: IDataBaseLoggingService
+  fullName: Innova.NLogExtensions.IDataBaseLoggingService
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.IDbContextFactory{{TContext}}
+  commentId: T:Innova.Data.IDbContextFactory{`0}
+  parent: Innova.Data
+  definition: Innova.Data.IDbContextFactory`1
+  href: Innova.Data.IDbContextFactory-1.html
+  name: IDbContextFactory<TContext>
+  nameWithType: IDbContextFactory<TContext>
+  fullName: Innova.Data.IDbContextFactory<TContext>
+  nameWithType.vb: IDbContextFactory(Of TContext)
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext)
+  name.vb: IDbContextFactory(Of TContext)
+  spec.csharp:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+    href: Innova.Data.IDbContextFactory-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+    href: Innova.Data.IDbContextFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Innova.Data.IDbContextFactory`1
+  commentId: T:Innova.Data.IDbContextFactory`1
+  href: Innova.Data.IDbContextFactory-1.html
+  name: IDbContextFactory<TContext>
+  nameWithType: IDbContextFactory<TContext>
+  fullName: Innova.Data.IDbContextFactory<TContext>
+  nameWithType.vb: IDbContextFactory(Of TContext)
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext)
+  name.vb: IDbContextFactory(Of TContext)
+  spec.csharp:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+    href: Innova.Data.IDbContextFactory-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.IDbContextFactory`1
+    name: IDbContextFactory
+    href: Innova.Data.IDbContextFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Innova.Data
+  commentId: N:Innova.Data
+  href: Innova.html
+  name: Innova.Data
+  nameWithType: Innova.Data
+  fullName: Innova.Data
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+  commentId: T:Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+  href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.html
+  name: DataBaseLoggingServiceBase<T, TContext>
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext)
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext)
+  name.vb: DataBaseLoggingServiceBase(Of T, TContext)
+  spec.csharp:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+    name: DataBaseLoggingServiceBase
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2
+    name: DataBaseLoggingServiceBase
+    href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.#ctor*
+  commentId: Overload:Innova.NLogExtensions.DataBaseLoggingServiceBase`2.#ctor
+  href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.-ctor.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2__ctor_Innova_Data_IDbContextFactory__1__
+  name: DataBaseLoggingServiceBase
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>.DataBaseLoggingServiceBase
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>.DataBaseLoggingServiceBase
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext).New
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext).New
+  name.vb: New
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.LogAsync*
+  commentId: Overload:Innova.NLogExtensions.DataBaseLoggingServiceBase`2.LogAsync
+  href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.LogAsync.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_LogAsync_System_Collections_Generic_List_NLog_LogEventInfo__System_Threading_CancellationToken_
+  name: LogAsync
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>.LogAsync
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>.LogAsync
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext).LogAsync
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext).LogAsync
+- uid: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  commentId: M:Innova.NLogExtensions.IDataBaseLoggingService.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  parent: Innova.NLogExtensions.IDataBaseLoggingService
+  isExternal: true
+  href: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync.html#Innova_NLogExtensions_IDataBaseLoggingService_LogAsync_System_Collections_Generic_List_NLog_LogEventInfo__System_Threading_CancellationToken_
+  name: LogAsync(List<LogEventInfo>, CancellationToken)
+  nameWithType: IDataBaseLoggingService.LogAsync(List<LogEventInfo>, CancellationToken)
+  fullName: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync(System.Collections.Generic.List<NLog.LogEventInfo>, System.Threading.CancellationToken)
+  nameWithType.vb: IDataBaseLoggingService.LogAsync(List(Of LogEventInfo), CancellationToken)
+  fullName.vb: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync(System.Collections.Generic.List(Of NLog.LogEventInfo), System.Threading.CancellationToken)
+  name.vb: LogAsync(List(Of LogEventInfo), CancellationToken)
+  spec.csharp:
+  - uid: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+    name: LogAsync
+    href: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync.html#Innova_NLogExtensions_IDataBaseLoggingService_LogAsync_System_Collections_Generic_List_NLog_LogEventInfo__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+    name: LogAsync
+    href: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync.html#Innova_NLogExtensions_IDataBaseLoggingService_LogAsync_System_Collections_Generic_List_NLog_LogEventInfo__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Collections.Generic.List{NLog.LogEventInfo}
+  commentId: T:System.Collections.Generic.List{NLog.LogEventInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LogEventInfo>
+  nameWithType: List<LogEventInfo>
+  fullName: System.Collections.Generic.List<NLog.LogEventInfo>
+  nameWithType.vb: List(Of LogEventInfo)
+  fullName.vb: System.Collections.Generic.List(Of NLog.LogEventInfo)
+  name.vb: List(Of LogEventInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map*
+  commentId: Overload:Innova.NLogExtensions.DataBaseLoggingServiceBase`2.Map
+  href: Innova.NLogExtensions.DataBaseLoggingServiceBase-2.Map.html#Innova_NLogExtensions_DataBaseLoggingServiceBase_2_Map_System_Collections_Generic_List_NLog_LogEventInfo__
+  name: Map
+  nameWithType: DataBaseLoggingServiceBase<T, TContext>.Map
+  fullName: Innova.NLogExtensions.DataBaseLoggingServiceBase<T, TContext>.Map
+  nameWithType.vb: DataBaseLoggingServiceBase(Of T, TContext).Map
+  fullName.vb: Innova.NLogExtensions.DataBaseLoggingServiceBase(Of T, TContext).Map
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NLog.LogEventInfo
+  commentId: T:NLog.LogEventInfo
+  parent: NLog
+  isExternal: true
+  name: LogEventInfo
+  nameWithType: LogEventInfo
+  fullName: NLog.LogEventInfo
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: NLog
+  commentId: N:NLog
+  isExternal: true
+  name: NLog
+  nameWithType: NLog
+  fullName: NLog
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+memberLayout: SeparatePages

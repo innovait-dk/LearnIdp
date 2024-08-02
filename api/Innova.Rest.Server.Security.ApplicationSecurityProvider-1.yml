@@ -1,0 +1,574 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Rest.Server.Security.ApplicationSecurityProvider`1
+  commentId: T:Innova.Rest.Server.Security.ApplicationSecurityProvider`1
+  id: ApplicationSecurityProvider`1
+  parent: Innova.Rest.Server.Security
+  children:
+  - Innova.Rest.Server.Security.ApplicationSecurityProvider`1.#ctor(Innova.Rest.Server.ICachedUserData,Innova.Rest.Server.Security.ISecurityBuilderFactory{`0},Microsoft.Extensions.Options.IOptions{Innova.Rest.Server.Security.ServerApplicationSecurityOptions})
+  - Innova.Rest.Server.Security.ApplicationSecurityProvider`1.ClearUserCache(System.String)
+  - Innova.Rest.Server.Security.ApplicationSecurityProvider`1.GetCurrentUserApplicationSecurity
+  langs:
+  - csharp
+  - vb
+  name: ApplicationSecurityProvider<T>
+  nameWithType: ApplicationSecurityProvider<T>
+  fullName: Innova.Rest.Server.Security.ApplicationSecurityProvider<T>
+  type: Class
+  source:
+    id: ApplicationSecurityProvider
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Security\ApplicationSecurityProvider.cs
+    startLine: 6
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server.Security
+  syntax:
+    content: 'public class ApplicationSecurityProvider<T> : IApplicationSecurityProvider<T> where T : class'
+    typeParameters:
+    - id: T
+    content.vb: Public Class ApplicationSecurityProvider(Of T As Class) Implements IApplicationSecurityProvider(Of T)
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Rest.Server.Security.IApplicationSecurityProvider{{T}}
+  nameWithType.vb: ApplicationSecurityProvider(Of T)
+  fullName.vb: Innova.Rest.Server.Security.ApplicationSecurityProvider(Of T)
+  name.vb: ApplicationSecurityProvider(Of T)
+- uid: Innova.Rest.Server.Security.ApplicationSecurityProvider`1.#ctor(Innova.Rest.Server.ICachedUserData,Innova.Rest.Server.Security.ISecurityBuilderFactory{`0},Microsoft.Extensions.Options.IOptions{Innova.Rest.Server.Security.ServerApplicationSecurityOptions})
+  commentId: M:Innova.Rest.Server.Security.ApplicationSecurityProvider`1.#ctor(Innova.Rest.Server.ICachedUserData,Innova.Rest.Server.Security.ISecurityBuilderFactory{`0},Microsoft.Extensions.Options.IOptions{Innova.Rest.Server.Security.ServerApplicationSecurityOptions})
+  id: '#ctor(Innova.Rest.Server.ICachedUserData,Innova.Rest.Server.Security.ISecurityBuilderFactory{`0},Microsoft.Extensions.Options.IOptions{Innova.Rest.Server.Security.ServerApplicationSecurityOptions})'
+  parent: Innova.Rest.Server.Security.ApplicationSecurityProvider`1
+  langs:
+  - csharp
+  - vb
+  name: ApplicationSecurityProvider(ICachedUserData, ISecurityBuilderFactory<T>, IOptions<ServerApplicationSecurityOptions>)
+  nameWithType: ApplicationSecurityProvider<T>.ApplicationSecurityProvider(ICachedUserData, ISecurityBuilderFactory<T>, IOptions<ServerApplicationSecurityOptions>)
+  fullName: Innova.Rest.Server.Security.ApplicationSecurityProvider<T>.ApplicationSecurityProvider(Innova.Rest.Server.ICachedUserData, Innova.Rest.Server.Security.ISecurityBuilderFactory<T>, Microsoft.Extensions.Options.IOptions<Innova.Rest.Server.Security.ServerApplicationSecurityOptions>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Security\ApplicationSecurityProvider.cs
+    startLine: 15
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server.Security
+  syntax:
+    content: public ApplicationSecurityProvider(ICachedUserData cachedUserData, ISecurityBuilderFactory<T> securityBulderFactory, IOptions<ServerApplicationSecurityOptions> options)
+    parameters:
+    - id: cachedUserData
+      type: Innova.Rest.Server.ICachedUserData
+    - id: securityBulderFactory
+      type: Innova.Rest.Server.Security.ISecurityBuilderFactory{{T}}
+    - id: options
+      type: Microsoft.Extensions.Options.IOptions{Innova.Rest.Server.Security.ServerApplicationSecurityOptions}
+    content.vb: Public Sub New(cachedUserData As ICachedUserData, securityBulderFactory As ISecurityBuilderFactory(Of T), options As IOptions(Of ServerApplicationSecurityOptions))
+  overload: Innova.Rest.Server.Security.ApplicationSecurityProvider`1.#ctor*
+  nameWithType.vb: ApplicationSecurityProvider(Of T).New(ICachedUserData, ISecurityBuilderFactory(Of T), IOptions(Of ServerApplicationSecurityOptions))
+  fullName.vb: Innova.Rest.Server.Security.ApplicationSecurityProvider(Of T).New(Innova.Rest.Server.ICachedUserData, Innova.Rest.Server.Security.ISecurityBuilderFactory(Of T), Microsoft.Extensions.Options.IOptions(Of Innova.Rest.Server.Security.ServerApplicationSecurityOptions))
+  name.vb: New(ICachedUserData, ISecurityBuilderFactory(Of T), IOptions(Of ServerApplicationSecurityOptions))
+- uid: Innova.Rest.Server.Security.ApplicationSecurityProvider`1.GetCurrentUserApplicationSecurity
+  commentId: M:Innova.Rest.Server.Security.ApplicationSecurityProvider`1.GetCurrentUserApplicationSecurity
+  id: GetCurrentUserApplicationSecurity
+  parent: Innova.Rest.Server.Security.ApplicationSecurityProvider`1
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentUserApplicationSecurity()
+  nameWithType: ApplicationSecurityProvider<T>.GetCurrentUserApplicationSecurity()
+  fullName: Innova.Rest.Server.Security.ApplicationSecurityProvider<T>.GetCurrentUserApplicationSecurity()
+  type: Method
+  source:
+    id: GetCurrentUserApplicationSecurity
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Security\ApplicationSecurityProvider.cs
+    startLine: 31
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server.Security
+  example: []
+  syntax:
+    content: public T GetCurrentUserApplicationSecurity()
+    return:
+      type: '{T}'
+    content.vb: Public Function GetCurrentUserApplicationSecurity() As T
+  overload: Innova.Rest.Server.Security.ApplicationSecurityProvider`1.GetCurrentUserApplicationSecurity*
+  implements:
+  - Innova.Rest.Server.Security.IApplicationSecurityProvider{{T}}.GetCurrentUserApplicationSecurity
+  nameWithType.vb: ApplicationSecurityProvider(Of T).GetCurrentUserApplicationSecurity()
+  fullName.vb: Innova.Rest.Server.Security.ApplicationSecurityProvider(Of T).GetCurrentUserApplicationSecurity()
+- uid: Innova.Rest.Server.Security.ApplicationSecurityProvider`1.ClearUserCache(System.String)
+  commentId: M:Innova.Rest.Server.Security.ApplicationSecurityProvider`1.ClearUserCache(System.String)
+  id: ClearUserCache(System.String)
+  parent: Innova.Rest.Server.Security.ApplicationSecurityProvider`1
+  langs:
+  - csharp
+  - vb
+  name: ClearUserCache(string)
+  nameWithType: ApplicationSecurityProvider<T>.ClearUserCache(string)
+  fullName: Innova.Rest.Server.Security.ApplicationSecurityProvider<T>.ClearUserCache(string)
+  type: Method
+  source:
+    id: ClearUserCache
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Security\ApplicationSecurityProvider.cs
+    startLine: 57
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server.Security
+  example: []
+  syntax:
+    content: public void ClearUserCache(string userId = null)
+    parameters:
+    - id: userId
+      type: System.String
+    content.vb: Public Sub ClearUserCache(userId As String = Nothing)
+  overload: Innova.Rest.Server.Security.ApplicationSecurityProvider`1.ClearUserCache*
+  implements:
+  - Innova.Rest.Server.Security.IApplicationSecurityProvider{{T}}.ClearUserCache(System.String)
+  nameWithType.vb: ApplicationSecurityProvider(Of T).ClearUserCache(String)
+  fullName.vb: Innova.Rest.Server.Security.ApplicationSecurityProvider(Of T).ClearUserCache(String)
+  name.vb: ClearUserCache(String)
+references:
+- uid: Innova.Rest.Server.Security
+  commentId: N:Innova.Rest.Server.Security
+  href: Innova.html
+  name: Innova.Rest.Server.Security
+  nameWithType: Innova.Rest.Server.Security
+  fullName: Innova.Rest.Server.Security
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Server
+    name: Server
+    href: Innova.Rest.Server.html
+  - name: .
+  - uid: Innova.Rest.Server.Security
+    name: Security
+    href: Innova.Rest.Server.Security.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Server
+    name: Server
+    href: Innova.Rest.Server.html
+  - name: .
+  - uid: Innova.Rest.Server.Security
+    name: Security
+    href: Innova.Rest.Server.Security.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Rest.Server.Security.IApplicationSecurityProvider{{T}}
+  commentId: T:Innova.Rest.Server.Security.IApplicationSecurityProvider{`0}
+  parent: Innova.Rest.Server.Security
+  definition: Innova.Rest.Server.Security.IApplicationSecurityProvider`1
+  href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.html
+  name: IApplicationSecurityProvider<T>
+  nameWithType: IApplicationSecurityProvider<T>
+  fullName: Innova.Rest.Server.Security.IApplicationSecurityProvider<T>
+  nameWithType.vb: IApplicationSecurityProvider(Of T)
+  fullName.vb: Innova.Rest.Server.Security.IApplicationSecurityProvider(Of T)
+  name.vb: IApplicationSecurityProvider(Of T)
+  spec.csharp:
+  - uid: Innova.Rest.Server.Security.IApplicationSecurityProvider`1
+    name: IApplicationSecurityProvider
+    href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Rest.Server.Security.IApplicationSecurityProvider`1
+    name: IApplicationSecurityProvider
+    href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Rest.Server.Security.IApplicationSecurityProvider`1
+  commentId: T:Innova.Rest.Server.Security.IApplicationSecurityProvider`1
+  href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.html
+  name: IApplicationSecurityProvider<T>
+  nameWithType: IApplicationSecurityProvider<T>
+  fullName: Innova.Rest.Server.Security.IApplicationSecurityProvider<T>
+  nameWithType.vb: IApplicationSecurityProvider(Of T)
+  fullName.vb: Innova.Rest.Server.Security.IApplicationSecurityProvider(Of T)
+  name.vb: IApplicationSecurityProvider(Of T)
+  spec.csharp:
+  - uid: Innova.Rest.Server.Security.IApplicationSecurityProvider`1
+    name: IApplicationSecurityProvider
+    href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Rest.Server.Security.IApplicationSecurityProvider`1
+    name: IApplicationSecurityProvider
+    href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Rest.Server.Security.ApplicationSecurityProvider`1.#ctor*
+  commentId: Overload:Innova.Rest.Server.Security.ApplicationSecurityProvider`1.#ctor
+  href: Innova.Rest.Server.Security.ApplicationSecurityProvider-1.-ctor.html#Innova_Rest_Server_Security_ApplicationSecurityProvider_1__ctor_Innova_Rest_Server_ICachedUserData_Innova_Rest_Server_Security_ISecurityBuilderFactory__0__Microsoft_Extensions_Options_IOptions_Innova_Rest_Server_Security_ServerApplicationSecurityOptions__
+  name: ApplicationSecurityProvider
+  nameWithType: ApplicationSecurityProvider<T>.ApplicationSecurityProvider
+  fullName: Innova.Rest.Server.Security.ApplicationSecurityProvider<T>.ApplicationSecurityProvider
+  nameWithType.vb: ApplicationSecurityProvider(Of T).New
+  fullName.vb: Innova.Rest.Server.Security.ApplicationSecurityProvider(Of T).New
+  name.vb: New
+- uid: Innova.Rest.Server.ICachedUserData
+  commentId: T:Innova.Rest.Server.ICachedUserData
+  parent: Innova.Rest.Server
+  href: Innova.Rest.Server.ICachedUserData.html
+  name: ICachedUserData
+  nameWithType: ICachedUserData
+  fullName: Innova.Rest.Server.ICachedUserData
+- uid: Innova.Rest.Server.Security.ISecurityBuilderFactory{{T}}
+  commentId: T:Innova.Rest.Server.Security.ISecurityBuilderFactory{`0}
+  parent: Innova.Rest.Server.Security
+  definition: Innova.Rest.Server.Security.ISecurityBuilderFactory`1
+  href: Innova.Rest.Server.Security.ISecurityBuilderFactory-1.html
+  name: ISecurityBuilderFactory<T>
+  nameWithType: ISecurityBuilderFactory<T>
+  fullName: Innova.Rest.Server.Security.ISecurityBuilderFactory<T>
+  nameWithType.vb: ISecurityBuilderFactory(Of T)
+  fullName.vb: Innova.Rest.Server.Security.ISecurityBuilderFactory(Of T)
+  name.vb: ISecurityBuilderFactory(Of T)
+  spec.csharp:
+  - uid: Innova.Rest.Server.Security.ISecurityBuilderFactory`1
+    name: ISecurityBuilderFactory
+    href: Innova.Rest.Server.Security.ISecurityBuilderFactory-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Rest.Server.Security.ISecurityBuilderFactory`1
+    name: ISecurityBuilderFactory
+    href: Innova.Rest.Server.Security.ISecurityBuilderFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Extensions.Options.IOptions{Innova.Rest.Server.Security.ServerApplicationSecurityOptions}
+  commentId: T:Microsoft.Extensions.Options.IOptions{Innova.Rest.Server.Security.ServerApplicationSecurityOptions}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<ServerApplicationSecurityOptions>
+  nameWithType: IOptions<ServerApplicationSecurityOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<Innova.Rest.Server.Security.ServerApplicationSecurityOptions>
+  nameWithType.vb: IOptions(Of ServerApplicationSecurityOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of Innova.Rest.Server.Security.ServerApplicationSecurityOptions)
+  name.vb: IOptions(Of ServerApplicationSecurityOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: Innova.Rest.Server.Security.ServerApplicationSecurityOptions
+    name: ServerApplicationSecurityOptions
+    href: Innova.Rest.Server.Security.ServerApplicationSecurityOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Rest.Server.Security.ServerApplicationSecurityOptions
+    name: ServerApplicationSecurityOptions
+    href: Innova.Rest.Server.Security.ServerApplicationSecurityOptions.html
+  - name: )
+- uid: Innova.Rest.Server
+  commentId: N:Innova.Rest.Server
+  href: Innova.html
+  name: Innova.Rest.Server
+  nameWithType: Innova.Rest.Server
+  fullName: Innova.Rest.Server
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Server
+    name: Server
+    href: Innova.Rest.Server.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Server
+    name: Server
+    href: Innova.Rest.Server.html
+- uid: Innova.Rest.Server.Security.ISecurityBuilderFactory`1
+  commentId: T:Innova.Rest.Server.Security.ISecurityBuilderFactory`1
+  href: Innova.Rest.Server.Security.ISecurityBuilderFactory-1.html
+  name: ISecurityBuilderFactory<T>
+  nameWithType: ISecurityBuilderFactory<T>
+  fullName: Innova.Rest.Server.Security.ISecurityBuilderFactory<T>
+  nameWithType.vb: ISecurityBuilderFactory(Of T)
+  fullName.vb: Innova.Rest.Server.Security.ISecurityBuilderFactory(Of T)
+  name.vb: ISecurityBuilderFactory(Of T)
+  spec.csharp:
+  - uid: Innova.Rest.Server.Security.ISecurityBuilderFactory`1
+    name: ISecurityBuilderFactory
+    href: Innova.Rest.Server.Security.ISecurityBuilderFactory-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Rest.Server.Security.ISecurityBuilderFactory`1
+    name: ISecurityBuilderFactory
+    href: Innova.Rest.Server.Security.ISecurityBuilderFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+- uid: Innova.Rest.Server.Security.ApplicationSecurityProvider`1.GetCurrentUserApplicationSecurity*
+  commentId: Overload:Innova.Rest.Server.Security.ApplicationSecurityProvider`1.GetCurrentUserApplicationSecurity
+  href: Innova.Rest.Server.Security.ApplicationSecurityProvider-1.GetCurrentUserApplicationSecurity.html#Innova_Rest_Server_Security_ApplicationSecurityProvider_1_GetCurrentUserApplicationSecurity
+  name: GetCurrentUserApplicationSecurity
+  nameWithType: ApplicationSecurityProvider<T>.GetCurrentUserApplicationSecurity
+  fullName: Innova.Rest.Server.Security.ApplicationSecurityProvider<T>.GetCurrentUserApplicationSecurity
+  nameWithType.vb: ApplicationSecurityProvider(Of T).GetCurrentUserApplicationSecurity
+  fullName.vb: Innova.Rest.Server.Security.ApplicationSecurityProvider(Of T).GetCurrentUserApplicationSecurity
+- uid: Innova.Rest.Server.Security.IApplicationSecurityProvider{{T}}.GetCurrentUserApplicationSecurity
+  commentId: M:Innova.Rest.Server.Security.IApplicationSecurityProvider{`0}.GetCurrentUserApplicationSecurity
+  parent: Innova.Rest.Server.Security.IApplicationSecurityProvider{{T}}
+  definition: Innova.Rest.Server.Security.IApplicationSecurityProvider`1.GetCurrentUserApplicationSecurity
+  href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.GetCurrentUserApplicationSecurity.html#Innova_Rest_Server_Security_IApplicationSecurityProvider_1_GetCurrentUserApplicationSecurity
+  name: GetCurrentUserApplicationSecurity()
+  nameWithType: IApplicationSecurityProvider<T>.GetCurrentUserApplicationSecurity()
+  fullName: Innova.Rest.Server.Security.IApplicationSecurityProvider<T>.GetCurrentUserApplicationSecurity()
+  nameWithType.vb: IApplicationSecurityProvider(Of T).GetCurrentUserApplicationSecurity()
+  fullName.vb: Innova.Rest.Server.Security.IApplicationSecurityProvider(Of T).GetCurrentUserApplicationSecurity()
+  spec.csharp:
+  - uid: Innova.Rest.Server.Security.IApplicationSecurityProvider{`0}.GetCurrentUserApplicationSecurity
+    name: GetCurrentUserApplicationSecurity
+    href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.GetCurrentUserApplicationSecurity.html#Innova_Rest_Server_Security_IApplicationSecurityProvider_1_GetCurrentUserApplicationSecurity
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Rest.Server.Security.IApplicationSecurityProvider{`0}.GetCurrentUserApplicationSecurity
+    name: GetCurrentUserApplicationSecurity
+    href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.GetCurrentUserApplicationSecurity.html#Innova_Rest_Server_Security_IApplicationSecurityProvider_1_GetCurrentUserApplicationSecurity
+  - name: (
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Innova.Rest.Server.Security.IApplicationSecurityProvider`1.GetCurrentUserApplicationSecurity
+  commentId: M:Innova.Rest.Server.Security.IApplicationSecurityProvider`1.GetCurrentUserApplicationSecurity
+  href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.GetCurrentUserApplicationSecurity.html#Innova_Rest_Server_Security_IApplicationSecurityProvider_1_GetCurrentUserApplicationSecurity
+  name: GetCurrentUserApplicationSecurity()
+  nameWithType: IApplicationSecurityProvider<T>.GetCurrentUserApplicationSecurity()
+  fullName: Innova.Rest.Server.Security.IApplicationSecurityProvider<T>.GetCurrentUserApplicationSecurity()
+  nameWithType.vb: IApplicationSecurityProvider(Of T).GetCurrentUserApplicationSecurity()
+  fullName.vb: Innova.Rest.Server.Security.IApplicationSecurityProvider(Of T).GetCurrentUserApplicationSecurity()
+  spec.csharp:
+  - uid: Innova.Rest.Server.Security.IApplicationSecurityProvider`1.GetCurrentUserApplicationSecurity
+    name: GetCurrentUserApplicationSecurity
+    href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.GetCurrentUserApplicationSecurity.html#Innova_Rest_Server_Security_IApplicationSecurityProvider_1_GetCurrentUserApplicationSecurity
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Rest.Server.Security.IApplicationSecurityProvider`1.GetCurrentUserApplicationSecurity
+    name: GetCurrentUserApplicationSecurity
+    href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.GetCurrentUserApplicationSecurity.html#Innova_Rest_Server_Security_IApplicationSecurityProvider_1_GetCurrentUserApplicationSecurity
+  - name: (
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Innova.Rest.Server.Security.ApplicationSecurityProvider`1.ClearUserCache*
+  commentId: Overload:Innova.Rest.Server.Security.ApplicationSecurityProvider`1.ClearUserCache
+  href: Innova.Rest.Server.Security.ApplicationSecurityProvider-1.ClearUserCache.html#Innova_Rest_Server_Security_ApplicationSecurityProvider_1_ClearUserCache_System_String_
+  name: ClearUserCache
+  nameWithType: ApplicationSecurityProvider<T>.ClearUserCache
+  fullName: Innova.Rest.Server.Security.ApplicationSecurityProvider<T>.ClearUserCache
+  nameWithType.vb: ApplicationSecurityProvider(Of T).ClearUserCache
+  fullName.vb: Innova.Rest.Server.Security.ApplicationSecurityProvider(Of T).ClearUserCache
+- uid: Innova.Rest.Server.Security.IApplicationSecurityProvider{{T}}.ClearUserCache(System.String)
+  commentId: M:Innova.Rest.Server.Security.IApplicationSecurityProvider{`0}.ClearUserCache(System.String)
+  parent: Innova.Rest.Server.Security.IApplicationSecurityProvider{{T}}
+  definition: Innova.Rest.Server.Security.IApplicationSecurityProvider`1.ClearUserCache(System.String)
+  href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.ClearUserCache.html#Innova_Rest_Server_Security_IApplicationSecurityProvider_1_ClearUserCache_System_String_
+  name: ClearUserCache(string)
+  nameWithType: IApplicationSecurityProvider<T>.ClearUserCache(string)
+  fullName: Innova.Rest.Server.Security.IApplicationSecurityProvider<T>.ClearUserCache(string)
+  nameWithType.vb: IApplicationSecurityProvider(Of T).ClearUserCache(String)
+  fullName.vb: Innova.Rest.Server.Security.IApplicationSecurityProvider(Of T).ClearUserCache(String)
+  name.vb: ClearUserCache(String)
+  spec.csharp:
+  - uid: Innova.Rest.Server.Security.IApplicationSecurityProvider{`0}.ClearUserCache(System.String)
+    name: ClearUserCache
+    href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.ClearUserCache.html#Innova_Rest_Server_Security_IApplicationSecurityProvider_1_ClearUserCache_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Rest.Server.Security.IApplicationSecurityProvider{`0}.ClearUserCache(System.String)
+    name: ClearUserCache
+    href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.ClearUserCache.html#Innova_Rest_Server_Security_IApplicationSecurityProvider_1_ClearUserCache_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Rest.Server.Security.IApplicationSecurityProvider`1.ClearUserCache(System.String)
+  commentId: M:Innova.Rest.Server.Security.IApplicationSecurityProvider`1.ClearUserCache(System.String)
+  isExternal: true
+  href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.ClearUserCache.html#Innova_Rest_Server_Security_IApplicationSecurityProvider_1_ClearUserCache_System_String_
+  name: ClearUserCache(string)
+  nameWithType: IApplicationSecurityProvider<T>.ClearUserCache(string)
+  fullName: Innova.Rest.Server.Security.IApplicationSecurityProvider<T>.ClearUserCache(string)
+  nameWithType.vb: IApplicationSecurityProvider(Of T).ClearUserCache(String)
+  fullName.vb: Innova.Rest.Server.Security.IApplicationSecurityProvider(Of T).ClearUserCache(String)
+  name.vb: ClearUserCache(String)
+  spec.csharp:
+  - uid: Innova.Rest.Server.Security.IApplicationSecurityProvider`1.ClearUserCache(System.String)
+    name: ClearUserCache
+    href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.ClearUserCache.html#Innova_Rest_Server_Security_IApplicationSecurityProvider_1_ClearUserCache_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Rest.Server.Security.IApplicationSecurityProvider`1.ClearUserCache(System.String)
+    name: ClearUserCache
+    href: Innova.Rest.Server.Security.IApplicationSecurityProvider-1.ClearUserCache.html#Innova_Rest_Server_Security_IApplicationSecurityProvider_1_ClearUserCache_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+memberLayout: SeparatePages

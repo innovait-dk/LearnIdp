@@ -1,0 +1,422 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.ClassDefinitions.SingleInstance`1
+  commentId: T:Innova.Prism.Library.ClassDefinitions.SingleInstance`1
+  id: SingleInstance`1
+  parent: Innova.Prism.Library.ClassDefinitions
+  children:
+  - Innova.Prism.Library.ClassDefinitions.SingleInstance`1.Cleanup
+  - Innova.Prism.Library.ClassDefinitions.SingleInstance`1.CommandLineArgs
+  - Innova.Prism.Library.ClassDefinitions.SingleInstance`1.InitializeAsFirstInstance(System.String)
+  langs:
+  - csharp
+  - vb
+  name: SingleInstance<TApplication>
+  nameWithType: SingleInstance<TApplication>
+  fullName: Innova.Prism.Library.ClassDefinitions.SingleInstance<TApplication>
+  type: Class
+  source:
+    id: SingleInstance
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\SingleInstance.cs
+    startLine: 33
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Represents a static class for managing single instance applications.
+  example: []
+  syntax:
+    content: 'public static class SingleInstance<TApplication> where TApplication : Application, ISingleInstanceApp'
+    typeParameters:
+    - id: TApplication
+      description: The type of the application.
+    content.vb: Public Module SingleInstance(Of TApplication As {Application, ISingleInstanceApp})
+  inheritance:
+  - System.Object
+  nameWithType.vb: SingleInstance(Of TApplication)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.SingleInstance(Of TApplication)
+  name.vb: SingleInstance(Of TApplication)
+- uid: Innova.Prism.Library.ClassDefinitions.SingleInstance`1.CommandLineArgs
+  commentId: P:Innova.Prism.Library.ClassDefinitions.SingleInstance`1.CommandLineArgs
+  id: CommandLineArgs
+  parent: Innova.Prism.Library.ClassDefinitions.SingleInstance`1
+  langs:
+  - csharp
+  - vb
+  name: CommandLineArgs
+  nameWithType: SingleInstance<TApplication>.CommandLineArgs
+  fullName: Innova.Prism.Library.ClassDefinitions.SingleInstance<TApplication>.CommandLineArgs
+  type: Property
+  source:
+    id: CommandLineArgs
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\SingleInstance.cs
+    startLine: 55
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Gets the list of command line arguments for the application.
+  example: []
+  syntax:
+    content: public static IList<string> CommandLineArgs { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.String}
+    content.vb: Public Shared ReadOnly Property CommandLineArgs As IList(Of String)
+  overload: Innova.Prism.Library.ClassDefinitions.SingleInstance`1.CommandLineArgs*
+  nameWithType.vb: SingleInstance(Of TApplication).CommandLineArgs
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.SingleInstance(Of TApplication).CommandLineArgs
+- uid: Innova.Prism.Library.ClassDefinitions.SingleInstance`1.InitializeAsFirstInstance(System.String)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.SingleInstance`1.InitializeAsFirstInstance(System.String)
+  id: InitializeAsFirstInstance(System.String)
+  parent: Innova.Prism.Library.ClassDefinitions.SingleInstance`1
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsFirstInstance(string)
+  nameWithType: SingleInstance<TApplication>.InitializeAsFirstInstance(string)
+  fullName: Innova.Prism.Library.ClassDefinitions.SingleInstance<TApplication>.InitializeAsFirstInstance(string)
+  type: Method
+  source:
+    id: InitializeAsFirstInstance
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\SingleInstance.cs
+    startLine: 70
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: >-
+    Checks if the instance of the application attempting to start is the first instance. 
+
+    If not, activates the first instance.
+  example: []
+  syntax:
+    content: public static Task<bool> InitializeAsFirstInstance(string uniqueName)
+    parameters:
+    - id: uniqueName
+      type: System.String
+      description: The unique name of the application.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: True if this is the first instance of the application; otherwise, false.
+    content.vb: Public Shared Function InitializeAsFirstInstance(uniqueName As String) As Task(Of Boolean)
+  overload: Innova.Prism.Library.ClassDefinitions.SingleInstance`1.InitializeAsFirstInstance*
+  nameWithType.vb: SingleInstance(Of TApplication).InitializeAsFirstInstance(String)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.SingleInstance(Of TApplication).InitializeAsFirstInstance(String)
+  name.vb: InitializeAsFirstInstance(String)
+- uid: Innova.Prism.Library.ClassDefinitions.SingleInstance`1.Cleanup
+  commentId: M:Innova.Prism.Library.ClassDefinitions.SingleInstance`1.Cleanup
+  id: Cleanup
+  parent: Innova.Prism.Library.ClassDefinitions.SingleInstance`1
+  langs:
+  - csharp
+  - vb
+  name: Cleanup()
+  nameWithType: SingleInstance<TApplication>.Cleanup()
+  fullName: Innova.Prism.Library.ClassDefinitions.SingleInstance<TApplication>.Cleanup()
+  type: Method
+  source:
+    id: Cleanup
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\SingleInstance.cs
+    startLine: 104
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Cleans up single-instance code, clearing shared resources, mutexes, etc.
+  example: []
+  syntax:
+    content: public static void Cleanup()
+    content.vb: Public Shared Sub Cleanup()
+  overload: Innova.Prism.Library.ClassDefinitions.SingleInstance`1.Cleanup*
+  nameWithType.vb: SingleInstance(Of TApplication).Cleanup()
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.SingleInstance(Of TApplication).Cleanup()
+references:
+- uid: Innova.Prism.Library.ClassDefinitions
+  commentId: N:Innova.Prism.Library.ClassDefinitions
+  href: Innova.html
+  name: Innova.Prism.Library.ClassDefinitions
+  nameWithType: Innova.Prism.Library.ClassDefinitions
+  fullName: Innova.Prism.Library.ClassDefinitions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Library.ClassDefinitions.SingleInstance`1.CommandLineArgs*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.SingleInstance`1.CommandLineArgs
+  href: Innova.Prism.Library.ClassDefinitions.SingleInstance-1.CommandLineArgs.html#Innova_Prism_Library_ClassDefinitions_SingleInstance_1_CommandLineArgs
+  name: CommandLineArgs
+  nameWithType: SingleInstance<TApplication>.CommandLineArgs
+  fullName: Innova.Prism.Library.ClassDefinitions.SingleInstance<TApplication>.CommandLineArgs
+  nameWithType.vb: SingleInstance(Of TApplication).CommandLineArgs
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.SingleInstance(Of TApplication).CommandLineArgs
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<string>
+  nameWithType: IList<string>
+  fullName: System.Collections.Generic.IList<string>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Prism.Library.ClassDefinitions.SingleInstance`1.InitializeAsFirstInstance*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.SingleInstance`1.InitializeAsFirstInstance
+  href: Innova.Prism.Library.ClassDefinitions.SingleInstance-1.InitializeAsFirstInstance.html#Innova_Prism_Library_ClassDefinitions_SingleInstance_1_InitializeAsFirstInstance_System_String_
+  name: InitializeAsFirstInstance
+  nameWithType: SingleInstance<TApplication>.InitializeAsFirstInstance
+  fullName: Innova.Prism.Library.ClassDefinitions.SingleInstance<TApplication>.InitializeAsFirstInstance
+  nameWithType.vb: SingleInstance(Of TApplication).InitializeAsFirstInstance
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.SingleInstance(Of TApplication).InitializeAsFirstInstance
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Prism.Library.ClassDefinitions.SingleInstance`1.Cleanup*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.SingleInstance`1.Cleanup
+  href: Innova.Prism.Library.ClassDefinitions.SingleInstance-1.Cleanup.html#Innova_Prism_Library_ClassDefinitions_SingleInstance_1_Cleanup
+  name: Cleanup
+  nameWithType: SingleInstance<TApplication>.Cleanup
+  fullName: Innova.Prism.Library.ClassDefinitions.SingleInstance<TApplication>.Cleanup
+  nameWithType.vb: SingleInstance(Of TApplication).Cleanup
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.SingleInstance(Of TApplication).Cleanup
+memberLayout: SeparatePages

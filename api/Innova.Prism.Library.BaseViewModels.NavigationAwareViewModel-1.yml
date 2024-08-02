@@ -1,0 +1,885 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+  commentId: T:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+  id: NavigationAwareViewModel`1
+  parent: Innova.Prism.Library.BaseViewModels
+  children:
+  - Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.LeavingView
+  - Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.NavigationStateChanged
+  - Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  - Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.OnNavigatedTo(Prism.Regions.NavigationParameters)
+  - Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ParentNavigationState
+  - Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.PreviousNavigationState
+  - Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ViewState
+  langs:
+  - csharp
+  - vb
+  name: NavigationAwareViewModel<TState>
+  nameWithType: NavigationAwareViewModel<TState>
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>
+  type: Class
+  source:
+    id: NavigationAwareViewModel
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseNavigationAwareViewModel.cs
+    startLine: 29
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: 'public abstract class NavigationAwareViewModel<TState> : BindableBase, INotifyPropertyChanged, INavigationAwareViewModel<TState> where TState : NavigationState'
+    typeParameters:
+    - id: TState
+    content.vb: Public MustInherit Class NavigationAwareViewModel(Of TState As NavigationState) Inherits BindableBase Implements INotifyPropertyChanged, INavigationAwareViewModel(Of TState)
+  inheritance:
+  - System.Object
+  - Prism.Mvvm.BindableBase
+  derivedClasses:
+  - Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel
+  - Innova.Prism.Library.StructuredSearch.EntitySearchViewModel`1
+  - Innova.Prism.Library.StructuredSearch.Views.BaseStructuredSearchViewModel`1
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel{{TState}}
+  inheritedMembers:
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  - Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  - Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  - Prism.Mvvm.BindableBase.PropertyChanged
+  nameWithType.vb: NavigationAwareViewModel(Of TState)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState)
+  name.vb: NavigationAwareViewModel(Of TState)
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ViewState
+  commentId: P:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ViewState
+  id: ViewState
+  parent: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: ViewState
+  nameWithType: NavigationAwareViewModel<TState>.ViewState
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.ViewState
+  type: Property
+  source:
+    id: ViewState
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseNavigationAwareViewModel.cs
+    startLine: 32
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public ViewState ViewState { get; set; }
+    parameters: []
+    return:
+      type: Innova.Prism.Infrastructure.Views.ViewState
+    content.vb: Public Property ViewState As ViewState
+  overload: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ViewState*
+  nameWithType.vb: NavigationAwareViewModel(Of TState).ViewState
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).ViewState
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.PreviousNavigationState
+  commentId: P:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.PreviousNavigationState
+  id: PreviousNavigationState
+  parent: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: PreviousNavigationState
+  nameWithType: NavigationAwareViewModel<TState>.PreviousNavigationState
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.PreviousNavigationState
+  type: Property
+  source:
+    id: PreviousNavigationState
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseNavigationAwareViewModel.cs
+    startLine: 47
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected TState PreviousNavigationState { get; set; }
+    parameters: []
+    return:
+      type: '{TState}'
+    content.vb: Protected Property PreviousNavigationState As TState
+  overload: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.PreviousNavigationState*
+  nameWithType.vb: NavigationAwareViewModel(Of TState).PreviousNavigationState
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).PreviousNavigationState
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ParentNavigationState
+  commentId: P:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ParentNavigationState
+  id: ParentNavigationState
+  parent: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: ParentNavigationState
+  nameWithType: NavigationAwareViewModel<TState>.ParentNavigationState
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.ParentNavigationState
+  type: Property
+  source:
+    id: ParentNavigationState
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseNavigationAwareViewModel.cs
+    startLine: 51
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  example: []
+  syntax:
+    content: public TState ParentNavigationState { get; set; }
+    parameters: []
+    return:
+      type: '{TState}'
+    content.vb: Public Property ParentNavigationState As TState
+  overload: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ParentNavigationState*
+  implements:
+  - Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel{{TState}}.ParentNavigationState
+  nameWithType.vb: NavigationAwareViewModel(Of TState).ParentNavigationState
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).ParentNavigationState
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.NavigationStateChanged
+  commentId: M:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.NavigationStateChanged
+  id: NavigationStateChanged
+  parent: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: NavigationStateChanged()
+  nameWithType: NavigationAwareViewModel<TState>.NavigationStateChanged()
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.NavigationStateChanged()
+  type: Method
+  source:
+    id: NavigationStateChanged
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseNavigationAwareViewModel.cs
+    startLine: 93
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual void NavigationStateChanged()
+    content.vb: Protected Overridable Sub NavigationStateChanged()
+  overload: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.NavigationStateChanged*
+  nameWithType.vb: NavigationAwareViewModel(Of TState).NavigationStateChanged()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).NavigationStateChanged()
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  commentId: M:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  id: OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  parent: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: OnNavigatedFrom(NavigationParameters)
+  nameWithType: NavigationAwareViewModel<TState>.OnNavigatedFrom(NavigationParameters)
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.OnNavigatedFrom(Prism.Regions.NavigationParameters)
+  type: Method
+  source:
+    id: OnNavigatedFrom
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseNavigationAwareViewModel.cs
+    startLine: 98
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public virtual void OnNavigatedFrom(NavigationParameters NavigationParameters)
+    parameters:
+    - id: NavigationParameters
+      type: Prism.Regions.NavigationParameters
+    content.vb: Public Overridable Sub OnNavigatedFrom(NavigationParameters As NavigationParameters)
+  overload: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.OnNavigatedFrom*
+  nameWithType.vb: NavigationAwareViewModel(Of TState).OnNavigatedFrom(NavigationParameters)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).OnNavigatedFrom(Prism.Regions.NavigationParameters)
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.OnNavigatedTo(Prism.Regions.NavigationParameters)
+  commentId: M:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.OnNavigatedTo(Prism.Regions.NavigationParameters)
+  id: OnNavigatedTo(Prism.Regions.NavigationParameters)
+  parent: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: OnNavigatedTo(NavigationParameters)
+  nameWithType: NavigationAwareViewModel<TState>.OnNavigatedTo(NavigationParameters)
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.OnNavigatedTo(Prism.Regions.NavigationParameters)
+  type: Method
+  source:
+    id: OnNavigatedTo
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseNavigationAwareViewModel.cs
+    startLine: 110
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public virtual void OnNavigatedTo(NavigationParameters NavigationParameters)
+    parameters:
+    - id: NavigationParameters
+      type: Prism.Regions.NavigationParameters
+    content.vb: Public Overridable Sub OnNavigatedTo(NavigationParameters As NavigationParameters)
+  overload: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.OnNavigatedTo*
+  nameWithType.vb: NavigationAwareViewModel(Of TState).OnNavigatedTo(NavigationParameters)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).OnNavigatedTo(Prism.Regions.NavigationParameters)
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.LeavingView
+  commentId: M:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.LeavingView
+  id: LeavingView
+  parent: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: LeavingView()
+  nameWithType: NavigationAwareViewModel<TState>.LeavingView()
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.LeavingView()
+  type: Method
+  source:
+    id: LeavingView
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseNavigationAwareViewModel.cs
+    startLine: 115
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual void LeavingView()
+    content.vb: Protected Overridable Sub LeavingView()
+  overload: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.LeavingView*
+  nameWithType.vb: NavigationAwareViewModel(Of TState).LeavingView()
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).LeavingView()
+references:
+- uid: Innova.Prism.Library.BaseViewModels
+  commentId: N:Innova.Prism.Library.BaseViewModels
+  href: Innova.html
+  name: Innova.Prism.Library.BaseViewModels
+  nameWithType: Innova.Prism.Library.BaseViewModels
+  fullName: Innova.Prism.Library.BaseViewModels
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.BaseViewModels
+    name: BaseViewModels
+    href: Innova.Prism.Library.BaseViewModels.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.BaseViewModels
+    name: BaseViewModels
+    href: Innova.Prism.Library.BaseViewModels.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Prism.Mvvm.BindableBase
+  commentId: T:Prism.Mvvm.BindableBase
+  parent: Prism.Mvvm
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: BindableBase
+  nameWithType: BindableBase
+  fullName: Prism.Mvvm.BindableBase
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel{{TState}}
+  commentId: T:Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel{`0}
+  parent: Innova.Prism.Library.BaseViewModels
+  definition: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1
+  href: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel-1.html
+  name: INavigationAwareViewModel<TState>
+  nameWithType: INavigationAwareViewModel<TState>
+  fullName: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel<TState>
+  nameWithType.vb: INavigationAwareViewModel(Of TState)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel(Of TState)
+  name.vb: INavigationAwareViewModel(Of TState)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1
+    name: INavigationAwareViewModel
+    href: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel-1.html
+  - name: <
+  - name: TState
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1
+    name: INavigationAwareViewModel
+    href: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  commentId: M:Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: RaisePropertyChanged(string)
+  nameWithType: BindableBase.RaisePropertyChanged(string)
+  fullName: Prism.Mvvm.BindableBase.RaisePropertyChanged(string)
+  nameWithType.vb: BindableBase.RaisePropertyChanged(String)
+  fullName.vb: Prism.Mvvm.BindableBase.RaisePropertyChanged(String)
+  name.vb: RaisePropertyChanged(String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: OnPropertyChanged(PropertyChangedEventArgs)
+  nameWithType: BindableBase.OnPropertyChanged(PropertyChangedEventArgs)
+  fullName: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: Prism.Mvvm.BindableBase.PropertyChanged
+  commentId: E:Prism.Mvvm.BindableBase.PropertyChanged
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: PropertyChanged
+  nameWithType: BindableBase.PropertyChanged
+  fullName: Prism.Mvvm.BindableBase.PropertyChanged
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Prism.Mvvm
+  commentId: N:Prism.Mvvm
+  isExternal: true
+  name: Prism.Mvvm
+  nameWithType: Prism.Mvvm
+  fullName: Prism.Mvvm
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1
+  commentId: T:Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1
+  href: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel-1.html
+  name: INavigationAwareViewModel<TState>
+  nameWithType: INavigationAwareViewModel<TState>
+  fullName: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel<TState>
+  nameWithType.vb: INavigationAwareViewModel(Of TState)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel(Of TState)
+  name.vb: INavigationAwareViewModel(Of TState)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1
+    name: INavigationAwareViewModel
+    href: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel-1.html
+  - name: <
+  - name: TState
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1
+    name: INavigationAwareViewModel
+    href: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ViewState*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ViewState
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.ViewState.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_ViewState
+  name: ViewState
+  nameWithType: NavigationAwareViewModel<TState>.ViewState
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.ViewState
+  nameWithType.vb: NavigationAwareViewModel(Of TState).ViewState
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).ViewState
+- uid: Innova.Prism.Infrastructure.Views.ViewState
+  commentId: T:Innova.Prism.Infrastructure.Views.ViewState
+  parent: Innova.Prism.Infrastructure.Views
+  href: Innova.Prism.Infrastructure.Views.ViewState.html
+  name: ViewState
+  nameWithType: ViewState
+  fullName: Innova.Prism.Infrastructure.Views.ViewState
+- uid: Innova.Prism.Infrastructure.Views
+  commentId: N:Innova.Prism.Infrastructure.Views
+  href: Innova.html
+  name: Innova.Prism.Infrastructure.Views
+  nameWithType: Innova.Prism.Infrastructure.Views
+  fullName: Innova.Prism.Infrastructure.Views
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure
+    name: Infrastructure
+    href: Innova.Prism.Infrastructure.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure.Views
+    name: Views
+    href: Innova.Prism.Infrastructure.Views.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure
+    name: Infrastructure
+    href: Innova.Prism.Infrastructure.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure.Views
+    name: Views
+    href: Innova.Prism.Infrastructure.Views.html
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.PreviousNavigationState*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.PreviousNavigationState
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.PreviousNavigationState.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_PreviousNavigationState
+  name: PreviousNavigationState
+  nameWithType: NavigationAwareViewModel<TState>.PreviousNavigationState
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.PreviousNavigationState
+  nameWithType.vb: NavigationAwareViewModel(Of TState).PreviousNavigationState
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).PreviousNavigationState
+- uid: '{TState}'
+  commentId: '!:TState'
+  definition: TState
+  name: TState
+  nameWithType: TState
+  fullName: TState
+- uid: TState
+  name: TState
+  nameWithType: TState
+  fullName: TState
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ParentNavigationState*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.ParentNavigationState
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.ParentNavigationState.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_ParentNavigationState
+  name: ParentNavigationState
+  nameWithType: NavigationAwareViewModel<TState>.ParentNavigationState
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.ParentNavigationState
+  nameWithType.vb: NavigationAwareViewModel(Of TState).ParentNavigationState
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).ParentNavigationState
+- uid: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel{{TState}}.ParentNavigationState
+  commentId: P:Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel{`0}.ParentNavigationState
+  parent: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel{{TState}}
+  definition: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1.ParentNavigationState
+  href: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel-1.ParentNavigationState.html#Innova_Prism_Library_BaseViewModels_INavigationAwareViewModel_1_ParentNavigationState
+  name: ParentNavigationState
+  nameWithType: INavigationAwareViewModel<TState>.ParentNavigationState
+  fullName: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel<TState>.ParentNavigationState
+  nameWithType.vb: INavigationAwareViewModel(Of TState).ParentNavigationState
+  fullName.vb: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel(Of TState).ParentNavigationState
+- uid: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1.ParentNavigationState
+  commentId: P:Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel`1.ParentNavigationState
+  href: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel-1.ParentNavigationState.html#Innova_Prism_Library_BaseViewModels_INavigationAwareViewModel_1_ParentNavigationState
+  name: ParentNavigationState
+  nameWithType: INavigationAwareViewModel<TState>.ParentNavigationState
+  fullName: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel<TState>.ParentNavigationState
+  nameWithType.vb: INavigationAwareViewModel(Of TState).ParentNavigationState
+  fullName.vb: Innova.Prism.Library.BaseViewModels.INavigationAwareViewModel(Of TState).ParentNavigationState
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.NavigationStateChanged*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.NavigationStateChanged
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.NavigationStateChanged.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_NavigationStateChanged
+  name: NavigationStateChanged
+  nameWithType: NavigationAwareViewModel<TState>.NavigationStateChanged
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.NavigationStateChanged
+  nameWithType.vb: NavigationAwareViewModel(Of TState).NavigationStateChanged
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).NavigationStateChanged
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.OnNavigatedFrom*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.OnNavigatedFrom
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.OnNavigatedFrom.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_OnNavigatedFrom_Prism_Regions_NavigationParameters_
+  name: OnNavigatedFrom
+  nameWithType: NavigationAwareViewModel<TState>.OnNavigatedFrom
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.OnNavigatedFrom
+  nameWithType.vb: NavigationAwareViewModel(Of TState).OnNavigatedFrom
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).OnNavigatedFrom
+- uid: Prism.Regions.NavigationParameters
+  commentId: T:Prism.Regions.NavigationParameters
+  parent: Prism.Regions
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationParameters.cs
+  name: NavigationParameters
+  nameWithType: NavigationParameters
+  fullName: Prism.Regions.NavigationParameters
+- uid: Prism.Regions
+  commentId: N:Prism.Regions
+  href: Prism.html
+  name: Prism.Regions
+  nameWithType: Prism.Regions
+  fullName: Prism.Regions
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Regions
+    name: Regions
+    href: Prism.Regions.html
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Regions
+    name: Regions
+    href: Prism.Regions.html
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.OnNavigatedTo*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.OnNavigatedTo
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.OnNavigatedTo.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_OnNavigatedTo_Prism_Regions_NavigationParameters_
+  name: OnNavigatedTo
+  nameWithType: NavigationAwareViewModel<TState>.OnNavigatedTo
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.OnNavigatedTo
+  nameWithType.vb: NavigationAwareViewModel(Of TState).OnNavigatedTo
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).OnNavigatedTo
+- uid: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.LeavingView*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel`1.LeavingView
+  href: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel-1.LeavingView.html#Innova_Prism_Library_BaseViewModels_NavigationAwareViewModel_1_LeavingView
+  name: LeavingView
+  nameWithType: NavigationAwareViewModel<TState>.LeavingView
+  fullName: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel<TState>.LeavingView
+  nameWithType.vb: NavigationAwareViewModel(Of TState).LeavingView
+  fullName.vb: Innova.Prism.Library.BaseViewModels.NavigationAwareViewModel(Of TState).LeavingView
+memberLayout: SeparatePages

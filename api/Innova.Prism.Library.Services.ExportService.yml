@@ -1,0 +1,700 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Services.ExportService
+  commentId: T:Innova.Prism.Library.Services.ExportService
+  id: ExportService
+  parent: Innova.Prism.Library.Services
+  children:
+  - Innova.Prism.Library.Services.ExportService.#ctor(Innova.Prism.Library.Services.IWindowDialogService,Prism.Events.IEventAggregator,Innova.Data.File.IFileService)
+  - Innova.Prism.Library.Services.ExportService.ExportShowToHtml(System.Data.DataTable,System.Collections.Generic.IEnumerable{Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView})
+  - Innova.Prism.Library.Services.ExportService.ExportToCsv(System.Data.DataTable)
+  - Innova.Prism.Library.Services.ExportService.ExportToXlsx(System.Data.DataTable)
+  - Innova.Prism.Library.Services.ExportService.ExportToXlsxInterop(System.Data.DataTable)
+  langs:
+  - csharp
+  - vb
+  name: ExportService
+  nameWithType: ExportService
+  fullName: Innova.Prism.Library.Services.ExportService
+  type: Class
+  source:
+    id: ExportService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ExportService.cs
+    startLine: 27
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Service class for exporting data to various formats.
+  example: []
+  syntax:
+    content: 'public class ExportService : IExportService'
+    content.vb: Public Class ExportService Implements IExportService
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Prism.Library.Services.IExportService
+- uid: Innova.Prism.Library.Services.ExportService.#ctor(Innova.Prism.Library.Services.IWindowDialogService,Prism.Events.IEventAggregator,Innova.Data.File.IFileService)
+  commentId: M:Innova.Prism.Library.Services.ExportService.#ctor(Innova.Prism.Library.Services.IWindowDialogService,Prism.Events.IEventAggregator,Innova.Data.File.IFileService)
+  id: '#ctor(Innova.Prism.Library.Services.IWindowDialogService,Prism.Events.IEventAggregator,Innova.Data.File.IFileService)'
+  parent: Innova.Prism.Library.Services.ExportService
+  langs:
+  - csharp
+  - vb
+  name: ExportService(IWindowDialogService, IEventAggregator, IFileService)
+  nameWithType: ExportService.ExportService(IWindowDialogService, IEventAggregator, IFileService)
+  fullName: Innova.Prism.Library.Services.ExportService.ExportService(Innova.Prism.Library.Services.IWindowDialogService, Prism.Events.IEventAggregator, Innova.Data.File.IFileService)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ExportService.cs
+    startLine: 43
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Services.ExportService" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public ExportService(IWindowDialogService windowDialogService, IEventAggregator eventAggregator, IFileService fileService)
+    parameters:
+    - id: windowDialogService
+      type: Innova.Prism.Library.Services.IWindowDialogService
+      description: The window dialog service.
+    - id: eventAggregator
+      type: Prism.Events.IEventAggregator
+      description: The event aggregator.
+    - id: fileService
+      type: Innova.Data.File.IFileService
+      description: The file service.
+    content.vb: Public Sub New(windowDialogService As IWindowDialogService, eventAggregator As IEventAggregator, fileService As IFileService)
+  overload: Innova.Prism.Library.Services.ExportService.#ctor*
+  nameWithType.vb: ExportService.New(IWindowDialogService, IEventAggregator, IFileService)
+  fullName.vb: Innova.Prism.Library.Services.ExportService.New(Innova.Prism.Library.Services.IWindowDialogService, Prism.Events.IEventAggregator, Innova.Data.File.IFileService)
+  name.vb: New(IWindowDialogService, IEventAggregator, IFileService)
+- uid: Innova.Prism.Library.Services.ExportService.ExportToCsv(System.Data.DataTable)
+  commentId: M:Innova.Prism.Library.Services.ExportService.ExportToCsv(System.Data.DataTable)
+  id: ExportToCsv(System.Data.DataTable)
+  parent: Innova.Prism.Library.Services.ExportService
+  langs:
+  - csharp
+  - vb
+  name: ExportToCsv(DataTable)
+  nameWithType: ExportService.ExportToCsv(DataTable)
+  fullName: Innova.Prism.Library.Services.ExportService.ExportToCsv(System.Data.DataTable)
+  type: Method
+  source:
+    id: ExportToCsv
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ExportService.cs
+    startLine: 61
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Exports the specified DataTable to a CSV file.
+  example: []
+  syntax:
+    content: public Task ExportToCsv(DataTable dataTable)
+    parameters:
+    - id: dataTable
+      type: System.Data.DataTable
+      description: The DataTable to export.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Public Function ExportToCsv(dataTable As DataTable) As Task
+  overload: Innova.Prism.Library.Services.ExportService.ExportToCsv*
+  implements:
+  - Innova.Prism.Library.Services.IExportService.ExportToCsv(System.Data.DataTable)
+- uid: Innova.Prism.Library.Services.ExportService.ExportToXlsx(System.Data.DataTable)
+  commentId: M:Innova.Prism.Library.Services.ExportService.ExportToXlsx(System.Data.DataTable)
+  id: ExportToXlsx(System.Data.DataTable)
+  parent: Innova.Prism.Library.Services.ExportService
+  langs:
+  - csharp
+  - vb
+  name: ExportToXlsx(DataTable)
+  nameWithType: ExportService.ExportToXlsx(DataTable)
+  fullName: Innova.Prism.Library.Services.ExportService.ExportToXlsx(System.Data.DataTable)
+  type: Method
+  source:
+    id: ExportToXlsx
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ExportService.cs
+    startLine: 79
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Exports the specified DataTable to an XLSX file.
+  example: []
+  syntax:
+    content: public Task ExportToXlsx(DataTable dataTable)
+    parameters:
+    - id: dataTable
+      type: System.Data.DataTable
+      description: The DataTable to export.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Public Function ExportToXlsx(dataTable As DataTable) As Task
+  overload: Innova.Prism.Library.Services.ExportService.ExportToXlsx*
+  implements:
+  - Innova.Prism.Library.Services.IExportService.ExportToXlsx(System.Data.DataTable)
+- uid: Innova.Prism.Library.Services.ExportService.ExportToXlsxInterop(System.Data.DataTable)
+  commentId: M:Innova.Prism.Library.Services.ExportService.ExportToXlsxInterop(System.Data.DataTable)
+  id: ExportToXlsxInterop(System.Data.DataTable)
+  parent: Innova.Prism.Library.Services.ExportService
+  langs:
+  - csharp
+  - vb
+  name: ExportToXlsxInterop(DataTable)
+  nameWithType: ExportService.ExportToXlsxInterop(DataTable)
+  fullName: Innova.Prism.Library.Services.ExportService.ExportToXlsxInterop(System.Data.DataTable)
+  type: Method
+  source:
+    id: ExportToXlsxInterop
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ExportService.cs
+    startLine: 109
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Exports the specified DataTable to an XLSX file using Interop.
+  example: []
+  syntax:
+    content: public Task ExportToXlsxInterop(DataTable dataTable)
+    parameters:
+    - id: dataTable
+      type: System.Data.DataTable
+      description: The DataTable to export.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Public Function ExportToXlsxInterop(dataTable As DataTable) As Task
+  overload: Innova.Prism.Library.Services.ExportService.ExportToXlsxInterop*
+  implements:
+  - Innova.Prism.Library.Services.IExportService.ExportToXlsxInterop(System.Data.DataTable)
+- uid: Innova.Prism.Library.Services.ExportService.ExportShowToHtml(System.Data.DataTable,System.Collections.Generic.IEnumerable{Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView})
+  commentId: M:Innova.Prism.Library.Services.ExportService.ExportShowToHtml(System.Data.DataTable,System.Collections.Generic.IEnumerable{Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView})
+  id: ExportShowToHtml(System.Data.DataTable,System.Collections.Generic.IEnumerable{Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView})
+  parent: Innova.Prism.Library.Services.ExportService
+  langs:
+  - csharp
+  - vb
+  name: ExportShowToHtml(DataTable, IEnumerable<ISupportEntityListView>)
+  nameWithType: ExportService.ExportShowToHtml(DataTable, IEnumerable<ISupportEntityListView>)
+  fullName: Innova.Prism.Library.Services.ExportService.ExportShowToHtml(System.Data.DataTable, System.Collections.Generic.IEnumerable<Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView>)
+  type: Method
+  source:
+    id: ExportShowToHtml
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ExportService.cs
+    startLine: 141
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Exports the mainEntityDataTable and optional entityListViews to an HTML file for display.
+  example: []
+  syntax:
+    content: public Task ExportShowToHtml(DataTable mainEntityDataTable, IEnumerable<ISupportEntityListView> entityListViews = null)
+    parameters:
+    - id: mainEntityDataTable
+      type: System.Data.DataTable
+      description: The main DataTable to export.
+    - id: entityListViews
+      type: System.Collections.Generic.IEnumerable{Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView}
+      description: Optional list of entity list views to include in the export.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Public Function ExportShowToHtml(mainEntityDataTable As DataTable, entityListViews As IEnumerable(Of ISupportEntityListView) = Nothing) As Task
+  overload: Innova.Prism.Library.Services.ExportService.ExportShowToHtml*
+  implements:
+  - Innova.Prism.Library.Services.IExportService.ExportShowToHtml(System.Data.DataTable,System.Collections.Generic.IEnumerable{Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView})
+  nameWithType.vb: ExportService.ExportShowToHtml(DataTable, IEnumerable(Of ISupportEntityListView))
+  fullName.vb: Innova.Prism.Library.Services.ExportService.ExportShowToHtml(System.Data.DataTable, System.Collections.Generic.IEnumerable(Of Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView))
+  name.vb: ExportShowToHtml(DataTable, IEnumerable(Of ISupportEntityListView))
+references:
+- uid: Innova.Prism.Library.Services
+  commentId: N:Innova.Prism.Library.Services
+  href: Innova.html
+  name: Innova.Prism.Library.Services
+  nameWithType: Innova.Prism.Library.Services
+  fullName: Innova.Prism.Library.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Prism.Library.Services.IExportService
+  commentId: T:Innova.Prism.Library.Services.IExportService
+  parent: Innova.Prism.Library.Services
+  href: Innova.Prism.Library.Services.IExportService.html
+  name: IExportService
+  nameWithType: IExportService
+  fullName: Innova.Prism.Library.Services.IExportService
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Library.Services.ExportService
+  commentId: T:Innova.Prism.Library.Services.ExportService
+  href: Innova.Prism.Library.Services.ExportService.html
+  name: ExportService
+  nameWithType: ExportService
+  fullName: Innova.Prism.Library.Services.ExportService
+- uid: Innova.Prism.Library.Services.ExportService.#ctor*
+  commentId: Overload:Innova.Prism.Library.Services.ExportService.#ctor
+  href: Innova.Prism.Library.Services.ExportService.-ctor.html#Innova_Prism_Library_Services_ExportService__ctor_Innova_Prism_Library_Services_IWindowDialogService_Prism_Events_IEventAggregator_Innova_Data_File_IFileService_
+  name: ExportService
+  nameWithType: ExportService.ExportService
+  fullName: Innova.Prism.Library.Services.ExportService.ExportService
+  nameWithType.vb: ExportService.New
+  fullName.vb: Innova.Prism.Library.Services.ExportService.New
+  name.vb: New
+- uid: Innova.Prism.Library.Services.IWindowDialogService
+  commentId: T:Innova.Prism.Library.Services.IWindowDialogService
+  parent: Innova.Prism.Library.Services
+  href: Innova.Prism.Library.Services.IWindowDialogService.html
+  name: IWindowDialogService
+  nameWithType: IWindowDialogService
+  fullName: Innova.Prism.Library.Services.IWindowDialogService
+- uid: Prism.Events.IEventAggregator
+  commentId: T:Prism.Events.IEventAggregator
+  parent: Prism.Events
+  isExternal: true
+  name: IEventAggregator
+  nameWithType: IEventAggregator
+  fullName: Prism.Events.IEventAggregator
+- uid: Innova.Data.File.IFileService
+  commentId: T:Innova.Data.File.IFileService
+  parent: Innova.Data.File
+  href: Innova.Data.File.IFileService.html
+  name: IFileService
+  nameWithType: IFileService
+  fullName: Innova.Data.File.IFileService
+- uid: Prism.Events
+  commentId: N:Prism.Events
+  isExternal: true
+  name: Prism.Events
+  nameWithType: Prism.Events
+  fullName: Prism.Events
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+- uid: Innova.Data.File
+  commentId: N:Innova.Data.File
+  href: Innova.html
+  name: Innova.Data.File
+  nameWithType: Innova.Data.File
+  fullName: Innova.Data.File
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.File
+    name: File
+    href: Innova.Data.File.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.File
+    name: File
+    href: Innova.Data.File.html
+- uid: Innova.Prism.Library.Services.ExportService.ExportToCsv*
+  commentId: Overload:Innova.Prism.Library.Services.ExportService.ExportToCsv
+  href: Innova.Prism.Library.Services.ExportService.ExportToCsv.html#Innova_Prism_Library_Services_ExportService_ExportToCsv_System_Data_DataTable_
+  name: ExportToCsv
+  nameWithType: ExportService.ExportToCsv
+  fullName: Innova.Prism.Library.Services.ExportService.ExportToCsv
+- uid: Innova.Prism.Library.Services.IExportService.ExportToCsv(System.Data.DataTable)
+  commentId: M:Innova.Prism.Library.Services.IExportService.ExportToCsv(System.Data.DataTable)
+  parent: Innova.Prism.Library.Services.IExportService
+  isExternal: true
+  href: Innova.Prism.Library.Services.IExportService.ExportToCsv.html#Innova_Prism_Library_Services_IExportService_ExportToCsv_System_Data_DataTable_
+  name: ExportToCsv(DataTable)
+  nameWithType: IExportService.ExportToCsv(DataTable)
+  fullName: Innova.Prism.Library.Services.IExportService.ExportToCsv(System.Data.DataTable)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IExportService.ExportToCsv(System.Data.DataTable)
+    name: ExportToCsv
+    href: Innova.Prism.Library.Services.IExportService.ExportToCsv.html#Innova_Prism_Library_Services_IExportService_ExportToCsv_System_Data_DataTable_
+  - name: (
+  - uid: System.Data.DataTable
+    name: DataTable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.datatable
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IExportService.ExportToCsv(System.Data.DataTable)
+    name: ExportToCsv
+    href: Innova.Prism.Library.Services.IExportService.ExportToCsv.html#Innova_Prism_Library_Services_IExportService_ExportToCsv_System_Data_DataTable_
+  - name: (
+  - uid: System.Data.DataTable
+    name: DataTable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.datatable
+  - name: )
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.datatable
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Prism.Library.Services.ExportService.ExportToXlsx*
+  commentId: Overload:Innova.Prism.Library.Services.ExportService.ExportToXlsx
+  href: Innova.Prism.Library.Services.ExportService.ExportToXlsx.html#Innova_Prism_Library_Services_ExportService_ExportToXlsx_System_Data_DataTable_
+  name: ExportToXlsx
+  nameWithType: ExportService.ExportToXlsx
+  fullName: Innova.Prism.Library.Services.ExportService.ExportToXlsx
+- uid: Innova.Prism.Library.Services.IExportService.ExportToXlsx(System.Data.DataTable)
+  commentId: M:Innova.Prism.Library.Services.IExportService.ExportToXlsx(System.Data.DataTable)
+  parent: Innova.Prism.Library.Services.IExportService
+  isExternal: true
+  href: Innova.Prism.Library.Services.IExportService.ExportToXlsx.html#Innova_Prism_Library_Services_IExportService_ExportToXlsx_System_Data_DataTable_
+  name: ExportToXlsx(DataTable)
+  nameWithType: IExportService.ExportToXlsx(DataTable)
+  fullName: Innova.Prism.Library.Services.IExportService.ExportToXlsx(System.Data.DataTable)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IExportService.ExportToXlsx(System.Data.DataTable)
+    name: ExportToXlsx
+    href: Innova.Prism.Library.Services.IExportService.ExportToXlsx.html#Innova_Prism_Library_Services_IExportService_ExportToXlsx_System_Data_DataTable_
+  - name: (
+  - uid: System.Data.DataTable
+    name: DataTable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.datatable
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IExportService.ExportToXlsx(System.Data.DataTable)
+    name: ExportToXlsx
+    href: Innova.Prism.Library.Services.IExportService.ExportToXlsx.html#Innova_Prism_Library_Services_IExportService_ExportToXlsx_System_Data_DataTable_
+  - name: (
+  - uid: System.Data.DataTable
+    name: DataTable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.datatable
+  - name: )
+- uid: Innova.Prism.Library.Services.ExportService.ExportToXlsxInterop*
+  commentId: Overload:Innova.Prism.Library.Services.ExportService.ExportToXlsxInterop
+  href: Innova.Prism.Library.Services.ExportService.ExportToXlsxInterop.html#Innova_Prism_Library_Services_ExportService_ExportToXlsxInterop_System_Data_DataTable_
+  name: ExportToXlsxInterop
+  nameWithType: ExportService.ExportToXlsxInterop
+  fullName: Innova.Prism.Library.Services.ExportService.ExportToXlsxInterop
+- uid: Innova.Prism.Library.Services.IExportService.ExportToXlsxInterop(System.Data.DataTable)
+  commentId: M:Innova.Prism.Library.Services.IExportService.ExportToXlsxInterop(System.Data.DataTable)
+  parent: Innova.Prism.Library.Services.IExportService
+  isExternal: true
+  href: Innova.Prism.Library.Services.IExportService.ExportToXlsxInterop.html#Innova_Prism_Library_Services_IExportService_ExportToXlsxInterop_System_Data_DataTable_
+  name: ExportToXlsxInterop(DataTable)
+  nameWithType: IExportService.ExportToXlsxInterop(DataTable)
+  fullName: Innova.Prism.Library.Services.IExportService.ExportToXlsxInterop(System.Data.DataTable)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IExportService.ExportToXlsxInterop(System.Data.DataTable)
+    name: ExportToXlsxInterop
+    href: Innova.Prism.Library.Services.IExportService.ExportToXlsxInterop.html#Innova_Prism_Library_Services_IExportService_ExportToXlsxInterop_System_Data_DataTable_
+  - name: (
+  - uid: System.Data.DataTable
+    name: DataTable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.datatable
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IExportService.ExportToXlsxInterop(System.Data.DataTable)
+    name: ExportToXlsxInterop
+    href: Innova.Prism.Library.Services.IExportService.ExportToXlsxInterop.html#Innova_Prism_Library_Services_IExportService_ExportToXlsxInterop_System_Data_DataTable_
+  - name: (
+  - uid: System.Data.DataTable
+    name: DataTable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.datatable
+  - name: )
+- uid: Innova.Prism.Library.Services.ExportService.ExportShowToHtml*
+  commentId: Overload:Innova.Prism.Library.Services.ExportService.ExportShowToHtml
+  href: Innova.Prism.Library.Services.ExportService.ExportShowToHtml.html#Innova_Prism_Library_Services_ExportService_ExportShowToHtml_System_Data_DataTable_System_Collections_Generic_IEnumerable_Innova_Prism_Infrastructure_Interfaces_ISupportEntityListView__
+  name: ExportShowToHtml
+  nameWithType: ExportService.ExportShowToHtml
+  fullName: Innova.Prism.Library.Services.ExportService.ExportShowToHtml
+- uid: Innova.Prism.Library.Services.IExportService.ExportShowToHtml(System.Data.DataTable,System.Collections.Generic.IEnumerable{Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView})
+  commentId: M:Innova.Prism.Library.Services.IExportService.ExportShowToHtml(System.Data.DataTable,System.Collections.Generic.IEnumerable{Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView})
+  parent: Innova.Prism.Library.Services.IExportService
+  isExternal: true
+  href: Innova.Prism.Library.Services.IExportService.ExportShowToHtml.html#Innova_Prism_Library_Services_IExportService_ExportShowToHtml_System_Data_DataTable_System_Collections_Generic_IEnumerable_Innova_Prism_Infrastructure_Interfaces_ISupportEntityListView__
+  name: ExportShowToHtml(DataTable, IEnumerable<ISupportEntityListView>)
+  nameWithType: IExportService.ExportShowToHtml(DataTable, IEnumerable<ISupportEntityListView>)
+  fullName: Innova.Prism.Library.Services.IExportService.ExportShowToHtml(System.Data.DataTable, System.Collections.Generic.IEnumerable<Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView>)
+  nameWithType.vb: IExportService.ExportShowToHtml(DataTable, IEnumerable(Of ISupportEntityListView))
+  fullName.vb: Innova.Prism.Library.Services.IExportService.ExportShowToHtml(System.Data.DataTable, System.Collections.Generic.IEnumerable(Of Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView))
+  name.vb: ExportShowToHtml(DataTable, IEnumerable(Of ISupportEntityListView))
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IExportService.ExportShowToHtml(System.Data.DataTable,System.Collections.Generic.IEnumerable{Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView})
+    name: ExportShowToHtml
+    href: Innova.Prism.Library.Services.IExportService.ExportShowToHtml.html#Innova_Prism_Library_Services_IExportService_ExportShowToHtml_System_Data_DataTable_System_Collections_Generic_IEnumerable_Innova_Prism_Infrastructure_Interfaces_ISupportEntityListView__
+  - name: (
+  - uid: System.Data.DataTable
+    name: DataTable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.datatable
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView
+    name: ISupportEntityListView
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IExportService.ExportShowToHtml(System.Data.DataTable,System.Collections.Generic.IEnumerable{Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView})
+    name: ExportShowToHtml
+    href: Innova.Prism.Library.Services.IExportService.ExportShowToHtml.html#Innova_Prism_Library_Services_IExportService_ExportShowToHtml_System_Data_DataTable_System_Collections_Generic_IEnumerable_Innova_Prism_Infrastructure_Interfaces_ISupportEntityListView__
+  - name: (
+  - uid: System.Data.DataTable
+    name: DataTable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.datatable
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView
+    name: ISupportEntityListView
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView}
+  commentId: T:System.Collections.Generic.IEnumerable{Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ISupportEntityListView>
+  nameWithType: IEnumerable<ISupportEntityListView>
+  fullName: System.Collections.Generic.IEnumerable<Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView>
+  nameWithType.vb: IEnumerable(Of ISupportEntityListView)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView)
+  name.vb: IEnumerable(Of ISupportEntityListView)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView
+    name: ISupportEntityListView
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Infrastructure.Interfaces.ISupportEntityListView
+    name: ISupportEntityListView
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+memberLayout: SeparatePages

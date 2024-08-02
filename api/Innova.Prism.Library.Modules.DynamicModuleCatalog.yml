@@ -1,0 +1,845 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Modules.DynamicModuleCatalog
+  commentId: T:Innova.Prism.Library.Modules.DynamicModuleCatalog
+  id: DynamicModuleCatalog
+  parent: Innova.Prism.Library.Modules
+  children:
+  - Innova.Prism.Library.Modules.DynamicModuleCatalog.#ctor(System.Type[])
+  - Innova.Prism.Library.Modules.DynamicModuleCatalog.#ctor(System.Type[],System.String[])
+  - Innova.Prism.Library.Modules.DynamicModuleCatalog.InnerLoad
+  langs:
+  - csharp
+  - vb
+  name: DynamicModuleCatalog
+  nameWithType: DynamicModuleCatalog
+  fullName: Innova.Prism.Library.Modules.DynamicModuleCatalog
+  type: Class
+  source:
+    id: DynamicModuleCatalog
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\DynamicModuleCatalog.cs
+    startLine: 11
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Modules
+  syntax:
+    content: 'public class DynamicModuleCatalog : ModuleCatalog, IModuleCatalog, IModuleGroupsCatalog'
+    content.vb: Public Class DynamicModuleCatalog Inherits ModuleCatalog Implements IModuleCatalog, IModuleGroupsCatalog
+  inheritance:
+  - System.Object
+  - Prism.Modularity.ModuleCatalogBase
+  - Prism.Modularity.ModuleCatalog
+  implements:
+  - Prism.Modularity.IModuleCatalog
+  - Prism.Modularity.IModuleGroupsCatalog
+  inheritedMembers:
+  - Prism.Modularity.ModuleCatalog.GetFileAbsoluteUri(System.String)
+  - Prism.Modularity.ModuleCatalogBase.Load
+  - Prism.Modularity.ModuleCatalogBase.GetDependentModules(Prism.Modularity.IModuleInfo)
+  - Prism.Modularity.ModuleCatalogBase.CompleteListWithDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+  - Prism.Modularity.ModuleCatalogBase.Validate
+  - Prism.Modularity.ModuleCatalogBase.AddModule(Prism.Modularity.IModuleInfo)
+  - Prism.Modularity.ModuleCatalogBase.Initialize
+  - Prism.Modularity.ModuleCatalogBase.SolveDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+  - Prism.Modularity.ModuleCatalogBase.ValidateDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+  - Prism.Modularity.ModuleCatalogBase.Sort(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+  - Prism.Modularity.ModuleCatalogBase.ValidateUniqueModules
+  - Prism.Modularity.ModuleCatalogBase.ValidateDependencyGraph
+  - Prism.Modularity.ModuleCatalogBase.ValidateCrossGroupDependencies
+  - Prism.Modularity.ModuleCatalogBase.ValidateDependenciesInitializationMode
+  - Prism.Modularity.ModuleCatalogBase.GetDependentModulesInner(Prism.Modularity.IModuleInfo)
+  - Prism.Modularity.ModuleCatalogBase.EnsureCatalogValidated
+  - Prism.Modularity.ModuleCatalogBase.Items
+  - Prism.Modularity.ModuleCatalogBase.Modules
+  - Prism.Modularity.ModuleCatalogBase.Groups
+  - Prism.Modularity.ModuleCatalogBase.Validated
+  - Prism.Modularity.ModuleCatalogBase.GrouplessModules
+- uid: Innova.Prism.Library.Modules.DynamicModuleCatalog.#ctor(System.Type[])
+  commentId: M:Innova.Prism.Library.Modules.DynamicModuleCatalog.#ctor(System.Type[])
+  id: '#ctor(System.Type[])'
+  parent: Innova.Prism.Library.Modules.DynamicModuleCatalog
+  langs:
+  - csharp
+  - vb
+  name: DynamicModuleCatalog(Type[])
+  nameWithType: DynamicModuleCatalog.DynamicModuleCatalog(Type[])
+  fullName: Innova.Prism.Library.Modules.DynamicModuleCatalog.DynamicModuleCatalog(System.Type[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\DynamicModuleCatalog.cs
+    startLine: 19
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Modules
+  syntax:
+    content: public DynamicModuleCatalog(Type[] loadFromTypes)
+    parameters:
+    - id: loadFromTypes
+      type: System.Type[]
+    content.vb: Public Sub New(loadFromTypes As Type())
+  overload: Innova.Prism.Library.Modules.DynamicModuleCatalog.#ctor*
+  nameWithType.vb: DynamicModuleCatalog.New(Type())
+  fullName.vb: Innova.Prism.Library.Modules.DynamicModuleCatalog.New(System.Type())
+  name.vb: New(Type())
+- uid: Innova.Prism.Library.Modules.DynamicModuleCatalog.#ctor(System.Type[],System.String[])
+  commentId: M:Innova.Prism.Library.Modules.DynamicModuleCatalog.#ctor(System.Type[],System.String[])
+  id: '#ctor(System.Type[],System.String[])'
+  parent: Innova.Prism.Library.Modules.DynamicModuleCatalog
+  langs:
+  - csharp
+  - vb
+  name: DynamicModuleCatalog(Type[], string[])
+  nameWithType: DynamicModuleCatalog.DynamicModuleCatalog(Type[], string[])
+  fullName: Innova.Prism.Library.Modules.DynamicModuleCatalog.DynamicModuleCatalog(System.Type[], string[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\DynamicModuleCatalog.cs
+    startLine: 24
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Modules
+  syntax:
+    content: public DynamicModuleCatalog(Type[] loadFromTypes, string[] excludeModuleNames)
+    parameters:
+    - id: loadFromTypes
+      type: System.Type[]
+    - id: excludeModuleNames
+      type: System.String[]
+    content.vb: Public Sub New(loadFromTypes As Type(), excludeModuleNames As String())
+  overload: Innova.Prism.Library.Modules.DynamicModuleCatalog.#ctor*
+  nameWithType.vb: DynamicModuleCatalog.New(Type(), String())
+  fullName.vb: Innova.Prism.Library.Modules.DynamicModuleCatalog.New(System.Type(), String())
+  name.vb: New(Type(), String())
+- uid: Innova.Prism.Library.Modules.DynamicModuleCatalog.InnerLoad
+  commentId: M:Innova.Prism.Library.Modules.DynamicModuleCatalog.InnerLoad
+  id: InnerLoad
+  parent: Innova.Prism.Library.Modules.DynamicModuleCatalog
+  langs:
+  - csharp
+  - vb
+  name: InnerLoad()
+  nameWithType: DynamicModuleCatalog.InnerLoad()
+  fullName: Innova.Prism.Library.Modules.DynamicModuleCatalog.InnerLoad()
+  type: Method
+  source:
+    id: InnerLoad
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\DynamicModuleCatalog.cs
+    startLine: 30
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Modules
+  summary: Does the actual work of loading the catalog.  The base implementation does nothing.
+  example: []
+  syntax:
+    content: protected override void InnerLoad()
+    content.vb: Protected Overrides Sub InnerLoad()
+  overridden: Prism.Modularity.ModuleCatalogBase.InnerLoad
+  overload: Innova.Prism.Library.Modules.DynamicModuleCatalog.InnerLoad*
+references:
+- uid: Innova.Prism.Library.Modules
+  commentId: N:Innova.Prism.Library.Modules
+  href: Innova.html
+  name: Innova.Prism.Library.Modules
+  nameWithType: Innova.Prism.Library.Modules
+  fullName: Innova.Prism.Library.Modules
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Modules
+    name: Modules
+    href: Innova.Prism.Library.Modules.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Modules
+    name: Modules
+    href: Innova.Prism.Library.Modules.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Prism.Modularity.ModuleCatalogBase
+  commentId: T:Prism.Modularity.ModuleCatalogBase
+  parent: Prism.Modularity
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: ModuleCatalogBase
+  nameWithType: ModuleCatalogBase
+  fullName: Prism.Modularity.ModuleCatalogBase
+- uid: Prism.Modularity.ModuleCatalog
+  commentId: T:Prism.Modularity.ModuleCatalog
+  parent: Prism.Modularity
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Modularity/ModuleCatalog.cs
+  name: ModuleCatalog
+  nameWithType: ModuleCatalog
+  fullName: Prism.Modularity.ModuleCatalog
+- uid: Prism.Modularity.IModuleCatalog
+  commentId: T:Prism.Modularity.IModuleCatalog
+  parent: Prism.Modularity
+  isExternal: true
+  name: IModuleCatalog
+  nameWithType: IModuleCatalog
+  fullName: Prism.Modularity.IModuleCatalog
+- uid: Prism.Modularity.IModuleGroupsCatalog
+  commentId: T:Prism.Modularity.IModuleGroupsCatalog
+  parent: Prism.Modularity
+  isExternal: true
+  name: IModuleGroupsCatalog
+  nameWithType: IModuleGroupsCatalog
+  fullName: Prism.Modularity.IModuleGroupsCatalog
+- uid: Prism.Modularity.ModuleCatalog.GetFileAbsoluteUri(System.String)
+  commentId: M:Prism.Modularity.ModuleCatalog.GetFileAbsoluteUri(System.String)
+  parent: Prism.Modularity.ModuleCatalog
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Modularity/ModuleCatalog.cs
+  name: GetFileAbsoluteUri(string)
+  nameWithType: ModuleCatalog.GetFileAbsoluteUri(string)
+  fullName: Prism.Modularity.ModuleCatalog.GetFileAbsoluteUri(string)
+  nameWithType.vb: ModuleCatalog.GetFileAbsoluteUri(String)
+  fullName.vb: Prism.Modularity.ModuleCatalog.GetFileAbsoluteUri(String)
+  name.vb: GetFileAbsoluteUri(String)
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalog.GetFileAbsoluteUri(System.String)
+    name: GetFileAbsoluteUri
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Modularity/ModuleCatalog.cs
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalog.GetFileAbsoluteUri(System.String)
+    name: GetFileAbsoluteUri
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Modularity/ModuleCatalog.cs
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.Load
+  commentId: M:Prism.Modularity.ModuleCatalogBase.Load
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: Load()
+  nameWithType: ModuleCatalogBase.Load()
+  fullName: Prism.Modularity.ModuleCatalogBase.Load()
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.Load
+    name: Load
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.Load
+    name: Load
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.GetDependentModules(Prism.Modularity.IModuleInfo)
+  commentId: M:Prism.Modularity.ModuleCatalogBase.GetDependentModules(Prism.Modularity.IModuleInfo)
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: GetDependentModules(IModuleInfo)
+  nameWithType: ModuleCatalogBase.GetDependentModules(IModuleInfo)
+  fullName: Prism.Modularity.ModuleCatalogBase.GetDependentModules(Prism.Modularity.IModuleInfo)
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.GetDependentModules(Prism.Modularity.IModuleInfo)
+    name: GetDependentModules
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - uid: Prism.Modularity.IModuleInfo
+    name: IModuleInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.GetDependentModules(Prism.Modularity.IModuleInfo)
+    name: GetDependentModules
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - uid: Prism.Modularity.IModuleInfo
+    name: IModuleInfo
+    isExternal: true
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.CompleteListWithDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+  commentId: M:Prism.Modularity.ModuleCatalogBase.CompleteListWithDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: CompleteListWithDependencies(IEnumerable<IModuleInfo>)
+  nameWithType: ModuleCatalogBase.CompleteListWithDependencies(IEnumerable<IModuleInfo>)
+  fullName: Prism.Modularity.ModuleCatalogBase.CompleteListWithDependencies(System.Collections.Generic.IEnumerable<Prism.Modularity.IModuleInfo>)
+  nameWithType.vb: ModuleCatalogBase.CompleteListWithDependencies(IEnumerable(Of IModuleInfo))
+  fullName.vb: Prism.Modularity.ModuleCatalogBase.CompleteListWithDependencies(System.Collections.Generic.IEnumerable(Of Prism.Modularity.IModuleInfo))
+  name.vb: CompleteListWithDependencies(IEnumerable(Of IModuleInfo))
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.CompleteListWithDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+    name: CompleteListWithDependencies
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Prism.Modularity.IModuleInfo
+    name: IModuleInfo
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.CompleteListWithDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+    name: CompleteListWithDependencies
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Prism.Modularity.IModuleInfo
+    name: IModuleInfo
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.Validate
+  commentId: M:Prism.Modularity.ModuleCatalogBase.Validate
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: Validate()
+  nameWithType: ModuleCatalogBase.Validate()
+  fullName: Prism.Modularity.ModuleCatalogBase.Validate()
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.Validate
+    name: Validate
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.Validate
+    name: Validate
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.AddModule(Prism.Modularity.IModuleInfo)
+  commentId: M:Prism.Modularity.ModuleCatalogBase.AddModule(Prism.Modularity.IModuleInfo)
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: AddModule(IModuleInfo)
+  nameWithType: ModuleCatalogBase.AddModule(IModuleInfo)
+  fullName: Prism.Modularity.ModuleCatalogBase.AddModule(Prism.Modularity.IModuleInfo)
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.AddModule(Prism.Modularity.IModuleInfo)
+    name: AddModule
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - uid: Prism.Modularity.IModuleInfo
+    name: IModuleInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.AddModule(Prism.Modularity.IModuleInfo)
+    name: AddModule
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - uid: Prism.Modularity.IModuleInfo
+    name: IModuleInfo
+    isExternal: true
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.Initialize
+  commentId: M:Prism.Modularity.ModuleCatalogBase.Initialize
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: Initialize()
+  nameWithType: ModuleCatalogBase.Initialize()
+  fullName: Prism.Modularity.ModuleCatalogBase.Initialize()
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.Initialize
+    name: Initialize
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.Initialize
+    name: Initialize
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.SolveDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+  commentId: M:Prism.Modularity.ModuleCatalogBase.SolveDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: SolveDependencies(IEnumerable<IModuleInfo>)
+  nameWithType: ModuleCatalogBase.SolveDependencies(IEnumerable<IModuleInfo>)
+  fullName: Prism.Modularity.ModuleCatalogBase.SolveDependencies(System.Collections.Generic.IEnumerable<Prism.Modularity.IModuleInfo>)
+  nameWithType.vb: ModuleCatalogBase.SolveDependencies(IEnumerable(Of IModuleInfo))
+  fullName.vb: Prism.Modularity.ModuleCatalogBase.SolveDependencies(System.Collections.Generic.IEnumerable(Of Prism.Modularity.IModuleInfo))
+  name.vb: SolveDependencies(IEnumerable(Of IModuleInfo))
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.SolveDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+    name: SolveDependencies
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Prism.Modularity.IModuleInfo
+    name: IModuleInfo
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.SolveDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+    name: SolveDependencies
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Prism.Modularity.IModuleInfo
+    name: IModuleInfo
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.ValidateDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+  commentId: M:Prism.Modularity.ModuleCatalogBase.ValidateDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: ValidateDependencies(IEnumerable<IModuleInfo>)
+  nameWithType: ModuleCatalogBase.ValidateDependencies(IEnumerable<IModuleInfo>)
+  fullName: Prism.Modularity.ModuleCatalogBase.ValidateDependencies(System.Collections.Generic.IEnumerable<Prism.Modularity.IModuleInfo>)
+  nameWithType.vb: ModuleCatalogBase.ValidateDependencies(IEnumerable(Of IModuleInfo))
+  fullName.vb: Prism.Modularity.ModuleCatalogBase.ValidateDependencies(System.Collections.Generic.IEnumerable(Of Prism.Modularity.IModuleInfo))
+  name.vb: ValidateDependencies(IEnumerable(Of IModuleInfo))
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.ValidateDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+    name: ValidateDependencies
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Prism.Modularity.IModuleInfo
+    name: IModuleInfo
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.ValidateDependencies(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+    name: ValidateDependencies
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Prism.Modularity.IModuleInfo
+    name: IModuleInfo
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.Sort(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+  commentId: M:Prism.Modularity.ModuleCatalogBase.Sort(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: Sort(IEnumerable<IModuleInfo>)
+  nameWithType: ModuleCatalogBase.Sort(IEnumerable<IModuleInfo>)
+  fullName: Prism.Modularity.ModuleCatalogBase.Sort(System.Collections.Generic.IEnumerable<Prism.Modularity.IModuleInfo>)
+  nameWithType.vb: ModuleCatalogBase.Sort(IEnumerable(Of IModuleInfo))
+  fullName.vb: Prism.Modularity.ModuleCatalogBase.Sort(System.Collections.Generic.IEnumerable(Of Prism.Modularity.IModuleInfo))
+  name.vb: Sort(IEnumerable(Of IModuleInfo))
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.Sort(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+    name: Sort
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Prism.Modularity.IModuleInfo
+    name: IModuleInfo
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.Sort(System.Collections.Generic.IEnumerable{Prism.Modularity.IModuleInfo})
+    name: Sort
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Prism.Modularity.IModuleInfo
+    name: IModuleInfo
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.ValidateUniqueModules
+  commentId: M:Prism.Modularity.ModuleCatalogBase.ValidateUniqueModules
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: ValidateUniqueModules()
+  nameWithType: ModuleCatalogBase.ValidateUniqueModules()
+  fullName: Prism.Modularity.ModuleCatalogBase.ValidateUniqueModules()
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.ValidateUniqueModules
+    name: ValidateUniqueModules
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.ValidateUniqueModules
+    name: ValidateUniqueModules
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.ValidateDependencyGraph
+  commentId: M:Prism.Modularity.ModuleCatalogBase.ValidateDependencyGraph
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: ValidateDependencyGraph()
+  nameWithType: ModuleCatalogBase.ValidateDependencyGraph()
+  fullName: Prism.Modularity.ModuleCatalogBase.ValidateDependencyGraph()
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.ValidateDependencyGraph
+    name: ValidateDependencyGraph
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.ValidateDependencyGraph
+    name: ValidateDependencyGraph
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.ValidateCrossGroupDependencies
+  commentId: M:Prism.Modularity.ModuleCatalogBase.ValidateCrossGroupDependencies
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: ValidateCrossGroupDependencies()
+  nameWithType: ModuleCatalogBase.ValidateCrossGroupDependencies()
+  fullName: Prism.Modularity.ModuleCatalogBase.ValidateCrossGroupDependencies()
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.ValidateCrossGroupDependencies
+    name: ValidateCrossGroupDependencies
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.ValidateCrossGroupDependencies
+    name: ValidateCrossGroupDependencies
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.ValidateDependenciesInitializationMode
+  commentId: M:Prism.Modularity.ModuleCatalogBase.ValidateDependenciesInitializationMode
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: ValidateDependenciesInitializationMode()
+  nameWithType: ModuleCatalogBase.ValidateDependenciesInitializationMode()
+  fullName: Prism.Modularity.ModuleCatalogBase.ValidateDependenciesInitializationMode()
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.ValidateDependenciesInitializationMode
+    name: ValidateDependenciesInitializationMode
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.ValidateDependenciesInitializationMode
+    name: ValidateDependenciesInitializationMode
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.GetDependentModulesInner(Prism.Modularity.IModuleInfo)
+  commentId: M:Prism.Modularity.ModuleCatalogBase.GetDependentModulesInner(Prism.Modularity.IModuleInfo)
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: GetDependentModulesInner(IModuleInfo)
+  nameWithType: ModuleCatalogBase.GetDependentModulesInner(IModuleInfo)
+  fullName: Prism.Modularity.ModuleCatalogBase.GetDependentModulesInner(Prism.Modularity.IModuleInfo)
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.GetDependentModulesInner(Prism.Modularity.IModuleInfo)
+    name: GetDependentModulesInner
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - uid: Prism.Modularity.IModuleInfo
+    name: IModuleInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.GetDependentModulesInner(Prism.Modularity.IModuleInfo)
+    name: GetDependentModulesInner
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - uid: Prism.Modularity.IModuleInfo
+    name: IModuleInfo
+    isExternal: true
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.EnsureCatalogValidated
+  commentId: M:Prism.Modularity.ModuleCatalogBase.EnsureCatalogValidated
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: EnsureCatalogValidated()
+  nameWithType: ModuleCatalogBase.EnsureCatalogValidated()
+  fullName: Prism.Modularity.ModuleCatalogBase.EnsureCatalogValidated()
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.EnsureCatalogValidated
+    name: EnsureCatalogValidated
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.EnsureCatalogValidated
+    name: EnsureCatalogValidated
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.Items
+  commentId: P:Prism.Modularity.ModuleCatalogBase.Items
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: Items
+  nameWithType: ModuleCatalogBase.Items
+  fullName: Prism.Modularity.ModuleCatalogBase.Items
+- uid: Prism.Modularity.ModuleCatalogBase.Modules
+  commentId: P:Prism.Modularity.ModuleCatalogBase.Modules
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: Modules
+  nameWithType: ModuleCatalogBase.Modules
+  fullName: Prism.Modularity.ModuleCatalogBase.Modules
+- uid: Prism.Modularity.ModuleCatalogBase.Groups
+  commentId: P:Prism.Modularity.ModuleCatalogBase.Groups
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: Groups
+  nameWithType: ModuleCatalogBase.Groups
+  fullName: Prism.Modularity.ModuleCatalogBase.Groups
+- uid: Prism.Modularity.ModuleCatalogBase.Validated
+  commentId: P:Prism.Modularity.ModuleCatalogBase.Validated
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: Validated
+  nameWithType: ModuleCatalogBase.Validated
+  fullName: Prism.Modularity.ModuleCatalogBase.Validated
+- uid: Prism.Modularity.ModuleCatalogBase.GrouplessModules
+  commentId: P:Prism.Modularity.ModuleCatalogBase.GrouplessModules
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: GrouplessModules
+  nameWithType: ModuleCatalogBase.GrouplessModules
+  fullName: Prism.Modularity.ModuleCatalogBase.GrouplessModules
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Prism.Modularity
+  commentId: N:Prism.Modularity
+  isExternal: true
+  name: Prism.Modularity
+  nameWithType: Prism.Modularity
+  fullName: Prism.Modularity
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Modularity
+    name: Modularity
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Modularity
+    name: Modularity
+    isExternal: true
+- uid: Innova.Prism.Library.Modules.DynamicModuleCatalog.#ctor*
+  commentId: Overload:Innova.Prism.Library.Modules.DynamicModuleCatalog.#ctor
+  href: Innova.Prism.Library.Modules.DynamicModuleCatalog.-ctor.html#Innova_Prism_Library_Modules_DynamicModuleCatalog__ctor_System_Type___
+  name: DynamicModuleCatalog
+  nameWithType: DynamicModuleCatalog.DynamicModuleCatalog
+  fullName: Innova.Prism.Library.Modules.DynamicModuleCatalog.DynamicModuleCatalog
+  nameWithType.vb: DynamicModuleCatalog.New
+  fullName.vb: Innova.Prism.Library.Modules.DynamicModuleCatalog.New
+  name.vb: New
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Prism.Modularity.ModuleCatalogBase.InnerLoad
+  commentId: M:Prism.Modularity.ModuleCatalogBase.InnerLoad
+  parent: Prism.Modularity.ModuleCatalogBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  name: InnerLoad()
+  nameWithType: ModuleCatalogBase.InnerLoad()
+  fullName: Prism.Modularity.ModuleCatalogBase.InnerLoad()
+  spec.csharp:
+  - uid: Prism.Modularity.ModuleCatalogBase.InnerLoad
+    name: InnerLoad
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.Modularity.ModuleCatalogBase.InnerLoad
+    name: InnerLoad
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Modularity/ModuleCatalogBase.cs
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Modules.DynamicModuleCatalog.InnerLoad*
+  commentId: Overload:Innova.Prism.Library.Modules.DynamicModuleCatalog.InnerLoad
+  href: Innova.Prism.Library.Modules.DynamicModuleCatalog.InnerLoad.html#Innova_Prism_Library_Modules_DynamicModuleCatalog_InnerLoad
+  name: InnerLoad
+  nameWithType: DynamicModuleCatalog.InnerLoad
+  fullName: Innova.Prism.Library.Modules.DynamicModuleCatalog.InnerLoad
+memberLayout: SeparatePages

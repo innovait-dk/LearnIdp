@@ -1,0 +1,1120 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel
+  commentId: T:Innova.Prism.Library.Views.Administration.AppSettingsViewModel
+  id: AppSettingsViewModel
+  parent: Innova.Prism.Library.Views.Administration
+  children:
+  - Innova.Prism.Library.Views.Administration.AppSettingsViewModel.#ctor(System.Collections.Generic.List{Innova.Data.AppSettings.IApplicationSettingService},Innova.Prism.Library.Services.IScopedMenuService)
+  - Innova.Prism.Library.Views.Administration.AppSettingsViewModel.AppSettingModels
+  - Innova.Prism.Library.Views.Administration.AppSettingsViewModel.IsNavigationTarget(Prism.Regions.NavigationContext)
+  - Innova.Prism.Library.Views.Administration.AppSettingsViewModel.KeepAlive
+  - Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  - Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedTo(Prism.Regions.NavigationContext)
+  - Innova.Prism.Library.Views.Administration.AppSettingsViewModel.ScopedMenuService
+  langs:
+  - csharp
+  - vb
+  name: AppSettingsViewModel
+  nameWithType: AppSettingsViewModel
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel
+  type: Class
+  source:
+    id: AppSettingsViewModel
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Views\Administration\AppSettingsViewModel.cs
+    startLine: 16
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Views.Administration
+  syntax:
+    content: 'public class AppSettingsViewModel : BindableBase, INotifyPropertyChanged, INavigationAware, IRegionMemberLifetime'
+    content.vb: Public Class AppSettingsViewModel Inherits BindableBase Implements INotifyPropertyChanged, INavigationAware, IRegionMemberLifetime
+  inheritance:
+  - System.Object
+  - Prism.Mvvm.BindableBase
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - Prism.Regions.INavigationAware
+  - Prism.Regions.IRegionMemberLifetime
+  inheritedMembers:
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  - Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  - Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  - Prism.Mvvm.BindableBase.PropertyChanged
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.AppSettingModels
+  commentId: P:Innova.Prism.Library.Views.Administration.AppSettingsViewModel.AppSettingModels
+  id: AppSettingModels
+  parent: Innova.Prism.Library.Views.Administration.AppSettingsViewModel
+  langs:
+  - csharp
+  - vb
+  name: AppSettingModels
+  nameWithType: AppSettingsViewModel.AppSettingModels
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.AppSettingModels
+  type: Property
+  source:
+    id: AppSettingModels
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Views\Administration\AppSettingsViewModel.cs
+    startLine: 24
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Views.Administration
+  syntax:
+    content: public ObservableCollection<AppSettingModel> AppSettingModels { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Views.Administration.AppSettingModel}
+    content.vb: Public Property AppSettingModels As ObservableCollection(Of AppSettingModel)
+  overload: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.AppSettingModels*
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.ScopedMenuService
+  commentId: P:Innova.Prism.Library.Views.Administration.AppSettingsViewModel.ScopedMenuService
+  id: ScopedMenuService
+  parent: Innova.Prism.Library.Views.Administration.AppSettingsViewModel
+  langs:
+  - csharp
+  - vb
+  name: ScopedMenuService
+  nameWithType: AppSettingsViewModel.ScopedMenuService
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.ScopedMenuService
+  type: Property
+  source:
+    id: ScopedMenuService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Views\Administration\AppSettingsViewModel.cs
+    startLine: 30
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Views.Administration
+  syntax:
+    content: public IScopedMenuService ScopedMenuService { get; }
+    parameters: []
+    return:
+      type: Innova.Prism.Library.Services.IScopedMenuService
+    content.vb: Public ReadOnly Property ScopedMenuService As IScopedMenuService
+  overload: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.ScopedMenuService*
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.KeepAlive
+  commentId: P:Innova.Prism.Library.Views.Administration.AppSettingsViewModel.KeepAlive
+  id: KeepAlive
+  parent: Innova.Prism.Library.Views.Administration.AppSettingsViewModel
+  langs:
+  - csharp
+  - vb
+  name: KeepAlive
+  nameWithType: AppSettingsViewModel.KeepAlive
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.KeepAlive
+  type: Property
+  source:
+    id: KeepAlive
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Views\Administration\AppSettingsViewModel.cs
+    startLine: 40
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Views.Administration
+  summary: Gets a value indicating whether this instance should be kept-alive upon deactivation.
+  example: []
+  syntax:
+    content: public bool KeepAlive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property KeepAlive As Boolean
+  overload: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.KeepAlive*
+  implements:
+  - Prism.Regions.IRegionMemberLifetime.KeepAlive
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.#ctor(System.Collections.Generic.List{Innova.Data.AppSettings.IApplicationSettingService},Innova.Prism.Library.Services.IScopedMenuService)
+  commentId: M:Innova.Prism.Library.Views.Administration.AppSettingsViewModel.#ctor(System.Collections.Generic.List{Innova.Data.AppSettings.IApplicationSettingService},Innova.Prism.Library.Services.IScopedMenuService)
+  id: '#ctor(System.Collections.Generic.List{Innova.Data.AppSettings.IApplicationSettingService},Innova.Prism.Library.Services.IScopedMenuService)'
+  parent: Innova.Prism.Library.Views.Administration.AppSettingsViewModel
+  langs:
+  - csharp
+  - vb
+  name: AppSettingsViewModel(List<IApplicationSettingService>, IScopedMenuService)
+  nameWithType: AppSettingsViewModel.AppSettingsViewModel(List<IApplicationSettingService>, IScopedMenuService)
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.AppSettingsViewModel(System.Collections.Generic.List<Innova.Data.AppSettings.IApplicationSettingService>, Innova.Prism.Library.Services.IScopedMenuService)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Views\Administration\AppSettingsViewModel.cs
+    startLine: 42
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Views.Administration
+  syntax:
+    content: public AppSettingsViewModel(List<IApplicationSettingService> applicationSettingServices, IScopedMenuService scopedMenuService)
+    parameters:
+    - id: applicationSettingServices
+      type: System.Collections.Generic.List{Innova.Data.AppSettings.IApplicationSettingService}
+    - id: scopedMenuService
+      type: Innova.Prism.Library.Services.IScopedMenuService
+    content.vb: Public Sub New(applicationSettingServices As List(Of IApplicationSettingService), scopedMenuService As IScopedMenuService)
+  overload: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.#ctor*
+  nameWithType.vb: AppSettingsViewModel.New(List(Of IApplicationSettingService), IScopedMenuService)
+  fullName.vb: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.New(System.Collections.Generic.List(Of Innova.Data.AppSettings.IApplicationSettingService), Innova.Prism.Library.Services.IScopedMenuService)
+  name.vb: New(List(Of IApplicationSettingService), IScopedMenuService)
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedTo(Prism.Regions.NavigationContext)
+  commentId: M:Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedTo(Prism.Regions.NavigationContext)
+  id: OnNavigatedTo(Prism.Regions.NavigationContext)
+  parent: Innova.Prism.Library.Views.Administration.AppSettingsViewModel
+  langs:
+  - csharp
+  - vb
+  name: OnNavigatedTo(NavigationContext)
+  nameWithType: AppSettingsViewModel.OnNavigatedTo(NavigationContext)
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedTo(Prism.Regions.NavigationContext)
+  type: Method
+  source:
+    id: OnNavigatedTo
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Views\Administration\AppSettingsViewModel.cs
+    startLine: 60
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Views.Administration
+  summary: Called when the implementer has been navigated to.
+  example: []
+  syntax:
+    content: public void OnNavigatedTo(NavigationContext navigationContext)
+    parameters:
+    - id: navigationContext
+      type: Prism.Regions.NavigationContext
+      description: The navigation context.
+    content.vb: Public Sub OnNavigatedTo(navigationContext As NavigationContext)
+  overload: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedTo*
+  implements:
+  - Prism.Regions.INavigationAware.OnNavigatedTo(Prism.Regions.NavigationContext)
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.IsNavigationTarget(Prism.Regions.NavigationContext)
+  commentId: M:Innova.Prism.Library.Views.Administration.AppSettingsViewModel.IsNavigationTarget(Prism.Regions.NavigationContext)
+  id: IsNavigationTarget(Prism.Regions.NavigationContext)
+  parent: Innova.Prism.Library.Views.Administration.AppSettingsViewModel
+  langs:
+  - csharp
+  - vb
+  name: IsNavigationTarget(NavigationContext)
+  nameWithType: AppSettingsViewModel.IsNavigationTarget(NavigationContext)
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.IsNavigationTarget(Prism.Regions.NavigationContext)
+  type: Method
+  source:
+    id: IsNavigationTarget
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Views\Administration\AppSettingsViewModel.cs
+    startLine: 67
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Views.Administration
+  summary: Called to determine if this instance can handle the navigation request.
+  example: []
+  syntax:
+    content: public bool IsNavigationTarget(NavigationContext navigationContext)
+    parameters:
+    - id: navigationContext
+      type: Prism.Regions.NavigationContext
+      description: The navigation context.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this instance accepts the navigation request; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function IsNavigationTarget(navigationContext As NavigationContext) As Boolean
+  overload: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.IsNavigationTarget*
+  implements:
+  - Prism.Regions.INavigationAware.IsNavigationTarget(Prism.Regions.NavigationContext)
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  commentId: M:Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  id: OnNavigatedFrom(Prism.Regions.NavigationContext)
+  parent: Innova.Prism.Library.Views.Administration.AppSettingsViewModel
+  langs:
+  - csharp
+  - vb
+  name: OnNavigatedFrom(NavigationContext)
+  nameWithType: AppSettingsViewModel.OnNavigatedFrom(NavigationContext)
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  type: Method
+  source:
+    id: OnNavigatedFrom
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Views\Administration\AppSettingsViewModel.cs
+    startLine: 72
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Views.Administration
+  summary: Called when the implementer is being navigated away from.
+  example: []
+  syntax:
+    content: public void OnNavigatedFrom(NavigationContext navigationContext)
+    parameters:
+    - id: navigationContext
+      type: Prism.Regions.NavigationContext
+      description: The navigation context.
+    content.vb: Public Sub OnNavigatedFrom(navigationContext As NavigationContext)
+  overload: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedFrom*
+  implements:
+  - Prism.Regions.INavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext)
+references:
+- uid: Innova.Prism.Library.Views.Administration
+  commentId: N:Innova.Prism.Library.Views.Administration
+  href: Innova.html
+  name: Innova.Prism.Library.Views.Administration
+  nameWithType: Innova.Prism.Library.Views.Administration
+  fullName: Innova.Prism.Library.Views.Administration
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Views
+    name: Views
+    href: Innova.Prism.Library.Views.html
+  - name: .
+  - uid: Innova.Prism.Library.Views.Administration
+    name: Administration
+    href: Innova.Prism.Library.Views.Administration.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Views
+    name: Views
+    href: Innova.Prism.Library.Views.html
+  - name: .
+  - uid: Innova.Prism.Library.Views.Administration
+    name: Administration
+    href: Innova.Prism.Library.Views.Administration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Prism.Mvvm.BindableBase
+  commentId: T:Prism.Mvvm.BindableBase
+  parent: Prism.Mvvm
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: BindableBase
+  nameWithType: BindableBase
+  fullName: Prism.Mvvm.BindableBase
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Prism.Regions.INavigationAware
+  commentId: T:Prism.Regions.INavigationAware
+  parent: Prism.Regions
+  isExternal: true
+  name: INavigationAware
+  nameWithType: INavigationAware
+  fullName: Prism.Regions.INavigationAware
+- uid: Prism.Regions.IRegionMemberLifetime
+  commentId: T:Prism.Regions.IRegionMemberLifetime
+  parent: Prism.Regions
+  isExternal: true
+  name: IRegionMemberLifetime
+  nameWithType: IRegionMemberLifetime
+  fullName: Prism.Regions.IRegionMemberLifetime
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  commentId: M:Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: RaisePropertyChanged(string)
+  nameWithType: BindableBase.RaisePropertyChanged(string)
+  fullName: Prism.Mvvm.BindableBase.RaisePropertyChanged(string)
+  nameWithType.vb: BindableBase.RaisePropertyChanged(String)
+  fullName.vb: Prism.Mvvm.BindableBase.RaisePropertyChanged(String)
+  name.vb: RaisePropertyChanged(String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: OnPropertyChanged(PropertyChangedEventArgs)
+  nameWithType: BindableBase.OnPropertyChanged(PropertyChangedEventArgs)
+  fullName: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: Prism.Mvvm.BindableBase.PropertyChanged
+  commentId: E:Prism.Mvvm.BindableBase.PropertyChanged
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: PropertyChanged
+  nameWithType: BindableBase.PropertyChanged
+  fullName: Prism.Mvvm.BindableBase.PropertyChanged
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Prism.Mvvm
+  commentId: N:Prism.Mvvm
+  isExternal: true
+  name: Prism.Mvvm
+  nameWithType: Prism.Mvvm
+  fullName: Prism.Mvvm
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Prism.Regions
+  commentId: N:Prism.Regions
+  href: Prism.html
+  name: Prism.Regions
+  nameWithType: Prism.Regions
+  fullName: Prism.Regions
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Regions
+    name: Regions
+    href: Prism.Regions.html
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Regions
+    name: Regions
+    href: Prism.Regions.html
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.AppSettingModels*
+  commentId: Overload:Innova.Prism.Library.Views.Administration.AppSettingsViewModel.AppSettingModels
+  href: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.AppSettingModels.html#Innova_Prism_Library_Views_Administration_AppSettingsViewModel_AppSettingModels
+  name: AppSettingModels
+  nameWithType: AppSettingsViewModel.AppSettingModels
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.AppSettingModels
+- uid: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Views.Administration.AppSettingModel}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Views.Administration.AppSettingModel}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<AppSettingModel>
+  nameWithType: ObservableCollection<AppSettingModel>
+  fullName: System.Collections.ObjectModel.ObservableCollection<Innova.Prism.Library.Views.Administration.AppSettingModel>
+  nameWithType.vb: ObservableCollection(Of AppSettingModel)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of Innova.Prism.Library.Views.Administration.AppSettingModel)
+  name.vb: ObservableCollection(Of AppSettingModel)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: Innova.Prism.Library.Views.Administration.AppSettingModel
+    name: AppSettingModel
+    href: Innova.Prism.Library.Views.Administration.AppSettingModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Views.Administration.AppSettingModel
+    name: AppSettingModel
+    href: Innova.Prism.Library.Views.Administration.AppSettingModel.html
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.ScopedMenuService*
+  commentId: Overload:Innova.Prism.Library.Views.Administration.AppSettingsViewModel.ScopedMenuService
+  href: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.ScopedMenuService.html#Innova_Prism_Library_Views_Administration_AppSettingsViewModel_ScopedMenuService
+  name: ScopedMenuService
+  nameWithType: AppSettingsViewModel.ScopedMenuService
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.ScopedMenuService
+- uid: Innova.Prism.Library.Services.IScopedMenuService
+  commentId: T:Innova.Prism.Library.Services.IScopedMenuService
+  parent: Innova.Prism.Library.Services
+  href: Innova.Prism.Library.Services.IScopedMenuService.html
+  name: IScopedMenuService
+  nameWithType: IScopedMenuService
+  fullName: Innova.Prism.Library.Services.IScopedMenuService
+- uid: Innova.Prism.Library.Services
+  commentId: N:Innova.Prism.Library.Services
+  href: Innova.html
+  name: Innova.Prism.Library.Services
+  nameWithType: Innova.Prism.Library.Services
+  fullName: Innova.Prism.Library.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.KeepAlive*
+  commentId: Overload:Innova.Prism.Library.Views.Administration.AppSettingsViewModel.KeepAlive
+  href: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.KeepAlive.html#Innova_Prism_Library_Views_Administration_AppSettingsViewModel_KeepAlive
+  name: KeepAlive
+  nameWithType: AppSettingsViewModel.KeepAlive
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.KeepAlive
+- uid: Prism.Regions.IRegionMemberLifetime.KeepAlive
+  commentId: P:Prism.Regions.IRegionMemberLifetime.KeepAlive
+  parent: Prism.Regions.IRegionMemberLifetime
+  isExternal: true
+  name: KeepAlive
+  nameWithType: IRegionMemberLifetime.KeepAlive
+  fullName: Prism.Regions.IRegionMemberLifetime.KeepAlive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.#ctor*
+  commentId: Overload:Innova.Prism.Library.Views.Administration.AppSettingsViewModel.#ctor
+  href: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.-ctor.html#Innova_Prism_Library_Views_Administration_AppSettingsViewModel__ctor_System_Collections_Generic_List_Innova_Data_AppSettings_IApplicationSettingService__Innova_Prism_Library_Services_IScopedMenuService_
+  name: AppSettingsViewModel
+  nameWithType: AppSettingsViewModel.AppSettingsViewModel
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.AppSettingsViewModel
+  nameWithType.vb: AppSettingsViewModel.New
+  fullName.vb: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.New
+  name.vb: New
+- uid: System.Collections.Generic.List{Innova.Data.AppSettings.IApplicationSettingService}
+  commentId: T:System.Collections.Generic.List{Innova.Data.AppSettings.IApplicationSettingService}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<IApplicationSettingService>
+  nameWithType: List<IApplicationSettingService>
+  fullName: System.Collections.Generic.List<Innova.Data.AppSettings.IApplicationSettingService>
+  nameWithType.vb: List(Of IApplicationSettingService)
+  fullName.vb: System.Collections.Generic.List(Of Innova.Data.AppSettings.IApplicationSettingService)
+  name.vb: List(Of IApplicationSettingService)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.AppSettings.IApplicationSettingService
+    name: IApplicationSettingService
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.AppSettings.IApplicationSettingService
+    name: IApplicationSettingService
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedTo*
+  commentId: Overload:Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedTo
+  href: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedTo.html#Innova_Prism_Library_Views_Administration_AppSettingsViewModel_OnNavigatedTo_Prism_Regions_NavigationContext_
+  name: OnNavigatedTo
+  nameWithType: AppSettingsViewModel.OnNavigatedTo
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedTo
+- uid: Prism.Regions.INavigationAware.OnNavigatedTo(Prism.Regions.NavigationContext)
+  commentId: M:Prism.Regions.INavigationAware.OnNavigatedTo(Prism.Regions.NavigationContext)
+  parent: Prism.Regions.INavigationAware
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  name: OnNavigatedTo(NavigationContext)
+  nameWithType: INavigationAware.OnNavigatedTo(NavigationContext)
+  fullName: Prism.Regions.INavigationAware.OnNavigatedTo(Prism.Regions.NavigationContext)
+  spec.csharp:
+  - uid: Prism.Regions.INavigationAware.OnNavigatedTo(Prism.Regions.NavigationContext)
+    name: OnNavigatedTo
+    isExternal: true
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+  spec.vb:
+  - uid: Prism.Regions.INavigationAware.OnNavigatedTo(Prism.Regions.NavigationContext)
+    name: OnNavigatedTo
+    isExternal: true
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+- uid: Prism.Regions.NavigationContext
+  commentId: T:Prism.Regions.NavigationContext
+  parent: Prism.Regions
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  name: NavigationContext
+  nameWithType: NavigationContext
+  fullName: Prism.Regions.NavigationContext
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.IsNavigationTarget*
+  commentId: Overload:Innova.Prism.Library.Views.Administration.AppSettingsViewModel.IsNavigationTarget
+  href: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.IsNavigationTarget.html#Innova_Prism_Library_Views_Administration_AppSettingsViewModel_IsNavigationTarget_Prism_Regions_NavigationContext_
+  name: IsNavigationTarget
+  nameWithType: AppSettingsViewModel.IsNavigationTarget
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.IsNavigationTarget
+- uid: Prism.Regions.INavigationAware.IsNavigationTarget(Prism.Regions.NavigationContext)
+  commentId: M:Prism.Regions.INavigationAware.IsNavigationTarget(Prism.Regions.NavigationContext)
+  parent: Prism.Regions.INavigationAware
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  name: IsNavigationTarget(NavigationContext)
+  nameWithType: INavigationAware.IsNavigationTarget(NavigationContext)
+  fullName: Prism.Regions.INavigationAware.IsNavigationTarget(Prism.Regions.NavigationContext)
+  spec.csharp:
+  - uid: Prism.Regions.INavigationAware.IsNavigationTarget(Prism.Regions.NavigationContext)
+    name: IsNavigationTarget
+    isExternal: true
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+  spec.vb:
+  - uid: Prism.Regions.INavigationAware.IsNavigationTarget(Prism.Regions.NavigationContext)
+    name: IsNavigationTarget
+    isExternal: true
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+- uid: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedFrom*
+  commentId: Overload:Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedFrom
+  href: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedFrom.html#Innova_Prism_Library_Views_Administration_AppSettingsViewModel_OnNavigatedFrom_Prism_Regions_NavigationContext_
+  name: OnNavigatedFrom
+  nameWithType: AppSettingsViewModel.OnNavigatedFrom
+  fullName: Innova.Prism.Library.Views.Administration.AppSettingsViewModel.OnNavigatedFrom
+- uid: Prism.Regions.INavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  commentId: M:Prism.Regions.INavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  parent: Prism.Regions.INavigationAware
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  name: OnNavigatedFrom(NavigationContext)
+  nameWithType: INavigationAware.OnNavigatedFrom(NavigationContext)
+  fullName: Prism.Regions.INavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  spec.csharp:
+  - uid: Prism.Regions.INavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext)
+    name: OnNavigatedFrom
+    isExternal: true
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+  spec.vb:
+  - uid: Prism.Regions.INavigationAware.OnNavigatedFrom(Prism.Regions.NavigationContext)
+    name: OnNavigatedFrom
+    isExternal: true
+  - name: (
+  - uid: Prism.Regions.NavigationContext
+    name: NavigationContext
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+memberLayout: SeparatePages

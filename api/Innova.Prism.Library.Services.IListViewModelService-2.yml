@@ -1,0 +1,1371 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Services.IListViewModelService`2
+  commentId: T:Innova.Prism.Library.Services.IListViewModelService`2
+  id: IListViewModelService`2
+  parent: Innova.Prism.Library.Services
+  children:
+  - Innova.Prism.Library.Services.IListViewModelService`2.Count(Innova.Data.Entity.QueryParameter{`0},System.Threading.CancellationToken)
+  - Innova.Prism.Library.Services.IListViewModelService`2.EntityService
+  - Innova.Prism.Library.Services.IListViewModelService`2.GetPropertySelectorExpression(System.String)
+  - Innova.Prism.Library.Services.IListViewModelService`2.GetSortExpression(System.String)
+  - Innova.Prism.Library.Services.IListViewModelService`2.Insert(System.Collections.Generic.List{`1},System.Threading.CancellationToken)
+  - Innova.Prism.Library.Services.IListViewModelService`2.MakeEntityUpdatable(`1)
+  - Innova.Prism.Library.Services.IListViewModelService`2.ToListDistinct``1(System.String,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Threading.CancellationToken)
+  - Innova.Prism.Library.Services.IListViewModelService`2.Update(System.Collections.Generic.List{`1},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IListViewModelService<T, TList>
+  nameWithType: IListViewModelService<T, TList>
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>
+  type: Interface
+  source:
+    id: IListViewModelService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\IListViewModelService.cs
+    startLine: 15
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Represents a service for managing list view models.
+  example: []
+  syntax:
+    content: 'public interface IListViewModelService<T, TList> : IViewModelService<T> where T : class where TList : class'
+    typeParameters:
+    - id: T
+      description: The type of the main entity.
+    - id: TList
+      description: The type of the list entity.
+    content.vb: Public Interface IListViewModelService(Of T As Class, TList As Class) Inherits IViewModelService(Of T)
+  inheritedMembers:
+  - Innova.Prism.Library.Services.IViewModelService{{T}}.DefaultOrderBy
+  - Innova.Prism.Library.Services.IViewModelService{{T}}.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{{TOther}}[])
+  - Innova.Prism.Library.Services.IViewModelService{{T}}.GetQueryParameterWithOrderBy
+  - Innova.Prism.Library.Services.IViewModelService{{T}}.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{{T}}},System.Boolean,System.Threading.CancellationToken)
+  nameWithType.vb: IListViewModelService(Of T, TList)
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList)
+  name.vb: IListViewModelService(Of T, TList)
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.EntityService
+  commentId: P:Innova.Prism.Library.Services.IListViewModelService`2.EntityService
+  id: EntityService
+  parent: Innova.Prism.Library.Services.IListViewModelService`2
+  langs:
+  - csharp
+  - vb
+  name: EntityService
+  nameWithType: IListViewModelService<T, TList>.EntityService
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.EntityService
+  type: Property
+  source:
+    id: EntityService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\IListViewModelService.cs
+    startLine: 20
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Gets the entity service for the list view model.
+  example: []
+  syntax:
+    content: IListEntityService<T, TList> EntityService { get; }
+    parameters: []
+    return:
+      type: Innova.Data.Entity.IListEntityService{{T},{TList}}
+    content.vb: ReadOnly Property EntityService As IListEntityService(Of T, TList)
+  overload: Innova.Prism.Library.Services.IListViewModelService`2.EntityService*
+  nameWithType.vb: IListViewModelService(Of T, TList).EntityService
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).EntityService
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.GetSortExpression(System.String)
+  commentId: M:Innova.Prism.Library.Services.IListViewModelService`2.GetSortExpression(System.String)
+  id: GetSortExpression(System.String)
+  parent: Innova.Prism.Library.Services.IListViewModelService`2
+  langs:
+  - csharp
+  - vb
+  name: GetSortExpression(string)
+  nameWithType: IListViewModelService<T, TList>.GetSortExpression(string)
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.GetSortExpression(string)
+  type: Method
+  source:
+    id: GetSortExpression
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\IListViewModelService.cs
+    startLine: 27
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Gets the sort expression for the specified property name.
+  example: []
+  syntax:
+    content: LambdaExpression GetSortExpression(string propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The name of the property.
+    return:
+      type: System.Linq.Expressions.LambdaExpression
+      description: The sort expression.
+    content.vb: Function GetSortExpression(propertyName As String) As LambdaExpression
+  overload: Innova.Prism.Library.Services.IListViewModelService`2.GetSortExpression*
+  nameWithType.vb: IListViewModelService(Of T, TList).GetSortExpression(String)
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).GetSortExpression(String)
+  name.vb: GetSortExpression(String)
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.GetPropertySelectorExpression(System.String)
+  commentId: M:Innova.Prism.Library.Services.IListViewModelService`2.GetPropertySelectorExpression(System.String)
+  id: GetPropertySelectorExpression(System.String)
+  parent: Innova.Prism.Library.Services.IListViewModelService`2
+  langs:
+  - csharp
+  - vb
+  name: GetPropertySelectorExpression(string)
+  nameWithType: IListViewModelService<T, TList>.GetPropertySelectorExpression(string)
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.GetPropertySelectorExpression(string)
+  type: Method
+  source:
+    id: GetPropertySelectorExpression
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\IListViewModelService.cs
+    startLine: 34
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Gets the property selector expression for the specified property name.
+  example: []
+  syntax:
+    content: LambdaExpression GetPropertySelectorExpression(string propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The name of the property.
+    return:
+      type: System.Linq.Expressions.LambdaExpression
+      description: The property selector expression.
+    content.vb: Function GetPropertySelectorExpression(propertyName As String) As LambdaExpression
+  overload: Innova.Prism.Library.Services.IListViewModelService`2.GetPropertySelectorExpression*
+  nameWithType.vb: IListViewModelService(Of T, TList).GetPropertySelectorExpression(String)
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).GetPropertySelectorExpression(String)
+  name.vb: GetPropertySelectorExpression(String)
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.Update(System.Collections.Generic.List{`1},System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.IListViewModelService`2.Update(System.Collections.Generic.List{`1},System.Threading.CancellationToken)
+  id: Update(System.Collections.Generic.List{`1},System.Threading.CancellationToken)
+  parent: Innova.Prism.Library.Services.IListViewModelService`2
+  langs:
+  - csharp
+  - vb
+  name: Update(List<TList>, CancellationToken)
+  nameWithType: IListViewModelService<T, TList>.Update(List<TList>, CancellationToken)
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.Update(System.Collections.Generic.List<TList>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: Update
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\IListViewModelService.cs
+    startLine: 42
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Updates the list of entities.
+  example: []
+  syntax:
+    content: Task Update(List<TList> entity, CancellationToken cancellationToken = default)
+    parameters:
+    - id: entity
+      type: System.Collections.Generic.List{{TList}}
+      description: The list of entities to update.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Function Update(entity As List(Of TList), cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Prism.Library.Services.IListViewModelService`2.Update*
+  nameWithType.vb: IListViewModelService(Of T, TList).Update(List(Of TList), CancellationToken)
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).Update(System.Collections.Generic.List(Of TList), System.Threading.CancellationToken)
+  name.vb: Update(List(Of TList), CancellationToken)
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.Insert(System.Collections.Generic.List{`1},System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.IListViewModelService`2.Insert(System.Collections.Generic.List{`1},System.Threading.CancellationToken)
+  id: Insert(System.Collections.Generic.List{`1},System.Threading.CancellationToken)
+  parent: Innova.Prism.Library.Services.IListViewModelService`2
+  langs:
+  - csharp
+  - vb
+  name: Insert(List<TList>, CancellationToken)
+  nameWithType: IListViewModelService<T, TList>.Insert(List<TList>, CancellationToken)
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.Insert(System.Collections.Generic.List<TList>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: Insert
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\IListViewModelService.cs
+    startLine: 50
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Inserts the list of entities.
+  example: []
+  syntax:
+    content: Task Insert(List<TList> entity, CancellationToken cancellationToken = default)
+    parameters:
+    - id: entity
+      type: System.Collections.Generic.List{{TList}}
+      description: The list of entities to insert.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Function Insert(entity As List(Of TList), cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Prism.Library.Services.IListViewModelService`2.Insert*
+  nameWithType.vb: IListViewModelService(Of T, TList).Insert(List(Of TList), CancellationToken)
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).Insert(System.Collections.Generic.List(Of TList), System.Threading.CancellationToken)
+  name.vb: Insert(List(Of TList), CancellationToken)
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.ToListDistinct``1(System.String,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.IListViewModelService`2.ToListDistinct``1(System.String,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Threading.CancellationToken)
+  id: ToListDistinct``1(System.String,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Threading.CancellationToken)
+  parent: Innova.Prism.Library.Services.IListViewModelService`2
+  langs:
+  - csharp
+  - vb
+  name: ToListDistinct<TResult>(string, Expression<Func<T, bool>>, CancellationToken)
+  nameWithType: IListViewModelService<T, TList>.ToListDistinct<TResult>(string, Expression<Func<T, bool>>, CancellationToken)
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.ToListDistinct<TResult>(string, System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ToListDistinct
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\IListViewModelService.cs
+    startLine: 60
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Retrieves a distinct list of results based on the specified criteria.
+  example: []
+  syntax:
+    content: Task<List<TResult>> ToListDistinct<TResult>(string name, Expression<Func<T, bool>> where, CancellationToken cancellationToken = default)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the result.
+    - id: where
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The criteria to filter the results.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    typeParameters:
+    - id: TResult
+      description: The type of the result.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{{TResult}}}
+      description: A task representing the asynchronous operation.
+    content.vb: Function ToListDistinct(Of TResult)(name As String, where As Expression(Of Func(Of T, Boolean)), cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TResult))
+  overload: Innova.Prism.Library.Services.IListViewModelService`2.ToListDistinct*
+  nameWithType.vb: IListViewModelService(Of T, TList).ToListDistinct(Of TResult)(String, Expression(Of Func(Of T, Boolean)), CancellationToken)
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).ToListDistinct(Of TResult)(String, System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)), System.Threading.CancellationToken)
+  name.vb: ToListDistinct(Of TResult)(String, Expression(Of Func(Of T, Boolean)), CancellationToken)
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.Count(Innova.Data.Entity.QueryParameter{`0},System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.IListViewModelService`2.Count(Innova.Data.Entity.QueryParameter{`0},System.Threading.CancellationToken)
+  id: Count(Innova.Data.Entity.QueryParameter{`0},System.Threading.CancellationToken)
+  parent: Innova.Prism.Library.Services.IListViewModelService`2
+  langs:
+  - csharp
+  - vb
+  name: Count(QueryParameter<T>, CancellationToken)
+  nameWithType: IListViewModelService<T, TList>.Count(QueryParameter<T>, CancellationToken)
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.Count(Innova.Data.Entity.QueryParameter<T>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: Count
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\IListViewModelService.cs
+    startLine: 68
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Counts the number of entities based on the specified query parameter.
+  example: []
+  syntax:
+    content: Task<int> Count(QueryParameter<T> queryParameter, CancellationToken cancellationToken = default)
+    parameters:
+    - id: queryParameter
+      type: Innova.Data.Entity.QueryParameter{{T}}
+      description: The query parameter.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: A task representing the asynchronous operation.
+    content.vb: Function Count(queryParameter As QueryParameter(Of T), cancellationToken As CancellationToken = Nothing) As Task(Of Integer)
+  overload: Innova.Prism.Library.Services.IListViewModelService`2.Count*
+  nameWithType.vb: IListViewModelService(Of T, TList).Count(QueryParameter(Of T), CancellationToken)
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).Count(Innova.Data.Entity.QueryParameter(Of T), System.Threading.CancellationToken)
+  name.vb: Count(QueryParameter(Of T), CancellationToken)
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.MakeEntityUpdatable(`1)
+  commentId: M:Innova.Prism.Library.Services.IListViewModelService`2.MakeEntityUpdatable(`1)
+  id: MakeEntityUpdatable(`1)
+  parent: Innova.Prism.Library.Services.IListViewModelService`2
+  langs:
+  - csharp
+  - vb
+  name: MakeEntityUpdatable(TList)
+  nameWithType: IListViewModelService<T, TList>.MakeEntityUpdatable(TList)
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.MakeEntityUpdatable(TList)
+  type: Method
+  source:
+    id: MakeEntityUpdatable
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\IListViewModelService.cs
+    startLine: 74
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Makes the specified list entity updatable.
+  example: []
+  syntax:
+    content: void MakeEntityUpdatable(TList entity)
+    parameters:
+    - id: entity
+      type: '{TList}'
+      description: The list entity to make updatable.
+    content.vb: Sub MakeEntityUpdatable(entity As TList)
+  overload: Innova.Prism.Library.Services.IListViewModelService`2.MakeEntityUpdatable*
+  nameWithType.vb: IListViewModelService(Of T, TList).MakeEntityUpdatable(TList)
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).MakeEntityUpdatable(TList)
+references:
+- uid: Innova.Prism.Library.Services
+  commentId: N:Innova.Prism.Library.Services
+  href: Innova.html
+  name: Innova.Prism.Library.Services
+  nameWithType: Innova.Prism.Library.Services
+  fullName: Innova.Prism.Library.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+- uid: Innova.Prism.Library.Services.IViewModelService{{T}}.DefaultOrderBy
+  commentId: P:Innova.Prism.Library.Services.IViewModelService{`0}.DefaultOrderBy
+  parent: Innova.Prism.Library.Services.IViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.IViewModelService`1.DefaultOrderBy
+  href: Innova.Prism.Library.Services.IViewModelService-1.DefaultOrderBy.html#Innova_Prism_Library_Services_IViewModelService_1_DefaultOrderBy
+  name: DefaultOrderBy
+  nameWithType: IViewModelService<T>.DefaultOrderBy
+  fullName: Innova.Prism.Library.Services.IViewModelService<T>.DefaultOrderBy
+  nameWithType.vb: IViewModelService(Of T).DefaultOrderBy
+  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T).DefaultOrderBy
+- uid: Innova.Prism.Library.Services.IViewModelService{{T}}.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{{TOther}}[])
+  commentId: M:Innova.Prism.Library.Services.IViewModelService{`0}.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  parent: Innova.Prism.Library.Services.IViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.IViewModelService`1.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  href: Innova.Prism.Library.Services.IViewModelService-1.GetLookupList.html#Innova_Prism_Library_Services_IViewModelService_1_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  name: GetLookupList<TOther>(params PrimaryKeys<TOther>[])
+  nameWithType: IViewModelService<T>.GetLookupList<TOther>(params PrimaryKeys<TOther>[])
+  fullName: Innova.Prism.Library.Services.IViewModelService<T>.GetLookupList<TOther>(params Innova.Data.Entity.PrimaryKeys<TOther>[])
+  nameWithType.vb: IViewModelService(Of T).GetLookupList(Of TOther)(ParamArray PrimaryKeys(Of TOther)())
+  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T).GetLookupList(Of TOther)(ParamArray Innova.Data.Entity.PrimaryKeys(Of TOther)())
+  name.vb: GetLookupList(Of TOther)(ParamArray PrimaryKeys(Of TOther)())
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IViewModelService{`0}.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+    name: GetLookupList
+    href: Innova.Prism.Library.Services.IViewModelService-1.GetLookupList.html#Innova_Prism_Library_Services_IViewModelService_1_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  - name: <
+  - name: TOther
+  - name: '>'
+  - name: (
+  - name: params
+  - name: " "
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+  - name: <
+  - name: TOther
+  - name: '>'
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IViewModelService{`0}.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+    name: GetLookupList
+    href: Innova.Prism.Library.Services.IViewModelService-1.GetLookupList.html#Innova_Prism_Library_Services_IViewModelService_1_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOther
+  - name: )
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOther
+  - name: )
+  - name: (
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Services.IViewModelService{{T}}.GetQueryParameterWithOrderBy
+  commentId: M:Innova.Prism.Library.Services.IViewModelService{`0}.GetQueryParameterWithOrderBy
+  parent: Innova.Prism.Library.Services.IViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.IViewModelService`1.GetQueryParameterWithOrderBy
+  href: Innova.Prism.Library.Services.IViewModelService-1.GetQueryParameterWithOrderBy.html#Innova_Prism_Library_Services_IViewModelService_1_GetQueryParameterWithOrderBy
+  name: GetQueryParameterWithOrderBy()
+  nameWithType: IViewModelService<T>.GetQueryParameterWithOrderBy()
+  fullName: Innova.Prism.Library.Services.IViewModelService<T>.GetQueryParameterWithOrderBy()
+  nameWithType.vb: IViewModelService(Of T).GetQueryParameterWithOrderBy()
+  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T).GetQueryParameterWithOrderBy()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IViewModelService{`0}.GetQueryParameterWithOrderBy
+    name: GetQueryParameterWithOrderBy
+    href: Innova.Prism.Library.Services.IViewModelService-1.GetQueryParameterWithOrderBy.html#Innova_Prism_Library_Services_IViewModelService_1_GetQueryParameterWithOrderBy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IViewModelService{`0}.GetQueryParameterWithOrderBy
+    name: GetQueryParameterWithOrderBy
+    href: Innova.Prism.Library.Services.IViewModelService-1.GetQueryParameterWithOrderBy.html#Innova_Prism_Library_Services_IViewModelService_1_GetQueryParameterWithOrderBy
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Services.IViewModelService{{T}}.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{{T}}},System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.IViewModelService{`0}.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+  parent: Innova.Prism.Library.Services.IViewModelService{{T}}
+  definition: Innova.Prism.Library.Services.IViewModelService`1.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+  href: Innova.Prism.Library.Services.IViewModelService-1.Delete.html#Innova_Prism_Library_Services_IViewModelService_1_Delete_System_Collections_Generic_List_Innova_Data_Entity_IEntityWithKey__0___System_Boolean_System_Threading_CancellationToken_
+  name: Delete(List<IEntityWithKey<T>>, bool, CancellationToken)
+  nameWithType: IViewModelService<T>.Delete(List<IEntityWithKey<T>>, bool, CancellationToken)
+  fullName: Innova.Prism.Library.Services.IViewModelService<T>.Delete(System.Collections.Generic.List<Innova.Data.Entity.IEntityWithKey<T>>, bool, System.Threading.CancellationToken)
+  nameWithType.vb: IViewModelService(Of T).Delete(List(Of IEntityWithKey(Of T)), Boolean, CancellationToken)
+  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T).Delete(System.Collections.Generic.List(Of Innova.Data.Entity.IEntityWithKey(Of T)), Boolean, System.Threading.CancellationToken)
+  name.vb: Delete(List(Of IEntityWithKey(Of T)), Boolean, CancellationToken)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IViewModelService{`0}.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+    name: Delete
+    href: Innova.Prism.Library.Services.IViewModelService-1.Delete.html#Innova_Prism_Library_Services_IViewModelService_1_Delete_System_Collections_Generic_List_Innova_Data_Entity_IEntityWithKey__0___System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.Entity.IEntityWithKey`1
+    name: IEntityWithKey
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IViewModelService{`0}.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+    name: Delete
+    href: Innova.Prism.Library.Services.IViewModelService-1.Delete.html#Innova_Prism_Library_Services_IViewModelService_1_Delete_System_Collections_Generic_List_Innova_Data_Entity_IEntityWithKey__0___System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.Entity.IEntityWithKey`1
+    name: IEntityWithKey
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Innova.Prism.Library.Services.IViewModelService`1.DefaultOrderBy
+  commentId: P:Innova.Prism.Library.Services.IViewModelService`1.DefaultOrderBy
+  href: Innova.Prism.Library.Services.IViewModelService-1.DefaultOrderBy.html#Innova_Prism_Library_Services_IViewModelService_1_DefaultOrderBy
+  name: DefaultOrderBy
+  nameWithType: IViewModelService<T>.DefaultOrderBy
+  fullName: Innova.Prism.Library.Services.IViewModelService<T>.DefaultOrderBy
+  nameWithType.vb: IViewModelService(Of T).DefaultOrderBy
+  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T).DefaultOrderBy
+- uid: Innova.Prism.Library.Services.IViewModelService{{T}}
+  commentId: T:Innova.Prism.Library.Services.IViewModelService{`0}
+  parent: Innova.Prism.Library.Services
+  definition: Innova.Prism.Library.Services.IViewModelService`1
+  href: Innova.Prism.Library.Services.IViewModelService-1.html
+  name: IViewModelService<T>
+  nameWithType: IViewModelService<T>
+  fullName: Innova.Prism.Library.Services.IViewModelService<T>
+  nameWithType.vb: IViewModelService(Of T)
+  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T)
+  name.vb: IViewModelService(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IViewModelService`1
+    name: IViewModelService
+    href: Innova.Prism.Library.Services.IViewModelService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IViewModelService`1
+    name: IViewModelService
+    href: Innova.Prism.Library.Services.IViewModelService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Services.IViewModelService`1.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  commentId: M:Innova.Prism.Library.Services.IViewModelService`1.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+  href: Innova.Prism.Library.Services.IViewModelService-1.GetLookupList.html#Innova_Prism_Library_Services_IViewModelService_1_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  name: GetLookupList<TOther>(params PrimaryKeys<TOther>[])
+  nameWithType: IViewModelService<T>.GetLookupList<TOther>(params PrimaryKeys<TOther>[])
+  fullName: Innova.Prism.Library.Services.IViewModelService<T>.GetLookupList<TOther>(params Innova.Data.Entity.PrimaryKeys<TOther>[])
+  nameWithType.vb: IViewModelService(Of T).GetLookupList(Of TOther)(ParamArray PrimaryKeys(Of TOther)())
+  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T).GetLookupList(Of TOther)(ParamArray Innova.Data.Entity.PrimaryKeys(Of TOther)())
+  name.vb: GetLookupList(Of TOther)(ParamArray PrimaryKeys(Of TOther)())
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IViewModelService`1.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+    name: GetLookupList
+    href: Innova.Prism.Library.Services.IViewModelService-1.GetLookupList.html#Innova_Prism_Library_Services_IViewModelService_1_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  - name: <
+  - name: TOther
+  - name: '>'
+  - name: (
+  - name: params
+  - name: " "
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+  - name: <
+  - name: TOther
+  - name: '>'
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IViewModelService`1.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
+    name: GetLookupList
+    href: Innova.Prism.Library.Services.IViewModelService-1.GetLookupList.html#Innova_Prism_Library_Services_IViewModelService_1_GetLookupList__1_Innova_Data_Entity_PrimaryKeys___0____
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOther
+  - name: )
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOther
+  - name: )
+  - name: (
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Services.IViewModelService`1.GetQueryParameterWithOrderBy
+  commentId: M:Innova.Prism.Library.Services.IViewModelService`1.GetQueryParameterWithOrderBy
+  href: Innova.Prism.Library.Services.IViewModelService-1.GetQueryParameterWithOrderBy.html#Innova_Prism_Library_Services_IViewModelService_1_GetQueryParameterWithOrderBy
+  name: GetQueryParameterWithOrderBy()
+  nameWithType: IViewModelService<T>.GetQueryParameterWithOrderBy()
+  fullName: Innova.Prism.Library.Services.IViewModelService<T>.GetQueryParameterWithOrderBy()
+  nameWithType.vb: IViewModelService(Of T).GetQueryParameterWithOrderBy()
+  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T).GetQueryParameterWithOrderBy()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IViewModelService`1.GetQueryParameterWithOrderBy
+    name: GetQueryParameterWithOrderBy
+    href: Innova.Prism.Library.Services.IViewModelService-1.GetQueryParameterWithOrderBy.html#Innova_Prism_Library_Services_IViewModelService_1_GetQueryParameterWithOrderBy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IViewModelService`1.GetQueryParameterWithOrderBy
+    name: GetQueryParameterWithOrderBy
+    href: Innova.Prism.Library.Services.IViewModelService-1.GetQueryParameterWithOrderBy.html#Innova_Prism_Library_Services_IViewModelService_1_GetQueryParameterWithOrderBy
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Services.IViewModelService`1.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Innova.Prism.Library.Services.IViewModelService`1.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+  isExternal: true
+  href: Innova.Prism.Library.Services.IViewModelService-1.Delete.html#Innova_Prism_Library_Services_IViewModelService_1_Delete_System_Collections_Generic_List_Innova_Data_Entity_IEntityWithKey__0___System_Boolean_System_Threading_CancellationToken_
+  name: Delete(List<IEntityWithKey<T>>, bool, CancellationToken)
+  nameWithType: IViewModelService<T>.Delete(List<IEntityWithKey<T>>, bool, CancellationToken)
+  fullName: Innova.Prism.Library.Services.IViewModelService<T>.Delete(System.Collections.Generic.List<Innova.Data.Entity.IEntityWithKey<T>>, bool, System.Threading.CancellationToken)
+  nameWithType.vb: IViewModelService(Of T).Delete(List(Of IEntityWithKey(Of T)), Boolean, CancellationToken)
+  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T).Delete(System.Collections.Generic.List(Of Innova.Data.Entity.IEntityWithKey(Of T)), Boolean, System.Threading.CancellationToken)
+  name.vb: Delete(List(Of IEntityWithKey(Of T)), Boolean, CancellationToken)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IViewModelService`1.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+    name: Delete
+    href: Innova.Prism.Library.Services.IViewModelService-1.Delete.html#Innova_Prism_Library_Services_IViewModelService_1_Delete_System_Collections_Generic_List_Innova_Data_Entity_IEntityWithKey__0___System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.Entity.IEntityWithKey`1
+    name: IEntityWithKey
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IViewModelService`1.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
+    name: Delete
+    href: Innova.Prism.Library.Services.IViewModelService-1.Delete.html#Innova_Prism_Library_Services_IViewModelService_1_Delete_System_Collections_Generic_List_Innova_Data_Entity_IEntityWithKey__0___System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.Entity.IEntityWithKey`1
+    name: IEntityWithKey
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Innova.Prism.Library.Services.IViewModelService`1
+  commentId: T:Innova.Prism.Library.Services.IViewModelService`1
+  href: Innova.Prism.Library.Services.IViewModelService-1.html
+  name: IViewModelService<T>
+  nameWithType: IViewModelService<T>
+  fullName: Innova.Prism.Library.Services.IViewModelService<T>
+  nameWithType.vb: IViewModelService(Of T)
+  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T)
+  name.vb: IViewModelService(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IViewModelService`1
+    name: IViewModelService
+    href: Innova.Prism.Library.Services.IViewModelService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IViewModelService`1
+    name: IViewModelService
+    href: Innova.Prism.Library.Services.IViewModelService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.EntityService*
+  commentId: Overload:Innova.Prism.Library.Services.IListViewModelService`2.EntityService
+  href: Innova.Prism.Library.Services.IListViewModelService-2.EntityService.html#Innova_Prism_Library_Services_IListViewModelService_2_EntityService
+  name: EntityService
+  nameWithType: IListViewModelService<T, TList>.EntityService
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.EntityService
+  nameWithType.vb: IListViewModelService(Of T, TList).EntityService
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).EntityService
+- uid: Innova.Data.Entity.IListEntityService{{T},{TList}}
+  commentId: T:Innova.Data.Entity.IListEntityService{`0,`4}
+  parent: Innova.Data.Entity
+  definition: Innova.Data.Entity.IListEntityService`2
+  href: Innova.Data.Entity.IListEntityService-2.html
+  name: IListEntityService<T, TList>
+  nameWithType: IListEntityService<T, TList>
+  fullName: Innova.Data.Entity.IListEntityService<T, TList>
+  nameWithType.vb: IListEntityService(Of T, TList)
+  fullName.vb: Innova.Data.Entity.IListEntityService(Of T, TList)
+  name.vb: IListEntityService(Of T, TList)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IListEntityService`2
+    name: IListEntityService
+    href: Innova.Data.Entity.IListEntityService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TList
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.IListEntityService`2
+    name: IListEntityService
+    href: Innova.Data.Entity.IListEntityService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TList
+  - name: )
+- uid: Innova.Data.Entity.IListEntityService`2
+  commentId: T:Innova.Data.Entity.IListEntityService`2
+  href: Innova.Data.Entity.IListEntityService-2.html
+  name: IListEntityService<T, TList>
+  nameWithType: IListEntityService<T, TList>
+  fullName: Innova.Data.Entity.IListEntityService<T, TList>
+  nameWithType.vb: IListEntityService(Of T, TList)
+  fullName.vb: Innova.Data.Entity.IListEntityService(Of T, TList)
+  name.vb: IListEntityService(Of T, TList)
+  spec.csharp:
+  - uid: Innova.Data.Entity.IListEntityService`2
+    name: IListEntityService
+    href: Innova.Data.Entity.IListEntityService-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TList
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.IListEntityService`2
+    name: IListEntityService
+    href: Innova.Data.Entity.IListEntityService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TList
+  - name: )
+- uid: Innova.Data.Entity
+  commentId: N:Innova.Data.Entity
+  href: Innova.html
+  name: Innova.Data.Entity
+  nameWithType: Innova.Data.Entity
+  fullName: Innova.Data.Entity
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.GetSortExpression*
+  commentId: Overload:Innova.Prism.Library.Services.IListViewModelService`2.GetSortExpression
+  href: Innova.Prism.Library.Services.IListViewModelService-2.GetSortExpression.html#Innova_Prism_Library_Services_IListViewModelService_2_GetSortExpression_System_String_
+  name: GetSortExpression
+  nameWithType: IListViewModelService<T, TList>.GetSortExpression
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.GetSortExpression
+  nameWithType.vb: IListViewModelService(Of T, TList).GetSortExpression
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).GetSortExpression
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Linq.Expressions.LambdaExpression
+  commentId: T:System.Linq.Expressions.LambdaExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.lambdaexpression
+  name: LambdaExpression
+  nameWithType: LambdaExpression
+  fullName: System.Linq.Expressions.LambdaExpression
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.GetPropertySelectorExpression*
+  commentId: Overload:Innova.Prism.Library.Services.IListViewModelService`2.GetPropertySelectorExpression
+  href: Innova.Prism.Library.Services.IListViewModelService-2.GetPropertySelectorExpression.html#Innova_Prism_Library_Services_IListViewModelService_2_GetPropertySelectorExpression_System_String_
+  name: GetPropertySelectorExpression
+  nameWithType: IListViewModelService<T, TList>.GetPropertySelectorExpression
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.GetPropertySelectorExpression
+  nameWithType.vb: IListViewModelService(Of T, TList).GetPropertySelectorExpression
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).GetPropertySelectorExpression
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.Update*
+  commentId: Overload:Innova.Prism.Library.Services.IListViewModelService`2.Update
+  href: Innova.Prism.Library.Services.IListViewModelService-2.Update.html#Innova_Prism_Library_Services_IListViewModelService_2_Update_System_Collections_Generic_List__1__System_Threading_CancellationToken_
+  name: Update
+  nameWithType: IListViewModelService<T, TList>.Update
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.Update
+  nameWithType.vb: IListViewModelService(Of T, TList).Update
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).Update
+- uid: System.Collections.Generic.List{{TList}}
+  commentId: T:System.Collections.Generic.List{`4}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<TList>
+  nameWithType: List<TList>
+  fullName: System.Collections.Generic.List<TList>
+  nameWithType.vb: List(Of TList)
+  fullName.vb: System.Collections.Generic.List(Of TList)
+  name.vb: List(Of TList)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: TList
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TList
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.Insert*
+  commentId: Overload:Innova.Prism.Library.Services.IListViewModelService`2.Insert
+  href: Innova.Prism.Library.Services.IListViewModelService-2.Insert.html#Innova_Prism_Library_Services_IListViewModelService_2_Insert_System_Collections_Generic_List__1__System_Threading_CancellationToken_
+  name: Insert
+  nameWithType: IListViewModelService<T, TList>.Insert
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.Insert
+  nameWithType.vb: IListViewModelService(Of T, TList).Insert
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).Insert
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.ToListDistinct*
+  commentId: Overload:Innova.Prism.Library.Services.IListViewModelService`2.ToListDistinct
+  href: Innova.Prism.Library.Services.IListViewModelService-2.ToListDistinct.html#Innova_Prism_Library_Services_IListViewModelService_2_ToListDistinct__1_System_String_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___System_Threading_CancellationToken_
+  name: ToListDistinct
+  nameWithType: IListViewModelService<T, TList>.ToListDistinct
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.ToListDistinct
+  nameWithType.vb: IListViewModelService(Of T, TList).ToListDistinct
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).ToListDistinct
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, bool>>
+  nameWithType: Expression<Func<T, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, bool>>
+  nameWithType.vb: Expression(Of Func(Of T, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean))
+  name.vb: Expression(Of Func(Of T, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{{TResult}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{``0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<TResult>>
+  nameWithType: Task<List<TResult>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<TResult>>
+  nameWithType.vb: Task(Of List(Of TResult))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of TResult))
+  name.vb: Task(Of List(Of TResult))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.Count*
+  commentId: Overload:Innova.Prism.Library.Services.IListViewModelService`2.Count
+  href: Innova.Prism.Library.Services.IListViewModelService-2.Count.html#Innova_Prism_Library_Services_IListViewModelService_2_Count_Innova_Data_Entity_QueryParameter__0__System_Threading_CancellationToken_
+  name: Count
+  nameWithType: IListViewModelService<T, TList>.Count
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.Count
+  nameWithType.vb: IListViewModelService(Of T, TList).Count
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).Count
+- uid: Innova.Data.Entity.QueryParameter{{T}}
+  commentId: T:Innova.Data.Entity.QueryParameter{`0}
+  parent: Innova.Data.Entity
+  definition: Innova.Data.Entity.QueryParameter`1
+  href: Innova.Data.Entity.QueryParameter-1.html
+  name: QueryParameter<T>
+  nameWithType: QueryParameter<T>
+  fullName: Innova.Data.Entity.QueryParameter<T>
+  nameWithType.vb: QueryParameter(Of T)
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T)
+  name.vb: QueryParameter(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.Entity.QueryParameter`1
+  commentId: T:Innova.Data.Entity.QueryParameter`1
+  href: Innova.Data.Entity.QueryParameter-1.html
+  name: QueryParameter<T>
+  nameWithType: QueryParameter<T>
+  fullName: Innova.Data.Entity.QueryParameter<T>
+  nameWithType.vb: QueryParameter(Of T)
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T)
+  name.vb: QueryParameter(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Services.IListViewModelService`2.MakeEntityUpdatable*
+  commentId: Overload:Innova.Prism.Library.Services.IListViewModelService`2.MakeEntityUpdatable
+  href: Innova.Prism.Library.Services.IListViewModelService-2.MakeEntityUpdatable.html#Innova_Prism_Library_Services_IListViewModelService_2_MakeEntityUpdatable__1_
+  name: MakeEntityUpdatable
+  nameWithType: IListViewModelService<T, TList>.MakeEntityUpdatable
+  fullName: Innova.Prism.Library.Services.IListViewModelService<T, TList>.MakeEntityUpdatable
+  nameWithType.vb: IListViewModelService(Of T, TList).MakeEntityUpdatable
+  fullName.vb: Innova.Prism.Library.Services.IListViewModelService(Of T, TList).MakeEntityUpdatable
+- uid: '{TList}'
+  commentId: '!:TList'
+  definition: TList
+  name: TList
+  nameWithType: TList
+  fullName: TList
+- uid: TList
+  name: TList
+  nameWithType: TList
+  fullName: TList
+memberLayout: SeparatePages

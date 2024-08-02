@@ -17,14 +17,17 @@ items:
   source:
     id: UserLayoutDataService
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\UserLayoutDataService.cs
-    startLine: 5
+    startLine: 9
   assemblies:
   - Innova.Data
   namespace: Innova.Data.AppSettings.Services
+  summary: Represents a data service for user layout.
+  example: []
   syntax:
     content: 'public class UserLayoutDataService<TContext> : LayoutDataServiceBase<TContext>, ILayoutDataServiceBase where TContext : DbContext'
     typeParameters:
     - id: TContext
+      description: The type of the database context.
     content.vb: Public Class UserLayoutDataService(Of TContext As DbContext) Inherits LayoutDataServiceBase(Of TContext) Implements ILayoutDataServiceBase
   inheritance:
   - System.Object
@@ -54,7 +57,7 @@ items:
   source:
     id: UserId
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\UserLayoutDataService.cs
-    startLine: 9
+    startLine: 16
   assemblies:
   - Innova.Data
   namespace: Innova.Data.AppSettings.Services
@@ -84,17 +87,21 @@ items:
   source:
     id: .ctor
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\UserLayoutDataService.cs
-    startLine: 19
+    startLine: 29
   assemblies:
   - Innova.Data
   namespace: Innova.Data.AppSettings.Services
+  summary: Initializes a new instance of the <xref href="Innova.Data.AppSettings.Services.UserLayoutDataService%601" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public UserLayoutDataService(IDbContextFactory<TContext> dbContextFactory, ICurrentUser currentUser)
     parameters:
     - id: dbContextFactory
       type: Innova.Data.IDbContextFactory{{TContext}}
+      description: The database context factory.
     - id: currentUser
       type: Innova.Data.Security.ICurrentUser
+      description: The current user.
     content.vb: Public Sub New(dbContextFactory As IDbContextFactory(Of TContext), currentUser As ICurrentUser)
   overload: Innova.Data.AppSettings.Services.UserLayoutDataService`1.#ctor*
   nameWithType.vb: UserLayoutDataService(Of TContext).New(IDbContextFactory(Of TContext), ICurrentUser)
@@ -568,6 +575,31 @@ references:
   fullName: Innova.Data.AppSettings.Services.LayoutDataServiceBase<TContext>.UserId
   nameWithType.vb: LayoutDataServiceBase(Of TContext).UserId
   fullName.vb: Innova.Data.AppSettings.Services.LayoutDataServiceBase(Of TContext).UserId
+- uid: Innova.Data.AppSettings.Services.UserLayoutDataService`1
+  commentId: T:Innova.Data.AppSettings.Services.UserLayoutDataService`1
+  href: Innova.Data.AppSettings.Services.UserLayoutDataService-1.html
+  name: UserLayoutDataService<TContext>
+  nameWithType: UserLayoutDataService<TContext>
+  fullName: Innova.Data.AppSettings.Services.UserLayoutDataService<TContext>
+  nameWithType.vb: UserLayoutDataService(Of TContext)
+  fullName.vb: Innova.Data.AppSettings.Services.UserLayoutDataService(Of TContext)
+  name.vb: UserLayoutDataService(Of TContext)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.UserLayoutDataService`1
+    name: UserLayoutDataService
+    href: Innova.Data.AppSettings.Services.UserLayoutDataService-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.UserLayoutDataService`1
+    name: UserLayoutDataService
+    href: Innova.Data.AppSettings.Services.UserLayoutDataService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
 - uid: Innova.Data.AppSettings.Services.UserLayoutDataService`1.#ctor*
   commentId: Overload:Innova.Data.AppSettings.Services.UserLayoutDataService`1.#ctor
   href: Innova.Data.AppSettings.Services.UserLayoutDataService-1.-ctor.html#Innova_Data_AppSettings_Services_UserLayoutDataService_1__ctor_Innova_Data_IDbContextFactory__0__Innova_Data_Security_ICurrentUser_

@@ -1,0 +1,272 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.NLogExtensions.IDataBaseLoggingService
+  commentId: T:Innova.NLogExtensions.IDataBaseLoggingService
+  id: IDataBaseLoggingService
+  parent: Innova.NLogExtensions
+  children:
+  - Innova.NLogExtensions.IDataBaseLoggingService.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IDataBaseLoggingService
+  nameWithType: IDataBaseLoggingService
+  fullName: Innova.NLogExtensions.IDataBaseLoggingService
+  type: Interface
+  source:
+    id: IDataBaseLoggingService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\IDataBaseLoggingService.cs
+    startLine: 10
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Represents a service for logging to a database.
+  example: []
+  syntax:
+    content: public interface IDataBaseLoggingService
+    content.vb: Public Interface IDataBaseLoggingService
+- uid: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  commentId: M:Innova.NLogExtensions.IDataBaseLoggingService.LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  id: LogAsync(System.Collections.Generic.List{NLog.LogEventInfo},System.Threading.CancellationToken)
+  parent: Innova.NLogExtensions.IDataBaseLoggingService
+  langs:
+  - csharp
+  - vb
+  name: LogAsync(List<LogEventInfo>, CancellationToken)
+  nameWithType: IDataBaseLoggingService.LogAsync(List<LogEventInfo>, CancellationToken)
+  fullName: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync(System.Collections.Generic.List<NLog.LogEventInfo>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: LogAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\IDataBaseLoggingService.cs
+    startLine: 18
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Asynchronously logs a list of log events to the database.
+  example: []
+  syntax:
+    content: Task LogAsync(List<LogEventInfo> logEvents, CancellationToken cancellationToken)
+    parameters:
+    - id: logEvents
+      type: System.Collections.Generic.List{NLog.LogEventInfo}
+      description: The list of log events to be logged.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Function LogAsync(logEvents As List(Of LogEventInfo), cancellationToken As CancellationToken) As Task
+  overload: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync*
+  nameWithType.vb: IDataBaseLoggingService.LogAsync(List(Of LogEventInfo), CancellationToken)
+  fullName.vb: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync(System.Collections.Generic.List(Of NLog.LogEventInfo), System.Threading.CancellationToken)
+  name.vb: LogAsync(List(Of LogEventInfo), CancellationToken)
+references:
+- uid: Innova.NLogExtensions
+  commentId: N:Innova.NLogExtensions
+  href: Innova.html
+  name: Innova.NLogExtensions
+  nameWithType: Innova.NLogExtensions
+  fullName: Innova.NLogExtensions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.NLogExtensions
+    name: NLogExtensions
+    href: Innova.NLogExtensions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.NLogExtensions
+    name: NLogExtensions
+    href: Innova.NLogExtensions.html
+- uid: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync*
+  commentId: Overload:Innova.NLogExtensions.IDataBaseLoggingService.LogAsync
+  href: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync.html#Innova_NLogExtensions_IDataBaseLoggingService_LogAsync_System_Collections_Generic_List_NLog_LogEventInfo__System_Threading_CancellationToken_
+  name: LogAsync
+  nameWithType: IDataBaseLoggingService.LogAsync
+  fullName: Innova.NLogExtensions.IDataBaseLoggingService.LogAsync
+- uid: System.Collections.Generic.List{NLog.LogEventInfo}
+  commentId: T:System.Collections.Generic.List{NLog.LogEventInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LogEventInfo>
+  nameWithType: List<LogEventInfo>
+  fullName: System.Collections.Generic.List<NLog.LogEventInfo>
+  nameWithType.vb: List(Of LogEventInfo)
+  fullName.vb: System.Collections.Generic.List(Of NLog.LogEventInfo)
+  name.vb: List(Of LogEventInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NLog.LogEventInfo
+    name: LogEventInfo
+    isExternal: true
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

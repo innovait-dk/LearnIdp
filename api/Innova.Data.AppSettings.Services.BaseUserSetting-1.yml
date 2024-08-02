@@ -35,6 +35,8 @@ items:
     content.vb: Public MustInherit Class BaseUserSetting(Of T As {Class, New}) Implements IUserSettingServiceSave
   inheritance:
   - System.Object
+  derivedClasses:
+  - Innova.Prism.Library.Services.PinnedListService`2
   implements:
   - Innova.Data.AppSettings.IUserSettingServiceSave
   nameWithType.vb: BaseUserSetting(Of T)
@@ -54,10 +56,12 @@ items:
   source:
     id: userSettingService
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\BaseUserSetting.cs
-    startLine: 14
+    startLine: 17
   assemblies:
   - Innova.Data
   namespace: Innova.Data.AppSettings.Services
+  summary: The user setting service.
+  example: []
   syntax:
     content: protected readonly IUserSettingService userSettingService
     return:
@@ -79,10 +83,12 @@ items:
   source:
     id: Setting
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\BaseUserSetting.cs
-    startLine: 15
+    startLine: 22
   assemblies:
   - Innova.Data
   namespace: Innova.Data.AppSettings.Services
+  summary: Gets or sets the setting value.
+  example: []
   syntax:
     content: public T Setting { get; set; }
     parameters: []
@@ -106,10 +112,12 @@ items:
   source:
     id: SettingKey
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\BaseUserSetting.cs
-    startLine: 16
+    startLine: 27
   assemblies:
   - Innova.Data
   namespace: Innova.Data.AppSettings.Services
+  summary: Gets or sets the setting key.
+  example: []
   syntax:
     content: protected string SettingKey { get; set; }
     parameters: []
@@ -133,7 +141,7 @@ items:
   source:
     id: .ctor
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\BaseUserSetting.cs
-    startLine: 23
+    startLine: 34
   assemblies:
   - Innova.Data
   namespace: Innova.Data.AppSettings.Services
@@ -167,7 +175,7 @@ items:
   source:
     id: LoadData
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\BaseUserSetting.cs
-    startLine: 33
+    startLine: 44
   assemblies:
   - Innova.Data
   namespace: Innova.Data.AppSettings.Services
@@ -196,7 +204,7 @@ items:
   source:
     id: Save
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\AppSettings\Services\BaseUserSetting.cs
-    startLine: 47
+    startLine: 58
   assemblies:
   - Innova.Data
   namespace: Innova.Data.AppSettings.Services

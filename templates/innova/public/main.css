@@ -1,0 +1,84 @@
+.card {
+  display: flex;
+  align-items: center; /* Vertically center the icon and text */
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+  overflow: hidden;
+  min-height: 100px; /* Ensures cards are at least a consistent height */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  align-items: center; /* Align icon and text in the same row */
+}
+
+.icon-container {
+  display: flex; /* Ensures any children, like .icon, are flexed */
+  align-items: center; /* Vertically align any contents */
+  margin-right: 20px; /* Space between icon and text */
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center text within the text-content block */
+}
+
+.card-heading {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.card-subheading {
+  color: #777;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ensure space between columns */
+  margin: 0 -10px; /* Adjust the row margin to align with the column padding */
+}
+
+.column {
+  width: calc(50% - 2px); /* Two columns with spacing */
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 2px; /* Space between rows */
+}
+
+.banner {
+  background:  #7fabd0;
+	padding:40px;
+	position:relative;
+}
+
+.banner-heading {
+  font-size: 40px;
+  color: #000000;
+  margin: 0;
+}
+
+
+.svg {
+  padding: 10px;
+}

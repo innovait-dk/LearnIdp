@@ -1,0 +1,992 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Rest.Client.RestSettingEntityService
+  commentId: T:Innova.Rest.Client.RestSettingEntityService
+  id: RestSettingEntityService
+  parent: Innova.Rest.Client
+  children:
+  - Innova.Rest.Client.RestSettingEntityService.#ctor(Innova.Rest.Abstractions.IRestClient,Innova.Data.Security.ICurrentUser)
+  - Innova.Rest.Client.RestSettingEntityService.GetApplicationSettings(System.Threading.CancellationToken)
+  - Innova.Rest.Client.RestSettingEntityService.GetUserSettings(System.Threading.CancellationToken)
+  - Innova.Rest.Client.RestSettingEntityService.RestClient
+  - Innova.Rest.Client.RestSettingEntityService.SaveApplicationSettings(System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings},System.Threading.CancellationToken)
+  - Innova.Rest.Client.RestSettingEntityService.SaveUserSettings(System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings},System.Threading.CancellationToken)
+  - Innova.Rest.Client.RestSettingEntityService.UserId
+  langs:
+  - csharp
+  - vb
+  name: RestSettingEntityService
+  nameWithType: RestSettingEntityService
+  fullName: Innova.Rest.Client.RestSettingEntityService
+  type: Class
+  source:
+    id: RestSettingEntityService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestSettingEntityService.cs
+    startLine: 14
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  syntax:
+    content: 'public class RestSettingEntityService : ISettingEntityService'
+    content.vb: Public Class RestSettingEntityService Implements ISettingEntityService
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Data.AppSettings.Services.ISettingEntityService
+- uid: Innova.Rest.Client.RestSettingEntityService.UserId
+  commentId: P:Innova.Rest.Client.RestSettingEntityService.UserId
+  id: UserId
+  parent: Innova.Rest.Client.RestSettingEntityService
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: RestSettingEntityService.UserId
+  fullName: Innova.Rest.Client.RestSettingEntityService.UserId
+  type: Property
+  source:
+    id: UserId
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestSettingEntityService.cs
+    startLine: 16
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  summary: Gets the user ID.
+  example: []
+  syntax:
+    content: public string UserId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UserId As String
+  overload: Innova.Rest.Client.RestSettingEntityService.UserId*
+  implements:
+  - Innova.Data.AppSettings.Services.ISettingEntityService.UserId
+- uid: Innova.Rest.Client.RestSettingEntityService.RestClient
+  commentId: P:Innova.Rest.Client.RestSettingEntityService.RestClient
+  id: RestClient
+  parent: Innova.Rest.Client.RestSettingEntityService
+  langs:
+  - csharp
+  - vb
+  name: RestClient
+  nameWithType: RestSettingEntityService.RestClient
+  fullName: Innova.Rest.Client.RestSettingEntityService.RestClient
+  type: Property
+  source:
+    id: RestClient
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestSettingEntityService.cs
+    startLine: 17
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  syntax:
+    content: public IRestClient RestClient { get; }
+    parameters: []
+    return:
+      type: Innova.Rest.Abstractions.IRestClient
+    content.vb: Public ReadOnly Property RestClient As IRestClient
+  overload: Innova.Rest.Client.RestSettingEntityService.RestClient*
+- uid: Innova.Rest.Client.RestSettingEntityService.#ctor(Innova.Rest.Abstractions.IRestClient,Innova.Data.Security.ICurrentUser)
+  commentId: M:Innova.Rest.Client.RestSettingEntityService.#ctor(Innova.Rest.Abstractions.IRestClient,Innova.Data.Security.ICurrentUser)
+  id: '#ctor(Innova.Rest.Abstractions.IRestClient,Innova.Data.Security.ICurrentUser)'
+  parent: Innova.Rest.Client.RestSettingEntityService
+  langs:
+  - csharp
+  - vb
+  name: RestSettingEntityService(IRestClient, ICurrentUser)
+  nameWithType: RestSettingEntityService.RestSettingEntityService(IRestClient, ICurrentUser)
+  fullName: Innova.Rest.Client.RestSettingEntityService.RestSettingEntityService(Innova.Rest.Abstractions.IRestClient, Innova.Data.Security.ICurrentUser)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestSettingEntityService.cs
+    startLine: 19
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  syntax:
+    content: public RestSettingEntityService(IRestClient restClient, ICurrentUser currentUser)
+    parameters:
+    - id: restClient
+      type: Innova.Rest.Abstractions.IRestClient
+    - id: currentUser
+      type: Innova.Data.Security.ICurrentUser
+    content.vb: Public Sub New(restClient As IRestClient, currentUser As ICurrentUser)
+  overload: Innova.Rest.Client.RestSettingEntityService.#ctor*
+  nameWithType.vb: RestSettingEntityService.New(IRestClient, ICurrentUser)
+  fullName.vb: Innova.Rest.Client.RestSettingEntityService.New(Innova.Rest.Abstractions.IRestClient, Innova.Data.Security.ICurrentUser)
+  name.vb: New(IRestClient, ICurrentUser)
+- uid: Innova.Rest.Client.RestSettingEntityService.GetApplicationSettings(System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Client.RestSettingEntityService.GetApplicationSettings(System.Threading.CancellationToken)
+  id: GetApplicationSettings(System.Threading.CancellationToken)
+  parent: Innova.Rest.Client.RestSettingEntityService
+  langs:
+  - csharp
+  - vb
+  name: GetApplicationSettings(CancellationToken)
+  nameWithType: RestSettingEntityService.GetApplicationSettings(CancellationToken)
+  fullName: Innova.Rest.Client.RestSettingEntityService.GetApplicationSettings(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetApplicationSettings
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestSettingEntityService.cs
+    startLine: 25
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  summary: Retrieves the list of application settings.
+  example: []
+  syntax:
+    content: public Task<List<ApplicationSettings>> GetApplicationSettings(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings}}
+      description: The list of application settings.
+    content.vb: Public Function GetApplicationSettings(cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ApplicationSettings))
+  overload: Innova.Rest.Client.RestSettingEntityService.GetApplicationSettings*
+  implements:
+  - Innova.Data.AppSettings.Services.ISettingEntityService.GetApplicationSettings(System.Threading.CancellationToken)
+- uid: Innova.Rest.Client.RestSettingEntityService.GetUserSettings(System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Client.RestSettingEntityService.GetUserSettings(System.Threading.CancellationToken)
+  id: GetUserSettings(System.Threading.CancellationToken)
+  parent: Innova.Rest.Client.RestSettingEntityService
+  langs:
+  - csharp
+  - vb
+  name: GetUserSettings(CancellationToken)
+  nameWithType: RestSettingEntityService.GetUserSettings(CancellationToken)
+  fullName: Innova.Rest.Client.RestSettingEntityService.GetUserSettings(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetUserSettings
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestSettingEntityService.cs
+    startLine: 32
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  summary: Retrieves the list of user settings.
+  example: []
+  syntax:
+    content: public Task<List<UserSettings>> GetUserSettings(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings}}
+      description: The list of user settings.
+    content.vb: Public Function GetUserSettings(cancellationToken As CancellationToken = Nothing) As Task(Of List(Of UserSettings))
+  overload: Innova.Rest.Client.RestSettingEntityService.GetUserSettings*
+  implements:
+  - Innova.Data.AppSettings.Services.ISettingEntityService.GetUserSettings(System.Threading.CancellationToken)
+- uid: Innova.Rest.Client.RestSettingEntityService.SaveApplicationSettings(System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings},System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Client.RestSettingEntityService.SaveApplicationSettings(System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings},System.Threading.CancellationToken)
+  id: SaveApplicationSettings(System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings},System.Threading.CancellationToken)
+  parent: Innova.Rest.Client.RestSettingEntityService
+  langs:
+  - csharp
+  - vb
+  name: SaveApplicationSettings(List<ApplicationSettings>, CancellationToken)
+  nameWithType: RestSettingEntityService.SaveApplicationSettings(List<ApplicationSettings>, CancellationToken)
+  fullName: Innova.Rest.Client.RestSettingEntityService.SaveApplicationSettings(System.Collections.Generic.List<Innova.Data.AppSettings.ApplicationSettings>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: SaveApplicationSettings
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestSettingEntityService.cs
+    startLine: 39
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  summary: Saves the list of application settings.
+  example: []
+  syntax:
+    content: public Task SaveApplicationSettings(List<ApplicationSettings> applicationSettings, CancellationToken cancellationToken = default)
+    parameters:
+    - id: applicationSettings
+      type: System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings}
+      description: The list of application settings to save.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SaveApplicationSettings(applicationSettings As List(Of ApplicationSettings), cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Rest.Client.RestSettingEntityService.SaveApplicationSettings*
+  implements:
+  - Innova.Data.AppSettings.Services.ISettingEntityService.SaveApplicationSettings(System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings},System.Threading.CancellationToken)
+  nameWithType.vb: RestSettingEntityService.SaveApplicationSettings(List(Of ApplicationSettings), CancellationToken)
+  fullName.vb: Innova.Rest.Client.RestSettingEntityService.SaveApplicationSettings(System.Collections.Generic.List(Of Innova.Data.AppSettings.ApplicationSettings), System.Threading.CancellationToken)
+  name.vb: SaveApplicationSettings(List(Of ApplicationSettings), CancellationToken)
+- uid: Innova.Rest.Client.RestSettingEntityService.SaveUserSettings(System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings},System.Threading.CancellationToken)
+  commentId: M:Innova.Rest.Client.RestSettingEntityService.SaveUserSettings(System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings},System.Threading.CancellationToken)
+  id: SaveUserSettings(System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings},System.Threading.CancellationToken)
+  parent: Innova.Rest.Client.RestSettingEntityService
+  langs:
+  - csharp
+  - vb
+  name: SaveUserSettings(List<UserSettings>, CancellationToken)
+  nameWithType: RestSettingEntityService.SaveUserSettings(List<UserSettings>, CancellationToken)
+  fullName: Innova.Rest.Client.RestSettingEntityService.SaveUserSettings(System.Collections.Generic.List<Innova.Data.AppSettings.UserSettings>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: SaveUserSettings
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Client\RestSettingEntityService.cs
+    startLine: 45
+  assemblies:
+  - Innova.Rest.Client
+  namespace: Innova.Rest.Client
+  summary: Saves the list of user settings.
+  example: []
+  syntax:
+    content: public Task SaveUserSettings(List<UserSettings> userSettings, CancellationToken cancellationToken = default)
+    parameters:
+    - id: userSettings
+      type: System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings}
+      description: The list of user settings to save.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SaveUserSettings(userSettings As List(Of UserSettings), cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.Rest.Client.RestSettingEntityService.SaveUserSettings*
+  implements:
+  - Innova.Data.AppSettings.Services.ISettingEntityService.SaveUserSettings(System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings},System.Threading.CancellationToken)
+  nameWithType.vb: RestSettingEntityService.SaveUserSettings(List(Of UserSettings), CancellationToken)
+  fullName.vb: Innova.Rest.Client.RestSettingEntityService.SaveUserSettings(System.Collections.Generic.List(Of Innova.Data.AppSettings.UserSettings), System.Threading.CancellationToken)
+  name.vb: SaveUserSettings(List(Of UserSettings), CancellationToken)
+references:
+- uid: Innova.Rest.Client
+  commentId: N:Innova.Rest.Client
+  href: Innova.html
+  name: Innova.Rest.Client
+  nameWithType: Innova.Rest.Client
+  fullName: Innova.Rest.Client
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Client
+    name: Client
+    href: Innova.Rest.Client.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Client
+    name: Client
+    href: Innova.Rest.Client.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Data.AppSettings.Services.ISettingEntityService
+  commentId: T:Innova.Data.AppSettings.Services.ISettingEntityService
+  parent: Innova.Data.AppSettings.Services
+  href: Innova.Data.AppSettings.Services.ISettingEntityService.html
+  name: ISettingEntityService
+  nameWithType: ISettingEntityService
+  fullName: Innova.Data.AppSettings.Services.ISettingEntityService
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.AppSettings.Services
+  commentId: N:Innova.Data.AppSettings.Services
+  href: Innova.html
+  name: Innova.Data.AppSettings.Services
+  nameWithType: Innova.Data.AppSettings.Services
+  fullName: Innova.Data.AppSettings.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+  - name: .
+  - uid: Innova.Data.AppSettings.Services
+    name: Services
+    href: Innova.Data.AppSettings.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+  - name: .
+  - uid: Innova.Data.AppSettings.Services
+    name: Services
+    href: Innova.Data.AppSettings.Services.html
+- uid: Innova.Rest.Client.RestSettingEntityService.UserId*
+  commentId: Overload:Innova.Rest.Client.RestSettingEntityService.UserId
+  href: Innova.Rest.Client.RestSettingEntityService.UserId.html#Innova_Rest_Client_RestSettingEntityService_UserId
+  name: UserId
+  nameWithType: RestSettingEntityService.UserId
+  fullName: Innova.Rest.Client.RestSettingEntityService.UserId
+- uid: Innova.Data.AppSettings.Services.ISettingEntityService.UserId
+  commentId: P:Innova.Data.AppSettings.Services.ISettingEntityService.UserId
+  parent: Innova.Data.AppSettings.Services.ISettingEntityService
+  href: Innova.Data.AppSettings.Services.ISettingEntityService.UserId.html#Innova_Data_AppSettings_Services_ISettingEntityService_UserId
+  name: UserId
+  nameWithType: ISettingEntityService.UserId
+  fullName: Innova.Data.AppSettings.Services.ISettingEntityService.UserId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Rest.Client.RestSettingEntityService.RestClient*
+  commentId: Overload:Innova.Rest.Client.RestSettingEntityService.RestClient
+  href: Innova.Rest.Client.RestSettingEntityService.RestClient.html#Innova_Rest_Client_RestSettingEntityService_RestClient
+  name: RestClient
+  nameWithType: RestSettingEntityService.RestClient
+  fullName: Innova.Rest.Client.RestSettingEntityService.RestClient
+- uid: Innova.Rest.Abstractions.IRestClient
+  commentId: T:Innova.Rest.Abstractions.IRestClient
+  parent: Innova.Rest.Abstractions
+  href: Innova.Rest.Abstractions.IRestClient.html
+  name: IRestClient
+  nameWithType: IRestClient
+  fullName: Innova.Rest.Abstractions.IRestClient
+- uid: Innova.Rest.Abstractions
+  commentId: N:Innova.Rest.Abstractions
+  href: Innova.html
+  name: Innova.Rest.Abstractions
+  nameWithType: Innova.Rest.Abstractions
+  fullName: Innova.Rest.Abstractions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Abstractions
+    name: Abstractions
+    href: Innova.Rest.Abstractions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Abstractions
+    name: Abstractions
+    href: Innova.Rest.Abstractions.html
+- uid: Innova.Rest.Client.RestSettingEntityService.#ctor*
+  commentId: Overload:Innova.Rest.Client.RestSettingEntityService.#ctor
+  href: Innova.Rest.Client.RestSettingEntityService.-ctor.html#Innova_Rest_Client_RestSettingEntityService__ctor_Innova_Rest_Abstractions_IRestClient_Innova_Data_Security_ICurrentUser_
+  name: RestSettingEntityService
+  nameWithType: RestSettingEntityService.RestSettingEntityService
+  fullName: Innova.Rest.Client.RestSettingEntityService.RestSettingEntityService
+  nameWithType.vb: RestSettingEntityService.New
+  fullName.vb: Innova.Rest.Client.RestSettingEntityService.New
+  name.vb: New
+- uid: Innova.Data.Security.ICurrentUser
+  commentId: T:Innova.Data.Security.ICurrentUser
+  parent: Innova.Data.Security
+  href: Innova.Data.Security.ICurrentUser.html
+  name: ICurrentUser
+  nameWithType: ICurrentUser
+  fullName: Innova.Data.Security.ICurrentUser
+- uid: Innova.Data.Security
+  commentId: N:Innova.Data.Security
+  href: Innova.html
+  name: Innova.Data.Security
+  nameWithType: Innova.Data.Security
+  fullName: Innova.Data.Security
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Security
+    name: Security
+    href: Innova.Data.Security.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Security
+    name: Security
+    href: Innova.Data.Security.html
+- uid: Innova.Rest.Client.RestSettingEntityService.GetApplicationSettings*
+  commentId: Overload:Innova.Rest.Client.RestSettingEntityService.GetApplicationSettings
+  href: Innova.Rest.Client.RestSettingEntityService.GetApplicationSettings.html#Innova_Rest_Client_RestSettingEntityService_GetApplicationSettings_System_Threading_CancellationToken_
+  name: GetApplicationSettings
+  nameWithType: RestSettingEntityService.GetApplicationSettings
+  fullName: Innova.Rest.Client.RestSettingEntityService.GetApplicationSettings
+- uid: Innova.Data.AppSettings.Services.ISettingEntityService.GetApplicationSettings(System.Threading.CancellationToken)
+  commentId: M:Innova.Data.AppSettings.Services.ISettingEntityService.GetApplicationSettings(System.Threading.CancellationToken)
+  parent: Innova.Data.AppSettings.Services.ISettingEntityService
+  isExternal: true
+  href: Innova.Data.AppSettings.Services.ISettingEntityService.GetApplicationSettings.html#Innova_Data_AppSettings_Services_ISettingEntityService_GetApplicationSettings_System_Threading_CancellationToken_
+  name: GetApplicationSettings(CancellationToken)
+  nameWithType: ISettingEntityService.GetApplicationSettings(CancellationToken)
+  fullName: Innova.Data.AppSettings.Services.ISettingEntityService.GetApplicationSettings(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.ISettingEntityService.GetApplicationSettings(System.Threading.CancellationToken)
+    name: GetApplicationSettings
+    href: Innova.Data.AppSettings.Services.ISettingEntityService.GetApplicationSettings.html#Innova_Data_AppSettings_Services_ISettingEntityService_GetApplicationSettings_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.ISettingEntityService.GetApplicationSettings(System.Threading.CancellationToken)
+    name: GetApplicationSettings
+    href: Innova.Data.AppSettings.Services.ISettingEntityService.GetApplicationSettings.html#Innova_Data_AppSettings_Services_ISettingEntityService_GetApplicationSettings_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<ApplicationSettings>>
+  nameWithType: Task<List<ApplicationSettings>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Innova.Data.AppSettings.ApplicationSettings>>
+  nameWithType.vb: Task(Of List(Of ApplicationSettings))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Innova.Data.AppSettings.ApplicationSettings))
+  name.vb: Task(Of List(Of ApplicationSettings))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.AppSettings.ApplicationSettings
+    name: ApplicationSettings
+    href: Innova.Data.AppSettings.ApplicationSettings.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.AppSettings.ApplicationSettings
+    name: ApplicationSettings
+    href: Innova.Data.AppSettings.ApplicationSettings.html
+  - name: )
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Rest.Client.RestSettingEntityService.GetUserSettings*
+  commentId: Overload:Innova.Rest.Client.RestSettingEntityService.GetUserSettings
+  href: Innova.Rest.Client.RestSettingEntityService.GetUserSettings.html#Innova_Rest_Client_RestSettingEntityService_GetUserSettings_System_Threading_CancellationToken_
+  name: GetUserSettings
+  nameWithType: RestSettingEntityService.GetUserSettings
+  fullName: Innova.Rest.Client.RestSettingEntityService.GetUserSettings
+- uid: Innova.Data.AppSettings.Services.ISettingEntityService.GetUserSettings(System.Threading.CancellationToken)
+  commentId: M:Innova.Data.AppSettings.Services.ISettingEntityService.GetUserSettings(System.Threading.CancellationToken)
+  parent: Innova.Data.AppSettings.Services.ISettingEntityService
+  isExternal: true
+  href: Innova.Data.AppSettings.Services.ISettingEntityService.GetUserSettings.html#Innova_Data_AppSettings_Services_ISettingEntityService_GetUserSettings_System_Threading_CancellationToken_
+  name: GetUserSettings(CancellationToken)
+  nameWithType: ISettingEntityService.GetUserSettings(CancellationToken)
+  fullName: Innova.Data.AppSettings.Services.ISettingEntityService.GetUserSettings(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.ISettingEntityService.GetUserSettings(System.Threading.CancellationToken)
+    name: GetUserSettings
+    href: Innova.Data.AppSettings.Services.ISettingEntityService.GetUserSettings.html#Innova_Data_AppSettings_Services_ISettingEntityService_GetUserSettings_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.ISettingEntityService.GetUserSettings(System.Threading.CancellationToken)
+    name: GetUserSettings
+    href: Innova.Data.AppSettings.Services.ISettingEntityService.GetUserSettings.html#Innova_Data_AppSettings_Services_ISettingEntityService_GetUserSettings_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<UserSettings>>
+  nameWithType: Task<List<UserSettings>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Innova.Data.AppSettings.UserSettings>>
+  nameWithType.vb: Task(Of List(Of UserSettings))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Innova.Data.AppSettings.UserSettings))
+  name.vb: Task(Of List(Of UserSettings))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.AppSettings.UserSettings
+    name: UserSettings
+    href: Innova.Data.AppSettings.UserSettings.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.AppSettings.UserSettings
+    name: UserSettings
+    href: Innova.Data.AppSettings.UserSettings.html
+  - name: )
+  - name: )
+- uid: Innova.Rest.Client.RestSettingEntityService.SaveApplicationSettings*
+  commentId: Overload:Innova.Rest.Client.RestSettingEntityService.SaveApplicationSettings
+  href: Innova.Rest.Client.RestSettingEntityService.SaveApplicationSettings.html#Innova_Rest_Client_RestSettingEntityService_SaveApplicationSettings_System_Collections_Generic_List_Innova_Data_AppSettings_ApplicationSettings__System_Threading_CancellationToken_
+  name: SaveApplicationSettings
+  nameWithType: RestSettingEntityService.SaveApplicationSettings
+  fullName: Innova.Rest.Client.RestSettingEntityService.SaveApplicationSettings
+- uid: Innova.Data.AppSettings.Services.ISettingEntityService.SaveApplicationSettings(System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings},System.Threading.CancellationToken)
+  commentId: M:Innova.Data.AppSettings.Services.ISettingEntityService.SaveApplicationSettings(System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings},System.Threading.CancellationToken)
+  parent: Innova.Data.AppSettings.Services.ISettingEntityService
+  isExternal: true
+  href: Innova.Data.AppSettings.Services.ISettingEntityService.SaveApplicationSettings.html#Innova_Data_AppSettings_Services_ISettingEntityService_SaveApplicationSettings_System_Collections_Generic_List_Innova_Data_AppSettings_ApplicationSettings__System_Threading_CancellationToken_
+  name: SaveApplicationSettings(List<ApplicationSettings>, CancellationToken)
+  nameWithType: ISettingEntityService.SaveApplicationSettings(List<ApplicationSettings>, CancellationToken)
+  fullName: Innova.Data.AppSettings.Services.ISettingEntityService.SaveApplicationSettings(System.Collections.Generic.List<Innova.Data.AppSettings.ApplicationSettings>, System.Threading.CancellationToken)
+  nameWithType.vb: ISettingEntityService.SaveApplicationSettings(List(Of ApplicationSettings), CancellationToken)
+  fullName.vb: Innova.Data.AppSettings.Services.ISettingEntityService.SaveApplicationSettings(System.Collections.Generic.List(Of Innova.Data.AppSettings.ApplicationSettings), System.Threading.CancellationToken)
+  name.vb: SaveApplicationSettings(List(Of ApplicationSettings), CancellationToken)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.ISettingEntityService.SaveApplicationSettings(System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings},System.Threading.CancellationToken)
+    name: SaveApplicationSettings
+    href: Innova.Data.AppSettings.Services.ISettingEntityService.SaveApplicationSettings.html#Innova_Data_AppSettings_Services_ISettingEntityService_SaveApplicationSettings_System_Collections_Generic_List_Innova_Data_AppSettings_ApplicationSettings__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.AppSettings.ApplicationSettings
+    name: ApplicationSettings
+    href: Innova.Data.AppSettings.ApplicationSettings.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.ISettingEntityService.SaveApplicationSettings(System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings},System.Threading.CancellationToken)
+    name: SaveApplicationSettings
+    href: Innova.Data.AppSettings.Services.ISettingEntityService.SaveApplicationSettings.html#Innova_Data_AppSettings_Services_ISettingEntityService_SaveApplicationSettings_System_Collections_Generic_List_Innova_Data_AppSettings_ApplicationSettings__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.AppSettings.ApplicationSettings
+    name: ApplicationSettings
+    href: Innova.Data.AppSettings.ApplicationSettings.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings}
+  commentId: T:System.Collections.Generic.List{Innova.Data.AppSettings.ApplicationSettings}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ApplicationSettings>
+  nameWithType: List<ApplicationSettings>
+  fullName: System.Collections.Generic.List<Innova.Data.AppSettings.ApplicationSettings>
+  nameWithType.vb: List(Of ApplicationSettings)
+  fullName.vb: System.Collections.Generic.List(Of Innova.Data.AppSettings.ApplicationSettings)
+  name.vb: List(Of ApplicationSettings)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.AppSettings.ApplicationSettings
+    name: ApplicationSettings
+    href: Innova.Data.AppSettings.ApplicationSettings.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.AppSettings.ApplicationSettings
+    name: ApplicationSettings
+    href: Innova.Data.AppSettings.ApplicationSettings.html
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Rest.Client.RestSettingEntityService.SaveUserSettings*
+  commentId: Overload:Innova.Rest.Client.RestSettingEntityService.SaveUserSettings
+  href: Innova.Rest.Client.RestSettingEntityService.SaveUserSettings.html#Innova_Rest_Client_RestSettingEntityService_SaveUserSettings_System_Collections_Generic_List_Innova_Data_AppSettings_UserSettings__System_Threading_CancellationToken_
+  name: SaveUserSettings
+  nameWithType: RestSettingEntityService.SaveUserSettings
+  fullName: Innova.Rest.Client.RestSettingEntityService.SaveUserSettings
+- uid: Innova.Data.AppSettings.Services.ISettingEntityService.SaveUserSettings(System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings},System.Threading.CancellationToken)
+  commentId: M:Innova.Data.AppSettings.Services.ISettingEntityService.SaveUserSettings(System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings},System.Threading.CancellationToken)
+  parent: Innova.Data.AppSettings.Services.ISettingEntityService
+  isExternal: true
+  href: Innova.Data.AppSettings.Services.ISettingEntityService.SaveUserSettings.html#Innova_Data_AppSettings_Services_ISettingEntityService_SaveUserSettings_System_Collections_Generic_List_Innova_Data_AppSettings_UserSettings__System_Threading_CancellationToken_
+  name: SaveUserSettings(List<UserSettings>, CancellationToken)
+  nameWithType: ISettingEntityService.SaveUserSettings(List<UserSettings>, CancellationToken)
+  fullName: Innova.Data.AppSettings.Services.ISettingEntityService.SaveUserSettings(System.Collections.Generic.List<Innova.Data.AppSettings.UserSettings>, System.Threading.CancellationToken)
+  nameWithType.vb: ISettingEntityService.SaveUserSettings(List(Of UserSettings), CancellationToken)
+  fullName.vb: Innova.Data.AppSettings.Services.ISettingEntityService.SaveUserSettings(System.Collections.Generic.List(Of Innova.Data.AppSettings.UserSettings), System.Threading.CancellationToken)
+  name.vb: SaveUserSettings(List(Of UserSettings), CancellationToken)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.Services.ISettingEntityService.SaveUserSettings(System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings},System.Threading.CancellationToken)
+    name: SaveUserSettings
+    href: Innova.Data.AppSettings.Services.ISettingEntityService.SaveUserSettings.html#Innova_Data_AppSettings_Services_ISettingEntityService_SaveUserSettings_System_Collections_Generic_List_Innova_Data_AppSettings_UserSettings__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.AppSettings.UserSettings
+    name: UserSettings
+    href: Innova.Data.AppSettings.UserSettings.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.Services.ISettingEntityService.SaveUserSettings(System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings},System.Threading.CancellationToken)
+    name: SaveUserSettings
+    href: Innova.Data.AppSettings.Services.ISettingEntityService.SaveUserSettings.html#Innova_Data_AppSettings_Services_ISettingEntityService_SaveUserSettings_System_Collections_Generic_List_Innova_Data_AppSettings_UserSettings__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.AppSettings.UserSettings
+    name: UserSettings
+    href: Innova.Data.AppSettings.UserSettings.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings}
+  commentId: T:System.Collections.Generic.List{Innova.Data.AppSettings.UserSettings}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<UserSettings>
+  nameWithType: List<UserSettings>
+  fullName: System.Collections.Generic.List<Innova.Data.AppSettings.UserSettings>
+  nameWithType.vb: List(Of UserSettings)
+  fullName.vb: System.Collections.Generic.List(Of Innova.Data.AppSettings.UserSettings)
+  name.vb: List(Of UserSettings)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Data.AppSettings.UserSettings
+    name: UserSettings
+    href: Innova.Data.AppSettings.UserSettings.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Data.AppSettings.UserSettings
+    name: UserSettings
+    href: Innova.Data.AppSettings.UserSettings.html
+  - name: )
+memberLayout: SeparatePages

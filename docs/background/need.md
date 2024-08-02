@@ -4,8 +4,6 @@ Business applications are crucial to support work processes in any organization.
 
 Whether it's a warehouse system or a customer and order management system, the user expects certain core functionalities.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J3qw3zO2qzU?si=FrM_mU1G-5X1sSU1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 ## Core Functionalities
 
 Most business applications are based on a data model, and it's important to give users the ability to interact with these data. General functions include:

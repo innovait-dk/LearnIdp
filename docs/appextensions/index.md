@@ -1,10 +1,15 @@
+# Introduction to App Extensions
 
-App Extensions enhance your application with the most common functionalities, eliminating the need for additional coding.
+Welcome to the guide on integrating the Log Extension and Security AppExtensions into your application. These extensions enhance logging and security management within your system.
 
-To add an App Extension, use the designer:
+## Log Extension
 
-![alt text](media/index.png)
+The Log Extension provides:
+- Logging data to a database table.
+- A user interface for viewing and searching logs.
 
-Click the "Add AppExtensions...". Select the extension you want to add and follow the instructions provided in the readme.txt that appears in Visual Studio.
+## Security AppExtensions
 
-AppExtensions typically consists of implementation code and a SQL-script.
+The Security AppExtensions offer:
+- Management of roles, groups, and operations.
+- Automation of role and group assignments.

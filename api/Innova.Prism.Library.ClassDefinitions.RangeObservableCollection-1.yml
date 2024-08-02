@@ -1,0 +1,3353 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
+  commentId: T:Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
+  id: RangeObservableCollection`1
+  parent: Innova.Prism.Library.ClassDefinitions
+  children:
+  - Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  - Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  - Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.ResumeNotifications
+  - Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.SuspendNotifications
+  langs:
+  - csharp
+  - vb
+  name: RangeObservableCollection<T>
+  nameWithType: RangeObservableCollection<T>
+  fullName: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection<T>
+  type: Class
+  source:
+    id: RangeObservableCollection
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\RangeObservableCollection.cs
+    startLine: 11
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Represents a collection that provides notifications when items are added, removed, or when the whole collection is reset.
+  example: []
+  syntax:
+    content: 'public class RangeObservableCollection<T> : ObservableCollection<T>, IList<T>, ICollection<T>, IList, ICollection, IReadOnlyList<T>, IReadOnlyCollection<T>, IEnumerable<T>, IEnumerable, INotifyCollectionChanged, INotifyPropertyChanged'
+    typeParameters:
+    - id: T
+      description: The type of elements in the collection.
+    content.vb: Public Class RangeObservableCollection(Of T) Inherits ObservableCollection(Of T) Implements IList(Of T), ICollection(Of T), IList, ICollection, IReadOnlyList(Of T), IReadOnlyCollection(Of T), IEnumerable(Of T), IEnumerable, INotifyCollectionChanged, INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  - System.Collections.ObjectModel.Collection{{T}}
+  - System.Collections.ObjectModel.ObservableCollection{{T}}
+  implements:
+  - System.Collections.Generic.IList{{T}}
+  - System.Collections.Generic.ICollection{{T}}
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.Generic.IReadOnlyList{{T}}
+  - System.Collections.Generic.IReadOnlyCollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  - System.Collections.Specialized.INotifyCollectionChanged
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - System.Collections.ObjectModel.ObservableCollection{{T}}.Move(System.Int32,System.Int32)
+  - System.Collections.ObjectModel.ObservableCollection{{T}}.ClearItems
+  - System.Collections.ObjectModel.ObservableCollection{{T}}.RemoveItem(System.Int32)
+  - System.Collections.ObjectModel.ObservableCollection{{T}}.InsertItem(System.Int32,{T})
+  - System.Collections.ObjectModel.ObservableCollection{{T}}.SetItem(System.Int32,{T})
+  - System.Collections.ObjectModel.ObservableCollection{{T}}.MoveItem(System.Int32,System.Int32)
+  - System.Collections.ObjectModel.ObservableCollection{{T}}.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  - System.Collections.ObjectModel.ObservableCollection{{T}}.BlockReentrancy
+  - System.Collections.ObjectModel.ObservableCollection{{T}}.CheckReentrancy
+  - System.Collections.ObjectModel.ObservableCollection{{T}}.CollectionChanged
+  - System.Collections.ObjectModel.ObservableCollection{{T}}.PropertyChanged
+  - System.Collections.ObjectModel.Collection{{T}}.Add({T})
+  - System.Collections.ObjectModel.Collection{{T}}.Clear
+  - System.Collections.ObjectModel.Collection{{T}}.CopyTo({T}[],System.Int32)
+  - System.Collections.ObjectModel.Collection{{T}}.Contains({T})
+  - System.Collections.ObjectModel.Collection{{T}}.GetEnumerator
+  - System.Collections.ObjectModel.Collection{{T}}.IndexOf({T})
+  - System.Collections.ObjectModel.Collection{{T}}.Insert(System.Int32,{T})
+  - System.Collections.ObjectModel.Collection{{T}}.Remove({T})
+  - System.Collections.ObjectModel.Collection{{T}}.RemoveAt(System.Int32)
+  - System.Collections.ObjectModel.Collection{{T}}.Count
+  - System.Collections.ObjectModel.Collection{{T}}.Items
+  - System.Collections.ObjectModel.Collection{{T}}.Item(System.Int32)
+  extensionMethods:
+  - System.Collections.Generic.IEnumerable{`0}.Innova.Data.ExtensionMethods.Batch``1(System.Int32)
+  - System.Collections.Generic.IEnumerable{`0}.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1
+  - System.Collections.Generic.IEnumerable{`0}.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1
+  - System.Collections.Generic.IEnumerable{`0}.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1
+  - System.Collections.Generic.IEnumerable{`0}.Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Action{{T}})
+  - System.Collections.Generic.IList{`0}.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists``1({T})
+  - System.Collections.IEnumerable.Innova.Data.ExtensionMethods.FastCast``1
+  - System.Collections.IEnumerable.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count
+  - System.Collections.IEnumerable.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Int32)
+  - System.Collections.IEnumerable.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Int32)
+  - System.Collections.IList.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted(Innova.Prism.Infrastructure.Interfaces.ISortOrder)
+  nameWithType.vb: RangeObservableCollection(Of T)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection(Of T)
+  name.vb: RangeObservableCollection(Of T)
+- uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.SuspendNotifications
+  commentId: M:Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.SuspendNotifications
+  id: SuspendNotifications
+  parent: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
+  langs:
+  - csharp
+  - vb
+  name: SuspendNotifications()
+  nameWithType: RangeObservableCollection<T>.SuspendNotifications()
+  fullName: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection<T>.SuspendNotifications()
+  type: Method
+  source:
+    id: SuspendNotifications
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\RangeObservableCollection.cs
+    startLine: 19
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Suspends the collection change notifications.
+  example: []
+  syntax:
+    content: public void SuspendNotifications()
+    content.vb: Public Sub SuspendNotifications()
+  overload: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.SuspendNotifications*
+  nameWithType.vb: RangeObservableCollection(Of T).SuspendNotifications()
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection(Of T).SuspendNotifications()
+- uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.ResumeNotifications
+  commentId: M:Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.ResumeNotifications
+  id: ResumeNotifications
+  parent: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
+  langs:
+  - csharp
+  - vb
+  name: ResumeNotifications()
+  nameWithType: RangeObservableCollection<T>.ResumeNotifications()
+  fullName: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection<T>.ResumeNotifications()
+  type: Method
+  source:
+    id: ResumeNotifications
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\RangeObservableCollection.cs
+    startLine: 27
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Resumes the collection change notifications.
+  example: []
+  syntax:
+    content: public void ResumeNotifications()
+    content.vb: Public Sub ResumeNotifications()
+  overload: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.ResumeNotifications*
+  nameWithType.vb: RangeObservableCollection(Of T).ResumeNotifications()
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection(Of T).ResumeNotifications()
+- uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  id: OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  parent: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
+  langs:
+  - csharp
+  - vb
+  name: OnCollectionChanged(NotifyCollectionChangedEventArgs)
+  nameWithType: RangeObservableCollection<T>.OnCollectionChanged(NotifyCollectionChangedEventArgs)
+  fullName: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection<T>.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  type: Method
+  source:
+    id: OnCollectionChanged
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\RangeObservableCollection.cs
+    startLine: 42
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Raises the CollectionChanged event with the provided arguments.
+  example: []
+  syntax:
+    content: protected override void OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+    parameters:
+    - id: e
+      type: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+      description: The event arguments.
+    content.vb: Protected Overrides Sub OnCollectionChanged(e As NotifyCollectionChangedEventArgs)
+  overridden: System.Collections.ObjectModel.ObservableCollection{{T}}.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  overload: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.OnCollectionChanged*
+  nameWithType.vb: RangeObservableCollection(Of T).OnCollectionChanged(NotifyCollectionChangedEventArgs)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection(Of T).OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+- uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  id: AddRange(System.Collections.Generic.IEnumerable{`0})
+  parent: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
+  langs:
+  - csharp
+  - vb
+  name: AddRange(IEnumerable<T>)
+  nameWithType: RangeObservableCollection<T>.AddRange(IEnumerable<T>)
+  fullName: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection<T>.AddRange(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    id: AddRange
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ClassDefinitions\RangeObservableCollection.cs
+    startLine: 53
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.ClassDefinitions
+  summary: Adds the elements of the specified collection to the end of the collection.
+  example: []
+  syntax:
+    content: public void AddRange(IEnumerable<T> list)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection whose elements should be added to the end of the collection.
+    content.vb: Public Sub AddRange(list As IEnumerable(Of T))
+  overload: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.AddRange*
+  nameWithType.vb: RangeObservableCollection(Of T).AddRange(IEnumerable(Of T))
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection(Of T).AddRange(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: AddRange(IEnumerable(Of T))
+references:
+- uid: Innova.Prism.Library.ClassDefinitions
+  commentId: N:Innova.Prism.Library.ClassDefinitions
+  href: Innova.html
+  name: Innova.Prism.Library.ClassDefinitions
+  nameWithType: Innova.Prism.Library.ClassDefinitions
+  fullName: Innova.Prism.Library.ClassDefinitions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.ObjectModel.Collection{{T}}
+  commentId: T:System.Collections.ObjectModel.Collection{`0}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.Collection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1
+  name: Collection<T>
+  nameWithType: Collection<T>
+  fullName: System.Collections.ObjectModel.Collection<T>
+  nameWithType.vb: Collection(Of T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T)
+  name.vb: Collection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection{{T}}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{`0}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IList{{T}}
+  commentId: T:System.Collections.Generic.IList{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.ICollection{{T}}
+  commentId: T:System.Collections.Generic.ICollection{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.Generic.IReadOnlyList{{T}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection{{T}}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Collections.Specialized.INotifyCollectionChanged
+  commentId: T:System.Collections.Specialized.INotifyCollectionChanged
+  parent: System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.inotifycollectionchanged
+  name: INotifyCollectionChanged
+  nameWithType: INotifyCollectionChanged
+  fullName: System.Collections.Specialized.INotifyCollectionChanged
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.Collections.ObjectModel.ObservableCollection{{T}}.Move(System.Int32,System.Int32)
+  commentId: M:System.Collections.ObjectModel.ObservableCollection{`0}.Move(System.Int32,System.Int32)
+  parent: System.Collections.ObjectModel.ObservableCollection{{T}}
+  definition: System.Collections.ObjectModel.ObservableCollection`1.Move(System.Int32,System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.move
+  name: Move(int, int)
+  nameWithType: ObservableCollection<T>.Move(int, int)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.Move(int, int)
+  nameWithType.vb: ObservableCollection(Of T).Move(Integer, Integer)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).Move(Integer, Integer)
+  name.vb: Move(Integer, Integer)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.Move(System.Int32,System.Int32)
+    name: Move
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.move
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.Move(System.Int32,System.Int32)
+    name: Move
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.move
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection{{T}}.ClearItems
+  commentId: M:System.Collections.ObjectModel.ObservableCollection{`0}.ClearItems
+  parent: System.Collections.ObjectModel.ObservableCollection{{T}}
+  definition: System.Collections.ObjectModel.ObservableCollection`1.ClearItems
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.clearitems
+  name: ClearItems()
+  nameWithType: ObservableCollection<T>.ClearItems()
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.ClearItems()
+  nameWithType.vb: ObservableCollection(Of T).ClearItems()
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).ClearItems()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.ClearItems
+    name: ClearItems
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.clearitems
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.ClearItems
+    name: ClearItems
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.clearitems
+  - name: (
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection{{T}}.RemoveItem(System.Int32)
+  commentId: M:System.Collections.ObjectModel.ObservableCollection{`0}.RemoveItem(System.Int32)
+  parent: System.Collections.ObjectModel.ObservableCollection{{T}}
+  definition: System.Collections.ObjectModel.ObservableCollection`1.RemoveItem(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.removeitem
+  name: RemoveItem(int)
+  nameWithType: ObservableCollection<T>.RemoveItem(int)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.RemoveItem(int)
+  nameWithType.vb: ObservableCollection(Of T).RemoveItem(Integer)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).RemoveItem(Integer)
+  name.vb: RemoveItem(Integer)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.RemoveItem(System.Int32)
+    name: RemoveItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.removeitem
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.RemoveItem(System.Int32)
+    name: RemoveItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.removeitem
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection{{T}}.InsertItem(System.Int32,{T})
+  commentId: M:System.Collections.ObjectModel.ObservableCollection{`0}.InsertItem(System.Int32,`0)
+  parent: System.Collections.ObjectModel.ObservableCollection{{T}}
+  definition: System.Collections.ObjectModel.ObservableCollection`1.InsertItem(System.Int32,`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.insertitem
+  name: InsertItem(int, T)
+  nameWithType: ObservableCollection<T>.InsertItem(int, T)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.InsertItem(int, T)
+  nameWithType.vb: ObservableCollection(Of T).InsertItem(Integer, T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).InsertItem(Integer, T)
+  name.vb: InsertItem(Integer, T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.InsertItem(System.Int32,`0)
+    name: InsertItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.insertitem
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.InsertItem(System.Int32,`0)
+    name: InsertItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.insertitem
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection{{T}}.SetItem(System.Int32,{T})
+  commentId: M:System.Collections.ObjectModel.ObservableCollection{`0}.SetItem(System.Int32,`0)
+  parent: System.Collections.ObjectModel.ObservableCollection{{T}}
+  definition: System.Collections.ObjectModel.ObservableCollection`1.SetItem(System.Int32,`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.setitem
+  name: SetItem(int, T)
+  nameWithType: ObservableCollection<T>.SetItem(int, T)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.SetItem(int, T)
+  nameWithType.vb: ObservableCollection(Of T).SetItem(Integer, T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).SetItem(Integer, T)
+  name.vb: SetItem(Integer, T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.SetItem(System.Int32,`0)
+    name: SetItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.setitem
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.SetItem(System.Int32,`0)
+    name: SetItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.setitem
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection{{T}}.MoveItem(System.Int32,System.Int32)
+  commentId: M:System.Collections.ObjectModel.ObservableCollection{`0}.MoveItem(System.Int32,System.Int32)
+  parent: System.Collections.ObjectModel.ObservableCollection{{T}}
+  definition: System.Collections.ObjectModel.ObservableCollection`1.MoveItem(System.Int32,System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.moveitem
+  name: MoveItem(int, int)
+  nameWithType: ObservableCollection<T>.MoveItem(int, int)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.MoveItem(int, int)
+  nameWithType.vb: ObservableCollection(Of T).MoveItem(Integer, Integer)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).MoveItem(Integer, Integer)
+  name.vb: MoveItem(Integer, Integer)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.MoveItem(System.Int32,System.Int32)
+    name: MoveItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.moveitem
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.MoveItem(System.Int32,System.Int32)
+    name: MoveItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.moveitem
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection{{T}}.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:System.Collections.ObjectModel.ObservableCollection{`0}.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  parent: System.Collections.ObjectModel.ObservableCollection{{T}}
+  definition: System.Collections.ObjectModel.ObservableCollection`1.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.onpropertychanged
+  name: OnPropertyChanged(PropertyChangedEventArgs)
+  nameWithType: ObservableCollection<T>.OnPropertyChanged(PropertyChangedEventArgs)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  nameWithType.vb: ObservableCollection(Of T).OnPropertyChanged(PropertyChangedEventArgs)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.onpropertychanged
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.onpropertychanged
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection{{T}}.BlockReentrancy
+  commentId: M:System.Collections.ObjectModel.ObservableCollection{`0}.BlockReentrancy
+  parent: System.Collections.ObjectModel.ObservableCollection{{T}}
+  definition: System.Collections.ObjectModel.ObservableCollection`1.BlockReentrancy
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.blockreentrancy
+  name: BlockReentrancy()
+  nameWithType: ObservableCollection<T>.BlockReentrancy()
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.BlockReentrancy()
+  nameWithType.vb: ObservableCollection(Of T).BlockReentrancy()
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).BlockReentrancy()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.BlockReentrancy
+    name: BlockReentrancy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.blockreentrancy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.BlockReentrancy
+    name: BlockReentrancy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.blockreentrancy
+  - name: (
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection{{T}}.CheckReentrancy
+  commentId: M:System.Collections.ObjectModel.ObservableCollection{`0}.CheckReentrancy
+  parent: System.Collections.ObjectModel.ObservableCollection{{T}}
+  definition: System.Collections.ObjectModel.ObservableCollection`1.CheckReentrancy
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.checkreentrancy
+  name: CheckReentrancy()
+  nameWithType: ObservableCollection<T>.CheckReentrancy()
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.CheckReentrancy()
+  nameWithType.vb: ObservableCollection(Of T).CheckReentrancy()
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).CheckReentrancy()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.CheckReentrancy
+    name: CheckReentrancy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.checkreentrancy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.CheckReentrancy
+    name: CheckReentrancy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.checkreentrancy
+  - name: (
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection{{T}}.CollectionChanged
+  commentId: E:System.Collections.ObjectModel.ObservableCollection{`0}.CollectionChanged
+  parent: System.Collections.ObjectModel.ObservableCollection{{T}}
+  definition: System.Collections.ObjectModel.ObservableCollection`1.CollectionChanged
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.collectionchanged
+  name: CollectionChanged
+  nameWithType: ObservableCollection<T>.CollectionChanged
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.CollectionChanged
+  nameWithType.vb: ObservableCollection(Of T).CollectionChanged
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).CollectionChanged
+- uid: System.Collections.ObjectModel.ObservableCollection{{T}}.PropertyChanged
+  commentId: E:System.Collections.ObjectModel.ObservableCollection{`0}.PropertyChanged
+  parent: System.Collections.ObjectModel.ObservableCollection{{T}}
+  definition: System.Collections.ObjectModel.ObservableCollection`1.PropertyChanged
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.propertychanged
+  name: PropertyChanged
+  nameWithType: ObservableCollection<T>.PropertyChanged
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.PropertyChanged
+  nameWithType.vb: ObservableCollection(Of T).PropertyChanged
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).PropertyChanged
+- uid: System.Collections.ObjectModel.Collection{{T}}.Add({T})
+  commentId: M:System.Collections.ObjectModel.Collection{`0}.Add(`0)
+  parent: System.Collections.ObjectModel.Collection{{T}}
+  definition: System.Collections.ObjectModel.Collection`1.Add(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.add
+  name: Add(T)
+  nameWithType: Collection<T>.Add(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Add(T)
+  nameWithType.vb: Collection(Of T).Add(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection{`0}.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.add
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection{`0}.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.add
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.Collection{{T}}.Clear
+  commentId: M:System.Collections.ObjectModel.Collection{`0}.Clear
+  parent: System.Collections.ObjectModel.Collection{{T}}
+  definition: System.Collections.ObjectModel.Collection`1.Clear
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.clear
+  name: Clear()
+  nameWithType: Collection<T>.Clear()
+  fullName: System.Collections.ObjectModel.Collection<T>.Clear()
+  nameWithType.vb: Collection(Of T).Clear()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection{`0}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection{`0}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.clear
+  - name: (
+  - name: )
+- uid: System.Collections.ObjectModel.Collection{{T}}.CopyTo({T}[],System.Int32)
+  commentId: M:System.Collections.ObjectModel.Collection{`0}.CopyTo(`0[],System.Int32)
+  parent: System.Collections.ObjectModel.Collection{{T}}
+  definition: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.copyto
+  name: CopyTo(T[], int)
+  nameWithType: Collection<T>.CopyTo(T[], int)
+  fullName: System.Collections.ObjectModel.Collection<T>.CopyTo(T[], int)
+  nameWithType.vb: Collection(Of T).CopyTo(T(), Integer)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).CopyTo(T(), Integer)
+  name.vb: CopyTo(T(), Integer)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection{`0}.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.copyto
+  - name: (
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection{`0}.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.copyto
+  - name: (
+  - name: T
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ObjectModel.Collection{{T}}.Contains({T})
+  commentId: M:System.Collections.ObjectModel.Collection{`0}.Contains(`0)
+  parent: System.Collections.ObjectModel.Collection{{T}}
+  definition: System.Collections.ObjectModel.Collection`1.Contains(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.contains
+  name: Contains(T)
+  nameWithType: Collection<T>.Contains(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Contains(T)
+  nameWithType.vb: Collection(Of T).Contains(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection{`0}.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.contains
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection{`0}.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.contains
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.Collection{{T}}.GetEnumerator
+  commentId: M:System.Collections.ObjectModel.Collection{`0}.GetEnumerator
+  parent: System.Collections.ObjectModel.Collection{{T}}
+  definition: System.Collections.ObjectModel.Collection`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: Collection<T>.GetEnumerator()
+  fullName: System.Collections.ObjectModel.Collection<T>.GetEnumerator()
+  nameWithType.vb: Collection(Of T).GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection{`0}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection{`0}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.ObjectModel.Collection{{T}}.IndexOf({T})
+  commentId: M:System.Collections.ObjectModel.Collection{`0}.IndexOf(`0)
+  parent: System.Collections.ObjectModel.Collection{{T}}
+  definition: System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.indexof
+  name: IndexOf(T)
+  nameWithType: Collection<T>.IndexOf(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.IndexOf(T)
+  nameWithType.vb: Collection(Of T).IndexOf(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection{`0}.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.indexof
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection{`0}.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.indexof
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.Collection{{T}}.Insert(System.Int32,{T})
+  commentId: M:System.Collections.ObjectModel.Collection{`0}.Insert(System.Int32,`0)
+  parent: System.Collections.ObjectModel.Collection{{T}}
+  definition: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.insert
+  name: Insert(int, T)
+  nameWithType: Collection<T>.Insert(int, T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Insert(int, T)
+  nameWithType.vb: Collection(Of T).Insert(Integer, T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Insert(Integer, T)
+  name.vb: Insert(Integer, T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection{`0}.Insert(System.Int32,`0)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.insert
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection{`0}.Insert(System.Int32,`0)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.insert
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.Collection{{T}}.Remove({T})
+  commentId: M:System.Collections.ObjectModel.Collection{`0}.Remove(`0)
+  parent: System.Collections.ObjectModel.Collection{{T}}
+  definition: System.Collections.ObjectModel.Collection`1.Remove(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.remove
+  name: Remove(T)
+  nameWithType: Collection<T>.Remove(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Remove(T)
+  nameWithType.vb: Collection(Of T).Remove(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection{`0}.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.remove
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection{`0}.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.remove
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.Collection{{T}}.RemoveAt(System.Int32)
+  commentId: M:System.Collections.ObjectModel.Collection{`0}.RemoveAt(System.Int32)
+  parent: System.Collections.ObjectModel.Collection{{T}}
+  definition: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.removeat
+  name: RemoveAt(int)
+  nameWithType: Collection<T>.RemoveAt(int)
+  fullName: System.Collections.ObjectModel.Collection<T>.RemoveAt(int)
+  nameWithType.vb: Collection(Of T).RemoveAt(Integer)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection{`0}.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection{`0}.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ObjectModel.Collection{{T}}.Count
+  commentId: P:System.Collections.ObjectModel.Collection{`0}.Count
+  parent: System.Collections.ObjectModel.Collection{{T}}
+  definition: System.Collections.ObjectModel.Collection`1.Count
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.count
+  name: Count
+  nameWithType: Collection<T>.Count
+  fullName: System.Collections.ObjectModel.Collection<T>.Count
+  nameWithType.vb: Collection(Of T).Count
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Count
+- uid: System.Collections.ObjectModel.Collection{{T}}.Items
+  commentId: P:System.Collections.ObjectModel.Collection{`0}.Items
+  parent: System.Collections.ObjectModel.Collection{{T}}
+  definition: System.Collections.ObjectModel.Collection`1.Items
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.items
+  name: Items
+  nameWithType: Collection<T>.Items
+  fullName: System.Collections.ObjectModel.Collection<T>.Items
+  nameWithType.vb: Collection(Of T).Items
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Items
+- uid: System.Collections.ObjectModel.Collection{{T}}.Item(System.Int32)
+  commentId: P:System.Collections.ObjectModel.Collection{`0}.Item(System.Int32)
+  parent: System.Collections.ObjectModel.Collection{{T}}
+  definition: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: Collection<T>.this[int]
+  fullName: System.Collections.ObjectModel.Collection<T>.this[int]
+  nameWithType.vb: Collection(Of T).this[](Integer)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection{`0}.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{`0}.Innova.Data.ExtensionMethods.Batch``1(System.Int32)
+  commentId: M:Innova.Data.ExtensionMethods.Batch``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  parent: Innova.Data.ExtensionMethods
+  definition: Innova.Data.ExtensionMethods.Batch``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  href: Innova.Data.ExtensionMethods.Batch.html#Innova_Data_ExtensionMethods_Batch__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  name: Batch<T>(IEnumerable<T>, int)
+  nameWithType: ExtensionMethods.Batch<T>(IEnumerable<T>, int)
+  fullName: Innova.Data.ExtensionMethods.Batch<T>(System.Collections.Generic.IEnumerable<T>, int)
+  nameWithType.vb: ExtensionMethods.Batch(Of T)(IEnumerable(Of T), Integer)
+  fullName.vb: Innova.Data.ExtensionMethods.Batch(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer)
+  name.vb: Batch(Of T)(IEnumerable(Of T), Integer)
+  spec.csharp:
+  - uid: Innova.Data.ExtensionMethods.Batch``1(System.Collections.Generic.IEnumerable{`0},System.Int32)
+    name: Batch
+    href: Innova.Data.ExtensionMethods.Batch.html#Innova_Data_ExtensionMethods_Batch__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.ExtensionMethods.Batch``1(System.Collections.Generic.IEnumerable{`0},System.Int32)
+    name: Batch
+    href: Innova.Data.ExtensionMethods.Batch.html#Innova_Data_ExtensionMethods_Batch__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{`0}.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  definition: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{``0})
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AsBindingList__1_System_Collections_Generic_IEnumerable___0__
+  name: AsBindingList<T>(IEnumerable<T>)
+  nameWithType: ExtensionMethods.AsBindingList<T>(IEnumerable<T>)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ExtensionMethods.AsBindingList(Of T)(IEnumerable(Of T))
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: AsBindingList(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{`0})
+    name: AsBindingList
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AsBindingList__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{`0})
+    name: AsBindingList
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AsBindingList__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{`0}.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  definition: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  name: ToObservableCollection<T>(IEnumerable<T>)
+  nameWithType: ExtensionMethods.ToObservableCollection<T>(IEnumerable<T>)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ExtensionMethods.ToObservableCollection(Of T)(IEnumerable(Of T))
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ToObservableCollection(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{`0})
+    name: ToObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{`0})
+    name: ToObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{`0}.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  definition: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToReadOnlyObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  name: ToReadOnlyObservableCollection<T>(IEnumerable<T>)
+  nameWithType: ExtensionMethods.ToReadOnlyObservableCollection<T>(IEnumerable<T>)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ExtensionMethods.ToReadOnlyObservableCollection(Of T)(IEnumerable(Of T))
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ToReadOnlyObservableCollection(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{`0})
+    name: ToReadOnlyObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToReadOnlyObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{`0})
+    name: ToReadOnlyObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToReadOnlyObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{`0}.Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Action{{T}})
+  commentId: M:Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  parent: Innova.Prism.Library.Extensions.CollectionExtensions
+  definition: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  href: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach.html#Innova_Prism_Library_Extensions_CollectionExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  name: ForEach<T>(IEnumerable<T>, Action<T>)
+  nameWithType: CollectionExtensions.ForEach<T>(IEnumerable<T>, Action<T>)
+  fullName: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T>)
+  nameWithType.vb: CollectionExtensions.ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName.vb: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
+  name.vb: ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{`0},System.Action{`0})
+    name: ForEach
+    href: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach.html#Innova_Prism_Library_Extensions_CollectionExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{`0},System.Action{`0})
+    name: ForEach
+    href: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach.html#Innova_Prism_Library_Extensions_CollectionExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IList{`0}.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists``1({T})
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists``1(System.Collections.Generic.IList{``0},``0)
+  parent: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  definition: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists``1(System.Collections.Generic.IList{``0},``0)
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AddIfNotExists__1_System_Collections_Generic_IList___0____0_
+  name: AddIfNotExists<T>(IList<T>, T)
+  nameWithType: ExtensionMethods.AddIfNotExists<T>(IList<T>, T)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists<T>(System.Collections.Generic.IList<T>, T)
+  nameWithType.vb: ExtensionMethods.AddIfNotExists(Of T)(IList(Of T), T)
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists(Of T)(System.Collections.Generic.IList(Of T), T)
+  name.vb: AddIfNotExists(Of T)(IList(Of T), T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists``1(System.Collections.Generic.IList{`0},`0)
+    name: AddIfNotExists
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AddIfNotExists__1_System_Collections_Generic_IList___0____0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists``1(System.Collections.Generic.IList{`0},`0)
+    name: AddIfNotExists
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AddIfNotExists__1_System_Collections_Generic_IList___0____0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.IEnumerable.Innova.Data.ExtensionMethods.FastCast``1
+  commentId: M:Innova.Data.ExtensionMethods.FastCast``1(System.Collections.IEnumerable)
+  parent: Innova.Data.ExtensionMethods
+  definition: Innova.Data.ExtensionMethods.FastCast``1(System.Collections.IEnumerable)
+  href: Innova.Data.ExtensionMethods.FastCast.html#Innova_Data_ExtensionMethods_FastCast__1_System_Collections_IEnumerable_
+  name: FastCast<T>(IEnumerable)
+  nameWithType: ExtensionMethods.FastCast<T>(IEnumerable)
+  fullName: Innova.Data.ExtensionMethods.FastCast<T>(System.Collections.IEnumerable)
+  nameWithType.vb: ExtensionMethods.FastCast(Of T)(IEnumerable)
+  fullName.vb: Innova.Data.ExtensionMethods.FastCast(Of T)(System.Collections.IEnumerable)
+  name.vb: FastCast(Of T)(IEnumerable)
+  spec.csharp:
+  - uid: Innova.Data.ExtensionMethods.FastCast``1(System.Collections.IEnumerable)
+    name: FastCast
+    href: Innova.Data.ExtensionMethods.FastCast.html#Innova_Data_ExtensionMethods_FastCast__1_System_Collections_IEnumerable_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.ExtensionMethods.FastCast``1(System.Collections.IEnumerable)
+    name: FastCast
+    href: Innova.Data.ExtensionMethods.FastCast.html#Innova_Data_ExtensionMethods_FastCast__1_System_Collections_IEnumerable_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+- uid: System.Collections.IEnumerable.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+  parent: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  definition: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Count_System_Collections_IEnumerable_
+  name: Count(IEnumerable)
+  nameWithType: ExtensionMethods.Count(IEnumerable)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+    name: Count
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Count_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+    name: Count
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Count_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+- uid: System.Collections.IEnumerable.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Int32)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+  parent: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  definition: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Skip_System_Collections_IEnumerable_System_Int32_
+  name: Skip(IEnumerable, int)
+  nameWithType: ExtensionMethods.Skip(IEnumerable, int)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable, int)
+  nameWithType.vb: ExtensionMethods.Skip(IEnumerable, Integer)
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable, Integer)
+  name.vb: Skip(IEnumerable, Integer)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+    name: Skip
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Skip_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+    name: Skip
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Skip_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.IEnumerable.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Int32)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+  parent: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  definition: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Take_System_Collections_IEnumerable_System_Int32_
+  name: Take(IEnumerable, int)
+  nameWithType: ExtensionMethods.Take(IEnumerable, int)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable, int)
+  nameWithType.vb: ExtensionMethods.Take(IEnumerable, Integer)
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable, Integer)
+  name.vb: Take(IEnumerable, Integer)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+    name: Take
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Take_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+    name: Take
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Take_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.IList.Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted(Innova.Prism.Infrastructure.Interfaces.ISortOrder)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted(System.Collections.IList,Innova.Prism.Infrastructure.Interfaces.ISortOrder)
+  parent: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  definition: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted(System.Collections.IList,Innova.Prism.Infrastructure.Interfaces.ISortOrder)
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_InsertSorted_System_Collections_IList_Innova_Prism_Infrastructure_Interfaces_ISortOrder_
+  name: InsertSorted(IList, ISortOrder)
+  nameWithType: ExtensionMethods.InsertSorted(IList, ISortOrder)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted(System.Collections.IList, Innova.Prism.Infrastructure.Interfaces.ISortOrder)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted(System.Collections.IList,Innova.Prism.Infrastructure.Interfaces.ISortOrder)
+    name: InsertSorted
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_InsertSorted_System_Collections_IList_Innova_Prism_Infrastructure_Interfaces_ISortOrder_
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: ','
+  - name: " "
+  - uid: Innova.Prism.Infrastructure.Interfaces.ISortOrder
+    name: ISortOrder
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted(System.Collections.IList,Innova.Prism.Infrastructure.Interfaces.ISortOrder)
+    name: InsertSorted
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_InsertSorted_System_Collections_IList_Innova_Prism_Infrastructure_Interfaces_ISortOrder_
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: ','
+  - name: " "
+  - uid: Innova.Prism.Infrastructure.Interfaces.ISortOrder
+    name: ISortOrder
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.ObjectModel.Collection`1
+  commentId: T:System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1
+  name: Collection<T>
+  nameWithType: Collection<T>
+  fullName: System.Collections.ObjectModel.Collection<T>
+  nameWithType.vb: Collection(Of T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T)
+  name.vb: Collection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Specialized
+  commentId: N:System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Specialized
+  nameWithType: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: System.Collections.ObjectModel.ObservableCollection`1.Move(System.Int32,System.Int32)
+  commentId: M:System.Collections.ObjectModel.ObservableCollection`1.Move(System.Int32,System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.move
+  name: Move(int, int)
+  nameWithType: ObservableCollection<T>.Move(int, int)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.Move(int, int)
+  nameWithType.vb: ObservableCollection(Of T).Move(Integer, Integer)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).Move(Integer, Integer)
+  name.vb: Move(Integer, Integer)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.Move(System.Int32,System.Int32)
+    name: Move
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.move
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.Move(System.Int32,System.Int32)
+    name: Move
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.move
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1.ClearItems
+  commentId: M:System.Collections.ObjectModel.ObservableCollection`1.ClearItems
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.clearitems
+  name: ClearItems()
+  nameWithType: ObservableCollection<T>.ClearItems()
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.ClearItems()
+  nameWithType.vb: ObservableCollection(Of T).ClearItems()
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).ClearItems()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.ClearItems
+    name: ClearItems
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.clearitems
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.ClearItems
+    name: ClearItems
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.clearitems
+  - name: (
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1.RemoveItem(System.Int32)
+  commentId: M:System.Collections.ObjectModel.ObservableCollection`1.RemoveItem(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.removeitem
+  name: RemoveItem(int)
+  nameWithType: ObservableCollection<T>.RemoveItem(int)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.RemoveItem(int)
+  nameWithType.vb: ObservableCollection(Of T).RemoveItem(Integer)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).RemoveItem(Integer)
+  name.vb: RemoveItem(Integer)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.RemoveItem(System.Int32)
+    name: RemoveItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.removeitem
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.RemoveItem(System.Int32)
+    name: RemoveItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.removeitem
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1.InsertItem(System.Int32,`0)
+  commentId: M:System.Collections.ObjectModel.ObservableCollection`1.InsertItem(System.Int32,`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.insertitem
+  name: InsertItem(int, T)
+  nameWithType: ObservableCollection<T>.InsertItem(int, T)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.InsertItem(int, T)
+  nameWithType.vb: ObservableCollection(Of T).InsertItem(Integer, T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).InsertItem(Integer, T)
+  name.vb: InsertItem(Integer, T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.InsertItem(System.Int32,`0)
+    name: InsertItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.insertitem
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.InsertItem(System.Int32,`0)
+    name: InsertItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.insertitem
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1.SetItem(System.Int32,`0)
+  commentId: M:System.Collections.ObjectModel.ObservableCollection`1.SetItem(System.Int32,`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.setitem
+  name: SetItem(int, T)
+  nameWithType: ObservableCollection<T>.SetItem(int, T)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.SetItem(int, T)
+  nameWithType.vb: ObservableCollection(Of T).SetItem(Integer, T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).SetItem(Integer, T)
+  name.vb: SetItem(Integer, T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.SetItem(System.Int32,`0)
+    name: SetItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.setitem
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.SetItem(System.Int32,`0)
+    name: SetItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.setitem
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1.MoveItem(System.Int32,System.Int32)
+  commentId: M:System.Collections.ObjectModel.ObservableCollection`1.MoveItem(System.Int32,System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.moveitem
+  name: MoveItem(int, int)
+  nameWithType: ObservableCollection<T>.MoveItem(int, int)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.MoveItem(int, int)
+  nameWithType.vb: ObservableCollection(Of T).MoveItem(Integer, Integer)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).MoveItem(Integer, Integer)
+  name.vb: MoveItem(Integer, Integer)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.MoveItem(System.Int32,System.Int32)
+    name: MoveItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.moveitem
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.MoveItem(System.Int32,System.Int32)
+    name: MoveItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.moveitem
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:System.Collections.ObjectModel.ObservableCollection`1.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.onpropertychanged
+  name: OnPropertyChanged(PropertyChangedEventArgs)
+  nameWithType: ObservableCollection<T>.OnPropertyChanged(PropertyChangedEventArgs)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  nameWithType.vb: ObservableCollection(Of T).OnPropertyChanged(PropertyChangedEventArgs)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.onpropertychanged
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.onpropertychanged
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1.BlockReentrancy
+  commentId: M:System.Collections.ObjectModel.ObservableCollection`1.BlockReentrancy
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.blockreentrancy
+  name: BlockReentrancy()
+  nameWithType: ObservableCollection<T>.BlockReentrancy()
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.BlockReentrancy()
+  nameWithType.vb: ObservableCollection(Of T).BlockReentrancy()
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).BlockReentrancy()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.BlockReentrancy
+    name: BlockReentrancy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.blockreentrancy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.BlockReentrancy
+    name: BlockReentrancy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.blockreentrancy
+  - name: (
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1.CheckReentrancy
+  commentId: M:System.Collections.ObjectModel.ObservableCollection`1.CheckReentrancy
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.checkreentrancy
+  name: CheckReentrancy()
+  nameWithType: ObservableCollection<T>.CheckReentrancy()
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.CheckReentrancy()
+  nameWithType.vb: ObservableCollection(Of T).CheckReentrancy()
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).CheckReentrancy()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.CheckReentrancy
+    name: CheckReentrancy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.checkreentrancy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.CheckReentrancy
+    name: CheckReentrancy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.checkreentrancy
+  - name: (
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1.CollectionChanged
+  commentId: E:System.Collections.ObjectModel.ObservableCollection`1.CollectionChanged
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.collectionchanged
+  name: CollectionChanged
+  nameWithType: ObservableCollection<T>.CollectionChanged
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.CollectionChanged
+  nameWithType.vb: ObservableCollection(Of T).CollectionChanged
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).CollectionChanged
+- uid: System.Collections.ObjectModel.ObservableCollection`1.PropertyChanged
+  commentId: E:System.Collections.ObjectModel.ObservableCollection`1.PropertyChanged
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.propertychanged
+  name: PropertyChanged
+  nameWithType: ObservableCollection<T>.PropertyChanged
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.PropertyChanged
+  nameWithType.vb: ObservableCollection(Of T).PropertyChanged
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).PropertyChanged
+- uid: System.Collections.ObjectModel.Collection`1.Add(`0)
+  commentId: M:System.Collections.ObjectModel.Collection`1.Add(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.add
+  name: Add(T)
+  nameWithType: Collection<T>.Add(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Add(T)
+  nameWithType.vb: Collection(Of T).Add(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.add
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.add
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.Collection`1.Clear
+  commentId: M:System.Collections.ObjectModel.Collection`1.Clear
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.clear
+  name: Clear()
+  nameWithType: Collection<T>.Clear()
+  fullName: System.Collections.ObjectModel.Collection<T>.Clear()
+  nameWithType.vb: Collection(Of T).Clear()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.clear
+  - name: (
+  - name: )
+- uid: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.copyto
+  name: CopyTo(T[], int)
+  nameWithType: Collection<T>.CopyTo(T[], int)
+  fullName: System.Collections.ObjectModel.Collection<T>.CopyTo(T[], int)
+  nameWithType.vb: Collection(Of T).CopyTo(T(), Integer)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).CopyTo(T(), Integer)
+  name.vb: CopyTo(T(), Integer)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.copyto
+  - name: (
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.copyto
+  - name: (
+  - name: T
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ObjectModel.Collection`1.Contains(`0)
+  commentId: M:System.Collections.ObjectModel.Collection`1.Contains(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.contains
+  name: Contains(T)
+  nameWithType: Collection<T>.Contains(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Contains(T)
+  nameWithType.vb: Collection(Of T).Contains(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.contains
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.contains
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.Collection`1.GetEnumerator
+  commentId: M:System.Collections.ObjectModel.Collection`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: Collection<T>.GetEnumerator()
+  fullName: System.Collections.ObjectModel.Collection<T>.GetEnumerator()
+  nameWithType.vb: Collection(Of T).GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+  commentId: M:System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.indexof
+  name: IndexOf(T)
+  nameWithType: Collection<T>.IndexOf(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.IndexOf(T)
+  nameWithType.vb: Collection(Of T).IndexOf(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.indexof
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.indexof
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+  commentId: M:System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.insert
+  name: Insert(int, T)
+  nameWithType: Collection<T>.Insert(int, T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Insert(int, T)
+  nameWithType.vb: Collection(Of T).Insert(Integer, T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Insert(Integer, T)
+  name.vb: Insert(Integer, T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.insert
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.insert
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.Collection`1.Remove(`0)
+  commentId: M:System.Collections.ObjectModel.Collection`1.Remove(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.remove
+  name: Remove(T)
+  nameWithType: Collection<T>.Remove(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Remove(T)
+  nameWithType.vb: Collection(Of T).Remove(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.remove
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.remove
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+  commentId: M:System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.removeat
+  name: RemoveAt(int)
+  nameWithType: Collection<T>.RemoveAt(int)
+  fullName: System.Collections.ObjectModel.Collection<T>.RemoveAt(int)
+  nameWithType.vb: Collection(Of T).RemoveAt(Integer)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ObjectModel.Collection`1.Count
+  commentId: P:System.Collections.ObjectModel.Collection`1.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.count
+  name: Count
+  nameWithType: Collection<T>.Count
+  fullName: System.Collections.ObjectModel.Collection<T>.Count
+  nameWithType.vb: Collection(Of T).Count
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Count
+- uid: System.Collections.ObjectModel.Collection`1.Items
+  commentId: P:System.Collections.ObjectModel.Collection`1.Items
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.items
+  name: Items
+  nameWithType: Collection<T>.Items
+  fullName: System.Collections.ObjectModel.Collection<T>.Items
+  nameWithType.vb: Collection(Of T).Items
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Items
+- uid: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+  commentId: P:System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: Collection<T>.this[int]
+  fullName: System.Collections.ObjectModel.Collection<T>.this[int]
+  nameWithType.vb: Collection(Of T).this[](Integer)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.ExtensionMethods.Batch``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  commentId: M:Innova.Data.ExtensionMethods.Batch``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  isExternal: true
+  href: Innova.Data.ExtensionMethods.Batch.html#Innova_Data_ExtensionMethods_Batch__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  name: Batch<T>(IEnumerable<T>, int)
+  nameWithType: ExtensionMethods.Batch<T>(IEnumerable<T>, int)
+  fullName: Innova.Data.ExtensionMethods.Batch<T>(System.Collections.Generic.IEnumerable<T>, int)
+  nameWithType.vb: ExtensionMethods.Batch(Of T)(IEnumerable(Of T), Integer)
+  fullName.vb: Innova.Data.ExtensionMethods.Batch(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer)
+  name.vb: Batch(Of T)(IEnumerable(Of T), Integer)
+  spec.csharp:
+  - uid: Innova.Data.ExtensionMethods.Batch``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+    name: Batch
+    href: Innova.Data.ExtensionMethods.Batch.html#Innova_Data_ExtensionMethods_Batch__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.ExtensionMethods.Batch``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+    name: Batch
+    href: Innova.Data.ExtensionMethods.Batch.html#Innova_Data_ExtensionMethods_Batch__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Data.ExtensionMethods
+  commentId: T:Innova.Data.ExtensionMethods
+  parent: Innova.Data
+  href: Innova.Data.ExtensionMethods.html
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Innova.Data.ExtensionMethods
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AsBindingList__1_System_Collections_Generic_IEnumerable___0__
+  name: AsBindingList<T>(IEnumerable<T>)
+  nameWithType: ExtensionMethods.AsBindingList<T>(IEnumerable<T>)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ExtensionMethods.AsBindingList(Of T)(IEnumerable(Of T))
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: AsBindingList(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{``0})
+    name: AsBindingList
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AsBindingList__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList``1(System.Collections.Generic.IEnumerable{``0})
+    name: AsBindingList
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AsBindingList.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AsBindingList__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  commentId: T:Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+  parent: Innova.Prism.Library.ExtensionMethods
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.html
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  name: ToObservableCollection<T>(IEnumerable<T>)
+  nameWithType: ExtensionMethods.ToObservableCollection<T>(IEnumerable<T>)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ExtensionMethods.ToObservableCollection(Of T)(IEnumerable(Of T))
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ToObservableCollection(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToReadOnlyObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  name: ToReadOnlyObservableCollection<T>(IEnumerable<T>)
+  nameWithType: ExtensionMethods.ToReadOnlyObservableCollection<T>(IEnumerable<T>)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ExtensionMethods.ToReadOnlyObservableCollection(Of T)(IEnumerable(Of T))
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ToReadOnlyObservableCollection(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToReadOnlyObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToReadOnlyObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToReadOnlyObservableCollection
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.ToReadOnlyObservableCollection.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_ToReadOnlyObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  commentId: M:Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  isExternal: true
+  href: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach.html#Innova_Prism_Library_Extensions_CollectionExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  name: ForEach<T>(IEnumerable<T>, Action<T>)
+  nameWithType: CollectionExtensions.ForEach<T>(IEnumerable<T>, Action<T>)
+  fullName: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T>)
+  nameWithType.vb: CollectionExtensions.ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName.vb: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
+  name.vb: ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+  spec.csharp:
+  - uid: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+    name: ForEach
+    href: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach.html#Innova_Prism_Library_Extensions_CollectionExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+    name: ForEach
+    href: Innova.Prism.Library.Extensions.CollectionExtensions.ForEach.html#Innova_Prism_Library_Extensions_CollectionExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Extensions.CollectionExtensions
+  commentId: T:Innova.Prism.Library.Extensions.CollectionExtensions
+  parent: Innova.Prism.Library.Extensions
+  href: Innova.Prism.Library.Extensions.CollectionExtensions.html
+  name: CollectionExtensions
+  nameWithType: CollectionExtensions
+  fullName: Innova.Prism.Library.Extensions.CollectionExtensions
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists``1(System.Collections.Generic.IList{``0},``0)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists``1(System.Collections.Generic.IList{``0},``0)
+  isExternal: true
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AddIfNotExists__1_System_Collections_Generic_IList___0____0_
+  name: AddIfNotExists<T>(IList<T>, T)
+  nameWithType: ExtensionMethods.AddIfNotExists<T>(IList<T>, T)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists<T>(System.Collections.Generic.IList<T>, T)
+  nameWithType.vb: ExtensionMethods.AddIfNotExists(Of T)(IList(Of T), T)
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists(Of T)(System.Collections.Generic.IList(Of T), T)
+  name.vb: AddIfNotExists(Of T)(IList(Of T), T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists``1(System.Collections.Generic.IList{``0},``0)
+    name: AddIfNotExists
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AddIfNotExists__1_System_Collections_Generic_IList___0____0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists``1(System.Collections.Generic.IList{``0},``0)
+    name: AddIfNotExists
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.AddIfNotExists.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_AddIfNotExists__1_System_Collections_Generic_IList___0____0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.ExtensionMethods.FastCast``1(System.Collections.IEnumerable)
+  commentId: M:Innova.Data.ExtensionMethods.FastCast``1(System.Collections.IEnumerable)
+  isExternal: true
+  href: Innova.Data.ExtensionMethods.FastCast.html#Innova_Data_ExtensionMethods_FastCast__1_System_Collections_IEnumerable_
+  name: FastCast<T>(IEnumerable)
+  nameWithType: ExtensionMethods.FastCast<T>(IEnumerable)
+  fullName: Innova.Data.ExtensionMethods.FastCast<T>(System.Collections.IEnumerable)
+  nameWithType.vb: ExtensionMethods.FastCast(Of T)(IEnumerable)
+  fullName.vb: Innova.Data.ExtensionMethods.FastCast(Of T)(System.Collections.IEnumerable)
+  name.vb: FastCast(Of T)(IEnumerable)
+  spec.csharp:
+  - uid: Innova.Data.ExtensionMethods.FastCast``1(System.Collections.IEnumerable)
+    name: FastCast
+    href: Innova.Data.ExtensionMethods.FastCast.html#Innova_Data_ExtensionMethods_FastCast__1_System_Collections_IEnumerable_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.ExtensionMethods.FastCast``1(System.Collections.IEnumerable)
+    name: FastCast
+    href: Innova.Data.ExtensionMethods.FastCast.html#Innova_Data_ExtensionMethods_FastCast__1_System_Collections_IEnumerable_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+  isExternal: true
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Count_System_Collections_IEnumerable_
+  name: Count(IEnumerable)
+  nameWithType: ExtensionMethods.Count(IEnumerable)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+    name: Count
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Count_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count(System.Collections.IEnumerable)
+    name: Count
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Count.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Count_System_Collections_IEnumerable_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: )
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+  isExternal: true
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Skip_System_Collections_IEnumerable_System_Int32_
+  name: Skip(IEnumerable, int)
+  nameWithType: ExtensionMethods.Skip(IEnumerable, int)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable, int)
+  nameWithType.vb: ExtensionMethods.Skip(IEnumerable, Integer)
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable, Integer)
+  name.vb: Skip(IEnumerable, Integer)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+    name: Skip
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Skip_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip(System.Collections.IEnumerable,System.Int32)
+    name: Skip
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Skip.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Skip_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+  isExternal: true
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Take_System_Collections_IEnumerable_System_Int32_
+  name: Take(IEnumerable, int)
+  nameWithType: ExtensionMethods.Take(IEnumerable, int)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable, int)
+  nameWithType.vb: ExtensionMethods.Take(IEnumerable, Integer)
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable, Integer)
+  name.vb: Take(IEnumerable, Integer)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+    name: Take
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Take_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take(System.Collections.IEnumerable,System.Int32)
+    name: Take
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.Take.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_Take_System_Collections_IEnumerable_System_Int32_
+  - name: (
+  - uid: System.Collections.IEnumerable
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted(System.Collections.IList,Innova.Prism.Infrastructure.Interfaces.ISortOrder)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted(System.Collections.IList,Innova.Prism.Infrastructure.Interfaces.ISortOrder)
+  isExternal: true
+  href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_InsertSorted_System_Collections_IList_Innova_Prism_Infrastructure_Interfaces_ISortOrder_
+  name: InsertSorted(IList, ISortOrder)
+  nameWithType: ExtensionMethods.InsertSorted(IList, ISortOrder)
+  fullName: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted(System.Collections.IList, Innova.Prism.Infrastructure.Interfaces.ISortOrder)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted(System.Collections.IList,Innova.Prism.Infrastructure.Interfaces.ISortOrder)
+    name: InsertSorted
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_InsertSorted_System_Collections_IList_Innova_Prism_Infrastructure_Interfaces_ISortOrder_
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: ','
+  - name: " "
+  - uid: Innova.Prism.Infrastructure.Interfaces.ISortOrder
+    name: ISortOrder
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted(System.Collections.IList,Innova.Prism.Infrastructure.Interfaces.ISortOrder)
+    name: InsertSorted
+    href: Innova.Prism.Library.ExtensionMethods.ExtensionMethods.InsertSorted.html#Innova_Prism_Library_ExtensionMethods_ExtensionMethods_InsertSorted_System_Collections_IList_Innova_Prism_Infrastructure_Interfaces_ISortOrder_
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: ','
+  - name: " "
+  - uid: Innova.Prism.Infrastructure.Interfaces.ISortOrder
+    name: ISortOrder
+  - name: )
+- uid: Innova.Data
+  commentId: N:Innova.Data
+  href: Innova.html
+  name: Innova.Data
+  nameWithType: Innova.Data
+  fullName: Innova.Data
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+- uid: Innova.Prism.Library.ExtensionMethods
+  commentId: N:Innova.Prism.Library.ExtensionMethods
+  href: Innova.html
+  name: Innova.Prism.Library.ExtensionMethods
+  nameWithType: Innova.Prism.Library.ExtensionMethods
+  fullName: Innova.Prism.Library.ExtensionMethods
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ExtensionMethods
+    name: ExtensionMethods
+    href: Innova.Prism.Library.ExtensionMethods.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ExtensionMethods
+    name: ExtensionMethods
+    href: Innova.Prism.Library.ExtensionMethods.html
+- uid: Innova.Prism.Library.Extensions
+  commentId: N:Innova.Prism.Library.Extensions
+  href: Innova.html
+  name: Innova.Prism.Library.Extensions
+  nameWithType: Innova.Prism.Library.Extensions
+  fullName: Innova.Prism.Library.Extensions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Extensions
+    name: Extensions
+    href: Innova.Prism.Library.Extensions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Extensions
+    name: Extensions
+    href: Innova.Prism.Library.Extensions.html
+- uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.SuspendNotifications*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.SuspendNotifications
+  href: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection-1.SuspendNotifications.html#Innova_Prism_Library_ClassDefinitions_RangeObservableCollection_1_SuspendNotifications
+  name: SuspendNotifications
+  nameWithType: RangeObservableCollection<T>.SuspendNotifications
+  fullName: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection<T>.SuspendNotifications
+  nameWithType.vb: RangeObservableCollection(Of T).SuspendNotifications
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection(Of T).SuspendNotifications
+- uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.ResumeNotifications*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.ResumeNotifications
+  href: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection-1.ResumeNotifications.html#Innova_Prism_Library_ClassDefinitions_RangeObservableCollection_1_ResumeNotifications
+  name: ResumeNotifications
+  nameWithType: RangeObservableCollection<T>.ResumeNotifications
+  fullName: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection<T>.ResumeNotifications
+  nameWithType.vb: RangeObservableCollection(Of T).ResumeNotifications
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection(Of T).ResumeNotifications
+- uid: System.Collections.ObjectModel.ObservableCollection{{T}}.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  commentId: M:System.Collections.ObjectModel.ObservableCollection{`0}.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  parent: System.Collections.ObjectModel.ObservableCollection{{T}}
+  definition: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.oncollectionchanged
+  name: OnCollectionChanged(NotifyCollectionChangedEventArgs)
+  nameWithType: ObservableCollection<T>.OnCollectionChanged(NotifyCollectionChangedEventArgs)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  nameWithType.vb: ObservableCollection(Of T).OnCollectionChanged(NotifyCollectionChangedEventArgs)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+    name: OnCollectionChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.oncollectionchanged
+  - name: (
+  - uid: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+    name: NotifyCollectionChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection{`0}.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+    name: OnCollectionChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.oncollectionchanged
+  - name: (
+  - uid: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+    name: NotifyCollectionChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs
+  - name: )
+- uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.OnCollectionChanged*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.OnCollectionChanged
+  href: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection-1.OnCollectionChanged.html#Innova_Prism_Library_ClassDefinitions_RangeObservableCollection_1_OnCollectionChanged_System_Collections_Specialized_NotifyCollectionChangedEventArgs_
+  name: OnCollectionChanged
+  nameWithType: RangeObservableCollection<T>.OnCollectionChanged
+  fullName: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection<T>.OnCollectionChanged
+  nameWithType.vb: RangeObservableCollection(Of T).OnCollectionChanged
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection(Of T).OnCollectionChanged
+- uid: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+  commentId: T:System.Collections.Specialized.NotifyCollectionChangedEventArgs
+  parent: System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs
+  name: NotifyCollectionChangedEventArgs
+  nameWithType: NotifyCollectionChangedEventArgs
+  fullName: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+- uid: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  commentId: M:System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.oncollectionchanged
+  name: OnCollectionChanged(NotifyCollectionChangedEventArgs)
+  nameWithType: ObservableCollection<T>.OnCollectionChanged(NotifyCollectionChangedEventArgs)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  nameWithType.vb: ObservableCollection(Of T).OnCollectionChanged(NotifyCollectionChangedEventArgs)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T).OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+    name: OnCollectionChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.oncollectionchanged
+  - name: (
+  - uid: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+    name: NotifyCollectionChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+    name: OnCollectionChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1.oncollectionchanged
+  - name: (
+  - uid: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+    name: NotifyCollectionChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs
+  - name: )
+- uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.AddRange*
+  commentId: Overload:Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1.AddRange
+  href: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection-1.AddRange.html#Innova_Prism_Library_ClassDefinitions_RangeObservableCollection_1_AddRange_System_Collections_Generic_IEnumerable__0__
+  name: AddRange
+  nameWithType: RangeObservableCollection<T>.AddRange
+  fullName: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection<T>.AddRange
+  nameWithType.vb: RangeObservableCollection(Of T).AddRange
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection(Of T).AddRange
+memberLayout: SeparatePages

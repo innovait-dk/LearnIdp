@@ -1,0 +1,2026 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  commentId: T:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  id: BaseViewModelDialog
+  parent: Innova.Prism.Library.BaseViewModels
+  children:
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.#ctor(Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IWindowDialogService)
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.BusyStatus
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCancel
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCloseDialog
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Cancel
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogCommands
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogKey
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogService
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.EventAggregator
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.GetCommandHeaderWithAccessKey(System.Collections.Generic.List{System.Char},System.String)
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.HandleException(System.Exception)
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.IsBusy
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.LeftCommands
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogClosed
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogOpened(Prism.Services.Dialogs.IDialogParameters)
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Progress
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RaiseRequestClose(Prism.Services.Dialogs.IDialogResult)
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RequestClose
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RightCommands
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.SetBusyText(System.String)
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Title
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Tokens
+  - Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.UsedGestureKeys
+  langs:
+  - csharp
+  - vb
+  name: BaseViewModelDialog
+  nameWithType: BaseViewModelDialog
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  type: Class
+  source:
+    id: BaseViewModelDialog
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 18
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: 'public abstract class BaseViewModelDialog : BaseHeaderViewModel, INotifyPropertyChanged, IViewModelDialog, IBusyViewModel, IDialogAware'
+    content.vb: Public MustInherit Class BaseViewModelDialog Inherits BaseHeaderViewModel Implements INotifyPropertyChanged, IViewModelDialog, IBusyViewModel, IDialogAware
+  inheritance:
+  - System.Object
+  - Prism.Mvvm.BindableBase
+  - Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  derivedClasses:
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2
+  - Innova.Prism.Library.Revision.RevisionViewModel`1
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - Innova.Prism.Library.BaseViewModels.IViewModelDialog
+  - Innova.Prism.Infrastructure.Interfaces.IBusyViewModel
+  - Prism.Services.Dialogs.IDialogAware
+  inheritedMembers:
+  - Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.PropertyBag
+  - Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.Header
+  - Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.HeaderImage
+  - Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage(System.String)
+  - Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader(System.String)
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  - Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  - Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  - Prism.Mvvm.BindableBase.PropertyChanged
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Progress
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Progress
+  id: Progress
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: Progress
+  nameWithType: BaseViewModelDialog.Progress
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Progress
+  type: Property
+  source:
+    id: Progress
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 25
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public double Progress { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Progress As Double
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Progress*
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.IsBusy
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.IsBusy
+  id: IsBusy
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: IsBusy
+  nameWithType: BaseViewModelDialog.IsBusy
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.IsBusy
+  type: Property
+  source:
+    id: IsBusy
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 36
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  summary: Gets or sets a value indicating whether the view model is busy.
+  example: []
+  syntax:
+    content: public bool IsBusy { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsBusy As Boolean
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.IsBusy*
+  implements:
+  - Innova.Prism.Infrastructure.Interfaces.IBusyViewModel.IsBusy
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.BusyStatus
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.BusyStatus
+  id: BusyStatus
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: BusyStatus
+  nameWithType: BaseViewModelDialog.BusyStatus
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.BusyStatus
+  type: Property
+  source:
+    id: BusyStatus
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 54
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  summary: Gets or sets the busy status message.
+  example: []
+  syntax:
+    content: public string BusyStatus { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BusyStatus As String
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.BusyStatus*
+  implements:
+  - Innova.Prism.Infrastructure.Interfaces.IBusyViewModel.BusyStatus
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RequestClose
+  commentId: E:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RequestClose
+  id: RequestClose
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: RequestClose
+  nameWithType: BaseViewModelDialog.RequestClose
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RequestClose
+  type: Event
+  source:
+    id: RequestClose
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 81
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  summary: Instructs the <xref href="Prism.Services.Dialogs.IDialogWindow" data-throw-if-not-resolved="false"></xref> to close the dialog.
+  example: []
+  syntax:
+    content: public event Action<IDialogResult> RequestClose
+    return:
+      type: System.Action{Prism.Services.Dialogs.IDialogResult}
+    content.vb: Public Event RequestClose As Action(Of IDialogResult)
+  implements:
+  - Prism.Services.Dialogs.IDialogAware.RequestClose
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogKey
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogKey
+  id: DialogKey
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: DialogKey
+  nameWithType: BaseViewModelDialog.DialogKey
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogKey
+  type: Property
+  source:
+    id: DialogKey
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 83
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  example: []
+  syntax:
+    content: public string DialogKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DialogKey As String
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogKey*
+  implements:
+  - Innova.Prism.Library.BaseViewModels.IViewModelDialog.DialogKey
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogCommands
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogCommands
+  id: DialogCommands
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: DialogCommands
+  nameWithType: BaseViewModelDialog.DialogCommands
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogCommands
+  type: Property
+  source:
+    id: DialogCommands
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 85
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  example: []
+  syntax:
+    content: public ObservableCollection<DialogCommandDefinition> DialogCommands { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Infrastructure.Commands.DialogCommandDefinition}
+    content.vb: Public Property DialogCommands As ObservableCollection(Of DialogCommandDefinition)
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogCommands*
+  implements:
+  - Innova.Prism.Library.BaseViewModels.IViewModelDialog.DialogCommands
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.LeftCommands
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.LeftCommands
+  id: LeftCommands
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: LeftCommands
+  nameWithType: BaseViewModelDialog.LeftCommands
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.LeftCommands
+  type: Property
+  source:
+    id: LeftCommands
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 99
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public ReadOnlyObservableCollection<DialogCommandDefinition> LeftCommands { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyObservableCollection{Innova.Prism.Infrastructure.Commands.DialogCommandDefinition}
+    content.vb: Public ReadOnly Property LeftCommands As ReadOnlyObservableCollection(Of DialogCommandDefinition)
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.LeftCommands*
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RightCommands
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RightCommands
+  id: RightCommands
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: RightCommands
+  nameWithType: BaseViewModelDialog.RightCommands
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RightCommands
+  type: Property
+  source:
+    id: RightCommands
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 106
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public ReadOnlyObservableCollection<DialogCommandDefinition> RightCommands { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyObservableCollection{Innova.Prism.Infrastructure.Commands.DialogCommandDefinition}
+    content.vb: Public ReadOnly Property RightCommands As ReadOnlyObservableCollection(Of DialogCommandDefinition)
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RightCommands*
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.EventAggregator
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.EventAggregator
+  id: EventAggregator
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: EventAggregator
+  nameWithType: BaseViewModelDialog.EventAggregator
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.EventAggregator
+  type: Property
+  source:
+    id: EventAggregator
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 111
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected IEventAggregator EventAggregator { get; }
+    parameters: []
+    return:
+      type: Prism.Events.IEventAggregator
+    content.vb: Protected ReadOnly Property EventAggregator As IEventAggregator
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.EventAggregator*
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogService
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogService
+  id: DialogService
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: DialogService
+  nameWithType: BaseViewModelDialog.DialogService
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogService
+  type: Property
+  source:
+    id: DialogService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 113
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected IWindowDialogService DialogService { get; }
+    parameters: []
+    return:
+      type: Innova.Prism.Library.Services.IWindowDialogService
+    content.vb: Protected ReadOnly Property DialogService As IWindowDialogService
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogService*
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.UsedGestureKeys
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.UsedGestureKeys
+  id: UsedGestureKeys
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: UsedGestureKeys
+  nameWithType: BaseViewModelDialog.UsedGestureKeys
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.UsedGestureKeys
+  type: Property
+  source:
+    id: UsedGestureKeys
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 115
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected List<char> UsedGestureKeys { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Char}
+    content.vb: Protected Property UsedGestureKeys As List(Of Char)
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.UsedGestureKeys*
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Title
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Title
+  id: Title
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: BaseViewModelDialog.Title
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Title
+  type: Property
+  source:
+    id: Title
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 117
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  summary: The title of the dialog that will show in the window title bar.
+  example: []
+  syntax:
+    content: public string Title { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Title As String
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Title*
+  implements:
+  - Prism.Services.Dialogs.IDialogAware.Title
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Tokens
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Tokens
+  id: Tokens
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: Tokens
+  nameWithType: BaseViewModelDialog.Tokens
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Tokens
+  type: Property
+  source:
+    id: Tokens
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 126
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected List<SubscriptionToken> Tokens { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Prism.Events.SubscriptionToken}
+    content.vb: Protected Property Tokens As List(Of SubscriptionToken)
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Tokens*
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.#ctor(Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IWindowDialogService)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.#ctor(Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IWindowDialogService)
+  id: '#ctor(Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IWindowDialogService)'
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: BaseViewModelDialog(IEventAggregator, IWindowDialogService)
+  nameWithType: BaseViewModelDialog.BaseViewModelDialog(IEventAggregator, IWindowDialogService)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.BaseViewModelDialog(Prism.Events.IEventAggregator, Innova.Prism.Library.Services.IWindowDialogService)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 131
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public BaseViewModelDialog(IEventAggregator eventAggregator, IWindowDialogService dialogService)
+    parameters:
+    - id: eventAggregator
+      type: Prism.Events.IEventAggregator
+    - id: dialogService
+      type: Innova.Prism.Library.Services.IWindowDialogService
+    content.vb: Public Sub New(eventAggregator As IEventAggregator, dialogService As IWindowDialogService)
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.#ctor*
+  nameWithType.vb: BaseViewModelDialog.New(IEventAggregator, IWindowDialogService)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.New(Prism.Events.IEventAggregator, Innova.Prism.Library.Services.IWindowDialogService)
+  name.vb: New(IEventAggregator, IWindowDialogService)
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.GetCommandHeaderWithAccessKey(System.Collections.Generic.List{System.Char},System.String)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.GetCommandHeaderWithAccessKey(System.Collections.Generic.List{System.Char},System.String)
+  id: GetCommandHeaderWithAccessKey(System.Collections.Generic.List{System.Char},System.String)
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: GetCommandHeaderWithAccessKey(List<char>, string)
+  nameWithType: BaseViewModelDialog.GetCommandHeaderWithAccessKey(List<char>, string)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.GetCommandHeaderWithAccessKey(System.Collections.Generic.List<char>, string)
+  type: Method
+  source:
+    id: GetCommandHeaderWithAccessKey
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 149
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected string GetCommandHeaderWithAccessKey(List<char> usedGestureKeys, string commandHeader)
+    parameters:
+    - id: usedGestureKeys
+      type: System.Collections.Generic.List{System.Char}
+    - id: commandHeader
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Protected Function GetCommandHeaderWithAccessKey(usedGestureKeys As List(Of Char), commandHeader As String) As String
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.GetCommandHeaderWithAccessKey*
+  nameWithType.vb: BaseViewModelDialog.GetCommandHeaderWithAccessKey(List(Of Char), String)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.GetCommandHeaderWithAccessKey(System.Collections.Generic.List(Of Char), String)
+  name.vb: GetCommandHeaderWithAccessKey(List(Of Char), String)
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.HandleException(System.Exception)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.HandleException(System.Exception)
+  id: HandleException(System.Exception)
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: HandleException(Exception)
+  nameWithType: BaseViewModelDialog.HandleException(Exception)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.HandleException(System.Exception)
+  type: Method
+  source:
+    id: HandleException
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 163
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual void HandleException(Exception exception)
+    parameters:
+    - id: exception
+      type: System.Exception
+    content.vb: Protected Overridable Sub HandleException(exception As Exception)
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.HandleException*
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.SetBusyText(System.String)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.SetBusyText(System.String)
+  id: SetBusyText(System.String)
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: SetBusyText(string)
+  nameWithType: BaseViewModelDialog.SetBusyText(string)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.SetBusyText(string)
+  type: Method
+  source:
+    id: SetBusyText
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 168
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected void SetBusyText(string text = null)
+    parameters:
+    - id: text
+      type: System.String
+    content.vb: Protected Sub SetBusyText(text As String = Nothing)
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.SetBusyText*
+  nameWithType.vb: BaseViewModelDialog.SetBusyText(String)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.SetBusyText(String)
+  name.vb: SetBusyText(String)
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCancel
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCancel
+  id: CanCancel
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: CanCancel()
+  nameWithType: BaseViewModelDialog.CanCancel()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCancel()
+  type: Method
+  source:
+    id: CanCancel
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 174
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual bool CanCancel()
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function CanCancel() As Boolean
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCancel*
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Cancel
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Cancel
+  id: Cancel
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: Cancel()
+  nameWithType: BaseViewModelDialog.Cancel()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Cancel()
+  type: Method
+  source:
+    id: Cancel
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 179
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected virtual void Cancel()
+    content.vb: Protected Overridable Sub Cancel()
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Cancel*
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCloseDialog
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCloseDialog
+  id: CanCloseDialog
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: CanCloseDialog()
+  nameWithType: BaseViewModelDialog.CanCloseDialog()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCloseDialog()
+  type: Method
+  source:
+    id: CanCloseDialog
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 207
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  summary: Determines if the dialog can be closed.
+  example: []
+  syntax:
+    content: public bool CanCloseDialog()
+    return:
+      type: System.Boolean
+      description: If <code>true</code> the dialog can be closed. If <code>false</code> the dialog will not close.
+    content.vb: Public Function CanCloseDialog() As Boolean
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCloseDialog*
+  implements:
+  - Prism.Services.Dialogs.IDialogAware.CanCloseDialog
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogClosed
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogClosed
+  id: OnDialogClosed
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: OnDialogClosed()
+  nameWithType: BaseViewModelDialog.OnDialogClosed()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogClosed()
+  type: Method
+  source:
+    id: OnDialogClosed
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 212
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  summary: Called when the dialog is closed.
+  example: []
+  syntax:
+    content: public virtual void OnDialogClosed()
+    content.vb: Public Overridable Sub OnDialogClosed()
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogClosed*
+  implements:
+  - Prism.Services.Dialogs.IDialogAware.OnDialogClosed
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogOpened(Prism.Services.Dialogs.IDialogParameters)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogOpened(Prism.Services.Dialogs.IDialogParameters)
+  id: OnDialogOpened(Prism.Services.Dialogs.IDialogParameters)
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: OnDialogOpened(IDialogParameters)
+  nameWithType: BaseViewModelDialog.OnDialogOpened(IDialogParameters)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogOpened(Prism.Services.Dialogs.IDialogParameters)
+  type: Method
+  source:
+    id: OnDialogOpened
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 218
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  summary: Called when the dialog is opened.
+  example: []
+  syntax:
+    content: public virtual void OnDialogOpened(IDialogParameters parameters)
+    parameters:
+    - id: parameters
+      type: Prism.Services.Dialogs.IDialogParameters
+      description: The parameters passed to the dialog.
+    content.vb: Public Overridable Sub OnDialogOpened(parameters As IDialogParameters)
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogOpened*
+  implements:
+  - Prism.Services.Dialogs.IDialogAware.OnDialogOpened(Prism.Services.Dialogs.IDialogParameters)
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RaiseRequestClose(Prism.Services.Dialogs.IDialogResult)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RaiseRequestClose(Prism.Services.Dialogs.IDialogResult)
+  id: RaiseRequestClose(Prism.Services.Dialogs.IDialogResult)
+  parent: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog
+  langs:
+  - csharp
+  - vb
+  name: RaiseRequestClose(IDialogResult)
+  nameWithType: BaseViewModelDialog.RaiseRequestClose(IDialogResult)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RaiseRequestClose(Prism.Services.Dialogs.IDialogResult)
+  type: Method
+  source:
+    id: RaiseRequestClose
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseViewModelDialog.cs
+    startLine: 249
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public virtual void RaiseRequestClose(IDialogResult dialogResult)
+    parameters:
+    - id: dialogResult
+      type: Prism.Services.Dialogs.IDialogResult
+    content.vb: Public Overridable Sub RaiseRequestClose(dialogResult As IDialogResult)
+  overload: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RaiseRequestClose*
+references:
+- uid: Innova.Prism.Library.BaseViewModels
+  commentId: N:Innova.Prism.Library.BaseViewModels
+  href: Innova.html
+  name: Innova.Prism.Library.BaseViewModels
+  nameWithType: Innova.Prism.Library.BaseViewModels
+  fullName: Innova.Prism.Library.BaseViewModels
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.BaseViewModels
+    name: BaseViewModels
+    href: Innova.Prism.Library.BaseViewModels.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.BaseViewModels
+    name: BaseViewModels
+    href: Innova.Prism.Library.BaseViewModels.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Prism.Mvvm.BindableBase
+  commentId: T:Prism.Mvvm.BindableBase
+  parent: Prism.Mvvm
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: BindableBase
+  nameWithType: BindableBase
+  fullName: Prism.Mvvm.BindableBase
+- uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  commentId: T:Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  parent: Innova.Prism.Library.BaseViewModels
+  href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.html
+  name: BaseHeaderViewModel
+  nameWithType: BaseHeaderViewModel
+  fullName: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Innova.Prism.Library.BaseViewModels.IViewModelDialog
+  commentId: T:Innova.Prism.Library.BaseViewModels.IViewModelDialog
+  parent: Innova.Prism.Library.BaseViewModels
+  href: Innova.Prism.Library.BaseViewModels.IViewModelDialog.html
+  name: IViewModelDialog
+  nameWithType: IViewModelDialog
+  fullName: Innova.Prism.Library.BaseViewModels.IViewModelDialog
+- uid: Innova.Prism.Infrastructure.Interfaces.IBusyViewModel
+  commentId: T:Innova.Prism.Infrastructure.Interfaces.IBusyViewModel
+  parent: Innova.Prism.Infrastructure.Interfaces
+  href: Innova.Prism.Infrastructure.Interfaces.IBusyViewModel.html
+  name: IBusyViewModel
+  nameWithType: IBusyViewModel
+  fullName: Innova.Prism.Infrastructure.Interfaces.IBusyViewModel
+- uid: Prism.Services.Dialogs.IDialogAware
+  commentId: T:Prism.Services.Dialogs.IDialogAware
+  parent: Prism.Services.Dialogs
+  isExternal: true
+  name: IDialogAware
+  nameWithType: IDialogAware
+  fullName: Prism.Services.Dialogs.IDialogAware
+- uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.PropertyBag
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.PropertyBag
+  parent: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.PropertyBag.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_PropertyBag
+  name: PropertyBag
+  nameWithType: BaseHeaderViewModel.PropertyBag
+  fullName: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.PropertyBag
+- uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.Header
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.Header
+  parent: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.Header.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_Header
+  name: Header
+  nameWithType: BaseHeaderViewModel.Header
+  fullName: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.Header
+- uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.HeaderImage
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.HeaderImage
+  parent: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.HeaderImage.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_HeaderImage
+  name: HeaderImage
+  nameWithType: BaseHeaderViewModel.HeaderImage
+  fullName: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.HeaderImage
+- uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage(System.String)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage(System.String)
+  parent: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_SetHeaderImage_System_String_
+  name: SetHeaderImage(string)
+  nameWithType: BaseHeaderViewModel.SetHeaderImage(string)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage(string)
+  nameWithType.vb: BaseHeaderViewModel.SetHeaderImage(String)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage(String)
+  name.vb: SetHeaderImage(String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage(System.String)
+    name: SetHeaderImage
+    href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_SetHeaderImage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage(System.String)
+    name: SetHeaderImage
+    href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeaderImage.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_SetHeaderImage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader(System.String)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader(System.String)
+  parent: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_SetHeader_System_String_
+  name: SetHeader(string)
+  nameWithType: BaseHeaderViewModel.SetHeader(string)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader(string)
+  nameWithType.vb: BaseHeaderViewModel.SetHeader(String)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader(String)
+  name.vb: SetHeader(String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader(System.String)
+    name: SetHeader
+    href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_SetHeader_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader(System.String)
+    name: SetHeader
+    href: Innova.Prism.Library.BaseViewModels.BaseHeaderViewModel.SetHeader.html#Innova_Prism_Library_BaseViewModels_BaseHeaderViewModel_SetHeader_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  commentId: M:Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: RaisePropertyChanged(string)
+  nameWithType: BindableBase.RaisePropertyChanged(string)
+  fullName: Prism.Mvvm.BindableBase.RaisePropertyChanged(string)
+  nameWithType.vb: BindableBase.RaisePropertyChanged(String)
+  fullName.vb: Prism.Mvvm.BindableBase.RaisePropertyChanged(String)
+  name.vb: RaisePropertyChanged(String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: OnPropertyChanged(PropertyChangedEventArgs)
+  nameWithType: BindableBase.OnPropertyChanged(PropertyChangedEventArgs)
+  fullName: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: Prism.Mvvm.BindableBase.PropertyChanged
+  commentId: E:Prism.Mvvm.BindableBase.PropertyChanged
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: PropertyChanged
+  nameWithType: BindableBase.PropertyChanged
+  fullName: Prism.Mvvm.BindableBase.PropertyChanged
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Prism.Mvvm
+  commentId: N:Prism.Mvvm
+  isExternal: true
+  name: Prism.Mvvm
+  nameWithType: Prism.Mvvm
+  fullName: Prism.Mvvm
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Innova.Prism.Infrastructure.Interfaces
+  commentId: N:Innova.Prism.Infrastructure.Interfaces
+  href: Innova.html
+  name: Innova.Prism.Infrastructure.Interfaces
+  nameWithType: Innova.Prism.Infrastructure.Interfaces
+  fullName: Innova.Prism.Infrastructure.Interfaces
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure
+    name: Infrastructure
+    href: Innova.Prism.Infrastructure.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure.Interfaces
+    name: Interfaces
+    href: Innova.Prism.Infrastructure.Interfaces.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure
+    name: Infrastructure
+    href: Innova.Prism.Infrastructure.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure.Interfaces
+    name: Interfaces
+    href: Innova.Prism.Infrastructure.Interfaces.html
+- uid: Prism.Services.Dialogs
+  commentId: N:Prism.Services.Dialogs
+  href: Prism.html
+  name: Prism.Services.Dialogs
+  nameWithType: Prism.Services.Dialogs
+  fullName: Prism.Services.Dialogs
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Services
+    name: Services
+    href: Prism.Services.html
+  - name: .
+  - uid: Prism.Services.Dialogs
+    name: Dialogs
+    href: Prism.Services.Dialogs.html
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Services
+    name: Services
+    href: Prism.Services.html
+  - name: .
+  - uid: Prism.Services.Dialogs
+    name: Dialogs
+    href: Prism.Services.Dialogs.html
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Progress*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Progress
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Progress.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_Progress
+  name: Progress
+  nameWithType: BaseViewModelDialog.Progress
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Progress
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.IsBusy*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.IsBusy
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.IsBusy.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_IsBusy
+  name: IsBusy
+  nameWithType: BaseViewModelDialog.IsBusy
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.IsBusy
+- uid: Innova.Prism.Infrastructure.Interfaces.IBusyViewModel.IsBusy
+  commentId: P:Innova.Prism.Infrastructure.Interfaces.IBusyViewModel.IsBusy
+  parent: Innova.Prism.Infrastructure.Interfaces.IBusyViewModel
+  name: IsBusy
+  nameWithType: IBusyViewModel.IsBusy
+  fullName: Innova.Prism.Infrastructure.Interfaces.IBusyViewModel.IsBusy
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.BusyStatus*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.BusyStatus
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.BusyStatus.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_BusyStatus
+  name: BusyStatus
+  nameWithType: BaseViewModelDialog.BusyStatus
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.BusyStatus
+- uid: Innova.Prism.Infrastructure.Interfaces.IBusyViewModel.BusyStatus
+  commentId: P:Innova.Prism.Infrastructure.Interfaces.IBusyViewModel.BusyStatus
+  parent: Innova.Prism.Infrastructure.Interfaces.IBusyViewModel
+  name: BusyStatus
+  nameWithType: IBusyViewModel.BusyStatus
+  fullName: Innova.Prism.Infrastructure.Interfaces.IBusyViewModel.BusyStatus
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Prism.Services.Dialogs.IDialogWindow
+  commentId: T:Prism.Services.Dialogs.IDialogWindow
+  parent: Prism.Services.Dialogs
+  isExternal: true
+  name: IDialogWindow
+  nameWithType: IDialogWindow
+  fullName: Prism.Services.Dialogs.IDialogWindow
+- uid: Prism.Services.Dialogs.IDialogAware.RequestClose
+  commentId: E:Prism.Services.Dialogs.IDialogAware.RequestClose
+  parent: Prism.Services.Dialogs.IDialogAware
+  isExternal: true
+  name: RequestClose
+  nameWithType: IDialogAware.RequestClose
+  fullName: Prism.Services.Dialogs.IDialogAware.RequestClose
+- uid: System.Action{Prism.Services.Dialogs.IDialogResult}
+  commentId: T:System.Action{Prism.Services.Dialogs.IDialogResult}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<IDialogResult>
+  nameWithType: Action<IDialogResult>
+  fullName: System.Action<Prism.Services.Dialogs.IDialogResult>
+  nameWithType.vb: Action(Of IDialogResult)
+  fullName.vb: System.Action(Of Prism.Services.Dialogs.IDialogResult)
+  name.vb: Action(Of IDialogResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Prism.Services.Dialogs.IDialogResult
+    name: IDialogResult
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Prism.Services.Dialogs.IDialogResult
+    name: IDialogResult
+    isExternal: true
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogKey*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogKey
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogKey.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_DialogKey
+  name: DialogKey
+  nameWithType: BaseViewModelDialog.DialogKey
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogKey
+- uid: Innova.Prism.Library.BaseViewModels.IViewModelDialog.DialogKey
+  commentId: P:Innova.Prism.Library.BaseViewModels.IViewModelDialog.DialogKey
+  parent: Innova.Prism.Library.BaseViewModels.IViewModelDialog
+  href: Innova.Prism.Library.BaseViewModels.IViewModelDialog.DialogKey.html#Innova_Prism_Library_BaseViewModels_IViewModelDialog_DialogKey
+  name: DialogKey
+  nameWithType: IViewModelDialog.DialogKey
+  fullName: Innova.Prism.Library.BaseViewModels.IViewModelDialog.DialogKey
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogCommands*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogCommands
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogCommands.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_DialogCommands
+  name: DialogCommands
+  nameWithType: BaseViewModelDialog.DialogCommands
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogCommands
+- uid: Innova.Prism.Library.BaseViewModels.IViewModelDialog.DialogCommands
+  commentId: P:Innova.Prism.Library.BaseViewModels.IViewModelDialog.DialogCommands
+  parent: Innova.Prism.Library.BaseViewModels.IViewModelDialog
+  href: Innova.Prism.Library.BaseViewModels.IViewModelDialog.DialogCommands.html#Innova_Prism_Library_BaseViewModels_IViewModelDialog_DialogCommands
+  name: DialogCommands
+  nameWithType: IViewModelDialog.DialogCommands
+  fullName: Innova.Prism.Library.BaseViewModels.IViewModelDialog.DialogCommands
+- uid: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Infrastructure.Commands.DialogCommandDefinition}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Infrastructure.Commands.DialogCommandDefinition}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<DialogCommandDefinition>
+  nameWithType: ObservableCollection<DialogCommandDefinition>
+  fullName: System.Collections.ObjectModel.ObservableCollection<Innova.Prism.Infrastructure.Commands.DialogCommandDefinition>
+  nameWithType.vb: ObservableCollection(Of DialogCommandDefinition)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of Innova.Prism.Infrastructure.Commands.DialogCommandDefinition)
+  name.vb: ObservableCollection(Of DialogCommandDefinition)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: Innova.Prism.Infrastructure.Commands.DialogCommandDefinition
+    name: DialogCommandDefinition
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Infrastructure.Commands.DialogCommandDefinition
+    name: DialogCommandDefinition
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.LeftCommands*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.LeftCommands
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.LeftCommands.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_LeftCommands
+  name: LeftCommands
+  nameWithType: BaseViewModelDialog.LeftCommands
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.LeftCommands
+- uid: System.Collections.ObjectModel.ReadOnlyObservableCollection{Innova.Prism.Infrastructure.Commands.DialogCommandDefinition}
+  commentId: T:System.Collections.ObjectModel.ReadOnlyObservableCollection{Innova.Prism.Infrastructure.Commands.DialogCommandDefinition}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1
+  name: ReadOnlyObservableCollection<DialogCommandDefinition>
+  nameWithType: ReadOnlyObservableCollection<DialogCommandDefinition>
+  fullName: System.Collections.ObjectModel.ReadOnlyObservableCollection<Innova.Prism.Infrastructure.Commands.DialogCommandDefinition>
+  nameWithType.vb: ReadOnlyObservableCollection(Of DialogCommandDefinition)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyObservableCollection(Of Innova.Prism.Infrastructure.Commands.DialogCommandDefinition)
+  name.vb: ReadOnlyObservableCollection(Of DialogCommandDefinition)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+    name: ReadOnlyObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1
+  - name: <
+  - uid: Innova.Prism.Infrastructure.Commands.DialogCommandDefinition
+    name: DialogCommandDefinition
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+    name: ReadOnlyObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Infrastructure.Commands.DialogCommandDefinition
+    name: DialogCommandDefinition
+  - name: )
+- uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1
+  name: ReadOnlyObservableCollection<T>
+  nameWithType: ReadOnlyObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ReadOnlyObservableCollection<T>
+  nameWithType.vb: ReadOnlyObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyObservableCollection(Of T)
+  name.vb: ReadOnlyObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+    name: ReadOnlyObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+    name: ReadOnlyObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RightCommands*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RightCommands
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RightCommands.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_RightCommands
+  name: RightCommands
+  nameWithType: BaseViewModelDialog.RightCommands
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RightCommands
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.EventAggregator*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.EventAggregator
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.EventAggregator.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_EventAggregator
+  name: EventAggregator
+  nameWithType: BaseViewModelDialog.EventAggregator
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.EventAggregator
+- uid: Prism.Events.IEventAggregator
+  commentId: T:Prism.Events.IEventAggregator
+  parent: Prism.Events
+  isExternal: true
+  name: IEventAggregator
+  nameWithType: IEventAggregator
+  fullName: Prism.Events.IEventAggregator
+- uid: Prism.Events
+  commentId: N:Prism.Events
+  isExternal: true
+  name: Prism.Events
+  nameWithType: Prism.Events
+  fullName: Prism.Events
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogService*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogService
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogService.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_DialogService
+  name: DialogService
+  nameWithType: BaseViewModelDialog.DialogService
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.DialogService
+- uid: Innova.Prism.Library.Services.IWindowDialogService
+  commentId: T:Innova.Prism.Library.Services.IWindowDialogService
+  parent: Innova.Prism.Library.Services
+  href: Innova.Prism.Library.Services.IWindowDialogService.html
+  name: IWindowDialogService
+  nameWithType: IWindowDialogService
+  fullName: Innova.Prism.Library.Services.IWindowDialogService
+- uid: Innova.Prism.Library.Services
+  commentId: N:Innova.Prism.Library.Services
+  href: Innova.html
+  name: Innova.Prism.Library.Services
+  nameWithType: Innova.Prism.Library.Services
+  fullName: Innova.Prism.Library.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.UsedGestureKeys*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.UsedGestureKeys
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.UsedGestureKeys.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_UsedGestureKeys
+  name: UsedGestureKeys
+  nameWithType: BaseViewModelDialog.UsedGestureKeys
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.UsedGestureKeys
+- uid: System.Collections.Generic.List{System.Char}
+  commentId: T:System.Collections.Generic.List{System.Char}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<char>
+  nameWithType: List<char>
+  fullName: System.Collections.Generic.List<char>
+  nameWithType.vb: List(Of Char)
+  fullName.vb: System.Collections.Generic.List(Of Char)
+  name.vb: List(Of Char)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Title*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Title
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Title.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_Title
+  name: Title
+  nameWithType: BaseViewModelDialog.Title
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Title
+- uid: Prism.Services.Dialogs.IDialogAware.Title
+  commentId: P:Prism.Services.Dialogs.IDialogAware.Title
+  parent: Prism.Services.Dialogs.IDialogAware
+  isExternal: true
+  name: Title
+  nameWithType: IDialogAware.Title
+  fullName: Prism.Services.Dialogs.IDialogAware.Title
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Tokens*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Tokens
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Tokens.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_Tokens
+  name: Tokens
+  nameWithType: BaseViewModelDialog.Tokens
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Tokens
+- uid: System.Collections.Generic.List{Prism.Events.SubscriptionToken}
+  commentId: T:System.Collections.Generic.List{Prism.Events.SubscriptionToken}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SubscriptionToken>
+  nameWithType: List<SubscriptionToken>
+  fullName: System.Collections.Generic.List<Prism.Events.SubscriptionToken>
+  nameWithType.vb: List(Of SubscriptionToken)
+  fullName.vb: System.Collections.Generic.List(Of Prism.Events.SubscriptionToken)
+  name.vb: List(Of SubscriptionToken)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Prism.Events.SubscriptionToken
+    name: SubscriptionToken
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Events/SubscriptionToken.cs
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Prism.Events.SubscriptionToken
+    name: SubscriptionToken
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Events/SubscriptionToken.cs
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.#ctor*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.#ctor
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.-ctor.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog__ctor_Prism_Events_IEventAggregator_Innova_Prism_Library_Services_IWindowDialogService_
+  name: BaseViewModelDialog
+  nameWithType: BaseViewModelDialog.BaseViewModelDialog
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.BaseViewModelDialog
+  nameWithType.vb: BaseViewModelDialog.New
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.New
+  name.vb: New
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.GetCommandHeaderWithAccessKey*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.GetCommandHeaderWithAccessKey
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.GetCommandHeaderWithAccessKey.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_GetCommandHeaderWithAccessKey_System_Collections_Generic_List_System_Char__System_String_
+  name: GetCommandHeaderWithAccessKey
+  nameWithType: BaseViewModelDialog.GetCommandHeaderWithAccessKey
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.GetCommandHeaderWithAccessKey
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.HandleException*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.HandleException
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.HandleException.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_HandleException_System_Exception_
+  name: HandleException
+  nameWithType: BaseViewModelDialog.HandleException
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.HandleException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.SetBusyText*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.SetBusyText
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.SetBusyText.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_SetBusyText_System_String_
+  name: SetBusyText
+  nameWithType: BaseViewModelDialog.SetBusyText
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.SetBusyText
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCancel*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCancel
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCancel.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_CanCancel
+  name: CanCancel
+  nameWithType: BaseViewModelDialog.CanCancel
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCancel
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Cancel*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Cancel
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Cancel.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_Cancel
+  name: Cancel
+  nameWithType: BaseViewModelDialog.Cancel
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.Cancel
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCloseDialog*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCloseDialog
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCloseDialog.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_CanCloseDialog
+  name: CanCloseDialog
+  nameWithType: BaseViewModelDialog.CanCloseDialog
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.CanCloseDialog
+- uid: Prism.Services.Dialogs.IDialogAware.CanCloseDialog
+  commentId: M:Prism.Services.Dialogs.IDialogAware.CanCloseDialog
+  parent: Prism.Services.Dialogs.IDialogAware
+  isExternal: true
+  name: CanCloseDialog()
+  nameWithType: IDialogAware.CanCloseDialog()
+  fullName: Prism.Services.Dialogs.IDialogAware.CanCloseDialog()
+  spec.csharp:
+  - uid: Prism.Services.Dialogs.IDialogAware.CanCloseDialog
+    name: CanCloseDialog
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.Services.Dialogs.IDialogAware.CanCloseDialog
+    name: CanCloseDialog
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogClosed*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogClosed
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogClosed.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_OnDialogClosed
+  name: OnDialogClosed
+  nameWithType: BaseViewModelDialog.OnDialogClosed
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogClosed
+- uid: Prism.Services.Dialogs.IDialogAware.OnDialogClosed
+  commentId: M:Prism.Services.Dialogs.IDialogAware.OnDialogClosed
+  parent: Prism.Services.Dialogs.IDialogAware
+  isExternal: true
+  name: OnDialogClosed()
+  nameWithType: IDialogAware.OnDialogClosed()
+  fullName: Prism.Services.Dialogs.IDialogAware.OnDialogClosed()
+  spec.csharp:
+  - uid: Prism.Services.Dialogs.IDialogAware.OnDialogClosed
+    name: OnDialogClosed
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.Services.Dialogs.IDialogAware.OnDialogClosed
+    name: OnDialogClosed
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogOpened*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogOpened
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogOpened.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_OnDialogOpened_Prism_Services_Dialogs_IDialogParameters_
+  name: OnDialogOpened
+  nameWithType: BaseViewModelDialog.OnDialogOpened
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.OnDialogOpened
+- uid: Prism.Services.Dialogs.IDialogAware.OnDialogOpened(Prism.Services.Dialogs.IDialogParameters)
+  commentId: M:Prism.Services.Dialogs.IDialogAware.OnDialogOpened(Prism.Services.Dialogs.IDialogParameters)
+  parent: Prism.Services.Dialogs.IDialogAware
+  isExternal: true
+  name: OnDialogOpened(IDialogParameters)
+  nameWithType: IDialogAware.OnDialogOpened(IDialogParameters)
+  fullName: Prism.Services.Dialogs.IDialogAware.OnDialogOpened(Prism.Services.Dialogs.IDialogParameters)
+  spec.csharp:
+  - uid: Prism.Services.Dialogs.IDialogAware.OnDialogOpened(Prism.Services.Dialogs.IDialogParameters)
+    name: OnDialogOpened
+    isExternal: true
+  - name: (
+  - uid: Prism.Services.Dialogs.IDialogParameters
+    name: IDialogParameters
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Prism.Services.Dialogs.IDialogAware.OnDialogOpened(Prism.Services.Dialogs.IDialogParameters)
+    name: OnDialogOpened
+    isExternal: true
+  - name: (
+  - uid: Prism.Services.Dialogs.IDialogParameters
+    name: IDialogParameters
+    isExternal: true
+  - name: )
+- uid: Prism.Services.Dialogs.IDialogParameters
+  commentId: T:Prism.Services.Dialogs.IDialogParameters
+  parent: Prism.Services.Dialogs
+  isExternal: true
+  name: IDialogParameters
+  nameWithType: IDialogParameters
+  fullName: Prism.Services.Dialogs.IDialogParameters
+- uid: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RaiseRequestClose*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RaiseRequestClose
+  href: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RaiseRequestClose.html#Innova_Prism_Library_BaseViewModels_BaseViewModelDialog_RaiseRequestClose_Prism_Services_Dialogs_IDialogResult_
+  name: RaiseRequestClose
+  nameWithType: BaseViewModelDialog.RaiseRequestClose
+  fullName: Innova.Prism.Library.BaseViewModels.BaseViewModelDialog.RaiseRequestClose
+- uid: Prism.Services.Dialogs.IDialogResult
+  commentId: T:Prism.Services.Dialogs.IDialogResult
+  parent: Prism.Services.Dialogs
+  isExternal: true
+  name: IDialogResult
+  nameWithType: IDialogResult
+  fullName: Prism.Services.Dialogs.IDialogResult
+memberLayout: SeparatePages

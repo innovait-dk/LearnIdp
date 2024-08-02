@@ -1,0 +1,570 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Rest.Server.ServerApplicationSettingService`1
+  commentId: T:Innova.Rest.Server.ServerApplicationSettingService`1
+  id: ServerApplicationSettingService`1
+  parent: Innova.Rest.Server
+  children:
+  - Innova.Rest.Server.ServerApplicationSettingService`1.#ctor(Innova.Rest.Server.Settings.IServerSettingsEntityServiceFactory)
+  - Innova.Rest.Server.ServerApplicationSettingService`1.Get
+  - Innova.Rest.Server.ServerApplicationSettingService`1.GetSettingsAsObject
+  - Innova.Rest.Server.ServerApplicationSettingService`1.LoadData
+  - Innova.Rest.Server.ServerApplicationSettingService`1.Save
+  langs:
+  - csharp
+  - vb
+  name: ServerApplicationSettingService<T>
+  nameWithType: ServerApplicationSettingService<T>
+  fullName: Innova.Rest.Server.ServerApplicationSettingService<T>
+  type: Class
+  source:
+    id: ServerApplicationSettingService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Settings\ServerApplicationSettingService.cs
+    startLine: 6
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  syntax:
+    content: 'public class ServerApplicationSettingService<T> : IApplicationSettingService<T>, IApplicationSettingService where T : class'
+    typeParameters:
+    - id: T
+    content.vb: Public Class ServerApplicationSettingService(Of T As Class) Implements IApplicationSettingService(Of T), IApplicationSettingService
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Data.AppSettings.IApplicationSettingService{{T}}
+  - Innova.Data.AppSettings.IApplicationSettingService
+  nameWithType.vb: ServerApplicationSettingService(Of T)
+  fullName.vb: Innova.Rest.Server.ServerApplicationSettingService(Of T)
+  name.vb: ServerApplicationSettingService(Of T)
+- uid: Innova.Rest.Server.ServerApplicationSettingService`1.#ctor(Innova.Rest.Server.Settings.IServerSettingsEntityServiceFactory)
+  commentId: M:Innova.Rest.Server.ServerApplicationSettingService`1.#ctor(Innova.Rest.Server.Settings.IServerSettingsEntityServiceFactory)
+  id: '#ctor(Innova.Rest.Server.Settings.IServerSettingsEntityServiceFactory)'
+  parent: Innova.Rest.Server.ServerApplicationSettingService`1
+  langs:
+  - csharp
+  - vb
+  name: ServerApplicationSettingService(IServerSettingsEntityServiceFactory)
+  nameWithType: ServerApplicationSettingService<T>.ServerApplicationSettingService(IServerSettingsEntityServiceFactory)
+  fullName: Innova.Rest.Server.ServerApplicationSettingService<T>.ServerApplicationSettingService(Innova.Rest.Server.Settings.IServerSettingsEntityServiceFactory)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Settings\ServerApplicationSettingService.cs
+    startLine: 12
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  syntax:
+    content: public ServerApplicationSettingService(IServerSettingsEntityServiceFactory applicationSettingsServiceFactory)
+    parameters:
+    - id: applicationSettingsServiceFactory
+      type: Innova.Rest.Server.Settings.IServerSettingsEntityServiceFactory
+    content.vb: Public Sub New(applicationSettingsServiceFactory As IServerSettingsEntityServiceFactory)
+  overload: Innova.Rest.Server.ServerApplicationSettingService`1.#ctor*
+  nameWithType.vb: ServerApplicationSettingService(Of T).New(IServerSettingsEntityServiceFactory)
+  fullName.vb: Innova.Rest.Server.ServerApplicationSettingService(Of T).New(Innova.Rest.Server.Settings.IServerSettingsEntityServiceFactory)
+  name.vb: New(IServerSettingsEntityServiceFactory)
+- uid: Innova.Rest.Server.ServerApplicationSettingService`1.Get
+  commentId: M:Innova.Rest.Server.ServerApplicationSettingService`1.Get
+  id: Get
+  parent: Innova.Rest.Server.ServerApplicationSettingService`1
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: ServerApplicationSettingService<T>.Get()
+  fullName: Innova.Rest.Server.ServerApplicationSettingService<T>.Get()
+  type: Method
+  source:
+    id: Get
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Settings\ServerApplicationSettingService.cs
+    startLine: 19
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  summary: Gets the application settings of type <code class="typeparamref">T</code>.
+  example: []
+  syntax:
+    content: public T Get()
+    return:
+      type: '{T}'
+      description: The application settings of type <code class="typeparamref">T</code>.
+    content.vb: Public Function [Get]() As T
+  overload: Innova.Rest.Server.ServerApplicationSettingService`1.Get*
+  implements:
+  - Innova.Data.AppSettings.IApplicationSettingService{{T}}.Get
+  nameWithType.vb: ServerApplicationSettingService(Of T).Get()
+  fullName.vb: Innova.Rest.Server.ServerApplicationSettingService(Of T).Get()
+- uid: Innova.Rest.Server.ServerApplicationSettingService`1.GetSettingsAsObject
+  commentId: M:Innova.Rest.Server.ServerApplicationSettingService`1.GetSettingsAsObject
+  id: GetSettingsAsObject
+  parent: Innova.Rest.Server.ServerApplicationSettingService`1
+  langs:
+  - csharp
+  - vb
+  name: GetSettingsAsObject()
+  nameWithType: ServerApplicationSettingService<T>.GetSettingsAsObject()
+  fullName: Innova.Rest.Server.ServerApplicationSettingService<T>.GetSettingsAsObject()
+  type: Method
+  source:
+    id: GetSettingsAsObject
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Settings\ServerApplicationSettingService.cs
+    startLine: 26
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  summary: Gets the application settings as an object.
+  example: []
+  syntax:
+    content: public object GetSettingsAsObject()
+    return:
+      type: System.Object
+      description: The application settings as an object.
+    content.vb: Public Function GetSettingsAsObject() As Object
+  overload: Innova.Rest.Server.ServerApplicationSettingService`1.GetSettingsAsObject*
+  implements:
+  - Innova.Data.AppSettings.IApplicationSettingService.GetSettingsAsObject
+  nameWithType.vb: ServerApplicationSettingService(Of T).GetSettingsAsObject()
+  fullName.vb: Innova.Rest.Server.ServerApplicationSettingService(Of T).GetSettingsAsObject()
+- uid: Innova.Rest.Server.ServerApplicationSettingService`1.LoadData
+  commentId: M:Innova.Rest.Server.ServerApplicationSettingService`1.LoadData
+  id: LoadData
+  parent: Innova.Rest.Server.ServerApplicationSettingService`1
+  langs:
+  - csharp
+  - vb
+  name: LoadData()
+  nameWithType: ServerApplicationSettingService<T>.LoadData()
+  fullName: Innova.Rest.Server.ServerApplicationSettingService<T>.LoadData()
+  type: Method
+  source:
+    id: LoadData
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Settings\ServerApplicationSettingService.cs
+    startLine: 33
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  summary: Loads the data for the application settings.
+  example: []
+  syntax:
+    content: public Task LoadData()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous load operation.
+    content.vb: Public Function LoadData() As Task
+  overload: Innova.Rest.Server.ServerApplicationSettingService`1.LoadData*
+  implements:
+  - Innova.Data.AppSettings.IApplicationSettingService.LoadData
+  nameWithType.vb: ServerApplicationSettingService(Of T).LoadData()
+  fullName.vb: Innova.Rest.Server.ServerApplicationSettingService(Of T).LoadData()
+- uid: Innova.Rest.Server.ServerApplicationSettingService`1.Save
+  commentId: M:Innova.Rest.Server.ServerApplicationSettingService`1.Save
+  id: Save
+  parent: Innova.Rest.Server.ServerApplicationSettingService`1
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: ServerApplicationSettingService<T>.Save()
+  fullName: Innova.Rest.Server.ServerApplicationSettingService<T>.Save()
+  type: Method
+  source:
+    id: Save
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Server\Settings\ServerApplicationSettingService.cs
+    startLine: 38
+  assemblies:
+  - Innova.Rest.Server
+  namespace: Innova.Rest.Server
+  summary: Saves the application settings.
+  example: []
+  syntax:
+    content: public Task Save()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous save operation.
+    content.vb: Public Function Save() As Task
+  overload: Innova.Rest.Server.ServerApplicationSettingService`1.Save*
+  implements:
+  - Innova.Data.AppSettings.IApplicationSettingService.Save
+  nameWithType.vb: ServerApplicationSettingService(Of T).Save()
+  fullName.vb: Innova.Rest.Server.ServerApplicationSettingService(Of T).Save()
+references:
+- uid: Innova.Rest.Server
+  commentId: N:Innova.Rest.Server
+  href: Innova.html
+  name: Innova.Rest.Server
+  nameWithType: Innova.Rest.Server
+  fullName: Innova.Rest.Server
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Server
+    name: Server
+    href: Innova.Rest.Server.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Server
+    name: Server
+    href: Innova.Rest.Server.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Data.AppSettings.IApplicationSettingService{{T}}
+  commentId: T:Innova.Data.AppSettings.IApplicationSettingService{`0}
+  parent: Innova.Data.AppSettings
+  definition: Innova.Data.AppSettings.IApplicationSettingService`1
+  href: Innova.Data.AppSettings.IApplicationSettingService-1.html
+  name: IApplicationSettingService<T>
+  nameWithType: IApplicationSettingService<T>
+  fullName: Innova.Data.AppSettings.IApplicationSettingService<T>
+  nameWithType.vb: IApplicationSettingService(Of T)
+  fullName.vb: Innova.Data.AppSettings.IApplicationSettingService(Of T)
+  name.vb: IApplicationSettingService(Of T)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.IApplicationSettingService`1
+    name: IApplicationSettingService
+    href: Innova.Data.AppSettings.IApplicationSettingService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.AppSettings.IApplicationSettingService`1
+    name: IApplicationSettingService
+    href: Innova.Data.AppSettings.IApplicationSettingService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.AppSettings.IApplicationSettingService
+  commentId: T:Innova.Data.AppSettings.IApplicationSettingService
+  parent: Innova.Data.AppSettings
+  href: Innova.Data.AppSettings.IApplicationSettingService.html
+  name: IApplicationSettingService
+  nameWithType: IApplicationSettingService
+  fullName: Innova.Data.AppSettings.IApplicationSettingService
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Data.AppSettings.IApplicationSettingService`1
+  commentId: T:Innova.Data.AppSettings.IApplicationSettingService`1
+  href: Innova.Data.AppSettings.IApplicationSettingService-1.html
+  name: IApplicationSettingService<T>
+  nameWithType: IApplicationSettingService<T>
+  fullName: Innova.Data.AppSettings.IApplicationSettingService<T>
+  nameWithType.vb: IApplicationSettingService(Of T)
+  fullName.vb: Innova.Data.AppSettings.IApplicationSettingService(Of T)
+  name.vb: IApplicationSettingService(Of T)
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.IApplicationSettingService`1
+    name: IApplicationSettingService
+    href: Innova.Data.AppSettings.IApplicationSettingService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.AppSettings.IApplicationSettingService`1
+    name: IApplicationSettingService
+    href: Innova.Data.AppSettings.IApplicationSettingService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.AppSettings
+  commentId: N:Innova.Data.AppSettings
+  href: Innova.html
+  name: Innova.Data.AppSettings
+  nameWithType: Innova.Data.AppSettings
+  fullName: Innova.Data.AppSettings
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.AppSettings
+    name: AppSettings
+    href: Innova.Data.AppSettings.html
+- uid: Innova.Rest.Server.ServerApplicationSettingService`1.#ctor*
+  commentId: Overload:Innova.Rest.Server.ServerApplicationSettingService`1.#ctor
+  href: Innova.Rest.Server.ServerApplicationSettingService-1.-ctor.html#Innova_Rest_Server_ServerApplicationSettingService_1__ctor_Innova_Rest_Server_Settings_IServerSettingsEntityServiceFactory_
+  name: ServerApplicationSettingService
+  nameWithType: ServerApplicationSettingService<T>.ServerApplicationSettingService
+  fullName: Innova.Rest.Server.ServerApplicationSettingService<T>.ServerApplicationSettingService
+  nameWithType.vb: ServerApplicationSettingService(Of T).New
+  fullName.vb: Innova.Rest.Server.ServerApplicationSettingService(Of T).New
+  name.vb: New
+- uid: Innova.Rest.Server.Settings.IServerSettingsEntityServiceFactory
+  commentId: T:Innova.Rest.Server.Settings.IServerSettingsEntityServiceFactory
+  parent: Innova.Rest.Server.Settings
+  href: Innova.Rest.Server.Settings.IServerSettingsEntityServiceFactory.html
+  name: IServerSettingsEntityServiceFactory
+  nameWithType: IServerSettingsEntityServiceFactory
+  fullName: Innova.Rest.Server.Settings.IServerSettingsEntityServiceFactory
+- uid: Innova.Rest.Server.Settings
+  commentId: N:Innova.Rest.Server.Settings
+  href: Innova.html
+  name: Innova.Rest.Server.Settings
+  nameWithType: Innova.Rest.Server.Settings
+  fullName: Innova.Rest.Server.Settings
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Server
+    name: Server
+    href: Innova.Rest.Server.html
+  - name: .
+  - uid: Innova.Rest.Server.Settings
+    name: Settings
+    href: Innova.Rest.Server.Settings.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Server
+    name: Server
+    href: Innova.Rest.Server.html
+  - name: .
+  - uid: Innova.Rest.Server.Settings
+    name: Settings
+    href: Innova.Rest.Server.Settings.html
+- uid: Innova.Rest.Server.ServerApplicationSettingService`1.Get*
+  commentId: Overload:Innova.Rest.Server.ServerApplicationSettingService`1.Get
+  href: Innova.Rest.Server.ServerApplicationSettingService-1.Get.html#Innova_Rest_Server_ServerApplicationSettingService_1_Get
+  name: Get
+  nameWithType: ServerApplicationSettingService<T>.Get
+  fullName: Innova.Rest.Server.ServerApplicationSettingService<T>.Get
+  nameWithType.vb: ServerApplicationSettingService(Of T).Get
+  fullName.vb: Innova.Rest.Server.ServerApplicationSettingService(Of T).Get
+- uid: Innova.Data.AppSettings.IApplicationSettingService{{T}}.Get
+  commentId: M:Innova.Data.AppSettings.IApplicationSettingService{`0}.Get
+  parent: Innova.Data.AppSettings.IApplicationSettingService{{T}}
+  definition: Innova.Data.AppSettings.IApplicationSettingService`1.Get
+  href: Innova.Data.AppSettings.IApplicationSettingService-1.Get.html#Innova_Data_AppSettings_IApplicationSettingService_1_Get
+  name: Get()
+  nameWithType: IApplicationSettingService<T>.Get()
+  fullName: Innova.Data.AppSettings.IApplicationSettingService<T>.Get()
+  nameWithType.vb: IApplicationSettingService(Of T).Get()
+  fullName.vb: Innova.Data.AppSettings.IApplicationSettingService(Of T).Get()
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.IApplicationSettingService{`0}.Get
+    name: Get
+    href: Innova.Data.AppSettings.IApplicationSettingService-1.Get.html#Innova_Data_AppSettings_IApplicationSettingService_1_Get
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.IApplicationSettingService{`0}.Get
+    name: Get
+    href: Innova.Data.AppSettings.IApplicationSettingService-1.Get.html#Innova_Data_AppSettings_IApplicationSettingService_1_Get
+  - name: (
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Innova.Data.AppSettings.IApplicationSettingService`1.Get
+  commentId: M:Innova.Data.AppSettings.IApplicationSettingService`1.Get
+  href: Innova.Data.AppSettings.IApplicationSettingService-1.Get.html#Innova_Data_AppSettings_IApplicationSettingService_1_Get
+  name: Get()
+  nameWithType: IApplicationSettingService<T>.Get()
+  fullName: Innova.Data.AppSettings.IApplicationSettingService<T>.Get()
+  nameWithType.vb: IApplicationSettingService(Of T).Get()
+  fullName.vb: Innova.Data.AppSettings.IApplicationSettingService(Of T).Get()
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.IApplicationSettingService`1.Get
+    name: Get
+    href: Innova.Data.AppSettings.IApplicationSettingService-1.Get.html#Innova_Data_AppSettings_IApplicationSettingService_1_Get
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.IApplicationSettingService`1.Get
+    name: Get
+    href: Innova.Data.AppSettings.IApplicationSettingService-1.Get.html#Innova_Data_AppSettings_IApplicationSettingService_1_Get
+  - name: (
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Innova.Rest.Server.ServerApplicationSettingService`1.GetSettingsAsObject*
+  commentId: Overload:Innova.Rest.Server.ServerApplicationSettingService`1.GetSettingsAsObject
+  href: Innova.Rest.Server.ServerApplicationSettingService-1.GetSettingsAsObject.html#Innova_Rest_Server_ServerApplicationSettingService_1_GetSettingsAsObject
+  name: GetSettingsAsObject
+  nameWithType: ServerApplicationSettingService<T>.GetSettingsAsObject
+  fullName: Innova.Rest.Server.ServerApplicationSettingService<T>.GetSettingsAsObject
+  nameWithType.vb: ServerApplicationSettingService(Of T).GetSettingsAsObject
+  fullName.vb: Innova.Rest.Server.ServerApplicationSettingService(Of T).GetSettingsAsObject
+- uid: Innova.Data.AppSettings.IApplicationSettingService.GetSettingsAsObject
+  commentId: M:Innova.Data.AppSettings.IApplicationSettingService.GetSettingsAsObject
+  parent: Innova.Data.AppSettings.IApplicationSettingService
+  href: Innova.Data.AppSettings.IApplicationSettingService.GetSettingsAsObject.html#Innova_Data_AppSettings_IApplicationSettingService_GetSettingsAsObject
+  name: GetSettingsAsObject()
+  nameWithType: IApplicationSettingService.GetSettingsAsObject()
+  fullName: Innova.Data.AppSettings.IApplicationSettingService.GetSettingsAsObject()
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.IApplicationSettingService.GetSettingsAsObject
+    name: GetSettingsAsObject
+    href: Innova.Data.AppSettings.IApplicationSettingService.GetSettingsAsObject.html#Innova_Data_AppSettings_IApplicationSettingService_GetSettingsAsObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.IApplicationSettingService.GetSettingsAsObject
+    name: GetSettingsAsObject
+    href: Innova.Data.AppSettings.IApplicationSettingService.GetSettingsAsObject.html#Innova_Data_AppSettings_IApplicationSettingService_GetSettingsAsObject
+  - name: (
+  - name: )
+- uid: Innova.Rest.Server.ServerApplicationSettingService`1.LoadData*
+  commentId: Overload:Innova.Rest.Server.ServerApplicationSettingService`1.LoadData
+  href: Innova.Rest.Server.ServerApplicationSettingService-1.LoadData.html#Innova_Rest_Server_ServerApplicationSettingService_1_LoadData
+  name: LoadData
+  nameWithType: ServerApplicationSettingService<T>.LoadData
+  fullName: Innova.Rest.Server.ServerApplicationSettingService<T>.LoadData
+  nameWithType.vb: ServerApplicationSettingService(Of T).LoadData
+  fullName.vb: Innova.Rest.Server.ServerApplicationSettingService(Of T).LoadData
+- uid: Innova.Data.AppSettings.IApplicationSettingService.LoadData
+  commentId: M:Innova.Data.AppSettings.IApplicationSettingService.LoadData
+  parent: Innova.Data.AppSettings.IApplicationSettingService
+  href: Innova.Data.AppSettings.IApplicationSettingService.LoadData.html#Innova_Data_AppSettings_IApplicationSettingService_LoadData
+  name: LoadData()
+  nameWithType: IApplicationSettingService.LoadData()
+  fullName: Innova.Data.AppSettings.IApplicationSettingService.LoadData()
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.IApplicationSettingService.LoadData
+    name: LoadData
+    href: Innova.Data.AppSettings.IApplicationSettingService.LoadData.html#Innova_Data_AppSettings_IApplicationSettingService_LoadData
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.IApplicationSettingService.LoadData
+    name: LoadData
+    href: Innova.Data.AppSettings.IApplicationSettingService.LoadData.html#Innova_Data_AppSettings_IApplicationSettingService_LoadData
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Rest.Server.ServerApplicationSettingService`1.Save*
+  commentId: Overload:Innova.Rest.Server.ServerApplicationSettingService`1.Save
+  href: Innova.Rest.Server.ServerApplicationSettingService-1.Save.html#Innova_Rest_Server_ServerApplicationSettingService_1_Save
+  name: Save
+  nameWithType: ServerApplicationSettingService<T>.Save
+  fullName: Innova.Rest.Server.ServerApplicationSettingService<T>.Save
+  nameWithType.vb: ServerApplicationSettingService(Of T).Save
+  fullName.vb: Innova.Rest.Server.ServerApplicationSettingService(Of T).Save
+- uid: Innova.Data.AppSettings.IApplicationSettingService.Save
+  commentId: M:Innova.Data.AppSettings.IApplicationSettingService.Save
+  parent: Innova.Data.AppSettings.IApplicationSettingService
+  href: Innova.Data.AppSettings.IApplicationSettingService.Save.html#Innova_Data_AppSettings_IApplicationSettingService_Save
+  name: Save()
+  nameWithType: IApplicationSettingService.Save()
+  fullName: Innova.Data.AppSettings.IApplicationSettingService.Save()
+  spec.csharp:
+  - uid: Innova.Data.AppSettings.IApplicationSettingService.Save
+    name: Save
+    href: Innova.Data.AppSettings.IApplicationSettingService.Save.html#Innova_Data_AppSettings_IApplicationSettingService_Save
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.AppSettings.IApplicationSettingService.Save
+    name: Save
+    href: Innova.Data.AppSettings.IApplicationSettingService.Save.html#Innova_Data_AppSettings_IApplicationSettingService_Save
+  - name: (
+  - name: )
+memberLayout: SeparatePages

@@ -1,0 +1,983 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
+  commentId: T:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
+  id: RibbonTabViewModel
+  parent: Innova.Prism.Library.Menus.Ribbon
+  children:
+  - Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+  - Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.Groups
+  - Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.IsVisible
+  - Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.MenuTabModel
+  - Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SortOrder
+  - Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SourceGroups
+  - Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.ToString
+  langs:
+  - csharp
+  - vb
+  name: RibbonTabViewModel
+  nameWithType: RibbonTabViewModel
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
+  type: Class
+  source:
+    id: RibbonTabViewModel
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\Ribbon\RibbonTabViewModel.cs
+    startLine: 17
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Menus.Ribbon
+  summary: Represents a view model for a ribbon tab.
+  example: []
+  syntax:
+    content: 'public class RibbonTabViewModel : BindableBase, INotifyPropertyChanged'
+    content.vb: Public Class RibbonTabViewModel Inherits BindableBase Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  - Prism.Mvvm.BindableBase
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  - Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  - Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  - Prism.Mvvm.BindableBase.PropertyChanged
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.MenuTabModel
+  commentId: P:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.MenuTabModel
+  id: MenuTabModel
+  parent: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
+  langs:
+  - csharp
+  - vb
+  name: MenuTabModel
+  nameWithType: RibbonTabViewModel.MenuTabModel
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.MenuTabModel
+  type: Property
+  source:
+    id: MenuTabModel
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\Ribbon\RibbonTabViewModel.cs
+    startLine: 24
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Menus.Ribbon
+  summary: Gets or sets the menu tab model associated with the ribbon tab.
+  example: []
+  syntax:
+    content: public MenuTabModel MenuTabModel { get; set; }
+    parameters: []
+    return:
+      type: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
+    content.vb: Public Property MenuTabModel As MenuTabModel
+  overload: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.MenuTabModel*
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.Groups
+  commentId: P:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.Groups
+  id: Groups
+  parent: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
+  langs:
+  - csharp
+  - vb
+  name: Groups
+  nameWithType: RibbonTabViewModel.Groups
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.Groups
+  type: Property
+  source:
+    id: Groups
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\Ribbon\RibbonTabViewModel.cs
+    startLine: 33
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Menus.Ribbon
+  summary: Gets or sets the collection view source for the ribbon groups.
+  example: []
+  syntax:
+    content: public CollectionViewSource Groups { get; set; }
+    parameters: []
+    return:
+      type: System.Windows.Data.CollectionViewSource
+    content.vb: Public Property Groups As CollectionViewSource
+  overload: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.Groups*
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SourceGroups
+  commentId: P:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SourceGroups
+  id: SourceGroups
+  parent: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
+  langs:
+  - csharp
+  - vb
+  name: SourceGroups
+  nameWithType: RibbonTabViewModel.SourceGroups
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SourceGroups
+  type: Property
+  source:
+    id: SourceGroups
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\Ribbon\RibbonTabViewModel.cs
+    startLine: 42
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Menus.Ribbon
+  summary: Gets the range observable collection of ribbon group view models.
+  example: []
+  syntax:
+    content: public RangeObservableCollection<RibbonGroupViewModel> SourceGroups { get; }
+    parameters: []
+    return:
+      type: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection{Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel}
+    content.vb: Public ReadOnly Property SourceGroups As RangeObservableCollection(Of RibbonGroupViewModel)
+  overload: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SourceGroups*
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SortOrder
+  commentId: P:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SortOrder
+  id: SortOrder
+  parent: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
+  langs:
+  - csharp
+  - vb
+  name: SortOrder
+  nameWithType: RibbonTabViewModel.SortOrder
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SortOrder
+  type: Property
+  source:
+    id: SortOrder
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\Ribbon\RibbonTabViewModel.cs
+    startLine: 57
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Menus.Ribbon
+  summary: Gets the sort order of the ribbon tab.
+  example: []
+  syntax:
+    content: public int SortOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property SortOrder As Integer
+  overload: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SortOrder*
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.IsVisible
+  commentId: P:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.IsVisible
+  id: IsVisible
+  parent: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
+  langs:
+  - csharp
+  - vb
+  name: IsVisible
+  nameWithType: RibbonTabViewModel.IsVisible
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.IsVisible
+  type: Property
+  source:
+    id: IsVisible
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\Ribbon\RibbonTabViewModel.cs
+    startLine: 64
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Menus.Ribbon
+  summary: Gets or sets a value indicating whether the ribbon tab is visible.
+  example: []
+  syntax:
+    content: public bool IsVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsVisible As Boolean
+  overload: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.IsVisible*
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+  commentId: M:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+  id: '#ctor(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)'
+  parent: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
+  langs:
+  - csharp
+  - vb
+  name: RibbonTabViewModel(MenuTabModel)
+  nameWithType: RibbonTabViewModel.RibbonTabViewModel(MenuTabModel)
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.RibbonTabViewModel(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\Ribbon\RibbonTabViewModel.cs
+    startLine: 75
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Menus.Ribbon
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public RibbonTabViewModel(MenuTabModel menuTabModel)
+    parameters:
+    - id: menuTabModel
+      type: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
+      description: The menu tab model associated with the ribbon tab.
+    content.vb: Public Sub New(menuTabModel As MenuTabModel)
+  overload: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor*
+  nameWithType.vb: RibbonTabViewModel.New(MenuTabModel)
+  fullName.vb: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.New(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+  name.vb: New(MenuTabModel)
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.ToString
+  commentId: M:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.ToString
+  id: ToString
+  parent: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: RibbonTabViewModel.ToString()
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\Ribbon\RibbonTabViewModel.cs
+    startLine: 87
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Menus.Ribbon
+  summary: Returns a string representation of the ribbon tab.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The header text of the menu tab model.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.ToString*
+references:
+- uid: Innova.Prism.Library.Menus.Ribbon
+  commentId: N:Innova.Prism.Library.Menus.Ribbon
+  href: Innova.html
+  name: Innova.Prism.Library.Menus.Ribbon
+  nameWithType: Innova.Prism.Library.Menus.Ribbon
+  fullName: Innova.Prism.Library.Menus.Ribbon
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Menus
+    name: Menus
+    href: Innova.Prism.Library.Menus.html
+  - name: .
+  - uid: Innova.Prism.Library.Menus.Ribbon
+    name: Ribbon
+    href: Innova.Prism.Library.Menus.Ribbon.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Menus
+    name: Menus
+    href: Innova.Prism.Library.Menus.html
+  - name: .
+  - uid: Innova.Prism.Library.Menus.Ribbon
+    name: Ribbon
+    href: Innova.Prism.Library.Menus.Ribbon.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Prism.Mvvm.BindableBase
+  commentId: T:Prism.Mvvm.BindableBase
+  parent: Prism.Mvvm
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: BindableBase
+  nameWithType: BindableBase
+  fullName: Prism.Mvvm.BindableBase
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  commentId: M:Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: RaisePropertyChanged(string)
+  nameWithType: BindableBase.RaisePropertyChanged(string)
+  fullName: Prism.Mvvm.BindableBase.RaisePropertyChanged(string)
+  nameWithType.vb: BindableBase.RaisePropertyChanged(String)
+  fullName.vb: Prism.Mvvm.BindableBase.RaisePropertyChanged(String)
+  name.vb: RaisePropertyChanged(String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: OnPropertyChanged(PropertyChangedEventArgs)
+  nameWithType: BindableBase.OnPropertyChanged(PropertyChangedEventArgs)
+  fullName: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: Prism.Mvvm.BindableBase.PropertyChanged
+  commentId: E:Prism.Mvvm.BindableBase.PropertyChanged
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: PropertyChanged
+  nameWithType: BindableBase.PropertyChanged
+  fullName: Prism.Mvvm.BindableBase.PropertyChanged
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Prism.Mvvm
+  commentId: N:Prism.Mvvm
+  isExternal: true
+  name: Prism.Mvvm
+  nameWithType: Prism.Mvvm
+  fullName: Prism.Mvvm
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.MenuTabModel*
+  commentId: Overload:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.MenuTabModel
+  href: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.MenuTabModel.html#Innova_Prism_Library_Menus_Ribbon_RibbonTabViewModel_MenuTabModel
+  name: MenuTabModel
+  nameWithType: RibbonTabViewModel.MenuTabModel
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.MenuTabModel
+- uid: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.MenuTabModel
+  parent: Innova.Prism.Library.Menus.ItemModels
+  href: Innova.Prism.Library.Menus.ItemModels.MenuTabModel.html
+  name: MenuTabModel
+  nameWithType: MenuTabModel
+  fullName: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
+- uid: Innova.Prism.Library.Menus.ItemModels
+  commentId: N:Innova.Prism.Library.Menus.ItemModels
+  href: Innova.html
+  name: Innova.Prism.Library.Menus.ItemModels
+  nameWithType: Innova.Prism.Library.Menus.ItemModels
+  fullName: Innova.Prism.Library.Menus.ItemModels
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Menus
+    name: Menus
+    href: Innova.Prism.Library.Menus.html
+  - name: .
+  - uid: Innova.Prism.Library.Menus.ItemModels
+    name: ItemModels
+    href: Innova.Prism.Library.Menus.ItemModels.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Menus
+    name: Menus
+    href: Innova.Prism.Library.Menus.html
+  - name: .
+  - uid: Innova.Prism.Library.Menus.ItemModels
+    name: ItemModels
+    href: Innova.Prism.Library.Menus.ItemModels.html
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.Groups*
+  commentId: Overload:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.Groups
+  href: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.Groups.html#Innova_Prism_Library_Menus_Ribbon_RibbonTabViewModel_Groups
+  name: Groups
+  nameWithType: RibbonTabViewModel.Groups
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.Groups
+- uid: System.Windows.Data.CollectionViewSource
+  commentId: T:System.Windows.Data.CollectionViewSource
+  parent: System.Windows.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.data.collectionviewsource
+  name: CollectionViewSource
+  nameWithType: CollectionViewSource
+  fullName: System.Windows.Data.CollectionViewSource
+- uid: System.Windows.Data
+  commentId: N:System.Windows.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Data
+  nameWithType: System.Windows.Data
+  fullName: System.Windows.Data
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.data
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.data
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SourceGroups*
+  commentId: Overload:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SourceGroups
+  href: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SourceGroups.html#Innova_Prism_Library_Menus_Ribbon_RibbonTabViewModel_SourceGroups
+  name: SourceGroups
+  nameWithType: RibbonTabViewModel.SourceGroups
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SourceGroups
+- uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection{Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel}
+  commentId: T:Innova.Prism.Library.ClassDefinitions.RangeObservableCollection{Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel}
+  parent: Innova.Prism.Library.ClassDefinitions
+  definition: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
+  href: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection-1.html
+  name: RangeObservableCollection<RibbonGroupViewModel>
+  nameWithType: RangeObservableCollection<RibbonGroupViewModel>
+  fullName: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection<Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel>
+  nameWithType.vb: RangeObservableCollection(Of RibbonGroupViewModel)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection(Of Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel)
+  name.vb: RangeObservableCollection(Of RibbonGroupViewModel)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
+    name: RangeObservableCollection
+    href: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection-1.html
+  - name: <
+  - uid: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel
+    name: RibbonGroupViewModel
+    href: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.html
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
+    name: RangeObservableCollection
+    href: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel
+    name: RibbonGroupViewModel
+    href: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.html
+  - name: )
+- uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
+  commentId: T:Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
+  href: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection-1.html
+  name: RangeObservableCollection<T>
+  nameWithType: RangeObservableCollection<T>
+  fullName: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection<T>
+  nameWithType.vb: RangeObservableCollection(Of T)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection(Of T)
+  name.vb: RangeObservableCollection(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
+    name: RangeObservableCollection
+    href: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
+    name: RangeObservableCollection
+    href: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.ClassDefinitions
+  commentId: N:Innova.Prism.Library.ClassDefinitions
+  href: Innova.html
+  name: Innova.Prism.Library.ClassDefinitions
+  nameWithType: Innova.Prism.Library.ClassDefinitions
+  fullName: Innova.Prism.Library.ClassDefinitions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SortOrder*
+  commentId: Overload:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SortOrder
+  href: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SortOrder.html#Innova_Prism_Library_Menus_Ribbon_RibbonTabViewModel_SortOrder
+  name: SortOrder
+  nameWithType: RibbonTabViewModel.SortOrder
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.SortOrder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.IsVisible*
+  commentId: Overload:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.IsVisible
+  href: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.IsVisible.html#Innova_Prism_Library_Menus_Ribbon_RibbonTabViewModel_IsVisible
+  name: IsVisible
+  nameWithType: RibbonTabViewModel.IsVisible
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.IsVisible
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
+  commentId: T:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
+  parent: Innova.Prism.Library.Menus.Ribbon
+  href: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.html
+  name: RibbonTabViewModel
+  nameWithType: RibbonTabViewModel
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor*
+  commentId: Overload:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor
+  href: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.-ctor.html#Innova_Prism_Library_Menus_Ribbon_RibbonTabViewModel__ctor_Innova_Prism_Library_Menus_ItemModels_MenuTabModel_
+  name: RibbonTabViewModel
+  nameWithType: RibbonTabViewModel.RibbonTabViewModel
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.RibbonTabViewModel
+  nameWithType.vb: RibbonTabViewModel.New
+  fullName.vb: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.New
+  name.vb: New
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.ToString*
+  commentId: Overload:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.ToString
+  href: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.ToString.html#Innova_Prism_Library_Menus_Ribbon_RibbonTabViewModel_ToString
+  name: ToString
+  nameWithType: RibbonTabViewModel.ToString
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+memberLayout: SeparatePages

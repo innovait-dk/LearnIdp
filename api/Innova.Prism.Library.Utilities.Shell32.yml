@@ -1,0 +1,1163 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Utilities.Shell32
+  commentId: T:Innova.Prism.Library.Utilities.Shell32
+  id: Shell32
+  parent: Innova.Prism.Library.Utilities
+  children:
+  - Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEFORCOMPUTER
+  - Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEFORPRINTER
+  - Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEINCLUDEFILES
+  - Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEINCLUDEURLS
+  - Innova.Prism.Library.Utilities.Shell32.BIF_DONTGOBELOWDOMAIN
+  - Innova.Prism.Library.Utilities.Shell32.BIF_EDITBOX
+  - Innova.Prism.Library.Utilities.Shell32.BIF_NEWDIALOGSTYLE
+  - Innova.Prism.Library.Utilities.Shell32.BIF_RETURNFSANCESTORS
+  - Innova.Prism.Library.Utilities.Shell32.BIF_RETURNONLYFSDIRS
+  - Innova.Prism.Library.Utilities.Shell32.BIF_SHAREABLE
+  - Innova.Prism.Library.Utilities.Shell32.BIF_STATUSTEXT
+  - Innova.Prism.Library.Utilities.Shell32.BIF_USENEWUI
+  - Innova.Prism.Library.Utilities.Shell32.BIF_VALIDATE
+  - Innova.Prism.Library.Utilities.Shell32.FILE_ATTRIBUTE_DIRECTORY
+  - Innova.Prism.Library.Utilities.Shell32.FILE_ATTRIBUTE_NORMAL
+  - Innova.Prism.Library.Utilities.Shell32.MAX_PATH
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_ADDOVERLAYS
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_ATTRIBUTES
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_ATTR_SPECIFIED
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_DISPLAYNAME
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_EXETYPE
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_EXTRALARGE
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_ICON
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_ICONLOCATION
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_JUMBO
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_LARGEICON
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_LINKOVERLAY
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_OPENICON
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_OVERLAYINDEX
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_PIDL
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_SELECTED
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_SHELLICONSIZE
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_SMALLICON
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_SYSICONINDEX
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_TYPENAME
+  - Innova.Prism.Library.Utilities.Shell32.SHGFI_USEFILEATTRIBUTES
+  - Innova.Prism.Library.Utilities.Shell32.SHGetFileInfo(System.String,System.Int32,Innova.Prism.Library.Utilities.Shell32.SHFILEINFO@,System.Int32,System.UInt32)
+  - Innova.Prism.Library.Utilities.Shell32.SHGetImageList(System.Int32,System.Guid@,Innova.Prism.Library.Utilities.IImageList@)
+  - Innova.Prism.Library.Utilities.Shell32.ShowOpenWithDialog(System.String)
+  - Innova.Prism.Library.Utilities.Shell32.WM_CLOSE
+  langs:
+  - csharp
+  - vb
+  name: Shell32
+  nameWithType: Shell32
+  fullName: Innova.Prism.Library.Utilities.Shell32
+  type: Class
+  source:
+    id: Shell32
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 423
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  summary: >-
+    Wraps necessary Shell32.dll structures and functions required to retrieve Icon Handles using SHGetFileInfo. Code
+
+    courtesy of MSDN Cold Rooster Consulting case study.
+  example: []
+  syntax:
+    content: public class Shell32
+    content.vb: Public Class Shell32
+  inheritance:
+  - System.Object
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGetImageList(System.Int32,System.Guid@,Innova.Prism.Library.Utilities.IImageList@)
+  commentId: M:Innova.Prism.Library.Utilities.Shell32.SHGetImageList(System.Int32,System.Guid@,Innova.Prism.Library.Utilities.IImageList@)
+  id: SHGetImageList(System.Int32,System.Guid@,Innova.Prism.Library.Utilities.IImageList@)
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGetImageList(int, ref Guid, out IImageList)
+  nameWithType: Shell32.SHGetImageList(int, ref Guid, out IImageList)
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGetImageList(int, ref System.Guid, out Innova.Prism.Library.Utilities.IImageList)
+  type: Method
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public static extern int SHGetImageList(int iImageList, ref Guid riid, out IImageList ppv)
+    parameters:
+    - id: iImageList
+      type: System.Int32
+    - id: riid
+      type: System.Guid
+    - id: ppv
+      type: Innova.Prism.Library.Utilities.IImageList
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function SHGetImageList(iImageList As Integer, riid As Guid, ppv As IImageList) As Integer
+  overload: Innova.Prism.Library.Utilities.Shell32.SHGetImageList*
+  nameWithType.vb: Shell32.SHGetImageList(Integer, Guid, IImageList)
+  fullName.vb: Innova.Prism.Library.Utilities.Shell32.SHGetImageList(Integer, System.Guid, Innova.Prism.Library.Utilities.IImageList)
+  name.vb: SHGetImageList(Integer, Guid, IImageList)
+- uid: Innova.Prism.Library.Utilities.Shell32.MAX_PATH
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.MAX_PATH
+  id: MAX_PATH
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: MAX_PATH
+  nameWithType: Shell32.MAX_PATH
+  fullName: Innova.Prism.Library.Utilities.Shell32.MAX_PATH
+  type: Field
+  source:
+    id: MAX_PATH
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 429
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const int MAX_PATH = 256
+    return:
+      type: System.Int32
+    content.vb: Public Const MAX_PATH As Integer = 256
+- uid: Innova.Prism.Library.Utilities.Shell32.BIF_RETURNONLYFSDIRS
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.BIF_RETURNONLYFSDIRS
+  id: BIF_RETURNONLYFSDIRS
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: BIF_RETURNONLYFSDIRS
+  nameWithType: Shell32.BIF_RETURNONLYFSDIRS
+  fullName: Innova.Prism.Library.Utilities.Shell32.BIF_RETURNONLYFSDIRS
+  type: Field
+  source:
+    id: BIF_RETURNONLYFSDIRS
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 459
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint BIF_RETURNONLYFSDIRS = 1
+    return:
+      type: System.UInt32
+    content.vb: Public Const BIF_RETURNONLYFSDIRS As UInteger = 1
+- uid: Innova.Prism.Library.Utilities.Shell32.BIF_DONTGOBELOWDOMAIN
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.BIF_DONTGOBELOWDOMAIN
+  id: BIF_DONTGOBELOWDOMAIN
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: BIF_DONTGOBELOWDOMAIN
+  nameWithType: Shell32.BIF_DONTGOBELOWDOMAIN
+  fullName: Innova.Prism.Library.Utilities.Shell32.BIF_DONTGOBELOWDOMAIN
+  type: Field
+  source:
+    id: BIF_DONTGOBELOWDOMAIN
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 460
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint BIF_DONTGOBELOWDOMAIN = 2
+    return:
+      type: System.UInt32
+    content.vb: Public Const BIF_DONTGOBELOWDOMAIN As UInteger = 2
+- uid: Innova.Prism.Library.Utilities.Shell32.BIF_STATUSTEXT
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.BIF_STATUSTEXT
+  id: BIF_STATUSTEXT
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: BIF_STATUSTEXT
+  nameWithType: Shell32.BIF_STATUSTEXT
+  fullName: Innova.Prism.Library.Utilities.Shell32.BIF_STATUSTEXT
+  type: Field
+  source:
+    id: BIF_STATUSTEXT
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 461
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint BIF_STATUSTEXT = 4
+    return:
+      type: System.UInt32
+    content.vb: Public Const BIF_STATUSTEXT As UInteger = 4
+- uid: Innova.Prism.Library.Utilities.Shell32.BIF_RETURNFSANCESTORS
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.BIF_RETURNFSANCESTORS
+  id: BIF_RETURNFSANCESTORS
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: BIF_RETURNFSANCESTORS
+  nameWithType: Shell32.BIF_RETURNFSANCESTORS
+  fullName: Innova.Prism.Library.Utilities.Shell32.BIF_RETURNFSANCESTORS
+  type: Field
+  source:
+    id: BIF_RETURNFSANCESTORS
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 462
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint BIF_RETURNFSANCESTORS = 8
+    return:
+      type: System.UInt32
+    content.vb: Public Const BIF_RETURNFSANCESTORS As UInteger = 8
+- uid: Innova.Prism.Library.Utilities.Shell32.BIF_EDITBOX
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.BIF_EDITBOX
+  id: BIF_EDITBOX
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: BIF_EDITBOX
+  nameWithType: Shell32.BIF_EDITBOX
+  fullName: Innova.Prism.Library.Utilities.Shell32.BIF_EDITBOX
+  type: Field
+  source:
+    id: BIF_EDITBOX
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 463
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint BIF_EDITBOX = 16
+    return:
+      type: System.UInt32
+    content.vb: Public Const BIF_EDITBOX As UInteger = 16
+- uid: Innova.Prism.Library.Utilities.Shell32.BIF_VALIDATE
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.BIF_VALIDATE
+  id: BIF_VALIDATE
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: BIF_VALIDATE
+  nameWithType: Shell32.BIF_VALIDATE
+  fullName: Innova.Prism.Library.Utilities.Shell32.BIF_VALIDATE
+  type: Field
+  source:
+    id: BIF_VALIDATE
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 464
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint BIF_VALIDATE = 32
+    return:
+      type: System.UInt32
+    content.vb: Public Const BIF_VALIDATE As UInteger = 32
+- uid: Innova.Prism.Library.Utilities.Shell32.BIF_NEWDIALOGSTYLE
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.BIF_NEWDIALOGSTYLE
+  id: BIF_NEWDIALOGSTYLE
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: BIF_NEWDIALOGSTYLE
+  nameWithType: Shell32.BIF_NEWDIALOGSTYLE
+  fullName: Innova.Prism.Library.Utilities.Shell32.BIF_NEWDIALOGSTYLE
+  type: Field
+  source:
+    id: BIF_NEWDIALOGSTYLE
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 465
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint BIF_NEWDIALOGSTYLE = 64
+    return:
+      type: System.UInt32
+    content.vb: Public Const BIF_NEWDIALOGSTYLE As UInteger = 64
+- uid: Innova.Prism.Library.Utilities.Shell32.BIF_USENEWUI
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.BIF_USENEWUI
+  id: BIF_USENEWUI
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: BIF_USENEWUI
+  nameWithType: Shell32.BIF_USENEWUI
+  fullName: Innova.Prism.Library.Utilities.Shell32.BIF_USENEWUI
+  type: Field
+  source:
+    id: BIF_USENEWUI
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 466
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint BIF_USENEWUI = 80
+    return:
+      type: System.UInt32
+    content.vb: Public Const BIF_USENEWUI As UInteger = 80
+- uid: Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEINCLUDEURLS
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEINCLUDEURLS
+  id: BIF_BROWSEINCLUDEURLS
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: BIF_BROWSEINCLUDEURLS
+  nameWithType: Shell32.BIF_BROWSEINCLUDEURLS
+  fullName: Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEINCLUDEURLS
+  type: Field
+  source:
+    id: BIF_BROWSEINCLUDEURLS
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 467
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint BIF_BROWSEINCLUDEURLS = 128
+    return:
+      type: System.UInt32
+    content.vb: Public Const BIF_BROWSEINCLUDEURLS As UInteger = 128
+- uid: Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEFORCOMPUTER
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEFORCOMPUTER
+  id: BIF_BROWSEFORCOMPUTER
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: BIF_BROWSEFORCOMPUTER
+  nameWithType: Shell32.BIF_BROWSEFORCOMPUTER
+  fullName: Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEFORCOMPUTER
+  type: Field
+  source:
+    id: BIF_BROWSEFORCOMPUTER
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 468
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint BIF_BROWSEFORCOMPUTER = 4096
+    return:
+      type: System.UInt32
+    content.vb: Public Const BIF_BROWSEFORCOMPUTER As UInteger = 4096
+- uid: Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEFORPRINTER
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEFORPRINTER
+  id: BIF_BROWSEFORPRINTER
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: BIF_BROWSEFORPRINTER
+  nameWithType: Shell32.BIF_BROWSEFORPRINTER
+  fullName: Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEFORPRINTER
+  type: Field
+  source:
+    id: BIF_BROWSEFORPRINTER
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 469
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint BIF_BROWSEFORPRINTER = 8192
+    return:
+      type: System.UInt32
+    content.vb: Public Const BIF_BROWSEFORPRINTER As UInteger = 8192
+- uid: Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEINCLUDEFILES
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEINCLUDEFILES
+  id: BIF_BROWSEINCLUDEFILES
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: BIF_BROWSEINCLUDEFILES
+  nameWithType: Shell32.BIF_BROWSEINCLUDEFILES
+  fullName: Innova.Prism.Library.Utilities.Shell32.BIF_BROWSEINCLUDEFILES
+  type: Field
+  source:
+    id: BIF_BROWSEINCLUDEFILES
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 470
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint BIF_BROWSEINCLUDEFILES = 16384
+    return:
+      type: System.UInt32
+    content.vb: Public Const BIF_BROWSEINCLUDEFILES As UInteger = 16384
+- uid: Innova.Prism.Library.Utilities.Shell32.BIF_SHAREABLE
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.BIF_SHAREABLE
+  id: BIF_SHAREABLE
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: BIF_SHAREABLE
+  nameWithType: Shell32.BIF_SHAREABLE
+  fullName: Innova.Prism.Library.Utilities.Shell32.BIF_SHAREABLE
+  type: Field
+  source:
+    id: BIF_SHAREABLE
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 471
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint BIF_SHAREABLE = 32768
+    return:
+      type: System.UInt32
+    content.vb: Public Const BIF_SHAREABLE As UInteger = 32768
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_ICON
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_ICON
+  id: SHGFI_ICON
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_ICON
+  nameWithType: Shell32.SHGFI_ICON
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_ICON
+  type: Field
+  source:
+    id: SHGFI_ICON
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 486
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_ICON = 256
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_ICON As UInteger = 256
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_DISPLAYNAME
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_DISPLAYNAME
+  id: SHGFI_DISPLAYNAME
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_DISPLAYNAME
+  nameWithType: Shell32.SHGFI_DISPLAYNAME
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_DISPLAYNAME
+  type: Field
+  source:
+    id: SHGFI_DISPLAYNAME
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 487
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_DISPLAYNAME = 512
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_DISPLAYNAME As UInteger = 512
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_TYPENAME
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_TYPENAME
+  id: SHGFI_TYPENAME
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_TYPENAME
+  nameWithType: Shell32.SHGFI_TYPENAME
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_TYPENAME
+  type: Field
+  source:
+    id: SHGFI_TYPENAME
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 488
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_TYPENAME = 1024
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_TYPENAME As UInteger = 1024
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_ATTRIBUTES
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_ATTRIBUTES
+  id: SHGFI_ATTRIBUTES
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_ATTRIBUTES
+  nameWithType: Shell32.SHGFI_ATTRIBUTES
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_ATTRIBUTES
+  type: Field
+  source:
+    id: SHGFI_ATTRIBUTES
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 489
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_ATTRIBUTES = 2048
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_ATTRIBUTES As UInteger = 2048
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_ICONLOCATION
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_ICONLOCATION
+  id: SHGFI_ICONLOCATION
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_ICONLOCATION
+  nameWithType: Shell32.SHGFI_ICONLOCATION
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_ICONLOCATION
+  type: Field
+  source:
+    id: SHGFI_ICONLOCATION
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 490
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_ICONLOCATION = 4096
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_ICONLOCATION As UInteger = 4096
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_EXETYPE
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_EXETYPE
+  id: SHGFI_EXETYPE
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_EXETYPE
+  nameWithType: Shell32.SHGFI_EXETYPE
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_EXETYPE
+  type: Field
+  source:
+    id: SHGFI_EXETYPE
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 491
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_EXETYPE = 8192
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_EXETYPE As UInteger = 8192
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_SYSICONINDEX
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_SYSICONINDEX
+  id: SHGFI_SYSICONINDEX
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_SYSICONINDEX
+  nameWithType: Shell32.SHGFI_SYSICONINDEX
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_SYSICONINDEX
+  type: Field
+  source:
+    id: SHGFI_SYSICONINDEX
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 492
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_SYSICONINDEX = 16384
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_SYSICONINDEX As UInteger = 16384
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_LINKOVERLAY
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_LINKOVERLAY
+  id: SHGFI_LINKOVERLAY
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_LINKOVERLAY
+  nameWithType: Shell32.SHGFI_LINKOVERLAY
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_LINKOVERLAY
+  type: Field
+  source:
+    id: SHGFI_LINKOVERLAY
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 493
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_LINKOVERLAY = 32768
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_LINKOVERLAY As UInteger = 32768
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_SELECTED
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_SELECTED
+  id: SHGFI_SELECTED
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_SELECTED
+  nameWithType: Shell32.SHGFI_SELECTED
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_SELECTED
+  type: Field
+  source:
+    id: SHGFI_SELECTED
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 494
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_SELECTED = 65536
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_SELECTED As UInteger = 65536
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_ATTR_SPECIFIED
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_ATTR_SPECIFIED
+  id: SHGFI_ATTR_SPECIFIED
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_ATTR_SPECIFIED
+  nameWithType: Shell32.SHGFI_ATTR_SPECIFIED
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_ATTR_SPECIFIED
+  type: Field
+  source:
+    id: SHGFI_ATTR_SPECIFIED
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 495
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_ATTR_SPECIFIED = 131072
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_ATTR_SPECIFIED As UInteger = 131072
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_LARGEICON
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_LARGEICON
+  id: SHGFI_LARGEICON
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_LARGEICON
+  nameWithType: Shell32.SHGFI_LARGEICON
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_LARGEICON
+  type: Field
+  source:
+    id: SHGFI_LARGEICON
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 496
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_LARGEICON = 0
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_LARGEICON As UInteger = 0
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_SMALLICON
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_SMALLICON
+  id: SHGFI_SMALLICON
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_SMALLICON
+  nameWithType: Shell32.SHGFI_SMALLICON
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_SMALLICON
+  type: Field
+  source:
+    id: SHGFI_SMALLICON
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 497
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_SMALLICON = 1
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_SMALLICON As UInteger = 1
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_OPENICON
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_OPENICON
+  id: SHGFI_OPENICON
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_OPENICON
+  nameWithType: Shell32.SHGFI_OPENICON
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_OPENICON
+  type: Field
+  source:
+    id: SHGFI_OPENICON
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 498
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_OPENICON = 2
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_OPENICON As UInteger = 2
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_SHELLICONSIZE
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_SHELLICONSIZE
+  id: SHGFI_SHELLICONSIZE
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_SHELLICONSIZE
+  nameWithType: Shell32.SHGFI_SHELLICONSIZE
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_SHELLICONSIZE
+  type: Field
+  source:
+    id: SHGFI_SHELLICONSIZE
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 499
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_SHELLICONSIZE = 4
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_SHELLICONSIZE As UInteger = 4
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_PIDL
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_PIDL
+  id: SHGFI_PIDL
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_PIDL
+  nameWithType: Shell32.SHGFI_PIDL
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_PIDL
+  type: Field
+  source:
+    id: SHGFI_PIDL
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 500
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_PIDL = 8
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_PIDL As UInteger = 8
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_USEFILEATTRIBUTES
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_USEFILEATTRIBUTES
+  id: SHGFI_USEFILEATTRIBUTES
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_USEFILEATTRIBUTES
+  nameWithType: Shell32.SHGFI_USEFILEATTRIBUTES
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_USEFILEATTRIBUTES
+  type: Field
+  source:
+    id: SHGFI_USEFILEATTRIBUTES
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 501
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_USEFILEATTRIBUTES = 16
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_USEFILEATTRIBUTES As UInteger = 16
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_ADDOVERLAYS
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_ADDOVERLAYS
+  id: SHGFI_ADDOVERLAYS
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_ADDOVERLAYS
+  nameWithType: Shell32.SHGFI_ADDOVERLAYS
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_ADDOVERLAYS
+  type: Field
+  source:
+    id: SHGFI_ADDOVERLAYS
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 502
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_ADDOVERLAYS = 32
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_ADDOVERLAYS As UInteger = 32
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_OVERLAYINDEX
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_OVERLAYINDEX
+  id: SHGFI_OVERLAYINDEX
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_OVERLAYINDEX
+  nameWithType: Shell32.SHGFI_OVERLAYINDEX
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_OVERLAYINDEX
+  type: Field
+  source:
+    id: SHGFI_OVERLAYINDEX
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 503
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_OVERLAYINDEX = 64
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_OVERLAYINDEX As UInteger = 64
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_EXTRALARGE
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_EXTRALARGE
+  id: SHGFI_EXTRALARGE
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_EXTRALARGE
+  nameWithType: Shell32.SHGFI_EXTRALARGE
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_EXTRALARGE
+  type: Field
+  source:
+    id: SHGFI_EXTRALARGE
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 504
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_EXTRALARGE = 2
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_EXTRALARGE As UInteger = 2
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGFI_JUMBO
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.SHGFI_JUMBO
+  id: SHGFI_JUMBO
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGFI_JUMBO
+  nameWithType: Shell32.SHGFI_JUMBO
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGFI_JUMBO
+  type: Field
+  source:
+    id: SHGFI_JUMBO
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 505
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint SHGFI_JUMBO = 4
+    return:
+      type: System.UInt32
+    content.vb: Public Const SHGFI_JUMBO As UInteger = 4
+- uid: Innova.Prism.Library.Utilities.Shell32.WM_CLOSE
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.WM_CLOSE
+  id: WM_CLOSE
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: WM_CLOSE
+  nameWithType: Shell32.WM_CLOSE
+  fullName: Innova.Prism.Library.Utilities.Shell32.WM_CLOSE
+  type: Field
+  source:
+    id: WM_CLOSE
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 506
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const int WM_CLOSE = 16
+    return:
+      type: System.Int32
+    content.vb: Public Const WM_CLOSE As Integer = 16
+- uid: Innova.Prism.Library.Utilities.Shell32.FILE_ATTRIBUTE_DIRECTORY
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.FILE_ATTRIBUTE_DIRECTORY
+  id: FILE_ATTRIBUTE_DIRECTORY
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: FILE_ATTRIBUTE_DIRECTORY
+  nameWithType: Shell32.FILE_ATTRIBUTE_DIRECTORY
+  fullName: Innova.Prism.Library.Utilities.Shell32.FILE_ATTRIBUTE_DIRECTORY
+  type: Field
+  source:
+    id: FILE_ATTRIBUTE_DIRECTORY
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 507
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const int FILE_ATTRIBUTE_DIRECTORY = 16
+    return:
+      type: System.Int32
+    content.vb: Public Const FILE_ATTRIBUTE_DIRECTORY As Integer = 16
+- uid: Innova.Prism.Library.Utilities.Shell32.FILE_ATTRIBUTE_NORMAL
+  commentId: F:Innova.Prism.Library.Utilities.Shell32.FILE_ATTRIBUTE_NORMAL
+  id: FILE_ATTRIBUTE_NORMAL
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: FILE_ATTRIBUTE_NORMAL
+  nameWithType: Shell32.FILE_ATTRIBUTE_NORMAL
+  fullName: Innova.Prism.Library.Utilities.Shell32.FILE_ATTRIBUTE_NORMAL
+  type: Field
+  source:
+    id: FILE_ATTRIBUTE_NORMAL
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 508
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public const uint FILE_ATTRIBUTE_NORMAL = 128
+    return:
+      type: System.UInt32
+    content.vb: Public Const FILE_ATTRIBUTE_NORMAL As UInteger = 128
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGetFileInfo(System.String,System.Int32,Innova.Prism.Library.Utilities.Shell32.SHFILEINFO@,System.Int32,System.UInt32)
+  commentId: M:Innova.Prism.Library.Utilities.Shell32.SHGetFileInfo(System.String,System.Int32,Innova.Prism.Library.Utilities.Shell32.SHFILEINFO@,System.Int32,System.UInt32)
+  id: SHGetFileInfo(System.String,System.Int32,Innova.Prism.Library.Utilities.Shell32.SHFILEINFO@,System.Int32,System.UInt32)
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: SHGetFileInfo(string, int, ref SHFILEINFO, int, uint)
+  nameWithType: Shell32.SHGetFileInfo(string, int, ref Shell32.SHFILEINFO, int, uint)
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGetFileInfo(string, int, ref Innova.Prism.Library.Utilities.Shell32.SHFILEINFO, int, uint)
+  type: Method
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public static extern int SHGetFileInfo(string pszPath, int dwFileAttributes, ref Shell32.SHFILEINFO psfi, int cbFileInfo, uint uFlags)
+    parameters:
+    - id: pszPath
+      type: System.String
+    - id: dwFileAttributes
+      type: System.Int32
+    - id: psfi
+      type: Innova.Prism.Library.Utilities.Shell32.SHFILEINFO
+    - id: cbFileInfo
+      type: System.Int32
+    - id: uFlags
+      type: System.UInt32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function SHGetFileInfo(pszPath As String, dwFileAttributes As Integer, psfi As Shell32.SHFILEINFO, cbFileInfo As Integer, uFlags As UInteger) As Integer
+  overload: Innova.Prism.Library.Utilities.Shell32.SHGetFileInfo*
+  nameWithType.vb: Shell32.SHGetFileInfo(String, Integer, Shell32.SHFILEINFO, Integer, UInteger)
+  fullName.vb: Innova.Prism.Library.Utilities.Shell32.SHGetFileInfo(String, Integer, Innova.Prism.Library.Utilities.Shell32.SHFILEINFO, Integer, UInteger)
+  name.vb: SHGetFileInfo(String, Integer, SHFILEINFO, Integer, UInteger)
+- uid: Innova.Prism.Library.Utilities.Shell32.ShowOpenWithDialog(System.String)
+  commentId: M:Innova.Prism.Library.Utilities.Shell32.ShowOpenWithDialog(System.String)
+  id: ShowOpenWithDialog(System.String)
+  parent: Innova.Prism.Library.Utilities.Shell32
+  langs:
+  - csharp
+  - vb
+  name: ShowOpenWithDialog(string)
+  nameWithType: Shell32.ShowOpenWithDialog(string)
+  fullName: Innova.Prism.Library.Utilities.Shell32.ShowOpenWithDialog(string)
+  type: Method
+  source:
+    id: ShowOpenWithDialog
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Utilities\FileSystemHelper.cs
+    startLine: 545
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Utilities
+  syntax:
+    content: public static void ShowOpenWithDialog(string path)
+    parameters:
+    - id: path
+      type: System.String
+    content.vb: Public Shared Sub ShowOpenWithDialog(path As String)
+  overload: Innova.Prism.Library.Utilities.Shell32.ShowOpenWithDialog*
+  nameWithType.vb: Shell32.ShowOpenWithDialog(String)
+  fullName.vb: Innova.Prism.Library.Utilities.Shell32.ShowOpenWithDialog(String)
+  name.vb: ShowOpenWithDialog(String)
+references:
+- uid: Innova.Prism.Library.Utilities
+  commentId: N:Innova.Prism.Library.Utilities
+  href: Innova.html
+  name: Innova.Prism.Library.Utilities
+  nameWithType: Innova.Prism.Library.Utilities
+  fullName: Innova.Prism.Library.Utilities
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Utilities
+    name: Utilities
+    href: Innova.Prism.Library.Utilities.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Utilities
+    name: Utilities
+    href: Innova.Prism.Library.Utilities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGetImageList*
+  commentId: Overload:Innova.Prism.Library.Utilities.Shell32.SHGetImageList
+  isExternal: true
+  href: Innova.Prism.Library.Utilities.Shell32.SHGetImageList.html#Innova_Prism_Library_Utilities_Shell32_SHGetImageList_System_Int32_System_Guid__Innova_Prism_Library_Utilities_IImageList__
+  name: SHGetImageList
+  nameWithType: Shell32.SHGetImageList
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGetImageList
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Innova.Prism.Library.Utilities.IImageList
+  commentId: T:Innova.Prism.Library.Utilities.IImageList
+  parent: Innova.Prism.Library.Utilities
+  href: Innova.Prism.Library.Utilities.IImageList.html
+  name: IImageList
+  nameWithType: IImageList
+  fullName: Innova.Prism.Library.Utilities.IImageList
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Innova.Prism.Library.Utilities.Shell32.SHGetFileInfo*
+  commentId: Overload:Innova.Prism.Library.Utilities.Shell32.SHGetFileInfo
+  isExternal: true
+  href: Innova.Prism.Library.Utilities.Shell32.SHGetFileInfo.html#Innova_Prism_Library_Utilities_Shell32_SHGetFileInfo_System_String_System_Int32_Innova_Prism_Library_Utilities_Shell32_SHFILEINFO__System_Int32_System_UInt32_
+  name: SHGetFileInfo
+  nameWithType: Shell32.SHGetFileInfo
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHGetFileInfo
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Prism.Library.Utilities.Shell32.SHFILEINFO
+  commentId: T:Innova.Prism.Library.Utilities.Shell32.SHFILEINFO
+  parent: Innova.Prism.Library.Utilities
+  href: Innova.Prism.Library.Utilities.Shell32.html
+  name: Shell32.SHFILEINFO
+  nameWithType: Shell32.SHFILEINFO
+  fullName: Innova.Prism.Library.Utilities.Shell32.SHFILEINFO
+  spec.csharp:
+  - uid: Innova.Prism.Library.Utilities.Shell32
+    name: Shell32
+    href: Innova.Prism.Library.Utilities.Shell32.html
+  - name: .
+  - uid: Innova.Prism.Library.Utilities.Shell32.SHFILEINFO
+    name: SHFILEINFO
+    href: Innova.Prism.Library.Utilities.Shell32.SHFILEINFO.html
+  spec.vb:
+  - uid: Innova.Prism.Library.Utilities.Shell32
+    name: Shell32
+    href: Innova.Prism.Library.Utilities.Shell32.html
+  - name: .
+  - uid: Innova.Prism.Library.Utilities.Shell32.SHFILEINFO
+    name: SHFILEINFO
+    href: Innova.Prism.Library.Utilities.Shell32.SHFILEINFO.html
+- uid: Innova.Prism.Library.Utilities.Shell32.ShowOpenWithDialog*
+  commentId: Overload:Innova.Prism.Library.Utilities.Shell32.ShowOpenWithDialog
+  href: Innova.Prism.Library.Utilities.Shell32.ShowOpenWithDialog.html#Innova_Prism_Library_Utilities_Shell32_ShowOpenWithDialog_System_String_
+  name: ShowOpenWithDialog
+  nameWithType: Shell32.ShowOpenWithDialog
+  fullName: Innova.Prism.Library.Utilities.Shell32.ShowOpenWithDialog
+memberLayout: SeparatePages

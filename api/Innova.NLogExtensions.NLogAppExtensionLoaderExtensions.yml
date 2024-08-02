@@ -1,0 +1,310 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions
+  commentId: T:Innova.NLogExtensions.NLogAppExtensionLoaderExtensions
+  id: NLogAppExtensionLoaderExtensions
+  parent: Innova.NLogExtensions
+  children:
+  - Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  - Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase``1(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  - Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.RegisterNLogServiceProviders(System.IServiceProvider)
+  langs:
+  - csharp
+  - vb
+  name: NLogAppExtensionLoaderExtensions
+  nameWithType: NLogAppExtensionLoaderExtensions
+  fullName: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions
+  type: Class
+  source:
+    id: NLogAppExtensionLoaderExtensions
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\NLogAppExtensionBuilder.cs
+    startLine: 17
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Provides extension methods for adding NLog to the database.
+  example: []
+  syntax:
+    content: public static class NLogAppExtensionLoaderExtensions
+    content.vb: Public Module NLogAppExtensionLoaderExtensions
+  inheritance:
+  - System.Object
+- uid: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  commentId: M:Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  id: AddNLogToDatabase(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  isExtensionMethod: true
+  parent: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddNLogToDatabase(IInnovaApplicationBuilderBase)
+  nameWithType: NLogAppExtensionLoaderExtensions.AddNLogToDatabase(IInnovaApplicationBuilderBase)
+  fullName: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  type: Method
+  source:
+    id: AddNLogToDatabase
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\NLogAppExtensionBuilder.cs
+    startLine: 24
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Adds NLog to the database.
+  example: []
+  syntax:
+    content: public static IInnovaApplicationBuilderBase AddNLogToDatabase(this IInnovaApplicationBuilderBase innovaApplicationBuilder)
+    parameters:
+    - id: innovaApplicationBuilder
+      type: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+      description: The <xref href="Innova.Abstractions.Builder.IInnovaApplicationBuilderBase" data-throw-if-not-resolved="false"></xref> instance.
+    return:
+      type: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+      description: The <xref href="Innova.Abstractions.Builder.IInnovaApplicationBuilderBase" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Shared Function AddNLogToDatabase(innovaApplicationBuilder As IInnovaApplicationBuilderBase) As IInnovaApplicationBuilderBase
+  overload: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase*
+- uid: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase``1(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  commentId: M:Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase``1(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  id: AddNLogToDatabase``1(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  isExtensionMethod: true
+  parent: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddNLogToDatabase<TDBLogService>(IInnovaApplicationBuilderBase)
+  nameWithType: NLogAppExtensionLoaderExtensions.AddNLogToDatabase<TDBLogService>(IInnovaApplicationBuilderBase)
+  fullName: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase<TDBLogService>(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  type: Method
+  source:
+    id: AddNLogToDatabase
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\NLogAppExtensionBuilder.cs
+    startLine: 40
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Adds NLog to the database with a custom <code class="typeparamref">TDBLogService</code>.
+  example: []
+  syntax:
+    content: 'public static IInnovaApplicationBuilderBase AddNLogToDatabase<TDBLogService>(this IInnovaApplicationBuilderBase innovaApplicationBuilder) where TDBLogService : class, IDataBaseLoggingService'
+    parameters:
+    - id: innovaApplicationBuilder
+      type: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+      description: The <xref href="Innova.Abstractions.Builder.IInnovaApplicationBuilderBase" data-throw-if-not-resolved="false"></xref> instance.
+    typeParameters:
+    - id: TDBLogService
+      description: The type of the custom database logging service.
+    return:
+      type: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+      description: The <xref href="Innova.Abstractions.Builder.IInnovaApplicationBuilderBase" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Shared Function AddNLogToDatabase(Of TDBLogService As {Class, IDataBaseLoggingService})(innovaApplicationBuilder As IInnovaApplicationBuilderBase) As IInnovaApplicationBuilderBase
+  overload: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase*
+  nameWithType.vb: NLogAppExtensionLoaderExtensions.AddNLogToDatabase(Of TDBLogService)(IInnovaApplicationBuilderBase)
+  fullName.vb: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase(Of TDBLogService)(Innova.Abstractions.Builder.IInnovaApplicationBuilderBase)
+  name.vb: AddNLogToDatabase(Of TDBLogService)(IInnovaApplicationBuilderBase)
+- uid: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddNLogServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddNLogServices(IServiceCollection)
+  nameWithType: NLogAppExtensionLoaderExtensions.AddNLogServices(IServiceCollection)
+  fullName: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    id: AddNLogServices
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\NLogAppExtensionBuilder.cs
+    startLine: 52
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Adds NLog services to the <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static void AddNLogServices(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Shared Sub AddNLogServices(services As IServiceCollection)
+  overload: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogServices*
+- uid: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.RegisterNLogServiceProviders(System.IServiceProvider)
+  commentId: M:Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.RegisterNLogServiceProviders(System.IServiceProvider)
+  id: RegisterNLogServiceProviders(System.IServiceProvider)
+  isExtensionMethod: true
+  parent: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: RegisterNLogServiceProviders(IServiceProvider)
+  nameWithType: NLogAppExtensionLoaderExtensions.RegisterNLogServiceProviders(IServiceProvider)
+  fullName: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.RegisterNLogServiceProviders(System.IServiceProvider)
+  type: Method
+  source:
+    id: RegisterNLogServiceProviders
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\NLogAppExtensionBuilder.cs
+    startLine: 67
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Registers NLog service providers.
+  example: []
+  syntax:
+    content: public static void RegisterNLogServiceProviders(this IServiceProvider serviceProvider)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+      description: The <xref href="System.IServiceProvider" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Shared Sub RegisterNLogServiceProviders(serviceProvider As IServiceProvider)
+  overload: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.RegisterNLogServiceProviders*
+references:
+- uid: Innova.NLogExtensions
+  commentId: N:Innova.NLogExtensions
+  href: Innova.html
+  name: Innova.NLogExtensions
+  nameWithType: Innova.NLogExtensions
+  fullName: Innova.NLogExtensions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.NLogExtensions
+    name: NLogExtensions
+    href: Innova.NLogExtensions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.NLogExtensions
+    name: NLogExtensions
+    href: Innova.NLogExtensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+  commentId: T:Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+  parent: Innova.Abstractions.Builder
+  href: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase.html
+  name: IInnovaApplicationBuilderBase
+  nameWithType: IInnovaApplicationBuilderBase
+  fullName: Innova.Abstractions.Builder.IInnovaApplicationBuilderBase
+- uid: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase*
+  commentId: Overload:Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase
+  href: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase.html#Innova_NLogExtensions_NLogAppExtensionLoaderExtensions_AddNLogToDatabase_Innova_Abstractions_Builder_IInnovaApplicationBuilderBase_
+  name: AddNLogToDatabase
+  nameWithType: NLogAppExtensionLoaderExtensions.AddNLogToDatabase
+  fullName: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogToDatabase
+- uid: Innova.Abstractions.Builder
+  commentId: N:Innova.Abstractions.Builder
+  href: Innova.html
+  name: Innova.Abstractions.Builder
+  nameWithType: Innova.Abstractions.Builder
+  fullName: Innova.Abstractions.Builder
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Abstractions
+    name: Abstractions
+    href: Innova.Abstractions.html
+  - name: .
+  - uid: Innova.Abstractions.Builder
+    name: Builder
+    href: Innova.Abstractions.Builder.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Abstractions
+    name: Abstractions
+    href: Innova.Abstractions.html
+  - name: .
+  - uid: Innova.Abstractions.Builder
+    name: Builder
+    href: Innova.Abstractions.Builder.html
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogServices*
+  commentId: Overload:Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogServices
+  href: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogServices.html#Innova_NLogExtensions_NLogAppExtensionLoaderExtensions_AddNLogServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddNLogServices
+  nameWithType: NLogAppExtensionLoaderExtensions.AddNLogServices
+  fullName: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.AddNLogServices
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.RegisterNLogServiceProviders*
+  commentId: Overload:Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.RegisterNLogServiceProviders
+  href: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.RegisterNLogServiceProviders.html#Innova_NLogExtensions_NLogAppExtensionLoaderExtensions_RegisterNLogServiceProviders_System_IServiceProvider_
+  name: RegisterNLogServiceProviders
+  nameWithType: NLogAppExtensionLoaderExtensions.RegisterNLogServiceProviders
+  fullName: Innova.NLogExtensions.NLogAppExtensionLoaderExtensions.RegisterNLogServiceProviders
+memberLayout: SeparatePages

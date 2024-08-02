@@ -1,0 +1,2673 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.StandardPrismApplication
+  commentId: T:Innova.Prism.Library.StandardPrismApplication
+  id: StandardPrismApplication
+  parent: Innova.Prism.Library
+  children:
+  - Innova.Prism.Library.StandardPrismApplication.#ctor
+  - Innova.Prism.Library.StandardPrismApplication.ApplicationBuilder
+  - Innova.Prism.Library.StandardPrismApplication.ConfigureDefaultRegionBehaviors(Prism.Regions.IRegionBehaviorFactory)
+  - Innova.Prism.Library.StandardPrismApplication.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Innova.Prism.Library.StandardPrismApplication.ConfigureViewModelLocator
+  - Innova.Prism.Library.StandardPrismApplication.CreateModuleCatalog
+  - Innova.Prism.Library.StandardPrismApplication.CreateShell
+  - Innova.Prism.Library.StandardPrismApplication.GetErrorMessages(System.Exception)
+  - Innova.Prism.Library.StandardPrismApplication.HandleException(System.Exception)
+  - Innova.Prism.Library.StandardPrismApplication.InitializeApplication
+  - Innova.Prism.Library.StandardPrismApplication.Logger
+  - Innova.Prism.Library.StandardPrismApplication.OnInitialized
+  - Innova.Prism.Library.StandardPrismApplication.OnStartup(System.Windows.StartupEventArgs)
+  - Innova.Prism.Library.StandardPrismApplication.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  - Innova.Prism.Library.StandardPrismApplication.SetupException
+  - Innova.Prism.Library.StandardPrismApplication.SignalExternalCommandLineArgs(System.Collections.Generic.IList{System.String})
+  - Innova.Prism.Library.StandardPrismApplication.StartSplashScreen
+  langs:
+  - csharp
+  - vb
+  name: StandardPrismApplication
+  nameWithType: StandardPrismApplication
+  fullName: Innova.Prism.Library.StandardPrismApplication
+  type: Class
+  source:
+    id: StandardPrismApplication
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 44
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  syntax:
+    content: 'public abstract class StandardPrismApplication : PrismApplication, IQueryAmbient, ISingleInstanceApp'
+    content.vb: Public MustInherit Class StandardPrismApplication Inherits PrismApplication Implements IQueryAmbient, ISingleInstanceApp
+  inheritance:
+  - System.Object
+  - System.Windows.Threading.DispatcherObject
+  - System.Windows.Application
+  - Prism.PrismApplicationBase
+  - Prism.Unity.PrismApplication
+  derivedClasses:
+  - Innova.Prism.Telerik.TelerikApplication
+  implements:
+  - System.Windows.Markup.IQueryAmbient
+  - Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp
+  inheritedMembers:
+  - Prism.Unity.PrismApplication.CreateContainerExtension
+  - Prism.Unity.PrismApplication.RegisterFrameworkExceptionTypes
+  - Prism.PrismApplicationBase.Initialize
+  - Prism.PrismApplicationBase.RegisterRequiredTypes(Prism.Ioc.IContainerRegistry)
+  - Prism.PrismApplicationBase.ConfigureRegionAdapterMappings(Prism.Regions.RegionAdapterMappings)
+  - Prism.PrismApplicationBase.InitializeShell(System.Windows.Window)
+  - Prism.PrismApplicationBase.ConfigureModuleCatalog(Prism.Modularity.IModuleCatalog)
+  - Prism.PrismApplicationBase.InitializeModules
+  - Prism.PrismApplicationBase.Container
+  - System.Windows.Application.Run
+  - System.Windows.Application.Run(System.Windows.Window)
+  - System.Windows.Application.Shutdown
+  - System.Windows.Application.Shutdown(System.Int32)
+  - System.Windows.Application.FindResource(System.Object)
+  - System.Windows.Application.TryFindResource(System.Object)
+  - System.Windows.Application.LoadComponent(System.Object,System.Uri)
+  - System.Windows.Application.LoadComponent(System.Uri)
+  - System.Windows.Application.GetResourceStream(System.Uri)
+  - System.Windows.Application.GetContentStream(System.Uri)
+  - System.Windows.Application.GetRemoteStream(System.Uri)
+  - System.Windows.Application.GetCookie(System.Uri)
+  - System.Windows.Application.SetCookie(System.Uri,System.String)
+  - System.Windows.Application.OnExit(System.Windows.ExitEventArgs)
+  - System.Windows.Application.OnActivated(System.EventArgs)
+  - System.Windows.Application.OnDeactivated(System.EventArgs)
+  - System.Windows.Application.OnSessionEnding(System.Windows.SessionEndingCancelEventArgs)
+  - System.Windows.Application.OnNavigating(System.Windows.Navigation.NavigatingCancelEventArgs)
+  - System.Windows.Application.OnNavigated(System.Windows.Navigation.NavigationEventArgs)
+  - System.Windows.Application.OnNavigationProgress(System.Windows.Navigation.NavigationProgressEventArgs)
+  - System.Windows.Application.OnNavigationFailed(System.Windows.Navigation.NavigationFailedEventArgs)
+  - System.Windows.Application.OnLoadCompleted(System.Windows.Navigation.NavigationEventArgs)
+  - System.Windows.Application.OnNavigationStopped(System.Windows.Navigation.NavigationEventArgs)
+  - System.Windows.Application.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)
+  - System.Windows.Application.Current
+  - System.Windows.Application.Windows
+  - System.Windows.Application.MainWindow
+  - System.Windows.Application.ShutdownMode
+  - System.Windows.Application.Resources
+  - System.Windows.Application.StartupUri
+  - System.Windows.Application.Properties
+  - System.Windows.Application.ResourceAssembly
+  - System.Windows.Application.Startup
+  - System.Windows.Application.Exit
+  - System.Windows.Application.Activated
+  - System.Windows.Application.Deactivated
+  - System.Windows.Application.SessionEnding
+  - System.Windows.Application.DispatcherUnhandledException
+  - System.Windows.Application.Navigating
+  - System.Windows.Application.Navigated
+  - System.Windows.Application.NavigationProgress
+  - System.Windows.Application.NavigationFailed
+  - System.Windows.Application.LoadCompleted
+  - System.Windows.Application.NavigationStopped
+  - System.Windows.Application.FragmentNavigation
+  - System.Windows.Threading.DispatcherObject.Dispatcher
+- uid: Innova.Prism.Library.StandardPrismApplication.ApplicationBuilder
+  commentId: P:Innova.Prism.Library.StandardPrismApplication.ApplicationBuilder
+  id: ApplicationBuilder
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: ApplicationBuilder
+  nameWithType: StandardPrismApplication.ApplicationBuilder
+  fullName: Innova.Prism.Library.StandardPrismApplication.ApplicationBuilder
+  type: Property
+  source:
+    id: ApplicationBuilder
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 47
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  syntax:
+    content: protected IInnovaApplicationBuilder ApplicationBuilder { get; set; }
+    parameters: []
+    return:
+      type: Innova.Prism.Library.IInnovaApplicationBuilder
+    content.vb: Protected Property ApplicationBuilder As IInnovaApplicationBuilder
+  overload: Innova.Prism.Library.StandardPrismApplication.ApplicationBuilder*
+- uid: Innova.Prism.Library.StandardPrismApplication.Logger
+  commentId: P:Innova.Prism.Library.StandardPrismApplication.Logger
+  id: Logger
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: Logger
+  nameWithType: StandardPrismApplication.Logger
+  fullName: Innova.Prism.Library.StandardPrismApplication.Logger
+  type: Property
+  source:
+    id: Logger
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 48
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  syntax:
+    content: protected ILogger<StandardPrismApplication> Logger { get; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.StandardPrismApplication}
+    content.vb: Protected Property Logger As ILogger(Of StandardPrismApplication)
+  overload: Innova.Prism.Library.StandardPrismApplication.Logger*
+- uid: Innova.Prism.Library.StandardPrismApplication.#ctor
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.#ctor
+  id: '#ctor'
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: StandardPrismApplication()
+  nameWithType: StandardPrismApplication.StandardPrismApplication()
+  fullName: Innova.Prism.Library.StandardPrismApplication.StandardPrismApplication()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 50
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  syntax:
+    content: public StandardPrismApplication()
+    content.vb: Public Sub New()
+  overload: Innova.Prism.Library.StandardPrismApplication.#ctor*
+  nameWithType.vb: StandardPrismApplication.New()
+  fullName.vb: Innova.Prism.Library.StandardPrismApplication.New()
+  name.vb: New()
+- uid: Innova.Prism.Library.StandardPrismApplication.StartSplashScreen
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.StartSplashScreen
+  id: StartSplashScreen
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: StartSplashScreen()
+  nameWithType: StandardPrismApplication.StartSplashScreen()
+  fullName: Innova.Prism.Library.StandardPrismApplication.StartSplashScreen()
+  type: Method
+  source:
+    id: StartSplashScreen
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 58
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  syntax:
+    content: protected virtual void StartSplashScreen()
+    content.vb: Protected Overridable Sub StartSplashScreen()
+  overload: Innova.Prism.Library.StandardPrismApplication.StartSplashScreen*
+- uid: Innova.Prism.Library.StandardPrismApplication.SetupException
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.SetupException
+  id: SetupException
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: SetupException()
+  nameWithType: StandardPrismApplication.SetupException()
+  fullName: Innova.Prism.Library.StandardPrismApplication.SetupException()
+  type: Method
+  source:
+    id: SetupException
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 66
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  syntax:
+    content: protected void SetupException()
+    content.vb: Protected Sub SetupException()
+  overload: Innova.Prism.Library.StandardPrismApplication.SetupException*
+- uid: Innova.Prism.Library.StandardPrismApplication.OnStartup(System.Windows.StartupEventArgs)
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.OnStartup(System.Windows.StartupEventArgs)
+  id: OnStartup(System.Windows.StartupEventArgs)
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: OnStartup(StartupEventArgs)
+  nameWithType: StandardPrismApplication.OnStartup(StartupEventArgs)
+  fullName: Innova.Prism.Library.StandardPrismApplication.OnStartup(System.Windows.StartupEventArgs)
+  type: Method
+  source:
+    id: OnStartup
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 73
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Raises the System.Windows.Application.Startup event.
+  example: []
+  syntax:
+    content: protected override void OnStartup(StartupEventArgs e)
+    parameters:
+    - id: e
+      type: System.Windows.StartupEventArgs
+      description: A System.Windows.StartupEventArgs that contains the event data.
+    content.vb: Protected Overrides Sub OnStartup(e As StartupEventArgs)
+  overridden: Prism.PrismApplicationBase.OnStartup(System.Windows.StartupEventArgs)
+  overload: Innova.Prism.Library.StandardPrismApplication.OnStartup*
+- uid: Innova.Prism.Library.StandardPrismApplication.CreateShell
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.CreateShell
+  id: CreateShell
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: CreateShell()
+  nameWithType: StandardPrismApplication.CreateShell()
+  fullName: Innova.Prism.Library.StandardPrismApplication.CreateShell()
+  type: Method
+  source:
+    id: CreateShell
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 82
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Creates the shell or main window of the application.
+  example: []
+  syntax:
+    content: protected override Window CreateShell()
+    return:
+      type: System.Windows.Window
+      description: The shell of the application.
+    content.vb: Protected Overrides Function CreateShell() As Window
+  overridden: Prism.PrismApplicationBase.CreateShell
+  overload: Innova.Prism.Library.StandardPrismApplication.CreateShell*
+- uid: Innova.Prism.Library.StandardPrismApplication.InitializeApplication
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.InitializeApplication
+  id: InitializeApplication
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: InitializeApplication()
+  nameWithType: StandardPrismApplication.InitializeApplication()
+  fullName: Innova.Prism.Library.StandardPrismApplication.InitializeApplication()
+  type: Method
+  source:
+    id: InitializeApplication
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 90
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  syntax:
+    content: protected virtual void InitializeApplication()
+    content.vb: Protected Overridable Sub InitializeApplication()
+  overload: Innova.Prism.Library.StandardPrismApplication.InitializeApplication*
+- uid: Innova.Prism.Library.StandardPrismApplication.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  id: RegisterTypes(Prism.Ioc.IContainerRegistry)
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: RegisterTypes(IContainerRegistry)
+  nameWithType: StandardPrismApplication.RegisterTypes(IContainerRegistry)
+  fullName: Innova.Prism.Library.StandardPrismApplication.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  type: Method
+  source:
+    id: RegisterTypes
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 92
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Used to register types with the container that will be used by your application.
+  example: []
+  syntax:
+    content: protected override void RegisterTypes(IContainerRegistry containerRegistry)
+    parameters:
+    - id: containerRegistry
+      type: Prism.Ioc.IContainerRegistry
+    content.vb: Protected Overrides Sub RegisterTypes(containerRegistry As IContainerRegistry)
+  overridden: Prism.PrismApplicationBase.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  overload: Innova.Prism.Library.StandardPrismApplication.RegisterTypes*
+- uid: Innova.Prism.Library.StandardPrismApplication.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: ConfigureServices(IServiceCollection)
+  nameWithType: StandardPrismApplication.ConfigureServices(IServiceCollection)
+  fullName: Innova.Prism.Library.StandardPrismApplication.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    id: ConfigureServices
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 109
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  syntax:
+    content: >-
+      [Obsolete("ConfigureServices is deprecated, please use ApplicationBuilder.Services instead.")]
+
+      protected virtual void ConfigureServices(IServiceCollection serviceCollection)
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: >-
+      <Obsolete("ConfigureServices is deprecated, please use ApplicationBuilder.Services instead.")>
+
+      Protected Overridable Sub ConfigureServices(serviceCollection As IServiceCollection)
+  overload: Innova.Prism.Library.StandardPrismApplication.ConfigureServices*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ConfigureServices is deprecated, please use ApplicationBuilder.Services instead.
+- uid: Innova.Prism.Library.StandardPrismApplication.ConfigureViewModelLocator
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.ConfigureViewModelLocator
+  id: ConfigureViewModelLocator
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: ConfigureViewModelLocator()
+  nameWithType: StandardPrismApplication.ConfigureViewModelLocator()
+  fullName: Innova.Prism.Library.StandardPrismApplication.ConfigureViewModelLocator()
+  type: Method
+  source:
+    id: ConfigureViewModelLocator
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 148
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Configures the <xref href="Prism.Mvvm.ViewModelLocator" data-throw-if-not-resolved="false"></xref> used by Prism.
+  example: []
+  syntax:
+    content: protected override void ConfigureViewModelLocator()
+    content.vb: Protected Overrides Sub ConfigureViewModelLocator()
+  overridden: Prism.PrismApplicationBase.ConfigureViewModelLocator
+  overload: Innova.Prism.Library.StandardPrismApplication.ConfigureViewModelLocator*
+- uid: Innova.Prism.Library.StandardPrismApplication.OnInitialized
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.OnInitialized
+  id: OnInitialized
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: OnInitialized()
+  nameWithType: StandardPrismApplication.OnInitialized()
+  fullName: Innova.Prism.Library.StandardPrismApplication.OnInitialized()
+  type: Method
+  source:
+    id: OnInitialized
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 167
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Contains actions that should occur last.
+  example: []
+  syntax:
+    content: protected override void OnInitialized()
+    content.vb: Protected Overrides Sub OnInitialized()
+  overridden: Prism.PrismApplicationBase.OnInitialized
+  overload: Innova.Prism.Library.StandardPrismApplication.OnInitialized*
+- uid: Innova.Prism.Library.StandardPrismApplication.HandleException(System.Exception)
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.HandleException(System.Exception)
+  id: HandleException(System.Exception)
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: HandleException(Exception)
+  nameWithType: StandardPrismApplication.HandleException(Exception)
+  fullName: Innova.Prism.Library.StandardPrismApplication.HandleException(System.Exception)
+  type: Method
+  source:
+    id: HandleException
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 198
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  syntax:
+    content: protected virtual void HandleException(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+    content.vb: Protected Overridable Sub HandleException(ex As Exception)
+  overload: Innova.Prism.Library.StandardPrismApplication.HandleException*
+- uid: Innova.Prism.Library.StandardPrismApplication.GetErrorMessages(System.Exception)
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.GetErrorMessages(System.Exception)
+  id: GetErrorMessages(System.Exception)
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: GetErrorMessages(Exception)
+  nameWithType: StandardPrismApplication.GetErrorMessages(Exception)
+  fullName: Innova.Prism.Library.StandardPrismApplication.GetErrorMessages(System.Exception)
+  type: Method
+  source:
+    id: GetErrorMessages
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 258
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  syntax:
+    content: protected string GetErrorMessages(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+    return:
+      type: System.String
+    content.vb: Protected Function GetErrorMessages(ex As Exception) As String
+  overload: Innova.Prism.Library.StandardPrismApplication.GetErrorMessages*
+- uid: Innova.Prism.Library.StandardPrismApplication.SignalExternalCommandLineArgs(System.Collections.Generic.IList{System.String})
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.SignalExternalCommandLineArgs(System.Collections.Generic.IList{System.String})
+  id: SignalExternalCommandLineArgs(System.Collections.Generic.IList{System.String})
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: SignalExternalCommandLineArgs(IList<string>)
+  nameWithType: StandardPrismApplication.SignalExternalCommandLineArgs(IList<string>)
+  fullName: Innova.Prism.Library.StandardPrismApplication.SignalExternalCommandLineArgs(System.Collections.Generic.IList<string>)
+  type: Method
+  source:
+    id: SignalExternalCommandLineArgs
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 271
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Signals the external command line arguments to the application.
+  example: []
+  syntax:
+    content: public virtual bool SignalExternalCommandLineArgs(IList<string> args)
+    parameters:
+    - id: args
+      type: System.Collections.Generic.IList{System.String}
+      description: The list of command line arguments.
+    return:
+      type: System.Boolean
+      description: True if the signal was successful; otherwise, false.
+    content.vb: Public Overridable Function SignalExternalCommandLineArgs(args As IList(Of String)) As Boolean
+  overload: Innova.Prism.Library.StandardPrismApplication.SignalExternalCommandLineArgs*
+  implements:
+  - Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp.SignalExternalCommandLineArgs(System.Collections.Generic.IList{System.String})
+  nameWithType.vb: StandardPrismApplication.SignalExternalCommandLineArgs(IList(Of String))
+  fullName.vb: Innova.Prism.Library.StandardPrismApplication.SignalExternalCommandLineArgs(System.Collections.Generic.IList(Of String))
+  name.vb: SignalExternalCommandLineArgs(IList(Of String))
+- uid: Innova.Prism.Library.StandardPrismApplication.ConfigureDefaultRegionBehaviors(Prism.Regions.IRegionBehaviorFactory)
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.ConfigureDefaultRegionBehaviors(Prism.Regions.IRegionBehaviorFactory)
+  id: ConfigureDefaultRegionBehaviors(Prism.Regions.IRegionBehaviorFactory)
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: ConfigureDefaultRegionBehaviors(IRegionBehaviorFactory)
+  nameWithType: StandardPrismApplication.ConfigureDefaultRegionBehaviors(IRegionBehaviorFactory)
+  fullName: Innova.Prism.Library.StandardPrismApplication.ConfigureDefaultRegionBehaviors(Prism.Regions.IRegionBehaviorFactory)
+  type: Method
+  source:
+    id: ConfigureDefaultRegionBehaviors
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 278
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: >-
+    Configures the <xref href="Prism.Regions.IRegionBehaviorFactory" data-throw-if-not-resolved="false"></xref>. 
+
+    This will be the list of default behaviors that will be added to a region.
+  example: []
+  syntax:
+    content: protected override void ConfigureDefaultRegionBehaviors(IRegionBehaviorFactory regionBehaviors)
+    parameters:
+    - id: regionBehaviors
+      type: Prism.Regions.IRegionBehaviorFactory
+    content.vb: Protected Overrides Sub ConfigureDefaultRegionBehaviors(regionBehaviors As IRegionBehaviorFactory)
+  overridden: Prism.PrismApplicationBase.ConfigureDefaultRegionBehaviors(Prism.Regions.IRegionBehaviorFactory)
+  overload: Innova.Prism.Library.StandardPrismApplication.ConfigureDefaultRegionBehaviors*
+- uid: Innova.Prism.Library.StandardPrismApplication.CreateModuleCatalog
+  commentId: M:Innova.Prism.Library.StandardPrismApplication.CreateModuleCatalog
+  id: CreateModuleCatalog
+  parent: Innova.Prism.Library.StandardPrismApplication
+  langs:
+  - csharp
+  - vb
+  name: CreateModuleCatalog()
+  nameWithType: StandardPrismApplication.CreateModuleCatalog()
+  fullName: Innova.Prism.Library.StandardPrismApplication.CreateModuleCatalog()
+  type: Method
+  source:
+    id: CreateModuleCatalog
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\StandardPrismApplication.cs
+    startLine: 286
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library
+  summary: Creates the <xref href="Prism.Modularity.IModuleCatalog" data-throw-if-not-resolved="false"></xref> used by Prism.
+  remarks: The base implementation returns a new ModuleCatalog.
+  example: []
+  syntax:
+    content: protected override IModuleCatalog CreateModuleCatalog()
+    return:
+      type: Prism.Modularity.IModuleCatalog
+    content.vb: Protected Overrides Function CreateModuleCatalog() As IModuleCatalog
+  overridden: Prism.PrismApplicationBase.CreateModuleCatalog
+  overload: Innova.Prism.Library.StandardPrismApplication.CreateModuleCatalog*
+references:
+- uid: Innova.Prism.Library
+  commentId: N:Innova.Prism.Library
+  href: Innova.html
+  name: Innova.Prism.Library
+  nameWithType: Innova.Prism.Library
+  fullName: Innova.Prism.Library
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Windows.Threading.DispatcherObject
+  commentId: T:System.Windows.Threading.DispatcherObject
+  parent: System.Windows.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.threading.dispatcherobject
+  name: DispatcherObject
+  nameWithType: DispatcherObject
+  fullName: System.Windows.Threading.DispatcherObject
+- uid: System.Windows.Application
+  commentId: T:System.Windows.Application
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application
+  name: Application
+  nameWithType: Application
+  fullName: System.Windows.Application
+- uid: Prism.PrismApplicationBase
+  commentId: T:Prism.PrismApplicationBase
+  parent: Prism
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: PrismApplicationBase
+  nameWithType: PrismApplicationBase
+  fullName: Prism.PrismApplicationBase
+- uid: Prism.Unity.PrismApplication
+  commentId: T:Prism.Unity.PrismApplication
+  parent: Prism.Unity
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Unity.Wpf/PrismApplication.cs
+  name: PrismApplication
+  nameWithType: PrismApplication
+  fullName: Prism.Unity.PrismApplication
+- uid: System.Windows.Markup.IQueryAmbient
+  commentId: T:System.Windows.Markup.IQueryAmbient
+  parent: System.Windows.Markup
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.markup.iqueryambient
+  name: IQueryAmbient
+  nameWithType: IQueryAmbient
+  fullName: System.Windows.Markup.IQueryAmbient
+- uid: Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp
+  commentId: T:Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp
+  parent: Innova.Prism.Library.ClassDefinitions
+  href: Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp.html
+  name: ISingleInstanceApp
+  nameWithType: ISingleInstanceApp
+  fullName: Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp
+- uid: Prism.Unity.PrismApplication.CreateContainerExtension
+  commentId: M:Prism.Unity.PrismApplication.CreateContainerExtension
+  parent: Prism.Unity.PrismApplication
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Unity.Wpf/PrismApplication.cs
+  name: CreateContainerExtension()
+  nameWithType: PrismApplication.CreateContainerExtension()
+  fullName: Prism.Unity.PrismApplication.CreateContainerExtension()
+  spec.csharp:
+  - uid: Prism.Unity.PrismApplication.CreateContainerExtension
+    name: CreateContainerExtension
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Unity.Wpf/PrismApplication.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.Unity.PrismApplication.CreateContainerExtension
+    name: CreateContainerExtension
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Unity.Wpf/PrismApplication.cs
+  - name: (
+  - name: )
+- uid: Prism.Unity.PrismApplication.RegisterFrameworkExceptionTypes
+  commentId: M:Prism.Unity.PrismApplication.RegisterFrameworkExceptionTypes
+  parent: Prism.Unity.PrismApplication
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Unity.Wpf/PrismApplication.cs
+  name: RegisterFrameworkExceptionTypes()
+  nameWithType: PrismApplication.RegisterFrameworkExceptionTypes()
+  fullName: Prism.Unity.PrismApplication.RegisterFrameworkExceptionTypes()
+  spec.csharp:
+  - uid: Prism.Unity.PrismApplication.RegisterFrameworkExceptionTypes
+    name: RegisterFrameworkExceptionTypes
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Unity.Wpf/PrismApplication.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.Unity.PrismApplication.RegisterFrameworkExceptionTypes
+    name: RegisterFrameworkExceptionTypes
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Unity.Wpf/PrismApplication.cs
+  - name: (
+  - name: )
+- uid: Prism.PrismApplicationBase.Initialize
+  commentId: M:Prism.PrismApplicationBase.Initialize
+  parent: Prism.PrismApplicationBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: Initialize()
+  nameWithType: PrismApplicationBase.Initialize()
+  fullName: Prism.PrismApplicationBase.Initialize()
+  spec.csharp:
+  - uid: Prism.PrismApplicationBase.Initialize
+    name: Initialize
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.PrismApplicationBase.Initialize
+    name: Initialize
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - name: )
+- uid: Prism.PrismApplicationBase.RegisterRequiredTypes(Prism.Ioc.IContainerRegistry)
+  commentId: M:Prism.PrismApplicationBase.RegisterRequiredTypes(Prism.Ioc.IContainerRegistry)
+  parent: Prism.PrismApplicationBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: RegisterRequiredTypes(IContainerRegistry)
+  nameWithType: PrismApplicationBase.RegisterRequiredTypes(IContainerRegistry)
+  fullName: Prism.PrismApplicationBase.RegisterRequiredTypes(Prism.Ioc.IContainerRegistry)
+  spec.csharp:
+  - uid: Prism.PrismApplicationBase.RegisterRequiredTypes(Prism.Ioc.IContainerRegistry)
+    name: RegisterRequiredTypes
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - uid: Prism.Ioc.IContainerRegistry
+    name: IContainerRegistry
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Prism.PrismApplicationBase.RegisterRequiredTypes(Prism.Ioc.IContainerRegistry)
+    name: RegisterRequiredTypes
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - uid: Prism.Ioc.IContainerRegistry
+    name: IContainerRegistry
+    isExternal: true
+  - name: )
+- uid: Prism.PrismApplicationBase.ConfigureRegionAdapterMappings(Prism.Regions.RegionAdapterMappings)
+  commentId: M:Prism.PrismApplicationBase.ConfigureRegionAdapterMappings(Prism.Regions.RegionAdapterMappings)
+  parent: Prism.PrismApplicationBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: ConfigureRegionAdapterMappings(RegionAdapterMappings)
+  nameWithType: PrismApplicationBase.ConfigureRegionAdapterMappings(RegionAdapterMappings)
+  fullName: Prism.PrismApplicationBase.ConfigureRegionAdapterMappings(Prism.Regions.RegionAdapterMappings)
+  spec.csharp:
+  - uid: Prism.PrismApplicationBase.ConfigureRegionAdapterMappings(Prism.Regions.RegionAdapterMappings)
+    name: ConfigureRegionAdapterMappings
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - uid: Prism.Regions.RegionAdapterMappings
+    name: RegionAdapterMappings
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/RegionAdapterMappings.cs
+  - name: )
+  spec.vb:
+  - uid: Prism.PrismApplicationBase.ConfigureRegionAdapterMappings(Prism.Regions.RegionAdapterMappings)
+    name: ConfigureRegionAdapterMappings
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - uid: Prism.Regions.RegionAdapterMappings
+    name: RegionAdapterMappings
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/RegionAdapterMappings.cs
+  - name: )
+- uid: Prism.PrismApplicationBase.InitializeShell(System.Windows.Window)
+  commentId: M:Prism.PrismApplicationBase.InitializeShell(System.Windows.Window)
+  parent: Prism.PrismApplicationBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: InitializeShell(Window)
+  nameWithType: PrismApplicationBase.InitializeShell(Window)
+  fullName: Prism.PrismApplicationBase.InitializeShell(System.Windows.Window)
+  spec.csharp:
+  - uid: Prism.PrismApplicationBase.InitializeShell(System.Windows.Window)
+    name: InitializeShell
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - uid: System.Windows.Window
+    name: Window
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.window
+  - name: )
+  spec.vb:
+  - uid: Prism.PrismApplicationBase.InitializeShell(System.Windows.Window)
+    name: InitializeShell
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - uid: System.Windows.Window
+    name: Window
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.window
+  - name: )
+- uid: Prism.PrismApplicationBase.ConfigureModuleCatalog(Prism.Modularity.IModuleCatalog)
+  commentId: M:Prism.PrismApplicationBase.ConfigureModuleCatalog(Prism.Modularity.IModuleCatalog)
+  parent: Prism.PrismApplicationBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: ConfigureModuleCatalog(IModuleCatalog)
+  nameWithType: PrismApplicationBase.ConfigureModuleCatalog(IModuleCatalog)
+  fullName: Prism.PrismApplicationBase.ConfigureModuleCatalog(Prism.Modularity.IModuleCatalog)
+  spec.csharp:
+  - uid: Prism.PrismApplicationBase.ConfigureModuleCatalog(Prism.Modularity.IModuleCatalog)
+    name: ConfigureModuleCatalog
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - uid: Prism.Modularity.IModuleCatalog
+    name: IModuleCatalog
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Prism.PrismApplicationBase.ConfigureModuleCatalog(Prism.Modularity.IModuleCatalog)
+    name: ConfigureModuleCatalog
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - uid: Prism.Modularity.IModuleCatalog
+    name: IModuleCatalog
+    isExternal: true
+  - name: )
+- uid: Prism.PrismApplicationBase.InitializeModules
+  commentId: M:Prism.PrismApplicationBase.InitializeModules
+  parent: Prism.PrismApplicationBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: InitializeModules()
+  nameWithType: PrismApplicationBase.InitializeModules()
+  fullName: Prism.PrismApplicationBase.InitializeModules()
+  spec.csharp:
+  - uid: Prism.PrismApplicationBase.InitializeModules
+    name: InitializeModules
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.PrismApplicationBase.InitializeModules
+    name: InitializeModules
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - name: )
+- uid: Prism.PrismApplicationBase.Container
+  commentId: P:Prism.PrismApplicationBase.Container
+  parent: Prism.PrismApplicationBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: Container
+  nameWithType: PrismApplicationBase.Container
+  fullName: Prism.PrismApplicationBase.Container
+- uid: System.Windows.Application.Run
+  commentId: M:System.Windows.Application.Run
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.run#system-windows-application-run
+  name: Run()
+  nameWithType: Application.Run()
+  fullName: System.Windows.Application.Run()
+  spec.csharp:
+  - uid: System.Windows.Application.Run
+    name: Run
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.run#system-windows-application-run
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.Run
+    name: Run
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.run#system-windows-application-run
+  - name: (
+  - name: )
+- uid: System.Windows.Application.Run(System.Windows.Window)
+  commentId: M:System.Windows.Application.Run(System.Windows.Window)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.run#system-windows-application-run(system-windows-window)
+  name: Run(Window)
+  nameWithType: Application.Run(Window)
+  fullName: System.Windows.Application.Run(System.Windows.Window)
+  spec.csharp:
+  - uid: System.Windows.Application.Run(System.Windows.Window)
+    name: Run
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.run#system-windows-application-run(system-windows-window)
+  - name: (
+  - uid: System.Windows.Window
+    name: Window
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.window
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.Run(System.Windows.Window)
+    name: Run
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.run#system-windows-application-run(system-windows-window)
+  - name: (
+  - uid: System.Windows.Window
+    name: Window
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.window
+  - name: )
+- uid: System.Windows.Application.Shutdown
+  commentId: M:System.Windows.Application.Shutdown
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.shutdown#system-windows-application-shutdown
+  name: Shutdown()
+  nameWithType: Application.Shutdown()
+  fullName: System.Windows.Application.Shutdown()
+  spec.csharp:
+  - uid: System.Windows.Application.Shutdown
+    name: Shutdown
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.shutdown#system-windows-application-shutdown
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.Shutdown
+    name: Shutdown
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.shutdown#system-windows-application-shutdown
+  - name: (
+  - name: )
+- uid: System.Windows.Application.Shutdown(System.Int32)
+  commentId: M:System.Windows.Application.Shutdown(System.Int32)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.shutdown#system-windows-application-shutdown(system-int32)
+  name: Shutdown(int)
+  nameWithType: Application.Shutdown(int)
+  fullName: System.Windows.Application.Shutdown(int)
+  nameWithType.vb: Application.Shutdown(Integer)
+  fullName.vb: System.Windows.Application.Shutdown(Integer)
+  name.vb: Shutdown(Integer)
+  spec.csharp:
+  - uid: System.Windows.Application.Shutdown(System.Int32)
+    name: Shutdown
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.shutdown#system-windows-application-shutdown(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.Shutdown(System.Int32)
+    name: Shutdown
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.shutdown#system-windows-application-shutdown(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Windows.Application.FindResource(System.Object)
+  commentId: M:System.Windows.Application.FindResource(System.Object)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.findresource
+  name: FindResource(object)
+  nameWithType: Application.FindResource(object)
+  fullName: System.Windows.Application.FindResource(object)
+  nameWithType.vb: Application.FindResource(Object)
+  fullName.vb: System.Windows.Application.FindResource(Object)
+  name.vb: FindResource(Object)
+  spec.csharp:
+  - uid: System.Windows.Application.FindResource(System.Object)
+    name: FindResource
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.findresource
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.FindResource(System.Object)
+    name: FindResource
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.findresource
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Windows.Application.TryFindResource(System.Object)
+  commentId: M:System.Windows.Application.TryFindResource(System.Object)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.tryfindresource
+  name: TryFindResource(object)
+  nameWithType: Application.TryFindResource(object)
+  fullName: System.Windows.Application.TryFindResource(object)
+  nameWithType.vb: Application.TryFindResource(Object)
+  fullName.vb: System.Windows.Application.TryFindResource(Object)
+  name.vb: TryFindResource(Object)
+  spec.csharp:
+  - uid: System.Windows.Application.TryFindResource(System.Object)
+    name: TryFindResource
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.tryfindresource
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.TryFindResource(System.Object)
+    name: TryFindResource
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.tryfindresource
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Windows.Application.LoadComponent(System.Object,System.Uri)
+  commentId: M:System.Windows.Application.LoadComponent(System.Object,System.Uri)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.loadcomponent#system-windows-application-loadcomponent(system-object-system-uri)
+  name: LoadComponent(object, Uri)
+  nameWithType: Application.LoadComponent(object, Uri)
+  fullName: System.Windows.Application.LoadComponent(object, System.Uri)
+  nameWithType.vb: Application.LoadComponent(Object, Uri)
+  fullName.vb: System.Windows.Application.LoadComponent(Object, System.Uri)
+  name.vb: LoadComponent(Object, Uri)
+  spec.csharp:
+  - uid: System.Windows.Application.LoadComponent(System.Object,System.Uri)
+    name: LoadComponent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.loadcomponent#system-windows-application-loadcomponent(system-object-system-uri)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.LoadComponent(System.Object,System.Uri)
+    name: LoadComponent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.loadcomponent#system-windows-application-loadcomponent(system-object-system-uri)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+- uid: System.Windows.Application.LoadComponent(System.Uri)
+  commentId: M:System.Windows.Application.LoadComponent(System.Uri)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.loadcomponent#system-windows-application-loadcomponent(system-uri)
+  name: LoadComponent(Uri)
+  nameWithType: Application.LoadComponent(Uri)
+  fullName: System.Windows.Application.LoadComponent(System.Uri)
+  spec.csharp:
+  - uid: System.Windows.Application.LoadComponent(System.Uri)
+    name: LoadComponent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.loadcomponent#system-windows-application-loadcomponent(system-uri)
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.LoadComponent(System.Uri)
+    name: LoadComponent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.loadcomponent#system-windows-application-loadcomponent(system-uri)
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+- uid: System.Windows.Application.GetResourceStream(System.Uri)
+  commentId: M:System.Windows.Application.GetResourceStream(System.Uri)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.getresourcestream
+  name: GetResourceStream(Uri)
+  nameWithType: Application.GetResourceStream(Uri)
+  fullName: System.Windows.Application.GetResourceStream(System.Uri)
+  spec.csharp:
+  - uid: System.Windows.Application.GetResourceStream(System.Uri)
+    name: GetResourceStream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.getresourcestream
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.GetResourceStream(System.Uri)
+    name: GetResourceStream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.getresourcestream
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+- uid: System.Windows.Application.GetContentStream(System.Uri)
+  commentId: M:System.Windows.Application.GetContentStream(System.Uri)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.getcontentstream
+  name: GetContentStream(Uri)
+  nameWithType: Application.GetContentStream(Uri)
+  fullName: System.Windows.Application.GetContentStream(System.Uri)
+  spec.csharp:
+  - uid: System.Windows.Application.GetContentStream(System.Uri)
+    name: GetContentStream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.getcontentstream
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.GetContentStream(System.Uri)
+    name: GetContentStream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.getcontentstream
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+- uid: System.Windows.Application.GetRemoteStream(System.Uri)
+  commentId: M:System.Windows.Application.GetRemoteStream(System.Uri)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.getremotestream
+  name: GetRemoteStream(Uri)
+  nameWithType: Application.GetRemoteStream(Uri)
+  fullName: System.Windows.Application.GetRemoteStream(System.Uri)
+  spec.csharp:
+  - uid: System.Windows.Application.GetRemoteStream(System.Uri)
+    name: GetRemoteStream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.getremotestream
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.GetRemoteStream(System.Uri)
+    name: GetRemoteStream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.getremotestream
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+- uid: System.Windows.Application.GetCookie(System.Uri)
+  commentId: M:System.Windows.Application.GetCookie(System.Uri)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.getcookie
+  name: GetCookie(Uri)
+  nameWithType: Application.GetCookie(Uri)
+  fullName: System.Windows.Application.GetCookie(System.Uri)
+  spec.csharp:
+  - uid: System.Windows.Application.GetCookie(System.Uri)
+    name: GetCookie
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.getcookie
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.GetCookie(System.Uri)
+    name: GetCookie
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.getcookie
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: )
+- uid: System.Windows.Application.SetCookie(System.Uri,System.String)
+  commentId: M:System.Windows.Application.SetCookie(System.Uri,System.String)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.setcookie
+  name: SetCookie(Uri, string)
+  nameWithType: Application.SetCookie(Uri, string)
+  fullName: System.Windows.Application.SetCookie(System.Uri, string)
+  nameWithType.vb: Application.SetCookie(Uri, String)
+  fullName.vb: System.Windows.Application.SetCookie(System.Uri, String)
+  name.vb: SetCookie(Uri, String)
+  spec.csharp:
+  - uid: System.Windows.Application.SetCookie(System.Uri,System.String)
+    name: SetCookie
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.setcookie
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.SetCookie(System.Uri,System.String)
+    name: SetCookie
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.setcookie
+  - name: (
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uri
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Windows.Application.OnExit(System.Windows.ExitEventArgs)
+  commentId: M:System.Windows.Application.OnExit(System.Windows.ExitEventArgs)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.onexit
+  name: OnExit(ExitEventArgs)
+  nameWithType: Application.OnExit(ExitEventArgs)
+  fullName: System.Windows.Application.OnExit(System.Windows.ExitEventArgs)
+  spec.csharp:
+  - uid: System.Windows.Application.OnExit(System.Windows.ExitEventArgs)
+    name: OnExit
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onexit
+  - name: (
+  - uid: System.Windows.ExitEventArgs
+    name: ExitEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.exiteventargs
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.OnExit(System.Windows.ExitEventArgs)
+    name: OnExit
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onexit
+  - name: (
+  - uid: System.Windows.ExitEventArgs
+    name: ExitEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.exiteventargs
+  - name: )
+- uid: System.Windows.Application.OnActivated(System.EventArgs)
+  commentId: M:System.Windows.Application.OnActivated(System.EventArgs)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.onactivated
+  name: OnActivated(EventArgs)
+  nameWithType: Application.OnActivated(EventArgs)
+  fullName: System.Windows.Application.OnActivated(System.EventArgs)
+  spec.csharp:
+  - uid: System.Windows.Application.OnActivated(System.EventArgs)
+    name: OnActivated
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onactivated
+  - name: (
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.OnActivated(System.EventArgs)
+    name: OnActivated
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onactivated
+  - name: (
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: )
+- uid: System.Windows.Application.OnDeactivated(System.EventArgs)
+  commentId: M:System.Windows.Application.OnDeactivated(System.EventArgs)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.ondeactivated
+  name: OnDeactivated(EventArgs)
+  nameWithType: Application.OnDeactivated(EventArgs)
+  fullName: System.Windows.Application.OnDeactivated(System.EventArgs)
+  spec.csharp:
+  - uid: System.Windows.Application.OnDeactivated(System.EventArgs)
+    name: OnDeactivated
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.ondeactivated
+  - name: (
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.OnDeactivated(System.EventArgs)
+    name: OnDeactivated
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.ondeactivated
+  - name: (
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: )
+- uid: System.Windows.Application.OnSessionEnding(System.Windows.SessionEndingCancelEventArgs)
+  commentId: M:System.Windows.Application.OnSessionEnding(System.Windows.SessionEndingCancelEventArgs)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.onsessionending
+  name: OnSessionEnding(SessionEndingCancelEventArgs)
+  nameWithType: Application.OnSessionEnding(SessionEndingCancelEventArgs)
+  fullName: System.Windows.Application.OnSessionEnding(System.Windows.SessionEndingCancelEventArgs)
+  spec.csharp:
+  - uid: System.Windows.Application.OnSessionEnding(System.Windows.SessionEndingCancelEventArgs)
+    name: OnSessionEnding
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onsessionending
+  - name: (
+  - uid: System.Windows.SessionEndingCancelEventArgs
+    name: SessionEndingCancelEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.sessionendingcanceleventargs
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.OnSessionEnding(System.Windows.SessionEndingCancelEventArgs)
+    name: OnSessionEnding
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onsessionending
+  - name: (
+  - uid: System.Windows.SessionEndingCancelEventArgs
+    name: SessionEndingCancelEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.sessionendingcanceleventargs
+  - name: )
+- uid: System.Windows.Application.OnNavigating(System.Windows.Navigation.NavigatingCancelEventArgs)
+  commentId: M:System.Windows.Application.OnNavigating(System.Windows.Navigation.NavigatingCancelEventArgs)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigating
+  name: OnNavigating(NavigatingCancelEventArgs)
+  nameWithType: Application.OnNavigating(NavigatingCancelEventArgs)
+  fullName: System.Windows.Application.OnNavigating(System.Windows.Navigation.NavigatingCancelEventArgs)
+  spec.csharp:
+  - uid: System.Windows.Application.OnNavigating(System.Windows.Navigation.NavigatingCancelEventArgs)
+    name: OnNavigating
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigating
+  - name: (
+  - uid: System.Windows.Navigation.NavigatingCancelEventArgs
+    name: NavigatingCancelEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.navigation.navigatingcanceleventargs
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.OnNavigating(System.Windows.Navigation.NavigatingCancelEventArgs)
+    name: OnNavigating
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigating
+  - name: (
+  - uid: System.Windows.Navigation.NavigatingCancelEventArgs
+    name: NavigatingCancelEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.navigation.navigatingcanceleventargs
+  - name: )
+- uid: System.Windows.Application.OnNavigated(System.Windows.Navigation.NavigationEventArgs)
+  commentId: M:System.Windows.Application.OnNavigated(System.Windows.Navigation.NavigationEventArgs)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigated
+  name: OnNavigated(NavigationEventArgs)
+  nameWithType: Application.OnNavigated(NavigationEventArgs)
+  fullName: System.Windows.Application.OnNavigated(System.Windows.Navigation.NavigationEventArgs)
+  spec.csharp:
+  - uid: System.Windows.Application.OnNavigated(System.Windows.Navigation.NavigationEventArgs)
+    name: OnNavigated
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigated
+  - name: (
+  - uid: System.Windows.Navigation.NavigationEventArgs
+    name: NavigationEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.navigation.navigationeventargs
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.OnNavigated(System.Windows.Navigation.NavigationEventArgs)
+    name: OnNavigated
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigated
+  - name: (
+  - uid: System.Windows.Navigation.NavigationEventArgs
+    name: NavigationEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.navigation.navigationeventargs
+  - name: )
+- uid: System.Windows.Application.OnNavigationProgress(System.Windows.Navigation.NavigationProgressEventArgs)
+  commentId: M:System.Windows.Application.OnNavigationProgress(System.Windows.Navigation.NavigationProgressEventArgs)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigationprogress
+  name: OnNavigationProgress(NavigationProgressEventArgs)
+  nameWithType: Application.OnNavigationProgress(NavigationProgressEventArgs)
+  fullName: System.Windows.Application.OnNavigationProgress(System.Windows.Navigation.NavigationProgressEventArgs)
+  spec.csharp:
+  - uid: System.Windows.Application.OnNavigationProgress(System.Windows.Navigation.NavigationProgressEventArgs)
+    name: OnNavigationProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigationprogress
+  - name: (
+  - uid: System.Windows.Navigation.NavigationProgressEventArgs
+    name: NavigationProgressEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.navigation.navigationprogresseventargs
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.OnNavigationProgress(System.Windows.Navigation.NavigationProgressEventArgs)
+    name: OnNavigationProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigationprogress
+  - name: (
+  - uid: System.Windows.Navigation.NavigationProgressEventArgs
+    name: NavigationProgressEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.navigation.navigationprogresseventargs
+  - name: )
+- uid: System.Windows.Application.OnNavigationFailed(System.Windows.Navigation.NavigationFailedEventArgs)
+  commentId: M:System.Windows.Application.OnNavigationFailed(System.Windows.Navigation.NavigationFailedEventArgs)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigationfailed
+  name: OnNavigationFailed(NavigationFailedEventArgs)
+  nameWithType: Application.OnNavigationFailed(NavigationFailedEventArgs)
+  fullName: System.Windows.Application.OnNavigationFailed(System.Windows.Navigation.NavigationFailedEventArgs)
+  spec.csharp:
+  - uid: System.Windows.Application.OnNavigationFailed(System.Windows.Navigation.NavigationFailedEventArgs)
+    name: OnNavigationFailed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigationfailed
+  - name: (
+  - uid: System.Windows.Navigation.NavigationFailedEventArgs
+    name: NavigationFailedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.navigation.navigationfailedeventargs
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.OnNavigationFailed(System.Windows.Navigation.NavigationFailedEventArgs)
+    name: OnNavigationFailed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigationfailed
+  - name: (
+  - uid: System.Windows.Navigation.NavigationFailedEventArgs
+    name: NavigationFailedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.navigation.navigationfailedeventargs
+  - name: )
+- uid: System.Windows.Application.OnLoadCompleted(System.Windows.Navigation.NavigationEventArgs)
+  commentId: M:System.Windows.Application.OnLoadCompleted(System.Windows.Navigation.NavigationEventArgs)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.onloadcompleted
+  name: OnLoadCompleted(NavigationEventArgs)
+  nameWithType: Application.OnLoadCompleted(NavigationEventArgs)
+  fullName: System.Windows.Application.OnLoadCompleted(System.Windows.Navigation.NavigationEventArgs)
+  spec.csharp:
+  - uid: System.Windows.Application.OnLoadCompleted(System.Windows.Navigation.NavigationEventArgs)
+    name: OnLoadCompleted
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onloadcompleted
+  - name: (
+  - uid: System.Windows.Navigation.NavigationEventArgs
+    name: NavigationEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.navigation.navigationeventargs
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.OnLoadCompleted(System.Windows.Navigation.NavigationEventArgs)
+    name: OnLoadCompleted
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onloadcompleted
+  - name: (
+  - uid: System.Windows.Navigation.NavigationEventArgs
+    name: NavigationEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.navigation.navigationeventargs
+  - name: )
+- uid: System.Windows.Application.OnNavigationStopped(System.Windows.Navigation.NavigationEventArgs)
+  commentId: M:System.Windows.Application.OnNavigationStopped(System.Windows.Navigation.NavigationEventArgs)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigationstopped
+  name: OnNavigationStopped(NavigationEventArgs)
+  nameWithType: Application.OnNavigationStopped(NavigationEventArgs)
+  fullName: System.Windows.Application.OnNavigationStopped(System.Windows.Navigation.NavigationEventArgs)
+  spec.csharp:
+  - uid: System.Windows.Application.OnNavigationStopped(System.Windows.Navigation.NavigationEventArgs)
+    name: OnNavigationStopped
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigationstopped
+  - name: (
+  - uid: System.Windows.Navigation.NavigationEventArgs
+    name: NavigationEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.navigation.navigationeventargs
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.OnNavigationStopped(System.Windows.Navigation.NavigationEventArgs)
+    name: OnNavigationStopped
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onnavigationstopped
+  - name: (
+  - uid: System.Windows.Navigation.NavigationEventArgs
+    name: NavigationEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.navigation.navigationeventargs
+  - name: )
+- uid: System.Windows.Application.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)
+  commentId: M:System.Windows.Application.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.onfragmentnavigation
+  name: OnFragmentNavigation(FragmentNavigationEventArgs)
+  nameWithType: Application.OnFragmentNavigation(FragmentNavigationEventArgs)
+  fullName: System.Windows.Application.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)
+  spec.csharp:
+  - uid: System.Windows.Application.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)
+    name: OnFragmentNavigation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onfragmentnavigation
+  - name: (
+  - uid: System.Windows.Navigation.FragmentNavigationEventArgs
+    name: FragmentNavigationEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.navigation.fragmentnavigationeventargs
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Application.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)
+    name: OnFragmentNavigation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.application.onfragmentnavigation
+  - name: (
+  - uid: System.Windows.Navigation.FragmentNavigationEventArgs
+    name: FragmentNavigationEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.navigation.fragmentnavigationeventargs
+  - name: )
+- uid: System.Windows.Application.Current
+  commentId: P:System.Windows.Application.Current
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.current
+  name: Current
+  nameWithType: Application.Current
+  fullName: System.Windows.Application.Current
+- uid: System.Windows.Application.Windows
+  commentId: P:System.Windows.Application.Windows
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.windows
+  name: Windows
+  nameWithType: Application.Windows
+  fullName: System.Windows.Application.Windows
+- uid: System.Windows.Application.MainWindow
+  commentId: P:System.Windows.Application.MainWindow
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.mainwindow
+  name: MainWindow
+  nameWithType: Application.MainWindow
+  fullName: System.Windows.Application.MainWindow
+- uid: System.Windows.Application.ShutdownMode
+  commentId: P:System.Windows.Application.ShutdownMode
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.shutdownmode
+  name: ShutdownMode
+  nameWithType: Application.ShutdownMode
+  fullName: System.Windows.Application.ShutdownMode
+- uid: System.Windows.Application.Resources
+  commentId: P:System.Windows.Application.Resources
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.resources
+  name: Resources
+  nameWithType: Application.Resources
+  fullName: System.Windows.Application.Resources
+- uid: System.Windows.Application.StartupUri
+  commentId: P:System.Windows.Application.StartupUri
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.startupuri
+  name: StartupUri
+  nameWithType: Application.StartupUri
+  fullName: System.Windows.Application.StartupUri
+- uid: System.Windows.Application.Properties
+  commentId: P:System.Windows.Application.Properties
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.properties
+  name: Properties
+  nameWithType: Application.Properties
+  fullName: System.Windows.Application.Properties
+- uid: System.Windows.Application.ResourceAssembly
+  commentId: P:System.Windows.Application.ResourceAssembly
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.resourceassembly
+  name: ResourceAssembly
+  nameWithType: Application.ResourceAssembly
+  fullName: System.Windows.Application.ResourceAssembly
+- uid: System.Windows.Application.Startup
+  commentId: E:System.Windows.Application.Startup
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.startup
+  name: Startup
+  nameWithType: Application.Startup
+  fullName: System.Windows.Application.Startup
+- uid: System.Windows.Application.Exit
+  commentId: E:System.Windows.Application.Exit
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.exit
+  name: Exit
+  nameWithType: Application.Exit
+  fullName: System.Windows.Application.Exit
+- uid: System.Windows.Application.Activated
+  commentId: E:System.Windows.Application.Activated
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.activated
+  name: Activated
+  nameWithType: Application.Activated
+  fullName: System.Windows.Application.Activated
+- uid: System.Windows.Application.Deactivated
+  commentId: E:System.Windows.Application.Deactivated
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.deactivated
+  name: Deactivated
+  nameWithType: Application.Deactivated
+  fullName: System.Windows.Application.Deactivated
+- uid: System.Windows.Application.SessionEnding
+  commentId: E:System.Windows.Application.SessionEnding
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.sessionending
+  name: SessionEnding
+  nameWithType: Application.SessionEnding
+  fullName: System.Windows.Application.SessionEnding
+- uid: System.Windows.Application.DispatcherUnhandledException
+  commentId: E:System.Windows.Application.DispatcherUnhandledException
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.dispatcherunhandledexception
+  name: DispatcherUnhandledException
+  nameWithType: Application.DispatcherUnhandledException
+  fullName: System.Windows.Application.DispatcherUnhandledException
+- uid: System.Windows.Application.Navigating
+  commentId: E:System.Windows.Application.Navigating
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.navigating
+  name: Navigating
+  nameWithType: Application.Navigating
+  fullName: System.Windows.Application.Navigating
+- uid: System.Windows.Application.Navigated
+  commentId: E:System.Windows.Application.Navigated
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.navigated
+  name: Navigated
+  nameWithType: Application.Navigated
+  fullName: System.Windows.Application.Navigated
+- uid: System.Windows.Application.NavigationProgress
+  commentId: E:System.Windows.Application.NavigationProgress
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.navigationprogress
+  name: NavigationProgress
+  nameWithType: Application.NavigationProgress
+  fullName: System.Windows.Application.NavigationProgress
+- uid: System.Windows.Application.NavigationFailed
+  commentId: E:System.Windows.Application.NavigationFailed
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.navigationfailed
+  name: NavigationFailed
+  nameWithType: Application.NavigationFailed
+  fullName: System.Windows.Application.NavigationFailed
+- uid: System.Windows.Application.LoadCompleted
+  commentId: E:System.Windows.Application.LoadCompleted
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.loadcompleted
+  name: LoadCompleted
+  nameWithType: Application.LoadCompleted
+  fullName: System.Windows.Application.LoadCompleted
+- uid: System.Windows.Application.NavigationStopped
+  commentId: E:System.Windows.Application.NavigationStopped
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.navigationstopped
+  name: NavigationStopped
+  nameWithType: Application.NavigationStopped
+  fullName: System.Windows.Application.NavigationStopped
+- uid: System.Windows.Application.FragmentNavigation
+  commentId: E:System.Windows.Application.FragmentNavigation
+  parent: System.Windows.Application
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.application.fragmentnavigation
+  name: FragmentNavigation
+  nameWithType: Application.FragmentNavigation
+  fullName: System.Windows.Application.FragmentNavigation
+- uid: System.Windows.Threading.DispatcherObject.Dispatcher
+  commentId: P:System.Windows.Threading.DispatcherObject.Dispatcher
+  parent: System.Windows.Threading.DispatcherObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.threading.dispatcherobject.dispatcher
+  name: Dispatcher
+  nameWithType: DispatcherObject.Dispatcher
+  fullName: System.Windows.Threading.DispatcherObject.Dispatcher
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Windows.Threading
+  commentId: N:System.Windows.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Threading
+  nameWithType: System.Windows.Threading
+  fullName: System.Windows.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.threading
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+- uid: Prism
+  isExternal: true
+- uid: Prism.Unity
+  commentId: N:Prism.Unity
+  isExternal: true
+  name: Prism.Unity
+  nameWithType: Prism.Unity
+  fullName: Prism.Unity
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Unity
+    name: Unity
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Unity
+    name: Unity
+    isExternal: true
+- uid: System.Windows.Markup
+  commentId: N:System.Windows.Markup
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Markup
+  nameWithType: System.Windows.Markup
+  fullName: System.Windows.Markup
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Markup
+    name: Markup
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.markup
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Markup
+    name: Markup
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.markup
+- uid: Innova.Prism.Library.ClassDefinitions
+  commentId: N:Innova.Prism.Library.ClassDefinitions
+  href: Innova.html
+  name: Innova.Prism.Library.ClassDefinitions
+  nameWithType: Innova.Prism.Library.ClassDefinitions
+  fullName: Innova.Prism.Library.ClassDefinitions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.ClassDefinitions
+    name: ClassDefinitions
+    href: Innova.Prism.Library.ClassDefinitions.html
+- uid: Innova.Prism.Library.StandardPrismApplication.ApplicationBuilder*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.ApplicationBuilder
+  href: Innova.Prism.Library.StandardPrismApplication.ApplicationBuilder.html#Innova_Prism_Library_StandardPrismApplication_ApplicationBuilder
+  name: ApplicationBuilder
+  nameWithType: StandardPrismApplication.ApplicationBuilder
+  fullName: Innova.Prism.Library.StandardPrismApplication.ApplicationBuilder
+- uid: Innova.Prism.Library.IInnovaApplicationBuilder
+  commentId: T:Innova.Prism.Library.IInnovaApplicationBuilder
+  parent: Innova.Prism.Library
+  href: Innova.Prism.Library.IInnovaApplicationBuilder.html
+  name: IInnovaApplicationBuilder
+  nameWithType: IInnovaApplicationBuilder
+  fullName: Innova.Prism.Library.IInnovaApplicationBuilder
+- uid: Innova.Prism.Library.StandardPrismApplication.Logger*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.Logger
+  href: Innova.Prism.Library.StandardPrismApplication.Logger.html#Innova_Prism_Library_StandardPrismApplication_Logger
+  name: Logger
+  nameWithType: StandardPrismApplication.Logger
+  fullName: Innova.Prism.Library.StandardPrismApplication.Logger
+- uid: Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.StandardPrismApplication}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.StandardPrismApplication}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<StandardPrismApplication>
+  nameWithType: ILogger<StandardPrismApplication>
+  fullName: Microsoft.Extensions.Logging.ILogger<Innova.Prism.Library.StandardPrismApplication>
+  nameWithType.vb: ILogger(Of StandardPrismApplication)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Innova.Prism.Library.StandardPrismApplication)
+  name.vb: ILogger(Of StandardPrismApplication)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Innova.Prism.Library.StandardPrismApplication
+    name: StandardPrismApplication
+    href: Innova.Prism.Library.StandardPrismApplication.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.StandardPrismApplication
+    name: StandardPrismApplication
+    href: Innova.Prism.Library.StandardPrismApplication.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Innova.Prism.Library.StandardPrismApplication.#ctor*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.#ctor
+  href: Innova.Prism.Library.StandardPrismApplication.-ctor.html#Innova_Prism_Library_StandardPrismApplication__ctor
+  name: StandardPrismApplication
+  nameWithType: StandardPrismApplication.StandardPrismApplication
+  fullName: Innova.Prism.Library.StandardPrismApplication.StandardPrismApplication
+  nameWithType.vb: StandardPrismApplication.New
+  fullName.vb: Innova.Prism.Library.StandardPrismApplication.New
+  name.vb: New
+- uid: Innova.Prism.Library.StandardPrismApplication.StartSplashScreen*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.StartSplashScreen
+  href: Innova.Prism.Library.StandardPrismApplication.StartSplashScreen.html#Innova_Prism_Library_StandardPrismApplication_StartSplashScreen
+  name: StartSplashScreen
+  nameWithType: StandardPrismApplication.StartSplashScreen
+  fullName: Innova.Prism.Library.StandardPrismApplication.StartSplashScreen
+- uid: Innova.Prism.Library.StandardPrismApplication.SetupException*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.SetupException
+  href: Innova.Prism.Library.StandardPrismApplication.SetupException.html#Innova_Prism_Library_StandardPrismApplication_SetupException
+  name: SetupException
+  nameWithType: StandardPrismApplication.SetupException
+  fullName: Innova.Prism.Library.StandardPrismApplication.SetupException
+- uid: Prism.PrismApplicationBase.OnStartup(System.Windows.StartupEventArgs)
+  commentId: M:Prism.PrismApplicationBase.OnStartup(System.Windows.StartupEventArgs)
+  parent: Prism.PrismApplicationBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: OnStartup(StartupEventArgs)
+  nameWithType: PrismApplicationBase.OnStartup(StartupEventArgs)
+  fullName: Prism.PrismApplicationBase.OnStartup(System.Windows.StartupEventArgs)
+  spec.csharp:
+  - uid: Prism.PrismApplicationBase.OnStartup(System.Windows.StartupEventArgs)
+    name: OnStartup
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - uid: System.Windows.StartupEventArgs
+    name: StartupEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.startupeventargs
+  - name: )
+  spec.vb:
+  - uid: Prism.PrismApplicationBase.OnStartup(System.Windows.StartupEventArgs)
+    name: OnStartup
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - uid: System.Windows.StartupEventArgs
+    name: StartupEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.startupeventargs
+  - name: )
+- uid: Innova.Prism.Library.StandardPrismApplication.OnStartup*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.OnStartup
+  href: Innova.Prism.Library.StandardPrismApplication.OnStartup.html#Innova_Prism_Library_StandardPrismApplication_OnStartup_System_Windows_StartupEventArgs_
+  name: OnStartup
+  nameWithType: StandardPrismApplication.OnStartup
+  fullName: Innova.Prism.Library.StandardPrismApplication.OnStartup
+- uid: System.Windows.StartupEventArgs
+  commentId: T:System.Windows.StartupEventArgs
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.startupeventargs
+  name: StartupEventArgs
+  nameWithType: StartupEventArgs
+  fullName: System.Windows.StartupEventArgs
+- uid: Prism.PrismApplicationBase.CreateShell
+  commentId: M:Prism.PrismApplicationBase.CreateShell
+  parent: Prism.PrismApplicationBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: CreateShell()
+  nameWithType: PrismApplicationBase.CreateShell()
+  fullName: Prism.PrismApplicationBase.CreateShell()
+  spec.csharp:
+  - uid: Prism.PrismApplicationBase.CreateShell
+    name: CreateShell
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.PrismApplicationBase.CreateShell
+    name: CreateShell
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StandardPrismApplication.CreateShell*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.CreateShell
+  href: Innova.Prism.Library.StandardPrismApplication.CreateShell.html#Innova_Prism_Library_StandardPrismApplication_CreateShell
+  name: CreateShell
+  nameWithType: StandardPrismApplication.CreateShell
+  fullName: Innova.Prism.Library.StandardPrismApplication.CreateShell
+- uid: System.Windows.Window
+  commentId: T:System.Windows.Window
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.window
+  name: Window
+  nameWithType: Window
+  fullName: System.Windows.Window
+- uid: Innova.Prism.Library.StandardPrismApplication.InitializeApplication*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.InitializeApplication
+  href: Innova.Prism.Library.StandardPrismApplication.InitializeApplication.html#Innova_Prism_Library_StandardPrismApplication_InitializeApplication
+  name: InitializeApplication
+  nameWithType: StandardPrismApplication.InitializeApplication
+  fullName: Innova.Prism.Library.StandardPrismApplication.InitializeApplication
+- uid: Prism.PrismApplicationBase.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  commentId: M:Prism.PrismApplicationBase.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  parent: Prism.PrismApplicationBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: RegisterTypes(IContainerRegistry)
+  nameWithType: PrismApplicationBase.RegisterTypes(IContainerRegistry)
+  fullName: Prism.PrismApplicationBase.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  spec.csharp:
+  - uid: Prism.PrismApplicationBase.RegisterTypes(Prism.Ioc.IContainerRegistry)
+    name: RegisterTypes
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - uid: Prism.Ioc.IContainerRegistry
+    name: IContainerRegistry
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Prism.PrismApplicationBase.RegisterTypes(Prism.Ioc.IContainerRegistry)
+    name: RegisterTypes
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - uid: Prism.Ioc.IContainerRegistry
+    name: IContainerRegistry
+    isExternal: true
+  - name: )
+- uid: Innova.Prism.Library.StandardPrismApplication.RegisterTypes*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.RegisterTypes
+  href: Innova.Prism.Library.StandardPrismApplication.RegisterTypes.html#Innova_Prism_Library_StandardPrismApplication_RegisterTypes_Prism_Ioc_IContainerRegistry_
+  name: RegisterTypes
+  nameWithType: StandardPrismApplication.RegisterTypes
+  fullName: Innova.Prism.Library.StandardPrismApplication.RegisterTypes
+- uid: Prism.Ioc.IContainerRegistry
+  commentId: T:Prism.Ioc.IContainerRegistry
+  parent: Prism.Ioc
+  isExternal: true
+  name: IContainerRegistry
+  nameWithType: IContainerRegistry
+  fullName: Prism.Ioc.IContainerRegistry
+- uid: Prism.Ioc
+  commentId: N:Prism.Ioc
+  isExternal: true
+  name: Prism.Ioc
+  nameWithType: Prism.Ioc
+  fullName: Prism.Ioc
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Ioc
+    name: Ioc
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Ioc
+    name: Ioc
+    isExternal: true
+- uid: Innova.Prism.Library.StandardPrismApplication.ConfigureServices*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.ConfigureServices
+  href: Innova.Prism.Library.StandardPrismApplication.ConfigureServices.html#Innova_Prism_Library_StandardPrismApplication_ConfigureServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: ConfigureServices
+  nameWithType: StandardPrismApplication.ConfigureServices
+  fullName: Innova.Prism.Library.StandardPrismApplication.ConfigureServices
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: Prism.Mvvm.ViewModelLocator
+  commentId: T:Prism.Mvvm.ViewModelLocator
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Mvvm/ViewModelLocator.cs
+  name: ViewModelLocator
+  nameWithType: ViewModelLocator
+  fullName: Prism.Mvvm.ViewModelLocator
+- uid: Prism.PrismApplicationBase.ConfigureViewModelLocator
+  commentId: M:Prism.PrismApplicationBase.ConfigureViewModelLocator
+  parent: Prism.PrismApplicationBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: ConfigureViewModelLocator()
+  nameWithType: PrismApplicationBase.ConfigureViewModelLocator()
+  fullName: Prism.PrismApplicationBase.ConfigureViewModelLocator()
+  spec.csharp:
+  - uid: Prism.PrismApplicationBase.ConfigureViewModelLocator
+    name: ConfigureViewModelLocator
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.PrismApplicationBase.ConfigureViewModelLocator
+    name: ConfigureViewModelLocator
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StandardPrismApplication.ConfigureViewModelLocator*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.ConfigureViewModelLocator
+  href: Innova.Prism.Library.StandardPrismApplication.ConfigureViewModelLocator.html#Innova_Prism_Library_StandardPrismApplication_ConfigureViewModelLocator
+  name: ConfigureViewModelLocator
+  nameWithType: StandardPrismApplication.ConfigureViewModelLocator
+  fullName: Innova.Prism.Library.StandardPrismApplication.ConfigureViewModelLocator
+- uid: Prism.PrismApplicationBase.OnInitialized
+  commentId: M:Prism.PrismApplicationBase.OnInitialized
+  parent: Prism.PrismApplicationBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: OnInitialized()
+  nameWithType: PrismApplicationBase.OnInitialized()
+  fullName: Prism.PrismApplicationBase.OnInitialized()
+  spec.csharp:
+  - uid: Prism.PrismApplicationBase.OnInitialized
+    name: OnInitialized
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.PrismApplicationBase.OnInitialized
+    name: OnInitialized
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StandardPrismApplication.OnInitialized*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.OnInitialized
+  href: Innova.Prism.Library.StandardPrismApplication.OnInitialized.html#Innova_Prism_Library_StandardPrismApplication_OnInitialized
+  name: OnInitialized
+  nameWithType: StandardPrismApplication.OnInitialized
+  fullName: Innova.Prism.Library.StandardPrismApplication.OnInitialized
+- uid: Innova.Prism.Library.StandardPrismApplication.HandleException*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.HandleException
+  href: Innova.Prism.Library.StandardPrismApplication.HandleException.html#Innova_Prism_Library_StandardPrismApplication_HandleException_System_Exception_
+  name: HandleException
+  nameWithType: StandardPrismApplication.HandleException
+  fullName: Innova.Prism.Library.StandardPrismApplication.HandleException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Innova.Prism.Library.StandardPrismApplication.GetErrorMessages*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.GetErrorMessages
+  href: Innova.Prism.Library.StandardPrismApplication.GetErrorMessages.html#Innova_Prism_Library_StandardPrismApplication_GetErrorMessages_System_Exception_
+  name: GetErrorMessages
+  nameWithType: StandardPrismApplication.GetErrorMessages
+  fullName: Innova.Prism.Library.StandardPrismApplication.GetErrorMessages
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Prism.Library.StandardPrismApplication.SignalExternalCommandLineArgs*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.SignalExternalCommandLineArgs
+  href: Innova.Prism.Library.StandardPrismApplication.SignalExternalCommandLineArgs.html#Innova_Prism_Library_StandardPrismApplication_SignalExternalCommandLineArgs_System_Collections_Generic_IList_System_String__
+  name: SignalExternalCommandLineArgs
+  nameWithType: StandardPrismApplication.SignalExternalCommandLineArgs
+  fullName: Innova.Prism.Library.StandardPrismApplication.SignalExternalCommandLineArgs
+- uid: Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp.SignalExternalCommandLineArgs(System.Collections.Generic.IList{System.String})
+  commentId: M:Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp.SignalExternalCommandLineArgs(System.Collections.Generic.IList{System.String})
+  parent: Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp
+  isExternal: true
+  href: Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp.SignalExternalCommandLineArgs.html#Innova_Prism_Library_ClassDefinitions_ISingleInstanceApp_SignalExternalCommandLineArgs_System_Collections_Generic_IList_System_String__
+  name: SignalExternalCommandLineArgs(IList<string>)
+  nameWithType: ISingleInstanceApp.SignalExternalCommandLineArgs(IList<string>)
+  fullName: Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp.SignalExternalCommandLineArgs(System.Collections.Generic.IList<string>)
+  nameWithType.vb: ISingleInstanceApp.SignalExternalCommandLineArgs(IList(Of String))
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp.SignalExternalCommandLineArgs(System.Collections.Generic.IList(Of String))
+  name.vb: SignalExternalCommandLineArgs(IList(Of String))
+  spec.csharp:
+  - uid: Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp.SignalExternalCommandLineArgs(System.Collections.Generic.IList{System.String})
+    name: SignalExternalCommandLineArgs
+    href: Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp.SignalExternalCommandLineArgs.html#Innova_Prism_Library_ClassDefinitions_ISingleInstanceApp_SignalExternalCommandLineArgs_System_Collections_Generic_IList_System_String__
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp.SignalExternalCommandLineArgs(System.Collections.Generic.IList{System.String})
+    name: SignalExternalCommandLineArgs
+    href: Innova.Prism.Library.ClassDefinitions.ISingleInstanceApp.SignalExternalCommandLineArgs.html#Innova_Prism_Library_ClassDefinitions_ISingleInstanceApp_SignalExternalCommandLineArgs_System_Collections_Generic_IList_System_String__
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<string>
+  nameWithType: IList<string>
+  fullName: System.Collections.Generic.IList<string>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Prism.Regions.IRegionBehaviorFactory
+  commentId: T:Prism.Regions.IRegionBehaviorFactory
+  parent: Prism.Regions
+  isExternal: true
+  name: IRegionBehaviorFactory
+  nameWithType: IRegionBehaviorFactory
+  fullName: Prism.Regions.IRegionBehaviorFactory
+- uid: Prism.PrismApplicationBase.ConfigureDefaultRegionBehaviors(Prism.Regions.IRegionBehaviorFactory)
+  commentId: M:Prism.PrismApplicationBase.ConfigureDefaultRegionBehaviors(Prism.Regions.IRegionBehaviorFactory)
+  parent: Prism.PrismApplicationBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: ConfigureDefaultRegionBehaviors(IRegionBehaviorFactory)
+  nameWithType: PrismApplicationBase.ConfigureDefaultRegionBehaviors(IRegionBehaviorFactory)
+  fullName: Prism.PrismApplicationBase.ConfigureDefaultRegionBehaviors(Prism.Regions.IRegionBehaviorFactory)
+  spec.csharp:
+  - uid: Prism.PrismApplicationBase.ConfigureDefaultRegionBehaviors(Prism.Regions.IRegionBehaviorFactory)
+    name: ConfigureDefaultRegionBehaviors
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - uid: Prism.Regions.IRegionBehaviorFactory
+    name: IRegionBehaviorFactory
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Prism.PrismApplicationBase.ConfigureDefaultRegionBehaviors(Prism.Regions.IRegionBehaviorFactory)
+    name: ConfigureDefaultRegionBehaviors
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - uid: Prism.Regions.IRegionBehaviorFactory
+    name: IRegionBehaviorFactory
+    isExternal: true
+  - name: )
+- uid: Innova.Prism.Library.StandardPrismApplication.ConfigureDefaultRegionBehaviors*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.ConfigureDefaultRegionBehaviors
+  href: Innova.Prism.Library.StandardPrismApplication.ConfigureDefaultRegionBehaviors.html#Innova_Prism_Library_StandardPrismApplication_ConfigureDefaultRegionBehaviors_Prism_Regions_IRegionBehaviorFactory_
+  name: ConfigureDefaultRegionBehaviors
+  nameWithType: StandardPrismApplication.ConfigureDefaultRegionBehaviors
+  fullName: Innova.Prism.Library.StandardPrismApplication.ConfigureDefaultRegionBehaviors
+- uid: Prism.Regions
+  commentId: N:Prism.Regions
+  href: Prism.html
+  name: Prism.Regions
+  nameWithType: Prism.Regions
+  fullName: Prism.Regions
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Regions
+    name: Regions
+    href: Prism.Regions.html
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Regions
+    name: Regions
+    href: Prism.Regions.html
+- uid: Prism.Modularity.IModuleCatalog
+  commentId: T:Prism.Modularity.IModuleCatalog
+  parent: Prism.Modularity
+  isExternal: true
+  name: IModuleCatalog
+  nameWithType: IModuleCatalog
+  fullName: Prism.Modularity.IModuleCatalog
+- uid: Prism.PrismApplicationBase.CreateModuleCatalog
+  commentId: M:Prism.PrismApplicationBase.CreateModuleCatalog
+  parent: Prism.PrismApplicationBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  name: CreateModuleCatalog()
+  nameWithType: PrismApplicationBase.CreateModuleCatalog()
+  fullName: Prism.PrismApplicationBase.CreateModuleCatalog()
+  spec.csharp:
+  - uid: Prism.PrismApplicationBase.CreateModuleCatalog
+    name: CreateModuleCatalog
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Prism.PrismApplicationBase.CreateModuleCatalog
+    name: CreateModuleCatalog
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/PrismApplicationBase.cs
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.StandardPrismApplication.CreateModuleCatalog*
+  commentId: Overload:Innova.Prism.Library.StandardPrismApplication.CreateModuleCatalog
+  href: Innova.Prism.Library.StandardPrismApplication.CreateModuleCatalog.html#Innova_Prism_Library_StandardPrismApplication_CreateModuleCatalog
+  name: CreateModuleCatalog
+  nameWithType: StandardPrismApplication.CreateModuleCatalog
+  fullName: Innova.Prism.Library.StandardPrismApplication.CreateModuleCatalog
+- uid: Prism.Modularity
+  commentId: N:Prism.Modularity
+  isExternal: true
+  name: Prism.Modularity
+  nameWithType: Prism.Modularity
+  fullName: Prism.Modularity
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Modularity
+    name: Modularity
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Modularity
+    name: Modularity
+    isExternal: true
+memberLayout: SeparatePages

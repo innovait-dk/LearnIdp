@@ -1,0 +1,848 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Export.HtmlShowTemplate
+  commentId: T:Innova.Prism.Library.Export.HtmlShowTemplate
+  id: HtmlShowTemplate
+  parent: Innova.Prism.Library.Export
+  children:
+  - Innova.Prism.Library.Export.HtmlShowTemplate.MainRow
+  - Innova.Prism.Library.Export.HtmlShowTemplate.MainTable
+  - Innova.Prism.Library.Export.HtmlShowTemplate.RelatedTables
+  - Innova.Prism.Library.Export.HtmlShowTemplate.TableDataSet
+  - Innova.Prism.Library.Export.HtmlShowTemplate.TransformText
+  langs:
+  - csharp
+  - vb
+  name: HtmlShowTemplate
+  nameWithType: HtmlShowTemplate
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplate
+  type: Class
+  source:
+    id: HtmlShowTemplate
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\HtmlShowTemplatePartial.cs
+    startLine: 6
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Class to produce the template output
+  example: []
+  syntax:
+    content: 'public class HtmlShowTemplate : HtmlShowTemplateBase, IExportDataSet, IExportTemplate'
+    content.vb: Public Class HtmlShowTemplate Inherits HtmlShowTemplateBase Implements IExportDataSet, IExportTemplate
+  inheritance:
+  - System.Object
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase
+  implements:
+  - Innova.Prism.Infrastructure.Interfaces.IExportDataSet
+  - Innova.Prism.Infrastructure.Interfaces.IExportTemplate
+  inheritedMembers:
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase.GenerationEnvironment
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase.Errors
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase.CurrentIndent
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase.Session
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase.Write(System.String)
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine(System.String)
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase.Write(System.String,System.Object[])
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine(System.String,System.Object[])
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase.Error(System.String)
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase.Warning(System.String)
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase.PushIndent(System.String)
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase.PopIndent
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase.ClearIndent
+  - Innova.Prism.Library.Export.HtmlShowTemplateBase.ToStringHelper
+- uid: Innova.Prism.Library.Export.HtmlShowTemplate.TransformText
+  commentId: M:Innova.Prism.Library.Export.HtmlShowTemplate.TransformText
+  id: TransformText
+  parent: Innova.Prism.Library.Export.HtmlShowTemplate
+  langs:
+  - csharp
+  - vb
+  name: TransformText()
+  nameWithType: HtmlShowTemplate.TransformText()
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplate.TransformText()
+  type: Method
+  source:
+    id: TransformText
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\HtmlShowTemplate.cs
+    startLine: 29
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Create the template output
+  example: []
+  syntax:
+    content: public virtual string TransformText()
+    return:
+      type: System.String
+    content.vb: Public Overridable Function TransformText() As String
+  overload: Innova.Prism.Library.Export.HtmlShowTemplate.TransformText*
+  implements:
+  - Innova.Prism.Infrastructure.Interfaces.IExportTemplate.TransformText
+- uid: Innova.Prism.Library.Export.HtmlShowTemplate.TableDataSet
+  commentId: P:Innova.Prism.Library.Export.HtmlShowTemplate.TableDataSet
+  id: TableDataSet
+  parent: Innova.Prism.Library.Export.HtmlShowTemplate
+  langs:
+  - csharp
+  - vb
+  name: TableDataSet
+  nameWithType: HtmlShowTemplate.TableDataSet
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplate.TableDataSet
+  type: Property
+  source:
+    id: TableDataSet
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\HtmlShowTemplatePartial.cs
+    startLine: 11
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Gets or sets the DataSet for exporting.
+  example: []
+  syntax:
+    content: public DataSet TableDataSet { get; set; }
+    parameters: []
+    return:
+      type: System.Data.DataSet
+    content.vb: Public Property TableDataSet As DataSet
+  overload: Innova.Prism.Library.Export.HtmlShowTemplate.TableDataSet*
+  implements:
+  - Innova.Prism.Infrastructure.Interfaces.IExportDataSet.TableDataSet
+- uid: Innova.Prism.Library.Export.HtmlShowTemplate.MainRow
+  commentId: P:Innova.Prism.Library.Export.HtmlShowTemplate.MainRow
+  id: MainRow
+  parent: Innova.Prism.Library.Export.HtmlShowTemplate
+  langs:
+  - csharp
+  - vb
+  name: MainRow
+  nameWithType: HtmlShowTemplate.MainRow
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplate.MainRow
+  type: Property
+  source:
+    id: MainRow
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\HtmlShowTemplatePartial.cs
+    startLine: 22
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  syntax:
+    content: public DataRow MainRow { get; set; }
+    parameters: []
+    return:
+      type: System.Data.DataRow
+    content.vb: Public Property MainRow As DataRow
+  overload: Innova.Prism.Library.Export.HtmlShowTemplate.MainRow*
+- uid: Innova.Prism.Library.Export.HtmlShowTemplate.MainTable
+  commentId: P:Innova.Prism.Library.Export.HtmlShowTemplate.MainTable
+  id: MainTable
+  parent: Innova.Prism.Library.Export.HtmlShowTemplate
+  langs:
+  - csharp
+  - vb
+  name: MainTable
+  nameWithType: HtmlShowTemplate.MainTable
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplate.MainTable
+  type: Property
+  source:
+    id: MainTable
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\HtmlShowTemplatePartial.cs
+    startLine: 24
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  syntax:
+    content: public DataTable MainTable { get; }
+    parameters: []
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Property MainTable As DataTable
+  overload: Innova.Prism.Library.Export.HtmlShowTemplate.MainTable*
+- uid: Innova.Prism.Library.Export.HtmlShowTemplate.RelatedTables
+  commentId: P:Innova.Prism.Library.Export.HtmlShowTemplate.RelatedTables
+  id: RelatedTables
+  parent: Innova.Prism.Library.Export.HtmlShowTemplate
+  langs:
+  - csharp
+  - vb
+  name: RelatedTables
+  nameWithType: HtmlShowTemplate.RelatedTables
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplate.RelatedTables
+  type: Property
+  source:
+    id: RelatedTables
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\HtmlShowTemplatePartial.cs
+    startLine: 26
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  syntax:
+    content: public List<DataTable> RelatedTables { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Data.DataTable}
+    content.vb: Public Property RelatedTables As List(Of DataTable)
+  overload: Innova.Prism.Library.Export.HtmlShowTemplate.RelatedTables*
+references:
+- uid: Innova.Prism.Library.Export
+  commentId: N:Innova.Prism.Library.Export
+  href: Innova.html
+  name: Innova.Prism.Library.Export
+  nameWithType: Innova.Prism.Library.Export
+  fullName: Innova.Prism.Library.Export
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Export
+    name: Export
+    href: Innova.Prism.Library.Export.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Export
+    name: Export
+    href: Innova.Prism.Library.Export.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  commentId: T:Innova.Prism.Library.Export.HtmlShowTemplateBase
+  parent: Innova.Prism.Library.Export
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.html
+  name: HtmlShowTemplateBase
+  nameWithType: HtmlShowTemplateBase
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase
+- uid: Innova.Prism.Infrastructure.Interfaces.IExportDataSet
+  commentId: T:Innova.Prism.Infrastructure.Interfaces.IExportDataSet
+  parent: Innova.Prism.Infrastructure.Interfaces
+  href: Innova.Prism.Infrastructure.Interfaces.IExportDataSet.html
+  name: IExportDataSet
+  nameWithType: IExportDataSet
+  fullName: Innova.Prism.Infrastructure.Interfaces.IExportDataSet
+- uid: Innova.Prism.Infrastructure.Interfaces.IExportTemplate
+  commentId: T:Innova.Prism.Infrastructure.Interfaces.IExportTemplate
+  parent: Innova.Prism.Infrastructure.Interfaces
+  href: Innova.Prism.Infrastructure.Interfaces.IExportTemplate.html
+  name: IExportTemplate
+  nameWithType: IExportTemplate
+  fullName: Innova.Prism.Infrastructure.Interfaces.IExportTemplate
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.GenerationEnvironment
+  commentId: P:Innova.Prism.Library.Export.HtmlShowTemplateBase.GenerationEnvironment
+  parent: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.GenerationEnvironment.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_GenerationEnvironment
+  name: GenerationEnvironment
+  nameWithType: HtmlShowTemplateBase.GenerationEnvironment
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase.GenerationEnvironment
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.Errors
+  commentId: P:Innova.Prism.Library.Export.HtmlShowTemplateBase.Errors
+  parent: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.Errors.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_Errors
+  name: Errors
+  nameWithType: HtmlShowTemplateBase.Errors
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase.Errors
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.CurrentIndent
+  commentId: P:Innova.Prism.Library.Export.HtmlShowTemplateBase.CurrentIndent
+  parent: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.CurrentIndent.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_CurrentIndent
+  name: CurrentIndent
+  nameWithType: HtmlShowTemplateBase.CurrentIndent
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase.CurrentIndent
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.Session
+  commentId: P:Innova.Prism.Library.Export.HtmlShowTemplateBase.Session
+  parent: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.Session.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_Session
+  name: Session
+  nameWithType: HtmlShowTemplateBase.Session
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase.Session
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write(System.String)
+  commentId: M:Innova.Prism.Library.Export.HtmlShowTemplateBase.Write(System.String)
+  parent: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  isExternal: true
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_Write_System_String_
+  name: Write(string)
+  nameWithType: HtmlShowTemplateBase.Write(string)
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write(string)
+  nameWithType.vb: HtmlShowTemplateBase.Write(String)
+  fullName.vb: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write(String)
+  name.vb: Write(String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write(System.String)
+    name: Write
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_Write_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write(System.String)
+    name: Write
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_Write_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine(System.String)
+  commentId: M:Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine(System.String)
+  parent: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  isExternal: true
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_WriteLine_System_String_
+  name: WriteLine(string)
+  nameWithType: HtmlShowTemplateBase.WriteLine(string)
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine(string)
+  nameWithType.vb: HtmlShowTemplateBase.WriteLine(String)
+  fullName.vb: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine(String)
+  name.vb: WriteLine(String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine(System.String)
+    name: WriteLine
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_WriteLine_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine(System.String)
+    name: WriteLine
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_WriteLine_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write(System.String,System.Object[])
+  commentId: M:Innova.Prism.Library.Export.HtmlShowTemplateBase.Write(System.String,System.Object[])
+  parent: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  isExternal: true
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_Write_System_String_System_Object___
+  name: Write(string, params object[])
+  nameWithType: HtmlShowTemplateBase.Write(string, params object[])
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write(string, params object[])
+  nameWithType.vb: HtmlShowTemplateBase.Write(String, ParamArray Object())
+  fullName.vb: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write(String, ParamArray Object())
+  name.vb: Write(String, ParamArray Object())
+  spec.csharp:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write(System.String,System.Object[])
+    name: Write
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_Write_System_String_System_Object___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write(System.String,System.Object[])
+    name: Write
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.Write.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_Write_System_String_System_Object___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine(System.String,System.Object[])
+  commentId: M:Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine(System.String,System.Object[])
+  parent: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  isExternal: true
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_WriteLine_System_String_System_Object___
+  name: WriteLine(string, params object[])
+  nameWithType: HtmlShowTemplateBase.WriteLine(string, params object[])
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine(string, params object[])
+  nameWithType.vb: HtmlShowTemplateBase.WriteLine(String, ParamArray Object())
+  fullName.vb: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine(String, ParamArray Object())
+  name.vb: WriteLine(String, ParamArray Object())
+  spec.csharp:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine(System.String,System.Object[])
+    name: WriteLine
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_WriteLine_System_String_System_Object___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine(System.String,System.Object[])
+    name: WriteLine
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.WriteLine.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_WriteLine_System_String_System_Object___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.Error(System.String)
+  commentId: M:Innova.Prism.Library.Export.HtmlShowTemplateBase.Error(System.String)
+  parent: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  isExternal: true
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.Error.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_Error_System_String_
+  name: Error(string)
+  nameWithType: HtmlShowTemplateBase.Error(string)
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase.Error(string)
+  nameWithType.vb: HtmlShowTemplateBase.Error(String)
+  fullName.vb: Innova.Prism.Library.Export.HtmlShowTemplateBase.Error(String)
+  name.vb: Error(String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.Error(System.String)
+    name: Error
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.Error.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_Error_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.Error(System.String)
+    name: Error
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.Error.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_Error_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.Warning(System.String)
+  commentId: M:Innova.Prism.Library.Export.HtmlShowTemplateBase.Warning(System.String)
+  parent: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  isExternal: true
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.Warning.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_Warning_System_String_
+  name: Warning(string)
+  nameWithType: HtmlShowTemplateBase.Warning(string)
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase.Warning(string)
+  nameWithType.vb: HtmlShowTemplateBase.Warning(String)
+  fullName.vb: Innova.Prism.Library.Export.HtmlShowTemplateBase.Warning(String)
+  name.vb: Warning(String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.Warning(System.String)
+    name: Warning
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.Warning.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_Warning_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.Warning(System.String)
+    name: Warning
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.Warning.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_Warning_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.PushIndent(System.String)
+  commentId: M:Innova.Prism.Library.Export.HtmlShowTemplateBase.PushIndent(System.String)
+  parent: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  isExternal: true
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.PushIndent.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_PushIndent_System_String_
+  name: PushIndent(string)
+  nameWithType: HtmlShowTemplateBase.PushIndent(string)
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase.PushIndent(string)
+  nameWithType.vb: HtmlShowTemplateBase.PushIndent(String)
+  fullName.vb: Innova.Prism.Library.Export.HtmlShowTemplateBase.PushIndent(String)
+  name.vb: PushIndent(String)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.PushIndent(System.String)
+    name: PushIndent
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.PushIndent.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_PushIndent_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.PushIndent(System.String)
+    name: PushIndent
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.PushIndent.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_PushIndent_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.PopIndent
+  commentId: M:Innova.Prism.Library.Export.HtmlShowTemplateBase.PopIndent
+  parent: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.PopIndent.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_PopIndent
+  name: PopIndent()
+  nameWithType: HtmlShowTemplateBase.PopIndent()
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase.PopIndent()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.PopIndent
+    name: PopIndent
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.PopIndent.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_PopIndent
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.PopIndent
+    name: PopIndent
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.PopIndent.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_PopIndent
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.ClearIndent
+  commentId: M:Innova.Prism.Library.Export.HtmlShowTemplateBase.ClearIndent
+  parent: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.ClearIndent.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_ClearIndent
+  name: ClearIndent()
+  nameWithType: HtmlShowTemplateBase.ClearIndent()
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase.ClearIndent()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.ClearIndent
+    name: ClearIndent
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.ClearIndent.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_ClearIndent
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.ClearIndent
+    name: ClearIndent
+    href: Innova.Prism.Library.Export.HtmlShowTemplateBase.ClearIndent.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_ClearIndent
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Export.HtmlShowTemplateBase.ToStringHelper
+  commentId: P:Innova.Prism.Library.Export.HtmlShowTemplateBase.ToStringHelper
+  parent: Innova.Prism.Library.Export.HtmlShowTemplateBase
+  href: Innova.Prism.Library.Export.HtmlShowTemplateBase.ToStringHelper.html#Innova_Prism_Library_Export_HtmlShowTemplateBase_ToStringHelper
+  name: ToStringHelper
+  nameWithType: HtmlShowTemplateBase.ToStringHelper
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplateBase.ToStringHelper
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Infrastructure.Interfaces
+  commentId: N:Innova.Prism.Infrastructure.Interfaces
+  href: Innova.html
+  name: Innova.Prism.Infrastructure.Interfaces
+  nameWithType: Innova.Prism.Infrastructure.Interfaces
+  fullName: Innova.Prism.Infrastructure.Interfaces
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure
+    name: Infrastructure
+    href: Innova.Prism.Infrastructure.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure.Interfaces
+    name: Interfaces
+    href: Innova.Prism.Infrastructure.Interfaces.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure
+    name: Infrastructure
+    href: Innova.Prism.Infrastructure.html
+  - name: .
+  - uid: Innova.Prism.Infrastructure.Interfaces
+    name: Interfaces
+    href: Innova.Prism.Infrastructure.Interfaces.html
+- uid: Innova.Prism.Library.Export.HtmlShowTemplate.TransformText*
+  commentId: Overload:Innova.Prism.Library.Export.HtmlShowTemplate.TransformText
+  href: Innova.Prism.Library.Export.HtmlShowTemplate.TransformText.html#Innova_Prism_Library_Export_HtmlShowTemplate_TransformText
+  name: TransformText
+  nameWithType: HtmlShowTemplate.TransformText
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplate.TransformText
+- uid: Innova.Prism.Infrastructure.Interfaces.IExportTemplate.TransformText
+  commentId: M:Innova.Prism.Infrastructure.Interfaces.IExportTemplate.TransformText
+  parent: Innova.Prism.Infrastructure.Interfaces.IExportTemplate
+  href: Innova.Prism.Infrastructure.Interfaces.IExportTemplate.TransformText.html#Innova_Prism_Infrastructure_Interfaces_IExportTemplate_TransformText
+  name: TransformText()
+  nameWithType: IExportTemplate.TransformText()
+  fullName: Innova.Prism.Infrastructure.Interfaces.IExportTemplate.TransformText()
+  spec.csharp:
+  - uid: Innova.Prism.Infrastructure.Interfaces.IExportTemplate.TransformText
+    name: TransformText
+    href: Innova.Prism.Infrastructure.Interfaces.IExportTemplate.TransformText.html#Innova_Prism_Infrastructure_Interfaces_IExportTemplate_TransformText
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Infrastructure.Interfaces.IExportTemplate.TransformText
+    name: TransformText
+    href: Innova.Prism.Infrastructure.Interfaces.IExportTemplate.TransformText.html#Innova_Prism_Infrastructure_Interfaces_IExportTemplate_TransformText
+  - name: (
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Prism.Library.Export.HtmlShowTemplate.TableDataSet*
+  commentId: Overload:Innova.Prism.Library.Export.HtmlShowTemplate.TableDataSet
+  href: Innova.Prism.Library.Export.HtmlShowTemplate.TableDataSet.html#Innova_Prism_Library_Export_HtmlShowTemplate_TableDataSet
+  name: TableDataSet
+  nameWithType: HtmlShowTemplate.TableDataSet
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplate.TableDataSet
+- uid: Innova.Prism.Infrastructure.Interfaces.IExportDataSet.TableDataSet
+  commentId: P:Innova.Prism.Infrastructure.Interfaces.IExportDataSet.TableDataSet
+  parent: Innova.Prism.Infrastructure.Interfaces.IExportDataSet
+  name: TableDataSet
+  nameWithType: IExportDataSet.TableDataSet
+  fullName: Innova.Prism.Infrastructure.Interfaces.IExportDataSet.TableDataSet
+- uid: System.Data.DataSet
+  commentId: T:System.Data.DataSet
+  parent: System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.dataset
+  name: DataSet
+  nameWithType: DataSet
+  fullName: System.Data.DataSet
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+- uid: Innova.Prism.Library.Export.HtmlShowTemplate.MainRow*
+  commentId: Overload:Innova.Prism.Library.Export.HtmlShowTemplate.MainRow
+  href: Innova.Prism.Library.Export.HtmlShowTemplate.MainRow.html#Innova_Prism_Library_Export_HtmlShowTemplate_MainRow
+  name: MainRow
+  nameWithType: HtmlShowTemplate.MainRow
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplate.MainRow
+- uid: System.Data.DataRow
+  commentId: T:System.Data.DataRow
+  parent: System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.datarow
+  name: DataRow
+  nameWithType: DataRow
+  fullName: System.Data.DataRow
+- uid: Innova.Prism.Library.Export.HtmlShowTemplate.MainTable*
+  commentId: Overload:Innova.Prism.Library.Export.HtmlShowTemplate.MainTable
+  href: Innova.Prism.Library.Export.HtmlShowTemplate.MainTable.html#Innova_Prism_Library_Export_HtmlShowTemplate_MainTable
+  name: MainTable
+  nameWithType: HtmlShowTemplate.MainTable
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplate.MainTable
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.datatable
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: Innova.Prism.Library.Export.HtmlShowTemplate.RelatedTables*
+  commentId: Overload:Innova.Prism.Library.Export.HtmlShowTemplate.RelatedTables
+  href: Innova.Prism.Library.Export.HtmlShowTemplate.RelatedTables.html#Innova_Prism_Library_Export_HtmlShowTemplate_RelatedTables
+  name: RelatedTables
+  nameWithType: HtmlShowTemplate.RelatedTables
+  fullName: Innova.Prism.Library.Export.HtmlShowTemplate.RelatedTables
+- uid: System.Collections.Generic.List{System.Data.DataTable}
+  commentId: T:System.Collections.Generic.List{System.Data.DataTable}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DataTable>
+  nameWithType: List<DataTable>
+  fullName: System.Collections.Generic.List<System.Data.DataTable>
+  nameWithType.vb: List(Of DataTable)
+  fullName.vb: System.Collections.Generic.List(Of System.Data.DataTable)
+  name.vb: List(Of DataTable)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Data.DataTable
+    name: DataTable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.datatable
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Data.DataTable
+    name: DataTable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.datatable
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+memberLayout: SeparatePages

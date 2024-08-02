@@ -1,0 +1,899 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Rest.Abstractions.ExtensionMethods
+  commentId: T:Innova.Rest.Abstractions.ExtensionMethods
+  id: ExtensionMethods
+  parent: Innova.Rest.Abstractions
+  children:
+  - Innova.Rest.Abstractions.ExtensionMethods.ToBooleanExpression``1(System.Byte[])
+  - Innova.Rest.Abstractions.ExtensionMethods.ToBytes(System.Linq.Expressions.Expression)
+  - Innova.Rest.Abstractions.ExtensionMethods.ToDictionary(Innova.Data.Entity.IPrimaryKey)
+  - Innova.Rest.Abstractions.ExtensionMethods.ToExpression(System.Byte[])
+  - Innova.Rest.Abstractions.ExtensionMethods.ToExpressionNode(System.Byte[])
+  - Innova.Rest.Abstractions.ExtensionMethods.ToExpression``1(System.Byte[])
+  - Innova.Rest.Abstractions.ExtensionMethods.ToPrimaryKey``1(System.Collections.Generic.Dictionary{System.String,System.Object})
+  - Innova.Rest.Abstractions.ExtensionMethods.ToQueryParameter``1(Innova.Rest.Abstractions.RestQueryParameter)
+  - Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter``1(Innova.Data.Entity.QueryParameter{``0})
+  langs:
+  - csharp
+  - vb
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Innova.Rest.Abstractions.ExtensionMethods
+  type: Class
+  source:
+    id: ExtensionMethods
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Abstractions\ExtensionMethods.cs
+    startLine: 15
+  assemblies:
+  - Innova.Rest.Abstractions
+  namespace: Innova.Rest.Abstractions
+  syntax:
+    content: public static class ExtensionMethods
+    content.vb: Public Module ExtensionMethods
+  inheritance:
+  - System.Object
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToDictionary(Innova.Data.Entity.IPrimaryKey)
+  commentId: M:Innova.Rest.Abstractions.ExtensionMethods.ToDictionary(Innova.Data.Entity.IPrimaryKey)
+  id: ToDictionary(Innova.Data.Entity.IPrimaryKey)
+  isExtensionMethod: true
+  parent: Innova.Rest.Abstractions.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: ToDictionary(IPrimaryKey)
+  nameWithType: ExtensionMethods.ToDictionary(IPrimaryKey)
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToDictionary(Innova.Data.Entity.IPrimaryKey)
+  type: Method
+  source:
+    id: ToDictionary
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Abstractions\ExtensionMethods.cs
+    startLine: 21
+  assemblies:
+  - Innova.Rest.Abstractions
+  namespace: Innova.Rest.Abstractions
+  syntax:
+    content: public static Dictionary<string, object> ToDictionary(this IPrimaryKey primaryKeys)
+    parameters:
+    - id: primaryKeys
+      type: Innova.Data.Entity.IPrimaryKey
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    content.vb: Public Shared Function ToDictionary(primaryKeys As IPrimaryKey) As Dictionary(Of String, Object)
+  overload: Innova.Rest.Abstractions.ExtensionMethods.ToDictionary*
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToPrimaryKey``1(System.Collections.Generic.Dictionary{System.String,System.Object})
+  commentId: M:Innova.Rest.Abstractions.ExtensionMethods.ToPrimaryKey``1(System.Collections.Generic.Dictionary{System.String,System.Object})
+  id: ToPrimaryKey``1(System.Collections.Generic.Dictionary{System.String,System.Object})
+  isExtensionMethod: true
+  parent: Innova.Rest.Abstractions.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: ToPrimaryKey<T>(Dictionary<string, object>)
+  nameWithType: ExtensionMethods.ToPrimaryKey<T>(Dictionary<string, object>)
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToPrimaryKey<T>(System.Collections.Generic.Dictionary<string, object>)
+  type: Method
+  source:
+    id: ToPrimaryKey
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Abstractions\ExtensionMethods.cs
+    startLine: 32
+  assemblies:
+  - Innova.Rest.Abstractions
+  namespace: Innova.Rest.Abstractions
+  syntax:
+    content: public static PrimaryKeys<T> ToPrimaryKey<T>(this Dictionary<string, object> dictionary)
+    parameters:
+    - id: dictionary
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    typeParameters:
+    - id: T
+    return:
+      type: Innova.Data.Entity.PrimaryKeys{{T}}
+    content.vb: Public Shared Function ToPrimaryKey(Of T)(dictionary As Dictionary(Of String, Object)) As PrimaryKeys(Of T)
+  overload: Innova.Rest.Abstractions.ExtensionMethods.ToPrimaryKey*
+  nameWithType.vb: ExtensionMethods.ToPrimaryKey(Of T)(Dictionary(Of String, Object))
+  fullName.vb: Innova.Rest.Abstractions.ExtensionMethods.ToPrimaryKey(Of T)(System.Collections.Generic.Dictionary(Of String, Object))
+  name.vb: ToPrimaryKey(Of T)(Dictionary(Of String, Object))
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToBytes(System.Linq.Expressions.Expression)
+  commentId: M:Innova.Rest.Abstractions.ExtensionMethods.ToBytes(System.Linq.Expressions.Expression)
+  id: ToBytes(System.Linq.Expressions.Expression)
+  isExtensionMethod: true
+  parent: Innova.Rest.Abstractions.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: ToBytes(Expression)
+  nameWithType: ExtensionMethods.ToBytes(Expression)
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToBytes(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    id: ToBytes
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Abstractions\ExtensionMethods.cs
+    startLine: 118
+  assemblies:
+  - Innova.Rest.Abstractions
+  namespace: Innova.Rest.Abstractions
+  syntax:
+    content: public static byte[] ToBytes(this Expression expression)
+    parameters:
+    - id: expression
+      type: System.Linq.Expressions.Expression
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function ToBytes(expression As Expression) As Byte()
+  overload: Innova.Rest.Abstractions.ExtensionMethods.ToBytes*
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToExpression``1(System.Byte[])
+  commentId: M:Innova.Rest.Abstractions.ExtensionMethods.ToExpression``1(System.Byte[])
+  id: ToExpression``1(System.Byte[])
+  isExtensionMethod: true
+  parent: Innova.Rest.Abstractions.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: ToExpression<ExpressionType>(byte[])
+  nameWithType: ExtensionMethods.ToExpression<ExpressionType>(byte[])
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToExpression<ExpressionType>(byte[])
+  type: Method
+  source:
+    id: ToExpression
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Abstractions\ExtensionMethods.cs
+    startLine: 125
+  assemblies:
+  - Innova.Rest.Abstractions
+  namespace: Innova.Rest.Abstractions
+  syntax:
+    content: public static Expression<ExpressionType> ToExpression<ExpressionType>(this byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    typeParameters:
+    - id: ExpressionType
+    return:
+      type: System.Linq.Expressions.Expression{{ExpressionType}}
+    content.vb: Public Shared Function ToExpression(Of ExpressionType)(bytes As Byte()) As Expression(Of ExpressionType)
+  overload: Innova.Rest.Abstractions.ExtensionMethods.ToExpression*
+  nameWithType.vb: ExtensionMethods.ToExpression(Of ExpressionType)(Byte())
+  fullName.vb: Innova.Rest.Abstractions.ExtensionMethods.ToExpression(Of ExpressionType)(Byte())
+  name.vb: ToExpression(Of ExpressionType)(Byte())
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToBooleanExpression``1(System.Byte[])
+  commentId: M:Innova.Rest.Abstractions.ExtensionMethods.ToBooleanExpression``1(System.Byte[])
+  id: ToBooleanExpression``1(System.Byte[])
+  isExtensionMethod: true
+  parent: Innova.Rest.Abstractions.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: ToBooleanExpression<T>(byte[])
+  nameWithType: ExtensionMethods.ToBooleanExpression<T>(byte[])
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToBooleanExpression<T>(byte[])
+  type: Method
+  source:
+    id: ToBooleanExpression
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Abstractions\ExtensionMethods.cs
+    startLine: 131
+  assemblies:
+  - Innova.Rest.Abstractions
+  namespace: Innova.Rest.Abstractions
+  syntax:
+    content: public static Expression<Func<T, bool>> ToBooleanExpression<T>(this byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    typeParameters:
+    - id: T
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+    content.vb: Public Shared Function ToBooleanExpression(Of T)(bytes As Byte()) As Expression(Of Func(Of T, Boolean))
+  overload: Innova.Rest.Abstractions.ExtensionMethods.ToBooleanExpression*
+  nameWithType.vb: ExtensionMethods.ToBooleanExpression(Of T)(Byte())
+  fullName.vb: Innova.Rest.Abstractions.ExtensionMethods.ToBooleanExpression(Of T)(Byte())
+  name.vb: ToBooleanExpression(Of T)(Byte())
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToExpression(System.Byte[])
+  commentId: M:Innova.Rest.Abstractions.ExtensionMethods.ToExpression(System.Byte[])
+  id: ToExpression(System.Byte[])
+  isExtensionMethod: true
+  parent: Innova.Rest.Abstractions.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: ToExpression(byte[])
+  nameWithType: ExtensionMethods.ToExpression(byte[])
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToExpression(byte[])
+  type: Method
+  source:
+    id: ToExpression
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Abstractions\ExtensionMethods.cs
+    startLine: 138
+  assemblies:
+  - Innova.Rest.Abstractions
+  namespace: Innova.Rest.Abstractions
+  syntax:
+    content: public static Expression ToExpression(this byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    return:
+      type: System.Linq.Expressions.Expression
+    content.vb: Public Shared Function ToExpression(bytes As Byte()) As Expression
+  overload: Innova.Rest.Abstractions.ExtensionMethods.ToExpression*
+  nameWithType.vb: ExtensionMethods.ToExpression(Byte())
+  fullName.vb: Innova.Rest.Abstractions.ExtensionMethods.ToExpression(Byte())
+  name.vb: ToExpression(Byte())
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToExpressionNode(System.Byte[])
+  commentId: M:Innova.Rest.Abstractions.ExtensionMethods.ToExpressionNode(System.Byte[])
+  id: ToExpressionNode(System.Byte[])
+  isExtensionMethod: true
+  parent: Innova.Rest.Abstractions.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: ToExpressionNode(byte[])
+  nameWithType: ExtensionMethods.ToExpressionNode(byte[])
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToExpressionNode(byte[])
+  type: Method
+  source:
+    id: ToExpressionNode
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Abstractions\ExtensionMethods.cs
+    startLine: 144
+  assemblies:
+  - Innova.Rest.Abstractions
+  namespace: Innova.Rest.Abstractions
+  syntax:
+    content: public static ExpressionNode ToExpressionNode(this byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    return:
+      type: Serialize.Linq.Nodes.ExpressionNode
+    content.vb: Public Shared Function ToExpressionNode(bytes As Byte()) As ExpressionNode
+  overload: Innova.Rest.Abstractions.ExtensionMethods.ToExpressionNode*
+  nameWithType.vb: ExtensionMethods.ToExpressionNode(Byte())
+  fullName.vb: Innova.Rest.Abstractions.ExtensionMethods.ToExpressionNode(Byte())
+  name.vb: ToExpressionNode(Byte())
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToQueryParameter``1(Innova.Rest.Abstractions.RestQueryParameter)
+  commentId: M:Innova.Rest.Abstractions.ExtensionMethods.ToQueryParameter``1(Innova.Rest.Abstractions.RestQueryParameter)
+  id: ToQueryParameter``1(Innova.Rest.Abstractions.RestQueryParameter)
+  isExtensionMethod: true
+  parent: Innova.Rest.Abstractions.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: ToQueryParameter<T>(RestQueryParameter)
+  nameWithType: ExtensionMethods.ToQueryParameter<T>(RestQueryParameter)
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToQueryParameter<T>(Innova.Rest.Abstractions.RestQueryParameter)
+  type: Method
+  source:
+    id: ToQueryParameter
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Abstractions\ExtensionMethods.cs
+    startLine: 162
+  assemblies:
+  - Innova.Rest.Abstractions
+  namespace: Innova.Rest.Abstractions
+  syntax:
+    content: 'public static QueryParameter<T> ToQueryParameter<T>(this RestQueryParameter restQueryParameter) where T : class'
+    parameters:
+    - id: restQueryParameter
+      type: Innova.Rest.Abstractions.RestQueryParameter
+    typeParameters:
+    - id: T
+    return:
+      type: Innova.Data.Entity.QueryParameter{{T}}
+    content.vb: Public Shared Function ToQueryParameter(Of T As Class)(restQueryParameter As RestQueryParameter) As QueryParameter(Of T)
+  overload: Innova.Rest.Abstractions.ExtensionMethods.ToQueryParameter*
+  nameWithType.vb: ExtensionMethods.ToQueryParameter(Of T)(RestQueryParameter)
+  fullName.vb: Innova.Rest.Abstractions.ExtensionMethods.ToQueryParameter(Of T)(Innova.Rest.Abstractions.RestQueryParameter)
+  name.vb: ToQueryParameter(Of T)(RestQueryParameter)
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter``1(Innova.Data.Entity.QueryParameter{``0})
+  commentId: M:Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter``1(Innova.Data.Entity.QueryParameter{``0})
+  id: ToRestQueryParameter``1(Innova.Data.Entity.QueryParameter{``0})
+  isExtensionMethod: true
+  parent: Innova.Rest.Abstractions.ExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: ToRestQueryParameter<T>(QueryParameter<T>)
+  nameWithType: ExtensionMethods.ToRestQueryParameter<T>(QueryParameter<T>)
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter<T>(Innova.Data.Entity.QueryParameter<T>)
+  type: Method
+  source:
+    id: ToRestQueryParameter
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Rest\Innova.Rest.Abstractions\ExtensionMethods.cs
+    startLine: 228
+  assemblies:
+  - Innova.Rest.Abstractions
+  namespace: Innova.Rest.Abstractions
+  syntax:
+    content: 'public static RestQueryParameter ToRestQueryParameter<T>(this QueryParameter<T> queryParameter) where T : class'
+    parameters:
+    - id: queryParameter
+      type: Innova.Data.Entity.QueryParameter{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: Innova.Rest.Abstractions.RestQueryParameter
+    content.vb: Public Shared Function ToRestQueryParameter(Of T As Class)(queryParameter As QueryParameter(Of T)) As RestQueryParameter
+  overload: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter*
+  nameWithType.vb: ExtensionMethods.ToRestQueryParameter(Of T)(QueryParameter(Of T))
+  fullName.vb: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter(Of T)(Innova.Data.Entity.QueryParameter(Of T))
+  name.vb: ToRestQueryParameter(Of T)(QueryParameter(Of T))
+references:
+- uid: Innova.Rest.Abstractions
+  commentId: N:Innova.Rest.Abstractions
+  href: Innova.html
+  name: Innova.Rest.Abstractions
+  nameWithType: Innova.Rest.Abstractions
+  fullName: Innova.Rest.Abstractions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Abstractions
+    name: Abstractions
+    href: Innova.Rest.Abstractions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Rest
+    name: Rest
+    href: Innova.Rest.html
+  - name: .
+  - uid: Innova.Rest.Abstractions
+    name: Abstractions
+    href: Innova.Rest.Abstractions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToDictionary*
+  commentId: Overload:Innova.Rest.Abstractions.ExtensionMethods.ToDictionary
+  href: Innova.Rest.Abstractions.ExtensionMethods.ToDictionary.html#Innova_Rest_Abstractions_ExtensionMethods_ToDictionary_Innova_Data_Entity_IPrimaryKey_
+  name: ToDictionary
+  nameWithType: ExtensionMethods.ToDictionary
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToDictionary
+- uid: Innova.Data.Entity.IPrimaryKey
+  commentId: T:Innova.Data.Entity.IPrimaryKey
+  parent: Innova.Data.Entity
+  href: Innova.Data.Entity.IPrimaryKey.html
+  name: IPrimaryKey
+  nameWithType: IPrimaryKey
+  fullName: Innova.Data.Entity.IPrimaryKey
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, object>
+  nameWithType: Dictionary<string, object>
+  fullName: System.Collections.Generic.Dictionary<string, object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Innova.Data.Entity
+  commentId: N:Innova.Data.Entity
+  href: Innova.html
+  name: Innova.Data.Entity
+  nameWithType: Innova.Data.Entity
+  fullName: Innova.Data.Entity
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToPrimaryKey*
+  commentId: Overload:Innova.Rest.Abstractions.ExtensionMethods.ToPrimaryKey
+  href: Innova.Rest.Abstractions.ExtensionMethods.ToPrimaryKey.html#Innova_Rest_Abstractions_ExtensionMethods_ToPrimaryKey__1_System_Collections_Generic_Dictionary_System_String_System_Object__
+  name: ToPrimaryKey
+  nameWithType: ExtensionMethods.ToPrimaryKey
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToPrimaryKey
+- uid: Innova.Data.Entity.PrimaryKeys{{T}}
+  commentId: T:Innova.Data.Entity.PrimaryKeys{``0}
+  parent: Innova.Data.Entity
+  definition: Innova.Data.Entity.PrimaryKeys`1
+  href: Innova.Data.Entity.PrimaryKeys-1.html
+  name: PrimaryKeys<T>
+  nameWithType: PrimaryKeys<T>
+  fullName: Innova.Data.Entity.PrimaryKeys<T>
+  nameWithType.vb: PrimaryKeys(Of T)
+  fullName.vb: Innova.Data.Entity.PrimaryKeys(Of T)
+  name.vb: PrimaryKeys(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+    href: Innova.Data.Entity.PrimaryKeys-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+    href: Innova.Data.Entity.PrimaryKeys-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.Entity.PrimaryKeys`1
+  commentId: T:Innova.Data.Entity.PrimaryKeys`1
+  href: Innova.Data.Entity.PrimaryKeys-1.html
+  name: PrimaryKeys<T>
+  nameWithType: PrimaryKeys<T>
+  fullName: Innova.Data.Entity.PrimaryKeys<T>
+  nameWithType.vb: PrimaryKeys(Of T)
+  fullName.vb: Innova.Data.Entity.PrimaryKeys(Of T)
+  name.vb: PrimaryKeys(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+    href: Innova.Data.Entity.PrimaryKeys-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.PrimaryKeys`1
+    name: PrimaryKeys
+    href: Innova.Data.Entity.PrimaryKeys-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToBytes*
+  commentId: Overload:Innova.Rest.Abstractions.ExtensionMethods.ToBytes
+  href: Innova.Rest.Abstractions.ExtensionMethods.ToBytes.html#Innova_Rest_Abstractions_ExtensionMethods_ToBytes_System_Linq_Expressions_Expression_
+  name: ToBytes
+  nameWithType: ExtensionMethods.ToBytes
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToBytes
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToExpression*
+  commentId: Overload:Innova.Rest.Abstractions.ExtensionMethods.ToExpression
+  href: Innova.Rest.Abstractions.ExtensionMethods.ToExpression.html#Innova_Rest_Abstractions_ExtensionMethods_ToExpression__1_System_Byte___
+  name: ToExpression
+  nameWithType: ExtensionMethods.ToExpression
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToExpression
+- uid: System.Linq.Expressions.Expression{{ExpressionType}}
+  commentId: T:System.Linq.Expressions.Expression{``0}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<ExpressionType>
+  nameWithType: Expression<ExpressionType>
+  fullName: System.Linq.Expressions.Expression<ExpressionType>
+  nameWithType.vb: Expression(Of ExpressionType)
+  fullName.vb: System.Linq.Expressions.Expression(Of ExpressionType)
+  name.vb: Expression(Of ExpressionType)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: ExpressionType
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ExpressionType
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToBooleanExpression*
+  commentId: Overload:Innova.Rest.Abstractions.ExtensionMethods.ToBooleanExpression
+  href: Innova.Rest.Abstractions.ExtensionMethods.ToBooleanExpression.html#Innova_Rest_Abstractions_ExtensionMethods_ToBooleanExpression__1_System_Byte___
+  name: ToBooleanExpression
+  nameWithType: ExtensionMethods.ToBooleanExpression
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToBooleanExpression
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, bool>>
+  nameWithType: Expression<Func<T, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, bool>>
+  nameWithType.vb: Expression(Of Func(Of T, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean))
+  name.vb: Expression(Of Func(Of T, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToExpressionNode*
+  commentId: Overload:Innova.Rest.Abstractions.ExtensionMethods.ToExpressionNode
+  href: Innova.Rest.Abstractions.ExtensionMethods.ToExpressionNode.html#Innova_Rest_Abstractions_ExtensionMethods_ToExpressionNode_System_Byte___
+  name: ToExpressionNode
+  nameWithType: ExtensionMethods.ToExpressionNode
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToExpressionNode
+- uid: Serialize.Linq.Nodes.ExpressionNode
+  commentId: T:Serialize.Linq.Nodes.ExpressionNode
+  parent: Serialize.Linq.Nodes
+  isExternal: true
+  name: ExpressionNode
+  nameWithType: ExpressionNode
+  fullName: Serialize.Linq.Nodes.ExpressionNode
+- uid: Serialize.Linq.Nodes
+  commentId: N:Serialize.Linq.Nodes
+  isExternal: true
+  name: Serialize.Linq.Nodes
+  nameWithType: Serialize.Linq.Nodes
+  fullName: Serialize.Linq.Nodes
+  spec.csharp:
+  - uid: Serialize
+    name: Serialize
+    isExternal: true
+  - name: .
+  - uid: Serialize.Linq
+    name: Linq
+    isExternal: true
+  - name: .
+  - uid: Serialize.Linq.Nodes
+    name: Nodes
+    isExternal: true
+  spec.vb:
+  - uid: Serialize
+    name: Serialize
+    isExternal: true
+  - name: .
+  - uid: Serialize.Linq
+    name: Linq
+    isExternal: true
+  - name: .
+  - uid: Serialize.Linq.Nodes
+    name: Nodes
+    isExternal: true
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToQueryParameter*
+  commentId: Overload:Innova.Rest.Abstractions.ExtensionMethods.ToQueryParameter
+  href: Innova.Rest.Abstractions.ExtensionMethods.ToQueryParameter.html#Innova_Rest_Abstractions_ExtensionMethods_ToQueryParameter__1_Innova_Rest_Abstractions_RestQueryParameter_
+  name: ToQueryParameter
+  nameWithType: ExtensionMethods.ToQueryParameter
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToQueryParameter
+- uid: Innova.Rest.Abstractions.RestQueryParameter
+  commentId: T:Innova.Rest.Abstractions.RestQueryParameter
+  parent: Innova.Rest.Abstractions
+  href: Innova.Rest.Abstractions.RestQueryParameter.html
+  name: RestQueryParameter
+  nameWithType: RestQueryParameter
+  fullName: Innova.Rest.Abstractions.RestQueryParameter
+- uid: Innova.Data.Entity.QueryParameter{{T}}
+  commentId: T:Innova.Data.Entity.QueryParameter{`0}
+  parent: Innova.Data.Entity
+  definition: Innova.Data.Entity.QueryParameter`1
+  href: Innova.Data.Entity.QueryParameter-1.html
+  name: QueryParameter<T>
+  nameWithType: QueryParameter<T>
+  fullName: Innova.Data.Entity.QueryParameter<T>
+  nameWithType.vb: QueryParameter(Of T)
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T)
+  name.vb: QueryParameter(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Data.Entity.QueryParameter`1
+  commentId: T:Innova.Data.Entity.QueryParameter`1
+  href: Innova.Data.Entity.QueryParameter-1.html
+  name: QueryParameter<T>
+  nameWithType: QueryParameter<T>
+  fullName: Innova.Data.Entity.QueryParameter<T>
+  nameWithType.vb: QueryParameter(Of T)
+  fullName.vb: Innova.Data.Entity.QueryParameter(Of T)
+  name.vb: QueryParameter(Of T)
+  spec.csharp:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.QueryParameter`1
+    name: QueryParameter
+    href: Innova.Data.Entity.QueryParameter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter*
+  commentId: Overload:Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter
+  href: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter.html#Innova_Rest_Abstractions_ExtensionMethods_ToRestQueryParameter__1_Innova_Data_Entity_QueryParameter___0__
+  name: ToRestQueryParameter
+  nameWithType: ExtensionMethods.ToRestQueryParameter
+  fullName: Innova.Rest.Abstractions.ExtensionMethods.ToRestQueryParameter
+memberLayout: SeparatePages

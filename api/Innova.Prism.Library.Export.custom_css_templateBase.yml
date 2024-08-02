@@ -1,0 +1,828 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Export.custom_css_templateBase
+  commentId: T:Innova.Prism.Library.Export.custom_css_templateBase
+  id: custom_css_templateBase
+  parent: Innova.Prism.Library.Export
+  children:
+  - Innova.Prism.Library.Export.custom_css_templateBase.ClearIndent
+  - Innova.Prism.Library.Export.custom_css_templateBase.CurrentIndent
+  - Innova.Prism.Library.Export.custom_css_templateBase.Error(System.String)
+  - Innova.Prism.Library.Export.custom_css_templateBase.Errors
+  - Innova.Prism.Library.Export.custom_css_templateBase.GenerationEnvironment
+  - Innova.Prism.Library.Export.custom_css_templateBase.PopIndent
+  - Innova.Prism.Library.Export.custom_css_templateBase.PushIndent(System.String)
+  - Innova.Prism.Library.Export.custom_css_templateBase.Session
+  - Innova.Prism.Library.Export.custom_css_templateBase.ToStringHelper
+  - Innova.Prism.Library.Export.custom_css_templateBase.Warning(System.String)
+  - Innova.Prism.Library.Export.custom_css_templateBase.Write(System.String)
+  - Innova.Prism.Library.Export.custom_css_templateBase.Write(System.String,System.Object[])
+  - Innova.Prism.Library.Export.custom_css_templateBase.WriteLine(System.String)
+  - Innova.Prism.Library.Export.custom_css_templateBase.WriteLine(System.String,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: custom_css_templateBase
+  nameWithType: custom_css_templateBase
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase
+  type: Class
+  source:
+    id: custom_css_templateBase
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 93
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Base class for this transformation
+  example: []
+  syntax:
+    content: public class custom_css_templateBase
+    content.vb: Public Class custom_css_templateBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Innova.Prism.Library.Export.custom_css_template
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.GenerationEnvironment
+  commentId: P:Innova.Prism.Library.Export.custom_css_templateBase.GenerationEnvironment
+  id: GenerationEnvironment
+  parent: Innova.Prism.Library.Export.custom_css_templateBase
+  langs:
+  - csharp
+  - vb
+  name: GenerationEnvironment
+  nameWithType: custom_css_templateBase.GenerationEnvironment
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.GenerationEnvironment
+  type: Property
+  source:
+    id: GenerationEnvironment
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 108
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: The string builder that generation-time code is using to assemble generated output
+  example: []
+  syntax:
+    content: protected StringBuilder GenerationEnvironment { get; set; }
+    parameters: []
+    return:
+      type: System.Text.StringBuilder
+    content.vb: Protected Property GenerationEnvironment As StringBuilder
+  overload: Innova.Prism.Library.Export.custom_css_templateBase.GenerationEnvironment*
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.Errors
+  commentId: P:Innova.Prism.Library.Export.custom_css_templateBase.Errors
+  id: Errors
+  parent: Innova.Prism.Library.Export.custom_css_templateBase
+  langs:
+  - csharp
+  - vb
+  name: Errors
+  nameWithType: custom_css_templateBase.Errors
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.Errors
+  type: Property
+  source:
+    id: Errors
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 126
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: The error collection for the generation process
+  example: []
+  syntax:
+    content: public CompilerErrorCollection Errors { get; }
+    parameters: []
+    return:
+      type: System.CodeDom.Compiler.CompilerErrorCollection
+    content.vb: Public ReadOnly Property Errors As CompilerErrorCollection
+  overload: Innova.Prism.Library.Export.custom_css_templateBase.Errors*
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.CurrentIndent
+  commentId: P:Innova.Prism.Library.Export.custom_css_templateBase.CurrentIndent
+  id: CurrentIndent
+  parent: Innova.Prism.Library.Export.custom_css_templateBase
+  langs:
+  - csharp
+  - vb
+  name: CurrentIndent
+  nameWithType: custom_css_templateBase.CurrentIndent
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.CurrentIndent
+  type: Property
+  source:
+    id: CurrentIndent
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 154
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Gets the current indent we use when adding lines to the output
+  example: []
+  syntax:
+    content: public string CurrentIndent { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CurrentIndent As String
+  overload: Innova.Prism.Library.Export.custom_css_templateBase.CurrentIndent*
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.Session
+  commentId: P:Innova.Prism.Library.Export.custom_css_templateBase.Session
+  id: Session
+  parent: Innova.Prism.Library.Export.custom_css_templateBase
+  langs:
+  - csharp
+  - vb
+  name: Session
+  nameWithType: custom_css_templateBase.Session
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.Session
+  type: Property
+  source:
+    id: Session
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 164
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Current transformation session
+  example: []
+  syntax:
+    content: public virtual IDictionary<string, object> Session { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    content.vb: Public Overridable Property Session As IDictionary(Of String, Object)
+  overload: Innova.Prism.Library.Export.custom_css_templateBase.Session*
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.Write(System.String)
+  commentId: M:Innova.Prism.Library.Export.custom_css_templateBase.Write(System.String)
+  id: Write(System.String)
+  parent: Innova.Prism.Library.Export.custom_css_templateBase
+  langs:
+  - csharp
+  - vb
+  name: Write(string)
+  nameWithType: custom_css_templateBase.Write(string)
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.Write(string)
+  type: Method
+  source:
+    id: Write
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 180
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Write text directly into the generated output
+  example: []
+  syntax:
+    content: public void Write(string textToAppend)
+    parameters:
+    - id: textToAppend
+      type: System.String
+    content.vb: Public Sub Write(textToAppend As String)
+  overload: Innova.Prism.Library.Export.custom_css_templateBase.Write*
+  nameWithType.vb: custom_css_templateBase.Write(String)
+  fullName.vb: Innova.Prism.Library.Export.custom_css_templateBase.Write(String)
+  name.vb: Write(String)
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.WriteLine(System.String)
+  commentId: M:Innova.Prism.Library.Export.custom_css_templateBase.WriteLine(System.String)
+  id: WriteLine(System.String)
+  parent: Innova.Prism.Library.Export.custom_css_templateBase
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(string)
+  nameWithType: custom_css_templateBase.WriteLine(string)
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.WriteLine(string)
+  type: Method
+  source:
+    id: WriteLine
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 222
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Write text directly into the generated output
+  example: []
+  syntax:
+    content: public void WriteLine(string textToAppend)
+    parameters:
+    - id: textToAppend
+      type: System.String
+    content.vb: Public Sub WriteLine(textToAppend As String)
+  overload: Innova.Prism.Library.Export.custom_css_templateBase.WriteLine*
+  nameWithType.vb: custom_css_templateBase.WriteLine(String)
+  fullName.vb: Innova.Prism.Library.Export.custom_css_templateBase.WriteLine(String)
+  name.vb: WriteLine(String)
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.Write(System.String,System.Object[])
+  commentId: M:Innova.Prism.Library.Export.custom_css_templateBase.Write(System.String,System.Object[])
+  id: Write(System.String,System.Object[])
+  parent: Innova.Prism.Library.Export.custom_css_templateBase
+  langs:
+  - csharp
+  - vb
+  name: Write(string, params object[])
+  nameWithType: custom_css_templateBase.Write(string, params object[])
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.Write(string, params object[])
+  type: Method
+  source:
+    id: Write
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 231
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Write formatted text directly into the generated output
+  example: []
+  syntax:
+    content: public void Write(string format, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub Write(format As String, ParamArray args As Object())
+  overload: Innova.Prism.Library.Export.custom_css_templateBase.Write*
+  nameWithType.vb: custom_css_templateBase.Write(String, ParamArray Object())
+  fullName.vb: Innova.Prism.Library.Export.custom_css_templateBase.Write(String, ParamArray Object())
+  name.vb: Write(String, ParamArray Object())
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.WriteLine(System.String,System.Object[])
+  commentId: M:Innova.Prism.Library.Export.custom_css_templateBase.WriteLine(System.String,System.Object[])
+  id: WriteLine(System.String,System.Object[])
+  parent: Innova.Prism.Library.Export.custom_css_templateBase
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(string, params object[])
+  nameWithType: custom_css_templateBase.WriteLine(string, params object[])
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.WriteLine(string, params object[])
+  type: Method
+  source:
+    id: WriteLine
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 238
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Write formatted text directly into the generated output
+  example: []
+  syntax:
+    content: public void WriteLine(string format, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub WriteLine(format As String, ParamArray args As Object())
+  overload: Innova.Prism.Library.Export.custom_css_templateBase.WriteLine*
+  nameWithType.vb: custom_css_templateBase.WriteLine(String, ParamArray Object())
+  fullName.vb: Innova.Prism.Library.Export.custom_css_templateBase.WriteLine(String, ParamArray Object())
+  name.vb: WriteLine(String, ParamArray Object())
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.Error(System.String)
+  commentId: M:Innova.Prism.Library.Export.custom_css_templateBase.Error(System.String)
+  id: Error(System.String)
+  parent: Innova.Prism.Library.Export.custom_css_templateBase
+  langs:
+  - csharp
+  - vb
+  name: Error(string)
+  nameWithType: custom_css_templateBase.Error(string)
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.Error(string)
+  type: Method
+  source:
+    id: Error
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 245
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Raise an error
+  example: []
+  syntax:
+    content: public void Error(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub [Error](message As String)
+  overload: Innova.Prism.Library.Export.custom_css_templateBase.Error*
+  nameWithType.vb: custom_css_templateBase.Error(String)
+  fullName.vb: Innova.Prism.Library.Export.custom_css_templateBase.Error(String)
+  name.vb: Error(String)
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.Warning(System.String)
+  commentId: M:Innova.Prism.Library.Export.custom_css_templateBase.Warning(System.String)
+  id: Warning(System.String)
+  parent: Innova.Prism.Library.Export.custom_css_templateBase
+  langs:
+  - csharp
+  - vb
+  name: Warning(string)
+  nameWithType: custom_css_templateBase.Warning(string)
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.Warning(string)
+  type: Method
+  source:
+    id: Warning
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 254
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Raise a warning
+  example: []
+  syntax:
+    content: public void Warning(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub Warning(message As String)
+  overload: Innova.Prism.Library.Export.custom_css_templateBase.Warning*
+  nameWithType.vb: custom_css_templateBase.Warning(String)
+  fullName.vb: Innova.Prism.Library.Export.custom_css_templateBase.Warning(String)
+  name.vb: Warning(String)
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.PushIndent(System.String)
+  commentId: M:Innova.Prism.Library.Export.custom_css_templateBase.PushIndent(System.String)
+  id: PushIndent(System.String)
+  parent: Innova.Prism.Library.Export.custom_css_templateBase
+  langs:
+  - csharp
+  - vb
+  name: PushIndent(string)
+  nameWithType: custom_css_templateBase.PushIndent(string)
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.PushIndent(string)
+  type: Method
+  source:
+    id: PushIndent
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 264
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Increase the indent
+  example: []
+  syntax:
+    content: public void PushIndent(string indent)
+    parameters:
+    - id: indent
+      type: System.String
+    content.vb: Public Sub PushIndent(indent As String)
+  overload: Innova.Prism.Library.Export.custom_css_templateBase.PushIndent*
+  nameWithType.vb: custom_css_templateBase.PushIndent(String)
+  fullName.vb: Innova.Prism.Library.Export.custom_css_templateBase.PushIndent(String)
+  name.vb: PushIndent(String)
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.PopIndent
+  commentId: M:Innova.Prism.Library.Export.custom_css_templateBase.PopIndent
+  id: PopIndent
+  parent: Innova.Prism.Library.Export.custom_css_templateBase
+  langs:
+  - csharp
+  - vb
+  name: PopIndent()
+  nameWithType: custom_css_templateBase.PopIndent()
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.PopIndent()
+  type: Method
+  source:
+    id: PopIndent
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 276
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Remove the last indent that was added with PushIndent
+  example: []
+  syntax:
+    content: public string PopIndent()
+    return:
+      type: System.String
+    content.vb: Public Function PopIndent() As String
+  overload: Innova.Prism.Library.Export.custom_css_templateBase.PopIndent*
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.ClearIndent
+  commentId: M:Innova.Prism.Library.Export.custom_css_templateBase.ClearIndent
+  id: ClearIndent
+  parent: Innova.Prism.Library.Export.custom_css_templateBase
+  langs:
+  - csharp
+  - vb
+  name: ClearIndent()
+  nameWithType: custom_css_templateBase.ClearIndent()
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.ClearIndent()
+  type: Method
+  source:
+    id: ClearIndent
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 294
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Remove any indentation
+  example: []
+  syntax:
+    content: public void ClearIndent()
+    content.vb: Public Sub ClearIndent()
+  overload: Innova.Prism.Library.Export.custom_css_templateBase.ClearIndent*
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.ToStringHelper
+  commentId: P:Innova.Prism.Library.Export.custom_css_templateBase.ToStringHelper
+  id: ToStringHelper
+  parent: Innova.Prism.Library.Export.custom_css_templateBase
+  langs:
+  - csharp
+  - vb
+  name: ToStringHelper
+  nameWithType: custom_css_templateBase.ToStringHelper
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.ToStringHelper
+  type: Property
+  source:
+    id: ToStringHelper
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Export\custom_css_template.cs
+    startLine: 351
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Export
+  summary: Helper to produce culture-oriented representation of an object as a string
+  example: []
+  syntax:
+    content: public custom_css_templateBase.ToStringInstanceHelper ToStringHelper { get; }
+    parameters: []
+    return:
+      type: Innova.Prism.Library.Export.custom_css_templateBase.ToStringInstanceHelper
+    content.vb: Public ReadOnly Property ToStringHelper As custom_css_templateBase.ToStringInstanceHelper
+  overload: Innova.Prism.Library.Export.custom_css_templateBase.ToStringHelper*
+references:
+- uid: Innova.Prism.Library.Export
+  commentId: N:Innova.Prism.Library.Export
+  href: Innova.html
+  name: Innova.Prism.Library.Export
+  nameWithType: Innova.Prism.Library.Export
+  fullName: Innova.Prism.Library.Export
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Export
+    name: Export
+    href: Innova.Prism.Library.Export.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Export
+    name: Export
+    href: Innova.Prism.Library.Export.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.GenerationEnvironment*
+  commentId: Overload:Innova.Prism.Library.Export.custom_css_templateBase.GenerationEnvironment
+  href: Innova.Prism.Library.Export.custom_css_templateBase.GenerationEnvironment.html#Innova_Prism_Library_Export_custom_css_templateBase_GenerationEnvironment
+  name: GenerationEnvironment
+  nameWithType: custom_css_templateBase.GenerationEnvironment
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.GenerationEnvironment
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.Errors*
+  commentId: Overload:Innova.Prism.Library.Export.custom_css_templateBase.Errors
+  href: Innova.Prism.Library.Export.custom_css_templateBase.Errors.html#Innova_Prism_Library_Export_custom_css_templateBase_Errors
+  name: Errors
+  nameWithType: custom_css_templateBase.Errors
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.Errors
+- uid: System.CodeDom.Compiler.CompilerErrorCollection
+  commentId: T:System.CodeDom.Compiler.CompilerErrorCollection
+  parent: System.CodeDom.Compiler
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.codedom.compiler.compilererrorcollection
+  name: CompilerErrorCollection
+  nameWithType: CompilerErrorCollection
+  fullName: System.CodeDom.Compiler.CompilerErrorCollection
+- uid: System.CodeDom.Compiler
+  commentId: N:System.CodeDom.Compiler
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.CodeDom.Compiler
+  nameWithType: System.CodeDom.Compiler
+  fullName: System.CodeDom.Compiler
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.CodeDom
+    name: CodeDom
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.codedom
+  - name: .
+  - uid: System.CodeDom.Compiler
+    name: Compiler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.codedom.compiler
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.CodeDom
+    name: CodeDom
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.codedom
+  - name: .
+  - uid: System.CodeDom.Compiler
+    name: Compiler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.codedom.compiler
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.CurrentIndent*
+  commentId: Overload:Innova.Prism.Library.Export.custom_css_templateBase.CurrentIndent
+  href: Innova.Prism.Library.Export.custom_css_templateBase.CurrentIndent.html#Innova_Prism_Library_Export_custom_css_templateBase_CurrentIndent
+  name: CurrentIndent
+  nameWithType: custom_css_templateBase.CurrentIndent
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.CurrentIndent
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.Session*
+  commentId: Overload:Innova.Prism.Library.Export.custom_css_templateBase.Session
+  href: Innova.Prism.Library.Export.custom_css_templateBase.Session.html#Innova_Prism_Library_Export_custom_css_templateBase_Session
+  name: Session
+  nameWithType: custom_css_templateBase.Session
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.Session
+- uid: System.Collections.Generic.IDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, object>
+  nameWithType: IDictionary<string, object>
+  fullName: System.Collections.Generic.IDictionary<string, object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.Write*
+  commentId: Overload:Innova.Prism.Library.Export.custom_css_templateBase.Write
+  href: Innova.Prism.Library.Export.custom_css_templateBase.Write.html#Innova_Prism_Library_Export_custom_css_templateBase_Write_System_String_
+  name: Write
+  nameWithType: custom_css_templateBase.Write
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.Write
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.WriteLine*
+  commentId: Overload:Innova.Prism.Library.Export.custom_css_templateBase.WriteLine
+  href: Innova.Prism.Library.Export.custom_css_templateBase.WriteLine.html#Innova_Prism_Library_Export_custom_css_templateBase_WriteLine_System_String_
+  name: WriteLine
+  nameWithType: custom_css_templateBase.WriteLine
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.WriteLine
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.Error*
+  commentId: Overload:Innova.Prism.Library.Export.custom_css_templateBase.Error
+  href: Innova.Prism.Library.Export.custom_css_templateBase.Error.html#Innova_Prism_Library_Export_custom_css_templateBase_Error_System_String_
+  name: Error
+  nameWithType: custom_css_templateBase.Error
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.Error
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.Warning*
+  commentId: Overload:Innova.Prism.Library.Export.custom_css_templateBase.Warning
+  href: Innova.Prism.Library.Export.custom_css_templateBase.Warning.html#Innova_Prism_Library_Export_custom_css_templateBase_Warning_System_String_
+  name: Warning
+  nameWithType: custom_css_templateBase.Warning
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.Warning
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.PushIndent*
+  commentId: Overload:Innova.Prism.Library.Export.custom_css_templateBase.PushIndent
+  href: Innova.Prism.Library.Export.custom_css_templateBase.PushIndent.html#Innova_Prism_Library_Export_custom_css_templateBase_PushIndent_System_String_
+  name: PushIndent
+  nameWithType: custom_css_templateBase.PushIndent
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.PushIndent
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.PopIndent*
+  commentId: Overload:Innova.Prism.Library.Export.custom_css_templateBase.PopIndent
+  href: Innova.Prism.Library.Export.custom_css_templateBase.PopIndent.html#Innova_Prism_Library_Export_custom_css_templateBase_PopIndent
+  name: PopIndent
+  nameWithType: custom_css_templateBase.PopIndent
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.PopIndent
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.ClearIndent*
+  commentId: Overload:Innova.Prism.Library.Export.custom_css_templateBase.ClearIndent
+  href: Innova.Prism.Library.Export.custom_css_templateBase.ClearIndent.html#Innova_Prism_Library_Export_custom_css_templateBase_ClearIndent
+  name: ClearIndent
+  nameWithType: custom_css_templateBase.ClearIndent
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.ClearIndent
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.ToStringHelper*
+  commentId: Overload:Innova.Prism.Library.Export.custom_css_templateBase.ToStringHelper
+  href: Innova.Prism.Library.Export.custom_css_templateBase.ToStringHelper.html#Innova_Prism_Library_Export_custom_css_templateBase_ToStringHelper
+  name: ToStringHelper
+  nameWithType: custom_css_templateBase.ToStringHelper
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.ToStringHelper
+- uid: Innova.Prism.Library.Export.custom_css_templateBase.ToStringInstanceHelper
+  commentId: T:Innova.Prism.Library.Export.custom_css_templateBase.ToStringInstanceHelper
+  parent: Innova.Prism.Library.Export
+  href: Innova.Prism.Library.Export.custom_css_templateBase.html
+  name: custom_css_templateBase.ToStringInstanceHelper
+  nameWithType: custom_css_templateBase.ToStringInstanceHelper
+  fullName: Innova.Prism.Library.Export.custom_css_templateBase.ToStringInstanceHelper
+  spec.csharp:
+  - uid: Innova.Prism.Library.Export.custom_css_templateBase
+    name: custom_css_templateBase
+    href: Innova.Prism.Library.Export.custom_css_templateBase.html
+  - name: .
+  - uid: Innova.Prism.Library.Export.custom_css_templateBase.ToStringInstanceHelper
+    name: ToStringInstanceHelper
+    href: Innova.Prism.Library.Export.custom_css_templateBase.ToStringInstanceHelper.html
+  spec.vb:
+  - uid: Innova.Prism.Library.Export.custom_css_templateBase
+    name: custom_css_templateBase
+    href: Innova.Prism.Library.Export.custom_css_templateBase.html
+  - name: .
+  - uid: Innova.Prism.Library.Export.custom_css_templateBase.ToStringInstanceHelper
+    name: ToStringInstanceHelper
+    href: Innova.Prism.Library.Export.custom_css_templateBase.ToStringInstanceHelper.html
+memberLayout: SeparatePages

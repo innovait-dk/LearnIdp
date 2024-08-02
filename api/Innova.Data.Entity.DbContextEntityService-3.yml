@@ -92,10 +92,12 @@ items:
   source:
     id: EntitySecurity
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 18
+    startLine: 22
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
+  summary: Gets or sets the entity security for the DbContextEntityService.
+  example: []
   syntax:
     content: protected IEntitySecurity<T> EntitySecurity { get; }
     parameters: []
@@ -119,10 +121,12 @@ items:
   source:
     id: EntityValidationService
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 19
+    startLine: 28
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
+  summary: Represents a service for validating entities.
+  example: []
   syntax:
     content: protected IEntityValidationService<T, TEntityInterface> EntityValidationService { get; }
     parameters: []
@@ -146,10 +150,12 @@ items:
   source:
     id: SelectorFactory
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 20
+    startLine: 32
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
+  summary: Represents a factory for creating selectors.
+  example: []
   syntax:
     content: protected ISelectorFactory SelectorFactory { get; }
     parameters: []
@@ -173,10 +179,12 @@ items:
   source:
     id: EntityFactory
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 21
+    startLine: 37
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
+  summary: Represents a factory for creating entities.
+  example: []
   syntax:
     content: protected IEntityFactory<T> EntityFactory { get; }
     parameters: []
@@ -200,10 +208,12 @@ items:
   source:
     id: QueryModifier
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 22
+    startLine: 41
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
+  summary: Represents a modifier for query operations.
+  example: []
   syntax:
     content: protected IQueryModifier<T> QueryModifier { get; }
     parameters: []
@@ -227,10 +237,12 @@ items:
   source:
     id: DbContextFactory
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 23
+    startLine: 46
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
+  summary: Represents a factory for creating instances of the database context.
+  example: []
   syntax:
     content: protected IDbContextFactory<TDbContext> DbContextFactory { get; }
     parameters: []
@@ -254,25 +266,33 @@ items:
   source:
     id: .ctor
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 25
+    startLine: 57
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
+  summary: Initializes a new instance of the <xref href="Innova.Data.Entity.DbContextEntityService%603" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public DbContextEntityService(IEntitySecurity<T> entitySecurity, IEntityValidationService<T, TEntityInterface> entityValidationService, ISelectorFactory selectorFactory, IEntityFactory<T> entityFactory, IQueryModifier<T> queryModifier, IDbContextFactory<TDbContext> dbContextFactory)
     parameters:
     - id: entitySecurity
       type: Innova.Data.Security.IEntitySecurity{{T}}
+      description: The entity security.
     - id: entityValidationService
       type: Innova.Data.Entity.IEntityValidationService{{T},{TEntityInterface}}
+      description: The entity validation service.
     - id: selectorFactory
       type: Innova.Data.Entity.ISelectorFactory
+      description: The selector factory.
     - id: entityFactory
       type: Innova.Data.Entity.IEntityFactory{{T}}
+      description: The entity factory.
     - id: queryModifier
       type: Innova.Data.Entity.IQueryModifier{{T}}
+      description: The query modifier.
     - id: dbContextFactory
       type: Innova.Data.IDbContextFactory{{TDbContext}}
+      description: The DbContext factory.
     content.vb: Public Sub New(entitySecurity As IEntitySecurity(Of T), entityValidationService As IEntityValidationService(Of T, TEntityInterface), selectorFactory As ISelectorFactory, entityFactory As IEntityFactory(Of T), queryModifier As IQueryModifier(Of T), dbContextFactory As IDbContextFactory(Of TDbContext))
   overload: Innova.Data.Entity.DbContextEntityService`3.#ctor*
   nameWithType.vb: DbContextEntityService(Of T, TEntityInterface, TDbContext).New(IEntitySecurity(Of T), IEntityValidationService(Of T, TEntityInterface), ISelectorFactory, IEntityFactory(Of T), IQueryModifier(Of T), IDbContextFactory(Of TDbContext))
@@ -292,7 +312,7 @@ items:
   source:
     id: Insert
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 47
+    startLine: 79
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -331,7 +351,7 @@ items:
   source:
     id: InsertToDatabase
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 60
+    startLine: 92
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -368,7 +388,7 @@ items:
   source:
     id: Get
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 87
+    startLine: 119
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -408,7 +428,7 @@ items:
   source:
     id: Get
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 101
+    startLine: 133
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -448,7 +468,7 @@ items:
   source:
     id: Create
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 121
+    startLine: 153
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -486,7 +506,7 @@ items:
   source:
     id: Get
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 132
+    startLine: 164
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -524,7 +544,7 @@ items:
   source:
     id: GetList
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 156
+    startLine: 188
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -563,7 +583,7 @@ items:
   source:
     id: Update
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 173
+    startLine: 205
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -602,7 +622,7 @@ items:
   source:
     id: UpdateToDatabase
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 185
+    startLine: 217
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -639,7 +659,7 @@ items:
   source:
     id: Count
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 217
+    startLine: 249
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -678,7 +698,7 @@ items:
   source:
     id: Delete
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 242
+    startLine: 274
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -717,7 +737,7 @@ items:
   source:
     id: GetListForLookup
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 264
+    startLine: 296
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -752,7 +772,7 @@ items:
   source:
     id: ToListDistinct
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 294
+    startLine: 326
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -795,7 +815,7 @@ items:
   source:
     id: GetKeys
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 336
+    startLine: 368
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -834,7 +854,7 @@ items:
   source:
     id: ValidatePrimaryKeysAndCreateEntity
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 368
+    startLine: 400
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -867,7 +887,7 @@ items:
   source:
     id: CanThrowWarningIfNot
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 417
+    startLine: 449
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -900,7 +920,7 @@ items:
   source:
     id: Can
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 430
+    startLine: 462
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -942,7 +962,7 @@ items:
   source:
     id: CanThrowWarningIfNot
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 441
+    startLine: 473
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -975,7 +995,7 @@ items:
   source:
     id: Can
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 453
+    startLine: 485
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -1017,7 +1037,7 @@ items:
   source:
     id: ValidateAndPermissionCheck
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 474
+    startLine: 506
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -1056,7 +1076,7 @@ items:
   source:
     id: ValidateAndMapAndPermissionCheck
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 495
+    startLine: 527
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -1099,7 +1119,7 @@ items:
   source:
     id: MapAndPermissionCheck
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 514
+    startLine: 546
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -1139,7 +1159,7 @@ items:
   source:
     id: MapAndPermissionCheck
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 535
+    startLine: 567
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -1179,7 +1199,7 @@ items:
   source:
     id: Create
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 597
+    startLine: 629
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -1216,7 +1236,7 @@ items:
   source:
     id: Create
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 619
+    startLine: 651
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -1245,7 +1265,7 @@ items:
   source:
     id: Create
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextEntityService.cs
-    startLine: 629
+    startLine: 661
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -3160,6 +3180,43 @@ references:
   - uid: Innova.Data
     name: Data
     href: Innova.Data.html
+- uid: Innova.Data.Entity.DbContextEntityService`3
+  commentId: T:Innova.Data.Entity.DbContextEntityService`3
+  href: Innova.Data.Entity.DbContextEntityService-3.html
+  name: DbContextEntityService<T, TEntityInterface, TDbContext>
+  nameWithType: DbContextEntityService<T, TEntityInterface, TDbContext>
+  fullName: Innova.Data.Entity.DbContextEntityService<T, TEntityInterface, TDbContext>
+  nameWithType.vb: DbContextEntityService(Of T, TEntityInterface, TDbContext)
+  fullName.vb: Innova.Data.Entity.DbContextEntityService(Of T, TEntityInterface, TDbContext)
+  name.vb: DbContextEntityService(Of T, TEntityInterface, TDbContext)
+  spec.csharp:
+  - uid: Innova.Data.Entity.DbContextEntityService`3
+    name: DbContextEntityService
+    href: Innova.Data.Entity.DbContextEntityService-3.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: ','
+  - name: " "
+  - name: TDbContext
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Data.Entity.DbContextEntityService`3
+    name: DbContextEntityService
+    href: Innova.Data.Entity.DbContextEntityService-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TEntityInterface
+  - name: ','
+  - name: " "
+  - name: TDbContext
+  - name: )
 - uid: Innova.Data.Entity.DbContextEntityService`3.#ctor*
   commentId: Overload:Innova.Data.Entity.DbContextEntityService`3.#ctor
   href: Innova.Data.Entity.DbContextEntityService-3.-ctor.html#Innova_Data_Entity_DbContextEntityService_3__ctor_Innova_Data_Security_IEntitySecurity__0__Innova_Data_Entity_IEntityValidationService__0__1__Innova_Data_Entity_ISelectorFactory_Innova_Data_Entity_IEntityFactory__0__Innova_Data_Entity_IQueryModifier__0__Innova_Data_IDbContextFactory__2__

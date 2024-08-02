@@ -1,0 +1,1333 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1
+  commentId: T:Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1
+  id: BasePinnedListViewModel`1
+  parent: Innova.Prism.Library.Controls.PinnedList2
+  children:
+  - Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.#ctor(System.Windows.Threading.Dispatcher,Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IPinnedListService{`0})
+  - Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.GetItems
+  - Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.pinnedListService
+  langs:
+  - csharp
+  - vb
+  name: BasePinnedListViewModel<T>
+  nameWithType: BasePinnedListViewModel<T>
+  fullName: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel<T>
+  type: Class
+  source:
+    id: BasePinnedListViewModel
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\PinnedList\BasePinnedListViewModel.cs
+    startLine: 13
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.PinnedList2
+  syntax:
+    content: 'public class BasePinnedListViewModel<T> : PinnedListViewModel<T>, INotifyPropertyChanged, IActiveAware, IRegionMemberLifetime where T : class'
+    typeParameters:
+    - id: T
+    content.vb: Public Class BasePinnedListViewModel(Of T As Class) Inherits PinnedListViewModel(Of T) Implements INotifyPropertyChanged, IActiveAware, IRegionMemberLifetime
+  inheritance:
+  - System.Object
+  - Prism.Mvvm.BindableBase
+  - Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel
+  - Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - Prism.IActiveAware
+  - Prism.Regions.IRegionMemberLifetime
+  inheritedMembers:
+  - Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.MaxCount
+  - Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.ShowHeader
+  - Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.Items
+  - Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.Header
+  - Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.ShowPin
+  - Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.KeepAlive
+  - Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.Dispatcher
+  - Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.EventAggregator
+  - Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.LoadItems
+  - Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.Tokens
+  - Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.IsActiveChanged
+  - Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.IsActive
+  - Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.OnIsActiveChanged
+  - Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.RemoveSubscriptions
+  - Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.AddSubscriptions
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  - Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  - Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  - Prism.Mvvm.BindableBase.PropertyChanged
+  nameWithType.vb: BasePinnedListViewModel(Of T)
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel(Of T)
+  name.vb: BasePinnedListViewModel(Of T)
+- uid: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.pinnedListService
+  commentId: F:Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.pinnedListService
+  id: pinnedListService
+  parent: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: pinnedListService
+  nameWithType: BasePinnedListViewModel<T>.pinnedListService
+  fullName: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel<T>.pinnedListService
+  type: Field
+  source:
+    id: pinnedListService
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\PinnedList\BasePinnedListViewModel.cs
+    startLine: 15
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.PinnedList2
+  syntax:
+    content: protected readonly IPinnedListService<T> pinnedListService
+    return:
+      type: Innova.Prism.Library.Services.IPinnedListService{{T}}
+    content.vb: Protected ReadOnly pinnedListService As IPinnedListService(Of T)
+  nameWithType.vb: BasePinnedListViewModel(Of T).pinnedListService
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel(Of T).pinnedListService
+- uid: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.#ctor(System.Windows.Threading.Dispatcher,Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IPinnedListService{`0})
+  commentId: M:Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.#ctor(System.Windows.Threading.Dispatcher,Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IPinnedListService{`0})
+  id: '#ctor(System.Windows.Threading.Dispatcher,Prism.Events.IEventAggregator,Innova.Prism.Library.Services.IPinnedListService{`0})'
+  parent: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: BasePinnedListViewModel(Dispatcher, IEventAggregator, IPinnedListService<T>)
+  nameWithType: BasePinnedListViewModel<T>.BasePinnedListViewModel(Dispatcher, IEventAggregator, IPinnedListService<T>)
+  fullName: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel<T>.BasePinnedListViewModel(System.Windows.Threading.Dispatcher, Prism.Events.IEventAggregator, Innova.Prism.Library.Services.IPinnedListService<T>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\PinnedList\BasePinnedListViewModel.cs
+    startLine: 17
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.PinnedList2
+  syntax:
+    content: public BasePinnedListViewModel(Dispatcher dispatcher, IEventAggregator eventAggregator, IPinnedListService<T> pinnedListService)
+    parameters:
+    - id: dispatcher
+      type: System.Windows.Threading.Dispatcher
+    - id: eventAggregator
+      type: Prism.Events.IEventAggregator
+    - id: pinnedListService
+      type: Innova.Prism.Library.Services.IPinnedListService{{T}}
+    content.vb: Public Sub New(dispatcher As Dispatcher, eventAggregator As IEventAggregator, pinnedListService As IPinnedListService(Of T))
+  overload: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.#ctor*
+  nameWithType.vb: BasePinnedListViewModel(Of T).New(Dispatcher, IEventAggregator, IPinnedListService(Of T))
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel(Of T).New(System.Windows.Threading.Dispatcher, Prism.Events.IEventAggregator, Innova.Prism.Library.Services.IPinnedListService(Of T))
+  name.vb: New(Dispatcher, IEventAggregator, IPinnedListService(Of T))
+- uid: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.GetItems
+  commentId: M:Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.GetItems
+  id: GetItems
+  parent: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: GetItems()
+  nameWithType: BasePinnedListViewModel<T>.GetItems()
+  fullName: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel<T>.GetItems()
+  type: Method
+  source:
+    id: GetItems
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\PinnedList\BasePinnedListViewModel.cs
+    startLine: 23
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.PinnedList2
+  example: []
+  syntax:
+    content: protected override Task<List<PinnedListItemViewModel<T>>> GetItems()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Prism.Library.Controls.PinnedList2.PinnedListItemViewModel{{T}}}}
+    content.vb: Protected Overrides Function GetItems() As Task(Of List(Of PinnedListItemViewModel(Of T)))
+  overridden: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.GetItems
+  overload: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.GetItems*
+  nameWithType.vb: BasePinnedListViewModel(Of T).GetItems()
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel(Of T).GetItems()
+references:
+- uid: Innova.Prism.Library.Controls.PinnedList2
+  commentId: N:Innova.Prism.Library.Controls.PinnedList2
+  href: Innova.html
+  name: Innova.Prism.Library.Controls.PinnedList2
+  nameWithType: Innova.Prism.Library.Controls.PinnedList2
+  fullName: Innova.Prism.Library.Controls.PinnedList2
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Controls
+    name: Controls
+    href: Innova.Prism.Library.Controls.html
+  - name: .
+  - uid: Innova.Prism.Library.Controls.PinnedList2
+    name: PinnedList2
+    href: Innova.Prism.Library.Controls.PinnedList2.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Controls
+    name: Controls
+    href: Innova.Prism.Library.Controls.html
+  - name: .
+  - uid: Innova.Prism.Library.Controls.PinnedList2
+    name: PinnedList2
+    href: Innova.Prism.Library.Controls.PinnedList2.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Prism.Mvvm.BindableBase
+  commentId: T:Prism.Mvvm.BindableBase
+  parent: Prism.Mvvm
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: BindableBase
+  nameWithType: BindableBase
+  fullName: Prism.Mvvm.BindableBase
+- uid: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel
+  commentId: T:Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel
+  parent: Innova.Prism.Library.BaseViewModels
+  href: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.html
+  name: BaseActiveAwareViewModel
+  nameWithType: BaseActiveAwareViewModel
+  fullName: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}
+  commentId: T:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}
+  parent: Innova.Prism.Library.Controls.PinnedList2
+  definition: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.html
+  name: PinnedListViewModel<T>
+  nameWithType: PinnedListViewModel<T>
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>
+  nameWithType.vb: PinnedListViewModel(Of T)
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T)
+  name.vb: PinnedListViewModel(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1
+    name: PinnedListViewModel
+    href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1
+    name: PinnedListViewModel
+    href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Prism.IActiveAware
+  commentId: T:Prism.IActiveAware
+  parent: Prism
+  isExternal: true
+  name: IActiveAware
+  nameWithType: IActiveAware
+  fullName: Prism.IActiveAware
+- uid: Prism.Regions.IRegionMemberLifetime
+  commentId: T:Prism.Regions.IRegionMemberLifetime
+  parent: Prism.Regions
+  isExternal: true
+  name: IRegionMemberLifetime
+  nameWithType: IRegionMemberLifetime
+  fullName: Prism.Regions.IRegionMemberLifetime
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.MaxCount
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}.MaxCount
+  parent: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}
+  definition: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.MaxCount
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.MaxCount.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_MaxCount
+  name: MaxCount
+  nameWithType: PinnedListViewModel<T>.MaxCount
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.MaxCount
+  nameWithType.vb: PinnedListViewModel(Of T).MaxCount
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).MaxCount
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.ShowHeader
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}.ShowHeader
+  parent: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}
+  definition: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.ShowHeader
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.ShowHeader.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_ShowHeader
+  name: ShowHeader
+  nameWithType: PinnedListViewModel<T>.ShowHeader
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.ShowHeader
+  nameWithType.vb: PinnedListViewModel(Of T).ShowHeader
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).ShowHeader
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.Items
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}.Items
+  parent: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}
+  definition: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.Items
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.Items.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_Items
+  name: Items
+  nameWithType: PinnedListViewModel<T>.Items
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.Items
+  nameWithType.vb: PinnedListViewModel(Of T).Items
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).Items
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.Header
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}.Header
+  parent: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}
+  definition: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.Header
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.Header.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_Header
+  name: Header
+  nameWithType: PinnedListViewModel<T>.Header
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.Header
+  nameWithType.vb: PinnedListViewModel(Of T).Header
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).Header
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.ShowPin
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}.ShowPin
+  parent: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}
+  definition: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.ShowPin
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.ShowPin.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_ShowPin
+  name: ShowPin
+  nameWithType: PinnedListViewModel<T>.ShowPin
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.ShowPin
+  nameWithType.vb: PinnedListViewModel(Of T).ShowPin
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).ShowPin
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.KeepAlive
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}.KeepAlive
+  parent: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}
+  definition: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.KeepAlive
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.KeepAlive.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_KeepAlive
+  name: KeepAlive
+  nameWithType: PinnedListViewModel<T>.KeepAlive
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.KeepAlive
+  nameWithType.vb: PinnedListViewModel(Of T).KeepAlive
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).KeepAlive
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.Dispatcher
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}.Dispatcher
+  parent: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}
+  definition: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.Dispatcher
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.Dispatcher.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_Dispatcher
+  name: Dispatcher
+  nameWithType: PinnedListViewModel<T>.Dispatcher
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.Dispatcher
+  nameWithType.vb: PinnedListViewModel(Of T).Dispatcher
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).Dispatcher
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.EventAggregator
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}.EventAggregator
+  parent: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}
+  definition: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.EventAggregator
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.EventAggregator.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_EventAggregator
+  name: EventAggregator
+  nameWithType: PinnedListViewModel<T>.EventAggregator
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.EventAggregator
+  nameWithType.vb: PinnedListViewModel(Of T).EventAggregator
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).EventAggregator
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.LoadItems
+  commentId: M:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}.LoadItems
+  parent: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}
+  definition: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.LoadItems
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.LoadItems.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_LoadItems
+  name: LoadItems()
+  nameWithType: PinnedListViewModel<T>.LoadItems()
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.LoadItems()
+  nameWithType.vb: PinnedListViewModel(Of T).LoadItems()
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).LoadItems()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}.LoadItems
+    name: LoadItems
+    href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.LoadItems.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_LoadItems
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}.LoadItems
+    name: LoadItems
+    href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.LoadItems.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_LoadItems
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.Tokens
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.Tokens
+  parent: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel
+  href: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.Tokens.html#Innova_Prism_Library_BaseViewModels_BaseActiveAwareViewModel_Tokens
+  name: Tokens
+  nameWithType: BaseActiveAwareViewModel.Tokens
+  fullName: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.Tokens
+- uid: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.IsActiveChanged
+  commentId: E:Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.IsActiveChanged
+  parent: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel
+  href: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.IsActiveChanged.html#Innova_Prism_Library_BaseViewModels_BaseActiveAwareViewModel_IsActiveChanged
+  name: IsActiveChanged
+  nameWithType: BaseActiveAwareViewModel.IsActiveChanged
+  fullName: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.IsActiveChanged
+- uid: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.IsActive
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.IsActive
+  parent: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel
+  href: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.IsActive.html#Innova_Prism_Library_BaseViewModels_BaseActiveAwareViewModel_IsActive
+  name: IsActive
+  nameWithType: BaseActiveAwareViewModel.IsActive
+  fullName: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.IsActive
+- uid: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.OnIsActiveChanged
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.OnIsActiveChanged
+  parent: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel
+  href: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.OnIsActiveChanged.html#Innova_Prism_Library_BaseViewModels_BaseActiveAwareViewModel_OnIsActiveChanged
+  name: OnIsActiveChanged()
+  nameWithType: BaseActiveAwareViewModel.OnIsActiveChanged()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.OnIsActiveChanged()
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.OnIsActiveChanged
+    name: OnIsActiveChanged
+    href: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.OnIsActiveChanged.html#Innova_Prism_Library_BaseViewModels_BaseActiveAwareViewModel_OnIsActiveChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.OnIsActiveChanged
+    name: OnIsActiveChanged
+    href: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.OnIsActiveChanged.html#Innova_Prism_Library_BaseViewModels_BaseActiveAwareViewModel_OnIsActiveChanged
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.RemoveSubscriptions
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.RemoveSubscriptions
+  parent: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel
+  href: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.RemoveSubscriptions.html#Innova_Prism_Library_BaseViewModels_BaseActiveAwareViewModel_RemoveSubscriptions
+  name: RemoveSubscriptions()
+  nameWithType: BaseActiveAwareViewModel.RemoveSubscriptions()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.RemoveSubscriptions()
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.RemoveSubscriptions
+    name: RemoveSubscriptions
+    href: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.RemoveSubscriptions.html#Innova_Prism_Library_BaseViewModels_BaseActiveAwareViewModel_RemoveSubscriptions
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.RemoveSubscriptions
+    name: RemoveSubscriptions
+    href: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.RemoveSubscriptions.html#Innova_Prism_Library_BaseViewModels_BaseActiveAwareViewModel_RemoveSubscriptions
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.AddSubscriptions
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.AddSubscriptions
+  parent: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel
+  href: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.AddSubscriptions.html#Innova_Prism_Library_BaseViewModels_BaseActiveAwareViewModel_AddSubscriptions
+  name: AddSubscriptions()
+  nameWithType: BaseActiveAwareViewModel.AddSubscriptions()
+  fullName: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.AddSubscriptions()
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.AddSubscriptions
+    name: AddSubscriptions
+    href: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.AddSubscriptions.html#Innova_Prism_Library_BaseViewModels_BaseActiveAwareViewModel_AddSubscriptions
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.AddSubscriptions
+    name: AddSubscriptions
+    href: Innova.Prism.Library.BaseViewModels.BaseActiveAwareViewModel.AddSubscriptions.html#Innova_Prism_Library_BaseViewModels_BaseActiveAwareViewModel_AddSubscriptions
+  - name: (
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  commentId: M:Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: RaisePropertyChanged(string)
+  nameWithType: BindableBase.RaisePropertyChanged(string)
+  fullName: Prism.Mvvm.BindableBase.RaisePropertyChanged(string)
+  nameWithType.vb: BindableBase.RaisePropertyChanged(String)
+  fullName.vb: Prism.Mvvm.BindableBase.RaisePropertyChanged(String)
+  name.vb: RaisePropertyChanged(String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: OnPropertyChanged(PropertyChangedEventArgs)
+  nameWithType: BindableBase.OnPropertyChanged(PropertyChangedEventArgs)
+  fullName: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: Prism.Mvvm.BindableBase.PropertyChanged
+  commentId: E:Prism.Mvvm.BindableBase.PropertyChanged
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: PropertyChanged
+  nameWithType: BindableBase.PropertyChanged
+  fullName: Prism.Mvvm.BindableBase.PropertyChanged
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Prism.Mvvm
+  commentId: N:Prism.Mvvm
+  isExternal: true
+  name: Prism.Mvvm
+  nameWithType: Prism.Mvvm
+  fullName: Prism.Mvvm
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Mvvm
+    name: Mvvm
+    isExternal: true
+- uid: Innova.Prism.Library.BaseViewModels
+  commentId: N:Innova.Prism.Library.BaseViewModels
+  href: Innova.html
+  name: Innova.Prism.Library.BaseViewModels
+  nameWithType: Innova.Prism.Library.BaseViewModels
+  fullName: Innova.Prism.Library.BaseViewModels
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.BaseViewModels
+    name: BaseViewModels
+    href: Innova.Prism.Library.BaseViewModels.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.BaseViewModels
+    name: BaseViewModels
+    href: Innova.Prism.Library.BaseViewModels.html
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1
+  commentId: T:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.html
+  name: PinnedListViewModel<T>
+  nameWithType: PinnedListViewModel<T>
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>
+  nameWithType.vb: PinnedListViewModel(Of T)
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T)
+  name.vb: PinnedListViewModel(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1
+    name: PinnedListViewModel
+    href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1
+    name: PinnedListViewModel
+    href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Prism
+  isExternal: true
+- uid: Prism.Regions
+  commentId: N:Prism.Regions
+  href: Prism.html
+  name: Prism.Regions
+  nameWithType: Prism.Regions
+  fullName: Prism.Regions
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Regions
+    name: Regions
+    href: Prism.Regions.html
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    href: Prism.html
+  - name: .
+  - uid: Prism.Regions
+    name: Regions
+    href: Prism.Regions.html
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.MaxCount
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.MaxCount
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.MaxCount.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_MaxCount
+  name: MaxCount
+  nameWithType: PinnedListViewModel<T>.MaxCount
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.MaxCount
+  nameWithType.vb: PinnedListViewModel(Of T).MaxCount
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).MaxCount
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.ShowHeader
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.ShowHeader
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.ShowHeader.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_ShowHeader
+  name: ShowHeader
+  nameWithType: PinnedListViewModel<T>.ShowHeader
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.ShowHeader
+  nameWithType.vb: PinnedListViewModel(Of T).ShowHeader
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).ShowHeader
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.Items
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.Items
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.Items.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_Items
+  name: Items
+  nameWithType: PinnedListViewModel<T>.Items
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.Items
+  nameWithType.vb: PinnedListViewModel(Of T).Items
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).Items
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.Header
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.Header
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.Header.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_Header
+  name: Header
+  nameWithType: PinnedListViewModel<T>.Header
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.Header
+  nameWithType.vb: PinnedListViewModel(Of T).Header
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).Header
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.ShowPin
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.ShowPin
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.ShowPin.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_ShowPin
+  name: ShowPin
+  nameWithType: PinnedListViewModel<T>.ShowPin
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.ShowPin
+  nameWithType.vb: PinnedListViewModel(Of T).ShowPin
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).ShowPin
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.KeepAlive
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.KeepAlive
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.KeepAlive.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_KeepAlive
+  name: KeepAlive
+  nameWithType: PinnedListViewModel<T>.KeepAlive
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.KeepAlive
+  nameWithType.vb: PinnedListViewModel(Of T).KeepAlive
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).KeepAlive
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.Dispatcher
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.Dispatcher
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.Dispatcher.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_Dispatcher
+  name: Dispatcher
+  nameWithType: PinnedListViewModel<T>.Dispatcher
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.Dispatcher
+  nameWithType.vb: PinnedListViewModel(Of T).Dispatcher
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).Dispatcher
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.EventAggregator
+  commentId: P:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.EventAggregator
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.EventAggregator.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_EventAggregator
+  name: EventAggregator
+  nameWithType: PinnedListViewModel<T>.EventAggregator
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.EventAggregator
+  nameWithType.vb: PinnedListViewModel(Of T).EventAggregator
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).EventAggregator
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.LoadItems
+  commentId: M:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.LoadItems
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.LoadItems.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_LoadItems
+  name: LoadItems()
+  nameWithType: PinnedListViewModel<T>.LoadItems()
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.LoadItems()
+  nameWithType.vb: PinnedListViewModel(Of T).LoadItems()
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).LoadItems()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.LoadItems
+    name: LoadItems
+    href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.LoadItems.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_LoadItems
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.LoadItems
+    name: LoadItems
+    href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.LoadItems.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_LoadItems
+  - name: (
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  isExternal: true
+  href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  name: SetProperty<T>(ref T, T, Action, string)
+  nameWithType: BindableBase.SetProperty<T>(ref T, T, Action, string)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(ref T, T, System.Action, string)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Prism.Core/Mvvm/BindableBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Innova.Prism.Library.Services.IPinnedListService{{T}}
+  commentId: T:Innova.Prism.Library.Services.IPinnedListService{`0}
+  parent: Innova.Prism.Library.Services
+  definition: Innova.Prism.Library.Services.IPinnedListService`1
+  href: Innova.Prism.Library.Services.IPinnedListService-1.html
+  name: IPinnedListService<T>
+  nameWithType: IPinnedListService<T>
+  fullName: Innova.Prism.Library.Services.IPinnedListService<T>
+  nameWithType.vb: IPinnedListService(Of T)
+  fullName.vb: Innova.Prism.Library.Services.IPinnedListService(Of T)
+  name.vb: IPinnedListService(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IPinnedListService`1
+    name: IPinnedListService
+    href: Innova.Prism.Library.Services.IPinnedListService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IPinnedListService`1
+    name: IPinnedListService
+    href: Innova.Prism.Library.Services.IPinnedListService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Services.IPinnedListService`1
+  commentId: T:Innova.Prism.Library.Services.IPinnedListService`1
+  href: Innova.Prism.Library.Services.IPinnedListService-1.html
+  name: IPinnedListService<T>
+  nameWithType: IPinnedListService<T>
+  fullName: Innova.Prism.Library.Services.IPinnedListService<T>
+  nameWithType.vb: IPinnedListService(Of T)
+  fullName.vb: Innova.Prism.Library.Services.IPinnedListService(Of T)
+  name.vb: IPinnedListService(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IPinnedListService`1
+    name: IPinnedListService
+    href: Innova.Prism.Library.Services.IPinnedListService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IPinnedListService`1
+    name: IPinnedListService
+    href: Innova.Prism.Library.Services.IPinnedListService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Services
+  commentId: N:Innova.Prism.Library.Services
+  href: Innova.html
+  name: Innova.Prism.Library.Services
+  nameWithType: Innova.Prism.Library.Services
+  fullName: Innova.Prism.Library.Services
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Services
+    name: Services
+    href: Innova.Prism.Library.Services.html
+- uid: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.#ctor*
+  commentId: Overload:Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.#ctor
+  href: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel-1.-ctor.html#Innova_Prism_Library_Controls_PinnedList2_BasePinnedListViewModel_1__ctor_System_Windows_Threading_Dispatcher_Prism_Events_IEventAggregator_Innova_Prism_Library_Services_IPinnedListService__0__
+  name: BasePinnedListViewModel
+  nameWithType: BasePinnedListViewModel<T>.BasePinnedListViewModel
+  fullName: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel<T>.BasePinnedListViewModel
+  nameWithType.vb: BasePinnedListViewModel(Of T).New
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel(Of T).New
+  name.vb: New
+- uid: System.Windows.Threading.Dispatcher
+  commentId: T:System.Windows.Threading.Dispatcher
+  parent: System.Windows.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.threading.dispatcher
+  name: Dispatcher
+  nameWithType: Dispatcher
+  fullName: System.Windows.Threading.Dispatcher
+- uid: Prism.Events.IEventAggregator
+  commentId: T:Prism.Events.IEventAggregator
+  parent: Prism.Events
+  isExternal: true
+  name: IEventAggregator
+  nameWithType: IEventAggregator
+  fullName: Prism.Events.IEventAggregator
+- uid: System.Windows.Threading
+  commentId: N:System.Windows.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Threading
+  nameWithType: System.Windows.Threading
+  fullName: System.Windows.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.threading
+- uid: Prism.Events
+  commentId: N:Prism.Events
+  isExternal: true
+  name: Prism.Events
+  nameWithType: Prism.Events
+  fullName: Prism.Events
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}.GetItems
+  commentId: M:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}.GetItems
+  parent: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{{T}}
+  definition: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.GetItems
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.GetItems.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_GetItems
+  name: GetItems()
+  nameWithType: PinnedListViewModel<T>.GetItems()
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.GetItems()
+  nameWithType.vb: PinnedListViewModel(Of T).GetItems()
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).GetItems()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}.GetItems
+    name: GetItems
+    href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.GetItems.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_GetItems
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel{`0}.GetItems
+    name: GetItems
+    href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.GetItems.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_GetItems
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.GetItems*
+  commentId: Overload:Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel`1.GetItems
+  href: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel-1.GetItems.html#Innova_Prism_Library_Controls_PinnedList2_BasePinnedListViewModel_1_GetItems
+  name: GetItems
+  nameWithType: BasePinnedListViewModel<T>.GetItems
+  fullName: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel<T>.GetItems
+  nameWithType.vb: BasePinnedListViewModel(Of T).GetItems
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.BasePinnedListViewModel(Of T).GetItems
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Prism.Library.Controls.PinnedList2.PinnedListItemViewModel{{T}}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Innova.Prism.Library.Controls.PinnedList2.PinnedListItemViewModel{`0}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<PinnedListItemViewModel<T>>>
+  nameWithType: Task<List<PinnedListItemViewModel<T>>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Innova.Prism.Library.Controls.PinnedList2.PinnedListItemViewModel<T>>>
+  nameWithType.vb: Task(Of List(Of PinnedListItemViewModel(Of T)))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Innova.Prism.Library.Controls.PinnedList2.PinnedListItemViewModel(Of T)))
+  name.vb: Task(Of List(Of PinnedListItemViewModel(Of T)))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListItemViewModel`1
+    name: PinnedListItemViewModel
+    href: Innova.Prism.Library.Controls.PinnedList2.PinnedListItemViewModel-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListItemViewModel`1
+    name: PinnedListItemViewModel
+    href: Innova.Prism.Library.Controls.PinnedList2.PinnedListItemViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.GetItems
+  commentId: M:Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.GetItems
+  href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.GetItems.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_GetItems
+  name: GetItems()
+  nameWithType: PinnedListViewModel<T>.GetItems()
+  fullName: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel<T>.GetItems()
+  nameWithType.vb: PinnedListViewModel(Of T).GetItems()
+  fullName.vb: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel(Of T).GetItems()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.GetItems
+    name: GetItems
+    href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.GetItems.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_GetItems
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel`1.GetItems
+    name: GetItems
+    href: Innova.Prism.Library.Controls.PinnedList2.PinnedListViewModel-1.GetItems.html#Innova_Prism_Library_Controls_PinnedList2_PinnedListViewModel_1_GetItems
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+memberLayout: SeparatePages

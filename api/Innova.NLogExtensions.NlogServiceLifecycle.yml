@@ -1,0 +1,698 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.NLogExtensions.NlogServiceLifecycle
+  commentId: T:Innova.NLogExtensions.NlogServiceLifecycle
+  id: NlogServiceLifecycle
+  parent: Innova.NLogExtensions
+  children:
+  - Innova.NLogExtensions.NlogServiceLifecycle.#ctor(Microsoft.Extensions.Logging.ILogger{Innova.NLogExtensions.NlogServiceLifecycle})
+  - Innova.NLogExtensions.NlogServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  - Innova.NLogExtensions.NlogServiceLifecycle.Start(System.Threading.CancellationToken)
+  - Innova.NLogExtensions.NlogServiceLifecycle.StartOrder
+  - Innova.NLogExtensions.NlogServiceLifecycle.Stop(System.Threading.CancellationToken)
+  - Innova.NLogExtensions.NlogServiceLifecycle.StopOrder
+  langs:
+  - csharp
+  - vb
+  name: NlogServiceLifecycle
+  nameWithType: NlogServiceLifecycle
+  fullName: Innova.NLogExtensions.NlogServiceLifecycle
+  type: Class
+  source:
+    id: NlogServiceLifecycle
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\NlogServiceLifecycle.cs
+    startLine: 10
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Represents the service lifecycle for NLog.
+  example: []
+  syntax:
+    content: 'public class NlogServiceLifecycle : IServiceLifecycle'
+    content.vb: Public Class NlogServiceLifecycle Implements IServiceLifecycle
+  inheritance:
+  - System.Object
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle
+- uid: Innova.NLogExtensions.NlogServiceLifecycle.StopOrder
+  commentId: P:Innova.NLogExtensions.NlogServiceLifecycle.StopOrder
+  id: StopOrder
+  parent: Innova.NLogExtensions.NlogServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: StopOrder
+  nameWithType: NlogServiceLifecycle.StopOrder
+  fullName: Innova.NLogExtensions.NlogServiceLifecycle.StopOrder
+  type: Property
+  source:
+    id: StopOrder
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\NlogServiceLifecycle.cs
+    startLine: 17
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Gets the stop order of the service lifecycle.
+  example: []
+  syntax:
+    content: public int StopOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property StopOrder As Integer
+  overload: Innova.NLogExtensions.NlogServiceLifecycle.StopOrder*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+- uid: Innova.NLogExtensions.NlogServiceLifecycle.StartOrder
+  commentId: P:Innova.NLogExtensions.NlogServiceLifecycle.StartOrder
+  id: StartOrder
+  parent: Innova.NLogExtensions.NlogServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: StartOrder
+  nameWithType: NlogServiceLifecycle.StartOrder
+  fullName: Innova.NLogExtensions.NlogServiceLifecycle.StartOrder
+  type: Property
+  source:
+    id: StartOrder
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\NlogServiceLifecycle.cs
+    startLine: 22
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Gets the start order of the service lifecycle.
+  example: []
+  syntax:
+    content: public int StartOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property StartOrder As Integer
+  overload: Innova.NLogExtensions.NlogServiceLifecycle.StartOrder*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+- uid: Innova.NLogExtensions.NlogServiceLifecycle.#ctor(Microsoft.Extensions.Logging.ILogger{Innova.NLogExtensions.NlogServiceLifecycle})
+  commentId: M:Innova.NLogExtensions.NlogServiceLifecycle.#ctor(Microsoft.Extensions.Logging.ILogger{Innova.NLogExtensions.NlogServiceLifecycle})
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{Innova.NLogExtensions.NlogServiceLifecycle})'
+  parent: Innova.NLogExtensions.NlogServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: NlogServiceLifecycle(ILogger<NlogServiceLifecycle>)
+  nameWithType: NlogServiceLifecycle.NlogServiceLifecycle(ILogger<NlogServiceLifecycle>)
+  fullName: Innova.NLogExtensions.NlogServiceLifecycle.NlogServiceLifecycle(Microsoft.Extensions.Logging.ILogger<Innova.NLogExtensions.NlogServiceLifecycle>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\NlogServiceLifecycle.cs
+    startLine: 28
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Initializes a new instance of the <xref href="Innova.NLogExtensions.NlogServiceLifecycle" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public NlogServiceLifecycle(ILogger<NlogServiceLifecycle> logger)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Innova.NLogExtensions.NlogServiceLifecycle}
+      description: The logger.
+    content.vb: Public Sub New(logger As ILogger(Of NlogServiceLifecycle))
+  overload: Innova.NLogExtensions.NlogServiceLifecycle.#ctor*
+  nameWithType.vb: NlogServiceLifecycle.New(ILogger(Of NlogServiceLifecycle))
+  fullName.vb: Innova.NLogExtensions.NlogServiceLifecycle.New(Microsoft.Extensions.Logging.ILogger(Of Innova.NLogExtensions.NlogServiceLifecycle))
+  name.vb: New(ILogger(Of NlogServiceLifecycle))
+- uid: Innova.NLogExtensions.NlogServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  commentId: M:Innova.NLogExtensions.NlogServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  id: CanStop(System.Threading.CancellationToken)
+  parent: Innova.NLogExtensions.NlogServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: CanStop(CancellationToken)
+  nameWithType: NlogServiceLifecycle.CanStop(CancellationToken)
+  fullName: Innova.NLogExtensions.NlogServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: CanStop
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\NlogServiceLifecycle.cs
+    startLine: 38
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Determines whether the service can be stopped.
+  example: []
+  syntax:
+    content: public Task<bool> CanStop(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: A task that represents the asynchronous operation. The task result contains a value indicating whether the service can be stopped.
+    content.vb: Public Function CanStop(cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: Innova.NLogExtensions.NlogServiceLifecycle.CanStop*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+- uid: Innova.NLogExtensions.NlogServiceLifecycle.Start(System.Threading.CancellationToken)
+  commentId: M:Innova.NLogExtensions.NlogServiceLifecycle.Start(System.Threading.CancellationToken)
+  id: Start(System.Threading.CancellationToken)
+  parent: Innova.NLogExtensions.NlogServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: Start(CancellationToken)
+  nameWithType: NlogServiceLifecycle.Start(CancellationToken)
+  fullName: Innova.NLogExtensions.NlogServiceLifecycle.Start(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: Start
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\NlogServiceLifecycle.cs
+    startLine: 48
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Starts the service.
+  example: []
+  syntax:
+    content: public Task Start(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Public Function Start(cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.NLogExtensions.NlogServiceLifecycle.Start*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+- uid: Innova.NLogExtensions.NlogServiceLifecycle.Stop(System.Threading.CancellationToken)
+  commentId: M:Innova.NLogExtensions.NlogServiceLifecycle.Stop(System.Threading.CancellationToken)
+  id: Stop(System.Threading.CancellationToken)
+  parent: Innova.NLogExtensions.NlogServiceLifecycle
+  langs:
+  - csharp
+  - vb
+  name: Stop(CancellationToken)
+  nameWithType: NlogServiceLifecycle.Stop(CancellationToken)
+  fullName: Innova.NLogExtensions.NlogServiceLifecycle.Stop(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: Stop
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\NLog\Innova.NLogExtensions\NlogServiceLifecycle.cs
+    startLine: 58
+  assemblies:
+  - Innova.NLogExtensions
+  namespace: Innova.NLogExtensions
+  summary: Stops the service.
+  example: []
+  syntax:
+    content: public Task Stop(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Public Function [Stop](cancellationToken As CancellationToken = Nothing) As Task
+  overload: Innova.NLogExtensions.NlogServiceLifecycle.Stop*
+  implements:
+  - Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+references:
+- uid: Innova.NLogExtensions
+  commentId: N:Innova.NLogExtensions
+  href: Innova.html
+  name: Innova.NLogExtensions
+  nameWithType: Innova.NLogExtensions
+  fullName: Innova.NLogExtensions
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.NLogExtensions
+    name: NLogExtensions
+    href: Innova.NLogExtensions.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.NLogExtensions
+    name: NLogExtensions
+    href: Innova.NLogExtensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Innova.Abstractions.Builder.IServiceLifecycle
+  commentId: T:Innova.Abstractions.Builder.IServiceLifecycle
+  parent: Innova.Abstractions.Builder
+  href: Innova.Abstractions.Builder.IServiceLifecycle.html
+  name: IServiceLifecycle
+  nameWithType: IServiceLifecycle
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Abstractions.Builder
+  commentId: N:Innova.Abstractions.Builder
+  href: Innova.html
+  name: Innova.Abstractions.Builder
+  nameWithType: Innova.Abstractions.Builder
+  fullName: Innova.Abstractions.Builder
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Abstractions
+    name: Abstractions
+    href: Innova.Abstractions.html
+  - name: .
+  - uid: Innova.Abstractions.Builder
+    name: Builder
+    href: Innova.Abstractions.Builder.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Abstractions
+    name: Abstractions
+    href: Innova.Abstractions.html
+  - name: .
+  - uid: Innova.Abstractions.Builder
+    name: Builder
+    href: Innova.Abstractions.Builder.html
+- uid: Innova.NLogExtensions.NlogServiceLifecycle.StopOrder*
+  commentId: Overload:Innova.NLogExtensions.NlogServiceLifecycle.StopOrder
+  href: Innova.NLogExtensions.NlogServiceLifecycle.StopOrder.html#Innova_NLogExtensions_NlogServiceLifecycle_StopOrder
+  name: StopOrder
+  nameWithType: NlogServiceLifecycle.StopOrder
+  fullName: Innova.NLogExtensions.NlogServiceLifecycle.StopOrder
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+  commentId: P:Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  href: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder.html#Innova_Abstractions_Builder_IServiceLifecycle_StopOrder
+  name: StopOrder
+  nameWithType: IServiceLifecycle.StopOrder
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.StopOrder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Innova.NLogExtensions.NlogServiceLifecycle.StartOrder*
+  commentId: Overload:Innova.NLogExtensions.NlogServiceLifecycle.StartOrder
+  href: Innova.NLogExtensions.NlogServiceLifecycle.StartOrder.html#Innova_NLogExtensions_NlogServiceLifecycle_StartOrder
+  name: StartOrder
+  nameWithType: NlogServiceLifecycle.StartOrder
+  fullName: Innova.NLogExtensions.NlogServiceLifecycle.StartOrder
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+  commentId: P:Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  href: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder.html#Innova_Abstractions_Builder_IServiceLifecycle_StartOrder
+  name: StartOrder
+  nameWithType: IServiceLifecycle.StartOrder
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.StartOrder
+- uid: Innova.NLogExtensions.NlogServiceLifecycle
+  commentId: T:Innova.NLogExtensions.NlogServiceLifecycle
+  href: Innova.NLogExtensions.NlogServiceLifecycle.html
+  name: NlogServiceLifecycle
+  nameWithType: NlogServiceLifecycle
+  fullName: Innova.NLogExtensions.NlogServiceLifecycle
+- uid: Innova.NLogExtensions.NlogServiceLifecycle.#ctor*
+  commentId: Overload:Innova.NLogExtensions.NlogServiceLifecycle.#ctor
+  href: Innova.NLogExtensions.NlogServiceLifecycle.-ctor.html#Innova_NLogExtensions_NlogServiceLifecycle__ctor_Microsoft_Extensions_Logging_ILogger_Innova_NLogExtensions_NlogServiceLifecycle__
+  name: NlogServiceLifecycle
+  nameWithType: NlogServiceLifecycle.NlogServiceLifecycle
+  fullName: Innova.NLogExtensions.NlogServiceLifecycle.NlogServiceLifecycle
+  nameWithType.vb: NlogServiceLifecycle.New
+  fullName.vb: Innova.NLogExtensions.NlogServiceLifecycle.New
+  name.vb: New
+- uid: Microsoft.Extensions.Logging.ILogger{Innova.NLogExtensions.NlogServiceLifecycle}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Innova.NLogExtensions.NlogServiceLifecycle}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<NlogServiceLifecycle>
+  nameWithType: ILogger<NlogServiceLifecycle>
+  fullName: Microsoft.Extensions.Logging.ILogger<Innova.NLogExtensions.NlogServiceLifecycle>
+  nameWithType.vb: ILogger(Of NlogServiceLifecycle)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Innova.NLogExtensions.NlogServiceLifecycle)
+  name.vb: ILogger(Of NlogServiceLifecycle)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Innova.NLogExtensions.NlogServiceLifecycle
+    name: NlogServiceLifecycle
+    href: Innova.NLogExtensions.NlogServiceLifecycle.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.NLogExtensions.NlogServiceLifecycle
+    name: NlogServiceLifecycle
+    href: Innova.NLogExtensions.NlogServiceLifecycle.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Innova.NLogExtensions.NlogServiceLifecycle.CanStop*
+  commentId: Overload:Innova.NLogExtensions.NlogServiceLifecycle.CanStop
+  href: Innova.NLogExtensions.NlogServiceLifecycle.CanStop.html#Innova_NLogExtensions_NlogServiceLifecycle_CanStop_System_Threading_CancellationToken_
+  name: CanStop
+  nameWithType: NlogServiceLifecycle.CanStop
+  fullName: Innova.NLogExtensions.NlogServiceLifecycle.CanStop
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  isExternal: true
+  href: Innova.Abstractions.Builder.IServiceLifecycle.CanStop.html#Innova_Abstractions_Builder_IServiceLifecycle_CanStop_System_Threading_CancellationToken_
+  name: CanStop(CancellationToken)
+  nameWithType: IServiceLifecycle.CanStop(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+    name: CanStop
+    href: Innova.Abstractions.Builder.IServiceLifecycle.CanStop.html#Innova_Abstractions_Builder_IServiceLifecycle_CanStop_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.CanStop(System.Threading.CancellationToken)
+    name: CanStop
+    href: Innova.Abstractions.Builder.IServiceLifecycle.CanStop.html#Innova_Abstractions_Builder_IServiceLifecycle_CanStop_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.NLogExtensions.NlogServiceLifecycle.Start*
+  commentId: Overload:Innova.NLogExtensions.NlogServiceLifecycle.Start
+  href: Innova.NLogExtensions.NlogServiceLifecycle.Start.html#Innova_NLogExtensions_NlogServiceLifecycle_Start_System_Threading_CancellationToken_
+  name: Start
+  nameWithType: NlogServiceLifecycle.Start
+  fullName: Innova.NLogExtensions.NlogServiceLifecycle.Start
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  isExternal: true
+  href: Innova.Abstractions.Builder.IServiceLifecycle.Start.html#Innova_Abstractions_Builder_IServiceLifecycle_Start_System_Threading_CancellationToken_
+  name: Start(CancellationToken)
+  nameWithType: IServiceLifecycle.Start(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+    name: Start
+    href: Innova.Abstractions.Builder.IServiceLifecycle.Start.html#Innova_Abstractions_Builder_IServiceLifecycle_Start_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.Start(System.Threading.CancellationToken)
+    name: Start
+    href: Innova.Abstractions.Builder.IServiceLifecycle.Start.html#Innova_Abstractions_Builder_IServiceLifecycle_Start_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Innova.NLogExtensions.NlogServiceLifecycle.Stop*
+  commentId: Overload:Innova.NLogExtensions.NlogServiceLifecycle.Stop
+  href: Innova.NLogExtensions.NlogServiceLifecycle.Stop.html#Innova_NLogExtensions_NlogServiceLifecycle_Stop_System_Threading_CancellationToken_
+  name: Stop
+  nameWithType: NlogServiceLifecycle.Stop
+  fullName: Innova.NLogExtensions.NlogServiceLifecycle.Stop
+- uid: Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+  commentId: M:Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+  parent: Innova.Abstractions.Builder.IServiceLifecycle
+  isExternal: true
+  href: Innova.Abstractions.Builder.IServiceLifecycle.Stop.html#Innova_Abstractions_Builder_IServiceLifecycle_Stop_System_Threading_CancellationToken_
+  name: Stop(CancellationToken)
+  nameWithType: IServiceLifecycle.Stop(CancellationToken)
+  fullName: Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+    name: Stop
+    href: Innova.Abstractions.Builder.IServiceLifecycle.Stop.html#Innova_Abstractions_Builder_IServiceLifecycle_Stop_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Innova.Abstractions.Builder.IServiceLifecycle.Stop(System.Threading.CancellationToken)
+    name: Stop
+    href: Innova.Abstractions.Builder.IServiceLifecycle.Stop.html#Innova_Abstractions_Builder_IServiceLifecycle_Stop_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+memberLayout: SeparatePages

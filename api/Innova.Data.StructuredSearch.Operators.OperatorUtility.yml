@@ -130,23 +130,30 @@ items:
   source:
     id: GetContainsExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 68
+    startLine: 76
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that checks if the specified property contains the filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetContainsExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that checks if the property contains the filter value.
     content.vb: Public Shared Function GetContainsExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetContainsExpression*
   nameWithType.vb: OperatorUtility.GetContainsExpression(Of T)(ParameterExpression, String, Object)
@@ -166,23 +173,30 @@ items:
   source:
     id: GetContainsExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 74
+    startLine: 90
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that checks if the property contains the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetContainsExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The filter value to check.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that checks if the property contains the filter value.
     content.vb: Public Shared Function GetContainsExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetContainsExpression*
   nameWithType.vb: OperatorUtility.GetContainsExpression(Of T)(ParameterExpression, Expression, Object)
@@ -202,23 +216,30 @@ items:
   source:
     id: GetNotContainsExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 84
+    startLine: 108
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that represents the negation of a contains operation.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetNotContainsExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The value to filter.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression representing the negation of the contains operation.
     content.vb: Public Shared Function GetNotContainsExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetNotContainsExpression*
   nameWithType.vb: OperatorUtility.GetNotContainsExpression(Of T)(ParameterExpression, String, Object)
@@ -238,23 +259,30 @@ items:
   source:
     id: GetNotContainsExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 90
+    startLine: 122
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that represents the negation of a contains operation.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetNotContainsExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property to check.
     - id: filterValue
       type: System.Object
+      description: The value to check for containment.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression representing the negation of the contains operation.
     content.vb: Public Shared Function GetNotContainsExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetNotContainsExpression*
   nameWithType.vb: OperatorUtility.GetNotContainsExpression(Of T)(ParameterExpression, Expression, Object)
@@ -274,23 +302,30 @@ items:
   source:
     id: GetDateNotEqualsExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 100
+    startLine: 140
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that represents the inequality comparison of a date property with a filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetDateNotEqualsExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression representing the inequality comparison.
     content.vb: Public Shared Function GetDateNotEqualsExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetDateNotEqualsExpression*
   nameWithType.vb: OperatorUtility.GetDateNotEqualsExpression(Of T)(ParameterExpression, String, Object)
@@ -310,23 +345,30 @@ items:
   source:
     id: GetDateNotEqualsExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 106
+    startLine: 154
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that represents the inequality comparison of a date property with a filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetDateNotEqualsExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the date property.
     - id: filterValue
       type: System.Object
+      description: The filter value to compare with the date property.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression representing the inequality comparison.
     content.vb: Public Shared Function GetDateNotEqualsExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetDateNotEqualsExpression*
   nameWithType.vb: OperatorUtility.GetDateNotEqualsExpression(Of T)(ParameterExpression, Expression, Object)
@@ -346,23 +388,30 @@ items:
   source:
     id: GetDateEqualsExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 140
+    startLine: 193
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that checks if the date property is equal to the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetDateEqualsExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that checks if the date property is equal to the specified filter value.
     content.vb: Public Shared Function GetDateEqualsExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetDateEqualsExpression*
   nameWithType.vb: OperatorUtility.GetDateEqualsExpression(Of T)(ParameterExpression, String, Object)
@@ -382,23 +431,30 @@ items:
   source:
     id: GetDateEqualsExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 146
+    startLine: 207
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that checks if the date property is equal to the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetDateEqualsExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the date property.
     - id: filterValue
       type: System.Object
+      description: The filter value to compare against.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that checks if the date property is equal to the filter value.
     content.vb: Public Shared Function GetDateEqualsExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetDateEqualsExpression*
   nameWithType.vb: OperatorUtility.GetDateEqualsExpression(Of T)(ParameterExpression, Expression, Object)
@@ -418,23 +474,30 @@ items:
   source:
     id: GetNotEqualsExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 166
+    startLine: 235
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that represents the inequality comparison between the property expression and the filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetNotEqualsExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property to compare.
     - id: filterValue
       type: System.Object
+      description: The value to compare against.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression representing the inequality comparison.
     content.vb: Public Shared Function GetNotEqualsExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetNotEqualsExpression*
   nameWithType.vb: OperatorUtility.GetNotEqualsExpression(Of T)(ParameterExpression, Expression, Object)
@@ -454,23 +517,30 @@ items:
   source:
     id: GetNotEqualsExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 174
+    startLine: 251
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that represents the inequality comparison between the specified property and filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetNotEqualsExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression representing the inequality comparison.
     content.vb: Public Shared Function GetNotEqualsExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetNotEqualsExpression*
   nameWithType.vb: OperatorUtility.GetNotEqualsExpression(Of T)(ParameterExpression, String, Object)
@@ -490,23 +560,30 @@ items:
   source:
     id: GetMonthExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 214
+    startLine: 299
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that filters records based on the month of a property.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetMonthExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The filter value representing the month.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that filters records based on the month of a property.
     content.vb: Public Shared Function GetMonthExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetMonthExpression*
   nameWithType.vb: OperatorUtility.GetMonthExpression(Of T)(ParameterExpression, Expression, Object)
@@ -526,23 +603,30 @@ items:
   source:
     id: GetMonthExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 239
+    startLine: 331
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression for filtering by month.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetMonthExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression for filtering by month.
     content.vb: Public Shared Function GetMonthExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetMonthExpression*
   nameWithType.vb: OperatorUtility.GetMonthExpression(Of T)(ParameterExpression, String, Object)
@@ -562,25 +646,33 @@ items:
   source:
     id: GetQuarterExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 247
+    startLine: 348
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression for filtering records based on the quarter of a date property.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetQuarterExpression<T>(ParameterExpression parameter, Expression propertyExpression, object startMonth, object endMonth)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the date property.
     - id: startMonth
       type: System.Object
+      description: The start month of the quarter.
     - id: endMonth
       type: System.Object
+      description: The end month of the quarter.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression for filtering records based on the quarter of a date property.
     content.vb: Public Shared Function GetQuarterExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, startMonth As Object, endMonth As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetQuarterExpression*
   nameWithType.vb: OperatorUtility.GetQuarterExpression(Of T)(ParameterExpression, Expression, Object, Object)
@@ -600,25 +692,33 @@ items:
   source:
     id: GetQuarterExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 275
+    startLine: 384
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the quarter expression for filtering data based on the specified start and end months.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetQuarterExpression<T>(ParameterExpression parameter, string propertyName, object startMonth, object endMonth)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: startMonth
       type: System.Object
+      description: The start month of the quarter.
     - id: endMonth
       type: System.Object
+      description: The end month of the quarter.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression representing the quarter filter.
     content.vb: Public Shared Function GetQuarterExpression(Of T)(parameter As ParameterExpression, propertyName As String, startMonth As Object, endMonth As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetQuarterExpression*
   nameWithType.vb: OperatorUtility.GetQuarterExpression(Of T)(ParameterExpression, String, Object, Object)
@@ -638,23 +738,30 @@ items:
   source:
     id: GetEqualsExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 285
+    startLine: 402
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that checks for equality between the property value and the filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetEqualsExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that checks for equality.
     content.vb: Public Shared Function GetEqualsExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetEqualsExpression*
   nameWithType.vb: OperatorUtility.GetEqualsExpression(Of T)(ParameterExpression, Expression, Object)
@@ -674,23 +781,30 @@ items:
   source:
     id: GetEqualsExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 295
+    startLine: 419
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that checks if the specified property is equal to the filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetEqualsExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that checks if the property is equal to the filter value.
     content.vb: Public Shared Function GetEqualsExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetEqualsExpression*
   nameWithType.vb: OperatorUtility.GetEqualsExpression(Of T)(ParameterExpression, String, Object)
@@ -710,23 +824,30 @@ items:
   source:
     id: GetStartsWithExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 302
+    startLine: 434
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that checks if the specified property starts with the filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetStartsWithExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that checks if the property starts with the filter value.
     content.vb: Public Shared Function GetStartsWithExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetStartsWithExpression*
   nameWithType.vb: OperatorUtility.GetStartsWithExpression(Of T)(ParameterExpression, String, Object)
@@ -746,23 +867,30 @@ items:
   source:
     id: GetStartsWithExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 308
+    startLine: 448
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that checks if the property value starts with the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetStartsWithExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The filter value to check against.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression that checks if the property value starts with the specified filter value.
     content.vb: Public Shared Function GetStartsWithExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetStartsWithExpression*
   nameWithType.vb: OperatorUtility.GetStartsWithExpression(Of T)(ParameterExpression, Expression, Object)
@@ -782,23 +910,30 @@ items:
   source:
     id: GetNotStartsWithExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 317
+    startLine: 464
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that checks if the property value does not start with the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetNotStartsWithExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value to check against.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression that checks if the property value does not start with the specified filter value.
     content.vb: Public Shared Function GetNotStartsWithExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetNotStartsWithExpression*
   nameWithType.vb: OperatorUtility.GetNotStartsWithExpression(Of T)(ParameterExpression, String, Object)
@@ -818,23 +953,30 @@ items:
   source:
     id: GetNotStartsWithExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 323
+    startLine: 478
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that checks if the property value does not start with the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetNotStartsWithExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The filter value to check against.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression that checks if the property value does not start with the specified filter value.
     content.vb: Public Shared Function GetNotStartsWithExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetNotStartsWithExpression*
   nameWithType.vb: OperatorUtility.GetNotStartsWithExpression(Of T)(ParameterExpression, Expression, Object)
@@ -854,23 +996,30 @@ items:
   source:
     id: GetNotEndsWithExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 333
+    startLine: 496
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents a condition where the specified property does not end with the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetNotEndsWithExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the condition.
     content.vb: Public Shared Function GetNotEndsWithExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetNotEndsWithExpression*
   nameWithType.vb: OperatorUtility.GetNotEndsWithExpression(Of T)(ParameterExpression, String, Object)
@@ -890,23 +1039,30 @@ items:
   source:
     id: GetNotEndsWithExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 339
+    startLine: 510
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents a condition where the specified property does not end with the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetNotEndsWithExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the condition.
     content.vb: Public Shared Function GetNotEndsWithExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetNotEndsWithExpression*
   nameWithType.vb: OperatorUtility.GetNotEndsWithExpression(Of T)(ParameterExpression, Expression, Object)
@@ -926,23 +1082,30 @@ items:
   source:
     id: GetEndsWithExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 350
+    startLine: 526
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents a condition where the specified property ends with the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetEndsWithExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the condition.
     content.vb: Public Shared Function GetEndsWithExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetEndsWithExpression*
   nameWithType.vb: OperatorUtility.GetEndsWithExpression(Of T)(ParameterExpression, String, Object)
@@ -962,23 +1125,30 @@ items:
   source:
     id: GetEndsWithExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 356
+    startLine: 540
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents a condition where the specified property ends with the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetEndsWithExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the condition.
     content.vb: Public Shared Function GetEndsWithExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetEndsWithExpression*
   nameWithType.vb: OperatorUtility.GetEndsWithExpression(Of T)(ParameterExpression, Expression, Object)
@@ -998,23 +1168,30 @@ items:
   source:
     id: GetGreaterThanExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 364
+    startLine: 556
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents a greater than comparison for the specified property.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetGreaterThanExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The value to compare against.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the greater than comparison.
     content.vb: Public Shared Function GetGreaterThanExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetGreaterThanExpression*
   nameWithType.vb: OperatorUtility.GetGreaterThanExpression(Of T)(ParameterExpression, String, Object)
@@ -1034,25 +1211,33 @@ items:
   source:
     id: GetStringCompareToExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 371
+    startLine: 571
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents a string comparison using the CompareTo method.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetStringCompareToExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue, ExpressionType expressionType)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The value to compare against.
     - id: expressionType
       type: System.Linq.Expressions.ExpressionType
+      description: The type of comparison expression.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the string comparison.
     content.vb: Public Shared Function GetStringCompareToExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object, expressionType As ExpressionType) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetStringCompareToExpression*
   nameWithType.vb: OperatorUtility.GetStringCompareToExpression(Of T)(ParameterExpression, Expression, Object, ExpressionType)
@@ -1072,23 +1257,30 @@ items:
   source:
     id: GetGreaterThanExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 399
+    startLine: 606
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents a greater than comparison for the specified property.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetGreaterThanExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The value to compare against.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the greater than comparison.
     content.vb: Public Shared Function GetGreaterThanExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetGreaterThanExpression*
   nameWithType.vb: OperatorUtility.GetGreaterThanExpression(Of T)(ParameterExpression, Expression, Object)
@@ -1108,23 +1300,30 @@ items:
   source:
     id: GetDateGreaterThanExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 407
+    startLine: 621
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents a greater than comparison for the specified date property.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetDateGreaterThanExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the date property.
     - id: filterValue
       type: System.Object
+      description: The value to compare against.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the greater than comparison.
     content.vb: Public Shared Function GetDateGreaterThanExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetDateGreaterThanExpression*
   nameWithType.vb: OperatorUtility.GetDateGreaterThanExpression(Of T)(ParameterExpression, String, Object)
@@ -1144,23 +1343,30 @@ items:
   source:
     id: GetDateGreaterThanExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 413
+    startLine: 635
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents a greater than comparison for the specified date property.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetDateGreaterThanExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the date property.
     - id: filterValue
       type: System.Object
+      description: The value to compare against.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the greater than comparison.
     content.vb: Public Shared Function GetDateGreaterThanExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetDateGreaterThanExpression*
   nameWithType.vb: OperatorUtility.GetDateGreaterThanExpression(Of T)(ParameterExpression, Expression, Object)
@@ -1180,23 +1386,30 @@ items:
   source:
     id: GetDateGreaterThanOrEqualExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 426
+    startLine: 656
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that represents a greater than or equal comparison for a date property.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetDateGreaterThanOrEqualExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression representing the greater than or equal comparison.
     content.vb: Public Shared Function GetDateGreaterThanOrEqualExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetDateGreaterThanOrEqualExpression*
   nameWithType.vb: OperatorUtility.GetDateGreaterThanOrEqualExpression(Of T)(ParameterExpression, String, Object)
@@ -1216,23 +1429,30 @@ items:
   source:
     id: GetDateGreaterThanOrEqualExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 432
+    startLine: 670
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that represents a greater than or equal comparison for a date property.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetDateGreaterThanOrEqualExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression representing the greater than or equal comparison.
     content.vb: Public Shared Function GetDateGreaterThanOrEqualExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetDateGreaterThanOrEqualExpression*
   nameWithType.vb: OperatorUtility.GetDateGreaterThanOrEqualExpression(Of T)(ParameterExpression, Expression, Object)
@@ -1252,23 +1472,30 @@ items:
   source:
     id: GetDateLessThanExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 445
+    startLine: 691
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that represents a less than comparison for a date property.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetDateLessThanExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression representing the less than comparison.
     content.vb: Public Shared Function GetDateLessThanExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetDateLessThanExpression*
   nameWithType.vb: OperatorUtility.GetDateLessThanExpression(Of T)(ParameterExpression, String, Object)
@@ -1288,23 +1515,30 @@ items:
   source:
     id: GetDateLessThanExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 451
+    startLine: 705
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that represents a less than comparison for a date property.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetDateLessThanExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression representing the less than comparison.
     content.vb: Public Shared Function GetDateLessThanExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetDateLessThanExpression*
   nameWithType.vb: OperatorUtility.GetDateLessThanExpression(Of T)(ParameterExpression, Expression, Object)
@@ -1324,23 +1558,30 @@ items:
   source:
     id: GetDateLessThanOrEqualExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 464
+    startLine: 726
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that represents a less than or equal comparison for a date property.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetDateLessThanOrEqualExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression representing the less than or equal comparison.
     content.vb: Public Shared Function GetDateLessThanOrEqualExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetDateLessThanOrEqualExpression*
   nameWithType.vb: OperatorUtility.GetDateLessThanOrEqualExpression(Of T)(ParameterExpression, String, Object)
@@ -1360,23 +1601,30 @@ items:
   source:
     id: GetDateLessThanOrEqualExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 470
+    startLine: 740
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents the condition where the property value is less than or equal to the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetDateLessThanOrEqualExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the condition.
     content.vb: Public Shared Function GetDateLessThanOrEqualExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetDateLessThanOrEqualExpression*
   nameWithType.vb: OperatorUtility.GetDateLessThanOrEqualExpression(Of T)(ParameterExpression, Expression, Object)
@@ -1396,23 +1644,30 @@ items:
   source:
     id: GetGreaterThanOrEqualExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 484
+    startLine: 761
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents the condition where the property value is greater than or equal to the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetGreaterThanOrEqualExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the condition.
     content.vb: Public Shared Function GetGreaterThanOrEqualExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetGreaterThanOrEqualExpression*
   nameWithType.vb: OperatorUtility.GetGreaterThanOrEqualExpression(Of T)(ParameterExpression, String, Object)
@@ -1432,23 +1687,30 @@ items:
   source:
     id: GetGreaterThanOrEqualExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 489
+    startLine: 775
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents the condition where the property value is greater than or equal to the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetGreaterThanOrEqualExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the condition.
     content.vb: Public Shared Function GetGreaterThanOrEqualExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetGreaterThanOrEqualExpression*
   nameWithType.vb: OperatorUtility.GetGreaterThanOrEqualExpression(Of T)(ParameterExpression, Expression, Object)
@@ -1468,23 +1730,30 @@ items:
   source:
     id: GetLessThanExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 498
+    startLine: 790
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents the condition where the property value is less than the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetLessThanExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the condition.
     content.vb: Public Shared Function GetLessThanExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetLessThanExpression*
   nameWithType.vb: OperatorUtility.GetLessThanExpression(Of T)(ParameterExpression, String, Object)
@@ -1504,23 +1773,30 @@ items:
   source:
     id: GetLessThanExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 503
+    startLine: 804
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents the condition where the property value is less than the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetLessThanExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the condition.
     content.vb: Public Shared Function GetLessThanExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetLessThanExpression*
   nameWithType.vb: OperatorUtility.GetLessThanExpression(Of T)(ParameterExpression, Expression, Object)
@@ -1540,23 +1816,30 @@ items:
   source:
     id: GetLessThanOrEqualExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 511
+    startLine: 820
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that checks if the property value is less than or equal to the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetLessThanOrEqualExpression<T>(ParameterExpression parameter, string propertyName, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that checks if the property value is less than or equal to the specified filter value.
     content.vb: Public Shared Function GetLessThanOrEqualExpression(Of T)(parameter As ParameterExpression, propertyName As String, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetLessThanOrEqualExpression*
   nameWithType.vb: OperatorUtility.GetLessThanOrEqualExpression(Of T)(ParameterExpression, String, Object)
@@ -1576,23 +1859,30 @@ items:
   source:
     id: GetLessThanOrEqualExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 516
+    startLine: 834
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that checks if the property value is less than or equal to the specified filter value.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetLessThanOrEqualExpression<T>(ParameterExpression parameter, Expression propertyExpression, object filterValue)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: filterValue
       type: System.Object
+      description: The filter value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that checks if the property value is less than or equal to the specified filter value.
     content.vb: Public Shared Function GetLessThanOrEqualExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, filterValue As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetLessThanOrEqualExpression*
   nameWithType.vb: OperatorUtility.GetLessThanOrEqualExpression(Of T)(ParameterExpression, Expression, Object)
@@ -1612,21 +1902,27 @@ items:
   source:
     id: GetIsNullExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 525
+    startLine: 848
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that checks if the property value is null.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetIsNullExpression<T>(ParameterExpression parameter, string propertyName)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that checks if the property value is null.
     content.vb: Public Shared Function GetIsNullExpression(Of T)(parameter As ParameterExpression, propertyName As String) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetIsNullExpression*
   nameWithType.vb: OperatorUtility.GetIsNullExpression(Of T)(ParameterExpression, String)
@@ -1646,21 +1942,27 @@ items:
   source:
     id: GetIsNullExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 531
+    startLine: 861
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that checks if the property value is null.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetIsNullExpression<T>(ParameterExpression parameter, Expression propertyExpression)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that checks if the property value is null.
     content.vb: Public Shared Function GetIsNullExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetIsNullExpression*
   nameWithType.vb: OperatorUtility.GetIsNullExpression(Of T)(ParameterExpression, Expression)
@@ -1680,21 +1982,27 @@ items:
   source:
     id: GetIsNotNullExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 539
+    startLine: 876
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that checks if the property is not null.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetIsNotNullExpression<T>(ParameterExpression parameter, string propertyName)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that checks if the property is not null.
     content.vb: Public Shared Function GetIsNotNullExpression(Of T)(parameter As ParameterExpression, propertyName As String) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetIsNotNullExpression*
   nameWithType.vb: OperatorUtility.GetIsNotNullExpression(Of T)(ParameterExpression, String)
@@ -1714,21 +2022,27 @@ items:
   source:
     id: GetIsNotNullExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 545
+    startLine: 889
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that checks if the property is not null.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetIsNotNullExpression<T>(ParameterExpression parameter, Expression propertyExpression)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that checks if the property is not null.
     content.vb: Public Shared Function GetIsNotNullExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetIsNotNullExpression*
   nameWithType.vb: OperatorUtility.GetIsNotNullExpression(Of T)(ParameterExpression, Expression)
@@ -1748,23 +2062,30 @@ items:
   source:
     id: GetInExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 553
+    startLine: 904
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets the expression that checks if the property is in the specified values.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetInExpression<T>(ParameterExpression parameter, string propertyName, IEnumerable values)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: values
       type: System.Collections.IEnumerable
+      description: The values to check against.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: The expression that checks if the property is in the specified values.
     content.vb: Public Shared Function GetInExpression(Of T)(parameter As ParameterExpression, propertyName As String, values As IEnumerable) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetInExpression*
   nameWithType.vb: OperatorUtility.GetInExpression(Of T)(ParameterExpression, String, IEnumerable)
@@ -1784,23 +2105,30 @@ items:
   source:
     id: GetInExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 560
+    startLine: 919
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Generates an expression that checks if the property value is in the specified collection of values.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetInExpression<T>(ParameterExpression parameter, Expression propertyExpression, IEnumerable values)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property to check.
     - id: values
       type: System.Collections.IEnumerable
+      description: The collection of values to check against.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression that represents the check for the property value being in the specified collection of values.
     content.vb: Public Shared Function GetInExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, values As IEnumerable) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetInExpression*
   nameWithType.vb: OperatorUtility.GetInExpression(Of T)(ParameterExpression, Expression, IEnumerable)
@@ -1820,23 +2148,30 @@ items:
   source:
     id: GetNotInExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 575
+    startLine: 942
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Generates an expression that checks if the property value is not in the specified collection of values.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetNotInExpression<T>(ParameterExpression parameter, string propertyName, IEnumerable values)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property to check.
     - id: values
       type: System.Collections.IEnumerable
+      description: The collection of values to check against.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression that represents the check for the property value not being in the specified collection of values.
     content.vb: Public Shared Function GetNotInExpression(Of T)(parameter As ParameterExpression, propertyName As String, values As IEnumerable) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetNotInExpression*
   nameWithType.vb: OperatorUtility.GetNotInExpression(Of T)(ParameterExpression, String, IEnumerable)
@@ -1856,23 +2191,30 @@ items:
   source:
     id: GetNotInExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 582
+    startLine: 957
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Generates an expression that checks if the property value is not in the specified collection of values.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetNotInExpression<T>(ParameterExpression parameter, Expression propertyExpression, IEnumerable values)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property to check.
     - id: values
       type: System.Collections.IEnumerable
+      description: The collection of values to check against.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression that represents the check for the property value not being in the specified collection of values.
     content.vb: Public Shared Function GetNotInExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, values As IEnumerable) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetNotInExpression*
   nameWithType.vb: OperatorUtility.GetNotInExpression(Of T)(ParameterExpression, Expression, IEnumerable)
@@ -1892,25 +2234,33 @@ items:
   source:
     id: GetBetweenExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 599
+    startLine: 983
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents a between comparison for the specified property.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetBetweenExpression<T>(ParameterExpression parameter, string propertyName, object from, object to)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyName
       type: System.String
+      description: The name of the property.
     - id: from
       type: System.Object
+      description: The lower bound value.
     - id: to
       type: System.Object
+      description: The upper bound value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression that represents the between comparison.
     content.vb: Public Shared Function GetBetweenExpression(Of T)(parameter As ParameterExpression, propertyName As String, from As Object, [to] As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetBetweenExpression*
   nameWithType.vb: OperatorUtility.GetBetweenExpression(Of T)(ParameterExpression, String, Object, Object)
@@ -1930,25 +2280,33 @@ items:
   source:
     id: GetBetweenExpression
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\StructuredSearch\Operators\OperatorUtility.cs
-    startLine: 632
+    startLine: 1023
   assemblies:
   - Innova.Data
   namespace: Innova.Data.StructuredSearch.Operators
+  summary: Gets an expression that represents a between comparison for the specified property.
+  example: []
   syntax:
     content: public static Expression<Func<T, bool>> GetBetweenExpression<T>(ParameterExpression parameter, Expression propertyExpression, object from, object to)
     parameters:
     - id: parameter
       type: System.Linq.Expressions.ParameterExpression
+      description: The parameter expression.
     - id: propertyExpression
       type: System.Linq.Expressions.Expression
+      description: The expression representing the property.
     - id: from
       type: System.Object
+      description: The lower bound value.
     - id: to
       type: System.Object
+      description: The upper bound value.
     typeParameters:
     - id: T
+      description: The type of the entity.
     return:
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression that represents the between comparison.
     content.vb: Public Shared Function GetBetweenExpression(Of T)(parameter As ParameterExpression, propertyExpression As Expression, from As Object, [to] As Object) As Expression(Of Func(Of T, Boolean))
   overload: Innova.Data.StructuredSearch.Operators.OperatorUtility.GetBetweenExpression*
   nameWithType.vb: OperatorUtility.GetBetweenExpression(Of T)(ParameterExpression, Expression, Object, Object)
