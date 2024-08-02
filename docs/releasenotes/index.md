@@ -1,3 +1,15 @@
+## 2024.8
+
+The main focus for this version has been creating af foundation for enhancing the documentation. So now the learn-websitet has API-documentation and we have switch to using DocFX for generating our documentation.
+
+We have made some small changes in the Designer/code generated (CG):
+
+- CG: Mainviewmodel is now injected with interfaces.
+- CG: Implemented abstract and base-viewmodels for show, list and search, so you can override methodes instead using the CG-partials methodes.
+- Designer: Hyperlink button can publish a general event to be used in your code. (instead of just userlookup og entitylookup)
+- Bug: Designer does not save "order by" and tostring if a custom field is used.
+
+
 ## 2024.6
 
 The first AppExtensions has landed. This version includes the following AppExtensions:
