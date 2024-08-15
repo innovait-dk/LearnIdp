@@ -1,6 +1,6 @@
 ## 2024.8
 
-The main focus for this version has been creating af foundation for enhancing the documentation. So now the learn-websitet has API-documentation and we have switch to using DocFX for generating our documentation.
+The main focus for this version has been creating a foundation for enhancing the documentation. So now the learn-website has API-documentation and we have switch to using DocFX for generating our documentation.
 
 We have made some small changes in the Designer/code generated (CG):
 
@@ -9,6 +9,12 @@ We have made some small changes in the Designer/code generated (CG):
 - Designer: Hyperlink button can publish a general event to be used in your code. (instead of just userlookup og entitylookup)
 - Bug: Designer does not save "order by" and tostring if a custom field is used.
 
+> [!IMPORTANT]  
+> Breaking change
+> 
+> Now that we are using abstract and base-viewmodels we are moving away from using partial methods (expect for Initialize() ).
+> So if you have used partials methods for example with LinkButtons, those methods are now CG in the abstract viewmodel as protected virtual
+> and you need to override them instead of using partial.
 
 ## 2024.6
 
@@ -34,12 +40,13 @@ All AppExtensions are created with IDP and are fully opensourced (for customers)
 - Added support for Swedish and Norwegian culture in the UI (beside English and Danish).
 - Various bug fixes and optimizations
 
-### Breaking Changes
-
-Upgrade from 2024.2.57:
-
-Backup your app.xaml and app.xaml.cs if you have made custom changes.
-
-Run code-task “AppBase” (which will replace app.xaml/app.xaml.cs)
+>[!IMPORTANT]
+>Breaking change
+> 
+>How to Upgrade from 2024.2.57:
+> 
+>Backup your app.xaml and app.xaml.cs if you have made custom changes.
+> 
+>Run code-task “AppBase” (which will replace app.xaml/app.xaml.cs)
 
 
