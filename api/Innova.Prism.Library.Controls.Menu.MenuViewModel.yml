@@ -6,8 +6,6 @@ items:
   parent: Innova.Prism.Library.Controls.Menu
   children:
   - Innova.Prism.Library.Controls.Menu.MenuViewModel.#ctor(Prism.Events.IEventAggregator)
-  - Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(Innova.Prism.Library.Controls.Menu.MenuItemViewModel,System.Windows.Media.ImageSource,System.Int32)
-  - Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
   - Innova.Prism.Library.Controls.Menu.MenuViewModel.EventAggregator
   - Innova.Prism.Library.Controls.Menu.MenuViewModel.MenuItems
   langs:
@@ -20,7 +18,7 @@ items:
   source:
     id: MenuViewModel
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\MenuViewModel.cs
-    startLine: 14
+    startLine: 6
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Controls.Menu
@@ -30,8 +28,6 @@ items:
   inheritance:
   - System.Object
   - Prism.Mvvm.BindableBase
-  derivedClasses:
-  - Innova.Prism.Library.Views.Administration.AdministrationViewModel
   implements:
   - System.ComponentModel.INotifyPropertyChanged
   inheritedMembers:
@@ -54,7 +50,7 @@ items:
   source:
     id: .ctor
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\MenuViewModel.cs
-    startLine: 22
+    startLine: 14
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Controls.Menu
@@ -82,7 +78,7 @@ items:
   source:
     id: MenuItems
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\MenuViewModel.cs
-    startLine: 28
+    startLine: 20
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Controls.Menu
@@ -107,7 +103,7 @@ items:
   source:
     id: EventAggregator
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\MenuViewModel.cs
-    startLine: 34
+    startLine: 26
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Controls.Menu
@@ -118,74 +114,6 @@ items:
       type: Prism.Events.IEventAggregator
     content.vb: Protected ReadOnly Property EventAggregator As IEventAggregator
   overload: Innova.Prism.Library.Controls.Menu.MenuViewModel.EventAggregator*
-- uid: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(Innova.Prism.Library.Controls.Menu.MenuItemViewModel,System.Windows.Media.ImageSource,System.Int32)
-  commentId: M:Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(Innova.Prism.Library.Controls.Menu.MenuItemViewModel,System.Windows.Media.ImageSource,System.Int32)
-  id: AddShowListMenuItem``1(Innova.Prism.Library.Controls.Menu.MenuItemViewModel,System.Windows.Media.ImageSource,System.Int32)
-  parent: Innova.Prism.Library.Controls.Menu.MenuViewModel
-  langs:
-  - csharp
-  - vb
-  name: AddShowListMenuItem<T>(MenuItemViewModel, ImageSource, int)
-  nameWithType: MenuViewModel.AddShowListMenuItem<T>(MenuItemViewModel, ImageSource, int)
-  fullName: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem<T>(Innova.Prism.Library.Controls.Menu.MenuItemViewModel, System.Windows.Media.ImageSource, int)
-  type: Method
-  source:
-    id: AddShowListMenuItem
-    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\MenuViewModel.cs
-    startLine: 52
-  assemblies:
-  - Innova.Prism.Library
-  namespace: Innova.Prism.Library.Controls.Menu
-  syntax:
-    content: 'public MenuItemViewModel AddShowListMenuItem<T>(MenuItemViewModel parentMenuItemViewModel = null, ImageSource imageSource = null, int sortOrder = 0) where T : class'
-    parameters:
-    - id: parentMenuItemViewModel
-      type: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
-    - id: imageSource
-      type: System.Windows.Media.ImageSource
-    - id: sortOrder
-      type: System.Int32
-    typeParameters:
-    - id: T
-    return:
-      type: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
-    content.vb: Public Function AddShowListMenuItem(Of T As Class)(parentMenuItemViewModel As MenuItemViewModel = Nothing, imageSource As ImageSource = Nothing, sortOrder As Integer = 0) As MenuItemViewModel
-  overload: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem*
-  nameWithType.vb: MenuViewModel.AddShowListMenuItem(Of T)(MenuItemViewModel, ImageSource, Integer)
-  fullName.vb: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem(Of T)(Innova.Prism.Library.Controls.Menu.MenuItemViewModel, System.Windows.Media.ImageSource, Integer)
-  name.vb: AddShowListMenuItem(Of T)(MenuItemViewModel, ImageSource, Integer)
-- uid: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
-  commentId: M:Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
-  id: AddShowListMenuItem``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
-  parent: Innova.Prism.Library.Controls.Menu.MenuViewModel
-  langs:
-  - csharp
-  - vb
-  name: AddShowListMenuItem<T>(Expression<Func<T, bool>>)
-  nameWithType: MenuViewModel.AddShowListMenuItem<T>(Expression<Func<T, bool>>)
-  fullName: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem<T>(System.Linq.Expressions.Expression<System.Func<T, bool>>)
-  type: Method
-  source:
-    id: AddShowListMenuItem
-    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\MenuViewModel.cs
-    startLine: 66
-  assemblies:
-  - Innova.Prism.Library
-  namespace: Innova.Prism.Library.Controls.Menu
-  syntax:
-    content: 'public MenuItemViewModel AddShowListMenuItem<T>(Expression<Func<T, bool>> Filter) where T : class'
-    parameters:
-    - id: Filter
-      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
-    typeParameters:
-    - id: T
-    return:
-      type: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
-    content.vb: Public Function AddShowListMenuItem(Of T As Class)(Filter As Expression(Of Func(Of T, Boolean))) As MenuItemViewModel
-  overload: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem*
-  nameWithType.vb: MenuViewModel.AddShowListMenuItem(Of T)(Expression(Of Func(Of T, Boolean)))
-  fullName.vb: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)))
-  name.vb: AddShowListMenuItem(Of T)(Expression(Of Func(Of T, Boolean)))
 references:
 - uid: Innova.Prism.Library.Controls.Menu
   commentId: N:Innova.Prism.Library.Controls.Menu
@@ -777,193 +705,4 @@ references:
   name: EventAggregator
   nameWithType: MenuViewModel.EventAggregator
   fullName: Innova.Prism.Library.Controls.Menu.MenuViewModel.EventAggregator
-- uid: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem*
-  commentId: Overload:Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem
-  href: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem.html#Innova_Prism_Library_Controls_Menu_MenuViewModel_AddShowListMenuItem__1_Innova_Prism_Library_Controls_Menu_MenuItemViewModel_System_Windows_Media_ImageSource_System_Int32_
-  name: AddShowListMenuItem
-  nameWithType: MenuViewModel.AddShowListMenuItem
-  fullName: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem
-- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
-  commentId: T:Innova.Prism.Library.Controls.Menu.MenuItemViewModel
-  parent: Innova.Prism.Library.Controls.Menu
-  href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.html
-  name: MenuItemViewModel
-  nameWithType: MenuItemViewModel
-  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
-- uid: System.Windows.Media.ImageSource
-  commentId: T:System.Windows.Media.ImageSource
-  parent: System.Windows.Media
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.windows.media.imagesource
-  name: ImageSource
-  nameWithType: ImageSource
-  fullName: System.Windows.Media.ImageSource
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
-- uid: System.Windows.Media
-  commentId: N:System.Windows.Media
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Windows.Media
-  nameWithType: System.Windows.Media
-  fullName: System.Windows.Media
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Windows
-    name: Windows
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.windows
-  - name: .
-  - uid: System.Windows.Media
-    name: Media
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.windows.media
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Windows
-    name: Windows
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.windows
-  - name: .
-  - uid: System.Windows.Media
-    name: Media
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.windows.media
-- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
-  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
-  parent: System.Linq.Expressions
-  definition: System.Linq.Expressions.Expression`1
-  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
-  name: Expression<Func<T, bool>>
-  nameWithType: Expression<Func<T, bool>>
-  fullName: System.Linq.Expressions.Expression<System.Func<T, bool>>
-  nameWithType.vb: Expression(Of Func(Of T, Boolean))
-  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean))
-  name.vb: Expression(Of Func(Of T, Boolean))
-  spec.csharp:
-  - uid: System.Linq.Expressions.Expression`1
-    name: Expression
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
-  - name: <
-  - uid: System.Func`2
-    name: Func
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
-  - name: <
-  - name: T
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: bool
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: '>'
-  - name: '>'
-  spec.vb:
-  - uid: System.Linq.Expressions.Expression`1
-    name: Expression
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.Func`2
-    name: Func
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: Boolean
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: )
-  - name: )
-- uid: System.Linq.Expressions.Expression`1
-  commentId: T:System.Linq.Expressions.Expression`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
-  name: Expression<TDelegate>
-  nameWithType: Expression<TDelegate>
-  fullName: System.Linq.Expressions.Expression<TDelegate>
-  nameWithType.vb: Expression(Of TDelegate)
-  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
-  name.vb: Expression(Of TDelegate)
-  spec.csharp:
-  - uid: System.Linq.Expressions.Expression`1
-    name: Expression
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
-  - name: <
-  - name: TDelegate
-  - name: '>'
-  spec.vb:
-  - uid: System.Linq.Expressions.Expression`1
-    name: Expression
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TDelegate
-  - name: )
-- uid: System.Linq.Expressions
-  commentId: N:System.Linq.Expressions
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Linq.Expressions
-  nameWithType: System.Linq.Expressions
-  fullName: System.Linq.Expressions
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Linq
-    name: Linq
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq
-  - name: .
-  - uid: System.Linq.Expressions
-    name: Expressions
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Linq
-    name: Linq
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq
-  - name: .
-  - uid: System.Linq.Expressions
-    name: Expressions
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
 memberLayout: SeparatePages

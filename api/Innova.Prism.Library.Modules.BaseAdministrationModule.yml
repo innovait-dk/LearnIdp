@@ -5,8 +5,6 @@ items:
   id: BaseAdministrationModule
   parent: Innova.Prism.Library.Modules
   children:
-  - Innova.Prism.Library.Modules.BaseAdministrationModule.AddAdministration(Prism.Ioc.IContainerProvider)
-  - Innova.Prism.Library.Modules.BaseAdministrationModule.OnInitialized(Prism.Ioc.IContainerProvider)
   - Innova.Prism.Library.Modules.BaseAdministrationModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
   langs:
   - csharp
@@ -18,7 +16,7 @@ items:
   source:
     id: BaseAdministrationModule
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\BaseAdministrationModule.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Modules
@@ -36,6 +34,8 @@ items:
   inheritedMembers:
   - Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.regionManager
   - Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.Controller
+  - Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.OnInitialized(Prism.Ioc.IContainerProvider)
+  - Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.ConfigureOutlookBarService(Innova.Prism.Library.Services.IOutlookBarService)
   - Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.ConfigureMenuService(Innova.Prism.Library.Services.IMenuService)
   - Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.AddDefaultControlToRegion``1(System.String)
   - Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.AddDefaultControlToRegion(System.String,System.Type)
@@ -58,7 +58,7 @@ items:
   source:
     id: RegisterTypes
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\BaseAdministrationModule.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Modules
@@ -72,59 +72,6 @@ items:
     content.vb: Public Overrides Sub RegisterTypes(containerRegistry As IContainerRegistry)
   overridden: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.RegisterTypes(Prism.Ioc.IContainerRegistry)
   overload: Innova.Prism.Library.Modules.BaseAdministrationModule.RegisterTypes*
-- uid: Innova.Prism.Library.Modules.BaseAdministrationModule.OnInitialized(Prism.Ioc.IContainerProvider)
-  commentId: M:Innova.Prism.Library.Modules.BaseAdministrationModule.OnInitialized(Prism.Ioc.IContainerProvider)
-  id: OnInitialized(Prism.Ioc.IContainerProvider)
-  parent: Innova.Prism.Library.Modules.BaseAdministrationModule
-  langs:
-  - csharp
-  - vb
-  name: OnInitialized(IContainerProvider)
-  nameWithType: BaseAdministrationModule.OnInitialized(IContainerProvider)
-  fullName: Innova.Prism.Library.Modules.BaseAdministrationModule.OnInitialized(Prism.Ioc.IContainerProvider)
-  type: Method
-  source:
-    id: OnInitialized
-    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\BaseAdministrationModule.cs
-    startLine: 27
-  assemblies:
-  - Innova.Prism.Library
-  namespace: Innova.Prism.Library.Modules
-  summary: Notifies the module that it has been initialized.
-  example: []
-  syntax:
-    content: public override void OnInitialized(IContainerProvider containerProvider)
-    parameters:
-    - id: containerProvider
-      type: Prism.Ioc.IContainerProvider
-    content.vb: Public Overrides Sub OnInitialized(containerProvider As IContainerProvider)
-  overridden: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.OnInitialized(Prism.Ioc.IContainerProvider)
-  overload: Innova.Prism.Library.Modules.BaseAdministrationModule.OnInitialized*
-- uid: Innova.Prism.Library.Modules.BaseAdministrationModule.AddAdministration(Prism.Ioc.IContainerProvider)
-  commentId: M:Innova.Prism.Library.Modules.BaseAdministrationModule.AddAdministration(Prism.Ioc.IContainerProvider)
-  id: AddAdministration(Prism.Ioc.IContainerProvider)
-  parent: Innova.Prism.Library.Modules.BaseAdministrationModule
-  langs:
-  - csharp
-  - vb
-  name: AddAdministration(IContainerProvider)
-  nameWithType: BaseAdministrationModule.AddAdministration(IContainerProvider)
-  fullName: Innova.Prism.Library.Modules.BaseAdministrationModule.AddAdministration(Prism.Ioc.IContainerProvider)
-  type: Method
-  source:
-    id: AddAdministration
-    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Modules\BaseAdministrationModule.cs
-    startLine: 34
-  assemblies:
-  - Innova.Prism.Library
-  namespace: Innova.Prism.Library.Modules
-  syntax:
-    content: protected virtual void AddAdministration(IContainerProvider containerProvider)
-    parameters:
-    - id: containerProvider
-      type: Prism.Ioc.IContainerProvider
-    content.vb: Protected Overridable Sub AddAdministration(containerProvider As IContainerProvider)
-  overload: Innova.Prism.Library.Modules.BaseAdministrationModule.AddAdministration*
 references:
 - uid: Innova.Prism.Library.Modules
   commentId: N:Innova.Prism.Library.Modules
@@ -256,6 +203,62 @@ references:
   fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<Innova.Prism.Library.Controllers.BaseAdministrationNavigationController>.Controller
   nameWithType.vb: BaseModule(Of BaseAdministrationNavigationController).Controller
   fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of Innova.Prism.Library.Controllers.BaseAdministrationNavigationController).Controller
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.OnInitialized(Prism.Ioc.IContainerProvider)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.OnInitialized(Prism.Ioc.IContainerProvider)
+  parent: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}
+  definition: Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized(Prism.Ioc.IContainerProvider)
+  href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_OnInitialized_Prism_Ioc_IContainerProvider_
+  name: OnInitialized(IContainerProvider)
+  nameWithType: BaseModule<BaseAdministrationNavigationController>.OnInitialized(IContainerProvider)
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<Innova.Prism.Library.Controllers.BaseAdministrationNavigationController>.OnInitialized(Prism.Ioc.IContainerProvider)
+  nameWithType.vb: BaseModule(Of BaseAdministrationNavigationController).OnInitialized(IContainerProvider)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of Innova.Prism.Library.Controllers.BaseAdministrationNavigationController).OnInitialized(Prism.Ioc.IContainerProvider)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.OnInitialized(Prism.Ioc.IContainerProvider)
+    name: OnInitialized
+    href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_OnInitialized_Prism_Ioc_IContainerProvider_
+  - name: (
+  - uid: Prism.Ioc.IContainerProvider
+    name: IContainerProvider
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.OnInitialized(Prism.Ioc.IContainerProvider)
+    name: OnInitialized
+    href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_OnInitialized_Prism_Ioc_IContainerProvider_
+  - name: (
+  - uid: Prism.Ioc.IContainerProvider
+    name: IContainerProvider
+    isExternal: true
+  - name: )
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.ConfigureOutlookBarService(Innova.Prism.Library.Services.IOutlookBarService)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.ConfigureOutlookBarService(Innova.Prism.Library.Services.IOutlookBarService)
+  parent: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}
+  definition: Innova.Prism.Library.ClassDefinitions.BaseModule`1.ConfigureOutlookBarService(Innova.Prism.Library.Services.IOutlookBarService)
+  href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.ConfigureOutlookBarService.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_ConfigureOutlookBarService_Innova_Prism_Library_Services_IOutlookBarService_
+  name: ConfigureOutlookBarService(IOutlookBarService)
+  nameWithType: BaseModule<BaseAdministrationNavigationController>.ConfigureOutlookBarService(IOutlookBarService)
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<Innova.Prism.Library.Controllers.BaseAdministrationNavigationController>.ConfigureOutlookBarService(Innova.Prism.Library.Services.IOutlookBarService)
+  nameWithType.vb: BaseModule(Of BaseAdministrationNavigationController).ConfigureOutlookBarService(IOutlookBarService)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of Innova.Prism.Library.Controllers.BaseAdministrationNavigationController).ConfigureOutlookBarService(Innova.Prism.Library.Services.IOutlookBarService)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.ConfigureOutlookBarService(Innova.Prism.Library.Services.IOutlookBarService)
+    name: ConfigureOutlookBarService
+    href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.ConfigureOutlookBarService.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_ConfigureOutlookBarService_Innova_Prism_Library_Services_IOutlookBarService_
+  - name: (
+  - uid: Innova.Prism.Library.Services.IOutlookBarService
+    name: IOutlookBarService
+    href: Innova.Prism.Library.Services.IOutlookBarService.html
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.ConfigureOutlookBarService(Innova.Prism.Library.Services.IOutlookBarService)
+    name: ConfigureOutlookBarService
+    href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.ConfigureOutlookBarService.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_ConfigureOutlookBarService_Innova_Prism_Library_Services_IOutlookBarService_
+  - name: (
+  - uid: Innova.Prism.Library.Services.IOutlookBarService
+    name: IOutlookBarService
+    href: Innova.Prism.Library.Services.IOutlookBarService.html
+  - name: )
 - uid: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.ConfigureMenuService(Innova.Prism.Library.Services.IMenuService)
   commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.ConfigureMenuService(Innova.Prism.Library.Services.IMenuService)
   parent: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}
@@ -716,6 +719,59 @@ references:
   fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.Controller
   nameWithType.vb: BaseModule(Of C).Controller
   fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).Controller
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized(Prism.Ioc.IContainerProvider)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized(Prism.Ioc.IContainerProvider)
+  isExternal: true
+  href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_OnInitialized_Prism_Ioc_IContainerProvider_
+  name: OnInitialized(IContainerProvider)
+  nameWithType: BaseModule<C>.OnInitialized(IContainerProvider)
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.OnInitialized(Prism.Ioc.IContainerProvider)
+  nameWithType.vb: BaseModule(Of C).OnInitialized(IContainerProvider)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).OnInitialized(Prism.Ioc.IContainerProvider)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized(Prism.Ioc.IContainerProvider)
+    name: OnInitialized
+    href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_OnInitialized_Prism_Ioc_IContainerProvider_
+  - name: (
+  - uid: Prism.Ioc.IContainerProvider
+    name: IContainerProvider
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized(Prism.Ioc.IContainerProvider)
+    name: OnInitialized
+    href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_OnInitialized_Prism_Ioc_IContainerProvider_
+  - name: (
+  - uid: Prism.Ioc.IContainerProvider
+    name: IContainerProvider
+    isExternal: true
+  - name: )
+- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.ConfigureOutlookBarService(Innova.Prism.Library.Services.IOutlookBarService)
+  commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule`1.ConfigureOutlookBarService(Innova.Prism.Library.Services.IOutlookBarService)
+  href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.ConfigureOutlookBarService.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_ConfigureOutlookBarService_Innova_Prism_Library_Services_IOutlookBarService_
+  name: ConfigureOutlookBarService(IOutlookBarService)
+  nameWithType: BaseModule<C>.ConfigureOutlookBarService(IOutlookBarService)
+  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.ConfigureOutlookBarService(Innova.Prism.Library.Services.IOutlookBarService)
+  nameWithType.vb: BaseModule(Of C).ConfigureOutlookBarService(IOutlookBarService)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).ConfigureOutlookBarService(Innova.Prism.Library.Services.IOutlookBarService)
+  spec.csharp:
+  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.ConfigureOutlookBarService(Innova.Prism.Library.Services.IOutlookBarService)
+    name: ConfigureOutlookBarService
+    href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.ConfigureOutlookBarService.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_ConfigureOutlookBarService_Innova_Prism_Library_Services_IOutlookBarService_
+  - name: (
+  - uid: Innova.Prism.Library.Services.IOutlookBarService
+    name: IOutlookBarService
+    href: Innova.Prism.Library.Services.IOutlookBarService.html
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.ConfigureOutlookBarService(Innova.Prism.Library.Services.IOutlookBarService)
+    name: ConfigureOutlookBarService
+    href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.ConfigureOutlookBarService.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_ConfigureOutlookBarService_Innova_Prism_Library_Services_IOutlookBarService_
+  - name: (
+  - uid: Innova.Prism.Library.Services.IOutlookBarService
+    name: IOutlookBarService
+    href: Innova.Prism.Library.Services.IOutlookBarService.html
+  - name: )
 - uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.ConfigureMenuService(Innova.Prism.Library.Services.IMenuService)
   commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule`1.ConfigureMenuService(Innova.Prism.Library.Services.IMenuService)
   href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.ConfigureMenuService.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_ConfigureMenuService_Innova_Prism_Library_Services_IMenuService_
@@ -1032,78 +1088,4 @@ references:
   - uid: Prism.Ioc
     name: Ioc
     isExternal: true
-- uid: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.OnInitialized(Prism.Ioc.IContainerProvider)
-  commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.OnInitialized(Prism.Ioc.IContainerProvider)
-  parent: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}
-  definition: Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized(Prism.Ioc.IContainerProvider)
-  href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_OnInitialized_Prism_Ioc_IContainerProvider_
-  name: OnInitialized(IContainerProvider)
-  nameWithType: BaseModule<BaseAdministrationNavigationController>.OnInitialized(IContainerProvider)
-  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<Innova.Prism.Library.Controllers.BaseAdministrationNavigationController>.OnInitialized(Prism.Ioc.IContainerProvider)
-  nameWithType.vb: BaseModule(Of BaseAdministrationNavigationController).OnInitialized(IContainerProvider)
-  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of Innova.Prism.Library.Controllers.BaseAdministrationNavigationController).OnInitialized(Prism.Ioc.IContainerProvider)
-  spec.csharp:
-  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.OnInitialized(Prism.Ioc.IContainerProvider)
-    name: OnInitialized
-    href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_OnInitialized_Prism_Ioc_IContainerProvider_
-  - name: (
-  - uid: Prism.Ioc.IContainerProvider
-    name: IContainerProvider
-    isExternal: true
-  - name: )
-  spec.vb:
-  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule{Innova.Prism.Library.Controllers.BaseAdministrationNavigationController}.OnInitialized(Prism.Ioc.IContainerProvider)
-    name: OnInitialized
-    href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_OnInitialized_Prism_Ioc_IContainerProvider_
-  - name: (
-  - uid: Prism.Ioc.IContainerProvider
-    name: IContainerProvider
-    isExternal: true
-  - name: )
-- uid: Innova.Prism.Library.Modules.BaseAdministrationModule.OnInitialized*
-  commentId: Overload:Innova.Prism.Library.Modules.BaseAdministrationModule.OnInitialized
-  href: Innova.Prism.Library.Modules.BaseAdministrationModule.OnInitialized.html#Innova_Prism_Library_Modules_BaseAdministrationModule_OnInitialized_Prism_Ioc_IContainerProvider_
-  name: OnInitialized
-  nameWithType: BaseAdministrationModule.OnInitialized
-  fullName: Innova.Prism.Library.Modules.BaseAdministrationModule.OnInitialized
-- uid: Prism.Ioc.IContainerProvider
-  commentId: T:Prism.Ioc.IContainerProvider
-  parent: Prism.Ioc
-  isExternal: true
-  name: IContainerProvider
-  nameWithType: IContainerProvider
-  fullName: Prism.Ioc.IContainerProvider
-- uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized(Prism.Ioc.IContainerProvider)
-  commentId: M:Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized(Prism.Ioc.IContainerProvider)
-  isExternal: true
-  href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_OnInitialized_Prism_Ioc_IContainerProvider_
-  name: OnInitialized(IContainerProvider)
-  nameWithType: BaseModule<C>.OnInitialized(IContainerProvider)
-  fullName: Innova.Prism.Library.ClassDefinitions.BaseModule<C>.OnInitialized(Prism.Ioc.IContainerProvider)
-  nameWithType.vb: BaseModule(Of C).OnInitialized(IContainerProvider)
-  fullName.vb: Innova.Prism.Library.ClassDefinitions.BaseModule(Of C).OnInitialized(Prism.Ioc.IContainerProvider)
-  spec.csharp:
-  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized(Prism.Ioc.IContainerProvider)
-    name: OnInitialized
-    href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_OnInitialized_Prism_Ioc_IContainerProvider_
-  - name: (
-  - uid: Prism.Ioc.IContainerProvider
-    name: IContainerProvider
-    isExternal: true
-  - name: )
-  spec.vb:
-  - uid: Innova.Prism.Library.ClassDefinitions.BaseModule`1.OnInitialized(Prism.Ioc.IContainerProvider)
-    name: OnInitialized
-    href: Innova.Prism.Library.ClassDefinitions.BaseModule-1.OnInitialized.html#Innova_Prism_Library_ClassDefinitions_BaseModule_1_OnInitialized_Prism_Ioc_IContainerProvider_
-  - name: (
-  - uid: Prism.Ioc.IContainerProvider
-    name: IContainerProvider
-    isExternal: true
-  - name: )
-- uid: Innova.Prism.Library.Modules.BaseAdministrationModule.AddAdministration*
-  commentId: Overload:Innova.Prism.Library.Modules.BaseAdministrationModule.AddAdministration
-  href: Innova.Prism.Library.Modules.BaseAdministrationModule.AddAdministration.html#Innova_Prism_Library_Modules_BaseAdministrationModule_AddAdministration_Prism_Ioc_IContainerProvider_
-  name: AddAdministration
-  nameWithType: BaseAdministrationModule.AddAdministration
-  fullName: Innova.Prism.Library.Modules.BaseAdministrationModule.AddAdministration
 memberLayout: SeparatePages

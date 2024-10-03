@@ -1,3 +1,15 @@
+## 2024.10
+
+- More API-documentation
+- Added OutlookBar Service. Read more [Here](../tutorials/UI/outlookbar.md)
+- Various bug-fixes
+
+> [!IMPORTANT]  
+> Breaking change
+> 
+> If you have used Administration-module you should replace it with the new Administration-module. Backup your Administration folder, delete the folder and CG a new AdministrationModule in the Designer under code-tasks (User Interface).
+
+
 ## 2024.8
 
 The main focus for this version has been creating a foundation for enhancing the documentation. So now the learn-website has API-documentation and we have switch to using DocFX for generating our documentation.

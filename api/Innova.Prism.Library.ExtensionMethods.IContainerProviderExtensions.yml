@@ -5,9 +5,9 @@ items:
   id: IContainerProviderExtensions
   parent: Innova.Prism.Library.ExtensionMethods
   children:
-  - Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar``1(Prism.Ioc.IContainerProvider,Innova.Prism.Library.Services.OutlookBarItem)
-  - Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar``1(Prism.Ioc.IContainerProvider,System.String,System.Int32,System.String)
-  - Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar``1(Prism.Ioc.IContainerProvider,System.String,System.Int32,System.Windows.Media.ImageSource,System.String)
+  - Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem(Prism.Ioc.IContainerProvider,Innova.Prism.Library.Services.OutlookBarItem)
+  - Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem(Prism.Ioc.IContainerProvider,System.String,System.Int32,System.Windows.Media.ImageSource)
+  - Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem``1(Prism.Ioc.IContainerProvider)
   langs:
   - csharp
   - vb
@@ -18,125 +18,142 @@ items:
   source:
     id: IContainerProviderExtensions
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ExtensionMethods\IContainerProviderExtensions.cs
-    startLine: 15
+    startLine: 22
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.ExtensionMethods
+  summary: Provides extension methods for the <xref href="Prism.Ioc.IContainerProvider" data-throw-if-not-resolved="false"></xref> interface.
+  example: []
   syntax:
     content: public static class IContainerProviderExtensions
     content.vb: Public Module IContainerProviderExtensions
   inheritance:
   - System.Object
-- uid: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar``1(Prism.Ioc.IContainerProvider,Innova.Prism.Library.Services.OutlookBarItem)
-  commentId: M:Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar``1(Prism.Ioc.IContainerProvider,Innova.Prism.Library.Services.OutlookBarItem)
-  id: AddOutlookBar``1(Prism.Ioc.IContainerProvider,Innova.Prism.Library.Services.OutlookBarItem)
+- uid: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem(Prism.Ioc.IContainerProvider,Innova.Prism.Library.Services.OutlookBarItem)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem(Prism.Ioc.IContainerProvider,Innova.Prism.Library.Services.OutlookBarItem)
+  id: AddOutlookBarItem(Prism.Ioc.IContainerProvider,Innova.Prism.Library.Services.OutlookBarItem)
   isExtensionMethod: true
   parent: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions
   langs:
   - csharp
   - vb
-  name: AddOutlookBar<TView>(IContainerProvider, OutlookBarItem)
-  nameWithType: IContainerProviderExtensions.AddOutlookBar<TView>(IContainerProvider, OutlookBarItem)
-  fullName: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar<TView>(Prism.Ioc.IContainerProvider, Innova.Prism.Library.Services.OutlookBarItem)
+  name: AddOutlookBarItem(IContainerProvider, OutlookBarItem)
+  nameWithType: IContainerProviderExtensions.AddOutlookBarItem(IContainerProvider, OutlookBarItem)
+  fullName: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem(Prism.Ioc.IContainerProvider, Innova.Prism.Library.Services.OutlookBarItem)
   type: Method
   source:
-    id: AddOutlookBar
+    id: AddOutlookBarItem
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ExtensionMethods\IContainerProviderExtensions.cs
-    startLine: 38
+    startLine: 30
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.ExtensionMethods
+  summary: Adds an <xref href="Innova.Prism.Library.Services.OutlookBarItem" data-throw-if-not-resolved="false"></xref> to the Outlook bar.
+  example: []
   syntax:
-    content: 'public static void AddOutlookBar<TView>(this IContainerProvider containerProvider, OutlookBarItem outlookBarItem) where TView : UserControl'
+    content: public static IOutlookBarItemBuilder AddOutlookBarItem(this IContainerProvider containerProvider, OutlookBarItem item)
     parameters:
     - id: containerProvider
       type: Prism.Ioc.IContainerProvider
-    - id: outlookBarItem
+      description: The container provider.
+    - id: item
       type: Innova.Prism.Library.Services.OutlookBarItem
-    typeParameters:
-    - id: TView
-    content.vb: Public Shared Sub AddOutlookBar(Of TView As UserControl)(containerProvider As IContainerProvider, outlookBarItem As OutlookBarItem)
-  overload: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar*
-  nameWithType.vb: IContainerProviderExtensions.AddOutlookBar(Of TView)(IContainerProvider, OutlookBarItem)
-  fullName.vb: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar(Of TView)(Prism.Ioc.IContainerProvider, Innova.Prism.Library.Services.OutlookBarItem)
-  name.vb: AddOutlookBar(Of TView)(IContainerProvider, OutlookBarItem)
-- uid: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar``1(Prism.Ioc.IContainerProvider,System.String,System.Int32,System.String)
-  commentId: M:Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar``1(Prism.Ioc.IContainerProvider,System.String,System.Int32,System.String)
-  id: AddOutlookBar``1(Prism.Ioc.IContainerProvider,System.String,System.Int32,System.String)
+      description: The Outlook bar item to add.
+    return:
+      type: Innova.Prism.Library.Services.IOutlookBarItemBuilder
+      description: An instance of <xref href="Innova.Prism.Library.Services.OutlookBarItemBuilder" data-throw-if-not-resolved="false"></xref> for further configuration.
+    content.vb: Public Shared Function AddOutlookBarItem(containerProvider As IContainerProvider, item As OutlookBarItem) As IOutlookBarItemBuilder
+  overload: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem*
+- uid: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem``1(Prism.Ioc.IContainerProvider)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem``1(Prism.Ioc.IContainerProvider)
+  id: AddOutlookBarItem``1(Prism.Ioc.IContainerProvider)
   isExtensionMethod: true
   parent: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions
   langs:
   - csharp
   - vb
-  name: AddOutlookBar<TView>(IContainerProvider, string, int, string)
-  nameWithType: IContainerProviderExtensions.AddOutlookBar<TView>(IContainerProvider, string, int, string)
-  fullName: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar<TView>(Prism.Ioc.IContainerProvider, string, int, string)
+  name: AddOutlookBarItem<TBarItem>(IContainerProvider)
+  nameWithType: IContainerProviderExtensions.AddOutlookBarItem<TBarItem>(IContainerProvider)
+  fullName: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem<TBarItem>(Prism.Ioc.IContainerProvider)
   type: Method
   source:
-    id: AddOutlookBar
+    id: AddOutlookBarItem
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ExtensionMethods\IContainerProviderExtensions.cs
-    startLine: 43
+    startLine: 42
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.ExtensionMethods
+  summary: Adds an <xref href="Innova.Prism.Library.Services.OutlookBarItem" data-throw-if-not-resolved="false"></xref> of type <code class="typeparamref">TBarItem</code> to the Outlook bar.
+  example: []
   syntax:
-    content: 'public static void AddOutlookBar<TView>(this IContainerProvider containerProvider, string headerText, int sortorder, string key = null) where TView : UserControl'
+    content: 'public static IOutlookBarItemBuilder AddOutlookBarItem<TBarItem>(this IContainerProvider containerProvider) where TBarItem : OutlookBarItem'
     parameters:
     - id: containerProvider
       type: Prism.Ioc.IContainerProvider
-    - id: headerText
-      type: System.String
-    - id: sortorder
-      type: System.Int32
-    - id: key
-      type: System.String
+      description: The container provider.
     typeParameters:
-    - id: TView
-    content.vb: Public Shared Sub AddOutlookBar(Of TView As UserControl)(containerProvider As IContainerProvider, headerText As String, sortorder As Integer, key As String = Nothing)
-  overload: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar*
-  nameWithType.vb: IContainerProviderExtensions.AddOutlookBar(Of TView)(IContainerProvider, String, Integer, String)
-  fullName.vb: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar(Of TView)(Prism.Ioc.IContainerProvider, String, Integer, String)
-  name.vb: AddOutlookBar(Of TView)(IContainerProvider, String, Integer, String)
-- uid: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar``1(Prism.Ioc.IContainerProvider,System.String,System.Int32,System.Windows.Media.ImageSource,System.String)
-  commentId: M:Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar``1(Prism.Ioc.IContainerProvider,System.String,System.Int32,System.Windows.Media.ImageSource,System.String)
-  id: AddOutlookBar``1(Prism.Ioc.IContainerProvider,System.String,System.Int32,System.Windows.Media.ImageSource,System.String)
+    - id: TBarItem
+      description: The type of the Outlook bar item to add.
+    return:
+      type: Innova.Prism.Library.Services.IOutlookBarItemBuilder
+      description: An instance of <xref href="Innova.Prism.Library.Services.OutlookBarItemBuilder" data-throw-if-not-resolved="false"></xref> for further configuration.
+    content.vb: Public Shared Function AddOutlookBarItem(Of TBarItem As OutlookBarItem)(containerProvider As IContainerProvider) As IOutlookBarItemBuilder
+  overload: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem*
+  nameWithType.vb: IContainerProviderExtensions.AddOutlookBarItem(Of TBarItem)(IContainerProvider)
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem(Of TBarItem)(Prism.Ioc.IContainerProvider)
+  name.vb: AddOutlookBarItem(Of TBarItem)(IContainerProvider)
+- uid: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem(Prism.Ioc.IContainerProvider,System.String,System.Int32,System.Windows.Media.ImageSource)
+  commentId: M:Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem(Prism.Ioc.IContainerProvider,System.String,System.Int32,System.Windows.Media.ImageSource)
+  id: AddOutlookBarItem(Prism.Ioc.IContainerProvider,System.String,System.Int32,System.Windows.Media.ImageSource)
   isExtensionMethod: true
   parent: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions
   langs:
   - csharp
   - vb
-  name: AddOutlookBar<TView>(IContainerProvider, string, int, ImageSource, string)
-  nameWithType: IContainerProviderExtensions.AddOutlookBar<TView>(IContainerProvider, string, int, ImageSource, string)
-  fullName: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar<TView>(Prism.Ioc.IContainerProvider, string, int, System.Windows.Media.ImageSource, string)
+  name: AddOutlookBarItem(IContainerProvider, string, int, ImageSource)
+  nameWithType: IContainerProviderExtensions.AddOutlookBarItem(IContainerProvider, string, int, ImageSource)
+  fullName: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem(Prism.Ioc.IContainerProvider, string, int, System.Windows.Media.ImageSource)
   type: Method
   source:
-    id: AddOutlookBar
+    id: AddOutlookBarItem
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\ExtensionMethods\IContainerProviderExtensions.cs
-    startLine: 48
+    startLine: 56
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.ExtensionMethods
+  summary: Adds an <xref href="Innova.Prism.Library.Services.OutlookBarItem" data-throw-if-not-resolved="false"></xref> to the Outlook bar.
+  example: []
   syntax:
-    content: 'public static void AddOutlookBar<TView>(this IContainerProvider containerProvider, string headerText, int sortorder, ImageSource imageSource, string key = null) where TView : UserControl'
+    content: public static IOutlookBarItemBuilder AddOutlookBarItem(this IContainerProvider containerProvider, string Header, int sortOrder, ImageSource icon = null)
     parameters:
     - id: containerProvider
       type: Prism.Ioc.IContainerProvider
-    - id: headerText
+      description: The container provider.
+    - id: Header
       type: System.String
-    - id: sortorder
+      description: The header of the Outlook bar item.
+    - id: sortOrder
       type: System.Int32
-    - id: imageSource
+      description: The sort order of the Outlook bar item.
+    - id: icon
       type: System.Windows.Media.ImageSource
-    - id: key
-      type: System.String
-    typeParameters:
-    - id: TView
-    content.vb: Public Shared Sub AddOutlookBar(Of TView As UserControl)(containerProvider As IContainerProvider, headerText As String, sortorder As Integer, imageSource As ImageSource, key As String = Nothing)
-  overload: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar*
-  nameWithType.vb: IContainerProviderExtensions.AddOutlookBar(Of TView)(IContainerProvider, String, Integer, ImageSource, String)
-  fullName.vb: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar(Of TView)(Prism.Ioc.IContainerProvider, String, Integer, System.Windows.Media.ImageSource, String)
-  name.vb: AddOutlookBar(Of TView)(IContainerProvider, String, Integer, ImageSource, String)
+      description: The icon of the Outlook bar item. (optional)
+    return:
+      type: Innova.Prism.Library.Services.IOutlookBarItemBuilder
+      description: An instance of <xref href="Innova.Prism.Library.Services.OutlookBarItemBuilder" data-throw-if-not-resolved="false"></xref> for further configuration.
+    content.vb: Public Shared Function AddOutlookBarItem(containerProvider As IContainerProvider, Header As String, sortOrder As Integer, icon As ImageSource = Nothing) As IOutlookBarItemBuilder
+  overload: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem*
+  nameWithType.vb: IContainerProviderExtensions.AddOutlookBarItem(IContainerProvider, String, Integer, ImageSource)
+  fullName.vb: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem(Prism.Ioc.IContainerProvider, String, Integer, System.Windows.Media.ImageSource)
+  name.vb: AddOutlookBarItem(IContainerProvider, String, Integer, ImageSource)
 references:
+- uid: Prism.Ioc.IContainerProvider
+  commentId: T:Prism.Ioc.IContainerProvider
+  parent: Prism.Ioc
+  isExternal: true
+  name: IContainerProvider
+  nameWithType: IContainerProvider
+  fullName: Prism.Ioc.IContainerProvider
 - uid: Innova.Prism.Library.ExtensionMethods
   commentId: N:Innova.Prism.Library.ExtensionMethods
   href: Innova.html
@@ -186,33 +203,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar*
-  commentId: Overload:Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar
-  href: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar.html#Innova_Prism_Library_ExtensionMethods_IContainerProviderExtensions_AddOutlookBar__1_Prism_Ioc_IContainerProvider_Innova_Prism_Library_Services_OutlookBarItem_
-  name: AddOutlookBar
-  nameWithType: IContainerProviderExtensions.AddOutlookBar
-  fullName: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBar
-- uid: Prism.Ioc.IContainerProvider
-  commentId: T:Prism.Ioc.IContainerProvider
-  parent: Prism.Ioc
-  isExternal: true
-  name: IContainerProvider
-  nameWithType: IContainerProvider
-  fullName: Prism.Ioc.IContainerProvider
-- uid: Innova.Prism.Library.Services.OutlookBarItem
-  commentId: T:Innova.Prism.Library.Services.OutlookBarItem
-  parent: Innova.Prism.Library.Services
-  href: Innova.Prism.Library.Services.OutlookBarItem.html
-  name: OutlookBarItem
-  nameWithType: OutlookBarItem
-  fullName: Innova.Prism.Library.Services.OutlookBarItem
 - uid: Prism.Ioc
   commentId: N:Prism.Ioc
   isExternal: true
@@ -235,6 +225,39 @@ references:
   - uid: Prism.Ioc
     name: Ioc
     isExternal: true
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Library.Services.OutlookBarItem
+  commentId: T:Innova.Prism.Library.Services.OutlookBarItem
+  parent: Innova.Prism.Library.Services
+  href: Innova.Prism.Library.Services.OutlookBarItem.html
+  name: OutlookBarItem
+  nameWithType: OutlookBarItem
+  fullName: Innova.Prism.Library.Services.OutlookBarItem
+- uid: Innova.Prism.Library.Services.OutlookBarItemBuilder
+  commentId: T:Innova.Prism.Library.Services.OutlookBarItemBuilder
+  href: Innova.Prism.Library.Services.OutlookBarItemBuilder.html
+  name: OutlookBarItemBuilder
+  nameWithType: OutlookBarItemBuilder
+  fullName: Innova.Prism.Library.Services.OutlookBarItemBuilder
+- uid: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem*
+  commentId: Overload:Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem
+  href: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem.html#Innova_Prism_Library_ExtensionMethods_IContainerProviderExtensions_AddOutlookBarItem_Prism_Ioc_IContainerProvider_Innova_Prism_Library_Services_OutlookBarItem_
+  name: AddOutlookBarItem
+  nameWithType: IContainerProviderExtensions.AddOutlookBarItem
+  fullName: Innova.Prism.Library.ExtensionMethods.IContainerProviderExtensions.AddOutlookBarItem
+- uid: Innova.Prism.Library.Services.IOutlookBarItemBuilder
+  commentId: T:Innova.Prism.Library.Services.IOutlookBarItemBuilder
+  parent: Innova.Prism.Library.Services
+  href: Innova.Prism.Library.Services.IOutlookBarItemBuilder.html
+  name: IOutlookBarItemBuilder
+  nameWithType: IOutlookBarItemBuilder
+  fullName: Innova.Prism.Library.Services.IOutlookBarItemBuilder
 - uid: Innova.Prism.Library.Services
   commentId: N:Innova.Prism.Library.Services
   href: Innova.html

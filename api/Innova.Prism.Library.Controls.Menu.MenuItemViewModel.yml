@@ -5,10 +5,14 @@ items:
   id: MenuItemViewModel
   parent: Innova.Prism.Library.Controls.Menu
   children:
+  - Innova.Prism.Library.Controls.Menu.MenuItemViewModel.#ctor
+  - Innova.Prism.Library.Controls.Menu.MenuItemViewModel.CanExecuteCommand
   - Innova.Prism.Library.Controls.Menu.MenuItemViewModel.Command
   - Innova.Prism.Library.Controls.Menu.MenuItemViewModel.CommandParameter
   - Innova.Prism.Library.Controls.Menu.MenuItemViewModel.Description
+  - Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ExecuteCommand
   - Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ImageSource
+  - Innova.Prism.Library.Controls.Menu.MenuItemViewModel.IsExpanded
   - Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItems
   - Innova.Prism.Library.Controls.Menu.MenuItemViewModel.SortOrder
   - Innova.Prism.Library.Controls.Menu.MenuItemViewModel.Title
@@ -21,25 +25,86 @@ items:
   type: Class
   source:
     id: MenuItemViewModel
-    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\MenuItemViewModel.cs
-    startLine: 30
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\SimpleMenuItemViewModel.cs
+    startLine: 12
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Controls.Menu
+  summary: Represents a view model for a simple menu item.
+  example: []
   syntax:
-    content: 'public class MenuItemViewModel : BindableBase, INotifyPropertyChanged'
-    content.vb: Public Class MenuItemViewModel Inherits BindableBase Implements INotifyPropertyChanged
+    content: 'public class MenuItemViewModel : BindableBase, INotifyPropertyChanged, IMenuViewModel'
+    content.vb: Public Class MenuItemViewModel Inherits BindableBase Implements INotifyPropertyChanged, IMenuViewModel
   inheritance:
   - System.Object
   - Prism.Mvvm.BindableBase
+  derivedClasses:
+  - Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList`1
   implements:
   - System.ComponentModel.INotifyPropertyChanged
+  - Innova.Prism.Library.Controls.Menu.IMenuViewModel
   inheritedMembers:
   - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
   - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
   - Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
   - Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
   - Prism.Mvvm.BindableBase.PropertyChanged
+- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItems
+  commentId: P:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItems
+  id: MenuItems
+  parent: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
+  langs:
+  - csharp
+  - vb
+  name: MenuItems
+  nameWithType: MenuItemViewModel.MenuItems
+  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItems
+  type: Property
+  source:
+    id: MenuItems
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\SimpleMenuItemViewModel.cs
+    startLine: 29
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.Menu
+  summary: Gets or sets the collection of menu items.
+  example: []
+  syntax:
+    content: public ObservableCollection<MenuItemViewModel> MenuItems { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Controls.Menu.MenuItemViewModel}
+    content.vb: Public Property MenuItems As ObservableCollection(Of MenuItemViewModel)
+  overload: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItems*
+  implements:
+  - Innova.Prism.Library.Controls.Menu.IMenuViewModel.MenuItems
+- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.IsExpanded
+  commentId: P:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.IsExpanded
+  id: IsExpanded
+  parent: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
+  langs:
+  - csharp
+  - vb
+  name: IsExpanded
+  nameWithType: MenuItemViewModel.IsExpanded
+  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.IsExpanded
+  type: Property
+  source:
+    id: IsExpanded
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\SimpleMenuItemViewModel.cs
+    startLine: 41
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.Menu
+  summary: Gets or sets a value indicating whether the menu item is expanded.
+  example: []
+  syntax:
+    content: public bool IsExpanded { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsExpanded As Boolean
+  overload: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.IsExpanded*
 - uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.SortOrder
   commentId: P:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.SortOrder
   id: SortOrder
@@ -53,11 +118,13 @@ items:
   type: Property
   source:
     id: SortOrder
-    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\MenuItemViewModel.cs
-    startLine: 46
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\SimpleMenuItemViewModel.cs
+    startLine: 51
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Controls.Menu
+  summary: Gets or sets the sort order of the menu item.
+  example: []
   syntax:
     content: public int SortOrder { get; set; }
     parameters: []
@@ -78,11 +145,13 @@ items:
   type: Property
   source:
     id: ImageSource
-    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\MenuItemViewModel.cs
-    startLine: 48
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\SimpleMenuItemViewModel.cs
+    startLine: 56
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Controls.Menu
+  summary: Gets or sets the image source of the menu item.
+  example: []
   syntax:
     content: public ImageSource ImageSource { get; set; }
     parameters: []
@@ -90,31 +159,6 @@ items:
       type: System.Windows.Media.ImageSource
     content.vb: Public Property ImageSource As ImageSource
   overload: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ImageSource*
-- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItems
-  commentId: P:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItems
-  id: MenuItems
-  parent: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
-  langs:
-  - csharp
-  - vb
-  name: MenuItems
-  nameWithType: MenuItemViewModel.MenuItems
-  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItems
-  type: Property
-  source:
-    id: MenuItems
-    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\MenuItemViewModel.cs
-    startLine: 50
-  assemblies:
-  - Innova.Prism.Library
-  namespace: Innova.Prism.Library.Controls.Menu
-  syntax:
-    content: public ObservableCollection<MenuItemViewModel> MenuItems { get; set; }
-    parameters: []
-    return:
-      type: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Controls.Menu.MenuItemViewModel}
-    content.vb: Public Property MenuItems As ObservableCollection(Of MenuItemViewModel)
-  overload: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItems*
 - uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.Description
   commentId: P:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.Description
   id: Description
@@ -128,11 +172,13 @@ items:
   type: Property
   source:
     id: Description
-    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\MenuItemViewModel.cs
-    startLine: 58
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\SimpleMenuItemViewModel.cs
+    startLine: 61
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Controls.Menu
+  summary: Gets or sets the description of the menu item.
+  example: []
   syntax:
     content: public string Description { get; set; }
     parameters: []
@@ -153,11 +199,13 @@ items:
   type: Property
   source:
     id: Title
-    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\MenuItemViewModel.cs
-    startLine: 65
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\SimpleMenuItemViewModel.cs
+    startLine: 70
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Controls.Menu
+  summary: Gets or sets the title of the menu item.
+  example: []
   syntax:
     content: public string Title { get; set; }
     parameters: []
@@ -178,11 +226,13 @@ items:
   type: Property
   source:
     id: Command
-    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\MenuItemViewModel.cs
-    startLine: 73
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\SimpleMenuItemViewModel.cs
+    startLine: 79
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Controls.Menu
+  summary: Gets or sets the command associated with the menu item.
+  example: []
   syntax:
     content: public DelegateCommandBase Command { get; set; }
     parameters: []
@@ -203,11 +253,13 @@ items:
   type: Property
   source:
     id: CommandParameter
-    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\MenuItemViewModel.cs
-    startLine: 79
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\SimpleMenuItemViewModel.cs
+    startLine: 88
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Controls.Menu
+  summary: Gets or sets the command parameter of the menu item.
+  example: []
   syntax:
     content: public object CommandParameter { get; set; }
     parameters: []
@@ -215,6 +267,84 @@ items:
       type: System.Object
     content.vb: Public Property CommandParameter As Object
   overload: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.CommandParameter*
+- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.#ctor
+  commentId: M:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.#ctor
+  id: '#ctor'
+  parent: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
+  langs:
+  - csharp
+  - vb
+  name: MenuItemViewModel()
+  nameWithType: MenuItemViewModel.MenuItemViewModel()
+  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItemViewModel()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\SimpleMenuItemViewModel.cs
+    startLine: 101
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.Menu
+  summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Controls.Menu.MenuItemViewModel" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public MenuItemViewModel()
+    content.vb: Public Sub New()
+  overload: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.#ctor*
+  nameWithType.vb: MenuItemViewModel.New()
+  fullName.vb: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.New()
+  name.vb: New()
+- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.CanExecuteCommand
+  commentId: M:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.CanExecuteCommand
+  id: CanExecuteCommand
+  parent: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
+  langs:
+  - csharp
+  - vb
+  name: CanExecuteCommand()
+  nameWithType: MenuItemViewModel.CanExecuteCommand()
+  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.CanExecuteCommand()
+  type: Method
+  source:
+    id: CanExecuteCommand
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\SimpleMenuItemViewModel.cs
+    startLine: 110
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.Menu
+  summary: Determines whether the command associated with the menu item can execute.
+  example: []
+  syntax:
+    content: protected virtual bool CanExecuteCommand()
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the command can execute; otherwise, <code>false</code>.
+    content.vb: Protected Overridable Function CanExecuteCommand() As Boolean
+  overload: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.CanExecuteCommand*
+- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ExecuteCommand
+  commentId: M:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ExecuteCommand
+  id: ExecuteCommand
+  parent: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
+  langs:
+  - csharp
+  - vb
+  name: ExecuteCommand()
+  nameWithType: MenuItemViewModel.ExecuteCommand()
+  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ExecuteCommand()
+  type: Method
+  source:
+    id: ExecuteCommand
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\SimpleMenuItemViewModel.cs
+    startLine: 118
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.Menu
+  summary: Executes the command associated with the menu item.
+  example: []
+  syntax:
+    content: protected virtual void ExecuteCommand()
+    content.vb: Protected Overridable Sub ExecuteCommand()
+  overload: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ExecuteCommand*
 references:
 - uid: Innova.Prism.Library.Controls.Menu
   commentId: N:Innova.Prism.Library.Controls.Menu
@@ -289,6 +419,13 @@ references:
   name: INotifyPropertyChanged
   nameWithType: INotifyPropertyChanged
   fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Innova.Prism.Library.Controls.Menu.IMenuViewModel
+  commentId: T:Innova.Prism.Library.Controls.Menu.IMenuViewModel
+  parent: Innova.Prism.Library.Controls.Menu
+  href: Innova.Prism.Library.Controls.Menu.IMenuViewModel.html
+  name: IMenuViewModel
+  nameWithType: IMenuViewModel
+  fullName: Innova.Prism.Library.Controls.Menu.IMenuViewModel
 - uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
   commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
   parent: Prism.Mvvm.BindableBase
@@ -658,80 +795,19 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.SortOrder*
-  commentId: Overload:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.SortOrder
-  href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.SortOrder.html#Innova_Prism_Library_Controls_Menu_MenuItemViewModel_SortOrder
-  name: SortOrder
-  nameWithType: MenuItemViewModel.SortOrder
-  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.SortOrder
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
-- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ImageSource*
-  commentId: Overload:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ImageSource
-  href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ImageSource.html#Innova_Prism_Library_Controls_Menu_MenuItemViewModel_ImageSource
-  name: ImageSource
-  nameWithType: MenuItemViewModel.ImageSource
-  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ImageSource
-- uid: System.Windows.Media.ImageSource
-  commentId: T:System.Windows.Media.ImageSource
-  parent: System.Windows.Media
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.windows.media.imagesource
-  name: ImageSource
-  nameWithType: ImageSource
-  fullName: System.Windows.Media.ImageSource
-- uid: System.Windows.Media
-  commentId: N:System.Windows.Media
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Windows.Media
-  nameWithType: System.Windows.Media
-  fullName: System.Windows.Media
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Windows
-    name: Windows
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.windows
-  - name: .
-  - uid: System.Windows.Media
-    name: Media
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.windows.media
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Windows
-    name: Windows
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.windows
-  - name: .
-  - uid: System.Windows.Media
-    name: Media
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.windows.media
 - uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItems*
   commentId: Overload:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItems
   href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItems.html#Innova_Prism_Library_Controls_Menu_MenuItemViewModel_MenuItems
   name: MenuItems
   nameWithType: MenuItemViewModel.MenuItems
   fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItems
+- uid: Innova.Prism.Library.Controls.Menu.IMenuViewModel.MenuItems
+  commentId: P:Innova.Prism.Library.Controls.Menu.IMenuViewModel.MenuItems
+  parent: Innova.Prism.Library.Controls.Menu.IMenuViewModel
+  href: Innova.Prism.Library.Controls.Menu.IMenuViewModel.MenuItems.html#Innova_Prism_Library_Controls_Menu_IMenuViewModel_MenuItems
+  name: MenuItems
+  nameWithType: IMenuViewModel.MenuItems
+  fullName: Innova.Prism.Library.Controls.Menu.IMenuViewModel.MenuItems
 - uid: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Controls.Menu.MenuItemViewModel}
   commentId: T:System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Controls.Menu.MenuItemViewModel}
   parent: System.Collections.ObjectModel
@@ -830,6 +906,91 @@ references:
     name: ObjectModel
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.IsExpanded*
+  commentId: Overload:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.IsExpanded
+  href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.IsExpanded.html#Innova_Prism_Library_Controls_Menu_MenuItemViewModel_IsExpanded
+  name: IsExpanded
+  nameWithType: MenuItemViewModel.IsExpanded
+  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.IsExpanded
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.SortOrder*
+  commentId: Overload:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.SortOrder
+  href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.SortOrder.html#Innova_Prism_Library_Controls_Menu_MenuItemViewModel_SortOrder
+  name: SortOrder
+  nameWithType: MenuItemViewModel.SortOrder
+  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.SortOrder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ImageSource*
+  commentId: Overload:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ImageSource
+  href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ImageSource.html#Innova_Prism_Library_Controls_Menu_MenuItemViewModel_ImageSource
+  name: ImageSource
+  nameWithType: MenuItemViewModel.ImageSource
+  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ImageSource
+- uid: System.Windows.Media.ImageSource
+  commentId: T:System.Windows.Media.ImageSource
+  parent: System.Windows.Media
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.imagesource
+  name: ImageSource
+  nameWithType: ImageSource
+  fullName: System.Windows.Media.ImageSource
+- uid: System.Windows.Media
+  commentId: N:System.Windows.Media
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Media
+  nameWithType: System.Windows.Media
+  fullName: System.Windows.Media
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Media
+    name: Media
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Media
+    name: Media
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media
 - uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.Description*
   commentId: Overload:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.Description
   href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.Description.html#Innova_Prism_Library_Controls_Menu_MenuItemViewModel_Description
@@ -895,4 +1056,32 @@ references:
   name: CommandParameter
   nameWithType: MenuItemViewModel.CommandParameter
   fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.CommandParameter
+- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
+  commentId: T:Innova.Prism.Library.Controls.Menu.MenuItemViewModel
+  parent: Innova.Prism.Library.Controls.Menu
+  href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.html
+  name: MenuItemViewModel
+  nameWithType: MenuItemViewModel
+  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
+- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.#ctor*
+  commentId: Overload:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.#ctor
+  href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.-ctor.html#Innova_Prism_Library_Controls_Menu_MenuItemViewModel__ctor
+  name: MenuItemViewModel
+  nameWithType: MenuItemViewModel.MenuItemViewModel
+  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.MenuItemViewModel
+  nameWithType.vb: MenuItemViewModel.New
+  fullName.vb: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.New
+  name.vb: New
+- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.CanExecuteCommand*
+  commentId: Overload:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.CanExecuteCommand
+  href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.CanExecuteCommand.html#Innova_Prism_Library_Controls_Menu_MenuItemViewModel_CanExecuteCommand
+  name: CanExecuteCommand
+  nameWithType: MenuItemViewModel.CanExecuteCommand
+  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.CanExecuteCommand
+- uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ExecuteCommand*
+  commentId: Overload:Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ExecuteCommand
+  href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ExecuteCommand.html#Innova_Prism_Library_Controls_Menu_MenuItemViewModel_ExecuteCommand
+  name: ExecuteCommand
+  nameWithType: MenuItemViewModel.ExecuteCommand
+  fullName: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.ExecuteCommand
 memberLayout: SeparatePages

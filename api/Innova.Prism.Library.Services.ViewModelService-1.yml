@@ -8,7 +8,6 @@ items:
   - Innova.Prism.Library.Services.ViewModelService`1.#ctor(Innova.Data.Entity.IEntityService{`0},Innova.Data.Entity.IEntityServiceConfiguration{`0},Innova.Prism.Library.Services.ILookupService,Innova.Prism.Library.Services.IWindowDialogService,Prism.Events.IEventAggregator,Innova.Data.Entity.IEntityValidatorService,Microsoft.Extensions.Logging.ILogger{Innova.Prism.Library.Services.ViewModelService{`0}})
   - Innova.Prism.Library.Services.ViewModelService`1.ClearCacheIfIsCached
   - Innova.Prism.Library.Services.ViewModelService`1.ConfirmDeletion(System.Collections.IList)
-  - Innova.Prism.Library.Services.ViewModelService`1.DefaultOrderBy
   - Innova.Prism.Library.Services.ViewModelService`1.Delete(System.Collections.Generic.List{Innova.Data.Entity.IEntityWithKey{`0}},System.Boolean,System.Threading.CancellationToken)
   - Innova.Prism.Library.Services.ViewModelService`1.EntityServiceConfiguration
   - Innova.Prism.Library.Services.ViewModelService`1.EntityValidatorService
@@ -19,6 +18,7 @@ items:
   - Innova.Prism.Library.Services.ViewModelService`1.HandleException(System.Exception)
   - Innova.Prism.Library.Services.ViewModelService`1.Logger
   - Innova.Prism.Library.Services.ViewModelService`1.LookupService
+  - Innova.Prism.Library.Services.ViewModelService`1.OrderBy
   - Innova.Prism.Library.Services.ViewModelService`1.PublishDeletion(System.Collections.Generic.List{Innova.Data.Entity.IPrimaryKey},System.Boolean)
   - Innova.Prism.Library.Services.ViewModelService`1.SetMainBusyText(System.String)
   - Innova.Prism.Library.Services.ViewModelService`1.SetValidator(System.Object,Innova.Data.Validation.ValidationRuleSetEnum)
@@ -259,7 +259,7 @@ items:
   source:
     id: GetEntityService
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ViewModelService.cs
-    startLine: 56
+    startLine: 58
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -274,37 +274,37 @@ items:
   nameWithType.vb: ViewModelService(Of T).GetEntityService(Of TEntityService1)()
   fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).GetEntityService(Of TEntityService1)()
   name.vb: GetEntityService(Of TEntityService1)()
-- uid: Innova.Prism.Library.Services.ViewModelService`1.DefaultOrderBy
-  commentId: P:Innova.Prism.Library.Services.ViewModelService`1.DefaultOrderBy
-  id: DefaultOrderBy
+- uid: Innova.Prism.Library.Services.ViewModelService`1.OrderBy
+  commentId: P:Innova.Prism.Library.Services.ViewModelService`1.OrderBy
+  id: OrderBy
   parent: Innova.Prism.Library.Services.ViewModelService`1
   langs:
   - csharp
   - vb
-  name: DefaultOrderBy
-  nameWithType: ViewModelService<T>.DefaultOrderBy
-  fullName: Innova.Prism.Library.Services.ViewModelService<T>.DefaultOrderBy
+  name: OrderBy
+  nameWithType: ViewModelService<T>.OrderBy
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.OrderBy
   type: Property
   source:
-    id: DefaultOrderBy
+    id: OrderBy
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ViewModelService.cs
-    startLine: 61
+    startLine: 63
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
-  summary: Gets the default order by expression for the view model.
+  summary: Gets or sets the orderby expression for the view model.
   example: []
   syntax:
-    content: public Expression<Func<IQueryable<T>, IOrderedQueryable<T>>> DefaultOrderBy { get; }
+    content: public Expression<Func<IQueryable<T>, IOrderedQueryable<T>>> OrderBy { get; set; }
     parameters: []
     return:
       type: System.Linq.Expressions.Expression{System.Func{System.Linq.IQueryable{{T}},System.Linq.IOrderedQueryable{{T}}}}
-    content.vb: Public ReadOnly Property DefaultOrderBy As Expression(Of Func(Of IQueryable(Of T), IOrderedQueryable(Of T)))
-  overload: Innova.Prism.Library.Services.ViewModelService`1.DefaultOrderBy*
+    content.vb: Public Property OrderBy As Expression(Of Func(Of IQueryable(Of T), IOrderedQueryable(Of T)))
+  overload: Innova.Prism.Library.Services.ViewModelService`1.OrderBy*
   implements:
-  - Innova.Prism.Library.Services.IViewModelService{{T}}.DefaultOrderBy
-  nameWithType.vb: ViewModelService(Of T).DefaultOrderBy
-  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).DefaultOrderBy
+  - Innova.Prism.Library.Services.IViewModelService{{T}}.OrderBy
+  nameWithType.vb: ViewModelService(Of T).OrderBy
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).OrderBy
 - uid: Innova.Prism.Library.Services.ViewModelService`1.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
   commentId: M:Innova.Prism.Library.Services.ViewModelService`1.GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
   id: GetLookupList``1(Innova.Data.Entity.PrimaryKeys{``0}[])
@@ -319,7 +319,7 @@ items:
   source:
     id: GetLookupList
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ViewModelService.cs
-    startLine: 63
+    startLine: 65
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -358,18 +358,18 @@ items:
   source:
     id: GetQueryParameterWithOrderBy
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ViewModelService.cs
-    startLine: 68
+    startLine: 70
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
   summary: Gets the query parameter with the default order by expression.
   example: []
   syntax:
-    content: public QueryParameter<T> GetQueryParameterWithOrderBy()
+    content: public virtual QueryParameter<T> GetQueryParameterWithOrderBy()
     return:
       type: Innova.Data.Entity.QueryParameter{{T}}
       description: The query parameter.
-    content.vb: Public Function GetQueryParameterWithOrderBy() As QueryParameter(Of T)
+    content.vb: Public Overridable Function GetQueryParameterWithOrderBy() As QueryParameter(Of T)
   overload: Innova.Prism.Library.Services.ViewModelService`1.GetQueryParameterWithOrderBy*
   implements:
   - Innova.Prism.Library.Services.IViewModelService{{T}}.GetQueryParameterWithOrderBy
@@ -389,7 +389,7 @@ items:
   source:
     id: ConfirmDeletion
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ViewModelService.cs
-    startLine: 75
+    startLine: 77
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -418,7 +418,7 @@ items:
   source:
     id: PublishDeletion
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ViewModelService.cs
-    startLine: 92
+    startLine: 94
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -448,7 +448,7 @@ items:
   source:
     id: ClearCacheIfIsCached
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ViewModelService.cs
-    startLine: 102
+    startLine: 104
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -472,7 +472,7 @@ items:
   source:
     id: SetValidator
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ViewModelService.cs
-    startLine: 110
+    startLine: 112
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -502,7 +502,7 @@ items:
   source:
     id: Delete
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ViewModelService.cs
-    startLine: 121
+    startLine: 123
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -544,7 +544,7 @@ items:
   source:
     id: SetMainBusyText
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ViewModelService.cs
-    startLine: 150
+    startLine: 152
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -572,7 +572,7 @@ items:
   source:
     id: HandleException
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\ViewModelService.cs
-    startLine: 155
+    startLine: 157
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -1020,24 +1020,24 @@ references:
   name: TEntityService1
   nameWithType: TEntityService1
   fullName: TEntityService1
-- uid: Innova.Prism.Library.Services.ViewModelService`1.DefaultOrderBy*
-  commentId: Overload:Innova.Prism.Library.Services.ViewModelService`1.DefaultOrderBy
-  href: Innova.Prism.Library.Services.ViewModelService-1.DefaultOrderBy.html#Innova_Prism_Library_Services_ViewModelService_1_DefaultOrderBy
-  name: DefaultOrderBy
-  nameWithType: ViewModelService<T>.DefaultOrderBy
-  fullName: Innova.Prism.Library.Services.ViewModelService<T>.DefaultOrderBy
-  nameWithType.vb: ViewModelService(Of T).DefaultOrderBy
-  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).DefaultOrderBy
-- uid: Innova.Prism.Library.Services.IViewModelService{{T}}.DefaultOrderBy
-  commentId: P:Innova.Prism.Library.Services.IViewModelService{`0}.DefaultOrderBy
+- uid: Innova.Prism.Library.Services.ViewModelService`1.OrderBy*
+  commentId: Overload:Innova.Prism.Library.Services.ViewModelService`1.OrderBy
+  href: Innova.Prism.Library.Services.ViewModelService-1.OrderBy.html#Innova_Prism_Library_Services_ViewModelService_1_OrderBy
+  name: OrderBy
+  nameWithType: ViewModelService<T>.OrderBy
+  fullName: Innova.Prism.Library.Services.ViewModelService<T>.OrderBy
+  nameWithType.vb: ViewModelService(Of T).OrderBy
+  fullName.vb: Innova.Prism.Library.Services.ViewModelService(Of T).OrderBy
+- uid: Innova.Prism.Library.Services.IViewModelService{{T}}.OrderBy
+  commentId: P:Innova.Prism.Library.Services.IViewModelService{`0}.OrderBy
   parent: Innova.Prism.Library.Services.IViewModelService{{T}}
-  definition: Innova.Prism.Library.Services.IViewModelService`1.DefaultOrderBy
-  href: Innova.Prism.Library.Services.IViewModelService-1.DefaultOrderBy.html#Innova_Prism_Library_Services_IViewModelService_1_DefaultOrderBy
-  name: DefaultOrderBy
-  nameWithType: IViewModelService<T>.DefaultOrderBy
-  fullName: Innova.Prism.Library.Services.IViewModelService<T>.DefaultOrderBy
-  nameWithType.vb: IViewModelService(Of T).DefaultOrderBy
-  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T).DefaultOrderBy
+  definition: Innova.Prism.Library.Services.IViewModelService`1.OrderBy
+  href: Innova.Prism.Library.Services.IViewModelService-1.OrderBy.html#Innova_Prism_Library_Services_IViewModelService_1_OrderBy
+  name: OrderBy
+  nameWithType: IViewModelService<T>.OrderBy
+  fullName: Innova.Prism.Library.Services.IViewModelService<T>.OrderBy
+  nameWithType.vb: IViewModelService(Of T).OrderBy
+  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T).OrderBy
 - uid: System.Linq.Expressions.Expression{System.Func{System.Linq.IQueryable{{T}},System.Linq.IOrderedQueryable{{T}}}}
   commentId: T:System.Linq.Expressions.Expression{System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}}
   parent: System.Linq.Expressions
@@ -1115,14 +1115,14 @@ references:
   - name: )
   - name: )
   - name: )
-- uid: Innova.Prism.Library.Services.IViewModelService`1.DefaultOrderBy
-  commentId: P:Innova.Prism.Library.Services.IViewModelService`1.DefaultOrderBy
-  href: Innova.Prism.Library.Services.IViewModelService-1.DefaultOrderBy.html#Innova_Prism_Library_Services_IViewModelService_1_DefaultOrderBy
-  name: DefaultOrderBy
-  nameWithType: IViewModelService<T>.DefaultOrderBy
-  fullName: Innova.Prism.Library.Services.IViewModelService<T>.DefaultOrderBy
-  nameWithType.vb: IViewModelService(Of T).DefaultOrderBy
-  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T).DefaultOrderBy
+- uid: Innova.Prism.Library.Services.IViewModelService`1.OrderBy
+  commentId: P:Innova.Prism.Library.Services.IViewModelService`1.OrderBy
+  href: Innova.Prism.Library.Services.IViewModelService-1.OrderBy.html#Innova_Prism_Library_Services_IViewModelService_1_OrderBy
+  name: OrderBy
+  nameWithType: IViewModelService<T>.OrderBy
+  fullName: Innova.Prism.Library.Services.IViewModelService<T>.OrderBy
+  nameWithType.vb: IViewModelService(Of T).OrderBy
+  fullName.vb: Innova.Prism.Library.Services.IViewModelService(Of T).OrderBy
 - uid: System.Linq.Expressions.Expression`1
   commentId: T:System.Linq.Expressions.Expression`1
   isExternal: true

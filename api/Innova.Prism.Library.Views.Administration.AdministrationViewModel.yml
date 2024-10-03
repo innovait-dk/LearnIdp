@@ -7,6 +7,7 @@ items:
   children:
   - Innova.Prism.Library.Views.Administration.AdministrationViewModel.#ctor(Prism.Events.IEventAggregator)
   - Innova.Prism.Library.Views.Administration.AdministrationViewModel.AddAppSettingMenu
+  - Innova.Prism.Library.Views.Administration.AdministrationViewModel.EventAggregator
   - Innova.Prism.Library.Views.Administration.AdministrationViewModel.KeepAlive
   langs:
   - csharp
@@ -23,25 +24,46 @@ items:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Views.Administration
   syntax:
-    content: 'public class AdministrationViewModel : MenuViewModel, INotifyPropertyChanged, IRegionMemberLifetime'
-    content.vb: Public Class AdministrationViewModel Inherits MenuViewModel Implements INotifyPropertyChanged, IRegionMemberLifetime
+    content: 'public class AdministrationViewModel : SimpleMenuViewModel, INotifyPropertyChanged, IMenuViewModel, IRegionMemberLifetime'
+    content.vb: Public Class AdministrationViewModel Inherits SimpleMenuViewModel Implements INotifyPropertyChanged, IMenuViewModel, IRegionMemberLifetime
   inheritance:
   - System.Object
   - Prism.Mvvm.BindableBase
-  - Innova.Prism.Library.Controls.Menu.MenuViewModel
+  - Innova.Prism.Library.Controls.Menu.SimpleMenuViewModel
   implements:
   - System.ComponentModel.INotifyPropertyChanged
+  - Innova.Prism.Library.Controls.Menu.IMenuViewModel
   - Prism.Regions.IRegionMemberLifetime
   inheritedMembers:
-  - Innova.Prism.Library.Controls.Menu.MenuViewModel.MenuItems
-  - Innova.Prism.Library.Controls.Menu.MenuViewModel.EventAggregator
-  - Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(Innova.Prism.Library.Controls.Menu.MenuItemViewModel,System.Windows.Media.ImageSource,System.Int32)
-  - Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}})
+  - Innova.Prism.Library.Controls.Menu.SimpleMenuViewModel.MenuItems
   - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
   - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
   - Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
   - Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
   - Prism.Mvvm.BindableBase.PropertyChanged
+- uid: Innova.Prism.Library.Views.Administration.AdministrationViewModel.EventAggregator
+  commentId: F:Innova.Prism.Library.Views.Administration.AdministrationViewModel.EventAggregator
+  id: EventAggregator
+  parent: Innova.Prism.Library.Views.Administration.AdministrationViewModel
+  langs:
+  - csharp
+  - vb
+  name: EventAggregator
+  nameWithType: AdministrationViewModel.EventAggregator
+  fullName: Innova.Prism.Library.Views.Administration.AdministrationViewModel.EventAggregator
+  type: Field
+  source:
+    id: EventAggregator
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Views\Administration\AdministrationViewModel.cs
+    startLine: 15
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Views.Administration
+  syntax:
+    content: protected readonly IEventAggregator EventAggregator
+    return:
+      type: Prism.Events.IEventAggregator
+    content.vb: Protected ReadOnly EventAggregator As IEventAggregator
 - uid: Innova.Prism.Library.Views.Administration.AdministrationViewModel.KeepAlive
   commentId: P:Innova.Prism.Library.Views.Administration.AdministrationViewModel.KeepAlive
   id: KeepAlive
@@ -56,7 +78,7 @@ items:
   source:
     id: KeepAlive
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Views\Administration\AdministrationViewModel.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Views.Administration
@@ -85,7 +107,7 @@ items:
   source:
     id: .ctor
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Views\Administration\AdministrationViewModel.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Views.Administration
@@ -113,7 +135,7 @@ items:
   source:
     id: AddAppSettingMenu
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Views\Administration\AdministrationViewModel.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Views.Administration
@@ -187,13 +209,13 @@ references:
   name: BindableBase
   nameWithType: BindableBase
   fullName: Prism.Mvvm.BindableBase
-- uid: Innova.Prism.Library.Controls.Menu.MenuViewModel
-  commentId: T:Innova.Prism.Library.Controls.Menu.MenuViewModel
+- uid: Innova.Prism.Library.Controls.Menu.SimpleMenuViewModel
+  commentId: T:Innova.Prism.Library.Controls.Menu.SimpleMenuViewModel
   parent: Innova.Prism.Library.Controls.Menu
-  href: Innova.Prism.Library.Controls.Menu.MenuViewModel.html
-  name: MenuViewModel
-  nameWithType: MenuViewModel
-  fullName: Innova.Prism.Library.Controls.Menu.MenuViewModel
+  href: Innova.Prism.Library.Controls.Menu.SimpleMenuViewModel.html
+  name: SimpleMenuViewModel
+  nameWithType: SimpleMenuViewModel
+  fullName: Innova.Prism.Library.Controls.Menu.SimpleMenuViewModel
 - uid: System.ComponentModel.INotifyPropertyChanged
   commentId: T:System.ComponentModel.INotifyPropertyChanged
   parent: System.ComponentModel
@@ -202,6 +224,13 @@ references:
   name: INotifyPropertyChanged
   nameWithType: INotifyPropertyChanged
   fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Innova.Prism.Library.Controls.Menu.IMenuViewModel
+  commentId: T:Innova.Prism.Library.Controls.Menu.IMenuViewModel
+  parent: Innova.Prism.Library.Controls.Menu
+  href: Innova.Prism.Library.Controls.Menu.IMenuViewModel.html
+  name: IMenuViewModel
+  nameWithType: IMenuViewModel
+  fullName: Innova.Prism.Library.Controls.Menu.IMenuViewModel
 - uid: Prism.Regions.IRegionMemberLifetime
   commentId: T:Prism.Regions.IRegionMemberLifetime
   parent: Prism.Regions
@@ -209,154 +238,13 @@ references:
   name: IRegionMemberLifetime
   nameWithType: IRegionMemberLifetime
   fullName: Prism.Regions.IRegionMemberLifetime
-- uid: Innova.Prism.Library.Controls.Menu.MenuViewModel.MenuItems
-  commentId: P:Innova.Prism.Library.Controls.Menu.MenuViewModel.MenuItems
-  parent: Innova.Prism.Library.Controls.Menu.MenuViewModel
-  href: Innova.Prism.Library.Controls.Menu.MenuViewModel.MenuItems.html#Innova_Prism_Library_Controls_Menu_MenuViewModel_MenuItems
+- uid: Innova.Prism.Library.Controls.Menu.SimpleMenuViewModel.MenuItems
+  commentId: P:Innova.Prism.Library.Controls.Menu.SimpleMenuViewModel.MenuItems
+  parent: Innova.Prism.Library.Controls.Menu.SimpleMenuViewModel
+  href: Innova.Prism.Library.Controls.Menu.SimpleMenuViewModel.MenuItems.html#Innova_Prism_Library_Controls_Menu_SimpleMenuViewModel_MenuItems
   name: MenuItems
-  nameWithType: MenuViewModel.MenuItems
-  fullName: Innova.Prism.Library.Controls.Menu.MenuViewModel.MenuItems
-- uid: Innova.Prism.Library.Controls.Menu.MenuViewModel.EventAggregator
-  commentId: P:Innova.Prism.Library.Controls.Menu.MenuViewModel.EventAggregator
-  parent: Innova.Prism.Library.Controls.Menu.MenuViewModel
-  href: Innova.Prism.Library.Controls.Menu.MenuViewModel.EventAggregator.html#Innova_Prism_Library_Controls_Menu_MenuViewModel_EventAggregator
-  name: EventAggregator
-  nameWithType: MenuViewModel.EventAggregator
-  fullName: Innova.Prism.Library.Controls.Menu.MenuViewModel.EventAggregator
-- uid: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(Innova.Prism.Library.Controls.Menu.MenuItemViewModel,System.Windows.Media.ImageSource,System.Int32)
-  commentId: M:Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(Innova.Prism.Library.Controls.Menu.MenuItemViewModel,System.Windows.Media.ImageSource,System.Int32)
-  parent: Innova.Prism.Library.Controls.Menu.MenuViewModel
-  isExternal: true
-  href: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem.html#Innova_Prism_Library_Controls_Menu_MenuViewModel_AddShowListMenuItem__1_Innova_Prism_Library_Controls_Menu_MenuItemViewModel_System_Windows_Media_ImageSource_System_Int32_
-  name: AddShowListMenuItem<T>(MenuItemViewModel, ImageSource, int)
-  nameWithType: MenuViewModel.AddShowListMenuItem<T>(MenuItemViewModel, ImageSource, int)
-  fullName: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem<T>(Innova.Prism.Library.Controls.Menu.MenuItemViewModel, System.Windows.Media.ImageSource, int)
-  nameWithType.vb: MenuViewModel.AddShowListMenuItem(Of T)(MenuItemViewModel, ImageSource, Integer)
-  fullName.vb: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem(Of T)(Innova.Prism.Library.Controls.Menu.MenuItemViewModel, System.Windows.Media.ImageSource, Integer)
-  name.vb: AddShowListMenuItem(Of T)(MenuItemViewModel, ImageSource, Integer)
-  spec.csharp:
-  - uid: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(Innova.Prism.Library.Controls.Menu.MenuItemViewModel,System.Windows.Media.ImageSource,System.Int32)
-    name: AddShowListMenuItem
-    href: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem.html#Innova_Prism_Library_Controls_Menu_MenuViewModel_AddShowListMenuItem__1_Innova_Prism_Library_Controls_Menu_MenuItemViewModel_System_Windows_Media_ImageSource_System_Int32_
-  - name: <
-  - name: T
-  - name: '>'
-  - name: (
-  - uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
-    name: MenuItemViewModel
-    href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.html
-  - name: ','
-  - name: " "
-  - uid: System.Windows.Media.ImageSource
-    name: ImageSource
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.windows.media.imagesource
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-  spec.vb:
-  - uid: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(Innova.Prism.Library.Controls.Menu.MenuItemViewModel,System.Windows.Media.ImageSource,System.Int32)
-    name: AddShowListMenuItem
-    href: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem.html#Innova_Prism_Library_Controls_Menu_MenuViewModel_AddShowListMenuItem__1_Innova_Prism_Library_Controls_Menu_MenuItemViewModel_System_Windows_Media_ImageSource_System_Int32_
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-  - name: (
-  - uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
-    name: MenuItemViewModel
-    href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.html
-  - name: ','
-  - name: " "
-  - uid: System.Windows.Media.ImageSource
-    name: ImageSource
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.windows.media.imagesource
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-- uid: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}})
-  commentId: M:Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
-  parent: Innova.Prism.Library.Controls.Menu.MenuViewModel
-  definition: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
-  href: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem.html#Innova_Prism_Library_Controls_Menu_MenuViewModel_AddShowListMenuItem__1_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
-  name: AddShowListMenuItem<T>(Expression<Func<T, bool>>)
-  nameWithType: MenuViewModel.AddShowListMenuItem<T>(Expression<Func<T, bool>>)
-  fullName: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem<T>(System.Linq.Expressions.Expression<System.Func<T, bool>>)
-  nameWithType.vb: MenuViewModel.AddShowListMenuItem(Of T)(Expression(Of Func(Of T, Boolean)))
-  fullName.vb: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)))
-  name.vb: AddShowListMenuItem(Of T)(Expression(Of Func(Of T, Boolean)))
-  spec.csharp:
-  - uid: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
-    name: AddShowListMenuItem
-    href: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem.html#Innova_Prism_Library_Controls_Menu_MenuViewModel_AddShowListMenuItem__1_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
-  - name: <
-  - name: T
-  - name: '>'
-  - name: (
-  - uid: System.Linq.Expressions.Expression`1
-    name: Expression
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
-  - name: <
-  - uid: System.Func`2
-    name: Func
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
-  - name: <
-  - name: T
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: bool
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: '>'
-  - name: '>'
-  - name: )
-  spec.vb:
-  - uid: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
-    name: AddShowListMenuItem
-    href: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem.html#Innova_Prism_Library_Controls_Menu_MenuViewModel_AddShowListMenuItem__1_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-  - name: (
-  - uid: System.Linq.Expressions.Expression`1
-    name: Expression
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.Func`2
-    name: Func
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: Boolean
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: )
-  - name: )
-  - name: )
+  nameWithType: SimpleMenuViewModel.MenuItems
+  fullName: Innova.Prism.Library.Controls.Menu.SimpleMenuViewModel.MenuItems
 - uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
   commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
   parent: Prism.Mvvm.BindableBase
@@ -674,78 +562,6 @@ references:
   - uid: Prism.Regions
     name: Regions
     href: Prism.Regions.html
-- uid: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
-  commentId: M:Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
-  isExternal: true
-  href: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem.html#Innova_Prism_Library_Controls_Menu_MenuViewModel_AddShowListMenuItem__1_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
-  name: AddShowListMenuItem<T>(Expression<Func<T, bool>>)
-  nameWithType: MenuViewModel.AddShowListMenuItem<T>(Expression<Func<T, bool>>)
-  fullName: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem<T>(System.Linq.Expressions.Expression<System.Func<T, bool>>)
-  nameWithType.vb: MenuViewModel.AddShowListMenuItem(Of T)(Expression(Of Func(Of T, Boolean)))
-  fullName.vb: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)))
-  name.vb: AddShowListMenuItem(Of T)(Expression(Of Func(Of T, Boolean)))
-  spec.csharp:
-  - uid: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
-    name: AddShowListMenuItem
-    href: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem.html#Innova_Prism_Library_Controls_Menu_MenuViewModel_AddShowListMenuItem__1_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
-  - name: <
-  - name: T
-  - name: '>'
-  - name: (
-  - uid: System.Linq.Expressions.Expression`1
-    name: Expression
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
-  - name: <
-  - uid: System.Func`2
-    name: Func
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
-  - name: <
-  - name: T
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: bool
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: '>'
-  - name: '>'
-  - name: )
-  spec.vb:
-  - uid: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
-    name: AddShowListMenuItem
-    href: Innova.Prism.Library.Controls.Menu.MenuViewModel.AddShowListMenuItem.html#Innova_Prism_Library_Controls_Menu_MenuViewModel_AddShowListMenuItem__1_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-  - name: (
-  - uid: System.Linq.Expressions.Expression`1
-    name: Expression
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.Func`2
-    name: Func
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: Boolean
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: )
-  - name: )
-  - name: )
 - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
   commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
   isExternal: true
@@ -866,6 +682,35 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
+- uid: Prism.Events.IEventAggregator
+  commentId: T:Prism.Events.IEventAggregator
+  parent: Prism.Events
+  isExternal: true
+  name: IEventAggregator
+  nameWithType: IEventAggregator
+  fullName: Prism.Events.IEventAggregator
+- uid: Prism.Events
+  commentId: N:Prism.Events
+  isExternal: true
+  name: Prism.Events
+  nameWithType: Prism.Events
+  fullName: Prism.Events
+  spec.csharp:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: Prism
+    name: Prism
+    isExternal: true
+  - name: .
+  - uid: Prism.Events
+    name: Events
+    isExternal: true
 - uid: Innova.Prism.Library.Views.Administration.AdministrationViewModel.KeepAlive*
   commentId: Overload:Innova.Prism.Library.Views.Administration.AdministrationViewModel.KeepAlive
   href: Innova.Prism.Library.Views.Administration.AdministrationViewModel.KeepAlive.html#Innova_Prism_Library_Views_Administration_AdministrationViewModel_KeepAlive
@@ -899,35 +744,6 @@ references:
   nameWithType.vb: AdministrationViewModel.New
   fullName.vb: Innova.Prism.Library.Views.Administration.AdministrationViewModel.New
   name.vb: New
-- uid: Prism.Events.IEventAggregator
-  commentId: T:Prism.Events.IEventAggregator
-  parent: Prism.Events
-  isExternal: true
-  name: IEventAggregator
-  nameWithType: IEventAggregator
-  fullName: Prism.Events.IEventAggregator
-- uid: Prism.Events
-  commentId: N:Prism.Events
-  isExternal: true
-  name: Prism.Events
-  nameWithType: Prism.Events
-  fullName: Prism.Events
-  spec.csharp:
-  - uid: Prism
-    name: Prism
-    isExternal: true
-  - name: .
-  - uid: Prism.Events
-    name: Events
-    isExternal: true
-  spec.vb:
-  - uid: Prism
-    name: Prism
-    isExternal: true
-  - name: .
-  - uid: Prism.Events
-    name: Events
-    isExternal: true
 - uid: Innova.Prism.Library.Views.Administration.AdministrationViewModel.AddAppSettingMenu*
   commentId: Overload:Innova.Prism.Library.Views.Administration.AdministrationViewModel.AddAppSettingMenu
   href: Innova.Prism.Library.Views.Administration.AdministrationViewModel.AddAppSettingMenu.html#Innova_Prism_Library_Views_Administration_AdministrationViewModel_AddAppSettingMenu
