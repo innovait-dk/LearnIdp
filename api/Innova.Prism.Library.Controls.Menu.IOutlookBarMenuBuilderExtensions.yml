@@ -5,7 +5,12 @@ items:
   id: IOutlookBarMenuBuilderExtensions
   parent: Innova.Prism.Library.Controls.Menu
   children:
-  - Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.String)
+  - Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Action{Innova.Prism.Library.Controls.Menu.MenuItemViewModel})
+  - Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Int32)
+  - Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Action{Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList{``0}})
+  - Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Int32)
+  - Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  - Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32)
   langs:
   - csharp
   - vb
@@ -16,7 +21,7 @@ items:
   source:
     id: IOutlookBarMenuBuilderExtensions
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\IOutlookBarMenuBuilderExtensions.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Controls.Menu
@@ -25,44 +30,252 @@ items:
     content.vb: Public Module IOutlookBarMenuBuilderExtensions
   inheritance:
   - System.Object
-- uid: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.String)
-  commentId: M:Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.String)
-  id: AddMenuItem(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.String)
+- uid: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Action{Innova.Prism.Library.Controls.Menu.MenuItemViewModel})
+  commentId: M:Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Action{Innova.Prism.Library.Controls.Menu.MenuItemViewModel})
+  id: AddMenuItem(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Action{Innova.Prism.Library.Controls.Menu.MenuItemViewModel})
   isExtensionMethod: true
   parent: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions
   langs:
   - csharp
   - vb
-  name: AddMenuItem(IOutlookBarMenuBuilder, string)
-  nameWithType: IOutlookBarMenuBuilderExtensions.AddMenuItem(IOutlookBarMenuBuilder, string)
-  fullName: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder, string)
+  name: AddMenuItem(IOutlookBarMenuBuilder, Action<MenuItemViewModel>)
+  nameWithType: IOutlookBarMenuBuilderExtensions.AddMenuItem(IOutlookBarMenuBuilder, Action<MenuItemViewModel>)
+  fullName: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder, System.Action<Innova.Prism.Library.Controls.Menu.MenuItemViewModel>)
   type: Method
   source:
     id: AddMenuItem
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\IOutlookBarMenuBuilderExtensions.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Controls.Menu
   summary: Adds a menu item to the OutlookBar menu builder.
   example: []
   syntax:
-    content: public static IOutlookBarMenuBuilder AddMenuItem(this IOutlookBarMenuBuilder menuBuilder, string title)
+    content: public static IOutlookBarMenuBuilder AddMenuItem(this IOutlookBarMenuBuilder menuBuilder, Action<MenuItemViewModel> action)
     parameters:
     - id: menuBuilder
       type: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder
       description: The OutlookBar menu builder.
-    - id: title
-      type: System.String
-      description: The title of the menu item.
+    - id: action
+      type: System.Action{Innova.Prism.Library.Controls.Menu.MenuItemViewModel}
+      description: The action to configure the menu item.
     return:
       type: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder
       description: The OutlookBar menu builder.
-    content.vb: Public Shared Function AddMenuItem(menuBuilder As IOutlookBarMenuBuilder, title As String) As IOutlookBarMenuBuilder
+    content.vb: Public Shared Function AddMenuItem(menuBuilder As IOutlookBarMenuBuilder, action As Action(Of MenuItemViewModel)) As IOutlookBarMenuBuilder
   overload: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem*
-  nameWithType.vb: IOutlookBarMenuBuilderExtensions.AddMenuItem(IOutlookBarMenuBuilder, String)
-  fullName.vb: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder, String)
-  name.vb: AddMenuItem(IOutlookBarMenuBuilder, String)
+  nameWithType.vb: IOutlookBarMenuBuilderExtensions.AddMenuItem(IOutlookBarMenuBuilder, Action(Of MenuItemViewModel))
+  fullName.vb: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder, System.Action(Of Innova.Prism.Library.Controls.Menu.MenuItemViewModel))
+  name.vb: AddMenuItem(IOutlookBarMenuBuilder, Action(Of MenuItemViewModel))
+- uid: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Int32)
+  commentId: M:Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Int32)
+  id: AddMenuItem``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Int32)
+  isExtensionMethod: true
+  parent: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddMenuItem<TMenu>(IOutlookBarMenuBuilder, int)
+  nameWithType: IOutlookBarMenuBuilderExtensions.AddMenuItem<TMenu>(IOutlookBarMenuBuilder, int)
+  fullName: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem<TMenu>(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder, int)
+  type: Method
+  source:
+    id: AddMenuItem
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\IOutlookBarMenuBuilderExtensions.cs
+    startLine: 31
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.Menu
+  summary: Adds a menu item of type <code class="typeparamref">TMenu</code> to the OutlookBar menu builder with the specified sort order.
+  example: []
+  syntax:
+    content: 'public static IOutlookBarMenuBuilder AddMenuItem<TMenu>(this IOutlookBarMenuBuilder menuBuilder, int sortOrder) where TMenu : MenuItemViewModel'
+    parameters:
+    - id: menuBuilder
+      type: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder
+      description: The OutlookBar menu builder.
+    - id: sortOrder
+      type: System.Int32
+      description: The sort order of the menu item.
+    typeParameters:
+    - id: TMenu
+      description: The type of the menu item.
+    return:
+      type: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder
+      description: The OutlookBar menu builder.
+    content.vb: Public Shared Function AddMenuItem(Of TMenu As MenuItemViewModel)(menuBuilder As IOutlookBarMenuBuilder, sortOrder As Integer) As IOutlookBarMenuBuilder
+  overload: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem*
+  nameWithType.vb: IOutlookBarMenuBuilderExtensions.AddMenuItem(Of TMenu)(IOutlookBarMenuBuilder, Integer)
+  fullName.vb: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem(Of TMenu)(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder, Integer)
+  name.vb: AddMenuItem(Of TMenu)(IOutlookBarMenuBuilder, Integer)
+- uid: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  commentId: M:Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  id: AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  isExtensionMethod: true
+  parent: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddMenuWithShowList<TEntity>(IOutlookBarMenuBuilder, Expression<Func<TEntity, bool>>)
+  nameWithType: IOutlookBarMenuBuilderExtensions.AddMenuWithShowList<TEntity>(IOutlookBarMenuBuilder, Expression<Func<TEntity, bool>>)
+  fullName: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList<TEntity>(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder, System.Linq.Expressions.Expression<System.Func<TEntity, bool>>)
+  type: Method
+  source:
+    id: AddMenuWithShowList
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\IOutlookBarMenuBuilderExtensions.cs
+    startLine: 44
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.Menu
+  summary: Adds a menu item with a show list to the OutlookBar menu builder for the specified entity type.
+  example: []
+  syntax:
+    content: 'public static IOutlookBarMenuBuilder AddMenuWithShowList<TEntity>(this IOutlookBarMenuBuilder menuBuilder, Expression<Func<TEntity, bool>> filter) where TEntity : class'
+    parameters:
+    - id: menuBuilder
+      type: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder
+      description: The OutlookBar menu builder.
+    - id: filter
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+      description: The filter expression for the show list.
+    typeParameters:
+    - id: TEntity
+      description: The type of the entity.
+    return:
+      type: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder
+      description: The OutlookBar menu builder.
+    content.vb: Public Shared Function AddMenuWithShowList(Of TEntity As Class)(menuBuilder As IOutlookBarMenuBuilder, filter As Expression(Of Func(Of TEntity, Boolean))) As IOutlookBarMenuBuilder
+  overload: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList*
+  nameWithType.vb: IOutlookBarMenuBuilderExtensions.AddMenuWithShowList(Of TEntity)(IOutlookBarMenuBuilder, Expression(Of Func(Of TEntity, Boolean)))
+  fullName.vb: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList(Of TEntity)(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder, System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean)))
+  name.vb: AddMenuWithShowList(Of TEntity)(IOutlookBarMenuBuilder, Expression(Of Func(Of TEntity, Boolean)))
+- uid: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32)
+  commentId: M:Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32)
+  id: AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32)
+  isExtensionMethod: true
+  parent: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddMenuWithShowList<TEntity>(IOutlookBarMenuBuilder, Expression<Func<TEntity, bool>>, int)
+  nameWithType: IOutlookBarMenuBuilderExtensions.AddMenuWithShowList<TEntity>(IOutlookBarMenuBuilder, Expression<Func<TEntity, bool>>, int)
+  fullName: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList<TEntity>(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder, System.Linq.Expressions.Expression<System.Func<TEntity, bool>>, int)
+  type: Method
+  source:
+    id: AddMenuWithShowList
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\IOutlookBarMenuBuilderExtensions.cs
+    startLine: 58
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.Menu
+  summary: Adds a menu item with a show list to the OutlookBar menu builder for the specified entity type with the specified sort order.
+  example: []
+  syntax:
+    content: 'public static IOutlookBarMenuBuilder AddMenuWithShowList<TEntity>(this IOutlookBarMenuBuilder menuBuilder, Expression<Func<TEntity, bool>> filter, int sortOrder) where TEntity : class'
+    parameters:
+    - id: menuBuilder
+      type: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder
+      description: The OutlookBar menu builder.
+    - id: filter
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+      description: The filter expression for the show list.
+    - id: sortOrder
+      type: System.Int32
+      description: The sort order of the menu item.
+    typeParameters:
+    - id: TEntity
+      description: The type of the entity.
+    return:
+      type: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder
+      description: The OutlookBar menu builder.
+    content.vb: Public Shared Function AddMenuWithShowList(Of TEntity As Class)(menuBuilder As IOutlookBarMenuBuilder, filter As Expression(Of Func(Of TEntity, Boolean)), sortOrder As Integer) As IOutlookBarMenuBuilder
+  overload: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList*
+  nameWithType.vb: IOutlookBarMenuBuilderExtensions.AddMenuWithShowList(Of TEntity)(IOutlookBarMenuBuilder, Expression(Of Func(Of TEntity, Boolean)), Integer)
+  fullName.vb: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList(Of TEntity)(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder, System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean)), Integer)
+  name.vb: AddMenuWithShowList(Of TEntity)(IOutlookBarMenuBuilder, Expression(Of Func(Of TEntity, Boolean)), Integer)
+- uid: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Int32)
+  commentId: M:Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Int32)
+  id: AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Int32)
+  isExtensionMethod: true
+  parent: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddMenuWithShowList<TEntity>(IOutlookBarMenuBuilder, int)
+  nameWithType: IOutlookBarMenuBuilderExtensions.AddMenuWithShowList<TEntity>(IOutlookBarMenuBuilder, int)
+  fullName: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList<TEntity>(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder, int)
+  type: Method
+  source:
+    id: AddMenuWithShowList
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\IOutlookBarMenuBuilderExtensions.cs
+    startLine: 75
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.Menu
+  summary: Adds a menu item with a show list to the OutlookBar menu builder for the specified entity type with the specified sort order.
+  example: []
+  syntax:
+    content: 'public static IOutlookBarMenuBuilder AddMenuWithShowList<TEntity>(this IOutlookBarMenuBuilder menuBuilder, int sortOrder) where TEntity : class'
+    parameters:
+    - id: menuBuilder
+      type: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder
+      description: The OutlookBar menu builder.
+    - id: sortOrder
+      type: System.Int32
+      description: The sort order of the menu item.
+    typeParameters:
+    - id: TEntity
+      description: The type of the entity.
+    return:
+      type: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder
+      description: The OutlookBar menu builder.
+    content.vb: Public Shared Function AddMenuWithShowList(Of TEntity As Class)(menuBuilder As IOutlookBarMenuBuilder, sortOrder As Integer) As IOutlookBarMenuBuilder
+  overload: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList*
+  nameWithType.vb: IOutlookBarMenuBuilderExtensions.AddMenuWithShowList(Of TEntity)(IOutlookBarMenuBuilder, Integer)
+  fullName.vb: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList(Of TEntity)(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder, Integer)
+  name.vb: AddMenuWithShowList(Of TEntity)(IOutlookBarMenuBuilder, Integer)
+- uid: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Action{Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList{``0}})
+  commentId: M:Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Action{Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList{``0}})
+  id: AddMenuWithShowList``1(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder,System.Action{Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList{``0}})
+  isExtensionMethod: true
+  parent: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddMenuWithShowList<TEntity>(IOutlookBarMenuBuilder, Action<MenuItemViewModelWithShowList<TEntity>>)
+  nameWithType: IOutlookBarMenuBuilderExtensions.AddMenuWithShowList<TEntity>(IOutlookBarMenuBuilder, Action<MenuItemViewModelWithShowList<TEntity>>)
+  fullName: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList<TEntity>(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder, System.Action<Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList<TEntity>>)
+  type: Method
+  source:
+    id: AddMenuWithShowList
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Controls\Menu\IOutlookBarMenuBuilderExtensions.cs
+    startLine: 91
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Controls.Menu
+  summary: Adds a menu item with a show list to the OutlookBar menu builder for the specified entity type.
+  example: []
+  syntax:
+    content: 'public static IOutlookBarMenuBuilder AddMenuWithShowList<TEntity>(this IOutlookBarMenuBuilder menuBuilder, Action<MenuItemViewModelWithShowList<TEntity>> action = null) where TEntity : class'
+    parameters:
+    - id: menuBuilder
+      type: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder
+      description: The OutlookBar menu builder.
+    - id: action
+      type: System.Action{Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList{{TEntity}}}
+      description: The action to configure the menu item.
+    typeParameters:
+    - id: TEntity
+      description: The type of the entity.
+    return:
+      type: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder
+      description: The OutlookBar menu builder.
+    content.vb: Public Shared Function AddMenuWithShowList(Of TEntity As Class)(menuBuilder As IOutlookBarMenuBuilder, action As Action(Of MenuItemViewModelWithShowList(Of TEntity)) = Nothing) As IOutlookBarMenuBuilder
+  overload: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList*
+  nameWithType.vb: IOutlookBarMenuBuilderExtensions.AddMenuWithShowList(Of TEntity)(IOutlookBarMenuBuilder, Action(Of MenuItemViewModelWithShowList(Of TEntity)))
+  fullName.vb: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList(Of TEntity)(Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder, System.Action(Of Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList(Of TEntity)))
+  name.vb: AddMenuWithShowList(Of TEntity)(IOutlookBarMenuBuilder, Action(Of MenuItemViewModelWithShowList(Of TEntity)))
 references:
 - uid: Innova.Prism.Library.Controls.Menu
   commentId: N:Innova.Prism.Library.Controls.Menu
@@ -130,7 +343,7 @@ references:
   fullName: System
 - uid: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem*
   commentId: Overload:Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem
-  href: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem.html#Innova_Prism_Library_Controls_Menu_IOutlookBarMenuBuilderExtensions_AddMenuItem_Innova_Prism_Library_Controls_Menu_IOutlookBarMenuBuilder_System_String_
+  href: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem.html#Innova_Prism_Library_Controls_Menu_IOutlookBarMenuBuilderExtensions_AddMenuItem_Innova_Prism_Library_Controls_Menu_IOutlookBarMenuBuilder_System_Action_Innova_Prism_Library_Controls_Menu_MenuItemViewModel__
   name: AddMenuItem
   nameWithType: IOutlookBarMenuBuilderExtensions.AddMenuItem
   fullName: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuItem
@@ -141,15 +354,243 @@ references:
   name: IOutlookBarMenuBuilder
   nameWithType: IOutlookBarMenuBuilder
   fullName: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilder
-- uid: System.String
-  commentId: T:System.String
+- uid: System.Action{Innova.Prism.Library.Controls.Menu.MenuItemViewModel}
+  commentId: T:System.Action{Innova.Prism.Library.Controls.Menu.MenuItemViewModel}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<MenuItemViewModel>
+  nameWithType: Action<MenuItemViewModel>
+  fullName: System.Action<Innova.Prism.Library.Controls.Menu.MenuItemViewModel>
+  nameWithType.vb: Action(Of MenuItemViewModel)
+  fullName.vb: System.Action(Of Innova.Prism.Library.Controls.Menu.MenuItemViewModel)
+  name.vb: Action(Of MenuItemViewModel)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
+    name: MenuItemViewModel
+    href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModel
+    name: MenuItemViewModel
+    href: Innova.Prism.Library.Controls.Menu.MenuItemViewModel.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList*
+  commentId: Overload:Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList
+  href: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList.html#Innova_Prism_Library_Controls_Menu_IOutlookBarMenuBuilderExtensions_AddMenuWithShowList__1_Innova_Prism_Library_Controls_Menu_IOutlookBarMenuBuilder_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
+  name: AddMenuWithShowList
+  nameWithType: IOutlookBarMenuBuilderExtensions.AddMenuWithShowList
+  fullName: Innova.Prism.Library.Controls.Menu.IOutlookBarMenuBuilderExtensions.AddMenuWithShowList
+- uid: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TEntity, bool>>
+  nameWithType: Expression<Func<TEntity, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TEntity, bool>>
+  nameWithType.vb: Expression(Of Func(Of TEntity, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean))
+  name.vb: Expression(Of Func(Of TEntity, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: System.Action{Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList{{TEntity}}}
+  commentId: T:System.Action{Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList{``0}}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<MenuItemViewModelWithShowList<TEntity>>
+  nameWithType: Action<MenuItemViewModelWithShowList<TEntity>>
+  fullName: System.Action<Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList<TEntity>>
+  nameWithType.vb: Action(Of MenuItemViewModelWithShowList(Of TEntity))
+  fullName.vb: System.Action(Of Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList(Of TEntity))
+  name.vb: Action(Of MenuItemViewModelWithShowList(Of TEntity))
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList`1
+    name: MenuItemViewModelWithShowList
+    href: Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList`1
+    name: MenuItemViewModelWithShowList
+    href: Innova.Prism.Library.Controls.Menu.MenuItemViewModelWithShowList-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
 memberLayout: SeparatePages

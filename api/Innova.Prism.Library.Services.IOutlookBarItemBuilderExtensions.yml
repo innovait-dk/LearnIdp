@@ -40,19 +40,24 @@ items:
   source:
     id: WithView
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\IOutlookBarItemBuilderExtensions.cs
-    startLine: 6
+    startLine: 12
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
+  summary: Sets the view of the Outlook bar item to the specified type.
+  example: []
   syntax:
     content: 'public static IOutlookBarItemBuilder WithView<TView>(this IOutlookBarItemBuilder outlookBarItemBuilder) where TView : UserControl'
     parameters:
     - id: outlookBarItemBuilder
       type: Innova.Prism.Library.Services.IOutlookBarItemBuilder
+      description: The Outlook bar item builder.
     typeParameters:
     - id: TView
+      description: The type of the view.
     return:
       type: Innova.Prism.Library.Services.IOutlookBarItemBuilder
+      description: The Outlook bar item builder.
     content.vb: Public Shared Function WithView(Of TView As UserControl)(outlookBarItemBuilder As IOutlookBarItemBuilder) As IOutlookBarItemBuilder
   overload: Innova.Prism.Library.Services.IOutlookBarItemBuilderExtensions.WithView*
   nameWithType.vb: IOutlookBarItemBuilderExtensions.WithView(Of TView)(IOutlookBarItemBuilder)
