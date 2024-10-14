@@ -67,7 +67,7 @@ And editing / insertion looks like this:
 The following controls are available:
 
 | Control name | Description |
-| --------------------------------------- | --------- -------------------------------------------------- ------------------------------------- |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | Calendar - Telerik | Telerik - RadDateTimePicker |
 | Checkbox | Checkbox |
 | Checkbox - Readonly | Checkbox, primarily used for display template |
@@ -84,7 +84,6 @@ The following controls are available:
 | LinkButton | A button that appears as a hyperlink. Used to display data on a clickable label. |
 | Numeric - Telerik| RadMaskedNumericInput |
 | RadioButtonList | displays a Radiobutton list with related entities |
-| Relation Label - List comma separated | As above, but shown as comma set on a line. |
 | Textbox - Telerik| RadWatermarkTextBox  |
 
 ### Relations
