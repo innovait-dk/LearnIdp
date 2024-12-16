@@ -51,7 +51,7 @@ public partial class EmployeesListMapperProfile
     partial void AfterConfiguration(IMappingExpression<Employees, EmployeesList> mapping)
     {
         // ...existing code...
-        mapping.ForMember(e => e.FullName, opt => opt.MapFrom(e => $"{e.FirstName} {e.LastName}"));
+        mapping.ForMember(e => e.FullName, opt => opt.MapFrom(e => e.FirstName + " " + e.LastName));
         // ...existing code...
     }
 }
@@ -65,7 +65,7 @@ public partial class EmployeesListMapperProfile
     partial void AfterConfiguration(IMappingExpression<Employees, EmployeesList> mapping)
     {
         // ...existing code...
-        mapping.ForMember(e => e.FullAddress, opt => opt.MapFrom(e => $"{e.Address}, {e.City}"));
+        mapping.ForMember(e => e.FullAddress, opt => opt.MapFrom(e => e.Address + ", " + e.City));
         // ...existing code...
     }
 }
