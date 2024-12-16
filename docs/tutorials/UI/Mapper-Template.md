@@ -79,8 +79,7 @@ public partial class EmployeesListMapperProfile
     partial void AfterConfiguration(IMappingExpression<Employees, EmployeesList> mapping)
     {
         // ...existing code...
-        mapping.ForMember(e => e.FullName, opt => opt.MapFrom(src => 
-            (src.FirstName ?? "") + " " + (src.LastName ?? "")));
+        mapping.ForMember(e => e.FullName, opt => opt.MapFrom(src => (src.FirstName ?? "") + " " + (src.LastName ?? "")));
         // ...existing code...
     }
 }

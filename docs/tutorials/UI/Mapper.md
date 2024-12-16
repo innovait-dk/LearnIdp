@@ -55,7 +55,7 @@ In another example of customization [Entity](../Entity/Entity.md), the custom pr
 ```csharp
         partial void AfterConfiguration(IMappingExpression<Employees, EmployeesList> mapping)
         {
-            mapping.ForMember(e => e.FullName, opt => opt.MapFrom(e => $"{e.FirstName} {e.LastName}"));
+            mapping.ForMember(e => e.FullName, opt => opt.MapFrom(e => e.FirstName + " " + e.LastName));
         }
 ```
 
