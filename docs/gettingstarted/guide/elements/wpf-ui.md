@@ -2,7 +2,7 @@
 
 The purpose of the "User Interface" element is solely to configure and generate code for the application's user interface.
 
-!!! note "User Interface"
+[!note] "User Interface"
     In the following example, components from Telerik are used in the application.
 
     Innova IT has code generation for [Telerik](https://www.telerik.com/) and [Infragistics](https://www.infragistics.com/).
