@@ -249,6 +249,8 @@ items:
         name: IShowEntityService<T, TShow>
       - uid: Innova.Data.Entity.ISqlConnectionOption
         name: ISqlConnectionOption
+      - uid: Innova.Data.Entity.IStreamHelper`1
+        name: IStreamHelper<TEntity>
       - uid: Innova.Data.Entity.ListResult`1
         name: ListResult<TResult>
       - uid: Innova.Data.Entity.NamespaceConstants
@@ -281,8 +283,8 @@ items:
         name: SearchEntityCountResult
       - uid: Innova.Data.Entity.SqlConnectionOption
         name: SqlConnectionOption
-      - uid: Innova.Data.Entity.StreamHelper
-        name: StreamHelper
+      - uid: Innova.Data.Entity.StreamHelper`2
+        name: StreamHelper<TDbContext, TEntity>
     - uid: Innova.Data.Extensions
       name: Extensions
       items:
@@ -1215,6 +1217,8 @@ items:
           name: BooleanVisibilityHideConverter
         - uid: Innova.Prism.Library.Converters.ByteBitmapImageConverter
           name: ByteBitmapImageConverter
+        - uid: Innova.Prism.Library.Converters.DictionaryVisibilityConverter
+          name: DictionaryVisibilityConverter
         - uid: Innova.Prism.Library.Converters.EnumToBoolConverter
           name: EnumToBoolConverter
         - uid: Innova.Prism.Library.Converters.EnumToBooleanConverter`1
@@ -1388,6 +1392,20 @@ items:
         - uid: Innova.Prism.Library.Menus.ItemModels
           name: ItemModels
           items:
+          - uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+            name: IMenuBaseModel
+          - uid: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
+            name: IMenuGroupModel
+          - uid: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase
+            name: IMenuItemModelBase
+          - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModel
+            name: IMenuModel
+          - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement
+            name: IMenuModelElement
+          - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1
+            name: IMenuModelEntity<T>
+          - uid: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
+            name: IMenuTabModel
           - uid: Innova.Prism.Library.Menus.ItemModels.KeyInputBinding
             name: KeyInputBinding
           - uid: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
@@ -1441,8 +1459,6 @@ items:
             name: IRelatedListeMenuService
           - uid: Innova.Prism.Library.Menus.Models.IRibbonMenu
             name: IRibbonMenu
-          - uid: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity`1
-            name: IRibbonMenuTaskWithEntity<T>
           - uid: Innova.Prism.Library.Menus.Models.IShowMenuService`1
             name: IShowMenuService<T>
           - uid: Innova.Prism.Library.Menus.Models.IShowMenuService`2
@@ -1487,8 +1503,6 @@ items:
             name: RibbonView
           - uid: Innova.Prism.Library.Menus.Ribbon.RibbonViewModel
             name: RibbonViewModel
-        - uid: Innova.Prism.Library.Menus.BaseEditEntityMenuTask
-          name: BaseEditEntityMenuTask
         - uid: Innova.Prism.Library.Menus.ClearFilterSelectedItemsMenu`1
           name: ClearFilterSelectedItemsMenu<T>
         - uid: Innova.Prism.Library.Menus.ContextMenuHelper
@@ -1503,8 +1517,26 @@ items:
           name: ExportToHtmlMenuTask
         - uid: Innova.Prism.Library.Menus.FilterSelectedItemsMenu`1
           name: FilterSelectedItemsMenu<T>
+        - uid: Innova.Prism.Library.Menus.IDeleteEntityMenuTask`2
+          name: IDeleteEntityMenuTask<T, TResult>
+        - uid: Innova.Prism.Library.Menus.IEditEntityMenuTask`2
+          name: IEditEntityMenuTask<T, TResult>
         - uid: Innova.Prism.Library.Menus.IExportToExcelMenuTask
           name: IExportToExcelMenuTask
+        - uid: Innova.Prism.Library.Menus.IExportToExcelMenuTask`2
+          name: IExportToExcelMenuTask<T, TResult>
+        - uid: Innova.Prism.Library.Menus.IInsertEntityMenuTask`1
+          name: IInsertEntityMenuTask<T>
+        - uid: Innova.Prism.Library.Menus.IPrintEntityMenuTask`2
+          name: IPrintEntityMenuTask<T, TResult>
+        - uid: Innova.Prism.Library.Menus.IRibbonBuilder
+          name: IRibbonBuilder
+        - uid: Innova.Prism.Library.Menus.ISearchMenuTask
+          name: ISearchMenuTask
+        - uid: Innova.Prism.Library.Menus.IServiceCollectionExtensions
+          name: IServiceCollectionExtensions
+        - uid: Innova.Prism.Library.Menus.IShowHistoryMenuTask`2
+          name: IShowHistoryMenuTask<T, TResult>
         - uid: Innova.Prism.Library.Menus.InsertEntityMenuTask`1
           name: InsertEntityMenuTask<T>
         - uid: Innova.Prism.Library.Menus.InsertRelatedMenuBase`3
@@ -1515,6 +1547,10 @@ items:
           name: MenuTaskExtensions
         - uid: Innova.Prism.Library.Menus.PrintEntityMenuTask`2
           name: PrintEntityMenuTask<T, TResult>
+        - uid: Innova.Prism.Library.Menus.RibbonBuilder
+          name: RibbonBuilder
+        - uid: Innova.Prism.Library.Menus.RibbonBuilderExtensions
+          name: RibbonBuilderExtensions
         - uid: Innova.Prism.Library.Menus.SearchMenuTask
           name: SearchMenuTask
         - uid: Innova.Prism.Library.Menus.ShowHistoryMenuTask`2
@@ -2021,6 +2057,8 @@ items:
           name: GridViewSelectCheckBoxColumn
         - uid: Innova.Prism.Telerik.Controls.GridViewSelectionUtilities
           name: GridViewSelectionUtilities
+        - uid: Innova.Prism.Telerik.Controls.HelpTextButtonControl
+          name: HelpTextButtonControl
         - uid: Innova.Prism.Telerik.Controls.LinkButtonColumn
           name: LinkButtonColumn
         - uid: Innova.Prism.Telerik.Controls.RadDateTimePickerBehaviors

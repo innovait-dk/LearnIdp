@@ -59,7 +59,7 @@ items:
   summary: Adds a new menu group to the menu service.
   example: []
   syntax:
-    content: public static MenuGroupModel AddGroup(this IMenuService menuService, string groupName, string caption, string tabName, int sortOrder)
+    content: public static IMenuGroupModel AddGroup(this IMenuService menuService, string groupName, string caption, string tabName, int sortOrder)
     parameters:
     - id: menuService
       type: Innova.Prism.Library.Services.IMenuService
@@ -77,9 +77,9 @@ items:
       type: System.Int32
       description: The sort order of the group.
     return:
-      type: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
+      type: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
       description: The newly added menu group.
-    content.vb: Public Shared Function AddGroup(menuService As IMenuService, groupName As String, caption As String, tabName As String, sortOrder As Integer) As MenuGroupModel
+    content.vb: Public Shared Function AddGroup(menuService As IMenuService, groupName As String, caption As String, tabName As String, sortOrder As Integer) As IMenuGroupModel
   overload: Innova.Prism.Library.Services.IMenuServiceExtensions.AddGroup*
   nameWithType.vb: IMenuServiceExtensions.AddGroup(IMenuService, String, String, String, Integer)
   fullName.vb: Innova.Prism.Library.Services.IMenuServiceExtensions.AddGroup(Innova.Prism.Library.Services.IMenuService, String, String, String, Integer)
@@ -106,7 +106,7 @@ items:
   summary: Adds a new menu group to the home tab of the menu service.
   example: []
   syntax:
-    content: public static MenuGroupModel AddGroupToHomeTab(this IMenuService menuService, string groupName, string caption, int sortOrder)
+    content: public static IMenuGroupModel AddGroupToHomeTab(this IMenuService menuService, string groupName, string caption, int sortOrder)
     parameters:
     - id: menuService
       type: Innova.Prism.Library.Services.IMenuService
@@ -121,9 +121,9 @@ items:
       type: System.Int32
       description: The sort order of the group.
     return:
-      type: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
+      type: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
       description: The newly added menu group.
-    content.vb: Public Shared Function AddGroupToHomeTab(menuService As IMenuService, groupName As String, caption As String, sortOrder As Integer) As MenuGroupModel
+    content.vb: Public Shared Function AddGroupToHomeTab(menuService As IMenuService, groupName As String, caption As String, sortOrder As Integer) As IMenuGroupModel
   overload: Innova.Prism.Library.Services.IMenuServiceExtensions.AddGroupToHomeTab*
   nameWithType.vb: IMenuServiceExtensions.AddGroupToHomeTab(IMenuService, String, String, Integer)
   fullName.vb: Innova.Prism.Library.Services.IMenuServiceExtensions.AddGroupToHomeTab(Innova.Prism.Library.Services.IMenuService, String, String, Integer)
@@ -150,7 +150,7 @@ items:
   summary: Adds a new menu tab to the menu service.
   example: []
   syntax:
-    content: public static MenuTabModel AddTab(this IMenuService menuService, string tabName, string caption, int sortOrder, bool isSelected = false)
+    content: public static IMenuTabModel AddTab(this IMenuService menuService, string tabName, string caption, int sortOrder, bool isSelected = false)
     parameters:
     - id: menuService
       type: Innova.Prism.Library.Services.IMenuService
@@ -168,9 +168,9 @@ items:
       type: System.Boolean
       description: Indicates whether the tab is selected.
     return:
-      type: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
+      type: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
       description: The newly added menu tab.
-    content.vb: Public Shared Function AddTab(menuService As IMenuService, tabName As String, caption As String, sortOrder As Integer, isSelected As Boolean = False) As MenuTabModel
+    content.vb: Public Shared Function AddTab(menuService As IMenuService, tabName As String, caption As String, sortOrder As Integer, isSelected As Boolean = False) As IMenuTabModel
   overload: Innova.Prism.Library.Services.IMenuServiceExtensions.AddTab*
   nameWithType.vb: IMenuServiceExtensions.AddTab(IMenuService, String, String, Integer, Boolean)
   fullName.vb: Innova.Prism.Library.Services.IMenuServiceExtensions.AddTab(Innova.Prism.Library.Services.IMenuService, String, String, Integer, Boolean)
@@ -197,7 +197,7 @@ items:
   summary: Adds a new menu to the menu service.
   example: []
   syntax:
-    content: 'public static MenuTaskDefinitionType AddMenu<MenuTaskDefinitionType>(this IMenuService menuService, ICommand command) where MenuTaskDefinitionType : MenuModel'
+    content: 'public static MenuTaskDefinitionType AddMenu<MenuTaskDefinitionType>(this IMenuService menuService, ICommand command) where MenuTaskDefinitionType : IMenuModel'
     parameters:
     - id: menuService
       type: Innova.Prism.Library.Services.IMenuService
@@ -211,7 +211,7 @@ items:
     return:
       type: '{MenuTaskDefinitionType}'
       description: The newly added menu.
-    content.vb: Public Shared Function AddMenu(Of MenuTaskDefinitionType As MenuModel)(menuService As IMenuService, command As ICommand) As MenuTaskDefinitionType
+    content.vb: Public Shared Function AddMenu(Of MenuTaskDefinitionType As IMenuModel)(menuService As IMenuService, command As ICommand) As MenuTaskDefinitionType
   overload: Innova.Prism.Library.Services.IMenuServiceExtensions.AddMenu*
   nameWithType.vb: IMenuServiceExtensions.AddMenu(Of MenuTaskDefinitionType)(IMenuService, ICommand)
   fullName.vb: Innova.Prism.Library.Services.IMenuServiceExtensions.AddMenu(Of MenuTaskDefinitionType)(Innova.Prism.Library.Services.IMenuService, System.Windows.Input.ICommand)
@@ -238,7 +238,7 @@ items:
   summary: Adds a new menu to the menu service.
   example: []
   syntax:
-    content: 'public static MenuTaskDefinitionType AddMenu<MenuTaskDefinitionType>(this IMenuService menuService, int sortOrder) where MenuTaskDefinitionType : MenuModel'
+    content: 'public static MenuTaskDefinitionType AddMenu<MenuTaskDefinitionType>(this IMenuService menuService, int sortOrder) where MenuTaskDefinitionType : IMenuModel'
     parameters:
     - id: menuService
       type: Innova.Prism.Library.Services.IMenuService
@@ -252,7 +252,7 @@ items:
     return:
       type: '{MenuTaskDefinitionType}'
       description: The newly added menu.
-    content.vb: Public Shared Function AddMenu(Of MenuTaskDefinitionType As MenuModel)(menuService As IMenuService, sortOrder As Integer) As MenuTaskDefinitionType
+    content.vb: Public Shared Function AddMenu(Of MenuTaskDefinitionType As IMenuModel)(menuService As IMenuService, sortOrder As Integer) As MenuTaskDefinitionType
   overload: Innova.Prism.Library.Services.IMenuServiceExtensions.AddMenu*
   nameWithType.vb: IMenuServiceExtensions.AddMenu(Of MenuTaskDefinitionType)(IMenuService, Integer)
   fullName.vb: Innova.Prism.Library.Services.IMenuServiceExtensions.AddMenu(Of MenuTaskDefinitionType)(Innova.Prism.Library.Services.IMenuService, Integer)
@@ -279,7 +279,7 @@ items:
   summary: Creates a new menu of the specified type and adds it to the menu service.
   example: []
   syntax:
-    content: 'public static MenuTaskDefinitionType CreateMenu<MenuTaskDefinitionType>(this IMenuService menuService, string groupname) where MenuTaskDefinitionType : MenuModel'
+    content: 'public static MenuTaskDefinitionType CreateMenu<MenuTaskDefinitionType>(this IMenuService menuService, string groupname) where MenuTaskDefinitionType : IMenuModel'
     parameters:
     - id: menuService
       type: Innova.Prism.Library.Services.IMenuService
@@ -293,7 +293,7 @@ items:
     return:
       type: '{MenuTaskDefinitionType}'
       description: The newly created menu.
-    content.vb: Public Shared Function CreateMenu(Of MenuTaskDefinitionType As MenuModel)(menuService As IMenuService, groupname As String) As MenuTaskDefinitionType
+    content.vb: Public Shared Function CreateMenu(Of MenuTaskDefinitionType As IMenuModel)(menuService As IMenuService, groupname As String) As MenuTaskDefinitionType
   overload: Innova.Prism.Library.Services.IMenuServiceExtensions.CreateMenu*
   nameWithType.vb: IMenuServiceExtensions.CreateMenu(Of MenuTaskDefinitionType)(IMenuService, String)
   fullName.vb: Innova.Prism.Library.Services.IMenuServiceExtensions.CreateMenu(Of MenuTaskDefinitionType)(Innova.Prism.Library.Services.IMenuService, String)
@@ -320,7 +320,7 @@ items:
   summary: Adds a new menu to the menu service.
   example: []
   syntax:
-    content: 'public static MenuTaskDefinitionType AddMenu<MenuTaskDefinitionType>(this IMenuService menuService, string groupname, int sortOrder) where MenuTaskDefinitionType : MenuModel'
+    content: 'public static MenuTaskDefinitionType AddMenu<MenuTaskDefinitionType>(this IMenuService menuService, string groupname, int sortOrder) where MenuTaskDefinitionType : IMenuModel'
     parameters:
     - id: menuService
       type: Innova.Prism.Library.Services.IMenuService
@@ -337,7 +337,7 @@ items:
     return:
       type: '{MenuTaskDefinitionType}'
       description: The newly added menu.
-    content.vb: Public Shared Function AddMenu(Of MenuTaskDefinitionType As MenuModel)(menuService As IMenuService, groupname As String, sortOrder As Integer) As MenuTaskDefinitionType
+    content.vb: Public Shared Function AddMenu(Of MenuTaskDefinitionType As IMenuModel)(menuService As IMenuService, groupname As String, sortOrder As Integer) As MenuTaskDefinitionType
   overload: Innova.Prism.Library.Services.IMenuServiceExtensions.AddMenu*
   nameWithType.vb: IMenuServiceExtensions.AddMenu(Of MenuTaskDefinitionType)(IMenuService, String, Integer)
   fullName.vb: Innova.Prism.Library.Services.IMenuServiceExtensions.AddMenu(Of MenuTaskDefinitionType)(Innova.Prism.Library.Services.IMenuService, String, Integer)
@@ -364,7 +364,7 @@ items:
   summary: Adds a new menu element to the menu service.
   example: []
   syntax:
-    content: 'public static MenuModelElement AddMenuElement<View>(this IMenuService menuService, string GroupName) where View : FrameworkElement'
+    content: 'public static IMenuModelElement AddMenuElement<View>(this IMenuService menuService, string GroupName) where View : FrameworkElement'
     parameters:
     - id: menuService
       type: Innova.Prism.Library.Services.IMenuService
@@ -376,9 +376,9 @@ items:
     - id: View
       description: The type of the view associated with the menu element.
     return:
-      type: Innova.Prism.Library.Menus.ItemModels.MenuModelElement
+      type: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement
       description: The newly added menu element.
-    content.vb: Public Shared Function AddMenuElement(Of View As FrameworkElement)(menuService As IMenuService, GroupName As String) As MenuModelElement
+    content.vb: Public Shared Function AddMenuElement(Of View As FrameworkElement)(menuService As IMenuService, GroupName As String) As IMenuModelElement
   overload: Innova.Prism.Library.Services.IMenuServiceExtensions.AddMenuElement*
   nameWithType.vb: IMenuServiceExtensions.AddMenuElement(Of View)(IMenuService, String)
   fullName.vb: Innova.Prism.Library.Services.IMenuServiceExtensions.AddMenuElement(Of View)(Innova.Prism.Library.Services.IMenuService, String)
@@ -405,7 +405,7 @@ items:
   summary: Adds a new menu element to the menu service.
   example: []
   syntax:
-    content: 'public static MenuModelElement AddMenuElement<View, ViewModel>(this IMenuService menuService, string GroupName) where View : FrameworkElement where ViewModel : class'
+    content: 'public static IMenuModelElement AddMenuElement<View, ViewModel>(this IMenuService menuService, string GroupName) where View : FrameworkElement where ViewModel : class'
     parameters:
     - id: menuService
       type: Innova.Prism.Library.Services.IMenuService
@@ -419,9 +419,9 @@ items:
     - id: ViewModel
       description: The type of the view model associated with the menu element.
     return:
-      type: Innova.Prism.Library.Menus.ItemModels.MenuModelElement
+      type: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement
       description: The newly added menu element.
-    content.vb: Public Shared Function AddMenuElement(Of View As FrameworkElement, ViewModel As Class)(menuService As IMenuService, GroupName As String) As MenuModelElement
+    content.vb: Public Shared Function AddMenuElement(Of View As FrameworkElement, ViewModel As Class)(menuService As IMenuService, GroupName As String) As IMenuModelElement
   overload: Innova.Prism.Library.Services.IMenuServiceExtensions.AddMenuElement*
   nameWithType.vb: IMenuServiceExtensions.AddMenuElement(Of View, ViewModel)(IMenuService, String)
   fullName.vb: Innova.Prism.Library.Services.IMenuServiceExtensions.AddMenuElement(Of View, ViewModel)(Innova.Prism.Library.Services.IMenuService, String)
@@ -582,13 +582,13 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
-  commentId: T:Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
   parent: Innova.Prism.Library.Menus.ItemModels
-  href: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel.html
-  name: MenuGroupModel
-  nameWithType: MenuGroupModel
-  fullName: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel.html
+  name: IMenuGroupModel
+  nameWithType: IMenuGroupModel
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
 - uid: Innova.Prism.Library.Menus.ItemModels
   commentId: N:Innova.Prism.Library.Menus.ItemModels
   href: Innova.html
@@ -658,13 +658,13 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
-  commentId: T:Innova.Prism.Library.Menus.ItemModels.MenuTabModel
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
   parent: Innova.Prism.Library.Menus.ItemModels
-  href: Innova.Prism.Library.Menus.ItemModels.MenuTabModel.html
-  name: MenuTabModel
-  nameWithType: MenuTabModel
-  fullName: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel.html
+  name: IMenuTabModel
+  nameWithType: IMenuTabModel
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
 - uid: Innova.Prism.Library.Services.IMenuServiceExtensions.AddMenu*
   commentId: Overload:Innova.Prism.Library.Services.IMenuServiceExtensions.AddMenu
   href: Innova.Prism.Library.Services.IMenuServiceExtensions.AddMenu.html#Innova_Prism_Library_Services_IMenuServiceExtensions_AddMenu__1_Innova_Prism_Library_Services_IMenuService_System_Windows_Input_ICommand_
@@ -738,13 +738,13 @@ references:
   name: AddMenuElement
   nameWithType: IMenuServiceExtensions.AddMenuElement
   fullName: Innova.Prism.Library.Services.IMenuServiceExtensions.AddMenuElement
-- uid: Innova.Prism.Library.Menus.ItemModels.MenuModelElement
-  commentId: T:Innova.Prism.Library.Menus.ItemModels.MenuModelElement
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.IMenuModelElement
   parent: Innova.Prism.Library.Menus.ItemModels
-  href: Innova.Prism.Library.Menus.ItemModels.MenuModelElement.html
-  name: MenuModelElement
-  nameWithType: MenuModelElement
-  fullName: Innova.Prism.Library.Menus.ItemModels.MenuModelElement
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement.html
+  name: IMenuModelElement
+  nameWithType: IMenuModelElement
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement
 - uid: Innova.Prism.Library.Services.IMenuServiceExtensions.SetSelectedTab*
   commentId: Overload:Innova.Prism.Library.Services.IMenuServiceExtensions.SetSelectedTab
   href: Innova.Prism.Library.Services.IMenuServiceExtensions.SetSelectedTab.html#Innova_Prism_Library_Services_IMenuServiceExtensions_SetSelectedTab_Innova_Prism_Library_Services_IMenuService_System_String_

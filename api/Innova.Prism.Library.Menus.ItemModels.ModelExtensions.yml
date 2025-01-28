@@ -5,7 +5,7 @@ items:
   id: ModelExtensions
   parent: Innova.Prism.Library.Menus.ItemModels
   children:
-  - Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,Innova.Prism.Library.Services.IMenuService)
+  - Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,Innova.Prism.Library.Services.IMenuService)
   - Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Services.IMenuService,Innova.Prism.Library.Menus.ItemModels.MenuBaseModel)
   langs:
   - csharp
@@ -28,17 +28,17 @@ items:
     content.vb: Public Module ModelExtensions
   inheritance:
   - System.Object
-- uid: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,Innova.Prism.Library.Services.IMenuService)
-  commentId: M:Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,Innova.Prism.Library.Services.IMenuService)
-  id: GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,Innova.Prism.Library.Services.IMenuService)
+- uid: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,Innova.Prism.Library.Services.IMenuService)
+  commentId: M:Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,Innova.Prism.Library.Services.IMenuService)
+  id: GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,Innova.Prism.Library.Services.IMenuService)
   isExtensionMethod: true
   parent: Innova.Prism.Library.Menus.ItemModels.ModelExtensions
   langs:
   - csharp
   - vb
-  name: GetGroup(MenuBaseModel, IMenuService)
-  nameWithType: ModelExtensions.GetGroup(MenuBaseModel, IMenuService)
-  fullName: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel, Innova.Prism.Library.Services.IMenuService)
+  name: GetGroup(IMenuBaseModel, IMenuService)
+  nameWithType: ModelExtensions.GetGroup(IMenuBaseModel, IMenuService)
+  fullName: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel, Innova.Prism.Library.Services.IMenuService)
   type: Method
   source:
     id: GetGroup
@@ -50,18 +50,18 @@ items:
   summary: Gets the menu group associated with the specified <xref href="Innova.Prism.Library.Menus.ItemModels.MenuBaseModel" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static MenuGroupModel GetGroup(this MenuBaseModel menuBaseModel, IMenuService menuService)
+    content: public static IMenuGroupModel GetGroup(this IMenuBaseModel menuBaseModel, IMenuService menuService)
     parameters:
     - id: menuBaseModel
-      type: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
+      type: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
       description: The <xref href="Innova.Prism.Library.Menus.ItemModels.MenuBaseModel" data-throw-if-not-resolved="false"></xref> instance.
     - id: menuService
       type: Innova.Prism.Library.Services.IMenuService
       description: The <xref href="Innova.Prism.Library.Services.IMenuService" data-throw-if-not-resolved="false"></xref> instance.
     return:
-      type: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
+      type: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
       description: The <xref href="Innova.Prism.Library.Menus.ItemModels.MenuGroupModel" data-throw-if-not-resolved="false"></xref> associated with the <xref href="Innova.Prism.Library.Menus.ItemModels.MenuBaseModel" data-throw-if-not-resolved="false"></xref>.
-    content.vb: Public Shared Function GetGroup(menuBaseModel As MenuBaseModel, menuService As IMenuService) As MenuGroupModel
+    content.vb: Public Shared Function GetGroup(menuBaseModel As IMenuBaseModel, menuService As IMenuService) As IMenuGroupModel
   overload: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup*
 - uid: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Services.IMenuService,Innova.Prism.Library.Menus.ItemModels.MenuBaseModel)
   commentId: M:Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Services.IMenuService,Innova.Prism.Library.Menus.ItemModels.MenuBaseModel)
@@ -85,7 +85,7 @@ items:
   summary: Gets the menu group associated with the specified <xref href="Innova.Prism.Library.Menus.ItemModels.MenuBaseModel" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static MenuGroupModel GetGroup(this IMenuService menuService, MenuBaseModel menuBaseModel)
+    content: public static IMenuGroupModel GetGroup(this IMenuService menuService, MenuBaseModel menuBaseModel)
     parameters:
     - id: menuService
       type: Innova.Prism.Library.Services.IMenuService
@@ -94,9 +94,9 @@ items:
       type: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
       description: The <xref href="Innova.Prism.Library.Menus.ItemModels.MenuBaseModel" data-throw-if-not-resolved="false"></xref> instance.
     return:
-      type: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
+      type: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
       description: The <xref href="Innova.Prism.Library.Menus.ItemModels.MenuGroupModel" data-throw-if-not-resolved="false"></xref> associated with the <xref href="Innova.Prism.Library.Menus.ItemModels.MenuBaseModel" data-throw-if-not-resolved="false"></xref>.
-    content.vb: Public Shared Function GetGroup(menuService As IMenuService, menuBaseModel As MenuBaseModel) As MenuGroupModel
+    content.vb: Public Shared Function GetGroup(menuService As IMenuService, menuBaseModel As MenuBaseModel) As IMenuGroupModel
   overload: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup*
 references:
 - uid: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
@@ -217,15 +217,28 @@ references:
   fullName: System
 - uid: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
   commentId: T:Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
-  parent: Innova.Prism.Library.Menus.ItemModels
   href: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel.html
   name: MenuGroupModel
   nameWithType: MenuGroupModel
   fullName: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
 - uid: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup*
   commentId: Overload:Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup
-  href: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup.html#Innova_Prism_Library_Menus_ItemModels_ModelExtensions_GetGroup_Innova_Prism_Library_Menus_ItemModels_MenuBaseModel_Innova_Prism_Library_Services_IMenuService_
+  href: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup.html#Innova_Prism_Library_Menus_ItemModels_ModelExtensions_GetGroup_Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_Innova_Prism_Library_Services_IMenuService_
   name: GetGroup
   nameWithType: ModelExtensions.GetGroup
   fullName: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+  parent: Innova.Prism.Library.Menus.ItemModels
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.html
+  name: IMenuBaseModel
+  nameWithType: IMenuBaseModel
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
+  parent: Innova.Prism.Library.Menus.ItemModels
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel.html
+  name: IMenuGroupModel
+  nameWithType: IMenuGroupModel
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
 memberLayout: SeparatePages

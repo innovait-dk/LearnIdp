@@ -41,6 +41,7 @@ items:
   - Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.ShowContextMenu
   - Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.ShowList
   - Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.SourceActiveItem
+  - Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.SubscribeEntityCreateEvent
   - Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.UpdateEntity(Innova.Data.Entity.PrimaryKeys{`0},System.Collections.IList)
   - Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.UseSelectFilter
   langs:
@@ -53,7 +54,7 @@ items:
   source:
     id: BaseEntityListViewModel
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 48
+    startLine: 49
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -174,7 +175,7 @@ items:
   source:
     id: CanUpdate
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 76
+    startLine: 77
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -191,6 +192,33 @@ items:
   - Innova.Prism.Infrastructure.Interfaces.IListViewModel.CanUpdate
   nameWithType.vb: BaseEntityListViewModel(Of T, TResult).CanUpdate
   fullName.vb: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel(Of T, TResult).CanUpdate
+- uid: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.SubscribeEntityCreateEvent
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.SubscribeEntityCreateEvent
+  id: SubscribeEntityCreateEvent
+  parent: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: SubscribeEntityCreateEvent
+  nameWithType: BaseEntityListViewModel<T, TResult>.SubscribeEntityCreateEvent
+  fullName: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel<T, TResult>.SubscribeEntityCreateEvent
+  type: Property
+  source:
+    id: SubscribeEntityCreateEvent
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
+    startLine: 100
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public bool SubscribeEntityCreateEvent { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property SubscribeEntityCreateEvent As Boolean
+  overload: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.SubscribeEntityCreateEvent*
+  nameWithType.vb: BaseEntityListViewModel(Of T, TResult).SubscribeEntityCreateEvent
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel(Of T, TResult).SubscribeEntityCreateEvent
 - uid: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.UseSelectFilter
   commentId: P:Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.UseSelectFilter
   id: UseSelectFilter
@@ -205,7 +233,7 @@ items:
   source:
     id: UseSelectFilter
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 97
+    startLine: 102
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -235,7 +263,7 @@ items:
   source:
     id: MenuService
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 99
+    startLine: 104
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -262,7 +290,7 @@ items:
   source:
     id: ShowContextMenu
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 103
+    startLine: 108
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -289,16 +317,16 @@ items:
   source:
     id: ContextMenus
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 114
+    startLine: 119
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
   syntax:
-    content: public ObservableCollection<MenuModel> ContextMenus { get; set; }
+    content: public ObservableCollection<IMenuModel> ContextMenus { get; set; }
     parameters: []
     return:
-      type: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Menus.ItemModels.MenuModel}
-    content.vb: Public Property ContextMenus As ObservableCollection(Of MenuModel)
+      type: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Menus.ItemModels.IMenuModel}
+    content.vb: Public Property ContextMenus As ObservableCollection(Of IMenuModel)
   overload: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.ContextMenus*
   nameWithType.vb: BaseEntityListViewModel(Of T, TResult).ContextMenus
   fullName.vb: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel(Of T, TResult).ContextMenus
@@ -316,7 +344,7 @@ items:
   source:
     id: SourceActiveItem
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 128
+    startLine: 133
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -343,7 +371,7 @@ items:
   source:
     id: ShowList
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 141
+    startLine: 146
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -370,7 +398,7 @@ items:
   source:
     id: CheckedItems
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 154
+    startLine: 159
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -397,7 +425,7 @@ items:
   source:
     id: SearchCommand
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 161
+    startLine: 166
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -424,7 +452,7 @@ items:
   source:
     id: SearchClearCommand
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 163
+    startLine: 168
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -451,7 +479,7 @@ items:
   source:
     id: CheckedCommand
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 165
+    startLine: 170
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -478,7 +506,7 @@ items:
   source:
     id: ExecuteExportToExcelDelegate
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 168
+    startLine: 173
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -503,7 +531,7 @@ items:
   source:
     id: ExecuteExportToXpsDelegate
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 170
+    startLine: 175
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -528,7 +556,7 @@ items:
   source:
     id: ExecuteExportToHtmlDelegate
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 172
+    startLine: 177
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -553,7 +581,7 @@ items:
   source:
     id: InlineSearch
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 177
+    startLine: 182
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -580,7 +608,7 @@ items:
   source:
     id: .ctor
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 186
+    startLine: 191
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -616,7 +644,7 @@ items:
   source:
     id: SetEventSubscription
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 202
+    startLine: 207
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -642,7 +670,7 @@ items:
   source:
     id: OnEntityKeysSelectedFilterEvent
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 221
+    startLine: 230
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -666,7 +694,7 @@ items:
   source:
     id: OnEntityKeysSelectedClearFilterEvent
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 230
+    startLine: 239
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -690,7 +718,7 @@ items:
   source:
     id: GetSelectedItemsPrimaryKeys
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 240
+    startLine: 249
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -716,7 +744,7 @@ items:
   source:
     id: OnSearch
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 255
+    startLine: 264
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -744,7 +772,7 @@ items:
   source:
     id: OnCanSelectEntity
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 288
+    startLine: 297
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -773,7 +801,7 @@ items:
   source:
     id: OnSelectEntity
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 296
+    startLine: 305
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -800,7 +828,7 @@ items:
   source:
     id: OnCheckedCommand
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 320
+    startLine: 329
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -827,7 +855,7 @@ items:
   source:
     id: OnSelectedItemsChanged
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 439
+    startLine: 448
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -853,7 +881,7 @@ items:
   source:
     id: OnEntityCreated
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 450
+    startLine: 459
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -883,7 +911,7 @@ items:
   source:
     id: OnEntityUpdated
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 480
+    startLine: 498
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -913,7 +941,7 @@ items:
   source:
     id: UpdateEntity
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 485
+    startLine: 503
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -945,7 +973,7 @@ items:
   source:
     id: SetEntity
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 527
+    startLine: 545
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -977,7 +1005,7 @@ items:
   source:
     id: GetSearchFilter
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 532
+    startLine: 550
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -1007,7 +1035,7 @@ items:
   source:
     id: OnExecuteSearch
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 537
+    startLine: 555
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -1037,7 +1065,7 @@ items:
   source:
     id: OnNavigatedTo
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 572
+    startLine: 590
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -1067,7 +1095,7 @@ items:
   source:
     id: OnNavigatedTo
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 640
+    startLine: 658
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -1098,7 +1126,7 @@ items:
   source:
     id: OnNavigatedFrom
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 646
+    startLine: 664
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -1129,7 +1157,7 @@ items:
   source:
     id: InsertItemAsync
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 689
+    startLine: 707
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -1164,7 +1192,7 @@ items:
   source:
     id: RefreshItems
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 694
+    startLine: 712
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -1197,7 +1225,7 @@ items:
   source:
     id: MakeEntityUpdatable
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 704
+    startLine: 722
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -1230,7 +1258,7 @@ items:
   source:
     id: SetExecuteExportToHtmlDelegate
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseEntityListViewModel.cs
-    startLine: 712
+    startLine: 730
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -4454,6 +4482,14 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.SubscribeEntityCreateEvent*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.SubscribeEntityCreateEvent
+  href: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel-2.SubscribeEntityCreateEvent.html#Innova_Prism_Library_BaseViewModels_BaseEntityListViewModel_2_SubscribeEntityCreateEvent
+  name: SubscribeEntityCreateEvent
+  nameWithType: BaseEntityListViewModel<T, TResult>.SubscribeEntityCreateEvent
+  fullName: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel<T, TResult>.SubscribeEntityCreateEvent
+  nameWithType.vb: BaseEntityListViewModel(Of T, TResult).SubscribeEntityCreateEvent
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel(Of T, TResult).SubscribeEntityCreateEvent
 - uid: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.UseSelectFilter*
   commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel`2.UseSelectFilter
   href: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel-2.UseSelectFilter.html#Innova_Prism_Library_BaseViewModels_BaseEntityListViewModel_2_UseSelectFilter
@@ -4603,26 +4639,26 @@ references:
   fullName: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel<T, TResult>.ContextMenus
   nameWithType.vb: BaseEntityListViewModel(Of T, TResult).ContextMenus
   fullName.vb: Innova.Prism.Library.BaseViewModels.BaseEntityListViewModel(Of T, TResult).ContextMenus
-- uid: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Menus.ItemModels.MenuModel}
-  commentId: T:System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Menus.ItemModels.MenuModel}
+- uid: System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Menus.ItemModels.IMenuModel}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{Innova.Prism.Library.Menus.ItemModels.IMenuModel}
   parent: System.Collections.ObjectModel
   definition: System.Collections.ObjectModel.ObservableCollection`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
-  name: ObservableCollection<MenuModel>
-  nameWithType: ObservableCollection<MenuModel>
-  fullName: System.Collections.ObjectModel.ObservableCollection<Innova.Prism.Library.Menus.ItemModels.MenuModel>
-  nameWithType.vb: ObservableCollection(Of MenuModel)
-  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of Innova.Prism.Library.Menus.ItemModels.MenuModel)
-  name.vb: ObservableCollection(Of MenuModel)
+  name: ObservableCollection<IMenuModel>
+  nameWithType: ObservableCollection<IMenuModel>
+  fullName: System.Collections.ObjectModel.ObservableCollection<Innova.Prism.Library.Menus.ItemModels.IMenuModel>
+  nameWithType.vb: ObservableCollection(Of IMenuModel)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of Innova.Prism.Library.Menus.ItemModels.IMenuModel)
+  name.vb: ObservableCollection(Of IMenuModel)
   spec.csharp:
   - uid: System.Collections.ObjectModel.ObservableCollection`1
     name: ObservableCollection
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
   - name: <
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModel
-    name: MenuModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModel
+    name: IMenuModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModel.html
   - name: '>'
   spec.vb:
   - uid: System.Collections.ObjectModel.ObservableCollection`1
@@ -4632,9 +4668,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModel
-    name: MenuModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModel
+    name: IMenuModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModel.html
   - name: )
 - uid: System.Collections.ObjectModel.ObservableCollection`1
   commentId: T:System.Collections.ObjectModel.ObservableCollection`1

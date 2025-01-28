@@ -18,7 +18,7 @@ items:
   - Innova.Prism.Telerik.Controls.ExtensionMethods.AddColumn``2(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.String,System.String,System.Linq.Expressions.Expression{System.Func{``1,System.Object}})
   - Innova.Prism.Telerik.Controls.ExtensionMethods.AddComboBoxColumn``2(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.String,System.Linq.Expressions.Expression{System.Func{``1,System.Object}},System.Linq.Expressions.Expression{System.Func{``1,System.Object}})
   - Innova.Prism.Telerik.Controls.ExtensionMethods.AddImageColumn``2(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``1,System.Object}})
-  - Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn``1(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.String)
+  - Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn``2(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``1,System.Object}},System.String)
   - Innova.Prism.Telerik.Controls.ExtensionMethods.AsCurrency(Telerik.Windows.Controls.GridViewBoundColumnBase)
   - Innova.Prism.Telerik.Controls.ExtensionMethods.GetColumn``1(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
   - Innova.Prism.Telerik.Controls.ExtensionMethods.GetFilters(Telerik.Windows.Data.IFilterDescriptor)
@@ -481,17 +481,17 @@ items:
   nameWithType.vb: ExtensionMethods.AddCheckBoxColumn(Of T, TResult)(RadGridView, Expression(Of Func(Of T, Object)), Expression(Of Func(Of T, Object)), Expression(Of Func(Of TResult, Object)))
   fullName.vb: Innova.Prism.Telerik.Controls.ExtensionMethods.AddCheckBoxColumn(Of T, TResult)(Telerik.Windows.Controls.RadGridView, System.Linq.Expressions.Expression(Of System.Func(Of T, Object)), System.Linq.Expressions.Expression(Of System.Func(Of T, Object)), System.Linq.Expressions.Expression(Of System.Func(Of TResult, Object)))
   name.vb: AddCheckBoxColumn(Of T, TResult)(RadGridView, Expression(Of Func(Of T, Object)), Expression(Of Func(Of T, Object)), Expression(Of Func(Of TResult, Object)))
-- uid: Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn``1(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.String)
-  commentId: M:Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn``1(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.String)
-  id: AddLinkButtonColumn``1(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.String)
+- uid: Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn``2(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``1,System.Object}},System.String)
+  commentId: M:Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn``2(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``1,System.Object}},System.String)
+  id: AddLinkButtonColumn``2(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``1,System.Object}},System.String)
   isExtensionMethod: true
   parent: Innova.Prism.Telerik.Controls.ExtensionMethods
   langs:
   - csharp
   - vb
-  name: AddLinkButtonColumn<T>(RadGridView, Expression<Func<T, object>>, Expression<Func<T, object>>, string)
-  nameWithType: ExtensionMethods.AddLinkButtonColumn<T>(RadGridView, Expression<Func<T, object>>, Expression<Func<T, object>>, string)
-  fullName: Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn<T>(Telerik.Windows.Controls.RadGridView, System.Linq.Expressions.Expression<System.Func<T, object>>, System.Linq.Expressions.Expression<System.Func<T, object>>, string)
+  name: AddLinkButtonColumn<T, TResult>(RadGridView, Expression<Func<T, object>>, Expression<Func<TResult, object>>, string)
+  nameWithType: ExtensionMethods.AddLinkButtonColumn<T, TResult>(RadGridView, Expression<Func<T, object>>, Expression<Func<TResult, object>>, string)
+  fullName: Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn<T, TResult>(Telerik.Windows.Controls.RadGridView, System.Linq.Expressions.Expression<System.Func<T, object>>, System.Linq.Expressions.Expression<System.Func<TResult, object>>, string)
   type: Method
   source:
     id: AddLinkButtonColumn
@@ -501,25 +501,26 @@ items:
   - Innova.Prism.Telerik
   namespace: Innova.Prism.Telerik.Controls
   syntax:
-    content: public static LinkButtonColumn AddLinkButtonColumn<T>(this RadGridView list, Expression<Func<T, object>> nameExpression, Expression<Func<T, object>> bindingExpression = null, string commandName = null)
+    content: public static LinkButtonColumn AddLinkButtonColumn<T, TResult>(this RadGridView list, Expression<Func<T, object>> nameExpression, Expression<Func<TResult, object>> bindingExpression = null, string commandName = null)
     parameters:
     - id: list
       type: Telerik.Windows.Controls.RadGridView
     - id: nameExpression
       type: System.Linq.Expressions.Expression{System.Func{{T},System.Object}}
     - id: bindingExpression
-      type: System.Linq.Expressions.Expression{System.Func{{T},System.Object}}
+      type: System.Linq.Expressions.Expression{System.Func{{TResult},System.Object}}
     - id: commandName
       type: System.String
     typeParameters:
     - id: T
+    - id: TResult
     return:
       type: Innova.Prism.Telerik.Controls.LinkButtonColumn
-    content.vb: Public Shared Function AddLinkButtonColumn(Of T)(list As RadGridView, nameExpression As Expression(Of Func(Of T, Object)), bindingExpression As Expression(Of Func(Of T, Object)) = Nothing, commandName As String = Nothing) As LinkButtonColumn
+    content.vb: Public Shared Function AddLinkButtonColumn(Of T, TResult)(list As RadGridView, nameExpression As Expression(Of Func(Of T, Object)), bindingExpression As Expression(Of Func(Of TResult, Object)) = Nothing, commandName As String = Nothing) As LinkButtonColumn
   overload: Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn*
-  nameWithType.vb: ExtensionMethods.AddLinkButtonColumn(Of T)(RadGridView, Expression(Of Func(Of T, Object)), Expression(Of Func(Of T, Object)), String)
-  fullName.vb: Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn(Of T)(Telerik.Windows.Controls.RadGridView, System.Linq.Expressions.Expression(Of System.Func(Of T, Object)), System.Linq.Expressions.Expression(Of System.Func(Of T, Object)), String)
-  name.vb: AddLinkButtonColumn(Of T)(RadGridView, Expression(Of Func(Of T, Object)), Expression(Of Func(Of T, Object)), String)
+  nameWithType.vb: ExtensionMethods.AddLinkButtonColumn(Of T, TResult)(RadGridView, Expression(Of Func(Of T, Object)), Expression(Of Func(Of TResult, Object)), String)
+  fullName.vb: Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn(Of T, TResult)(Telerik.Windows.Controls.RadGridView, System.Linq.Expressions.Expression(Of System.Func(Of T, Object)), System.Linq.Expressions.Expression(Of System.Func(Of TResult, Object)), String)
+  name.vb: AddLinkButtonColumn(Of T, TResult)(RadGridView, Expression(Of Func(Of T, Object)), Expression(Of Func(Of TResult, Object)), String)
 - uid: Innova.Prism.Telerik.Controls.ExtensionMethods.AddImageColumn``2(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``1,System.Object}})
   commentId: M:Innova.Prism.Telerik.Controls.ExtensionMethods.AddImageColumn``2(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``1,System.Object}})
   id: AddImageColumn``2(Telerik.Windows.Controls.RadGridView,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``1,System.Object}})
@@ -1544,7 +1545,7 @@ references:
   - name: )
 - uid: Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn*
   commentId: Overload:Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn
-  href: Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn.html#Innova_Prism_Telerik_Controls_ExtensionMethods_AddLinkButtonColumn__1_Telerik_Windows_Controls_RadGridView_System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Linq_Expressions_Expression_System_Func___0_System_Object___System_String_
+  href: Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn.html#Innova_Prism_Telerik_Controls_ExtensionMethods_AddLinkButtonColumn__2_Telerik_Windows_Controls_RadGridView_System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Linq_Expressions_Expression_System_Func___1_System_Object___System_String_
   name: AddLinkButtonColumn
   nameWithType: ExtensionMethods.AddLinkButtonColumn
   fullName: Innova.Prism.Telerik.Controls.ExtensionMethods.AddLinkButtonColumn

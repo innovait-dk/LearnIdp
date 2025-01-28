@@ -744,7 +744,7 @@ items:
   summary: Retrieves a list of entities from the database for lookup purposes.
   example: []
   syntax:
-    content: public Task<List<T>> GetListForLookup(CancellationToken cancellationToken = default)
+    content: public virtual Task<List<T>> GetListForLookup(CancellationToken cancellationToken = default)
     parameters:
     - id: cancellationToken
       type: System.Threading.CancellationToken
@@ -752,7 +752,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{System.Collections.Generic.List{{T}}}
       description: A list of retrieved entities.
-    content.vb: Public Function GetListForLookup(cancellationToken As CancellationToken = Nothing) As Task(Of List(Of T))
+    content.vb: Public Overridable Function GetListForLookup(cancellationToken As CancellationToken = Nothing) As Task(Of List(Of T))
   overload: Innova.Data.Entity.DbContextEntityService`3.GetListForLookup*
   implements:
   - Innova.Data.Entity.IEntityService{{T}}.GetListForLookup(System.Threading.CancellationToken)

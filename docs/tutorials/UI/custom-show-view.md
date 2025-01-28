@@ -14,7 +14,7 @@ How to do this is stated as a comment in the code in the custom-show-view:
 
 ```csharp
         //Implementation information:
-        //Register the view in the CustomersModule in the partial method: AfterRegisterTypes
+        //Register the view in the CustomersModule, override the method: RegisterTypes
         //
         //containerRegistry.RegisterForNavigation<Views.Show.CustomersShowViewCustom, Views.Show.CustomersShowViewModel>(nameof(Views.Show.CustomersShowView));
 

@@ -5,14 +5,14 @@ items:
   id: RibbonGroupViewModel
   parent: Innova.Prism.Library.Menus.Ribbon
   children:
-  - Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.MenuGroupModel,Innova.Prism.Library.Services.IInputBindingsService)
-  - Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.AddMenu(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel)
+  - Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel,Innova.Prism.Library.Services.IInputBindingsService)
+  - Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.AddMenu(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel)
   - Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.HeaderText
   - Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.IsVisible
   - Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.IsVisibleChanged
   - Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.Items
   - Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.MenuGroupModel
-  - Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel)
+  - Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel)
   - Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.SortOrder
   - Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.SourceItems
   - Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.ToString
@@ -90,11 +90,11 @@ items:
   summary: Gets or sets the menu group model.
   example: []
   syntax:
-    content: public MenuGroupModel MenuGroupModel { get; set; }
+    content: public IMenuGroupModel MenuGroupModel { get; set; }
     parameters: []
     return:
-      type: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
-    content.vb: Public Property MenuGroupModel As MenuGroupModel
+      type: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
+    content.vb: Public Property MenuGroupModel As IMenuGroupModel
   overload: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.MenuGroupModel*
 - uid: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.Items
   commentId: P:Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.Items
@@ -144,11 +144,11 @@ items:
   summary: Gets the range observable collection of menu base models.
   example: []
   syntax:
-    content: public RangeObservableCollection<MenuBaseModel> SourceItems { get; }
+    content: public RangeObservableCollection<IMenuBaseModel> SourceItems { get; }
     parameters: []
     return:
-      type: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection{Innova.Prism.Library.Menus.ItemModels.MenuBaseModel}
-    content.vb: Public ReadOnly Property SourceItems As RangeObservableCollection(Of MenuBaseModel)
+      type: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection{Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel}
+    content.vb: Public ReadOnly Property SourceItems As RangeObservableCollection(Of IMenuBaseModel)
   overload: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.SourceItems*
 - uid: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.IsVisible
   commentId: P:Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.IsVisible
@@ -231,16 +231,16 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property HeaderText As String
   overload: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.HeaderText*
-- uid: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.MenuGroupModel,Innova.Prism.Library.Services.IInputBindingsService)
-  commentId: M:Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.MenuGroupModel,Innova.Prism.Library.Services.IInputBindingsService)
-  id: '#ctor(Innova.Prism.Library.Menus.ItemModels.MenuGroupModel,Innova.Prism.Library.Services.IInputBindingsService)'
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel,Innova.Prism.Library.Services.IInputBindingsService)
+  commentId: M:Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel,Innova.Prism.Library.Services.IInputBindingsService)
+  id: '#ctor(Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel,Innova.Prism.Library.Services.IInputBindingsService)'
   parent: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel
   langs:
   - csharp
   - vb
-  name: RibbonGroupViewModel(MenuGroupModel, IInputBindingsService)
-  nameWithType: RibbonGroupViewModel.RibbonGroupViewModel(MenuGroupModel, IInputBindingsService)
-  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RibbonGroupViewModel(Innova.Prism.Library.Menus.ItemModels.MenuGroupModel, Innova.Prism.Library.Services.IInputBindingsService)
+  name: RibbonGroupViewModel(IMenuGroupModel, IInputBindingsService)
+  nameWithType: RibbonGroupViewModel.RibbonGroupViewModel(IMenuGroupModel, IInputBindingsService)
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RibbonGroupViewModel(Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel, Innova.Prism.Library.Services.IInputBindingsService)
   type: Constructor
   source:
     id: .ctor
@@ -252,29 +252,29 @@ items:
   summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel" data-throw-if-not-resolved="false"></xref> class.
   example: []
   syntax:
-    content: public RibbonGroupViewModel(MenuGroupModel menuGroupModel, IInputBindingsService inputBindingsService)
+    content: public RibbonGroupViewModel(IMenuGroupModel menuGroupModel, IInputBindingsService inputBindingsService)
     parameters:
     - id: menuGroupModel
-      type: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
+      type: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
       description: The menu group model.
     - id: inputBindingsService
       type: Innova.Prism.Library.Services.IInputBindingsService
       description: The input bindings service.
-    content.vb: Public Sub New(menuGroupModel As MenuGroupModel, inputBindingsService As IInputBindingsService)
+    content.vb: Public Sub New(menuGroupModel As IMenuGroupModel, inputBindingsService As IInputBindingsService)
   overload: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.#ctor*
-  nameWithType.vb: RibbonGroupViewModel.New(MenuGroupModel, IInputBindingsService)
-  fullName.vb: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.New(Innova.Prism.Library.Menus.ItemModels.MenuGroupModel, Innova.Prism.Library.Services.IInputBindingsService)
-  name.vb: New(MenuGroupModel, IInputBindingsService)
-- uid: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.AddMenu(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel)
-  commentId: M:Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.AddMenu(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel)
-  id: AddMenu(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel)
+  nameWithType.vb: RibbonGroupViewModel.New(IMenuGroupModel, IInputBindingsService)
+  fullName.vb: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.New(Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel, Innova.Prism.Library.Services.IInputBindingsService)
+  name.vb: New(IMenuGroupModel, IInputBindingsService)
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.AddMenu(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel)
+  commentId: M:Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.AddMenu(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel)
+  id: AddMenu(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel)
   parent: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel
   langs:
   - csharp
   - vb
-  name: AddMenu(MenuBaseModel)
-  nameWithType: RibbonGroupViewModel.AddMenu(MenuBaseModel)
-  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.AddMenu(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel)
+  name: AddMenu(IMenuBaseModel)
+  nameWithType: RibbonGroupViewModel.AddMenu(IMenuBaseModel)
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.AddMenu(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel)
   type: Method
   source:
     id: AddMenu
@@ -286,23 +286,23 @@ items:
   summary: Adds a menu to the ribbon group.
   example: []
   syntax:
-    content: public void AddMenu(MenuBaseModel item)
+    content: public void AddMenu(IMenuBaseModel item)
     parameters:
     - id: item
-      type: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
+      type: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
       description: The menu to add.
-    content.vb: Public Sub AddMenu(item As MenuBaseModel)
+    content.vb: Public Sub AddMenu(item As IMenuBaseModel)
   overload: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.AddMenu*
-- uid: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel)
-  commentId: M:Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel)
-  id: RemoveMenu(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel)
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel)
+  commentId: M:Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel)
+  id: RemoveMenu(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel)
   parent: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel
   langs:
   - csharp
   - vb
-  name: RemoveMenu(MenuBaseModel)
-  nameWithType: RibbonGroupViewModel.RemoveMenu(MenuBaseModel)
-  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel)
+  name: RemoveMenu(IMenuBaseModel)
+  nameWithType: RibbonGroupViewModel.RemoveMenu(IMenuBaseModel)
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel)
   type: Method
   source:
     id: RemoveMenu
@@ -314,12 +314,12 @@ items:
   summary: Removes a menu from the ribbon group.
   example: []
   syntax:
-    content: public void RemoveMenu(MenuBaseModel item)
+    content: public void RemoveMenu(IMenuBaseModel item)
     parameters:
     - id: item
-      type: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
+      type: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
       description: The menu to remove.
-    content.vb: Public Sub RemoveMenu(item As MenuBaseModel)
+    content.vb: Public Sub RemoveMenu(item As IMenuBaseModel)
   overload: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RemoveMenu*
 - uid: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.ToString
   commentId: M:Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.ToString
@@ -806,13 +806,13 @@ references:
   name: MenuGroupModel
   nameWithType: RibbonGroupViewModel.MenuGroupModel
   fullName: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.MenuGroupModel
-- uid: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
-  commentId: T:Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
   parent: Innova.Prism.Library.Menus.ItemModels
-  href: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel.html
-  name: MenuGroupModel
-  nameWithType: MenuGroupModel
-  fullName: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel.html
+  name: IMenuGroupModel
+  nameWithType: IMenuGroupModel
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
 - uid: Innova.Prism.Library.Menus.ItemModels
   commentId: N:Innova.Prism.Library.Menus.ItemModels
   href: Innova.html
@@ -916,25 +916,25 @@ references:
   name: SourceItems
   nameWithType: RibbonGroupViewModel.SourceItems
   fullName: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.SourceItems
-- uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection{Innova.Prism.Library.Menus.ItemModels.MenuBaseModel}
-  commentId: T:Innova.Prism.Library.ClassDefinitions.RangeObservableCollection{Innova.Prism.Library.Menus.ItemModels.MenuBaseModel}
+- uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection{Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel}
+  commentId: T:Innova.Prism.Library.ClassDefinitions.RangeObservableCollection{Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel}
   parent: Innova.Prism.Library.ClassDefinitions
   definition: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
   href: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection-1.html
-  name: RangeObservableCollection<MenuBaseModel>
-  nameWithType: RangeObservableCollection<MenuBaseModel>
-  fullName: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection<Innova.Prism.Library.Menus.ItemModels.MenuBaseModel>
-  nameWithType.vb: RangeObservableCollection(Of MenuBaseModel)
-  fullName.vb: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection(Of Innova.Prism.Library.Menus.ItemModels.MenuBaseModel)
-  name.vb: RangeObservableCollection(Of MenuBaseModel)
+  name: RangeObservableCollection<IMenuBaseModel>
+  nameWithType: RangeObservableCollection<IMenuBaseModel>
+  fullName: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection<Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel>
+  nameWithType.vb: RangeObservableCollection(Of IMenuBaseModel)
+  fullName.vb: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection(Of Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel)
+  name.vb: RangeObservableCollection(Of IMenuBaseModel)
   spec.csharp:
   - uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
     name: RangeObservableCollection
     href: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection-1.html
   - name: <
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
-    name: MenuBaseModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+    name: IMenuBaseModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.html
   - name: '>'
   spec.vb:
   - uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
@@ -943,9 +943,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
-    name: MenuBaseModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+    name: IMenuBaseModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.html
   - name: )
 - uid: Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
   commentId: T:Innova.Prism.Library.ClassDefinitions.RangeObservableCollection`1
@@ -1069,7 +1069,7 @@ references:
   fullName: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel
 - uid: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.#ctor*
   commentId: Overload:Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.#ctor
-  href: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.-ctor.html#Innova_Prism_Library_Menus_Ribbon_RibbonGroupViewModel__ctor_Innova_Prism_Library_Menus_ItemModels_MenuGroupModel_Innova_Prism_Library_Services_IInputBindingsService_
+  href: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.-ctor.html#Innova_Prism_Library_Menus_Ribbon_RibbonGroupViewModel__ctor_Innova_Prism_Library_Menus_ItemModels_IMenuGroupModel_Innova_Prism_Library_Services_IInputBindingsService_
   name: RibbonGroupViewModel
   nameWithType: RibbonGroupViewModel.RibbonGroupViewModel
   fullName: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RibbonGroupViewModel
@@ -1123,20 +1123,20 @@ references:
     href: Innova.Prism.Library.Services.html
 - uid: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.AddMenu*
   commentId: Overload:Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.AddMenu
-  href: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.AddMenu.html#Innova_Prism_Library_Menus_Ribbon_RibbonGroupViewModel_AddMenu_Innova_Prism_Library_Menus_ItemModels_MenuBaseModel_
+  href: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.AddMenu.html#Innova_Prism_Library_Menus_Ribbon_RibbonGroupViewModel_AddMenu_Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_
   name: AddMenu
   nameWithType: RibbonGroupViewModel.AddMenu
   fullName: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.AddMenu
-- uid: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
-  commentId: T:Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
   parent: Innova.Prism.Library.Menus.ItemModels
-  href: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.html
-  name: MenuBaseModel
-  nameWithType: MenuBaseModel
-  fullName: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.html
+  name: IMenuBaseModel
+  nameWithType: IMenuBaseModel
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
 - uid: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RemoveMenu*
   commentId: Overload:Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RemoveMenu
-  href: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RemoveMenu.html#Innova_Prism_Library_Menus_Ribbon_RibbonGroupViewModel_RemoveMenu_Innova_Prism_Library_Menus_ItemModels_MenuBaseModel_
+  href: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RemoveMenu.html#Innova_Prism_Library_Menus_Ribbon_RibbonGroupViewModel_RemoveMenu_Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_
   name: RemoveMenu
   nameWithType: RibbonGroupViewModel.RemoveMenu
   fullName: Innova.Prism.Library.Menus.Ribbon.RibbonGroupViewModel.RemoveMenu

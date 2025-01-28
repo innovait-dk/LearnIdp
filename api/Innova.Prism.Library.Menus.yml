@@ -5,7 +5,6 @@ items:
   id: Menus
   parent: Innova.Prism.Library
   children:
-  - Innova.Prism.Library.Menus.BaseEditEntityMenuTask
   - Innova.Prism.Library.Menus.ClearFilterSelectedItemsMenu`1
   - Innova.Prism.Library.Menus.ContextMenuHelper
   - Innova.Prism.Library.Menus.DeleteEntityMenuTask`2
@@ -15,7 +14,16 @@ items:
   - Innova.Prism.Library.Menus.ExportToHtmlMenuTask
   - Innova.Prism.Library.Menus.Factories
   - Innova.Prism.Library.Menus.FilterSelectedItemsMenu`1
+  - Innova.Prism.Library.Menus.IDeleteEntityMenuTask`2
+  - Innova.Prism.Library.Menus.IEditEntityMenuTask`2
   - Innova.Prism.Library.Menus.IExportToExcelMenuTask
+  - Innova.Prism.Library.Menus.IExportToExcelMenuTask`2
+  - Innova.Prism.Library.Menus.IInsertEntityMenuTask`1
+  - Innova.Prism.Library.Menus.IPrintEntityMenuTask`2
+  - Innova.Prism.Library.Menus.IRibbonBuilder
+  - Innova.Prism.Library.Menus.ISearchMenuTask
+  - Innova.Prism.Library.Menus.IServiceCollectionExtensions
+  - Innova.Prism.Library.Menus.IShowHistoryMenuTask`2
   - Innova.Prism.Library.Menus.InsertEntityMenuTask`1
   - Innova.Prism.Library.Menus.InsertRelatedMenuBase`3
   - Innova.Prism.Library.Menus.ItemModels
@@ -26,6 +34,8 @@ items:
   - Innova.Prism.Library.Menus.Navigation
   - Innova.Prism.Library.Menus.PrintEntityMenuTask`2
   - Innova.Prism.Library.Menus.Ribbon
+  - Innova.Prism.Library.Menus.RibbonBuilder
+  - Innova.Prism.Library.Menus.RibbonBuilderExtensions
   - Innova.Prism.Library.Menus.SearchMenuTask
   - Innova.Prism.Library.Menus.ShowHistoryMenuTask`2
   langs:
@@ -360,13 +370,6 @@ references:
   - uid: Innova.Prism.Library.Menus.Ribbon
     name: Ribbon
     href: Innova.Prism.Library.Menus.Ribbon.html
-- uid: Innova.Prism.Library.Menus.BaseEditEntityMenuTask
-  commentId: T:Innova.Prism.Library.Menus.BaseEditEntityMenuTask
-  parent: Innova.Prism.Library.Menus
-  href: Innova.Prism.Library.Menus.BaseEditEntityMenuTask.html
-  name: BaseEditEntityMenuTask
-  nameWithType: BaseEditEntityMenuTask
-  fullName: Innova.Prism.Library.Menus.BaseEditEntityMenuTask
 - uid: Innova.Prism.Library.Menus.ClearFilterSelectedItemsMenu`1
   commentId: T:Innova.Prism.Library.Menus.ClearFilterSelectedItemsMenu`1
   href: Innova.Prism.Library.Menus.ClearFilterSelectedItemsMenu-1.html
@@ -523,6 +526,68 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: Innova.Prism.Library.Menus.IDeleteEntityMenuTask`2
+  commentId: T:Innova.Prism.Library.Menus.IDeleteEntityMenuTask`2
+  href: Innova.Prism.Library.Menus.IDeleteEntityMenuTask-2.html
+  name: IDeleteEntityMenuTask<T, TResult>
+  nameWithType: IDeleteEntityMenuTask<T, TResult>
+  fullName: Innova.Prism.Library.Menus.IDeleteEntityMenuTask<T, TResult>
+  nameWithType.vb: IDeleteEntityMenuTask(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.IDeleteEntityMenuTask(Of T, TResult)
+  name.vb: IDeleteEntityMenuTask(Of T, TResult)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Menus.IDeleteEntityMenuTask`2
+    name: IDeleteEntityMenuTask
+    href: Innova.Prism.Library.Menus.IDeleteEntityMenuTask-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Menus.IDeleteEntityMenuTask`2
+    name: IDeleteEntityMenuTask
+    href: Innova.Prism.Library.Menus.IDeleteEntityMenuTask-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Innova.Prism.Library.Menus.IEditEntityMenuTask`2
+  commentId: T:Innova.Prism.Library.Menus.IEditEntityMenuTask`2
+  href: Innova.Prism.Library.Menus.IEditEntityMenuTask-2.html
+  name: IEditEntityMenuTask<T, TResult>
+  nameWithType: IEditEntityMenuTask<T, TResult>
+  fullName: Innova.Prism.Library.Menus.IEditEntityMenuTask<T, TResult>
+  nameWithType.vb: IEditEntityMenuTask(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.IEditEntityMenuTask(Of T, TResult)
+  name.vb: IEditEntityMenuTask(Of T, TResult)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Menus.IEditEntityMenuTask`2
+    name: IEditEntityMenuTask
+    href: Innova.Prism.Library.Menus.IEditEntityMenuTask-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Menus.IEditEntityMenuTask`2
+    name: IEditEntityMenuTask
+    href: Innova.Prism.Library.Menus.IEditEntityMenuTask-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
 - uid: Innova.Prism.Library.Menus.IExportToExcelMenuTask
   commentId: T:Innova.Prism.Library.Menus.IExportToExcelMenuTask
   parent: Innova.Prism.Library.Menus
@@ -530,6 +595,144 @@ references:
   name: IExportToExcelMenuTask
   nameWithType: IExportToExcelMenuTask
   fullName: Innova.Prism.Library.Menus.IExportToExcelMenuTask
+- uid: Innova.Prism.Library.Menus.IExportToExcelMenuTask`2
+  commentId: T:Innova.Prism.Library.Menus.IExportToExcelMenuTask`2
+  href: Innova.Prism.Library.Menus.IExportToExcelMenuTask-2.html
+  name: IExportToExcelMenuTask<T, TResult>
+  nameWithType: IExportToExcelMenuTask<T, TResult>
+  fullName: Innova.Prism.Library.Menus.IExportToExcelMenuTask<T, TResult>
+  nameWithType.vb: IExportToExcelMenuTask(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.IExportToExcelMenuTask(Of T, TResult)
+  name.vb: IExportToExcelMenuTask(Of T, TResult)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Menus.IExportToExcelMenuTask`2
+    name: IExportToExcelMenuTask
+    href: Innova.Prism.Library.Menus.IExportToExcelMenuTask-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Menus.IExportToExcelMenuTask`2
+    name: IExportToExcelMenuTask
+    href: Innova.Prism.Library.Menus.IExportToExcelMenuTask-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Innova.Prism.Library.Menus.IInsertEntityMenuTask`1
+  commentId: T:Innova.Prism.Library.Menus.IInsertEntityMenuTask`1
+  href: Innova.Prism.Library.Menus.IInsertEntityMenuTask-1.html
+  name: IInsertEntityMenuTask<T>
+  nameWithType: IInsertEntityMenuTask<T>
+  fullName: Innova.Prism.Library.Menus.IInsertEntityMenuTask<T>
+  nameWithType.vb: IInsertEntityMenuTask(Of T)
+  fullName.vb: Innova.Prism.Library.Menus.IInsertEntityMenuTask(Of T)
+  name.vb: IInsertEntityMenuTask(Of T)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Menus.IInsertEntityMenuTask`1
+    name: IInsertEntityMenuTask
+    href: Innova.Prism.Library.Menus.IInsertEntityMenuTask-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Menus.IInsertEntityMenuTask`1
+    name: IInsertEntityMenuTask
+    href: Innova.Prism.Library.Menus.IInsertEntityMenuTask-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Innova.Prism.Library.Menus.IPrintEntityMenuTask`2
+  commentId: T:Innova.Prism.Library.Menus.IPrintEntityMenuTask`2
+  href: Innova.Prism.Library.Menus.IPrintEntityMenuTask-2.html
+  name: IPrintEntityMenuTask<T, TResult>
+  nameWithType: IPrintEntityMenuTask<T, TResult>
+  fullName: Innova.Prism.Library.Menus.IPrintEntityMenuTask<T, TResult>
+  nameWithType.vb: IPrintEntityMenuTask(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.IPrintEntityMenuTask(Of T, TResult)
+  name.vb: IPrintEntityMenuTask(Of T, TResult)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Menus.IPrintEntityMenuTask`2
+    name: IPrintEntityMenuTask
+    href: Innova.Prism.Library.Menus.IPrintEntityMenuTask-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Menus.IPrintEntityMenuTask`2
+    name: IPrintEntityMenuTask
+    href: Innova.Prism.Library.Menus.IPrintEntityMenuTask-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Innova.Prism.Library.Menus.IRibbonBuilder
+  commentId: T:Innova.Prism.Library.Menus.IRibbonBuilder
+  parent: Innova.Prism.Library.Menus
+  href: Innova.Prism.Library.Menus.IRibbonBuilder.html
+  name: IRibbonBuilder
+  nameWithType: IRibbonBuilder
+  fullName: Innova.Prism.Library.Menus.IRibbonBuilder
+- uid: Innova.Prism.Library.Menus.ISearchMenuTask
+  commentId: T:Innova.Prism.Library.Menus.ISearchMenuTask
+  parent: Innova.Prism.Library.Menus
+  href: Innova.Prism.Library.Menus.ISearchMenuTask.html
+  name: ISearchMenuTask
+  nameWithType: ISearchMenuTask
+  fullName: Innova.Prism.Library.Menus.ISearchMenuTask
+- uid: Innova.Prism.Library.Menus.IServiceCollectionExtensions
+  commentId: T:Innova.Prism.Library.Menus.IServiceCollectionExtensions
+  href: Innova.Prism.Library.Menus.IServiceCollectionExtensions.html
+  name: IServiceCollectionExtensions
+  nameWithType: IServiceCollectionExtensions
+  fullName: Innova.Prism.Library.Menus.IServiceCollectionExtensions
+- uid: Innova.Prism.Library.Menus.IShowHistoryMenuTask`2
+  commentId: T:Innova.Prism.Library.Menus.IShowHistoryMenuTask`2
+  href: Innova.Prism.Library.Menus.IShowHistoryMenuTask-2.html
+  name: IShowHistoryMenuTask<T, TResult>
+  nameWithType: IShowHistoryMenuTask<T, TResult>
+  fullName: Innova.Prism.Library.Menus.IShowHistoryMenuTask<T, TResult>
+  nameWithType.vb: IShowHistoryMenuTask(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.IShowHistoryMenuTask(Of T, TResult)
+  name.vb: IShowHistoryMenuTask(Of T, TResult)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Menus.IShowHistoryMenuTask`2
+    name: IShowHistoryMenuTask
+    href: Innova.Prism.Library.Menus.IShowHistoryMenuTask-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Innova.Prism.Library.Menus.IShowHistoryMenuTask`2
+    name: IShowHistoryMenuTask
+    href: Innova.Prism.Library.Menus.IShowHistoryMenuTask-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
 - uid: Innova.Prism.Library.Menus.InsertEntityMenuTask`1
   commentId: T:Innova.Prism.Library.Menus.InsertEntityMenuTask`1
   href: Innova.Prism.Library.Menus.InsertEntityMenuTask-1.html
@@ -637,6 +840,19 @@ references:
   - name: " "
   - name: TResult
   - name: )
+- uid: Innova.Prism.Library.Menus.RibbonBuilder
+  commentId: T:Innova.Prism.Library.Menus.RibbonBuilder
+  href: Innova.Prism.Library.Menus.RibbonBuilder.html
+  name: RibbonBuilder
+  nameWithType: RibbonBuilder
+  fullName: Innova.Prism.Library.Menus.RibbonBuilder
+- uid: Innova.Prism.Library.Menus.RibbonBuilderExtensions
+  commentId: T:Innova.Prism.Library.Menus.RibbonBuilderExtensions
+  parent: Innova.Prism.Library.Menus
+  href: Innova.Prism.Library.Menus.RibbonBuilderExtensions.html
+  name: RibbonBuilderExtensions
+  nameWithType: RibbonBuilderExtensions
+  fullName: Innova.Prism.Library.Menus.RibbonBuilderExtensions
 - uid: Innova.Prism.Library.Menus.SearchMenuTask
   commentId: T:Innova.Prism.Library.Menus.SearchMenuTask
   href: Innova.Prism.Library.Menus.SearchMenuTask.html

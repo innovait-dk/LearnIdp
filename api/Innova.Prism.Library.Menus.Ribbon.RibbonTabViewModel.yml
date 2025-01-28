@@ -5,7 +5,7 @@ items:
   id: RibbonTabViewModel
   parent: Innova.Prism.Library.Menus.Ribbon
   children:
-  - Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+  - Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
   - Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.Groups
   - Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.IsVisible
   - Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.MenuTabModel
@@ -63,11 +63,11 @@ items:
   summary: Gets or sets the menu tab model associated with the ribbon tab.
   example: []
   syntax:
-    content: public MenuTabModel MenuTabModel { get; set; }
+    content: public IMenuTabModel MenuTabModel { get; set; }
     parameters: []
     return:
-      type: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
-    content.vb: Public Property MenuTabModel As MenuTabModel
+      type: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
+    content.vb: Public Property MenuTabModel As IMenuTabModel
   overload: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.MenuTabModel*
 - uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.Groups
   commentId: P:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.Groups
@@ -177,16 +177,16 @@ items:
       type: System.Boolean
     content.vb: Public Property IsVisible As Boolean
   overload: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.IsVisible*
-- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
-  commentId: M:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
-  id: '#ctor(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)'
+- uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
+  commentId: M:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
+  id: '#ctor(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)'
   parent: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
   langs:
   - csharp
   - vb
-  name: RibbonTabViewModel(MenuTabModel)
-  nameWithType: RibbonTabViewModel.RibbonTabViewModel(MenuTabModel)
-  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.RibbonTabViewModel(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+  name: RibbonTabViewModel(IMenuTabModel)
+  nameWithType: RibbonTabViewModel.RibbonTabViewModel(IMenuTabModel)
+  fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.RibbonTabViewModel(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
   type: Constructor
   source:
     id: .ctor
@@ -198,16 +198,16 @@ items:
   summary: Initializes a new instance of the <xref href="Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel" data-throw-if-not-resolved="false"></xref> class.
   example: []
   syntax:
-    content: public RibbonTabViewModel(MenuTabModel menuTabModel)
+    content: public RibbonTabViewModel(IMenuTabModel menuTabModel)
     parameters:
     - id: menuTabModel
-      type: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
+      type: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
       description: The menu tab model associated with the ribbon tab.
-    content.vb: Public Sub New(menuTabModel As MenuTabModel)
+    content.vb: Public Sub New(menuTabModel As IMenuTabModel)
   overload: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor*
-  nameWithType.vb: RibbonTabViewModel.New(MenuTabModel)
-  fullName.vb: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.New(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
-  name.vb: New(MenuTabModel)
+  nameWithType.vb: RibbonTabViewModel.New(IMenuTabModel)
+  fullName.vb: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.New(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
+  name.vb: New(IMenuTabModel)
 - uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.ToString
   commentId: M:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.ToString
   id: ToString
@@ -685,13 +685,13 @@ references:
   name: MenuTabModel
   nameWithType: RibbonTabViewModel.MenuTabModel
   fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.MenuTabModel
-- uid: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
-  commentId: T:Innova.Prism.Library.Menus.ItemModels.MenuTabModel
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
   parent: Innova.Prism.Library.Menus.ItemModels
-  href: Innova.Prism.Library.Menus.ItemModels.MenuTabModel.html
-  name: MenuTabModel
-  nameWithType: MenuTabModel
-  fullName: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel.html
+  name: IMenuTabModel
+  nameWithType: IMenuTabModel
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
 - uid: Innova.Prism.Library.Menus.ItemModels
   commentId: N:Innova.Prism.Library.Menus.ItemModels
   href: Innova.html
@@ -932,7 +932,7 @@ references:
   fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel
 - uid: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor*
   commentId: Overload:Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.#ctor
-  href: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.-ctor.html#Innova_Prism_Library_Menus_Ribbon_RibbonTabViewModel__ctor_Innova_Prism_Library_Menus_ItemModels_MenuTabModel_
+  href: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.-ctor.html#Innova_Prism_Library_Menus_Ribbon_RibbonTabViewModel__ctor_Innova_Prism_Library_Menus_ItemModels_IMenuTabModel_
   name: RibbonTabViewModel
   nameWithType: RibbonTabViewModel.RibbonTabViewModel
   fullName: Innova.Prism.Library.Menus.Ribbon.RibbonTabViewModel.RibbonTabViewModel

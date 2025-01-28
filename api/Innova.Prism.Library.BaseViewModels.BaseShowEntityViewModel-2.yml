@@ -9,6 +9,7 @@ items:
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.AfterGetMainEntity
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.AfterOnMainEntityChanged
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.CheckVisibility(System.Data.DataTable)
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ControlVisibility
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetExportDataTable
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetMainEntityKeys
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetRelatedListViewModels
@@ -25,9 +26,12 @@ items:
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnNavigatedTo(Prism.Regions.NavigationContext)
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.RelatedLists
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.RelatedViewModels
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetControlVisibility(System.String,System.Boolean)
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetEventSubscription
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetHeader(System.String)
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetRelatedIsSelectedDefault
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.String,System.Boolean)
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ViewModelService
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.logger
   langs:
@@ -40,7 +44,7 @@ items:
   source:
     id: BaseShowEntityViewModel
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 44
+    startLine: 45
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -102,7 +106,7 @@ items:
   source:
     id: logger
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 53
+    startLine: 54
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -113,6 +117,33 @@ items:
     content.vb: Protected ReadOnly logger As ILogger(Of BaseShowEntityViewModel(Of T, TResult))
   nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).logger
   fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).logger
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ControlVisibility
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ControlVisibility
+  id: ControlVisibility
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: ControlVisibility
+  nameWithType: BaseShowEntityViewModel<T, TResult>.ControlVisibility
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.ControlVisibility
+  type: Property
+  source:
+    id: ControlVisibility
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 61
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public Dictionary<string, bool> ControlVisibility { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Boolean}
+    content.vb: Public ReadOnly Property ControlVisibility As Dictionary(Of String, Boolean)
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ControlVisibility*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).ControlVisibility
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).ControlVisibility
 - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MenuService
   commentId: P:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MenuService
   id: MenuService
@@ -127,7 +158,7 @@ items:
   source:
     id: MenuService
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 62
+    startLine: 65
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -154,7 +185,7 @@ items:
   source:
     id: RelatedViewModels
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 63
+    startLine: 66
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -181,7 +212,7 @@ items:
   source:
     id: MainEntity
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 65
+    startLine: 68
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -208,7 +239,7 @@ items:
   source:
     id: MainEntityKey
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 78
+    startLine: 81
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -235,7 +266,7 @@ items:
   source:
     id: ViewModelService
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 89
+    startLine: 92
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -262,7 +293,7 @@ items:
   source:
     id: RelatedLists
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 91
+    startLine: 94
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -289,7 +320,7 @@ items:
   source:
     id: .ctor
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 109
+    startLine: 112
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -327,7 +358,7 @@ items:
   source:
     id: SetEventSubscription
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 135
+    startLine: 138
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -353,7 +384,7 @@ items:
   source:
     id: OnMainEntityKeyChanged
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 144
+    startLine: 147
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -377,7 +408,7 @@ items:
   source:
     id: OnNavigatedTo
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 151
+    startLine: 154
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -408,7 +439,7 @@ items:
   source:
     id: OnNavigatedFrom
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 165
+    startLine: 168
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -425,6 +456,96 @@ items:
   overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.OnNavigatedFrom*
   nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).OnNavigatedFrom(NavigationContext)
   fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).OnNavigatedFrom(Prism.Regions.NavigationContext)
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetControlVisibility(System.String,System.Boolean)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetControlVisibility(System.String,System.Boolean)
+  id: SetControlVisibility(System.String,System.Boolean)
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: SetControlVisibility(string, bool)
+  nameWithType: BaseShowEntityViewModel<T, TResult>.SetControlVisibility(string, bool)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetControlVisibility(string, bool)
+  type: Method
+  source:
+    id: SetControlVisibility
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 209
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected void SetControlVisibility(string fullControlName, bool isVisible)
+    parameters:
+    - id: fullControlName
+      type: System.String
+    - id: isVisible
+      type: System.Boolean
+    content.vb: Protected Sub SetControlVisibility(fullControlName As String, isVisible As Boolean)
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetControlVisibility*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetControlVisibility(String, Boolean)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetControlVisibility(String, Boolean)
+  name.vb: SetControlVisibility(String, Boolean)
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.String,System.Boolean)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.String,System.Boolean)
+  id: SetVisibility(System.String,System.Boolean)
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: SetVisibility(string, bool)
+  nameWithType: BaseShowEntityViewModel<T, TResult>.SetVisibility(string, bool)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetVisibility(string, bool)
+  type: Method
+  source:
+    id: SetVisibility
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 226
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected void SetVisibility(string entityPropertyName, bool isVisible)
+    parameters:
+    - id: entityPropertyName
+      type: System.String
+    - id: isVisible
+      type: System.Boolean
+    content.vb: Protected Sub SetVisibility(entityPropertyName As String, isVisible As Boolean)
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetVisibility(String, Boolean)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetVisibility(String, Boolean)
+  name.vb: SetVisibility(String, Boolean)
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  id: SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2
+  langs:
+  - csharp
+  - vb
+  name: SetVisibility(Expression<Func<T, object>>, bool)
+  nameWithType: BaseShowEntityViewModel<T, TResult>.SetVisibility(Expression<Func<T, object>>, bool)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetVisibility(System.Linq.Expressions.Expression<System.Func<T, object>>, bool)
+  type: Method
+  source:
+    id: SetVisibility
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
+    startLine: 233
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected void SetVisibility(Expression<Func<T, object>> propertyExpression, bool isVisible)
+    parameters:
+    - id: propertyExpression
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Object}}
+    - id: isVisible
+      type: System.Boolean
+    content.vb: Protected Sub SetVisibility(propertyExpression As Expression(Of Func(Of T, Object)), isVisible As Boolean)
+  overload: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility*
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetVisibility(Expression(Of Func(Of T, Object)), Boolean)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetVisibility(System.Linq.Expressions.Expression(Of System.Func(Of T, Object)), Boolean)
+  name.vb: SetVisibility(Expression(Of Func(Of T, Object)), Boolean)
 - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetMainEntityKeys
   commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetMainEntityKeys
   id: GetMainEntityKeys
@@ -439,7 +560,7 @@ items:
   source:
     id: GetMainEntityKeys
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 206
+    startLine: 248
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -465,7 +586,7 @@ items:
   source:
     id: SetHeader
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 217
+    startLine: 259
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -495,7 +616,7 @@ items:
   source:
     id: CheckVisibility
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 243
+    startLine: 285
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -522,7 +643,7 @@ items:
   source:
     id: GetRelatedListViewModels
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 248
+    startLine: 290
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -548,7 +669,7 @@ items:
   source:
     id: SetRelatedIsSelectedDefault
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 265
+    startLine: 307
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -572,7 +693,7 @@ items:
   source:
     id: OnMainEntityChanged
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 279
+    startLine: 321
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -596,7 +717,7 @@ items:
   source:
     id: AfterOnMainEntityChanged
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 285
+    startLine: 327
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -620,7 +741,7 @@ items:
   source:
     id: LoadDataAsync
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 288
+    startLine: 330
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -646,7 +767,7 @@ items:
   source:
     id: AfterGetMainEntity
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 311
+    startLine: 353
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -672,7 +793,7 @@ items:
   source:
     id: LoadMainEntityAsync
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 316
+    startLine: 358
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -698,7 +819,7 @@ items:
   source:
     id: GetExportDataTable
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 329
+    startLine: 371
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -724,7 +845,7 @@ items:
   source:
     id: OnEntityReload
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 334
+    startLine: 376
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -754,7 +875,7 @@ items:
   source:
     id: OnEntityUpdated
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 355
+    startLine: 397
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -1811,6 +1932,132 @@ references:
     name: Logging
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ControlVisibility*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ControlVisibility
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.ControlVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_ControlVisibility
+  name: ControlVisibility
+  nameWithType: BaseShowEntityViewModel<T, TResult>.ControlVisibility
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.ControlVisibility
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).ControlVisibility
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).ControlVisibility
+- uid: System.Collections.Generic.Dictionary{System.String,System.Boolean}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Boolean}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, bool>
+  nameWithType: Dictionary<string, bool>
+  fullName: System.Collections.Generic.Dictionary<string, bool>
+  nameWithType.vb: Dictionary(Of String, Boolean)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Boolean)
+  name.vb: Dictionary(Of String, Boolean)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MenuService*
   commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MenuService
   href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.MenuService.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_MenuService
@@ -2006,43 +2253,6 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MainEntity*
   commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MainEntity
   href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.MainEntity.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_MainEntity
@@ -2634,6 +2844,164 @@ references:
   fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.OnNavigatedFrom
   nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).OnNavigatedFrom
   fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).OnNavigatedFrom
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetControlVisibility*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetControlVisibility
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetControlVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetControlVisibility_System_String_System_Boolean_
+  name: SetControlVisibility
+  nameWithType: BaseShowEntityViewModel<T, TResult>.SetControlVisibility
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetControlVisibility
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetControlVisibility
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetControlVisibility
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetVisibility_System_String_System_Boolean_
+  name: SetVisibility
+  nameWithType: BaseShowEntityViewModel<T, TResult>.SetVisibility
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetVisibility
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetVisibility
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetVisibility
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Object}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{`0,System.Object}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, object>>
+  nameWithType: Expression<Func<T, object>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, object>>
+  nameWithType.vb: Expression(Of Func(Of T, Object))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Object))
+  name.vb: Expression(Of Func(Of T, Object))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
 - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetMainEntityKeys*
   commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetMainEntityKeys
   href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.GetMainEntityKeys.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_GetMainEntityKeys
@@ -2681,17 +3049,6 @@ references:
   fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetHeader
   nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetHeader
   fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetHeader
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
 - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.CheckVisibility*
   commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.CheckVisibility
   href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.CheckVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_CheckVisibility_System_Data_DataTable_

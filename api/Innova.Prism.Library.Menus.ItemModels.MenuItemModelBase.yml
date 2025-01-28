@@ -17,15 +17,15 @@ items:
   source:
     id: MenuItemModelBase
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\ItemModels\MenuItemModelBase.cs
-    startLine: 9
+    startLine: 25
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.ItemModels
   summary: Base class for menu item models.
   example: []
   syntax:
-    content: 'public abstract class MenuItemModelBase : BindableBase, INotifyPropertyChanged'
-    content.vb: Public MustInherit Class MenuItemModelBase Inherits BindableBase Implements INotifyPropertyChanged
+    content: 'public abstract class MenuItemModelBase : BindableBase, INotifyPropertyChanged, IMenuItemModelBase'
+    content.vb: Public MustInherit Class MenuItemModelBase Inherits BindableBase Implements INotifyPropertyChanged, IMenuItemModelBase
   inheritance:
   - System.Object
   - Prism.Mvvm.BindableBase
@@ -35,6 +35,7 @@ items:
   - Innova.Prism.Library.Menus.ItemModels.MenuTabModel
   implements:
   - System.ComponentModel.INotifyPropertyChanged
+  - Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase
   inheritedMembers:
   - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
   - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
@@ -55,7 +56,7 @@ items:
   source:
     id: ModelKey
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\ItemModels\MenuItemModelBase.cs
-    startLine: 14
+    startLine: 30
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.ItemModels
@@ -68,6 +69,8 @@ items:
       type: System.String
     content.vb: Public Property ModelKey As String
   overload: Innova.Prism.Library.Menus.ItemModels.MenuItemModelBase.ModelKey*
+  implements:
+  - Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase.ModelKey
 - uid: Innova.Prism.Library.Menus.ItemModels.MenuItemModelBase.ScopedMenuServiceId
   commentId: P:Innova.Prism.Library.Menus.ItemModels.MenuItemModelBase.ScopedMenuServiceId
   id: ScopedMenuServiceId
@@ -82,7 +85,7 @@ items:
   source:
     id: ScopedMenuServiceId
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\ItemModels\MenuItemModelBase.cs
-    startLine: 19
+    startLine: 35
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.ItemModels
@@ -95,6 +98,8 @@ items:
       type: System.String
     content.vb: Public Property ScopedMenuServiceId As String
   overload: Innova.Prism.Library.Menus.ItemModels.MenuItemModelBase.ScopedMenuServiceId*
+  implements:
+  - Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase.ScopedMenuServiceId
 references:
 - uid: Innova.Prism.Library.Menus.ItemModels
   commentId: N:Innova.Prism.Library.Menus.ItemModels
@@ -169,6 +174,13 @@ references:
   name: INotifyPropertyChanged
   nameWithType: INotifyPropertyChanged
   fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase
+  parent: Innova.Prism.Library.Menus.ItemModels
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase.html
+  name: IMenuItemModelBase
+  nameWithType: IMenuItemModelBase
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase
 - uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
   commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
   parent: Prism.Mvvm.BindableBase
@@ -544,6 +556,13 @@ references:
   name: ModelKey
   nameWithType: MenuItemModelBase.ModelKey
   fullName: Innova.Prism.Library.Menus.ItemModels.MenuItemModelBase.ModelKey
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase.ModelKey
+  commentId: P:Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase.ModelKey
+  parent: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase.ModelKey.html#Innova_Prism_Library_Menus_ItemModels_IMenuItemModelBase_ModelKey
+  name: ModelKey
+  nameWithType: IMenuItemModelBase.ModelKey
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase.ModelKey
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -561,4 +580,11 @@ references:
   name: ScopedMenuServiceId
   nameWithType: MenuItemModelBase.ScopedMenuServiceId
   fullName: Innova.Prism.Library.Menus.ItemModels.MenuItemModelBase.ScopedMenuServiceId
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase.ScopedMenuServiceId
+  commentId: P:Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase.ScopedMenuServiceId
+  parent: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase.ScopedMenuServiceId.html#Innova_Prism_Library_Menus_ItemModels_IMenuItemModelBase_ScopedMenuServiceId
+  name: ScopedMenuServiceId
+  nameWithType: IMenuItemModelBase.ScopedMenuServiceId
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase.ScopedMenuServiceId
 memberLayout: SeparatePages

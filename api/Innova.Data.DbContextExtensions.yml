@@ -7,12 +7,14 @@ items:
   children:
   - Innova.Data.DbContextExtensions.ConvertToSqlKeys``1(Microsoft.EntityFrameworkCore.DbContext,Innova.Data.Entity.IPrimaryKey)
   - Innova.Data.DbContextExtensions.ConvertToSqlParameter(Microsoft.EntityFrameworkCore.DbContext,Innova.Data.Entity.IPrimaryKey)
+  - Innova.Data.DbContextExtensions.GetColumnName``1(Microsoft.EntityFrameworkCore.DbContext,System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
   - Innova.Data.DbContextExtensions.GetKeyNames``1(Microsoft.EntityFrameworkCore.DbContext)
   - Innova.Data.DbContextExtensions.GetKeys``1(Microsoft.EntityFrameworkCore.DbContext,System.Collections.Generic.List{``0})
   - Innova.Data.DbContextExtensions.GetKeys``1(Microsoft.EntityFrameworkCore.DbContext,``0)
   - Innova.Data.DbContextExtensions.GetPrimaryKey(Microsoft.EntityFrameworkCore.DbContext,System.Type,System.String)
   - Innova.Data.DbContextExtensions.GetPrimaryKeysSelector``1(Microsoft.EntityFrameworkCore.DbContext)
   - Innova.Data.DbContextExtensions.GetSqlKeys``1(Microsoft.EntityFrameworkCore.DbContext,``0)
+  - Innova.Data.DbContextExtensions.GetTableName``1(Microsoft.EntityFrameworkCore.DbContext)
   - Innova.Data.DbContextExtensions.RawSql``1(Microsoft.EntityFrameworkCore.DbContext,System.String,System.Collections.Generic.KeyValuePair{System.String,System.Object}[])
   - Innova.Data.DbContextExtensions.Set(Microsoft.EntityFrameworkCore.DbContext,System.Type)
   langs:
@@ -25,7 +27,7 @@ items:
   source:
     id: DbContextExtensions
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -51,7 +53,7 @@ items:
   source:
     id: Set
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -71,6 +73,84 @@ items:
       description: A queryable set for the specified entity type.
     content.vb: Public Shared Function [Set](_context As DbContext, t As Type) As IQueryable(Of Object)
   overload: Innova.Data.DbContextExtensions.Set*
+- uid: Innova.Data.DbContextExtensions.GetColumnName``1(Microsoft.EntityFrameworkCore.DbContext,System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  commentId: M:Innova.Data.DbContextExtensions.GetColumnName``1(Microsoft.EntityFrameworkCore.DbContext,System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  id: GetColumnName``1(Microsoft.EntityFrameworkCore.DbContext,System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  isExtensionMethod: true
+  parent: Innova.Data.DbContextExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetColumnName<TEntity>(DbContext, Expression<Func<TEntity, object>>)
+  nameWithType: DbContextExtensions.GetColumnName<TEntity>(DbContext, Expression<Func<TEntity, object>>)
+  fullName: Innova.Data.DbContextExtensions.GetColumnName<TEntity>(Microsoft.EntityFrameworkCore.DbContext, System.Linq.Expressions.Expression<System.Func<TEntity, object>>)
+  type: Method
+  source:
+    id: GetColumnName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
+    startLine: 40
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Resolves the column name from the entity model based on the property selector.
+  example: []
+  syntax:
+    content: 'public static string GetColumnName<TEntity>(this DbContext dbContext, Expression<Func<TEntity, object>> columnSelector) where TEntity : class'
+    parameters:
+    - id: dbContext
+      type: Microsoft.EntityFrameworkCore.DbContext
+      description: The DbContext instance.
+    - id: columnSelector
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Object}}
+      description: An expression selecting the column.
+    typeParameters:
+    - id: TEntity
+    return:
+      type: System.String
+      description: The database column name.
+    content.vb: Public Shared Function GetColumnName(Of TEntity As Class)(dbContext As DbContext, columnSelector As Expression(Of Func(Of TEntity, Object))) As String
+  overload: Innova.Data.DbContextExtensions.GetColumnName*
+  nameWithType.vb: DbContextExtensions.GetColumnName(Of TEntity)(DbContext, Expression(Of Func(Of TEntity, Object)))
+  fullName.vb: Innova.Data.DbContextExtensions.GetColumnName(Of TEntity)(Microsoft.EntityFrameworkCore.DbContext, System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Object)))
+  name.vb: GetColumnName(Of TEntity)(DbContext, Expression(Of Func(Of TEntity, Object)))
+- uid: Innova.Data.DbContextExtensions.GetTableName``1(Microsoft.EntityFrameworkCore.DbContext)
+  commentId: M:Innova.Data.DbContextExtensions.GetTableName``1(Microsoft.EntityFrameworkCore.DbContext)
+  id: GetTableName``1(Microsoft.EntityFrameworkCore.DbContext)
+  isExtensionMethod: true
+  parent: Innova.Data.DbContextExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetTableName<TEntity>(DbContext)
+  nameWithType: DbContextExtensions.GetTableName<TEntity>(DbContext)
+  fullName: Innova.Data.DbContextExtensions.GetTableName<TEntity>(Microsoft.EntityFrameworkCore.DbContext)
+  type: Method
+  source:
+    id: GetTableName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
+    startLine: 71
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Gets the fully qualified table name (including schema) for the specified entity type.
+  example: []
+  syntax:
+    content: 'public static string GetTableName<TEntity>(this DbContext context) where TEntity : class'
+    parameters:
+    - id: context
+      type: Microsoft.EntityFrameworkCore.DbContext
+      description: The DbContext instance.
+    typeParameters:
+    - id: TEntity
+      description: The entity type.
+    return:
+      type: System.String
+      description: The fully qualified table name in the format [Schema].[TableName].
+    content.vb: Public Shared Function GetTableName(Of TEntity As Class)(context As DbContext) As String
+  overload: Innova.Data.DbContextExtensions.GetTableName*
+  nameWithType.vb: DbContextExtensions.GetTableName(Of TEntity)(DbContext)
+  fullName.vb: Innova.Data.DbContextExtensions.GetTableName(Of TEntity)(Microsoft.EntityFrameworkCore.DbContext)
+  name.vb: GetTableName(Of TEntity)(DbContext)
 - uid: Innova.Data.DbContextExtensions.RawSql``1(Microsoft.EntityFrameworkCore.DbContext,System.String,System.Collections.Generic.KeyValuePair{System.String,System.Object}[])
   commentId: M:Innova.Data.DbContextExtensions.RawSql``1(Microsoft.EntityFrameworkCore.DbContext,System.String,System.Collections.Generic.KeyValuePair{System.String,System.Object}[])
   id: RawSql``1(Microsoft.EntityFrameworkCore.DbContext,System.String,System.Collections.Generic.KeyValuePair{System.String,System.Object}[])
@@ -86,7 +166,7 @@ items:
   source:
     id: RawSql
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 106
+    startLine: 164
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -130,7 +210,7 @@ items:
   source:
     id: ConvertToSqlParameter
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 151
+    startLine: 209
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -165,7 +245,7 @@ items:
   source:
     id: GetPrimaryKey
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 168
+    startLine: 226
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -206,7 +286,7 @@ items:
   source:
     id: GetKeys
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 201
+    startLine: 259
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -247,7 +327,7 @@ items:
   source:
     id: GetSqlKeys
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 236
+    startLine: 294
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -288,7 +368,7 @@ items:
   source:
     id: ConvertToSqlKeys
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 260
+    startLine: 318
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -329,7 +409,7 @@ items:
   source:
     id: GetKeys
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 286
+    startLine: 344
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -370,7 +450,7 @@ items:
   source:
     id: GetKeyNames
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 330
+    startLine: 388
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -408,7 +488,7 @@ items:
   source:
     id: GetPrimaryKeysSelector
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 348
+    startLine: 406
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -611,12 +691,67 @@ references:
     name: Linq
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.linq
-- uid: Innova.Data.DbContextExtensions.RawSql*
-  commentId: Overload:Innova.Data.DbContextExtensions.RawSql
-  href: Innova.Data.DbContextExtensions.RawSql.html#Innova_Data_DbContextExtensions_RawSql__1_Microsoft_EntityFrameworkCore_DbContext_System_String_System_Collections_Generic_KeyValuePair_System_String_System_Object____
-  name: RawSql
-  nameWithType: DbContextExtensions.RawSql
-  fullName: Innova.Data.DbContextExtensions.RawSql
+- uid: Innova.Data.DbContextExtensions.GetColumnName*
+  commentId: Overload:Innova.Data.DbContextExtensions.GetColumnName
+  href: Innova.Data.DbContextExtensions.GetColumnName.html#Innova_Data_DbContextExtensions_GetColumnName__1_Microsoft_EntityFrameworkCore_DbContext_System_Linq_Expressions_Expression_System_Func___0_System_Object___
+  name: GetColumnName
+  nameWithType: DbContextExtensions.GetColumnName
+  fullName: Innova.Data.DbContextExtensions.GetColumnName
+- uid: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Object}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Object}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TEntity, object>>
+  nameWithType: Expression<Func<TEntity, object>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TEntity, object>>
+  nameWithType.vb: Expression(Of Func(Of TEntity, Object))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Object))
+  name.vb: Expression(Of Func(Of TEntity, Object))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -628,6 +763,83 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: Innova.Data.DbContextExtensions.GetTableName*
+  commentId: Overload:Innova.Data.DbContextExtensions.GetTableName
+  href: Innova.Data.DbContextExtensions.GetTableName.html#Innova_Data_DbContextExtensions_GetTableName__1_Microsoft_EntityFrameworkCore_DbContext_
+  name: GetTableName
+  nameWithType: DbContextExtensions.GetTableName
+  fullName: Innova.Data.DbContextExtensions.GetTableName
+- uid: Innova.Data.DbContextExtensions.RawSql*
+  commentId: Overload:Innova.Data.DbContextExtensions.RawSql
+  href: Innova.Data.DbContextExtensions.RawSql.html#Innova_Data_DbContextExtensions_RawSql__1_Microsoft_EntityFrameworkCore_DbContext_System_String_System_Collections_Generic_KeyValuePair_System_String_System_Object____
+  name: RawSql
+  nameWithType: DbContextExtensions.RawSql
+  fullName: Innova.Data.DbContextExtensions.RawSql
 - uid: System.Collections.Generic.KeyValuePair{System.String,System.Object}[]
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
@@ -1072,69 +1284,4 @@ references:
   - name: T
   - name: )
   - name: )
-- uid: System.Linq.Expressions.Expression`1
-  commentId: T:System.Linq.Expressions.Expression`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
-  name: Expression<TDelegate>
-  nameWithType: Expression<TDelegate>
-  fullName: System.Linq.Expressions.Expression<TDelegate>
-  nameWithType.vb: Expression(Of TDelegate)
-  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
-  name.vb: Expression(Of TDelegate)
-  spec.csharp:
-  - uid: System.Linq.Expressions.Expression`1
-    name: Expression
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
-  - name: <
-  - name: TDelegate
-  - name: '>'
-  spec.vb:
-  - uid: System.Linq.Expressions.Expression`1
-    name: Expression
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TDelegate
-  - name: )
-- uid: System.Linq.Expressions
-  commentId: N:System.Linq.Expressions
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Linq.Expressions
-  nameWithType: System.Linq.Expressions
-  fullName: System.Linq.Expressions
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Linq
-    name: Linq
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq
-  - name: .
-  - uid: System.Linq.Expressions
-    name: Expressions
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Linq
-    name: Linq
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq
-  - name: .
-  - uid: System.Linq.Expressions
-    name: Expressions
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
 memberLayout: SeparatePages

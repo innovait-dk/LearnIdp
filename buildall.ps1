@@ -24,7 +24,7 @@ if (Test-Path -Path $targetFolder) {
 }
 ### create the api documentation ###
 docfx metadata docfx_metadata.json
-
+Write-Output "API documentation has been created."
 ### build the documentation ###
 docfx build
 

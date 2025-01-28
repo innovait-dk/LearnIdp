@@ -24,18 +24,18 @@ items:
   source:
     id: MenuModelEntity
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\ItemModels\MenuModelEntity.cs
-    startLine: 14
+    startLine: 24
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.ItemModels
   summary: Represents a menu model that is associated with an entity of type <code class="typeparamref">T</code>.
   example: []
   syntax:
-    content: 'public class MenuModelEntity<T> : MenuModel, INotifyPropertyChanged, IRibbonMenuTaskWithEntity<T> where T : class'
+    content: 'public class MenuModelEntity<T> : MenuModel, INotifyPropertyChanged, IMenuModelEntity<T>, IMenuModel, IMenuBaseModel, IMenuItemModelBase where T : class'
     typeParameters:
     - id: T
       description: The type of the entity.
-    content.vb: Public Class MenuModelEntity(Of T As Class) Inherits MenuModel Implements INotifyPropertyChanged, IRibbonMenuTaskWithEntity(Of T)
+    content.vb: Public Class MenuModelEntity(Of T As Class) Inherits MenuModel Implements INotifyPropertyChanged, IMenuModelEntity(Of T), IMenuModel, IMenuBaseModel, IMenuItemModelBase
   inheritance:
   - System.Object
   - Prism.Mvvm.BindableBase
@@ -45,6 +45,7 @@ items:
   derivedClasses:
   - Innova.Prism.Library.Menus.ClearFilterSelectedItemsMenu`1
   - Innova.Prism.Library.Menus.DeleteEntityMenuTask`2
+  - Innova.Prism.Library.Menus.EditEntityMenuTask`2
   - Innova.Prism.Library.Menus.FilterSelectedItemsMenu`1
   - Innova.Prism.Library.Menus.InsertRelatedMenuBase`3
   - Innova.Prism.Library.Menus.Layout.BaseLayoutMenu`1
@@ -52,7 +53,10 @@ items:
   - Innova.Prism.Library.Menus.ShowHistoryMenuTask`2
   implements:
   - System.ComponentModel.INotifyPropertyChanged
-  - Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity{{T}}
+  - Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{{T}}
+  - Innova.Prism.Library.Menus.ItemModels.IMenuModel
+  - Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+  - Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase
   inheritedMembers:
   - Innova.Prism.Library.Menus.ItemModels.MenuModel.Command
   - Innova.Prism.Library.Menus.ItemModels.MenuModel.CommandParameter
@@ -86,7 +90,7 @@ items:
   - Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
   - Prism.Mvvm.BindableBase.PropertyChanged
   extensionMethods:
-  - Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Services.IMenuService)
+  - Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Services.IMenuService)
   - Innova.Prism.Library.Menus.ItemModels.MenuModel.Innova.Prism.Library.Extensions.MenuTaskDefinitionExtensions.GetImage(System.Drawing.Bitmap)
   - Innova.Prism.Library.Menus.ItemModels.MenuModel.Innova.Prism.Library.Menus.MenuTaskExtensions.RaiseCanExecuteChanged
   nameWithType.vb: MenuModelEntity(Of T)
@@ -106,7 +110,7 @@ items:
   source:
     id: Entity
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\ItemModels\MenuModelEntity.cs
-    startLine: 21
+    startLine: 31
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.ItemModels
@@ -119,6 +123,8 @@ items:
       type: '{T}'
     content.vb: Public ReadOnly Property Entity As T
   overload: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity`1.Entity*
+  implements:
+  - Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{{T}}.Entity
   nameWithType.vb: MenuModelEntity(Of T).Entity
   fullName.vb: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity(Of T).Entity
 - uid: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity`1.eventAggregator
@@ -135,7 +141,7 @@ items:
   source:
     id: eventAggregator
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\ItemModels\MenuModelEntity.cs
-    startLine: 27
+    startLine: 37
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.ItemModels
@@ -160,7 +166,7 @@ items:
   source:
     id: Entities
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\ItemModels\MenuModelEntity.cs
-    startLine: 32
+    startLine: 42
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.ItemModels
@@ -174,7 +180,7 @@ items:
     content.vb: Public Property Entities As List(Of T)
   overload: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity`1.Entities*
   implements:
-  - Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity{{T}}.Entities
+  - Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{{T}}.Entities
   nameWithType.vb: MenuModelEntity(Of T).Entities
   fullName.vb: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity(Of T).Entities
 - uid: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity`1.#ctor(Prism.Events.IEventAggregator,System.Boolean)
@@ -191,7 +197,7 @@ items:
   source:
     id: .ctor
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\ItemModels\MenuModelEntity.cs
-    startLine: 47
+    startLine: 57
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.ItemModels
@@ -225,7 +231,7 @@ items:
   source:
     id: EntitiesSelectedChanged
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\ItemModels\MenuModelEntity.cs
-    startLine: 53
+    startLine: 63
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.ItemModels
@@ -253,7 +259,7 @@ items:
   source:
     id: CleanUp
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\ItemModels\MenuModelEntity.cs
-    startLine: 61
+    startLine: 71
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.ItemModels
@@ -264,6 +270,8 @@ items:
     content.vb: Public Overrides Sub CleanUp()
   overridden: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.CleanUp
   overload: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity`1.CleanUp*
+  implements:
+  - Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.CleanUp
   nameWithType.vb: MenuModelEntity(Of T).CleanUp()
   fullName.vb: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity(Of T).CleanUp()
 - uid: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity`1.Setup
@@ -280,7 +288,7 @@ items:
   source:
     id: Setup
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\ItemModels\MenuModelEntity.cs
-    startLine: 77
+    startLine: 87
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.ItemModels
@@ -291,6 +299,8 @@ items:
     content.vb: Public Overrides Sub Setup()
   overridden: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.Setup
   overload: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity`1.Setup*
+  implements:
+  - Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.Setup
   nameWithType.vb: MenuModelEntity(Of T).Setup()
   fullName.vb: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity(Of T).Setup()
 - uid: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity`1.OnEntitiesChanged
@@ -307,7 +317,7 @@ items:
   source:
     id: OnEntitiesChanged
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\ItemModels\MenuModelEntity.cs
-    startLine: 90
+    startLine: 100
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.ItemModels
@@ -331,14 +341,17 @@ items:
   source:
     id: RaiseCanExecuteChanged
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Menus\ItemModels\MenuModelEntity.cs
-    startLine: 95
+    startLine: 105
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.ItemModels
+  example: []
   syntax:
     content: public virtual void RaiseCanExecuteChanged()
     content.vb: Public Overridable Sub RaiseCanExecuteChanged()
   overload: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity`1.RaiseCanExecuteChanged*
+  implements:
+  - Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{{T}}.RaiseCanExecuteChanged
   nameWithType.vb: MenuModelEntity(Of T).RaiseCanExecuteChanged()
   fullName.vb: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity(Of T).RaiseCanExecuteChanged()
 references:
@@ -436,33 +449,54 @@ references:
   name: INotifyPropertyChanged
   nameWithType: INotifyPropertyChanged
   fullName: System.ComponentModel.INotifyPropertyChanged
-- uid: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity{{T}}
-  commentId: T:Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity{`0}
-  parent: Innova.Prism.Library.Menus.Models
-  definition: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity`1
-  href: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity-1.html
-  name: IRibbonMenuTaskWithEntity<T>
-  nameWithType: IRibbonMenuTaskWithEntity<T>
-  fullName: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity<T>
-  nameWithType.vb: IRibbonMenuTaskWithEntity(Of T)
-  fullName.vb: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity(Of T)
-  name.vb: IRibbonMenuTaskWithEntity(Of T)
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{{T}}
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{`0}
+  parent: Innova.Prism.Library.Menus.ItemModels
+  definition: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.html
+  name: IMenuModelEntity<T>
+  nameWithType: IMenuModelEntity<T>
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity<T>
+  nameWithType.vb: IMenuModelEntity(Of T)
+  fullName.vb: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity(Of T)
+  name.vb: IMenuModelEntity(Of T)
   spec.csharp:
-  - uid: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity`1
-    name: IRibbonMenuTaskWithEntity
-    href: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity-1.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1
+    name: IMenuModelEntity
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity`1
-    name: IRibbonMenuTaskWithEntity
-    href: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity-1.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1
+    name: IMenuModelEntity
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.html
   - name: (
   - name: Of
   - name: " "
   - name: T
   - name: )
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuModel
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.IMenuModel
+  parent: Innova.Prism.Library.Menus.ItemModels
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuModel.html
+  name: IMenuModel
+  nameWithType: IMenuModel
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuModel
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+  parent: Innova.Prism.Library.Menus.ItemModels
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.html
+  name: IMenuBaseModel
+  nameWithType: IMenuBaseModel
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase
+  parent: Innova.Prism.Library.Menus.ItemModels
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase.html
+  name: IMenuItemModelBase
+  nameWithType: IMenuItemModelBase
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuItemModelBase
 - uid: Innova.Prism.Library.Menus.ItemModels.MenuModel.Command
   commentId: P:Innova.Prism.Library.Menus.ItemModels.MenuModel.Command
   parent: Innova.Prism.Library.Menus.ItemModels.MenuModel
@@ -949,22 +983,22 @@ references:
   name: PropertyChanged
   nameWithType: BindableBase.PropertyChanged
   fullName: Prism.Mvvm.BindableBase.PropertyChanged
-- uid: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Services.IMenuService)
-  commentId: M:Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,Innova.Prism.Library.Services.IMenuService)
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Services.IMenuService)
+  commentId: M:Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,Innova.Prism.Library.Services.IMenuService)
   parent: Innova.Prism.Library.Menus.ItemModels.ModelExtensions
-  definition: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,Innova.Prism.Library.Services.IMenuService)
-  href: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup.html#Innova_Prism_Library_Menus_ItemModels_ModelExtensions_GetGroup_Innova_Prism_Library_Menus_ItemModels_MenuBaseModel_Innova_Prism_Library_Services_IMenuService_
-  name: GetGroup(MenuBaseModel, IMenuService)
-  nameWithType: ModelExtensions.GetGroup(MenuBaseModel, IMenuService)
-  fullName: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel, Innova.Prism.Library.Services.IMenuService)
+  definition: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,Innova.Prism.Library.Services.IMenuService)
+  href: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup.html#Innova_Prism_Library_Menus_ItemModels_ModelExtensions_GetGroup_Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_Innova_Prism_Library_Services_IMenuService_
+  name: GetGroup(IMenuBaseModel, IMenuService)
+  nameWithType: ModelExtensions.GetGroup(IMenuBaseModel, IMenuService)
+  fullName: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel, Innova.Prism.Library.Services.IMenuService)
   spec.csharp:
-  - uid: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,Innova.Prism.Library.Services.IMenuService)
+  - uid: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,Innova.Prism.Library.Services.IMenuService)
     name: GetGroup
-    href: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup.html#Innova_Prism_Library_Menus_ItemModels_ModelExtensions_GetGroup_Innova_Prism_Library_Menus_ItemModels_MenuBaseModel_Innova_Prism_Library_Services_IMenuService_
+    href: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup.html#Innova_Prism_Library_Menus_ItemModels_ModelExtensions_GetGroup_Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_Innova_Prism_Library_Services_IMenuService_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
-    name: MenuBaseModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+    name: IMenuBaseModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.html
   - name: ','
   - name: " "
   - uid: Innova.Prism.Library.Services.IMenuService
@@ -972,13 +1006,13 @@ references:
     href: Innova.Prism.Library.Services.IMenuService.html
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,Innova.Prism.Library.Services.IMenuService)
+  - uid: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,Innova.Prism.Library.Services.IMenuService)
     name: GetGroup
-    href: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup.html#Innova_Prism_Library_Menus_ItemModels_ModelExtensions_GetGroup_Innova_Prism_Library_Menus_ItemModels_MenuBaseModel_Innova_Prism_Library_Services_IMenuService_
+    href: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup.html#Innova_Prism_Library_Menus_ItemModels_ModelExtensions_GetGroup_Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_Innova_Prism_Library_Services_IMenuService_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
-    name: MenuBaseModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+    name: IMenuBaseModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.html
   - name: ','
   - name: " "
   - uid: Innova.Prism.Library.Services.IMenuService
@@ -1105,77 +1139,31 @@ references:
     name: ComponentModel
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.componentmodel
-- uid: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity`1
-  commentId: T:Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity`1
-  href: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity-1.html
-  name: IRibbonMenuTaskWithEntity<T>
-  nameWithType: IRibbonMenuTaskWithEntity<T>
-  fullName: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity<T>
-  nameWithType.vb: IRibbonMenuTaskWithEntity(Of T)
-  fullName.vb: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity(Of T)
-  name.vb: IRibbonMenuTaskWithEntity(Of T)
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1
+  commentId: T:Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.html
+  name: IMenuModelEntity<T>
+  nameWithType: IMenuModelEntity<T>
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity<T>
+  nameWithType.vb: IMenuModelEntity(Of T)
+  fullName.vb: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity(Of T)
+  name.vb: IMenuModelEntity(Of T)
   spec.csharp:
-  - uid: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity`1
-    name: IRibbonMenuTaskWithEntity
-    href: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity-1.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1
+    name: IMenuModelEntity
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity`1
-    name: IRibbonMenuTaskWithEntity
-    href: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity-1.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1
+    name: IMenuModelEntity
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.html
   - name: (
   - name: Of
   - name: " "
   - name: T
   - name: )
-- uid: Innova.Prism.Library.Menus.Models
-  commentId: N:Innova.Prism.Library.Menus.Models
-  href: Innova.html
-  name: Innova.Prism.Library.Menus.Models
-  nameWithType: Innova.Prism.Library.Menus.Models
-  fullName: Innova.Prism.Library.Menus.Models
-  spec.csharp:
-  - uid: Innova
-    name: Innova
-    href: Innova.html
-  - name: .
-  - uid: Innova.Prism
-    name: Prism
-    href: Innova.Prism.html
-  - name: .
-  - uid: Innova.Prism.Library
-    name: Library
-    href: Innova.Prism.Library.html
-  - name: .
-  - uid: Innova.Prism.Library.Menus
-    name: Menus
-    href: Innova.Prism.Library.Menus.html
-  - name: .
-  - uid: Innova.Prism.Library.Menus.Models
-    name: Models
-    href: Innova.Prism.Library.Menus.Models.html
-  spec.vb:
-  - uid: Innova
-    name: Innova
-    href: Innova.html
-  - name: .
-  - uid: Innova.Prism
-    name: Prism
-    href: Innova.Prism.html
-  - name: .
-  - uid: Innova.Prism.Library
-    name: Library
-    href: Innova.Prism.Library.html
-  - name: .
-  - uid: Innova.Prism.Library.Menus
-    name: Menus
-    href: Innova.Prism.Library.Menus.html
-  - name: .
-  - uid: Innova.Prism.Library.Menus.Models
-    name: Models
-    href: Innova.Prism.Library.Menus.Models.html
 - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
   commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
   isExternal: true
@@ -1296,20 +1284,20 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,Innova.Prism.Library.Services.IMenuService)
-  commentId: M:Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,Innova.Prism.Library.Services.IMenuService)
-  href: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup.html#Innova_Prism_Library_Menus_ItemModels_ModelExtensions_GetGroup_Innova_Prism_Library_Menus_ItemModels_MenuBaseModel_Innova_Prism_Library_Services_IMenuService_
-  name: GetGroup(MenuBaseModel, IMenuService)
-  nameWithType: ModelExtensions.GetGroup(MenuBaseModel, IMenuService)
-  fullName: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel, Innova.Prism.Library.Services.IMenuService)
+- uid: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,Innova.Prism.Library.Services.IMenuService)
+  commentId: M:Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,Innova.Prism.Library.Services.IMenuService)
+  href: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup.html#Innova_Prism_Library_Menus_ItemModels_ModelExtensions_GetGroup_Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_Innova_Prism_Library_Services_IMenuService_
+  name: GetGroup(IMenuBaseModel, IMenuService)
+  nameWithType: ModelExtensions.GetGroup(IMenuBaseModel, IMenuService)
+  fullName: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel, Innova.Prism.Library.Services.IMenuService)
   spec.csharp:
-  - uid: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,Innova.Prism.Library.Services.IMenuService)
+  - uid: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,Innova.Prism.Library.Services.IMenuService)
     name: GetGroup
-    href: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup.html#Innova_Prism_Library_Menus_ItemModels_ModelExtensions_GetGroup_Innova_Prism_Library_Menus_ItemModels_MenuBaseModel_Innova_Prism_Library_Services_IMenuService_
+    href: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup.html#Innova_Prism_Library_Menus_ItemModels_ModelExtensions_GetGroup_Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_Innova_Prism_Library_Services_IMenuService_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
-    name: MenuBaseModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+    name: IMenuBaseModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.html
   - name: ','
   - name: " "
   - uid: Innova.Prism.Library.Services.IMenuService
@@ -1317,13 +1305,13 @@ references:
     href: Innova.Prism.Library.Services.IMenuService.html
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,Innova.Prism.Library.Services.IMenuService)
+  - uid: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup(Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,Innova.Prism.Library.Services.IMenuService)
     name: GetGroup
-    href: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup.html#Innova_Prism_Library_Menus_ItemModels_ModelExtensions_GetGroup_Innova_Prism_Library_Menus_ItemModels_MenuBaseModel_Innova_Prism_Library_Services_IMenuService_
+    href: Innova.Prism.Library.Menus.ItemModels.ModelExtensions.GetGroup.html#Innova_Prism_Library_Menus_ItemModels_ModelExtensions_GetGroup_Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_Innova_Prism_Library_Services_IMenuService_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
-    name: MenuBaseModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+    name: IMenuBaseModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.html
   - name: ','
   - name: " "
   - uid: Innova.Prism.Library.Services.IMenuService
@@ -1496,12 +1484,30 @@ references:
   fullName: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity<T>.Entity
   nameWithType.vb: MenuModelEntity(Of T).Entity
   fullName.vb: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity(Of T).Entity
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{{T}}.Entity
+  commentId: P:Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{`0}.Entity
+  parent: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{{T}}
+  definition: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1.Entity
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.Entity.html#Innova_Prism_Library_Menus_ItemModels_IMenuModelEntity_1_Entity
+  name: Entity
+  nameWithType: IMenuModelEntity<T>.Entity
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity<T>.Entity
+  nameWithType.vb: IMenuModelEntity(Of T).Entity
+  fullName.vb: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity(Of T).Entity
 - uid: '{T}'
   commentId: '!:T'
   definition: T
   name: T
   nameWithType: T
   fullName: T
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1.Entity
+  commentId: P:Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1.Entity
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.Entity.html#Innova_Prism_Library_Menus_ItemModels_IMenuModelEntity_1_Entity
+  name: Entity
+  nameWithType: IMenuModelEntity<T>.Entity
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity<T>.Entity
+  nameWithType.vb: IMenuModelEntity(Of T).Entity
+  fullName.vb: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity(Of T).Entity
 - uid: T
   name: T
   nameWithType: T
@@ -1543,16 +1549,16 @@ references:
   fullName: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity<T>.Entities
   nameWithType.vb: MenuModelEntity(Of T).Entities
   fullName.vb: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity(Of T).Entities
-- uid: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity{{T}}.Entities
-  commentId: P:Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity{`0}.Entities
-  parent: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity{{T}}
-  definition: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity`1.Entities
-  href: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity-1.Entities.html#Innova_Prism_Library_Menus_Models_IRibbonMenuTaskWithEntity_1_Entities
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{{T}}.Entities
+  commentId: P:Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{`0}.Entities
+  parent: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{{T}}
+  definition: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1.Entities
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.Entities.html#Innova_Prism_Library_Menus_ItemModels_IMenuModelEntity_1_Entities
   name: Entities
-  nameWithType: IRibbonMenuTaskWithEntity<T>.Entities
-  fullName: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity<T>.Entities
-  nameWithType.vb: IRibbonMenuTaskWithEntity(Of T).Entities
-  fullName.vb: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity(Of T).Entities
+  nameWithType: IMenuModelEntity<T>.Entities
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity<T>.Entities
+  nameWithType.vb: IMenuModelEntity(Of T).Entities
+  fullName.vb: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity(Of T).Entities
 - uid: System.Collections.Generic.List{{T}}
   commentId: T:System.Collections.Generic.List{``0}
   parent: System.Collections.Generic
@@ -1582,14 +1588,14 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity`1.Entities
-  commentId: P:Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity`1.Entities
-  href: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity-1.Entities.html#Innova_Prism_Library_Menus_Models_IRibbonMenuTaskWithEntity_1_Entities
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1.Entities
+  commentId: P:Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1.Entities
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.Entities.html#Innova_Prism_Library_Menus_ItemModels_IMenuModelEntity_1_Entities
   name: Entities
-  nameWithType: IRibbonMenuTaskWithEntity<T>.Entities
-  fullName: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity<T>.Entities
-  nameWithType.vb: IRibbonMenuTaskWithEntity(Of T).Entities
-  fullName.vb: Innova.Prism.Library.Menus.Models.IRibbonMenuTaskWithEntity(Of T).Entities
+  nameWithType: IMenuModelEntity<T>.Entities
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity<T>.Entities
+  nameWithType.vb: IMenuModelEntity(Of T).Entities
+  fullName.vb: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity(Of T).Entities
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
   isExternal: true
@@ -1735,6 +1741,25 @@ references:
   fullName: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity<T>.CleanUp
   nameWithType.vb: MenuModelEntity(Of T).CleanUp
   fullName.vb: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity(Of T).CleanUp
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.CleanUp
+  commentId: M:Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.CleanUp
+  parent: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.CleanUp.html#Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_CleanUp
+  name: CleanUp()
+  nameWithType: IMenuBaseModel.CleanUp()
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.CleanUp()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.CleanUp
+    name: CleanUp
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.CleanUp.html#Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_CleanUp
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.CleanUp
+    name: CleanUp
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.CleanUp.html#Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_CleanUp
+  - name: (
+  - name: )
 - uid: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.Setup
   commentId: M:Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.Setup
   parent: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
@@ -1762,6 +1787,25 @@ references:
   fullName: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity<T>.Setup
   nameWithType.vb: MenuModelEntity(Of T).Setup
   fullName.vb: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity(Of T).Setup
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.Setup
+  commentId: M:Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.Setup
+  parent: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.Setup.html#Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_Setup
+  name: Setup()
+  nameWithType: IMenuBaseModel.Setup()
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.Setup()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.Setup
+    name: Setup
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.Setup.html#Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_Setup
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.Setup
+    name: Setup
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.Setup.html#Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_Setup
+  - name: (
+  - name: )
 - uid: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity`1.OnEntitiesChanged*
   commentId: Overload:Innova.Prism.Library.Menus.ItemModels.MenuModelEntity`1.OnEntitiesChanged
   href: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity-1.OnEntitiesChanged.html#Innova_Prism_Library_Menus_ItemModels_MenuModelEntity_1_OnEntitiesChanged
@@ -1778,4 +1822,46 @@ references:
   fullName: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity<T>.RaiseCanExecuteChanged
   nameWithType.vb: MenuModelEntity(Of T).RaiseCanExecuteChanged
   fullName.vb: Innova.Prism.Library.Menus.ItemModels.MenuModelEntity(Of T).RaiseCanExecuteChanged
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{{T}}.RaiseCanExecuteChanged
+  commentId: M:Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{`0}.RaiseCanExecuteChanged
+  parent: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{{T}}
+  definition: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1.RaiseCanExecuteChanged
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.RaiseCanExecuteChanged.html#Innova_Prism_Library_Menus_ItemModels_IMenuModelEntity_1_RaiseCanExecuteChanged
+  name: RaiseCanExecuteChanged()
+  nameWithType: IMenuModelEntity<T>.RaiseCanExecuteChanged()
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity<T>.RaiseCanExecuteChanged()
+  nameWithType.vb: IMenuModelEntity(Of T).RaiseCanExecuteChanged()
+  fullName.vb: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity(Of T).RaiseCanExecuteChanged()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{`0}.RaiseCanExecuteChanged
+    name: RaiseCanExecuteChanged
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.RaiseCanExecuteChanged.html#Innova_Prism_Library_Menus_ItemModels_IMenuModelEntity_1_RaiseCanExecuteChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity{`0}.RaiseCanExecuteChanged
+    name: RaiseCanExecuteChanged
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.RaiseCanExecuteChanged.html#Innova_Prism_Library_Menus_ItemModels_IMenuModelEntity_1_RaiseCanExecuteChanged
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1.RaiseCanExecuteChanged
+  commentId: M:Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1.RaiseCanExecuteChanged
+  href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.RaiseCanExecuteChanged.html#Innova_Prism_Library_Menus_ItemModels_IMenuModelEntity_1_RaiseCanExecuteChanged
+  name: RaiseCanExecuteChanged()
+  nameWithType: IMenuModelEntity<T>.RaiseCanExecuteChanged()
+  fullName: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity<T>.RaiseCanExecuteChanged()
+  nameWithType.vb: IMenuModelEntity(Of T).RaiseCanExecuteChanged()
+  fullName.vb: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity(Of T).RaiseCanExecuteChanged()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1.RaiseCanExecuteChanged
+    name: RaiseCanExecuteChanged
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.RaiseCanExecuteChanged.html#Innova_Prism_Library_Menus_ItemModels_IMenuModelEntity_1_RaiseCanExecuteChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity`1.RaiseCanExecuteChanged
+    name: RaiseCanExecuteChanged
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelEntity-1.RaiseCanExecuteChanged.html#Innova_Prism_Library_Menus_ItemModels_IMenuModelEntity_1_RaiseCanExecuteChanged
+  - name: (
+  - name: )
 memberLayout: SeparatePages

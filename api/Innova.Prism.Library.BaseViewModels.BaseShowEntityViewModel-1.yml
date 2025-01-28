@@ -16,7 +16,7 @@ items:
   source:
     id: BaseShowEntityViewModel
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -38,6 +38,7 @@ items:
   - Prism.Regions.IRegionMemberLifetime
   inheritedMembers:
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.logger
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.ControlVisibility
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.MenuService
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.RelatedViewModels
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.MainEntity
@@ -48,6 +49,9 @@ items:
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.OnMainEntityKeyChanged
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.OnNavigatedTo(Prism.Regions.NavigationContext)
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.OnNavigatedFrom(Prism.Regions.NavigationContext)
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.SetControlVisibility(System.String,System.Boolean)
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.SetVisibility(System.String,System.Boolean)
+  - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.SetVisibility(System.Linq.Expressions.Expression{System.Func{{T},System.Object}},System.Boolean)
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.GetMainEntityKeys
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.SetHeader(System.String)
   - Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.CheckVisibility(System.Data.DataTable)
@@ -104,7 +108,7 @@ items:
   source:
     id: .ctor
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseShowEntityViewModel.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -272,6 +276,16 @@ references:
   fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, T>.logger
   nameWithType.vb: BaseShowEntityViewModel(Of T, T).logger
   fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, T).logger
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.ControlVisibility
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`0}.ControlVisibility
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}
+  definition: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ControlVisibility
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.ControlVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_ControlVisibility
+  name: ControlVisibility
+  nameWithType: BaseShowEntityViewModel<T, T>.ControlVisibility
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, T>.ControlVisibility
+  nameWithType.vb: BaseShowEntityViewModel(Of T, T).ControlVisibility
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, T).ControlVisibility
 - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.MenuService
   commentId: P:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`0}.MenuService
   parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}
@@ -435,6 +449,169 @@ references:
     name: NavigationContext
     isExternal: true
     href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.SetControlVisibility(System.String,System.Boolean)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`0}.SetControlVisibility(System.String,System.Boolean)
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}
+  definition: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetControlVisibility(System.String,System.Boolean)
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetControlVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetControlVisibility_System_String_System_Boolean_
+  name: SetControlVisibility(string, bool)
+  nameWithType: BaseShowEntityViewModel<T, T>.SetControlVisibility(string, bool)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, T>.SetControlVisibility(string, bool)
+  nameWithType.vb: BaseShowEntityViewModel(Of T, T).SetControlVisibility(String, Boolean)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, T).SetControlVisibility(String, Boolean)
+  name.vb: SetControlVisibility(String, Boolean)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`0}.SetControlVisibility(System.String,System.Boolean)
+    name: SetControlVisibility
+    href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetControlVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetControlVisibility_System_String_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`0}.SetControlVisibility(System.String,System.Boolean)
+    name: SetControlVisibility
+    href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetControlVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetControlVisibility_System_String_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.SetVisibility(System.String,System.Boolean)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`0}.SetVisibility(System.String,System.Boolean)
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}
+  definition: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.String,System.Boolean)
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetVisibility_System_String_System_Boolean_
+  name: SetVisibility(string, bool)
+  nameWithType: BaseShowEntityViewModel<T, T>.SetVisibility(string, bool)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, T>.SetVisibility(string, bool)
+  nameWithType.vb: BaseShowEntityViewModel(Of T, T).SetVisibility(String, Boolean)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, T).SetVisibility(String, Boolean)
+  name.vb: SetVisibility(String, Boolean)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`0}.SetVisibility(System.String,System.Boolean)
+    name: SetVisibility
+    href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetVisibility_System_String_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`0}.SetVisibility(System.String,System.Boolean)
+    name: SetVisibility
+    href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetVisibility_System_String_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.SetVisibility(System.Linq.Expressions.Expression{System.Func{{T},System.Object}},System.Boolean)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`0}.SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  parent: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}
+  definition: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetVisibility_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Boolean_
+  name: SetVisibility(Expression<Func<T, object>>, bool)
+  nameWithType: BaseShowEntityViewModel<T, T>.SetVisibility(Expression<Func<T, object>>, bool)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, T>.SetVisibility(System.Linq.Expressions.Expression<System.Func<T, object>>, bool)
+  nameWithType.vb: BaseShowEntityViewModel(Of T, T).SetVisibility(Expression(Of Func(Of T, Object)), Boolean)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, T).SetVisibility(System.Linq.Expressions.Expression(Of System.Func(Of T, Object)), Boolean)
+  name.vb: SetVisibility(Expression(Of Func(Of T, Object)), Boolean)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`0}.SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+    name: SetVisibility
+    href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetVisibility_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Boolean_
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`0}.SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+    name: SetVisibility
+    href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetVisibility_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Boolean_
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
 - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{{T},{T}}.GetMainEntityKeys
   commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel{`0,`0}.GetMainEntityKeys
@@ -1572,6 +1749,14 @@ references:
   fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.logger
   nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).logger
   fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).logger
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ControlVisibility
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.ControlVisibility
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.ControlVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_ControlVisibility
+  name: ControlVisibility
+  nameWithType: BaseShowEntityViewModel<T, TResult>.ControlVisibility
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.ControlVisibility
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).ControlVisibility
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).ControlVisibility
 - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MenuService
   commentId: P:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.MenuService
   href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.MenuService.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_MenuService
@@ -1717,6 +1902,166 @@ references:
     name: NavigationContext
     isExternal: true
     href: https://github.com/PrismLibrary/Prism/blob/15140a61976d0a224cd6ebb9ee1f7ca63db02b47/src/Wpf/Prism.Wpf/Regions/NavigationContext.cs
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetControlVisibility(System.String,System.Boolean)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetControlVisibility(System.String,System.Boolean)
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetControlVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetControlVisibility_System_String_System_Boolean_
+  name: SetControlVisibility(string, bool)
+  nameWithType: BaseShowEntityViewModel<T, TResult>.SetControlVisibility(string, bool)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetControlVisibility(string, bool)
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetControlVisibility(String, Boolean)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetControlVisibility(String, Boolean)
+  name.vb: SetControlVisibility(String, Boolean)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetControlVisibility(System.String,System.Boolean)
+    name: SetControlVisibility
+    href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetControlVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetControlVisibility_System_String_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetControlVisibility(System.String,System.Boolean)
+    name: SetControlVisibility
+    href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetControlVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetControlVisibility_System_String_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.String,System.Boolean)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.String,System.Boolean)
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetVisibility_System_String_System_Boolean_
+  name: SetVisibility(string, bool)
+  nameWithType: BaseShowEntityViewModel<T, TResult>.SetVisibility(string, bool)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetVisibility(string, bool)
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetVisibility(String, Boolean)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetVisibility(String, Boolean)
+  name.vb: SetVisibility(String, Boolean)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.String,System.Boolean)
+    name: SetVisibility
+    href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetVisibility_System_String_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.String,System.Boolean)
+    name: SetVisibility
+    href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetVisibility_System_String_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  isExternal: true
+  href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetVisibility_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Boolean_
+  name: SetVisibility(Expression<Func<T, object>>, bool)
+  nameWithType: BaseShowEntityViewModel<T, TResult>.SetVisibility(Expression<Func<T, object>>, bool)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel<T, TResult>.SetVisibility(System.Linq.Expressions.Expression<System.Func<T, object>>, bool)
+  nameWithType.vb: BaseShowEntityViewModel(Of T, TResult).SetVisibility(Expression(Of Func(Of T, Object)), Boolean)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel(Of T, TResult).SetVisibility(System.Linq.Expressions.Expression(Of System.Func(Of T, Object)), Boolean)
+  name.vb: SetVisibility(Expression(Of Func(Of T, Object)), Boolean)
+  spec.csharp:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+    name: SetVisibility
+    href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetVisibility_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Boolean_
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+    name: SetVisibility
+    href: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel-2.SetVisibility.html#Innova_Prism_Library_BaseViewModels_BaseShowEntityViewModel_2_SetVisibility_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Boolean_
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
 - uid: Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetMainEntityKeys
   commentId: M:Innova.Prism.Library.BaseViewModels.BaseShowEntityViewModel`2.GetMainEntityKeys

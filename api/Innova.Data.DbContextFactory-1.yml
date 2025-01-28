@@ -7,6 +7,7 @@ items:
   children:
   - Innova.Data.DbContextFactory`1.CreateDbContext
   - Innova.Data.DbContextFactory`1.CreateDbContextAsync(System.Threading.CancellationToken)
+  - Innova.Data.DbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging
   langs:
   - csharp
   - vb
@@ -102,6 +103,37 @@ items:
   - Innova.Data.IDbContextFactory{{TContext}}.CreateDbContextAsync(System.Threading.CancellationToken)
   nameWithType.vb: DbContextFactory(Of TContext).CreateDbContextAsync(CancellationToken)
   fullName.vb: Innova.Data.DbContextFactory(Of TContext).CreateDbContextAsync(System.Threading.CancellationToken)
+- uid: Innova.Data.DbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging
+  commentId: M:Innova.Data.DbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging
+  id: CreateDbContextWithNoSensitiveDataLogging
+  parent: Innova.Data.DbContextFactory`1
+  langs:
+  - csharp
+  - vb
+  name: CreateDbContextWithNoSensitiveDataLogging()
+  nameWithType: DbContextFactory<TContext>.CreateDbContextWithNoSensitiveDataLogging()
+  fullName: Innova.Data.DbContextFactory<TContext>.CreateDbContextWithNoSensitiveDataLogging()
+  type: Method
+  source:
+    id: CreateDbContextWithNoSensitiveDataLogging
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\DbContextFactory.cs
+    startLine: 32
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Creates a new instance of the database context with no sensitive data logging.
+  example: []
+  syntax:
+    content: public abstract TContext CreateDbContextWithNoSensitiveDataLogging()
+    return:
+      type: '{TContext}'
+      description: The created database context with no sensitive data logging.
+    content.vb: Public MustOverride Function CreateDbContextWithNoSensitiveDataLogging() As TContext
+  overload: Innova.Data.DbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging*
+  implements:
+  - Innova.Data.IDbContextFactory{{TContext}}.CreateDbContextWithNoSensitiveDataLogging
+  nameWithType.vb: DbContextFactory(Of TContext).CreateDbContextWithNoSensitiveDataLogging()
+  fullName.vb: Innova.Data.DbContextFactory(Of TContext).CreateDbContextWithNoSensitiveDataLogging()
 references:
 - uid: Innova.Data
   commentId: N:Innova.Data
@@ -451,4 +483,54 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Innova.Data.DbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging*
+  commentId: Overload:Innova.Data.DbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging
+  href: Innova.Data.DbContextFactory-1.CreateDbContextWithNoSensitiveDataLogging.html#Innova_Data_DbContextFactory_1_CreateDbContextWithNoSensitiveDataLogging
+  name: CreateDbContextWithNoSensitiveDataLogging
+  nameWithType: DbContextFactory<TContext>.CreateDbContextWithNoSensitiveDataLogging
+  fullName: Innova.Data.DbContextFactory<TContext>.CreateDbContextWithNoSensitiveDataLogging
+  nameWithType.vb: DbContextFactory(Of TContext).CreateDbContextWithNoSensitiveDataLogging
+  fullName.vb: Innova.Data.DbContextFactory(Of TContext).CreateDbContextWithNoSensitiveDataLogging
+- uid: Innova.Data.IDbContextFactory{{TContext}}.CreateDbContextWithNoSensitiveDataLogging
+  commentId: M:Innova.Data.IDbContextFactory{`0}.CreateDbContextWithNoSensitiveDataLogging
+  parent: Innova.Data.IDbContextFactory{{TContext}}
+  definition: Innova.Data.IDbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging
+  href: Innova.Data.IDbContextFactory-1.CreateDbContextWithNoSensitiveDataLogging.html#Innova_Data_IDbContextFactory_1_CreateDbContextWithNoSensitiveDataLogging
+  name: CreateDbContextWithNoSensitiveDataLogging()
+  nameWithType: IDbContextFactory<TContext>.CreateDbContextWithNoSensitiveDataLogging()
+  fullName: Innova.Data.IDbContextFactory<TContext>.CreateDbContextWithNoSensitiveDataLogging()
+  nameWithType.vb: IDbContextFactory(Of TContext).CreateDbContextWithNoSensitiveDataLogging()
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext).CreateDbContextWithNoSensitiveDataLogging()
+  spec.csharp:
+  - uid: Innova.Data.IDbContextFactory{`0}.CreateDbContextWithNoSensitiveDataLogging
+    name: CreateDbContextWithNoSensitiveDataLogging
+    href: Innova.Data.IDbContextFactory-1.CreateDbContextWithNoSensitiveDataLogging.html#Innova_Data_IDbContextFactory_1_CreateDbContextWithNoSensitiveDataLogging
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.IDbContextFactory{`0}.CreateDbContextWithNoSensitiveDataLogging
+    name: CreateDbContextWithNoSensitiveDataLogging
+    href: Innova.Data.IDbContextFactory-1.CreateDbContextWithNoSensitiveDataLogging.html#Innova_Data_IDbContextFactory_1_CreateDbContextWithNoSensitiveDataLogging
+  - name: (
+  - name: )
+- uid: Innova.Data.IDbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging
+  commentId: M:Innova.Data.IDbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging
+  href: Innova.Data.IDbContextFactory-1.CreateDbContextWithNoSensitiveDataLogging.html#Innova_Data_IDbContextFactory_1_CreateDbContextWithNoSensitiveDataLogging
+  name: CreateDbContextWithNoSensitiveDataLogging()
+  nameWithType: IDbContextFactory<TContext>.CreateDbContextWithNoSensitiveDataLogging()
+  fullName: Innova.Data.IDbContextFactory<TContext>.CreateDbContextWithNoSensitiveDataLogging()
+  nameWithType.vb: IDbContextFactory(Of TContext).CreateDbContextWithNoSensitiveDataLogging()
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext).CreateDbContextWithNoSensitiveDataLogging()
+  spec.csharp:
+  - uid: Innova.Data.IDbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging
+    name: CreateDbContextWithNoSensitiveDataLogging
+    href: Innova.Data.IDbContextFactory-1.CreateDbContextWithNoSensitiveDataLogging.html#Innova_Data_IDbContextFactory_1_CreateDbContextWithNoSensitiveDataLogging
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Data.IDbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging
+    name: CreateDbContextWithNoSensitiveDataLogging
+    href: Innova.Data.IDbContextFactory-1.CreateDbContextWithNoSensitiveDataLogging.html#Innova_Data_IDbContextFactory_1_CreateDbContextWithNoSensitiveDataLogging
+  - name: (
+  - name: )
 memberLayout: SeparatePages

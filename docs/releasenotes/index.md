@@ -1,3 +1,74 @@
+## 2025.1
+- Support for .NET 9 (supports .net 4.72, 8.0 and 9.0)
+- All Nuget-packages are now zipped in one file (Innova assemblies and their dependencies. Not Telerik and Infragistics assemblies). The zip-file can be found in source control in the folder 'vsix'.
+- *CG of modules has breaking change (see below)*
+- UI: Related list add-menus: Added sortorder to match Tab order
+- UI: All standard menuitems are now registred with interfaces instead of types.
+- Designer: new code tasks for related list. If you select a related list (on the show template). You will get 4 new code tasks!
+
+![alt text](media/index.png)
+
+
+- UI: in the Show/edit/insert viewmodel you can now set Visibility for a property. Both Caption and Value will be collapsed.
+    SetVisibility(e=>e.CategoryName, false);
+- Refactored Streamhelper to support SQL ApplicationRole and not to log the full binary stream into the log.
+- Designer: Resx files: Methodes with parameters. If your string contains {0} or fx. {EntityName}
+
+![alt text](media/index-1.png)
+
+Now you have both as a methode or as property:
+
+![alt text](media/index-2.png)
+
+- UI: Combobox with databound HelpText. Either as Tooltip for each ComboboxItem or as a HelpButton next to the combobox.
+
+![alt text](media/index-3.png)
+
+- CheckBoxList med MinHeight changed.
+- Designer: Configure height of ShowTemplate (MainRowHeight) and the tab-control with the related lists (RelationRowHeight). Can be configured on the show template.
+
+![alt text](media/index-4.png)
+
+- *Framework: List and create entity. New property on ListViewModel (SubscribeEntityCreateEvent). Breaking change*
+- Designer: new code tasks for MenuGroup and MenuItem to be created in the MainModule.
+
+![alt text](media/index-5.png)
+
+- Framework: TileControl is now a style/ItemTemplate and can be "overriden". It is a TilControlStyle.xaml in Innova.Prism.Library / Styles.
+- Various bug-fixes
+
+> [!IMPORTANT]  
+> Breaking change
+>
+> *CG modules*
+>
+> The CG of the "entity" modules has been changed. The CG now consists of an abstract base-module and a partial class that inherits from the base-module. So now you can override all methodes in the partial class. That means there is no more use for all the partial methodes and they therefore not CG anymore:
+> - partial void AfterRegisterTypes(IContainerRegistry containerRegistry);
+> - partial void AfterOnInitialized(IContainerProvider containerProvider);
+> - partial void Initialized();
+>
+> Before:
+> ```csharp
+>        partial void AfterRegisterTypes(IContainerRegistry containerRegistry)
+>        {
+>            containerRegistry.RegisterDialog<ImportLoginsView, ImportLoginsViewModel>();
+>        }
+>```
+> 
+> Now:
+> ```csharp
+>        public override void RegisterTypes(IContainerRegistry containerRegistry)
+>        {
+>            base.RegisterTypes(containerRegistry);
+>            containerRegistry.RegisterDialog<ImportLoginsView, ImportLoginsViewModel>();
+>        }
+>```
+>
+> *ListViewModel - SubscribeEntityCreateEvent*
+>
+> If you want your list to refresh/reload when you create an new entity you can now set "SubscribeEntityCreateEvent = true;".
+> If this is false the list will not react if you create an new entity. In older versions the list would "insert" new items into the list, but with no respect to paging, sorting and so on.
+
 ## 2024.10
 
 - More API-documentation

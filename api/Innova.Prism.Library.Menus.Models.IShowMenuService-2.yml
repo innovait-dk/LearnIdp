@@ -35,28 +35,28 @@ items:
   - Innova.Prism.Library.Services.IMenuService.MenuModelElements
   - Innova.Prism.Library.Services.IMenuService.MenuGroupModels
   - Innova.Prism.Library.Services.IMenuService.MenuTabModels
-  - Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuTabModel,System.Boolean})
-  - Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuGroupModel,System.Boolean})
-  - Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,System.Boolean})
-  - Innova.Prism.Library.Services.IMenuService.AddTab(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
-  - Innova.Prism.Library.Services.IMenuService.AddGroup(Innova.Prism.Library.Menus.ItemModels.MenuGroupModel)
+  - Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuTabModel,System.Boolean})
+  - Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel,System.Boolean})
+  - Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,System.Boolean})
+  - Innova.Prism.Library.Services.IMenuService.AddTab(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
+  - Innova.Prism.Library.Services.IMenuService.AddGroup(Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel)
   - Innova.Prism.Library.Services.IMenuService.AddGroup``1
-  - Innova.Prism.Library.Services.IMenuService.AddMenu(Innova.Prism.Library.Menus.ItemModels.MenuModel)
+  - Innova.Prism.Library.Services.IMenuService.AddMenu(Innova.Prism.Library.Menus.ItemModels.IMenuModel)
   - Innova.Prism.Library.Services.IMenuService.AddMenu``1
-  - Innova.Prism.Library.Services.IMenuService.AddMenuElement(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
-  - Innova.Prism.Library.Services.IMenuService.AddMenuElement``1(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+  - Innova.Prism.Library.Services.IMenuService.AddMenuElement(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
+  - Innova.Prism.Library.Services.IMenuService.AddMenuElement``1(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
   - Innova.Prism.Library.Services.IMenuService.AddMenuElement``2
   - Innova.Prism.Library.Services.IMenuService.AddMenuElement``3
-  - Innova.Prism.Library.Services.IMenuService.AddMenuElement``2(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+  - Innova.Prism.Library.Services.IMenuService.AddMenuElement``2(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
   - Innova.Prism.Library.Services.IMenuService.CreateMenu``1
-  - Innova.Prism.Library.Services.IMenuService.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.MenuModel)
-  - Innova.Prism.Library.Services.IMenuService.RemoveMenu(System.Collections.Generic.IEnumerable{Innova.Prism.Library.Menus.ItemModels.MenuModel})
+  - Innova.Prism.Library.Services.IMenuService.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.IMenuModel)
+  - Innova.Prism.Library.Services.IMenuService.RemoveMenu(System.Collections.Generic.IEnumerable{Innova.Prism.Library.Menus.ItemModels.IMenuModel})
   - Innova.Prism.Library.Services.IMenuService.RemoveGroup(System.String)
   - Innova.Prism.Library.Services.IMenuService.RemoveTab(System.String)
-  - Innova.Prism.Library.Services.IMenuService.RemoveMenuElement(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+  - Innova.Prism.Library.Services.IMenuService.RemoveMenuElement(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
   - Innova.Prism.Library.Services.IMenuService.RemoveItems
   - Innova.Prism.Library.Services.IMenuService.AddItems
-  - Innova.Prism.Library.Services.IMenuService.SetSelectedTab(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+  - Innova.Prism.Library.Services.IMenuService.SetSelectedTab(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
   - Innova.Prism.Library.Services.IMenuServiceNavigationAware.OnNavigatedTo(System.Uri)
   - Innova.Prism.Library.Services.IMenuServiceNavigationAware.OnNavigatedFrom(System.Uri)
   extensionMethods:
@@ -94,11 +94,11 @@ items:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.Models
   syntax:
-    content: DeleteEntityMenuTask<T, TResult> DeleteEntityMenuTask { get; }
+    content: IDeleteEntityMenuTask<T, TResult> DeleteEntityMenuTask { get; }
     parameters: []
     return:
-      type: Innova.Prism.Library.Menus.DeleteEntityMenuTask{{T},{TResult}}
-    content.vb: ReadOnly Property DeleteEntityMenuTask As DeleteEntityMenuTask(Of T, TResult)
+      type: Innova.Prism.Library.Menus.IDeleteEntityMenuTask{{T},{TResult}}
+    content.vb: ReadOnly Property DeleteEntityMenuTask As IDeleteEntityMenuTask(Of T, TResult)
   overload: Innova.Prism.Library.Menus.Models.IShowMenuService`2.DeleteEntityMenuTask*
   nameWithType.vb: IShowMenuService(Of T, TResult).DeleteEntityMenuTask
   fullName.vb: Innova.Prism.Library.Menus.Models.IShowMenuService(Of T, TResult).DeleteEntityMenuTask
@@ -121,11 +121,11 @@ items:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.Models
   syntax:
-    content: EditEntityMenuTask<T, TResult> EditEntityMenuTask { get; }
+    content: IEditEntityMenuTask<T, TResult> EditEntityMenuTask { get; }
     parameters: []
     return:
-      type: Innova.Prism.Library.Menus.EditEntityMenuTask{{T},{TResult}}
-    content.vb: ReadOnly Property EditEntityMenuTask As EditEntityMenuTask(Of T, TResult)
+      type: Innova.Prism.Library.Menus.IEditEntityMenuTask{{T},{TResult}}
+    content.vb: ReadOnly Property EditEntityMenuTask As IEditEntityMenuTask(Of T, TResult)
   overload: Innova.Prism.Library.Menus.Models.IShowMenuService`2.EditEntityMenuTask*
   nameWithType.vb: IShowMenuService(Of T, TResult).EditEntityMenuTask
   fullName.vb: Innova.Prism.Library.Menus.Models.IShowMenuService(Of T, TResult).EditEntityMenuTask
@@ -148,11 +148,11 @@ items:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.Models
   syntax:
-    content: InsertEntityMenuTask<T> InsertEntityMenuTask { get; }
+    content: IInsertEntityMenuTask<T> InsertEntityMenuTask { get; }
     parameters: []
     return:
-      type: Innova.Prism.Library.Menus.InsertEntityMenuTask{{T}}
-    content.vb: ReadOnly Property InsertEntityMenuTask As InsertEntityMenuTask(Of T)
+      type: Innova.Prism.Library.Menus.IInsertEntityMenuTask{{T}}
+    content.vb: ReadOnly Property InsertEntityMenuTask As IInsertEntityMenuTask(Of T)
   overload: Innova.Prism.Library.Menus.Models.IShowMenuService`2.InsertEntityMenuTask*
   nameWithType.vb: IShowMenuService(Of T, TResult).InsertEntityMenuTask
   fullName.vb: Innova.Prism.Library.Menus.Models.IShowMenuService(Of T, TResult).InsertEntityMenuTask
@@ -175,11 +175,11 @@ items:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.Models
   syntax:
-    content: PrintEntityMenuTask<T, TResult> PrintEntityMenuTask { get; }
+    content: IPrintEntityMenuTask<T, TResult> PrintEntityMenuTask { get; }
     parameters: []
     return:
-      type: Innova.Prism.Library.Menus.PrintEntityMenuTask{{T},{TResult}}
-    content.vb: ReadOnly Property PrintEntityMenuTask As PrintEntityMenuTask(Of T, TResult)
+      type: Innova.Prism.Library.Menus.IPrintEntityMenuTask{{T},{TResult}}
+    content.vb: ReadOnly Property PrintEntityMenuTask As IPrintEntityMenuTask(Of T, TResult)
   overload: Innova.Prism.Library.Menus.Models.IShowMenuService`2.PrintEntityMenuTask*
   nameWithType.vb: IShowMenuService(Of T, TResult).PrintEntityMenuTask
   fullName.vb: Innova.Prism.Library.Menus.Models.IShowMenuService(Of T, TResult).PrintEntityMenuTask
@@ -202,11 +202,11 @@ items:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Menus.Models
   syntax:
-    content: ShowHistoryMenuTask<T, TResult> ShowHistoryMenuTask { get; }
+    content: IShowHistoryMenuTask<T, TResult> ShowHistoryMenuTask { get; }
     parameters: []
     return:
-      type: Innova.Prism.Library.Menus.ShowHistoryMenuTask{{T},{TResult}}
-    content.vb: ReadOnly Property ShowHistoryMenuTask As ShowHistoryMenuTask(Of T, TResult)
+      type: Innova.Prism.Library.Menus.IShowHistoryMenuTask{{T},{TResult}}
+    content.vb: ReadOnly Property ShowHistoryMenuTask As IShowHistoryMenuTask(Of T, TResult)
   overload: Innova.Prism.Library.Menus.Models.IShowMenuService`2.ShowHistoryMenuTask*
   nameWithType.vb: IShowMenuService(Of T, TResult).ShowHistoryMenuTask
   fullName.vb: Innova.Prism.Library.Menus.Models.IShowMenuService(Of T, TResult).ShowHistoryMenuTask
@@ -285,30 +285,30 @@ references:
   name: MenuTabModels
   nameWithType: IMenuService.MenuTabModels
   fullName: Innova.Prism.Library.Services.IMenuService.MenuTabModels
-- uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuTabModel,System.Boolean})
-  commentId: M:Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuTabModel,System.Boolean})
+- uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuTabModel,System.Boolean})
+  commentId: M:Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuTabModel,System.Boolean})
   parent: Innova.Prism.Library.Services.IMenuService
   isExternal: true
-  href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultTab_System_Func_Innova_Prism_Library_Menus_ItemModels_MenuTabModel_System_Boolean__
-  name: FirstOrDefaultTab(Func<MenuTabModel, bool>)
-  nameWithType: IMenuService.FirstOrDefaultTab(Func<MenuTabModel, bool>)
-  fullName: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab(System.Func<Innova.Prism.Library.Menus.ItemModels.MenuTabModel, bool>)
-  nameWithType.vb: IMenuService.FirstOrDefaultTab(Func(Of MenuTabModel, Boolean))
-  fullName.vb: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab(System.Func(Of Innova.Prism.Library.Menus.ItemModels.MenuTabModel, Boolean))
-  name.vb: FirstOrDefaultTab(Func(Of MenuTabModel, Boolean))
+  href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultTab_System_Func_Innova_Prism_Library_Menus_ItemModels_IMenuTabModel_System_Boolean__
+  name: FirstOrDefaultTab(Func<IMenuTabModel, bool>)
+  nameWithType: IMenuService.FirstOrDefaultTab(Func<IMenuTabModel, bool>)
+  fullName: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab(System.Func<Innova.Prism.Library.Menus.ItemModels.IMenuTabModel, bool>)
+  nameWithType.vb: IMenuService.FirstOrDefaultTab(Func(Of IMenuTabModel, Boolean))
+  fullName.vb: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab(System.Func(Of Innova.Prism.Library.Menus.ItemModels.IMenuTabModel, Boolean))
+  name.vb: FirstOrDefaultTab(Func(Of IMenuTabModel, Boolean))
   spec.csharp:
-  - uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuTabModel,System.Boolean})
+  - uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuTabModel,System.Boolean})
     name: FirstOrDefaultTab
-    href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultTab_System_Func_Innova_Prism_Library_Menus_ItemModels_MenuTabModel_System_Boolean__
+    href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultTab_System_Func_Innova_Prism_Library_Menus_ItemModels_IMenuTabModel_System_Boolean__
   - name: (
   - uid: System.Func`2
     name: Func
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.func-2
   - name: <
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
-    name: MenuTabModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuTabModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
+    name: IMenuTabModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel.html
   - name: ','
   - name: " "
   - uid: System.Boolean
@@ -318,9 +318,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuTabModel,System.Boolean})
+  - uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuTabModel,System.Boolean})
     name: FirstOrDefaultTab
-    href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultTab_System_Func_Innova_Prism_Library_Menus_ItemModels_MenuTabModel_System_Boolean__
+    href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultTab.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultTab_System_Func_Innova_Prism_Library_Menus_ItemModels_IMenuTabModel_System_Boolean__
   - name: (
   - uid: System.Func`2
     name: Func
@@ -329,9 +329,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
-    name: MenuTabModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuTabModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
+    name: IMenuTabModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel.html
   - name: ','
   - name: " "
   - uid: System.Boolean
@@ -340,30 +340,30 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
   - name: )
-- uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuGroupModel,System.Boolean})
-  commentId: M:Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuGroupModel,System.Boolean})
+- uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel,System.Boolean})
+  commentId: M:Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel,System.Boolean})
   parent: Innova.Prism.Library.Services.IMenuService
   isExternal: true
-  href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultGroup_System_Func_Innova_Prism_Library_Menus_ItemModels_MenuGroupModel_System_Boolean__
-  name: FirstOrDefaultGroup(Func<MenuGroupModel, bool>)
-  nameWithType: IMenuService.FirstOrDefaultGroup(Func<MenuGroupModel, bool>)
-  fullName: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup(System.Func<Innova.Prism.Library.Menus.ItemModels.MenuGroupModel, bool>)
-  nameWithType.vb: IMenuService.FirstOrDefaultGroup(Func(Of MenuGroupModel, Boolean))
-  fullName.vb: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup(System.Func(Of Innova.Prism.Library.Menus.ItemModels.MenuGroupModel, Boolean))
-  name.vb: FirstOrDefaultGroup(Func(Of MenuGroupModel, Boolean))
+  href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultGroup_System_Func_Innova_Prism_Library_Menus_ItemModels_IMenuGroupModel_System_Boolean__
+  name: FirstOrDefaultGroup(Func<IMenuGroupModel, bool>)
+  nameWithType: IMenuService.FirstOrDefaultGroup(Func<IMenuGroupModel, bool>)
+  fullName: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup(System.Func<Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel, bool>)
+  nameWithType.vb: IMenuService.FirstOrDefaultGroup(Func(Of IMenuGroupModel, Boolean))
+  fullName.vb: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup(System.Func(Of Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel, Boolean))
+  name.vb: FirstOrDefaultGroup(Func(Of IMenuGroupModel, Boolean))
   spec.csharp:
-  - uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuGroupModel,System.Boolean})
+  - uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel,System.Boolean})
     name: FirstOrDefaultGroup
-    href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultGroup_System_Func_Innova_Prism_Library_Menus_ItemModels_MenuGroupModel_System_Boolean__
+    href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultGroup_System_Func_Innova_Prism_Library_Menus_ItemModels_IMenuGroupModel_System_Boolean__
   - name: (
   - uid: System.Func`2
     name: Func
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.func-2
   - name: <
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
-    name: MenuGroupModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
+    name: IMenuGroupModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel.html
   - name: ','
   - name: " "
   - uid: System.Boolean
@@ -373,9 +373,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuGroupModel,System.Boolean})
+  - uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel,System.Boolean})
     name: FirstOrDefaultGroup
-    href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultGroup_System_Func_Innova_Prism_Library_Menus_ItemModels_MenuGroupModel_System_Boolean__
+    href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultGroup.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultGroup_System_Func_Innova_Prism_Library_Menus_ItemModels_IMenuGroupModel_System_Boolean__
   - name: (
   - uid: System.Func`2
     name: Func
@@ -384,9 +384,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
-    name: MenuGroupModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
+    name: IMenuGroupModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel.html
   - name: ','
   - name: " "
   - uid: System.Boolean
@@ -395,30 +395,30 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
   - name: )
-- uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,System.Boolean})
-  commentId: M:Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,System.Boolean})
+- uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,System.Boolean})
+  commentId: M:Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,System.Boolean})
   parent: Innova.Prism.Library.Services.IMenuService
   isExternal: true
-  href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultMenu_System_Func_Innova_Prism_Library_Menus_ItemModels_MenuBaseModel_System_Boolean__
-  name: FirstOrDefaultMenu(Func<MenuBaseModel, bool>)
-  nameWithType: IMenuService.FirstOrDefaultMenu(Func<MenuBaseModel, bool>)
-  fullName: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu(System.Func<Innova.Prism.Library.Menus.ItemModels.MenuBaseModel, bool>)
-  nameWithType.vb: IMenuService.FirstOrDefaultMenu(Func(Of MenuBaseModel, Boolean))
-  fullName.vb: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu(System.Func(Of Innova.Prism.Library.Menus.ItemModels.MenuBaseModel, Boolean))
-  name.vb: FirstOrDefaultMenu(Func(Of MenuBaseModel, Boolean))
+  href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultMenu_System_Func_Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_System_Boolean__
+  name: FirstOrDefaultMenu(Func<IMenuBaseModel, bool>)
+  nameWithType: IMenuService.FirstOrDefaultMenu(Func<IMenuBaseModel, bool>)
+  fullName: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu(System.Func<Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel, bool>)
+  nameWithType.vb: IMenuService.FirstOrDefaultMenu(Func(Of IMenuBaseModel, Boolean))
+  fullName.vb: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu(System.Func(Of Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel, Boolean))
+  name.vb: FirstOrDefaultMenu(Func(Of IMenuBaseModel, Boolean))
   spec.csharp:
-  - uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,System.Boolean})
+  - uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,System.Boolean})
     name: FirstOrDefaultMenu
-    href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultMenu_System_Func_Innova_Prism_Library_Menus_ItemModels_MenuBaseModel_System_Boolean__
+    href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultMenu_System_Func_Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_System_Boolean__
   - name: (
   - uid: System.Func`2
     name: Func
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.func-2
   - name: <
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
-    name: MenuBaseModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+    name: IMenuBaseModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.html
   - name: ','
   - name: " "
   - uid: System.Boolean
@@ -428,9 +428,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu(System.Func{Innova.Prism.Library.Menus.ItemModels.MenuBaseModel,System.Boolean})
+  - uid: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu(System.Func{Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel,System.Boolean})
     name: FirstOrDefaultMenu
-    href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultMenu_System_Func_Innova_Prism_Library_Menus_ItemModels_MenuBaseModel_System_Boolean__
+    href: Innova.Prism.Library.Services.IMenuService.FirstOrDefaultMenu.html#Innova_Prism_Library_Services_IMenuService_FirstOrDefaultMenu_System_Func_Innova_Prism_Library_Menus_ItemModels_IMenuBaseModel_System_Boolean__
   - name: (
   - uid: System.Func`2
     name: Func
@@ -439,9 +439,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel
-    name: MenuBaseModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuBaseModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel
+    name: IMenuBaseModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuBaseModel.html
   - name: ','
   - name: " "
   - uid: System.Boolean
@@ -450,55 +450,55 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
   - name: )
-- uid: Innova.Prism.Library.Services.IMenuService.AddTab(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
-  commentId: M:Innova.Prism.Library.Services.IMenuService.AddTab(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+- uid: Innova.Prism.Library.Services.IMenuService.AddTab(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
+  commentId: M:Innova.Prism.Library.Services.IMenuService.AddTab(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
   parent: Innova.Prism.Library.Services.IMenuService
-  href: Innova.Prism.Library.Services.IMenuService.AddTab.html#Innova_Prism_Library_Services_IMenuService_AddTab_Innova_Prism_Library_Menus_ItemModels_MenuTabModel_
-  name: AddTab(MenuTabModel)
-  nameWithType: IMenuService.AddTab(MenuTabModel)
-  fullName: Innova.Prism.Library.Services.IMenuService.AddTab(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+  href: Innova.Prism.Library.Services.IMenuService.AddTab.html#Innova_Prism_Library_Services_IMenuService_AddTab_Innova_Prism_Library_Menus_ItemModels_IMenuTabModel_
+  name: AddTab(IMenuTabModel)
+  nameWithType: IMenuService.AddTab(IMenuTabModel)
+  fullName: Innova.Prism.Library.Services.IMenuService.AddTab(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
   spec.csharp:
-  - uid: Innova.Prism.Library.Services.IMenuService.AddTab(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+  - uid: Innova.Prism.Library.Services.IMenuService.AddTab(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
     name: AddTab
-    href: Innova.Prism.Library.Services.IMenuService.AddTab.html#Innova_Prism_Library_Services_IMenuService_AddTab_Innova_Prism_Library_Menus_ItemModels_MenuTabModel_
+    href: Innova.Prism.Library.Services.IMenuService.AddTab.html#Innova_Prism_Library_Services_IMenuService_AddTab_Innova_Prism_Library_Menus_ItemModels_IMenuTabModel_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
-    name: MenuTabModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuTabModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
+    name: IMenuTabModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel.html
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Services.IMenuService.AddTab(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+  - uid: Innova.Prism.Library.Services.IMenuService.AddTab(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
     name: AddTab
-    href: Innova.Prism.Library.Services.IMenuService.AddTab.html#Innova_Prism_Library_Services_IMenuService_AddTab_Innova_Prism_Library_Menus_ItemModels_MenuTabModel_
+    href: Innova.Prism.Library.Services.IMenuService.AddTab.html#Innova_Prism_Library_Services_IMenuService_AddTab_Innova_Prism_Library_Menus_ItemModels_IMenuTabModel_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
-    name: MenuTabModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuTabModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
+    name: IMenuTabModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel.html
   - name: )
-- uid: Innova.Prism.Library.Services.IMenuService.AddGroup(Innova.Prism.Library.Menus.ItemModels.MenuGroupModel)
-  commentId: M:Innova.Prism.Library.Services.IMenuService.AddGroup(Innova.Prism.Library.Menus.ItemModels.MenuGroupModel)
+- uid: Innova.Prism.Library.Services.IMenuService.AddGroup(Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel)
+  commentId: M:Innova.Prism.Library.Services.IMenuService.AddGroup(Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel)
   parent: Innova.Prism.Library.Services.IMenuService
-  href: Innova.Prism.Library.Services.IMenuService.AddGroup.html#Innova_Prism_Library_Services_IMenuService_AddGroup_Innova_Prism_Library_Menus_ItemModels_MenuGroupModel_
-  name: AddGroup(MenuGroupModel)
-  nameWithType: IMenuService.AddGroup(MenuGroupModel)
-  fullName: Innova.Prism.Library.Services.IMenuService.AddGroup(Innova.Prism.Library.Menus.ItemModels.MenuGroupModel)
+  href: Innova.Prism.Library.Services.IMenuService.AddGroup.html#Innova_Prism_Library_Services_IMenuService_AddGroup_Innova_Prism_Library_Menus_ItemModels_IMenuGroupModel_
+  name: AddGroup(IMenuGroupModel)
+  nameWithType: IMenuService.AddGroup(IMenuGroupModel)
+  fullName: Innova.Prism.Library.Services.IMenuService.AddGroup(Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel)
   spec.csharp:
-  - uid: Innova.Prism.Library.Services.IMenuService.AddGroup(Innova.Prism.Library.Menus.ItemModels.MenuGroupModel)
+  - uid: Innova.Prism.Library.Services.IMenuService.AddGroup(Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel)
     name: AddGroup
-    href: Innova.Prism.Library.Services.IMenuService.AddGroup.html#Innova_Prism_Library_Services_IMenuService_AddGroup_Innova_Prism_Library_Menus_ItemModels_MenuGroupModel_
+    href: Innova.Prism.Library.Services.IMenuService.AddGroup.html#Innova_Prism_Library_Services_IMenuService_AddGroup_Innova_Prism_Library_Menus_ItemModels_IMenuGroupModel_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
-    name: MenuGroupModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
+    name: IMenuGroupModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel.html
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Services.IMenuService.AddGroup(Innova.Prism.Library.Menus.ItemModels.MenuGroupModel)
+  - uid: Innova.Prism.Library.Services.IMenuService.AddGroup(Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel)
     name: AddGroup
-    href: Innova.Prism.Library.Services.IMenuService.AddGroup.html#Innova_Prism_Library_Services_IMenuService_AddGroup_Innova_Prism_Library_Menus_ItemModels_MenuGroupModel_
+    href: Innova.Prism.Library.Services.IMenuService.AddGroup.html#Innova_Prism_Library_Services_IMenuService_AddGroup_Innova_Prism_Library_Menus_ItemModels_IMenuGroupModel_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel
-    name: MenuGroupModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuGroupModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel
+    name: IMenuGroupModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuGroupModel.html
   - name: )
 - uid: Innova.Prism.Library.Services.IMenuService.AddGroup``1
   commentId: M:Innova.Prism.Library.Services.IMenuService.AddGroup``1
@@ -530,30 +530,30 @@ references:
   - name: )
   - name: (
   - name: )
-- uid: Innova.Prism.Library.Services.IMenuService.AddMenu(Innova.Prism.Library.Menus.ItemModels.MenuModel)
-  commentId: M:Innova.Prism.Library.Services.IMenuService.AddMenu(Innova.Prism.Library.Menus.ItemModels.MenuModel)
+- uid: Innova.Prism.Library.Services.IMenuService.AddMenu(Innova.Prism.Library.Menus.ItemModels.IMenuModel)
+  commentId: M:Innova.Prism.Library.Services.IMenuService.AddMenu(Innova.Prism.Library.Menus.ItemModels.IMenuModel)
   parent: Innova.Prism.Library.Services.IMenuService
-  href: Innova.Prism.Library.Services.IMenuService.AddMenu.html#Innova_Prism_Library_Services_IMenuService_AddMenu_Innova_Prism_Library_Menus_ItemModels_MenuModel_
-  name: AddMenu(MenuModel)
-  nameWithType: IMenuService.AddMenu(MenuModel)
-  fullName: Innova.Prism.Library.Services.IMenuService.AddMenu(Innova.Prism.Library.Menus.ItemModels.MenuModel)
+  href: Innova.Prism.Library.Services.IMenuService.AddMenu.html#Innova_Prism_Library_Services_IMenuService_AddMenu_Innova_Prism_Library_Menus_ItemModels_IMenuModel_
+  name: AddMenu(IMenuModel)
+  nameWithType: IMenuService.AddMenu(IMenuModel)
+  fullName: Innova.Prism.Library.Services.IMenuService.AddMenu(Innova.Prism.Library.Menus.ItemModels.IMenuModel)
   spec.csharp:
-  - uid: Innova.Prism.Library.Services.IMenuService.AddMenu(Innova.Prism.Library.Menus.ItemModels.MenuModel)
+  - uid: Innova.Prism.Library.Services.IMenuService.AddMenu(Innova.Prism.Library.Menus.ItemModels.IMenuModel)
     name: AddMenu
-    href: Innova.Prism.Library.Services.IMenuService.AddMenu.html#Innova_Prism_Library_Services_IMenuService_AddMenu_Innova_Prism_Library_Menus_ItemModels_MenuModel_
+    href: Innova.Prism.Library.Services.IMenuService.AddMenu.html#Innova_Prism_Library_Services_IMenuService_AddMenu_Innova_Prism_Library_Menus_ItemModels_IMenuModel_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModel
-    name: MenuModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModel
+    name: IMenuModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModel.html
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Services.IMenuService.AddMenu(Innova.Prism.Library.Menus.ItemModels.MenuModel)
+  - uid: Innova.Prism.Library.Services.IMenuService.AddMenu(Innova.Prism.Library.Menus.ItemModels.IMenuModel)
     name: AddMenu
-    href: Innova.Prism.Library.Services.IMenuService.AddMenu.html#Innova_Prism_Library_Services_IMenuService_AddMenu_Innova_Prism_Library_Menus_ItemModels_MenuModel_
+    href: Innova.Prism.Library.Services.IMenuService.AddMenu.html#Innova_Prism_Library_Services_IMenuService_AddMenu_Innova_Prism_Library_Menus_ItemModels_IMenuModel_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModel
-    name: MenuModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModel
+    name: IMenuModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModel.html
   - name: )
 - uid: Innova.Prism.Library.Services.IMenuService.AddMenu``1
   commentId: M:Innova.Prism.Library.Services.IMenuService.AddMenu``1
@@ -585,66 +585,66 @@ references:
   - name: )
   - name: (
   - name: )
-- uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
-  commentId: M:Innova.Prism.Library.Services.IMenuService.AddMenuElement(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+- uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
+  commentId: M:Innova.Prism.Library.Services.IMenuService.AddMenuElement(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
   parent: Innova.Prism.Library.Services.IMenuService
-  href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement_Innova_Prism_Library_Menus_ItemModels_MenuModelElement_
-  name: AddMenuElement(MenuModelElement)
-  nameWithType: IMenuService.AddMenuElement(MenuModelElement)
-  fullName: Innova.Prism.Library.Services.IMenuService.AddMenuElement(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+  href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement_Innova_Prism_Library_Menus_ItemModels_IMenuModelElement_
+  name: AddMenuElement(IMenuModelElement)
+  nameWithType: IMenuService.AddMenuElement(IMenuModelElement)
+  fullName: Innova.Prism.Library.Services.IMenuService.AddMenuElement(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
   spec.csharp:
-  - uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+  - uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
     name: AddMenuElement
-    href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement_Innova_Prism_Library_Menus_ItemModels_MenuModelElement_
+    href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement_Innova_Prism_Library_Menus_ItemModels_IMenuModelElement_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModelElement
-    name: MenuModelElement
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModelElement.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement
+    name: IMenuModelElement
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement.html
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+  - uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
     name: AddMenuElement
-    href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement_Innova_Prism_Library_Menus_ItemModels_MenuModelElement_
+    href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement_Innova_Prism_Library_Menus_ItemModels_IMenuModelElement_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModelElement
-    name: MenuModelElement
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModelElement.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement
+    name: IMenuModelElement
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement.html
   - name: )
-- uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement``1(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
-  commentId: M:Innova.Prism.Library.Services.IMenuService.AddMenuElement``1(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+- uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement``1(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
+  commentId: M:Innova.Prism.Library.Services.IMenuService.AddMenuElement``1(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
   parent: Innova.Prism.Library.Services.IMenuService
-  href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement__1_Innova_Prism_Library_Menus_ItemModels_MenuModelElement_
-  name: AddMenuElement<View>(MenuModelElement)
-  nameWithType: IMenuService.AddMenuElement<View>(MenuModelElement)
-  fullName: Innova.Prism.Library.Services.IMenuService.AddMenuElement<View>(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
-  nameWithType.vb: IMenuService.AddMenuElement(Of View)(MenuModelElement)
-  fullName.vb: Innova.Prism.Library.Services.IMenuService.AddMenuElement(Of View)(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
-  name.vb: AddMenuElement(Of View)(MenuModelElement)
+  href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement__1_Innova_Prism_Library_Menus_ItemModels_IMenuModelElement_
+  name: AddMenuElement<View>(IMenuModelElement)
+  nameWithType: IMenuService.AddMenuElement<View>(IMenuModelElement)
+  fullName: Innova.Prism.Library.Services.IMenuService.AddMenuElement<View>(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
+  nameWithType.vb: IMenuService.AddMenuElement(Of View)(IMenuModelElement)
+  fullName.vb: Innova.Prism.Library.Services.IMenuService.AddMenuElement(Of View)(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
+  name.vb: AddMenuElement(Of View)(IMenuModelElement)
   spec.csharp:
-  - uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement``1(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+  - uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement``1(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
     name: AddMenuElement
-    href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement__1_Innova_Prism_Library_Menus_ItemModels_MenuModelElement_
+    href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement__1_Innova_Prism_Library_Menus_ItemModels_IMenuModelElement_
   - name: <
   - name: View
   - name: '>'
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModelElement
-    name: MenuModelElement
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModelElement.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement
+    name: IMenuModelElement
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement.html
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement``1(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+  - uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement``1(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
     name: AddMenuElement
-    href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement__1_Innova_Prism_Library_Menus_ItemModels_MenuModelElement_
+    href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement__1_Innova_Prism_Library_Menus_ItemModels_IMenuModelElement_
   - name: (
   - name: Of
   - name: " "
   - name: View
   - name: )
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModelElement
-    name: MenuModelElement
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModelElement.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement
+    name: IMenuModelElement
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement.html
   - name: )
 - uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement``2
   commentId: M:Innova.Prism.Library.Services.IMenuService.AddMenuElement``2
@@ -724,20 +724,20 @@ references:
   - name: )
   - name: (
   - name: )
-- uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement``2(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
-  commentId: M:Innova.Prism.Library.Services.IMenuService.AddMenuElement``2(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+- uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement``2(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
+  commentId: M:Innova.Prism.Library.Services.IMenuService.AddMenuElement``2(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
   parent: Innova.Prism.Library.Services.IMenuService
-  href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement__2_Innova_Prism_Library_Menus_ItemModels_MenuModelElement_
-  name: AddMenuElement<View, ViewModelType>(MenuModelElement)
-  nameWithType: IMenuService.AddMenuElement<View, ViewModelType>(MenuModelElement)
-  fullName: Innova.Prism.Library.Services.IMenuService.AddMenuElement<View, ViewModelType>(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
-  nameWithType.vb: IMenuService.AddMenuElement(Of View, ViewModelType)(MenuModelElement)
-  fullName.vb: Innova.Prism.Library.Services.IMenuService.AddMenuElement(Of View, ViewModelType)(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
-  name.vb: AddMenuElement(Of View, ViewModelType)(MenuModelElement)
+  href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement__2_Innova_Prism_Library_Menus_ItemModels_IMenuModelElement_
+  name: AddMenuElement<View, ViewModelType>(IMenuModelElement)
+  nameWithType: IMenuService.AddMenuElement<View, ViewModelType>(IMenuModelElement)
+  fullName: Innova.Prism.Library.Services.IMenuService.AddMenuElement<View, ViewModelType>(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
+  nameWithType.vb: IMenuService.AddMenuElement(Of View, ViewModelType)(IMenuModelElement)
+  fullName.vb: Innova.Prism.Library.Services.IMenuService.AddMenuElement(Of View, ViewModelType)(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
+  name.vb: AddMenuElement(Of View, ViewModelType)(IMenuModelElement)
   spec.csharp:
-  - uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement``2(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+  - uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement``2(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
     name: AddMenuElement
-    href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement__2_Innova_Prism_Library_Menus_ItemModels_MenuModelElement_
+    href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement__2_Innova_Prism_Library_Menus_ItemModels_IMenuModelElement_
   - name: <
   - name: View
   - name: ','
@@ -745,14 +745,14 @@ references:
   - name: ViewModelType
   - name: '>'
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModelElement
-    name: MenuModelElement
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModelElement.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement
+    name: IMenuModelElement
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement.html
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement``2(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+  - uid: Innova.Prism.Library.Services.IMenuService.AddMenuElement``2(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
     name: AddMenuElement
-    href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement__2_Innova_Prism_Library_Menus_ItemModels_MenuModelElement_
+    href: Innova.Prism.Library.Services.IMenuService.AddMenuElement.html#Innova_Prism_Library_Services_IMenuService_AddMenuElement__2_Innova_Prism_Library_Menus_ItemModels_IMenuModelElement_
   - name: (
   - name: Of
   - name: " "
@@ -762,9 +762,9 @@ references:
   - name: ViewModelType
   - name: )
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModelElement
-    name: MenuModelElement
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModelElement.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement
+    name: IMenuModelElement
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement.html
   - name: )
 - uid: Innova.Prism.Library.Services.IMenuService.CreateMenu``1
   commentId: M:Innova.Prism.Library.Services.IMenuService.CreateMenu``1
@@ -796,61 +796,61 @@ references:
   - name: )
   - name: (
   - name: )
-- uid: Innova.Prism.Library.Services.IMenuService.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.MenuModel)
-  commentId: M:Innova.Prism.Library.Services.IMenuService.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.MenuModel)
+- uid: Innova.Prism.Library.Services.IMenuService.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.IMenuModel)
+  commentId: M:Innova.Prism.Library.Services.IMenuService.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.IMenuModel)
   parent: Innova.Prism.Library.Services.IMenuService
-  href: Innova.Prism.Library.Services.IMenuService.RemoveMenu.html#Innova_Prism_Library_Services_IMenuService_RemoveMenu_Innova_Prism_Library_Menus_ItemModels_MenuModel_
-  name: RemoveMenu(MenuModel)
-  nameWithType: IMenuService.RemoveMenu(MenuModel)
-  fullName: Innova.Prism.Library.Services.IMenuService.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.MenuModel)
+  href: Innova.Prism.Library.Services.IMenuService.RemoveMenu.html#Innova_Prism_Library_Services_IMenuService_RemoveMenu_Innova_Prism_Library_Menus_ItemModels_IMenuModel_
+  name: RemoveMenu(IMenuModel)
+  nameWithType: IMenuService.RemoveMenu(IMenuModel)
+  fullName: Innova.Prism.Library.Services.IMenuService.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.IMenuModel)
   spec.csharp:
-  - uid: Innova.Prism.Library.Services.IMenuService.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.MenuModel)
+  - uid: Innova.Prism.Library.Services.IMenuService.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.IMenuModel)
     name: RemoveMenu
-    href: Innova.Prism.Library.Services.IMenuService.RemoveMenu.html#Innova_Prism_Library_Services_IMenuService_RemoveMenu_Innova_Prism_Library_Menus_ItemModels_MenuModel_
+    href: Innova.Prism.Library.Services.IMenuService.RemoveMenu.html#Innova_Prism_Library_Services_IMenuService_RemoveMenu_Innova_Prism_Library_Menus_ItemModels_IMenuModel_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModel
-    name: MenuModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModel
+    name: IMenuModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModel.html
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Services.IMenuService.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.MenuModel)
+  - uid: Innova.Prism.Library.Services.IMenuService.RemoveMenu(Innova.Prism.Library.Menus.ItemModels.IMenuModel)
     name: RemoveMenu
-    href: Innova.Prism.Library.Services.IMenuService.RemoveMenu.html#Innova_Prism_Library_Services_IMenuService_RemoveMenu_Innova_Prism_Library_Menus_ItemModels_MenuModel_
+    href: Innova.Prism.Library.Services.IMenuService.RemoveMenu.html#Innova_Prism_Library_Services_IMenuService_RemoveMenu_Innova_Prism_Library_Menus_ItemModels_IMenuModel_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModel
-    name: MenuModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModel
+    name: IMenuModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModel.html
   - name: )
-- uid: Innova.Prism.Library.Services.IMenuService.RemoveMenu(System.Collections.Generic.IEnumerable{Innova.Prism.Library.Menus.ItemModels.MenuModel})
-  commentId: M:Innova.Prism.Library.Services.IMenuService.RemoveMenu(System.Collections.Generic.IEnumerable{Innova.Prism.Library.Menus.ItemModels.MenuModel})
+- uid: Innova.Prism.Library.Services.IMenuService.RemoveMenu(System.Collections.Generic.IEnumerable{Innova.Prism.Library.Menus.ItemModels.IMenuModel})
+  commentId: M:Innova.Prism.Library.Services.IMenuService.RemoveMenu(System.Collections.Generic.IEnumerable{Innova.Prism.Library.Menus.ItemModels.IMenuModel})
   parent: Innova.Prism.Library.Services.IMenuService
   isExternal: true
-  href: Innova.Prism.Library.Services.IMenuService.RemoveMenu.html#Innova_Prism_Library_Services_IMenuService_RemoveMenu_System_Collections_Generic_IEnumerable_Innova_Prism_Library_Menus_ItemModels_MenuModel__
-  name: RemoveMenu(IEnumerable<MenuModel>)
-  nameWithType: IMenuService.RemoveMenu(IEnumerable<MenuModel>)
-  fullName: Innova.Prism.Library.Services.IMenuService.RemoveMenu(System.Collections.Generic.IEnumerable<Innova.Prism.Library.Menus.ItemModels.MenuModel>)
-  nameWithType.vb: IMenuService.RemoveMenu(IEnumerable(Of MenuModel))
-  fullName.vb: Innova.Prism.Library.Services.IMenuService.RemoveMenu(System.Collections.Generic.IEnumerable(Of Innova.Prism.Library.Menus.ItemModels.MenuModel))
-  name.vb: RemoveMenu(IEnumerable(Of MenuModel))
+  href: Innova.Prism.Library.Services.IMenuService.RemoveMenu.html#Innova_Prism_Library_Services_IMenuService_RemoveMenu_System_Collections_Generic_IEnumerable_Innova_Prism_Library_Menus_ItemModels_IMenuModel__
+  name: RemoveMenu(IEnumerable<IMenuModel>)
+  nameWithType: IMenuService.RemoveMenu(IEnumerable<IMenuModel>)
+  fullName: Innova.Prism.Library.Services.IMenuService.RemoveMenu(System.Collections.Generic.IEnumerable<Innova.Prism.Library.Menus.ItemModels.IMenuModel>)
+  nameWithType.vb: IMenuService.RemoveMenu(IEnumerable(Of IMenuModel))
+  fullName.vb: Innova.Prism.Library.Services.IMenuService.RemoveMenu(System.Collections.Generic.IEnumerable(Of Innova.Prism.Library.Menus.ItemModels.IMenuModel))
+  name.vb: RemoveMenu(IEnumerable(Of IMenuModel))
   spec.csharp:
-  - uid: Innova.Prism.Library.Services.IMenuService.RemoveMenu(System.Collections.Generic.IEnumerable{Innova.Prism.Library.Menus.ItemModels.MenuModel})
+  - uid: Innova.Prism.Library.Services.IMenuService.RemoveMenu(System.Collections.Generic.IEnumerable{Innova.Prism.Library.Menus.ItemModels.IMenuModel})
     name: RemoveMenu
-    href: Innova.Prism.Library.Services.IMenuService.RemoveMenu.html#Innova_Prism_Library_Services_IMenuService_RemoveMenu_System_Collections_Generic_IEnumerable_Innova_Prism_Library_Menus_ItemModels_MenuModel__
+    href: Innova.Prism.Library.Services.IMenuService.RemoveMenu.html#Innova_Prism_Library_Services_IMenuService_RemoveMenu_System_Collections_Generic_IEnumerable_Innova_Prism_Library_Menus_ItemModels_IMenuModel__
   - name: (
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
   - name: <
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModel
-    name: MenuModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModel
+    name: IMenuModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModel.html
   - name: '>'
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Services.IMenuService.RemoveMenu(System.Collections.Generic.IEnumerable{Innova.Prism.Library.Menus.ItemModels.MenuModel})
+  - uid: Innova.Prism.Library.Services.IMenuService.RemoveMenu(System.Collections.Generic.IEnumerable{Innova.Prism.Library.Menus.ItemModels.IMenuModel})
     name: RemoveMenu
-    href: Innova.Prism.Library.Services.IMenuService.RemoveMenu.html#Innova_Prism_Library_Services_IMenuService_RemoveMenu_System_Collections_Generic_IEnumerable_Innova_Prism_Library_Menus_ItemModels_MenuModel__
+    href: Innova.Prism.Library.Services.IMenuService.RemoveMenu.html#Innova_Prism_Library_Services_IMenuService_RemoveMenu_System_Collections_Generic_IEnumerable_Innova_Prism_Library_Menus_ItemModels_IMenuModel__
   - name: (
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
@@ -859,9 +859,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModel
-    name: MenuModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModel
+    name: IMenuModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModel.html
   - name: )
   - name: )
 - uid: Innova.Prism.Library.Services.IMenuService.RemoveGroup(System.String)
@@ -926,30 +926,30 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: Innova.Prism.Library.Services.IMenuService.RemoveMenuElement(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
-  commentId: M:Innova.Prism.Library.Services.IMenuService.RemoveMenuElement(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+- uid: Innova.Prism.Library.Services.IMenuService.RemoveMenuElement(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
+  commentId: M:Innova.Prism.Library.Services.IMenuService.RemoveMenuElement(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
   parent: Innova.Prism.Library.Services.IMenuService
-  href: Innova.Prism.Library.Services.IMenuService.RemoveMenuElement.html#Innova_Prism_Library_Services_IMenuService_RemoveMenuElement_Innova_Prism_Library_Menus_ItemModels_MenuModelElement_
-  name: RemoveMenuElement(MenuModelElement)
-  nameWithType: IMenuService.RemoveMenuElement(MenuModelElement)
-  fullName: Innova.Prism.Library.Services.IMenuService.RemoveMenuElement(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+  href: Innova.Prism.Library.Services.IMenuService.RemoveMenuElement.html#Innova_Prism_Library_Services_IMenuService_RemoveMenuElement_Innova_Prism_Library_Menus_ItemModels_IMenuModelElement_
+  name: RemoveMenuElement(IMenuModelElement)
+  nameWithType: IMenuService.RemoveMenuElement(IMenuModelElement)
+  fullName: Innova.Prism.Library.Services.IMenuService.RemoveMenuElement(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
   spec.csharp:
-  - uid: Innova.Prism.Library.Services.IMenuService.RemoveMenuElement(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+  - uid: Innova.Prism.Library.Services.IMenuService.RemoveMenuElement(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
     name: RemoveMenuElement
-    href: Innova.Prism.Library.Services.IMenuService.RemoveMenuElement.html#Innova_Prism_Library_Services_IMenuService_RemoveMenuElement_Innova_Prism_Library_Menus_ItemModels_MenuModelElement_
+    href: Innova.Prism.Library.Services.IMenuService.RemoveMenuElement.html#Innova_Prism_Library_Services_IMenuService_RemoveMenuElement_Innova_Prism_Library_Menus_ItemModels_IMenuModelElement_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModelElement
-    name: MenuModelElement
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModelElement.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement
+    name: IMenuModelElement
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement.html
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Services.IMenuService.RemoveMenuElement(Innova.Prism.Library.Menus.ItemModels.MenuModelElement)
+  - uid: Innova.Prism.Library.Services.IMenuService.RemoveMenuElement(Innova.Prism.Library.Menus.ItemModels.IMenuModelElement)
     name: RemoveMenuElement
-    href: Innova.Prism.Library.Services.IMenuService.RemoveMenuElement.html#Innova_Prism_Library_Services_IMenuService_RemoveMenuElement_Innova_Prism_Library_Menus_ItemModels_MenuModelElement_
+    href: Innova.Prism.Library.Services.IMenuService.RemoveMenuElement.html#Innova_Prism_Library_Services_IMenuService_RemoveMenuElement_Innova_Prism_Library_Menus_ItemModels_IMenuModelElement_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuModelElement
-    name: MenuModelElement
-    href: Innova.Prism.Library.Menus.ItemModels.MenuModelElement.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement
+    name: IMenuModelElement
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuModelElement.html
   - name: )
 - uid: Innova.Prism.Library.Services.IMenuService.RemoveItems
   commentId: M:Innova.Prism.Library.Services.IMenuService.RemoveItems
@@ -989,30 +989,30 @@ references:
     href: Innova.Prism.Library.Services.IMenuService.AddItems.html#Innova_Prism_Library_Services_IMenuService_AddItems
   - name: (
   - name: )
-- uid: Innova.Prism.Library.Services.IMenuService.SetSelectedTab(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
-  commentId: M:Innova.Prism.Library.Services.IMenuService.SetSelectedTab(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+- uid: Innova.Prism.Library.Services.IMenuService.SetSelectedTab(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
+  commentId: M:Innova.Prism.Library.Services.IMenuService.SetSelectedTab(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
   parent: Innova.Prism.Library.Services.IMenuService
-  href: Innova.Prism.Library.Services.IMenuService.SetSelectedTab.html#Innova_Prism_Library_Services_IMenuService_SetSelectedTab_Innova_Prism_Library_Menus_ItemModels_MenuTabModel_
-  name: SetSelectedTab(MenuTabModel)
-  nameWithType: IMenuService.SetSelectedTab(MenuTabModel)
-  fullName: Innova.Prism.Library.Services.IMenuService.SetSelectedTab(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+  href: Innova.Prism.Library.Services.IMenuService.SetSelectedTab.html#Innova_Prism_Library_Services_IMenuService_SetSelectedTab_Innova_Prism_Library_Menus_ItemModels_IMenuTabModel_
+  name: SetSelectedTab(IMenuTabModel)
+  nameWithType: IMenuService.SetSelectedTab(IMenuTabModel)
+  fullName: Innova.Prism.Library.Services.IMenuService.SetSelectedTab(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
   spec.csharp:
-  - uid: Innova.Prism.Library.Services.IMenuService.SetSelectedTab(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+  - uid: Innova.Prism.Library.Services.IMenuService.SetSelectedTab(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
     name: SetSelectedTab
-    href: Innova.Prism.Library.Services.IMenuService.SetSelectedTab.html#Innova_Prism_Library_Services_IMenuService_SetSelectedTab_Innova_Prism_Library_Menus_ItemModels_MenuTabModel_
+    href: Innova.Prism.Library.Services.IMenuService.SetSelectedTab.html#Innova_Prism_Library_Services_IMenuService_SetSelectedTab_Innova_Prism_Library_Menus_ItemModels_IMenuTabModel_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
-    name: MenuTabModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuTabModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
+    name: IMenuTabModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel.html
   - name: )
   spec.vb:
-  - uid: Innova.Prism.Library.Services.IMenuService.SetSelectedTab(Innova.Prism.Library.Menus.ItemModels.MenuTabModel)
+  - uid: Innova.Prism.Library.Services.IMenuService.SetSelectedTab(Innova.Prism.Library.Menus.ItemModels.IMenuTabModel)
     name: SetSelectedTab
-    href: Innova.Prism.Library.Services.IMenuService.SetSelectedTab.html#Innova_Prism_Library_Services_IMenuService_SetSelectedTab_Innova_Prism_Library_Menus_ItemModels_MenuTabModel_
+    href: Innova.Prism.Library.Services.IMenuService.SetSelectedTab.html#Innova_Prism_Library_Services_IMenuService_SetSelectedTab_Innova_Prism_Library_Menus_ItemModels_IMenuTabModel_
   - name: (
-  - uid: Innova.Prism.Library.Menus.ItemModels.MenuTabModel
-    name: MenuTabModel
-    href: Innova.Prism.Library.Menus.ItemModels.MenuTabModel.html
+  - uid: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel
+    name: IMenuTabModel
+    href: Innova.Prism.Library.Menus.ItemModels.IMenuTabModel.html
   - name: )
 - uid: Innova.Prism.Library.Services.IMenuServiceNavigationAware.OnNavigatedTo(System.Uri)
   commentId: M:Innova.Prism.Library.Services.IMenuServiceNavigationAware.OnNavigatedTo(System.Uri)
@@ -2444,21 +2444,21 @@ references:
   fullName: Innova.Prism.Library.Menus.Models.IShowMenuService<T, TResult>.DeleteEntityMenuTask
   nameWithType.vb: IShowMenuService(Of T, TResult).DeleteEntityMenuTask
   fullName.vb: Innova.Prism.Library.Menus.Models.IShowMenuService(Of T, TResult).DeleteEntityMenuTask
-- uid: Innova.Prism.Library.Menus.DeleteEntityMenuTask{{T},{TResult}}
-  commentId: T:Innova.Prism.Library.Menus.DeleteEntityMenuTask{`0,`1}
+- uid: Innova.Prism.Library.Menus.IDeleteEntityMenuTask{{T},{TResult}}
+  commentId: T:Innova.Prism.Library.Menus.IDeleteEntityMenuTask{`0,`1}
   parent: Innova.Prism.Library.Menus
-  definition: Innova.Prism.Library.Menus.DeleteEntityMenuTask`2
-  href: Innova.Prism.Library.Menus.DeleteEntityMenuTask-2.html
-  name: DeleteEntityMenuTask<T, TResult>
-  nameWithType: DeleteEntityMenuTask<T, TResult>
-  fullName: Innova.Prism.Library.Menus.DeleteEntityMenuTask<T, TResult>
-  nameWithType.vb: DeleteEntityMenuTask(Of T, TResult)
-  fullName.vb: Innova.Prism.Library.Menus.DeleteEntityMenuTask(Of T, TResult)
-  name.vb: DeleteEntityMenuTask(Of T, TResult)
+  definition: Innova.Prism.Library.Menus.IDeleteEntityMenuTask`2
+  href: Innova.Prism.Library.Menus.IDeleteEntityMenuTask-2.html
+  name: IDeleteEntityMenuTask<T, TResult>
+  nameWithType: IDeleteEntityMenuTask<T, TResult>
+  fullName: Innova.Prism.Library.Menus.IDeleteEntityMenuTask<T, TResult>
+  nameWithType.vb: IDeleteEntityMenuTask(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.IDeleteEntityMenuTask(Of T, TResult)
+  name.vb: IDeleteEntityMenuTask(Of T, TResult)
   spec.csharp:
-  - uid: Innova.Prism.Library.Menus.DeleteEntityMenuTask`2
-    name: DeleteEntityMenuTask
-    href: Innova.Prism.Library.Menus.DeleteEntityMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IDeleteEntityMenuTask`2
+    name: IDeleteEntityMenuTask
+    href: Innova.Prism.Library.Menus.IDeleteEntityMenuTask-2.html
   - name: <
   - name: T
   - name: ','
@@ -2466,9 +2466,9 @@ references:
   - name: TResult
   - name: '>'
   spec.vb:
-  - uid: Innova.Prism.Library.Menus.DeleteEntityMenuTask`2
-    name: DeleteEntityMenuTask
-    href: Innova.Prism.Library.Menus.DeleteEntityMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IDeleteEntityMenuTask`2
+    name: IDeleteEntityMenuTask
+    href: Innova.Prism.Library.Menus.IDeleteEntityMenuTask-2.html
   - name: (
   - name: Of
   - name: " "
@@ -2477,19 +2477,19 @@ references:
   - name: " "
   - name: TResult
   - name: )
-- uid: Innova.Prism.Library.Menus.DeleteEntityMenuTask`2
-  commentId: T:Innova.Prism.Library.Menus.DeleteEntityMenuTask`2
-  href: Innova.Prism.Library.Menus.DeleteEntityMenuTask-2.html
-  name: DeleteEntityMenuTask<T, TResult>
-  nameWithType: DeleteEntityMenuTask<T, TResult>
-  fullName: Innova.Prism.Library.Menus.DeleteEntityMenuTask<T, TResult>
-  nameWithType.vb: DeleteEntityMenuTask(Of T, TResult)
-  fullName.vb: Innova.Prism.Library.Menus.DeleteEntityMenuTask(Of T, TResult)
-  name.vb: DeleteEntityMenuTask(Of T, TResult)
+- uid: Innova.Prism.Library.Menus.IDeleteEntityMenuTask`2
+  commentId: T:Innova.Prism.Library.Menus.IDeleteEntityMenuTask`2
+  href: Innova.Prism.Library.Menus.IDeleteEntityMenuTask-2.html
+  name: IDeleteEntityMenuTask<T, TResult>
+  nameWithType: IDeleteEntityMenuTask<T, TResult>
+  fullName: Innova.Prism.Library.Menus.IDeleteEntityMenuTask<T, TResult>
+  nameWithType.vb: IDeleteEntityMenuTask(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.IDeleteEntityMenuTask(Of T, TResult)
+  name.vb: IDeleteEntityMenuTask(Of T, TResult)
   spec.csharp:
-  - uid: Innova.Prism.Library.Menus.DeleteEntityMenuTask`2
-    name: DeleteEntityMenuTask
-    href: Innova.Prism.Library.Menus.DeleteEntityMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IDeleteEntityMenuTask`2
+    name: IDeleteEntityMenuTask
+    href: Innova.Prism.Library.Menus.IDeleteEntityMenuTask-2.html
   - name: <
   - name: T
   - name: ','
@@ -2497,9 +2497,9 @@ references:
   - name: TResult
   - name: '>'
   spec.vb:
-  - uid: Innova.Prism.Library.Menus.DeleteEntityMenuTask`2
-    name: DeleteEntityMenuTask
-    href: Innova.Prism.Library.Menus.DeleteEntityMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IDeleteEntityMenuTask`2
+    name: IDeleteEntityMenuTask
+    href: Innova.Prism.Library.Menus.IDeleteEntityMenuTask-2.html
   - name: (
   - name: Of
   - name: " "
@@ -2554,21 +2554,21 @@ references:
   fullName: Innova.Prism.Library.Menus.Models.IShowMenuService<T, TResult>.EditEntityMenuTask
   nameWithType.vb: IShowMenuService(Of T, TResult).EditEntityMenuTask
   fullName.vb: Innova.Prism.Library.Menus.Models.IShowMenuService(Of T, TResult).EditEntityMenuTask
-- uid: Innova.Prism.Library.Menus.EditEntityMenuTask{{T},{TResult}}
-  commentId: T:Innova.Prism.Library.Menus.EditEntityMenuTask{`0,`1}
+- uid: Innova.Prism.Library.Menus.IEditEntityMenuTask{{T},{TResult}}
+  commentId: T:Innova.Prism.Library.Menus.IEditEntityMenuTask{`0,`1}
   parent: Innova.Prism.Library.Menus
-  definition: Innova.Prism.Library.Menus.EditEntityMenuTask`2
-  href: Innova.Prism.Library.Menus.EditEntityMenuTask-2.html
-  name: EditEntityMenuTask<T, TResult>
-  nameWithType: EditEntityMenuTask<T, TResult>
-  fullName: Innova.Prism.Library.Menus.EditEntityMenuTask<T, TResult>
-  nameWithType.vb: EditEntityMenuTask(Of T, TResult)
-  fullName.vb: Innova.Prism.Library.Menus.EditEntityMenuTask(Of T, TResult)
-  name.vb: EditEntityMenuTask(Of T, TResult)
+  definition: Innova.Prism.Library.Menus.IEditEntityMenuTask`2
+  href: Innova.Prism.Library.Menus.IEditEntityMenuTask-2.html
+  name: IEditEntityMenuTask<T, TResult>
+  nameWithType: IEditEntityMenuTask<T, TResult>
+  fullName: Innova.Prism.Library.Menus.IEditEntityMenuTask<T, TResult>
+  nameWithType.vb: IEditEntityMenuTask(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.IEditEntityMenuTask(Of T, TResult)
+  name.vb: IEditEntityMenuTask(Of T, TResult)
   spec.csharp:
-  - uid: Innova.Prism.Library.Menus.EditEntityMenuTask`2
-    name: EditEntityMenuTask
-    href: Innova.Prism.Library.Menus.EditEntityMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IEditEntityMenuTask`2
+    name: IEditEntityMenuTask
+    href: Innova.Prism.Library.Menus.IEditEntityMenuTask-2.html
   - name: <
   - name: T
   - name: ','
@@ -2576,9 +2576,9 @@ references:
   - name: TResult
   - name: '>'
   spec.vb:
-  - uid: Innova.Prism.Library.Menus.EditEntityMenuTask`2
-    name: EditEntityMenuTask
-    href: Innova.Prism.Library.Menus.EditEntityMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IEditEntityMenuTask`2
+    name: IEditEntityMenuTask
+    href: Innova.Prism.Library.Menus.IEditEntityMenuTask-2.html
   - name: (
   - name: Of
   - name: " "
@@ -2587,19 +2587,19 @@ references:
   - name: " "
   - name: TResult
   - name: )
-- uid: Innova.Prism.Library.Menus.EditEntityMenuTask`2
-  commentId: T:Innova.Prism.Library.Menus.EditEntityMenuTask`2
-  href: Innova.Prism.Library.Menus.EditEntityMenuTask-2.html
-  name: EditEntityMenuTask<T, TResult>
-  nameWithType: EditEntityMenuTask<T, TResult>
-  fullName: Innova.Prism.Library.Menus.EditEntityMenuTask<T, TResult>
-  nameWithType.vb: EditEntityMenuTask(Of T, TResult)
-  fullName.vb: Innova.Prism.Library.Menus.EditEntityMenuTask(Of T, TResult)
-  name.vb: EditEntityMenuTask(Of T, TResult)
+- uid: Innova.Prism.Library.Menus.IEditEntityMenuTask`2
+  commentId: T:Innova.Prism.Library.Menus.IEditEntityMenuTask`2
+  href: Innova.Prism.Library.Menus.IEditEntityMenuTask-2.html
+  name: IEditEntityMenuTask<T, TResult>
+  nameWithType: IEditEntityMenuTask<T, TResult>
+  fullName: Innova.Prism.Library.Menus.IEditEntityMenuTask<T, TResult>
+  nameWithType.vb: IEditEntityMenuTask(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.IEditEntityMenuTask(Of T, TResult)
+  name.vb: IEditEntityMenuTask(Of T, TResult)
   spec.csharp:
-  - uid: Innova.Prism.Library.Menus.EditEntityMenuTask`2
-    name: EditEntityMenuTask
-    href: Innova.Prism.Library.Menus.EditEntityMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IEditEntityMenuTask`2
+    name: IEditEntityMenuTask
+    href: Innova.Prism.Library.Menus.IEditEntityMenuTask-2.html
   - name: <
   - name: T
   - name: ','
@@ -2607,9 +2607,9 @@ references:
   - name: TResult
   - name: '>'
   spec.vb:
-  - uid: Innova.Prism.Library.Menus.EditEntityMenuTask`2
-    name: EditEntityMenuTask
-    href: Innova.Prism.Library.Menus.EditEntityMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IEditEntityMenuTask`2
+    name: IEditEntityMenuTask
+    href: Innova.Prism.Library.Menus.IEditEntityMenuTask-2.html
   - name: (
   - name: Of
   - name: " "
@@ -2626,53 +2626,53 @@ references:
   fullName: Innova.Prism.Library.Menus.Models.IShowMenuService<T, TResult>.InsertEntityMenuTask
   nameWithType.vb: IShowMenuService(Of T, TResult).InsertEntityMenuTask
   fullName.vb: Innova.Prism.Library.Menus.Models.IShowMenuService(Of T, TResult).InsertEntityMenuTask
-- uid: Innova.Prism.Library.Menus.InsertEntityMenuTask{{T}}
-  commentId: T:Innova.Prism.Library.Menus.InsertEntityMenuTask{`0}
+- uid: Innova.Prism.Library.Menus.IInsertEntityMenuTask{{T}}
+  commentId: T:Innova.Prism.Library.Menus.IInsertEntityMenuTask{`0}
   parent: Innova.Prism.Library.Menus
-  definition: Innova.Prism.Library.Menus.InsertEntityMenuTask`1
-  href: Innova.Prism.Library.Menus.InsertEntityMenuTask-1.html
-  name: InsertEntityMenuTask<T>
-  nameWithType: InsertEntityMenuTask<T>
-  fullName: Innova.Prism.Library.Menus.InsertEntityMenuTask<T>
-  nameWithType.vb: InsertEntityMenuTask(Of T)
-  fullName.vb: Innova.Prism.Library.Menus.InsertEntityMenuTask(Of T)
-  name.vb: InsertEntityMenuTask(Of T)
+  definition: Innova.Prism.Library.Menus.IInsertEntityMenuTask`1
+  href: Innova.Prism.Library.Menus.IInsertEntityMenuTask-1.html
+  name: IInsertEntityMenuTask<T>
+  nameWithType: IInsertEntityMenuTask<T>
+  fullName: Innova.Prism.Library.Menus.IInsertEntityMenuTask<T>
+  nameWithType.vb: IInsertEntityMenuTask(Of T)
+  fullName.vb: Innova.Prism.Library.Menus.IInsertEntityMenuTask(Of T)
+  name.vb: IInsertEntityMenuTask(Of T)
   spec.csharp:
-  - uid: Innova.Prism.Library.Menus.InsertEntityMenuTask`1
-    name: InsertEntityMenuTask
-    href: Innova.Prism.Library.Menus.InsertEntityMenuTask-1.html
+  - uid: Innova.Prism.Library.Menus.IInsertEntityMenuTask`1
+    name: IInsertEntityMenuTask
+    href: Innova.Prism.Library.Menus.IInsertEntityMenuTask-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: Innova.Prism.Library.Menus.InsertEntityMenuTask`1
-    name: InsertEntityMenuTask
-    href: Innova.Prism.Library.Menus.InsertEntityMenuTask-1.html
+  - uid: Innova.Prism.Library.Menus.IInsertEntityMenuTask`1
+    name: IInsertEntityMenuTask
+    href: Innova.Prism.Library.Menus.IInsertEntityMenuTask-1.html
   - name: (
   - name: Of
   - name: " "
   - name: T
   - name: )
-- uid: Innova.Prism.Library.Menus.InsertEntityMenuTask`1
-  commentId: T:Innova.Prism.Library.Menus.InsertEntityMenuTask`1
-  href: Innova.Prism.Library.Menus.InsertEntityMenuTask-1.html
-  name: InsertEntityMenuTask<T>
-  nameWithType: InsertEntityMenuTask<T>
-  fullName: Innova.Prism.Library.Menus.InsertEntityMenuTask<T>
-  nameWithType.vb: InsertEntityMenuTask(Of T)
-  fullName.vb: Innova.Prism.Library.Menus.InsertEntityMenuTask(Of T)
-  name.vb: InsertEntityMenuTask(Of T)
+- uid: Innova.Prism.Library.Menus.IInsertEntityMenuTask`1
+  commentId: T:Innova.Prism.Library.Menus.IInsertEntityMenuTask`1
+  href: Innova.Prism.Library.Menus.IInsertEntityMenuTask-1.html
+  name: IInsertEntityMenuTask<T>
+  nameWithType: IInsertEntityMenuTask<T>
+  fullName: Innova.Prism.Library.Menus.IInsertEntityMenuTask<T>
+  nameWithType.vb: IInsertEntityMenuTask(Of T)
+  fullName.vb: Innova.Prism.Library.Menus.IInsertEntityMenuTask(Of T)
+  name.vb: IInsertEntityMenuTask(Of T)
   spec.csharp:
-  - uid: Innova.Prism.Library.Menus.InsertEntityMenuTask`1
-    name: InsertEntityMenuTask
-    href: Innova.Prism.Library.Menus.InsertEntityMenuTask-1.html
+  - uid: Innova.Prism.Library.Menus.IInsertEntityMenuTask`1
+    name: IInsertEntityMenuTask
+    href: Innova.Prism.Library.Menus.IInsertEntityMenuTask-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: Innova.Prism.Library.Menus.InsertEntityMenuTask`1
-    name: InsertEntityMenuTask
-    href: Innova.Prism.Library.Menus.InsertEntityMenuTask-1.html
+  - uid: Innova.Prism.Library.Menus.IInsertEntityMenuTask`1
+    name: IInsertEntityMenuTask
+    href: Innova.Prism.Library.Menus.IInsertEntityMenuTask-1.html
   - name: (
   - name: Of
   - name: " "
@@ -2686,21 +2686,21 @@ references:
   fullName: Innova.Prism.Library.Menus.Models.IShowMenuService<T, TResult>.PrintEntityMenuTask
   nameWithType.vb: IShowMenuService(Of T, TResult).PrintEntityMenuTask
   fullName.vb: Innova.Prism.Library.Menus.Models.IShowMenuService(Of T, TResult).PrintEntityMenuTask
-- uid: Innova.Prism.Library.Menus.PrintEntityMenuTask{{T},{TResult}}
-  commentId: T:Innova.Prism.Library.Menus.PrintEntityMenuTask{`0,`1}
+- uid: Innova.Prism.Library.Menus.IPrintEntityMenuTask{{T},{TResult}}
+  commentId: T:Innova.Prism.Library.Menus.IPrintEntityMenuTask{`0,`1}
   parent: Innova.Prism.Library.Menus
-  definition: Innova.Prism.Library.Menus.PrintEntityMenuTask`2
-  href: Innova.Prism.Library.Menus.PrintEntityMenuTask-2.html
-  name: PrintEntityMenuTask<T, TResult>
-  nameWithType: PrintEntityMenuTask<T, TResult>
-  fullName: Innova.Prism.Library.Menus.PrintEntityMenuTask<T, TResult>
-  nameWithType.vb: PrintEntityMenuTask(Of T, TResult)
-  fullName.vb: Innova.Prism.Library.Menus.PrintEntityMenuTask(Of T, TResult)
-  name.vb: PrintEntityMenuTask(Of T, TResult)
+  definition: Innova.Prism.Library.Menus.IPrintEntityMenuTask`2
+  href: Innova.Prism.Library.Menus.IPrintEntityMenuTask-2.html
+  name: IPrintEntityMenuTask<T, TResult>
+  nameWithType: IPrintEntityMenuTask<T, TResult>
+  fullName: Innova.Prism.Library.Menus.IPrintEntityMenuTask<T, TResult>
+  nameWithType.vb: IPrintEntityMenuTask(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.IPrintEntityMenuTask(Of T, TResult)
+  name.vb: IPrintEntityMenuTask(Of T, TResult)
   spec.csharp:
-  - uid: Innova.Prism.Library.Menus.PrintEntityMenuTask`2
-    name: PrintEntityMenuTask
-    href: Innova.Prism.Library.Menus.PrintEntityMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IPrintEntityMenuTask`2
+    name: IPrintEntityMenuTask
+    href: Innova.Prism.Library.Menus.IPrintEntityMenuTask-2.html
   - name: <
   - name: T
   - name: ','
@@ -2708,9 +2708,9 @@ references:
   - name: TResult
   - name: '>'
   spec.vb:
-  - uid: Innova.Prism.Library.Menus.PrintEntityMenuTask`2
-    name: PrintEntityMenuTask
-    href: Innova.Prism.Library.Menus.PrintEntityMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IPrintEntityMenuTask`2
+    name: IPrintEntityMenuTask
+    href: Innova.Prism.Library.Menus.IPrintEntityMenuTask-2.html
   - name: (
   - name: Of
   - name: " "
@@ -2719,19 +2719,19 @@ references:
   - name: " "
   - name: TResult
   - name: )
-- uid: Innova.Prism.Library.Menus.PrintEntityMenuTask`2
-  commentId: T:Innova.Prism.Library.Menus.PrintEntityMenuTask`2
-  href: Innova.Prism.Library.Menus.PrintEntityMenuTask-2.html
-  name: PrintEntityMenuTask<T, TResult>
-  nameWithType: PrintEntityMenuTask<T, TResult>
-  fullName: Innova.Prism.Library.Menus.PrintEntityMenuTask<T, TResult>
-  nameWithType.vb: PrintEntityMenuTask(Of T, TResult)
-  fullName.vb: Innova.Prism.Library.Menus.PrintEntityMenuTask(Of T, TResult)
-  name.vb: PrintEntityMenuTask(Of T, TResult)
+- uid: Innova.Prism.Library.Menus.IPrintEntityMenuTask`2
+  commentId: T:Innova.Prism.Library.Menus.IPrintEntityMenuTask`2
+  href: Innova.Prism.Library.Menus.IPrintEntityMenuTask-2.html
+  name: IPrintEntityMenuTask<T, TResult>
+  nameWithType: IPrintEntityMenuTask<T, TResult>
+  fullName: Innova.Prism.Library.Menus.IPrintEntityMenuTask<T, TResult>
+  nameWithType.vb: IPrintEntityMenuTask(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.IPrintEntityMenuTask(Of T, TResult)
+  name.vb: IPrintEntityMenuTask(Of T, TResult)
   spec.csharp:
-  - uid: Innova.Prism.Library.Menus.PrintEntityMenuTask`2
-    name: PrintEntityMenuTask
-    href: Innova.Prism.Library.Menus.PrintEntityMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IPrintEntityMenuTask`2
+    name: IPrintEntityMenuTask
+    href: Innova.Prism.Library.Menus.IPrintEntityMenuTask-2.html
   - name: <
   - name: T
   - name: ','
@@ -2739,9 +2739,9 @@ references:
   - name: TResult
   - name: '>'
   spec.vb:
-  - uid: Innova.Prism.Library.Menus.PrintEntityMenuTask`2
-    name: PrintEntityMenuTask
-    href: Innova.Prism.Library.Menus.PrintEntityMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IPrintEntityMenuTask`2
+    name: IPrintEntityMenuTask
+    href: Innova.Prism.Library.Menus.IPrintEntityMenuTask-2.html
   - name: (
   - name: Of
   - name: " "
@@ -2758,21 +2758,21 @@ references:
   fullName: Innova.Prism.Library.Menus.Models.IShowMenuService<T, TResult>.ShowHistoryMenuTask
   nameWithType.vb: IShowMenuService(Of T, TResult).ShowHistoryMenuTask
   fullName.vb: Innova.Prism.Library.Menus.Models.IShowMenuService(Of T, TResult).ShowHistoryMenuTask
-- uid: Innova.Prism.Library.Menus.ShowHistoryMenuTask{{T},{TResult}}
-  commentId: T:Innova.Prism.Library.Menus.ShowHistoryMenuTask{`0,`1}
+- uid: Innova.Prism.Library.Menus.IShowHistoryMenuTask{{T},{TResult}}
+  commentId: T:Innova.Prism.Library.Menus.IShowHistoryMenuTask{`0,`1}
   parent: Innova.Prism.Library.Menus
-  definition: Innova.Prism.Library.Menus.ShowHistoryMenuTask`2
-  href: Innova.Prism.Library.Menus.ShowHistoryMenuTask-2.html
-  name: ShowHistoryMenuTask<T, TResult>
-  nameWithType: ShowHistoryMenuTask<T, TResult>
-  fullName: Innova.Prism.Library.Menus.ShowHistoryMenuTask<T, TResult>
-  nameWithType.vb: ShowHistoryMenuTask(Of T, TResult)
-  fullName.vb: Innova.Prism.Library.Menus.ShowHistoryMenuTask(Of T, TResult)
-  name.vb: ShowHistoryMenuTask(Of T, TResult)
+  definition: Innova.Prism.Library.Menus.IShowHistoryMenuTask`2
+  href: Innova.Prism.Library.Menus.IShowHistoryMenuTask-2.html
+  name: IShowHistoryMenuTask<T, TResult>
+  nameWithType: IShowHistoryMenuTask<T, TResult>
+  fullName: Innova.Prism.Library.Menus.IShowHistoryMenuTask<T, TResult>
+  nameWithType.vb: IShowHistoryMenuTask(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.IShowHistoryMenuTask(Of T, TResult)
+  name.vb: IShowHistoryMenuTask(Of T, TResult)
   spec.csharp:
-  - uid: Innova.Prism.Library.Menus.ShowHistoryMenuTask`2
-    name: ShowHistoryMenuTask
-    href: Innova.Prism.Library.Menus.ShowHistoryMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IShowHistoryMenuTask`2
+    name: IShowHistoryMenuTask
+    href: Innova.Prism.Library.Menus.IShowHistoryMenuTask-2.html
   - name: <
   - name: T
   - name: ','
@@ -2780,9 +2780,9 @@ references:
   - name: TResult
   - name: '>'
   spec.vb:
-  - uid: Innova.Prism.Library.Menus.ShowHistoryMenuTask`2
-    name: ShowHistoryMenuTask
-    href: Innova.Prism.Library.Menus.ShowHistoryMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IShowHistoryMenuTask`2
+    name: IShowHistoryMenuTask
+    href: Innova.Prism.Library.Menus.IShowHistoryMenuTask-2.html
   - name: (
   - name: Of
   - name: " "
@@ -2791,19 +2791,19 @@ references:
   - name: " "
   - name: TResult
   - name: )
-- uid: Innova.Prism.Library.Menus.ShowHistoryMenuTask`2
-  commentId: T:Innova.Prism.Library.Menus.ShowHistoryMenuTask`2
-  href: Innova.Prism.Library.Menus.ShowHistoryMenuTask-2.html
-  name: ShowHistoryMenuTask<T, TResult>
-  nameWithType: ShowHistoryMenuTask<T, TResult>
-  fullName: Innova.Prism.Library.Menus.ShowHistoryMenuTask<T, TResult>
-  nameWithType.vb: ShowHistoryMenuTask(Of T, TResult)
-  fullName.vb: Innova.Prism.Library.Menus.ShowHistoryMenuTask(Of T, TResult)
-  name.vb: ShowHistoryMenuTask(Of T, TResult)
+- uid: Innova.Prism.Library.Menus.IShowHistoryMenuTask`2
+  commentId: T:Innova.Prism.Library.Menus.IShowHistoryMenuTask`2
+  href: Innova.Prism.Library.Menus.IShowHistoryMenuTask-2.html
+  name: IShowHistoryMenuTask<T, TResult>
+  nameWithType: IShowHistoryMenuTask<T, TResult>
+  fullName: Innova.Prism.Library.Menus.IShowHistoryMenuTask<T, TResult>
+  nameWithType.vb: IShowHistoryMenuTask(Of T, TResult)
+  fullName.vb: Innova.Prism.Library.Menus.IShowHistoryMenuTask(Of T, TResult)
+  name.vb: IShowHistoryMenuTask(Of T, TResult)
   spec.csharp:
-  - uid: Innova.Prism.Library.Menus.ShowHistoryMenuTask`2
-    name: ShowHistoryMenuTask
-    href: Innova.Prism.Library.Menus.ShowHistoryMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IShowHistoryMenuTask`2
+    name: IShowHistoryMenuTask
+    href: Innova.Prism.Library.Menus.IShowHistoryMenuTask-2.html
   - name: <
   - name: T
   - name: ','
@@ -2811,9 +2811,9 @@ references:
   - name: TResult
   - name: '>'
   spec.vb:
-  - uid: Innova.Prism.Library.Menus.ShowHistoryMenuTask`2
-    name: ShowHistoryMenuTask
-    href: Innova.Prism.Library.Menus.ShowHistoryMenuTask-2.html
+  - uid: Innova.Prism.Library.Menus.IShowHistoryMenuTask`2
+    name: IShowHistoryMenuTask
+    href: Innova.Prism.Library.Menus.IShowHistoryMenuTask-2.html
   - name: (
   - name: Of
   - name: " "

@@ -6,9 +6,14 @@ items:
   parent: Innova.Data.Entity.Configuration
   children:
   - Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.String,System.String)
+  - Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(Microsoft.Data.SqlClient.SqlConnection,System.String,System.String)
+  - Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(System.Data.Common.DbConnection,Innova.Data.Entity.ISqlConnectionOption,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary})
+  - Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(System.Data.Common.DbConnection,System.String,System.String,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary})
   - Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserName(System.Data.IDbConnection,System.String)
   - Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserNameAsync(System.Data.IDbConnection,System.String)
   - Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.Data.SqlTypes.SqlBinary)
+  - Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync(Microsoft.Data.SqlClient.SqlConnection,System.Data.SqlTypes.SqlBinary)
+  - Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync(System.Data.Common.DbConnection,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary})
   langs:
   - csharp
   - vb
@@ -19,7 +24,7 @@ items:
   source:
     id: SqlConnectionExtensions
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity.Configuration
@@ -28,6 +33,111 @@ items:
     content.vb: Public Module SqlConnectionExtensions
   inheritance:
   - System.Object
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(System.Data.Common.DbConnection,Innova.Data.Entity.ISqlConnectionOption,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary})
+  commentId: M:Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(System.Data.Common.DbConnection,Innova.Data.Entity.ISqlConnectionOption,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary})
+  id: SetApplicationRoleAsync(System.Data.Common.DbConnection,Innova.Data.Entity.ISqlConnectionOption,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary})
+  isExtensionMethod: true
+  parent: Innova.Data.Entity.Configuration.SqlConnectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetApplicationRoleAsync(DbConnection, ISqlConnectionOption, ConcurrentDictionary<Guid, SqlBinary>)
+  nameWithType: SqlConnectionExtensions.SetApplicationRoleAsync(DbConnection, ISqlConnectionOption, ConcurrentDictionary<Guid, SqlBinary>)
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(System.Data.Common.DbConnection, Innova.Data.Entity.ISqlConnectionOption, System.Collections.Concurrent.ConcurrentDictionary<System.Guid, System.Data.SqlTypes.SqlBinary>)
+  type: Method
+  source:
+    id: SetApplicationRoleAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
+    startLine: 14
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  syntax:
+    content: public static Task SetApplicationRoleAsync(this DbConnection connection, ISqlConnectionOption sqlConnectionOption, ConcurrentDictionary<Guid, SqlBinary> conns)
+    parameters:
+    - id: connection
+      type: System.Data.Common.DbConnection
+    - id: sqlConnectionOption
+      type: Innova.Data.Entity.ISqlConnectionOption
+    - id: conns
+      type: System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function SetApplicationRoleAsync(connection As DbConnection, sqlConnectionOption As ISqlConnectionOption, conns As ConcurrentDictionary(Of Guid, SqlBinary)) As Task
+  overload: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync*
+  nameWithType.vb: SqlConnectionExtensions.SetApplicationRoleAsync(DbConnection, ISqlConnectionOption, ConcurrentDictionary(Of Guid, SqlBinary))
+  fullName.vb: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(System.Data.Common.DbConnection, Innova.Data.Entity.ISqlConnectionOption, System.Collections.Concurrent.ConcurrentDictionary(Of System.Guid, System.Data.SqlTypes.SqlBinary))
+  name.vb: SetApplicationRoleAsync(DbConnection, ISqlConnectionOption, ConcurrentDictionary(Of Guid, SqlBinary))
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(System.Data.Common.DbConnection,System.String,System.String,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary})
+  commentId: M:Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(System.Data.Common.DbConnection,System.String,System.String,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary})
+  id: SetApplicationRoleAsync(System.Data.Common.DbConnection,System.String,System.String,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary})
+  isExtensionMethod: true
+  parent: Innova.Data.Entity.Configuration.SqlConnectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetApplicationRoleAsync(DbConnection, string, string, ConcurrentDictionary<Guid, SqlBinary>)
+  nameWithType: SqlConnectionExtensions.SetApplicationRoleAsync(DbConnection, string, string, ConcurrentDictionary<Guid, SqlBinary>)
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(System.Data.Common.DbConnection, string, string, System.Collections.Concurrent.ConcurrentDictionary<System.Guid, System.Data.SqlTypes.SqlBinary>)
+  type: Method
+  source:
+    id: SetApplicationRoleAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
+    startLine: 19
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  syntax:
+    content: public static Task SetApplicationRoleAsync(this DbConnection connection, string roleName, string password, ConcurrentDictionary<Guid, SqlBinary> conns)
+    parameters:
+    - id: connection
+      type: System.Data.Common.DbConnection
+    - id: roleName
+      type: System.String
+    - id: password
+      type: System.String
+    - id: conns
+      type: System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function SetApplicationRoleAsync(connection As DbConnection, roleName As String, password As String, conns As ConcurrentDictionary(Of Guid, SqlBinary)) As Task
+  overload: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync*
+  nameWithType.vb: SqlConnectionExtensions.SetApplicationRoleAsync(DbConnection, String, String, ConcurrentDictionary(Of Guid, SqlBinary))
+  fullName.vb: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(System.Data.Common.DbConnection, String, String, System.Collections.Concurrent.ConcurrentDictionary(Of System.Guid, System.Data.SqlTypes.SqlBinary))
+  name.vb: SetApplicationRoleAsync(DbConnection, String, String, ConcurrentDictionary(Of Guid, SqlBinary))
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync(System.Data.Common.DbConnection,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary})
+  commentId: M:Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync(System.Data.Common.DbConnection,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary})
+  id: UnsetApplicationRoleAsync(System.Data.Common.DbConnection,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary})
+  isExtensionMethod: true
+  parent: Innova.Data.Entity.Configuration.SqlConnectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: UnsetApplicationRoleAsync(DbConnection, ConcurrentDictionary<Guid, SqlBinary>)
+  nameWithType: SqlConnectionExtensions.UnsetApplicationRoleAsync(DbConnection, ConcurrentDictionary<Guid, SqlBinary>)
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync(System.Data.Common.DbConnection, System.Collections.Concurrent.ConcurrentDictionary<System.Guid, System.Data.SqlTypes.SqlBinary>)
+  type: Method
+  source:
+    id: UnsetApplicationRoleAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
+    startLine: 35
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  syntax:
+    content: public static Task UnsetApplicationRoleAsync(this DbConnection connection, ConcurrentDictionary<Guid, SqlBinary> conns)
+    parameters:
+    - id: connection
+      type: System.Data.Common.DbConnection
+    - id: conns
+      type: System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function UnsetApplicationRoleAsync(connection As DbConnection, conns As ConcurrentDictionary(Of Guid, SqlBinary)) As Task
+  overload: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync*
+  nameWithType.vb: SqlConnectionExtensions.UnsetApplicationRoleAsync(DbConnection, ConcurrentDictionary(Of Guid, SqlBinary))
+  fullName.vb: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync(System.Data.Common.DbConnection, System.Collections.Concurrent.ConcurrentDictionary(Of System.Guid, System.Data.SqlTypes.SqlBinary))
+  name.vb: UnsetApplicationRoleAsync(DbConnection, ConcurrentDictionary(Of Guid, SqlBinary))
 - uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.String,System.String)
   commentId: M:Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.String,System.String)
   id: SetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.String,System.String)
@@ -43,7 +153,7 @@ items:
   source:
     id: SetApplicationRole
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
-    startLine: 17
+    startLine: 61
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity.Configuration
@@ -69,6 +179,41 @@ items:
   nameWithType.vb: SqlConnectionExtensions.SetApplicationRole(SqlConnection, String, String)
   fullName.vb: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole(Microsoft.Data.SqlClient.SqlConnection, String, String)
   name.vb: SetApplicationRole(SqlConnection, String, String)
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(Microsoft.Data.SqlClient.SqlConnection,System.String,System.String)
+  commentId: M:Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(Microsoft.Data.SqlClient.SqlConnection,System.String,System.String)
+  id: SetApplicationRoleAsync(Microsoft.Data.SqlClient.SqlConnection,System.String,System.String)
+  isExtensionMethod: true
+  parent: Innova.Data.Entity.Configuration.SqlConnectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetApplicationRoleAsync(SqlConnection, string, string)
+  nameWithType: SqlConnectionExtensions.SetApplicationRoleAsync(SqlConnection, string, string)
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(Microsoft.Data.SqlClient.SqlConnection, string, string)
+  type: Method
+  source:
+    id: SetApplicationRoleAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
+    startLine: 83
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  syntax:
+    content: public static Task<SqlBinary> SetApplicationRoleAsync(this SqlConnection connection, string roleName, string password)
+    parameters:
+    - id: connection
+      type: Microsoft.Data.SqlClient.SqlConnection
+    - id: roleName
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Data.SqlTypes.SqlBinary}
+    content.vb: Public Shared Function SetApplicationRoleAsync(connection As SqlConnection, roleName As String, password As String) As Task(Of SqlBinary)
+  overload: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync*
+  nameWithType.vb: SqlConnectionExtensions.SetApplicationRoleAsync(SqlConnection, String, String)
+  fullName.vb: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync(Microsoft.Data.SqlClient.SqlConnection, String, String)
+  name.vb: SetApplicationRoleAsync(SqlConnection, String, String)
 - uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.Data.SqlTypes.SqlBinary)
   commentId: M:Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.Data.SqlTypes.SqlBinary)
   id: UnsetApplicationRole(Microsoft.Data.SqlClient.SqlConnection,System.Data.SqlTypes.SqlBinary)
@@ -84,7 +229,7 @@ items:
   source:
     id: UnsetApplicationRole
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
-    startLine: 44
+    startLine: 110
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity.Configuration
@@ -101,6 +246,40 @@ items:
       description: The cookie value as a SqlBinary.
     content.vb: Public Shared Sub UnsetApplicationRole(connection As SqlConnection, cookie As SqlBinary)
   overload: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole*
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync(Microsoft.Data.SqlClient.SqlConnection,System.Data.SqlTypes.SqlBinary)
+  commentId: M:Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync(Microsoft.Data.SqlClient.SqlConnection,System.Data.SqlTypes.SqlBinary)
+  id: UnsetApplicationRoleAsync(Microsoft.Data.SqlClient.SqlConnection,System.Data.SqlTypes.SqlBinary)
+  isExtensionMethod: true
+  parent: Innova.Data.Entity.Configuration.SqlConnectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: UnsetApplicationRoleAsync(SqlConnection, SqlBinary)
+  nameWithType: SqlConnectionExtensions.UnsetApplicationRoleAsync(SqlConnection, SqlBinary)
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync(Microsoft.Data.SqlClient.SqlConnection, System.Data.SqlTypes.SqlBinary)
+  type: Method
+  source:
+    id: UnsetApplicationRoleAsync
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
+    startLine: 127
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Entity.Configuration
+  summary: Unsets the application role identified by cookie on the connection async.
+  example: []
+  syntax:
+    content: public static Task UnsetApplicationRoleAsync(this SqlConnection connection, SqlBinary cookie)
+    parameters:
+    - id: connection
+      type: Microsoft.Data.SqlClient.SqlConnection
+      description: The connection.
+    - id: cookie
+      type: System.Data.SqlTypes.SqlBinary
+      description: The cookie value as a SqlBinary.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function UnsetApplicationRoleAsync(connection As SqlConnection, cookie As SqlBinary) As Task
+  overload: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync*
 - uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserName(System.Data.IDbConnection,System.String)
   commentId: M:Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserName(System.Data.IDbConnection,System.String)
   id: SetContextUserName(System.Data.IDbConnection,System.String)
@@ -116,7 +295,7 @@ items:
   source:
     id: SetContextUserName
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
-    startLine: 61
+    startLine: 145
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity.Configuration
@@ -151,7 +330,7 @@ items:
   source:
     id: SetContextUserNameAsync
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\Configuration\SqlConnectionExtensions.cs
-    startLine: 79
+    startLine: 163
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity.Configuration
@@ -231,6 +410,274 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync*
+  commentId: Overload:Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync
+  href: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync.html#Innova_Data_Entity_Configuration_SqlConnectionExtensions_SetApplicationRoleAsync_System_Data_Common_DbConnection_Innova_Data_Entity_ISqlConnectionOption_System_Collections_Concurrent_ConcurrentDictionary_System_Guid_System_Data_SqlTypes_SqlBinary__
+  name: SetApplicationRoleAsync
+  nameWithType: SqlConnectionExtensions.SetApplicationRoleAsync
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRoleAsync
+- uid: System.Data.Common.DbConnection
+  commentId: T:System.Data.Common.DbConnection
+  parent: System.Data.Common
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection
+  name: DbConnection
+  nameWithType: DbConnection
+  fullName: System.Data.Common.DbConnection
+- uid: Innova.Data.Entity.ISqlConnectionOption
+  commentId: T:Innova.Data.Entity.ISqlConnectionOption
+  parent: Innova.Data.Entity
+  href: Innova.Data.Entity.ISqlConnectionOption.html
+  name: ISqlConnectionOption
+  nameWithType: ISqlConnectionOption
+  fullName: Innova.Data.Entity.ISqlConnectionOption
+- uid: System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary}
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Data.SqlTypes.SqlBinary}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.ConcurrentDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<Guid, SqlBinary>
+  nameWithType: ConcurrentDictionary<Guid, SqlBinary>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<System.Guid, System.Data.SqlTypes.SqlBinary>
+  nameWithType.vb: ConcurrentDictionary(Of Guid, SqlBinary)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of System.Guid, System.Data.SqlTypes.SqlBinary)
+  name.vb: ConcurrentDictionary(Of Guid, SqlBinary)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.Data.SqlTypes.SqlBinary
+    name: SqlBinary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.sqltypes.sqlbinary
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.Data.SqlTypes.SqlBinary
+    name: SqlBinary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.sqltypes.sqlbinary
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Data.Common
+  commentId: N:System.Data.Common
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Data.Common
+  nameWithType: System.Data.Common
+  fullName: System.Data.Common
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+  - name: .
+  - uid: System.Data.Common
+    name: Common
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+  - name: .
+  - uid: System.Data.Common
+    name: Common
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.common
+- uid: Innova.Data.Entity
+  commentId: N:Innova.Data.Entity
+  href: Innova.html
+  name: Innova.Data.Entity
+  nameWithType: Innova.Data.Entity
+  fullName: Innova.Data.Entity
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Data
+    name: Data
+    href: Innova.Data.html
+  - name: .
+  - uid: Innova.Data.Entity
+    name: Entity
+    href: Innova.Data.Entity.html
+- uid: System.Collections.Concurrent.ConcurrentDictionary`2
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<TKey, TValue>
+  nameWithType: ConcurrentDictionary<TKey, TValue>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>
+  nameWithType.vb: ConcurrentDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of TKey, TValue)
+  name.vb: ConcurrentDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Concurrent
+  commentId: N:System.Collections.Concurrent
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Concurrent
+  nameWithType: System.Collections.Concurrent
+  fullName: System.Collections.Concurrent
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync*
+  commentId: Overload:Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync
+  href: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync.html#Innova_Data_Entity_Configuration_SqlConnectionExtensions_UnsetApplicationRoleAsync_System_Data_Common_DbConnection_System_Collections_Concurrent_ConcurrentDictionary_System_Guid_System_Data_SqlTypes_SqlBinary__
+  name: UnsetApplicationRoleAsync
+  nameWithType: SqlConnectionExtensions.UnsetApplicationRoleAsync
+  fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRoleAsync
 - uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole*
   commentId: Overload:Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole
   href: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetApplicationRole.html#Innova_Data_Entity_Configuration_SqlConnectionExtensions_SetApplicationRole_Microsoft_Data_SqlClient_SqlConnection_System_String_System_String_
@@ -245,17 +692,6 @@ references:
   name: SqlConnection
   nameWithType: SqlConnection
   fullName: Microsoft.Data.SqlClient.SqlConnection
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
 - uid: System.Data.SqlTypes.SqlBinary
   commentId: T:System.Data.SqlTypes.SqlBinary
   parent: System.Data.SqlTypes
@@ -338,6 +774,69 @@ references:
     name: SqlTypes
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.data.sqltypes
+- uid: System.Threading.Tasks.Task{System.Data.SqlTypes.SqlBinary}
+  commentId: T:System.Threading.Tasks.Task{System.Data.SqlTypes.SqlBinary}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<SqlBinary>
+  nameWithType: Task<SqlBinary>
+  fullName: System.Threading.Tasks.Task<System.Data.SqlTypes.SqlBinary>
+  nameWithType.vb: Task(Of SqlBinary)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Data.SqlTypes.SqlBinary)
+  name.vb: Task(Of SqlBinary)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Data.SqlTypes.SqlBinary
+    name: SqlBinary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.sqltypes.sqlbinary
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Data.SqlTypes.SqlBinary
+    name: SqlBinary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data.sqltypes.sqlbinary
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
 - uid: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole*
   commentId: Overload:Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole
   href: Innova.Data.Entity.Configuration.SqlConnectionExtensions.UnsetApplicationRole.html#Innova_Data_Entity_Configuration_SqlConnectionExtensions_UnsetApplicationRole_Microsoft_Data_SqlClient_SqlConnection_System_Data_SqlTypes_SqlBinary_
@@ -391,49 +890,4 @@ references:
   name: SetContextUserNameAsync
   nameWithType: SqlConnectionExtensions.SetContextUserNameAsync
   fullName: Innova.Data.Entity.Configuration.SqlConnectionExtensions.SetContextUserNameAsync
-- uid: System.Threading.Tasks.Task
-  commentId: T:System.Threading.Tasks.Task
-  parent: System.Threading.Tasks
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
-  name: Task
-  nameWithType: Task
-  fullName: System.Threading.Tasks.Task
-- uid: System.Threading.Tasks
-  commentId: N:System.Threading.Tasks
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Threading.Tasks
-  nameWithType: System.Threading.Tasks
-  fullName: System.Threading.Tasks
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  - name: .
-  - uid: System.Threading.Tasks
-    name: Tasks
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  - name: .
-  - uid: System.Threading.Tasks
-    name: Tasks
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 memberLayout: SeparatePages

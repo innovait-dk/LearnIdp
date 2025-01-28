@@ -7,6 +7,7 @@ items:
   children:
   - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.#ctor(Innova.Prism.Library.Services.IWindowDialogService,Prism.Events.IEventAggregator)
   - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.AfterLoadMainEntity
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.ControlVisibility
   - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.HandleException(System.Exception)
   - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.LoadData
   - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.LoadLookup
@@ -15,9 +16,12 @@ items:
   - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.OnDialogOpened(Prism.Services.Dialogs.IDialogParameters)
   - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.OnMainEntityChanged
   - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.RaiseCanExecuteChanged
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetControlVisibility(System.String,System.Boolean)
   - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetFocusOnFirstItem
   - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetFocusOnFirstItemRequested
   - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetHeader(System.String)
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  - Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetVisibility(System.String,System.Boolean)
   langs:
   - csharp
   - vb
@@ -28,7 +32,7 @@ items:
   source:
     id: BaseDataViewModelDialog
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -87,6 +91,33 @@ items:
   nameWithType.vb: BaseDataViewModelDialog(Of T, TResult)
   fullName.vb: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog(Of T, TResult)
   name.vb: BaseDataViewModelDialog(Of T, TResult)
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.ControlVisibility
+  commentId: P:Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.ControlVisibility
+  id: ControlVisibility
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2
+  langs:
+  - csharp
+  - vb
+  name: ControlVisibility
+  nameWithType: BaseDataViewModelDialog<T, TResult>.ControlVisibility
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog<T, TResult>.ControlVisibility
+  type: Property
+  source:
+    id: ControlVisibility
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
+    startLine: 30
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: public Dictionary<string, bool> ControlVisibility { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Boolean}
+    content.vb: Public ReadOnly Property ControlVisibility As Dictionary(Of String, Boolean)
+  overload: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.ControlVisibility*
+  nameWithType.vb: BaseDataViewModelDialog(Of T, TResult).ControlVisibility
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog(Of T, TResult).ControlVisibility
 - uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetFocusOnFirstItemRequested
   commentId: E:Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetFocusOnFirstItemRequested
   id: SetFocusOnFirstItemRequested
@@ -101,7 +132,7 @@ items:
   source:
     id: SetFocusOnFirstItemRequested
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
-    startLine: 29
+    startLine: 32
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -130,7 +161,7 @@ items:
   source:
     id: MainEntity
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
-    startLine: 33
+    startLine: 36
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -160,7 +191,7 @@ items:
   source:
     id: .ctor
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
-    startLine: 53
+    startLine: 56
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -190,7 +221,7 @@ items:
   source:
     id: LoadData
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
-    startLine: 64
+    startLine: 67
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -216,7 +247,7 @@ items:
   source:
     id: LoadLookup
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
-    startLine: 87
+    startLine: 90
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -242,7 +273,7 @@ items:
   source:
     id: SetFocusOnFirstItem
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
-    startLine: 92
+    startLine: 95
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -266,7 +297,7 @@ items:
   source:
     id: AfterLoadMainEntity
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
-    startLine: 107
+    startLine: 110
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -292,7 +323,7 @@ items:
   source:
     id: RaiseCanExecuteChanged
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
-    startLine: 117
+    startLine: 120
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -316,7 +347,7 @@ items:
   source:
     id: OnMainEntityChanged
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
-    startLine: 121
+    startLine: 124
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -340,7 +371,7 @@ items:
   source:
     id: HandleException
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
-    startLine: 126
+    startLine: 129
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -369,7 +400,7 @@ items:
   source:
     id: SetHeader
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
-    startLine: 144
+    startLine: 147
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -399,7 +430,7 @@ items:
   source:
     id: LoadMainEntity
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
-    startLine: 175
+    startLine: 178
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -425,7 +456,7 @@ items:
   source:
     id: OnDialogOpened
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
-    startLine: 181
+    startLine: 184
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.BaseViewModels
@@ -442,6 +473,96 @@ items:
   overload: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.OnDialogOpened*
   nameWithType.vb: BaseDataViewModelDialog(Of T, TResult).OnDialogOpened(IDialogParameters)
   fullName.vb: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog(Of T, TResult).OnDialogOpened(Prism.Services.Dialogs.IDialogParameters)
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetControlVisibility(System.String,System.Boolean)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetControlVisibility(System.String,System.Boolean)
+  id: SetControlVisibility(System.String,System.Boolean)
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2
+  langs:
+  - csharp
+  - vb
+  name: SetControlVisibility(string, bool)
+  nameWithType: BaseDataViewModelDialog<T, TResult>.SetControlVisibility(string, bool)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog<T, TResult>.SetControlVisibility(string, bool)
+  type: Method
+  source:
+    id: SetControlVisibility
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
+    startLine: 198
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected void SetControlVisibility(string fullControlName, bool isVisible)
+    parameters:
+    - id: fullControlName
+      type: System.String
+    - id: isVisible
+      type: System.Boolean
+    content.vb: Protected Sub SetControlVisibility(fullControlName As String, isVisible As Boolean)
+  overload: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetControlVisibility*
+  nameWithType.vb: BaseDataViewModelDialog(Of T, TResult).SetControlVisibility(String, Boolean)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog(Of T, TResult).SetControlVisibility(String, Boolean)
+  name.vb: SetControlVisibility(String, Boolean)
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetVisibility(System.String,System.Boolean)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetVisibility(System.String,System.Boolean)
+  id: SetVisibility(System.String,System.Boolean)
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2
+  langs:
+  - csharp
+  - vb
+  name: SetVisibility(string, bool)
+  nameWithType: BaseDataViewModelDialog<T, TResult>.SetVisibility(string, bool)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog<T, TResult>.SetVisibility(string, bool)
+  type: Method
+  source:
+    id: SetVisibility
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
+    startLine: 215
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected void SetVisibility(string entityPropertyName, bool isVisible)
+    parameters:
+    - id: entityPropertyName
+      type: System.String
+    - id: isVisible
+      type: System.Boolean
+    content.vb: Protected Sub SetVisibility(entityPropertyName As String, isVisible As Boolean)
+  overload: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetVisibility*
+  nameWithType.vb: BaseDataViewModelDialog(Of T, TResult).SetVisibility(String, Boolean)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog(Of T, TResult).SetVisibility(String, Boolean)
+  name.vb: SetVisibility(String, Boolean)
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  commentId: M:Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  id: SetVisibility(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  parent: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2
+  langs:
+  - csharp
+  - vb
+  name: SetVisibility(Expression<Func<T, object>>, bool)
+  nameWithType: BaseDataViewModelDialog<T, TResult>.SetVisibility(Expression<Func<T, object>>, bool)
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog<T, TResult>.SetVisibility(System.Linq.Expressions.Expression<System.Func<T, object>>, bool)
+  type: Method
+  source:
+    id: SetVisibility
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\BaseViewModels\BaseDataViewModelDialog.cs
+    startLine: 222
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.BaseViewModels
+  syntax:
+    content: protected void SetVisibility(Expression<Func<T, object>> propertyExpression, bool isVisible)
+    parameters:
+    - id: propertyExpression
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Object}}
+    - id: isVisible
+      type: System.Boolean
+    content.vb: Protected Sub SetVisibility(propertyExpression As Expression(Of Func(Of T, Object)), isVisible As Boolean)
+  overload: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetVisibility*
+  nameWithType.vb: BaseDataViewModelDialog(Of T, TResult).SetVisibility(Expression(Of Func(Of T, Object)), Boolean)
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog(Of T, TResult).SetVisibility(System.Linq.Expressions.Expression(Of System.Func(Of T, Object)), Boolean)
+  name.vb: SetVisibility(Expression(Of Func(Of T, Object)), Boolean)
 references:
 - uid: Innova.Prism.Library.BaseViewModels
   commentId: N:Innova.Prism.Library.BaseViewModels
@@ -1384,6 +1505,132 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.ControlVisibility*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.ControlVisibility
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog-2.ControlVisibility.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelDialog_2_ControlVisibility
+  name: ControlVisibility
+  nameWithType: BaseDataViewModelDialog<T, TResult>.ControlVisibility
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog<T, TResult>.ControlVisibility
+  nameWithType.vb: BaseDataViewModelDialog(Of T, TResult).ControlVisibility
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog(Of T, TResult).ControlVisibility
+- uid: System.Collections.Generic.Dictionary{System.String,System.Boolean}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Boolean}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, bool>
+  nameWithType: Dictionary<string, bool>
+  fullName: System.Collections.Generic.Dictionary<string, bool>
+  nameWithType.vb: Dictionary(Of String, Boolean)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Boolean)
+  name.vb: Dictionary(Of String, Boolean)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Innova.Prism.Infrastructure.Interfaces.ISupportSetFocusOnFirstItem.SetFocusOnFirstItemRequested
   commentId: E:Innova.Prism.Infrastructure.Interfaces.ISupportSetFocusOnFirstItem.SetFocusOnFirstItemRequested
   parent: Innova.Prism.Infrastructure.Interfaces.ISupportSetFocusOnFirstItem
@@ -1753,4 +2000,151 @@ references:
   name: IDialogParameters
   nameWithType: IDialogParameters
   fullName: Prism.Services.Dialogs.IDialogParameters
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetControlVisibility*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetControlVisibility
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog-2.SetControlVisibility.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelDialog_2_SetControlVisibility_System_String_System_Boolean_
+  name: SetControlVisibility
+  nameWithType: BaseDataViewModelDialog<T, TResult>.SetControlVisibility
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog<T, TResult>.SetControlVisibility
+  nameWithType.vb: BaseDataViewModelDialog(Of T, TResult).SetControlVisibility
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog(Of T, TResult).SetControlVisibility
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetVisibility*
+  commentId: Overload:Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog`2.SetVisibility
+  href: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog-2.SetVisibility.html#Innova_Prism_Library_BaseViewModels_BaseDataViewModelDialog_2_SetVisibility_System_String_System_Boolean_
+  name: SetVisibility
+  nameWithType: BaseDataViewModelDialog<T, TResult>.SetVisibility
+  fullName: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog<T, TResult>.SetVisibility
+  nameWithType.vb: BaseDataViewModelDialog(Of T, TResult).SetVisibility
+  fullName.vb: Innova.Prism.Library.BaseViewModels.BaseDataViewModelDialog(Of T, TResult).SetVisibility
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Object}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{`0,System.Object}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, object>>
+  nameWithType: Expression<Func<T, object>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, object>>
+  nameWithType.vb: Expression(Of Func(Of T, Object))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Object))
+  name.vb: Expression(Of Func(Of T, Object))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
 memberLayout: SeparatePages

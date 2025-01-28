@@ -7,6 +7,7 @@ items:
   children:
   - Innova.Data.IDbContextFactory`1.CreateDbContext
   - Innova.Data.IDbContextFactory`1.CreateDbContextAsync(System.Threading.CancellationToken)
+  - Innova.Data.IDbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging
   langs:
   - csharp
   - vb
@@ -61,6 +62,35 @@ items:
   overload: Innova.Data.IDbContextFactory`1.CreateDbContext*
   nameWithType.vb: IDbContextFactory(Of TContext).CreateDbContext()
   fullName.vb: Innova.Data.IDbContextFactory(Of TContext).CreateDbContext()
+- uid: Innova.Data.IDbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging
+  commentId: M:Innova.Data.IDbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging
+  id: CreateDbContextWithNoSensitiveDataLogging
+  parent: Innova.Data.IDbContextFactory`1
+  langs:
+  - csharp
+  - vb
+  name: CreateDbContextWithNoSensitiveDataLogging()
+  nameWithType: IDbContextFactory<TContext>.CreateDbContextWithNoSensitiveDataLogging()
+  fullName: Innova.Data.IDbContextFactory<TContext>.CreateDbContextWithNoSensitiveDataLogging()
+  type: Method
+  source:
+    id: CreateDbContextWithNoSensitiveDataLogging
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\IDbContextFactory.cs
+    startLine: 25
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  summary: Creates a new instance of the database context with no sensitive data logging.
+  example: []
+  syntax:
+    content: TContext CreateDbContextWithNoSensitiveDataLogging()
+    return:
+      type: '{TContext}'
+      description: The created database context with no sensitive data logging.
+    content.vb: Function CreateDbContextWithNoSensitiveDataLogging() As TContext
+  overload: Innova.Data.IDbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging*
+  nameWithType.vb: IDbContextFactory(Of TContext).CreateDbContextWithNoSensitiveDataLogging()
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext).CreateDbContextWithNoSensitiveDataLogging()
 - uid: Innova.Data.IDbContextFactory`1.CreateDbContextAsync(System.Threading.CancellationToken)
   commentId: M:Innova.Data.IDbContextFactory`1.CreateDbContextAsync(System.Threading.CancellationToken)
   id: CreateDbContextAsync(System.Threading.CancellationToken)
@@ -75,7 +105,7 @@ items:
   source:
     id: CreateDbContextAsync
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\IDbContextFactory.cs
-    startLine: 26
+    startLine: 32
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -135,6 +165,14 @@ references:
   name: TContext
   nameWithType: TContext
   fullName: TContext
+- uid: Innova.Data.IDbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging*
+  commentId: Overload:Innova.Data.IDbContextFactory`1.CreateDbContextWithNoSensitiveDataLogging
+  href: Innova.Data.IDbContextFactory-1.CreateDbContextWithNoSensitiveDataLogging.html#Innova_Data_IDbContextFactory_1_CreateDbContextWithNoSensitiveDataLogging
+  name: CreateDbContextWithNoSensitiveDataLogging
+  nameWithType: IDbContextFactory<TContext>.CreateDbContextWithNoSensitiveDataLogging
+  fullName: Innova.Data.IDbContextFactory<TContext>.CreateDbContextWithNoSensitiveDataLogging
+  nameWithType.vb: IDbContextFactory(Of TContext).CreateDbContextWithNoSensitiveDataLogging
+  fullName.vb: Innova.Data.IDbContextFactory(Of TContext).CreateDbContextWithNoSensitiveDataLogging
 - uid: Innova.Data.IDbContextFactory`1.CreateDbContextAsync*
   commentId: Overload:Innova.Data.IDbContextFactory`1.CreateDbContextAsync
   href: Innova.Data.IDbContextFactory-1.CreateDbContextAsync.html#Innova_Data_IDbContextFactory_1_CreateDbContextAsync_System_Threading_CancellationToken_
