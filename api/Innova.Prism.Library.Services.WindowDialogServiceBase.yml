@@ -18,6 +18,7 @@ items:
   - Innova.Prism.Library.Services.WindowDialogServiceBase.GetWindowsKey(System.Windows.DependencyObject)
   - Innova.Prism.Library.Services.WindowDialogServiceBase.IsLikelyWpfUIThread
   - Innova.Prism.Library.Services.WindowDialogServiceBase.IsWindowOpen(System.String)
+  - Innova.Prism.Library.Services.WindowDialogServiceBase.OpenActiveDirectoryPickerDialog(Innova.Prism.Library.Security.DirectoryObjectDialogOptions,System.String[])
   - Innova.Prism.Library.Services.WindowDialogServiceBase.OpenFileDialog(System.String)
   - Innova.Prism.Library.Services.WindowDialogServiceBase.OpenFileDialogMultiSelect(System.String)
   - Innova.Prism.Library.Services.WindowDialogServiceBase.OpenFolderBrowserDialog(System.String,System.Environment.SpecialFolder)
@@ -41,7 +42,7 @@ items:
   source:
     id: WindowDialogServiceBase
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 21
+    startLine: 24
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -62,6 +63,7 @@ items:
   - Prism.Services.Dialogs.DialogService.ShowDialogWindow(Prism.Services.Dialogs.IDialogWindow,System.Boolean)
   - Prism.Services.Dialogs.DialogService.ConfigureDialogWindowEvents(Prism.Services.Dialogs.IDialogWindow,System.Action{Prism.Services.Dialogs.IDialogResult})
   extensionMethods:
+  - Innova.Prism.Library.Services.IWindowDialogService.Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(System.String[])
   - Innova.Prism.Library.Services.IWindowDialogService.Innova.Prism.Library.Services.IWindowDialogServiceExtensions.Show(System.String,Innova.Prism.Library.Services.IBaseDialogParameter)
   - Innova.Prism.Library.Services.IWindowDialogService.Innova.Prism.Library.Services.IWindowDialogServiceExtensions.Show(System.String,Innova.Prism.Library.Services.IBaseDialogParameter,System.Action{Prism.Services.Dialogs.IDialogResult})
   - Innova.Prism.Library.Services.IWindowDialogService.Innova.Prism.Library.Services.IWindowDialogServiceExtensions.ShowDialog(System.String,Innova.Prism.Library.Services.IBaseDialogParameter)
@@ -82,7 +84,7 @@ items:
   source:
     id: .ctor
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 32
+    startLine: 35
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -112,7 +114,7 @@ items:
   source:
     id: GetWindowsKey
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 42
+    startLine: 45
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -139,7 +141,7 @@ items:
   source:
     id: SetWindowsKey
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 47
+    startLine: 50
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -169,7 +171,7 @@ items:
   source:
     id: WindowsKeyProperty
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 53
+    startLine: 56
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -192,7 +194,7 @@ items:
   source:
     id: PrintVisual
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 62
+    startLine: 65
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -222,7 +224,7 @@ items:
   source:
     id: IsWindowOpen
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 68
+    startLine: 71
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -258,7 +260,7 @@ items:
   source:
     id: IsLikelyWpfUIThread
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 73
+    startLine: 76
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -282,7 +284,7 @@ items:
   source:
     id: CloseDialog
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 83
+    startLine: 86
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -315,7 +317,7 @@ items:
   source:
     id: OpenFileDialogMultiSelect
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 110
+    startLine: 113
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -351,7 +353,7 @@ items:
   source:
     id: OpenFileDialog
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 134
+    startLine: 137
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -387,7 +389,7 @@ items:
   source:
     id: SaveFileDialog
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 158
+    startLine: 161
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -426,7 +428,7 @@ items:
   source:
     id: OpenFolderBrowserDialog
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 190
+    startLine: 193
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -465,7 +467,7 @@ items:
   source:
     id: ConfigureDialogWindowContent
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 238
+    startLine: 241
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -503,7 +505,7 @@ items:
   source:
     id: ConfigureDialogWindowProperties
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 265
+    startLine: 268
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -538,7 +540,7 @@ items:
   source:
     id: CreateDialogWindow
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 279
+    startLine: 282
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -559,6 +561,44 @@ items:
   nameWithType.vb: WindowDialogServiceBase.CreateDialogWindow(String)
   fullName.vb: Innova.Prism.Library.Services.WindowDialogServiceBase.CreateDialogWindow(String)
   name.vb: CreateDialogWindow(String)
+- uid: Innova.Prism.Library.Services.WindowDialogServiceBase.OpenActiveDirectoryPickerDialog(Innova.Prism.Library.Security.DirectoryObjectDialogOptions,System.String[])
+  commentId: M:Innova.Prism.Library.Services.WindowDialogServiceBase.OpenActiveDirectoryPickerDialog(Innova.Prism.Library.Security.DirectoryObjectDialogOptions,System.String[])
+  id: OpenActiveDirectoryPickerDialog(Innova.Prism.Library.Security.DirectoryObjectDialogOptions,System.String[])
+  parent: Innova.Prism.Library.Services.WindowDialogServiceBase
+  langs:
+  - csharp
+  - vb
+  name: OpenActiveDirectoryPickerDialog(DirectoryObjectDialogOptions, params string[])
+  nameWithType: WindowDialogServiceBase.OpenActiveDirectoryPickerDialog(DirectoryObjectDialogOptions, params string[])
+  fullName: Innova.Prism.Library.Services.WindowDialogServiceBase.OpenActiveDirectoryPickerDialog(Innova.Prism.Library.Security.DirectoryObjectDialogOptions, params string[])
+  type: Method
+  source:
+    id: OpenActiveDirectoryPickerDialog
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
+    startLine: 303
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Services
+  summary: Opens a directory picker dialog and returns a list of selected directory security identifiers.
+  example: []
+  syntax:
+    content: public List<DirectoryObjectDialogResult> OpenActiveDirectoryPickerDialog(DirectoryObjectDialogOptions options, params string[] properties)
+    parameters:
+    - id: options
+      type: Innova.Prism.Library.Security.DirectoryObjectDialogOptions
+      description: The options for configuring the directory picker dialog.
+    - id: properties
+      type: System.String[]
+    return:
+      type: System.Collections.Generic.List{Innova.Prism.Library.Security.DirectoryObjectDialogResult}
+      description: A list of <xref href="System.Security.Principal.SecurityIdentifier" data-throw-if-not-resolved="false"></xref> representing the selected directories.
+    content.vb: Public Function OpenActiveDirectoryPickerDialog(options As DirectoryObjectDialogOptions, ParamArray properties As String()) As List(Of DirectoryObjectDialogResult)
+  overload: Innova.Prism.Library.Services.WindowDialogServiceBase.OpenActiveDirectoryPickerDialog*
+  implements:
+  - Innova.Prism.Library.Services.IWindowDialogService.OpenActiveDirectoryPickerDialog(Innova.Prism.Library.Security.DirectoryObjectDialogOptions,System.String[])
+  nameWithType.vb: WindowDialogServiceBase.OpenActiveDirectoryPickerDialog(DirectoryObjectDialogOptions, ParamArray String())
+  fullName.vb: Innova.Prism.Library.Services.WindowDialogServiceBase.OpenActiveDirectoryPickerDialog(Innova.Prism.Library.Security.DirectoryObjectDialogOptions, ParamArray String())
+  name.vb: OpenActiveDirectoryPickerDialog(DirectoryObjectDialogOptions, ParamArray String())
 - uid: Innova.Prism.Library.Services.WindowDialogServiceBase.ShowInformation(System.String,System.Boolean)
   commentId: M:Innova.Prism.Library.Services.WindowDialogServiceBase.ShowInformation(System.String,System.Boolean)
   id: ShowInformation(System.String,System.Boolean)
@@ -573,7 +613,7 @@ items:
   source:
     id: ShowInformation
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 299
+    startLine: 357
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -609,7 +649,7 @@ items:
   source:
     id: ShowInformation
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 304
+    startLine: 362
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -648,7 +688,7 @@ items:
   source:
     id: ShowWarning
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 334
+    startLine: 392
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -681,7 +721,7 @@ items:
   source:
     id: ShowWarning
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 339
+    startLine: 397
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -717,7 +757,7 @@ items:
   source:
     id: ShowError
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 350
+    startLine: 408
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -750,7 +790,7 @@ items:
   source:
     id: ShowError
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 354
+    startLine: 412
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -786,7 +826,7 @@ items:
   source:
     id: Ask
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 364
+    startLine: 422
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -822,7 +862,7 @@ items:
   source:
     id: Ask
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 369
+    startLine: 427
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -861,7 +901,7 @@ items:
   source:
     id: Ask
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 381
+    startLine: 439
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -903,7 +943,7 @@ items:
   source:
     id: Ask
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 405
+    startLine: 463
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -948,7 +988,7 @@ items:
   source:
     id: AskWithCombo
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Services\WindowDialogService.cs
-    startLine: 434
+    startLine: 492
   assemblies:
   - Innova.Prism.Library
   namespace: Innova.Prism.Library.Services
@@ -1441,6 +1481,55 @@ references:
     isExternal: true
   - name: )
   - name: )
+- uid: Innova.Prism.Library.Services.IWindowDialogService.Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(System.String[])
+  commentId: M:Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(Innova.Prism.Library.Services.IWindowDialogService,System.String[])
+  parent: Innova.Prism.Library.Services.IWindowDialogServiceExtensions
+  definition: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(Innova.Prism.Library.Services.IWindowDialogService,System.String[])
+  href: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups.html#Innova_Prism_Library_Services_IWindowDialogServiceExtensions_OpenDirectoryPickerDialogWithOnlyUsersAndGroups_Innova_Prism_Library_Services_IWindowDialogService_System_String___
+  name: OpenDirectoryPickerDialogWithOnlyUsersAndGroups(IWindowDialogService, params string[])
+  nameWithType: IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(IWindowDialogService, params string[])
+  fullName: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(Innova.Prism.Library.Services.IWindowDialogService, params string[])
+  nameWithType.vb: IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(IWindowDialogService, ParamArray String())
+  fullName.vb: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(Innova.Prism.Library.Services.IWindowDialogService, ParamArray String())
+  name.vb: OpenDirectoryPickerDialogWithOnlyUsersAndGroups(IWindowDialogService, ParamArray String())
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(Innova.Prism.Library.Services.IWindowDialogService,System.String[])
+    name: OpenDirectoryPickerDialogWithOnlyUsersAndGroups
+    href: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups.html#Innova_Prism_Library_Services_IWindowDialogServiceExtensions_OpenDirectoryPickerDialogWithOnlyUsersAndGroups_Innova_Prism_Library_Services_IWindowDialogService_System_String___
+  - name: (
+  - uid: Innova.Prism.Library.Services.IWindowDialogService
+    name: IWindowDialogService
+    href: Innova.Prism.Library.Services.IWindowDialogService.html
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(Innova.Prism.Library.Services.IWindowDialogService,System.String[])
+    name: OpenDirectoryPickerDialogWithOnlyUsersAndGroups
+    href: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups.html#Innova_Prism_Library_Services_IWindowDialogServiceExtensions_OpenDirectoryPickerDialogWithOnlyUsersAndGroups_Innova_Prism_Library_Services_IWindowDialogService_System_String___
+  - name: (
+  - uid: Innova.Prism.Library.Services.IWindowDialogService
+    name: IWindowDialogService
+    href: Innova.Prism.Library.Services.IWindowDialogService.html
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
 - uid: Innova.Prism.Library.Services.IWindowDialogService.Innova.Prism.Library.Services.IWindowDialogServiceExtensions.Show(System.String,Innova.Prism.Library.Services.IBaseDialogParameter)
   commentId: M:Innova.Prism.Library.Services.IWindowDialogServiceExtensions.Show(Innova.Prism.Library.Services.IWindowDialogService,System.String,Innova.Prism.Library.Services.IBaseDialogParameter)
   parent: Innova.Prism.Library.Services.IWindowDialogServiceExtensions
@@ -1848,6 +1937,61 @@ references:
   - uid: Prism.Services.Dialogs
     name: Dialogs
     href: Prism.Services.Dialogs.html
+- uid: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(Innova.Prism.Library.Services.IWindowDialogService,System.String[])
+  commentId: M:Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(Innova.Prism.Library.Services.IWindowDialogService,System.String[])
+  isExternal: true
+  href: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups.html#Innova_Prism_Library_Services_IWindowDialogServiceExtensions_OpenDirectoryPickerDialogWithOnlyUsersAndGroups_Innova_Prism_Library_Services_IWindowDialogService_System_String___
+  name: OpenDirectoryPickerDialogWithOnlyUsersAndGroups(IWindowDialogService, params string[])
+  nameWithType: IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(IWindowDialogService, params string[])
+  fullName: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(Innova.Prism.Library.Services.IWindowDialogService, params string[])
+  nameWithType.vb: IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(IWindowDialogService, ParamArray String())
+  fullName.vb: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(Innova.Prism.Library.Services.IWindowDialogService, ParamArray String())
+  name.vb: OpenDirectoryPickerDialogWithOnlyUsersAndGroups(IWindowDialogService, ParamArray String())
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(Innova.Prism.Library.Services.IWindowDialogService,System.String[])
+    name: OpenDirectoryPickerDialogWithOnlyUsersAndGroups
+    href: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups.html#Innova_Prism_Library_Services_IWindowDialogServiceExtensions_OpenDirectoryPickerDialogWithOnlyUsersAndGroups_Innova_Prism_Library_Services_IWindowDialogService_System_String___
+  - name: (
+  - uid: Innova.Prism.Library.Services.IWindowDialogService
+    name: IWindowDialogService
+    href: Innova.Prism.Library.Services.IWindowDialogService.html
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups(Innova.Prism.Library.Services.IWindowDialogService,System.String[])
+    name: OpenDirectoryPickerDialogWithOnlyUsersAndGroups
+    href: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.OpenDirectoryPickerDialogWithOnlyUsersAndGroups.html#Innova_Prism_Library_Services_IWindowDialogServiceExtensions_OpenDirectoryPickerDialogWithOnlyUsersAndGroups_Innova_Prism_Library_Services_IWindowDialogService_System_String___
+  - name: (
+  - uid: Innova.Prism.Library.Services.IWindowDialogService
+    name: IWindowDialogService
+    href: Innova.Prism.Library.Services.IWindowDialogService.html
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Services.IWindowDialogServiceExtensions
+  commentId: T:Innova.Prism.Library.Services.IWindowDialogServiceExtensions
+  parent: Innova.Prism.Library.Services
+  href: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.html
+  name: IWindowDialogServiceExtensions
+  nameWithType: IWindowDialogServiceExtensions
+  fullName: Innova.Prism.Library.Services.IWindowDialogServiceExtensions
 - uid: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.Show(Innova.Prism.Library.Services.IWindowDialogService,System.String,Innova.Prism.Library.Services.IBaseDialogParameter)
   commentId: M:Innova.Prism.Library.Services.IWindowDialogServiceExtensions.Show(Innova.Prism.Library.Services.IWindowDialogService,System.String,Innova.Prism.Library.Services.IBaseDialogParameter)
   isExternal: true
@@ -1898,13 +2042,6 @@ references:
     name: IBaseDialogParameter
     href: Innova.Prism.Library.Services.IBaseDialogParameter.html
   - name: )
-- uid: Innova.Prism.Library.Services.IWindowDialogServiceExtensions
-  commentId: T:Innova.Prism.Library.Services.IWindowDialogServiceExtensions
-  parent: Innova.Prism.Library.Services
-  href: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.html
-  name: IWindowDialogServiceExtensions
-  nameWithType: IWindowDialogServiceExtensions
-  fullName: Innova.Prism.Library.Services.IWindowDialogServiceExtensions
 - uid: Innova.Prism.Library.Services.IWindowDialogServiceExtensions.Show(Innova.Prism.Library.Services.IWindowDialogService,System.String,Innova.Prism.Library.Services.IBaseDialogParameter,System.Action{Prism.Services.Dialogs.IDialogResult})
   commentId: M:Innova.Prism.Library.Services.IWindowDialogServiceExtensions.Show(Innova.Prism.Library.Services.IWindowDialogService,System.String,Innova.Prism.Library.Services.IBaseDialogParameter,System.Action{Prism.Services.Dialogs.IDialogResult})
   isExternal: true
@@ -2898,6 +3035,249 @@ references:
   name: CreateDialogWindow
   nameWithType: WindowDialogServiceBase.CreateDialogWindow
   fullName: Innova.Prism.Library.Services.WindowDialogServiceBase.CreateDialogWindow
+- uid: System.Security.Principal.SecurityIdentifier
+  commentId: T:System.Security.Principal.SecurityIdentifier
+  parent: System.Security.Principal
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.security.principal.securityidentifier
+  name: SecurityIdentifier
+  nameWithType: SecurityIdentifier
+  fullName: System.Security.Principal.SecurityIdentifier
+- uid: Innova.Prism.Library.Services.WindowDialogServiceBase.OpenActiveDirectoryPickerDialog*
+  commentId: Overload:Innova.Prism.Library.Services.WindowDialogServiceBase.OpenActiveDirectoryPickerDialog
+  href: Innova.Prism.Library.Services.WindowDialogServiceBase.OpenActiveDirectoryPickerDialog.html#Innova_Prism_Library_Services_WindowDialogServiceBase_OpenActiveDirectoryPickerDialog_Innova_Prism_Library_Security_DirectoryObjectDialogOptions_System_String___
+  name: OpenActiveDirectoryPickerDialog
+  nameWithType: WindowDialogServiceBase.OpenActiveDirectoryPickerDialog
+  fullName: Innova.Prism.Library.Services.WindowDialogServiceBase.OpenActiveDirectoryPickerDialog
+- uid: Innova.Prism.Library.Services.IWindowDialogService.OpenActiveDirectoryPickerDialog(Innova.Prism.Library.Security.DirectoryObjectDialogOptions,System.String[])
+  commentId: M:Innova.Prism.Library.Services.IWindowDialogService.OpenActiveDirectoryPickerDialog(Innova.Prism.Library.Security.DirectoryObjectDialogOptions,System.String[])
+  parent: Innova.Prism.Library.Services.IWindowDialogService
+  isExternal: true
+  href: Innova.Prism.Library.Services.IWindowDialogService.OpenActiveDirectoryPickerDialog.html#Innova_Prism_Library_Services_IWindowDialogService_OpenActiveDirectoryPickerDialog_Innova_Prism_Library_Security_DirectoryObjectDialogOptions_System_String___
+  name: OpenActiveDirectoryPickerDialog(DirectoryObjectDialogOptions, params string[])
+  nameWithType: IWindowDialogService.OpenActiveDirectoryPickerDialog(DirectoryObjectDialogOptions, params string[])
+  fullName: Innova.Prism.Library.Services.IWindowDialogService.OpenActiveDirectoryPickerDialog(Innova.Prism.Library.Security.DirectoryObjectDialogOptions, params string[])
+  nameWithType.vb: IWindowDialogService.OpenActiveDirectoryPickerDialog(DirectoryObjectDialogOptions, ParamArray String())
+  fullName.vb: Innova.Prism.Library.Services.IWindowDialogService.OpenActiveDirectoryPickerDialog(Innova.Prism.Library.Security.DirectoryObjectDialogOptions, ParamArray String())
+  name.vb: OpenActiveDirectoryPickerDialog(DirectoryObjectDialogOptions, ParamArray String())
+  spec.csharp:
+  - uid: Innova.Prism.Library.Services.IWindowDialogService.OpenActiveDirectoryPickerDialog(Innova.Prism.Library.Security.DirectoryObjectDialogOptions,System.String[])
+    name: OpenActiveDirectoryPickerDialog
+    href: Innova.Prism.Library.Services.IWindowDialogService.OpenActiveDirectoryPickerDialog.html#Innova_Prism_Library_Services_IWindowDialogService_OpenActiveDirectoryPickerDialog_Innova_Prism_Library_Security_DirectoryObjectDialogOptions_System_String___
+  - name: (
+  - uid: Innova.Prism.Library.Security.DirectoryObjectDialogOptions
+    name: DirectoryObjectDialogOptions
+    href: Innova.Prism.Library.Security.DirectoryObjectDialogOptions.html
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Services.IWindowDialogService.OpenActiveDirectoryPickerDialog(Innova.Prism.Library.Security.DirectoryObjectDialogOptions,System.String[])
+    name: OpenActiveDirectoryPickerDialog
+    href: Innova.Prism.Library.Services.IWindowDialogService.OpenActiveDirectoryPickerDialog.html#Innova_Prism_Library_Services_IWindowDialogService_OpenActiveDirectoryPickerDialog_Innova_Prism_Library_Security_DirectoryObjectDialogOptions_System_String___
+  - name: (
+  - uid: Innova.Prism.Library.Security.DirectoryObjectDialogOptions
+    name: DirectoryObjectDialogOptions
+    href: Innova.Prism.Library.Security.DirectoryObjectDialogOptions.html
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialogOptions
+  commentId: T:Innova.Prism.Library.Security.DirectoryObjectDialogOptions
+  parent: Innova.Prism.Library.Security
+  href: Innova.Prism.Library.Security.DirectoryObjectDialogOptions.html
+  name: DirectoryObjectDialogOptions
+  nameWithType: DirectoryObjectDialogOptions
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialogOptions
+- uid: System.Collections.Generic.List{Innova.Prism.Library.Security.DirectoryObjectDialogResult}
+  commentId: T:System.Collections.Generic.List{Innova.Prism.Library.Security.DirectoryObjectDialogResult}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DirectoryObjectDialogResult>
+  nameWithType: List<DirectoryObjectDialogResult>
+  fullName: System.Collections.Generic.List<Innova.Prism.Library.Security.DirectoryObjectDialogResult>
+  nameWithType.vb: List(Of DirectoryObjectDialogResult)
+  fullName.vb: System.Collections.Generic.List(Of Innova.Prism.Library.Security.DirectoryObjectDialogResult)
+  name.vb: List(Of DirectoryObjectDialogResult)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Prism.Library.Security.DirectoryObjectDialogResult
+    name: DirectoryObjectDialogResult
+    href: Innova.Prism.Library.Security.DirectoryObjectDialogResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Security.DirectoryObjectDialogResult
+    name: DirectoryObjectDialogResult
+    href: Innova.Prism.Library.Security.DirectoryObjectDialogResult.html
+  - name: )
+- uid: System.Security.Principal
+  commentId: N:System.Security.Principal
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Security.Principal
+  nameWithType: System.Security.Principal
+  fullName: System.Security.Principal
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Principal
+    name: Principal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.principal
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Principal
+    name: Principal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.principal
+- uid: Innova.Prism.Library.Security
+  commentId: N:Innova.Prism.Library.Security
+  href: Innova.html
+  name: Innova.Prism.Library.Security
+  nameWithType: Innova.Prism.Library.Security
+  fullName: Innova.Prism.Library.Security
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Security
+    name: Security
+    href: Innova.Prism.Library.Security.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Security
+    name: Security
+    href: Innova.Prism.Library.Security.html
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Innova.Prism.Library.Services.WindowDialogServiceBase.ShowInformation*
   commentId: Overload:Innova.Prism.Library.Services.WindowDialogServiceBase.ShowInformation
   href: Innova.Prism.Library.Services.WindowDialogServiceBase.ShowInformation.html#Innova_Prism_Library_Services_WindowDialogServiceBase_ShowInformation_System_String_System_Boolean_

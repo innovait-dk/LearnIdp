@@ -8,6 +8,7 @@ items:
   - Innova.Data.DbContextExtensions.ConvertToSqlKeys``1(Microsoft.EntityFrameworkCore.DbContext,Innova.Data.Entity.IPrimaryKey)
   - Innova.Data.DbContextExtensions.ConvertToSqlParameter(Microsoft.EntityFrameworkCore.DbContext,Innova.Data.Entity.IPrimaryKey)
   - Innova.Data.DbContextExtensions.GetColumnName``1(Microsoft.EntityFrameworkCore.DbContext,System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  - Innova.Data.DbContextExtensions.GetColumnName``1(Microsoft.EntityFrameworkCore.DbContext,System.String)
   - Innova.Data.DbContextExtensions.GetKeyNames``1(Microsoft.EntityFrameworkCore.DbContext)
   - Innova.Data.DbContextExtensions.GetKeys``1(Microsoft.EntityFrameworkCore.DbContext,System.Collections.Generic.List{``0})
   - Innova.Data.DbContextExtensions.GetKeys``1(Microsoft.EntityFrameworkCore.DbContext,``0)
@@ -113,6 +114,41 @@ items:
   nameWithType.vb: DbContextExtensions.GetColumnName(Of TEntity)(DbContext, Expression(Of Func(Of TEntity, Object)))
   fullName.vb: Innova.Data.DbContextExtensions.GetColumnName(Of TEntity)(Microsoft.EntityFrameworkCore.DbContext, System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Object)))
   name.vb: GetColumnName(Of TEntity)(DbContext, Expression(Of Func(Of TEntity, Object)))
+- uid: Innova.Data.DbContextExtensions.GetColumnName``1(Microsoft.EntityFrameworkCore.DbContext,System.String)
+  commentId: M:Innova.Data.DbContextExtensions.GetColumnName``1(Microsoft.EntityFrameworkCore.DbContext,System.String)
+  id: GetColumnName``1(Microsoft.EntityFrameworkCore.DbContext,System.String)
+  isExtensionMethod: true
+  parent: Innova.Data.DbContextExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetColumnName<TEntity>(DbContext, string)
+  nameWithType: DbContextExtensions.GetColumnName<TEntity>(DbContext, string)
+  fullName: Innova.Data.DbContextExtensions.GetColumnName<TEntity>(Microsoft.EntityFrameworkCore.DbContext, string)
+  type: Method
+  source:
+    id: GetColumnName
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
+    startLine: 57
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data
+  syntax:
+    content: 'public static string GetColumnName<TEntity>(this DbContext dbContext, string propertyName) where TEntity : class'
+    parameters:
+    - id: dbContext
+      type: Microsoft.EntityFrameworkCore.DbContext
+    - id: propertyName
+      type: System.String
+    typeParameters:
+    - id: TEntity
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetColumnName(Of TEntity As Class)(dbContext As DbContext, propertyName As String) As String
+  overload: Innova.Data.DbContextExtensions.GetColumnName*
+  nameWithType.vb: DbContextExtensions.GetColumnName(Of TEntity)(DbContext, String)
+  fullName.vb: Innova.Data.DbContextExtensions.GetColumnName(Of TEntity)(Microsoft.EntityFrameworkCore.DbContext, String)
+  name.vb: GetColumnName(Of TEntity)(DbContext, String)
 - uid: Innova.Data.DbContextExtensions.GetTableName``1(Microsoft.EntityFrameworkCore.DbContext)
   commentId: M:Innova.Data.DbContextExtensions.GetTableName``1(Microsoft.EntityFrameworkCore.DbContext)
   id: GetTableName``1(Microsoft.EntityFrameworkCore.DbContext)
@@ -128,7 +164,7 @@ items:
   source:
     id: GetTableName
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 71
+    startLine: 84
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -166,7 +202,7 @@ items:
   source:
     id: RawSql
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 164
+    startLine: 177
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -210,7 +246,7 @@ items:
   source:
     id: ConvertToSqlParameter
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 209
+    startLine: 222
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -245,7 +281,7 @@ items:
   source:
     id: GetPrimaryKey
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 226
+    startLine: 239
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -286,7 +322,7 @@ items:
   source:
     id: GetKeys
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 259
+    startLine: 272
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -327,7 +363,7 @@ items:
   source:
     id: GetSqlKeys
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 294
+    startLine: 307
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -368,7 +404,7 @@ items:
   source:
     id: ConvertToSqlKeys
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 318
+    startLine: 331
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -409,7 +445,7 @@ items:
   source:
     id: GetKeys
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 344
+    startLine: 357
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -450,7 +486,7 @@ items:
   source:
     id: GetKeyNames
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 388
+    startLine: 401
   assemblies:
   - Innova.Data
   namespace: Innova.Data
@@ -488,7 +524,7 @@ items:
   source:
     id: GetPrimaryKeysSelector
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Extensions\DbContextExtensions.cs
-    startLine: 406
+    startLine: 419
   assemblies:
   - Innova.Data
   namespace: Innova.Data

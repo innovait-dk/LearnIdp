@@ -1,0 +1,442 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Security.MarshalUtils
+  commentId: T:Innova.Prism.Library.Security.MarshalUtils
+  id: MarshalUtils
+  parent: Innova.Prism.Library.Security
+  children:
+  - Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr``1(``0[],System.Runtime.InteropServices.UnmanagedType,System.IntPtr@,System.Int32@)
+  - Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr``1(``0[],System.Runtime.InteropServices.UnmanagedType,System.IntPtr@,System.UInt32@)
+  - Innova.Prism.Library.Security.MarshalUtils.PtrToArray``1(System.Runtime.InteropServices.UnmanagedType,System.IntPtr,System.Int32)
+  - Innova.Prism.Library.Security.MarshalUtils.PtrToArray``1(System.Runtime.InteropServices.UnmanagedType,System.IntPtr,System.UInt32)
+  - Innova.Prism.Library.Security.MarshalUtils.PtrToStructure``1(System.IntPtr)
+  langs:
+  - csharp
+  - vb
+  name: MarshalUtils
+  nameWithType: MarshalUtils
+  fullName: Innova.Prism.Library.Security.MarshalUtils
+  type: Class
+  source:
+    id: MarshalUtils
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\MarshalUtils.cs
+    startLine: 27
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: Marshaling helper functions.
+  example: []
+  syntax:
+    content: public static class MarshalUtils
+    content.vb: Public Module MarshalUtils
+  inheritance:
+  - System.Object
+- uid: Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr``1(``0[],System.Runtime.InteropServices.UnmanagedType,System.IntPtr@,System.Int32@)
+  commentId: M:Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr``1(``0[],System.Runtime.InteropServices.UnmanagedType,System.IntPtr@,System.Int32@)
+  id: ArrayToPtr``1(``0[],System.Runtime.InteropServices.UnmanagedType,System.IntPtr@,System.Int32@)
+  parent: Innova.Prism.Library.Security.MarshalUtils
+  langs:
+  - csharp
+  - vb
+  name: ArrayToPtr<T>(T[], UnmanagedType, ref IntPtr, ref int)
+  nameWithType: MarshalUtils.ArrayToPtr<T>(T[], UnmanagedType, ref IntPtr, ref int)
+  fullName: Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr<T>(T[], System.Runtime.InteropServices.UnmanagedType, ref System.IntPtr, ref int)
+  type: Method
+  source:
+    id: ArrayToPtr
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\MarshalUtils.cs
+    startLine: 114
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: >-
+    Marshals an array to unmanaged memory and updates a pointer to this memory and a size field. If the unmanaged memory pointer
+
+    is not zero, it is freed first. The memory should be cleaned up by setting the array to null. Manually changing the pointer
+
+    or the size field may lead to memory leaks or crashes. This function uses the COM allocator.
+  example: []
+  syntax:
+    content: public static void ArrayToPtr<T>(T[] array, UnmanagedType type, ref IntPtr ptr, ref int size)
+    parameters:
+    - id: array
+      type: '{T}[]'
+    - id: type
+      type: System.Runtime.InteropServices.UnmanagedType
+    - id: ptr
+      type: System.IntPtr
+    - id: size
+      type: System.Int32
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub ArrayToPtr(Of T)(array As T(), type As UnmanagedType, ptr As IntPtr, size As Integer)
+  overload: Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr*
+  nameWithType.vb: MarshalUtils.ArrayToPtr(Of T)(T(), UnmanagedType, IntPtr, Integer)
+  fullName.vb: Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr(Of T)(T(), System.Runtime.InteropServices.UnmanagedType, System.IntPtr, Integer)
+  name.vb: ArrayToPtr(Of T)(T(), UnmanagedType, IntPtr, Integer)
+- uid: Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr``1(``0[],System.Runtime.InteropServices.UnmanagedType,System.IntPtr@,System.UInt32@)
+  commentId: M:Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr``1(``0[],System.Runtime.InteropServices.UnmanagedType,System.IntPtr@,System.UInt32@)
+  id: ArrayToPtr``1(``0[],System.Runtime.InteropServices.UnmanagedType,System.IntPtr@,System.UInt32@)
+  parent: Innova.Prism.Library.Security.MarshalUtils
+  langs:
+  - csharp
+  - vb
+  name: ArrayToPtr<T>(T[], UnmanagedType, ref IntPtr, ref uint)
+  nameWithType: MarshalUtils.ArrayToPtr<T>(T[], UnmanagedType, ref IntPtr, ref uint)
+  fullName: Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr<T>(T[], System.Runtime.InteropServices.UnmanagedType, ref System.IntPtr, ref uint)
+  type: Method
+  source:
+    id: ArrayToPtr
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\MarshalUtils.cs
+    startLine: 149
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: Calls the other overload.
+  example: []
+  syntax:
+    content: public static void ArrayToPtr<T>(T[] array, UnmanagedType type, ref IntPtr ptr, ref uint size)
+    parameters:
+    - id: array
+      type: '{T}[]'
+    - id: type
+      type: System.Runtime.InteropServices.UnmanagedType
+    - id: ptr
+      type: System.IntPtr
+    - id: size
+      type: System.UInt32
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub ArrayToPtr(Of T)(array As T(), type As UnmanagedType, ptr As IntPtr, size As UInteger)
+  overload: Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr*
+  nameWithType.vb: MarshalUtils.ArrayToPtr(Of T)(T(), UnmanagedType, IntPtr, UInteger)
+  fullName.vb: Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr(Of T)(T(), System.Runtime.InteropServices.UnmanagedType, System.IntPtr, UInteger)
+  name.vb: ArrayToPtr(Of T)(T(), UnmanagedType, IntPtr, UInteger)
+- uid: Innova.Prism.Library.Security.MarshalUtils.PtrToArray``1(System.Runtime.InteropServices.UnmanagedType,System.IntPtr,System.Int32)
+  commentId: M:Innova.Prism.Library.Security.MarshalUtils.PtrToArray``1(System.Runtime.InteropServices.UnmanagedType,System.IntPtr,System.Int32)
+  id: PtrToArray``1(System.Runtime.InteropServices.UnmanagedType,System.IntPtr,System.Int32)
+  parent: Innova.Prism.Library.Security.MarshalUtils
+  langs:
+  - csharp
+  - vb
+  name: PtrToArray<T>(UnmanagedType, IntPtr, int)
+  nameWithType: MarshalUtils.PtrToArray<T>(UnmanagedType, IntPtr, int)
+  fullName: Innova.Prism.Library.Security.MarshalUtils.PtrToArray<T>(System.Runtime.InteropServices.UnmanagedType, System.IntPtr, int)
+  type: Method
+  source:
+    id: PtrToArray
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\MarshalUtils.cs
+    startLine: 159
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: Reads an array from unmanaged memory given a pointer and the array size.
+  example: []
+  syntax:
+    content: public static T[] PtrToArray<T>(UnmanagedType type, IntPtr ptr, int size)
+    parameters:
+    - id: type
+      type: System.Runtime.InteropServices.UnmanagedType
+    - id: ptr
+      type: System.IntPtr
+    - id: size
+      type: System.Int32
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}[]'
+    content.vb: Public Shared Function PtrToArray(Of T)(type As UnmanagedType, ptr As IntPtr, size As Integer) As T()
+  overload: Innova.Prism.Library.Security.MarshalUtils.PtrToArray*
+  nameWithType.vb: MarshalUtils.PtrToArray(Of T)(UnmanagedType, IntPtr, Integer)
+  fullName.vb: Innova.Prism.Library.Security.MarshalUtils.PtrToArray(Of T)(System.Runtime.InteropServices.UnmanagedType, System.IntPtr, Integer)
+  name.vb: PtrToArray(Of T)(UnmanagedType, IntPtr, Integer)
+- uid: Innova.Prism.Library.Security.MarshalUtils.PtrToArray``1(System.Runtime.InteropServices.UnmanagedType,System.IntPtr,System.UInt32)
+  commentId: M:Innova.Prism.Library.Security.MarshalUtils.PtrToArray``1(System.Runtime.InteropServices.UnmanagedType,System.IntPtr,System.UInt32)
+  id: PtrToArray``1(System.Runtime.InteropServices.UnmanagedType,System.IntPtr,System.UInt32)
+  parent: Innova.Prism.Library.Security.MarshalUtils
+  langs:
+  - csharp
+  - vb
+  name: PtrToArray<T>(UnmanagedType, IntPtr, uint)
+  nameWithType: MarshalUtils.PtrToArray<T>(UnmanagedType, IntPtr, uint)
+  fullName: Innova.Prism.Library.Security.MarshalUtils.PtrToArray<T>(System.Runtime.InteropServices.UnmanagedType, System.IntPtr, uint)
+  type: Method
+  source:
+    id: PtrToArray
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\MarshalUtils.cs
+    startLine: 177
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: Calls the other overload.
+  example: []
+  syntax:
+    content: public static T[] PtrToArray<T>(UnmanagedType type, IntPtr ptr, uint size)
+    parameters:
+    - id: type
+      type: System.Runtime.InteropServices.UnmanagedType
+    - id: ptr
+      type: System.IntPtr
+    - id: size
+      type: System.UInt32
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}[]'
+    content.vb: Public Shared Function PtrToArray(Of T)(type As UnmanagedType, ptr As IntPtr, size As UInteger) As T()
+  overload: Innova.Prism.Library.Security.MarshalUtils.PtrToArray*
+  nameWithType.vb: MarshalUtils.PtrToArray(Of T)(UnmanagedType, IntPtr, UInteger)
+  fullName.vb: Innova.Prism.Library.Security.MarshalUtils.PtrToArray(Of T)(System.Runtime.InteropServices.UnmanagedType, System.IntPtr, UInteger)
+  name.vb: PtrToArray(Of T)(UnmanagedType, IntPtr, UInteger)
+- uid: Innova.Prism.Library.Security.MarshalUtils.PtrToStructure``1(System.IntPtr)
+  commentId: M:Innova.Prism.Library.Security.MarshalUtils.PtrToStructure``1(System.IntPtr)
+  id: PtrToStructure``1(System.IntPtr)
+  parent: Innova.Prism.Library.Security.MarshalUtils
+  langs:
+  - csharp
+  - vb
+  name: PtrToStructure<T>(IntPtr)
+  nameWithType: MarshalUtils.PtrToStructure<T>(IntPtr)
+  fullName: Innova.Prism.Library.Security.MarshalUtils.PtrToStructure<T>(System.IntPtr)
+  type: Method
+  source:
+    id: PtrToStructure
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\MarshalUtils.cs
+    startLine: 185
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: A generic version of <xref href="System.Runtime.InteropServices.Marshal.PtrToStructure(System.IntPtr%2cSystem.Type)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public static T PtrToStructure<T>(IntPtr addr) where T : struct'
+    parameters:
+    - id: addr
+      type: System.IntPtr
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function PtrToStructure(Of T As Structure)(addr As IntPtr) As T
+  overload: Innova.Prism.Library.Security.MarshalUtils.PtrToStructure*
+  nameWithType.vb: MarshalUtils.PtrToStructure(Of T)(IntPtr)
+  fullName.vb: Innova.Prism.Library.Security.MarshalUtils.PtrToStructure(Of T)(System.IntPtr)
+  name.vb: PtrToStructure(Of T)(IntPtr)
+references:
+- uid: Innova.Prism.Library.Security
+  commentId: N:Innova.Prism.Library.Security
+  href: Innova.html
+  name: Innova.Prism.Library.Security
+  nameWithType: Innova.Prism.Library.Security
+  fullName: Innova.Prism.Library.Security
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Security
+    name: Security
+    href: Innova.Prism.Library.Security.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Security
+    name: Security
+    href: Innova.Prism.Library.Security.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr*
+  commentId: Overload:Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr
+  href: Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr.html#Innova_Prism_Library_Security_MarshalUtils_ArrayToPtr__1___0___System_Runtime_InteropServices_UnmanagedType_System_IntPtr__System_Int32__
+  name: ArrayToPtr
+  nameWithType: MarshalUtils.ArrayToPtr
+  fullName: Innova.Prism.Library.Security.MarshalUtils.ArrayToPtr
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: System.Runtime.InteropServices.UnmanagedType
+  commentId: T:System.Runtime.InteropServices.UnmanagedType
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.unmanagedtype
+  name: UnmanagedType
+  nameWithType: UnmanagedType
+  fullName: System.Runtime.InteropServices.UnmanagedType
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Innova.Prism.Library.Security.MarshalUtils.PtrToArray*
+  commentId: Overload:Innova.Prism.Library.Security.MarshalUtils.PtrToArray
+  href: Innova.Prism.Library.Security.MarshalUtils.PtrToArray.html#Innova_Prism_Library_Security_MarshalUtils_PtrToArray__1_System_Runtime_InteropServices_UnmanagedType_System_IntPtr_System_Int32_
+  name: PtrToArray
+  nameWithType: MarshalUtils.PtrToArray
+  fullName: Innova.Prism.Library.Security.MarshalUtils.PtrToArray
+- uid: System.Runtime.InteropServices.Marshal.PtrToStructure(System.IntPtr,System.Type)
+  commentId: M:System.Runtime.InteropServices.Marshal.PtrToStructure(System.IntPtr,System.Type)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.ptrtostructure#system-runtime-interopservices-marshal-ptrtostructure(system-intptr-system-type)
+  name: PtrToStructure(IntPtr, Type)
+  nameWithType: Marshal.PtrToStructure(IntPtr, Type)
+  fullName: System.Runtime.InteropServices.Marshal.PtrToStructure(System.IntPtr, System.Type)
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.Marshal.PtrToStructure(System.IntPtr,System.Type)
+    name: PtrToStructure
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.ptrtostructure#system-runtime-interopservices-marshal-ptrtostructure(system-intptr-system-type)
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Runtime.InteropServices.Marshal.PtrToStructure(System.IntPtr,System.Type)
+    name: PtrToStructure
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.ptrtostructure#system-runtime-interopservices-marshal-ptrtostructure(system-intptr-system-type)
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: Innova.Prism.Library.Security.MarshalUtils.PtrToStructure*
+  commentId: Overload:Innova.Prism.Library.Security.MarshalUtils.PtrToStructure
+  href: Innova.Prism.Library.Security.MarshalUtils.PtrToStructure.html#Innova_Prism_Library_Security_MarshalUtils_PtrToStructure__1_System_IntPtr_
+  name: PtrToStructure
+  nameWithType: MarshalUtils.PtrToStructure
+  fullName: Innova.Prism.Library.Security.MarshalUtils.PtrToStructure
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+memberLayout: SeparatePages

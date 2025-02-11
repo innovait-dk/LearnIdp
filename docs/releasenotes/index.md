@@ -1,3 +1,9 @@
+## 2025.2
+- AppExtension-Security: Implemented ActiveDictoryPicker.
+- Fixed: Designer: Resx bug (import data)
+- Fixed: StreamHelper bug fixed
+- Fixed: LabelList sorting 
+
 ## 2025.1
 - Support for .NET 9 (supports .net 4.72, 8.0 and 9.0)
 - All Nuget-packages are now zipped in one file (Innova assemblies and their dependencies. Not Telerik and Infragistics assemblies). The zip-file can be found in source control in the folder 'vsix'.
@@ -24,7 +30,7 @@ Now you have both as a methode or as property:
 
 ![alt text](media/index-3.png)
 
-- CheckBoxList med MinHeight changed.
+- CheckBoxList MinHeight changed.
 - Designer: Configure height of ShowTemplate (MainRowHeight) and the tab-control with the related lists (RelationRowHeight). Can be configured on the show template.
 
 ![alt text](media/index-4.png)
@@ -42,7 +48,7 @@ Now you have both as a methode or as property:
 >
 > *CG modules*
 >
-> The CG of the "entity" modules has been changed. The CG now consists of an abstract base-module and a partial class that inherits from the base-module. So now you can override all methodes in the partial class. That means there is no more use for all the partial methodes and they therefore not CG anymore:
+> The CG of the "entity" modules has been changed. The CG now consists of an abstract base-module and a partial class that inherits from the base-module. So now you can override all methodes in the partial class. That means there is no more use for all the partial methodes and they are not CG anymore:
 > - partial void AfterRegisterTypes(IContainerRegistry containerRegistry);
 > - partial void AfterOnInitialized(IContainerProvider containerProvider);
 > - partial void Initialized();

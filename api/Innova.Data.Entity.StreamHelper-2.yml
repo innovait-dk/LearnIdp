@@ -19,7 +19,7 @@ items:
   source:
     id: StreamHelper
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\StreamHelper.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -52,7 +52,7 @@ items:
   source:
     id: CommandTimeout
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\StreamHelper.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -83,7 +83,7 @@ items:
   source:
     id: .ctor
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\StreamHelper.cs
-    startLine: 43
+    startLine: 44
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
@@ -118,16 +118,16 @@ items:
   source:
     id: Update
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\StreamHelper.cs
-    startLine: 55
+    startLine: 56
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
   summary: Updates a specified column in the SQL database asynchronously.
   example: []
   syntax:
-    content: public Task Update(Stream inStream, Expression<Func<TEntity, object>> columnSelector, Expression<Func<TEntity, bool>> filterExpression)
+    content: public Task Update(Stream stream, Expression<Func<TEntity, object>> columnSelector, Expression<Func<TEntity, bool>> filterExpression)
     parameters:
-    - id: inStream
+    - id: stream
       type: System.IO.Stream
       description: The input stream containing the data.
     - id: columnSelector
@@ -138,7 +138,7 @@ items:
     return:
       type: System.Threading.Tasks.Task
       description: A task representing the asynchronous operation.
-    content.vb: Public Function Update(inStream As Stream, columnSelector As Expression(Of Func(Of TEntity, Object)), filterExpression As Expression(Of Func(Of TEntity, Boolean))) As Task
+    content.vb: Public Function Update(stream As Stream, columnSelector As Expression(Of Func(Of TEntity, Object)), filterExpression As Expression(Of Func(Of TEntity, Boolean))) As Task
   overload: Innova.Data.Entity.StreamHelper`2.Update*
   implements:
   - Innova.Data.Entity.IStreamHelper{{TEntity}}.Update(System.IO.Stream,System.Linq.Expressions.Expression{System.Func{{TEntity},System.Object}},System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}})
@@ -159,24 +159,36 @@ items:
   source:
     id: Get
     path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Entity\StreamHelper.cs
-    startLine: 103
+    startLine: 124
   assemblies:
   - Innova.Data
   namespace: Innova.Data.Entity
+  summary: Retrieves data from a specified column in the SQL database asynchronously.
   example: []
   syntax:
-    content: public Task Get(Stream outStream, Expression<Func<TEntity, object>> columnSelector, Expression<Func<TEntity, bool>> filterExpression)
+    content: public Task Get(Stream stream, Expression<Func<TEntity, object>> columnSelector, Expression<Func<TEntity, bool>> filterExpression)
     parameters:
-    - id: outStream
+    - id: stream
       type: System.IO.Stream
+      description: The output stream to write the data to.
     - id: columnSelector
       type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Object}}
+      description: An expression to select the column to retrieve data from.
     - id: filterExpression
       type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+      description: The filter expression to apply to the query.
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Function [Get](outStream As Stream, columnSelector As Expression(Of Func(Of TEntity, Object)), filterExpression As Expression(Of Func(Of TEntity, Boolean))) As Task
+      description: A task representing the asynchronous operation.
+    content.vb: Public Function [Get](stream As Stream, columnSelector As Expression(Of Func(Of TEntity, Object)), filterExpression As Expression(Of Func(Of TEntity, Boolean))) As Task
   overload: Innova.Data.Entity.StreamHelper`2.Get*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">stream</code>, <code class="paramref">columnSelector</code>, or <code class="paramref">filterExpression</code> is null.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the filter expression format is unsupported or an error occurs during the database operation.
   implements:
   - Innova.Data.Entity.IStreamHelper{{TEntity}}.Get(System.IO.Stream,System.Linq.Expressions.Expression{System.Func{{TEntity},System.Object}},System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}})
   nameWithType.vb: StreamHelper(Of TDbContext, TEntity).Get(Stream, Expression(Of Func(Of TEntity, Object)), Expression(Of Func(Of TEntity, Boolean)))
@@ -949,6 +961,13 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
 - uid: Innova.Data.Entity.StreamHelper`2.Get*
   commentId: Overload:Innova.Data.Entity.StreamHelper`2.Get
   href: Innova.Data.Entity.StreamHelper-2.Get.html#Innova_Data_Entity_StreamHelper_2_Get_System_IO_Stream_System_Linq_Expressions_Expression_System_Func__1_System_Object___System_Linq_Expressions_Expression_System_Func__1_System_Boolean___

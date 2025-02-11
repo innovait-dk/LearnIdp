@@ -7,6 +7,7 @@ items:
   children:
   - Innova.Data.Validation.IValidatorExtensions.GetCaption``1(FluentValidation.IValidator,System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
   - Innova.Data.Validation.IValidatorExtensions.GetCaption``1(FluentValidation.IValidator,System.String)
+  - Innova.Data.Validation.IValidatorExtensions.GetErrorMessageForRelatedDeletion``1(FluentValidation.IValidator{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
   - Innova.Data.Validation.IValidatorExtensions.GetErrorMessage``1(FluentValidation.IValidator{``0},System.String,System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
   langs:
   - csharp
@@ -155,6 +156,41 @@ items:
   nameWithType.vb: IValidatorExtensions.GetErrorMessage(Of T)(IValidator(Of T), String, Expression(Of Func(Of T, Object)))
   fullName.vb: Innova.Data.Validation.IValidatorExtensions.GetErrorMessage(Of T)(FluentValidation.IValidator(Of T), String, System.Linq.Expressions.Expression(Of System.Func(Of T, Object)))
   name.vb: GetErrorMessage(Of T)(IValidator(Of T), String, Expression(Of Func(Of T, Object)))
+- uid: Innova.Data.Validation.IValidatorExtensions.GetErrorMessageForRelatedDeletion``1(FluentValidation.IValidator{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  commentId: M:Innova.Data.Validation.IValidatorExtensions.GetErrorMessageForRelatedDeletion``1(FluentValidation.IValidator{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  id: GetErrorMessageForRelatedDeletion``1(FluentValidation.IValidator{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  isExtensionMethod: true
+  parent: Innova.Data.Validation.IValidatorExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetErrorMessageForRelatedDeletion<T>(IValidator<T>, Expression<Func<T, object>>)
+  nameWithType: IValidatorExtensions.GetErrorMessageForRelatedDeletion<T>(IValidator<T>, Expression<Func<T, object>>)
+  fullName: Innova.Data.Validation.IValidatorExtensions.GetErrorMessageForRelatedDeletion<T>(FluentValidation.IValidator<T>, System.Linq.Expressions.Expression<System.Func<T, object>>)
+  type: Method
+  source:
+    id: GetErrorMessageForRelatedDeletion
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Data\Validation\IValidatorExtensions.cs
+    startLine: 56
+  assemblies:
+  - Innova.Data
+  namespace: Innova.Data.Validation
+  syntax:
+    content: public static string GetErrorMessageForRelatedDeletion<T>(this IValidator<T> validator, Expression<Func<T, object>> expression)
+    parameters:
+    - id: validator
+      type: FluentValidation.IValidator{{T}}
+    - id: expression
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Object}}
+    typeParameters:
+    - id: T
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetErrorMessageForRelatedDeletion(Of T)(validator As IValidator(Of T), expression As Expression(Of Func(Of T, Object))) As String
+  overload: Innova.Data.Validation.IValidatorExtensions.GetErrorMessageForRelatedDeletion*
+  nameWithType.vb: IValidatorExtensions.GetErrorMessageForRelatedDeletion(Of T)(IValidator(Of T), Expression(Of Func(Of T, Object)))
+  fullName.vb: Innova.Data.Validation.IValidatorExtensions.GetErrorMessageForRelatedDeletion(Of T)(FluentValidation.IValidator(Of T), System.Linq.Expressions.Expression(Of System.Func(Of T, Object)))
+  name.vb: GetErrorMessageForRelatedDeletion(Of T)(IValidator(Of T), Expression(Of Func(Of T, Object)))
 references:
 - uid: FluentValidation.IValidator
   commentId: T:FluentValidation.IValidator
@@ -466,4 +502,10 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: Innova.Data.Validation.IValidatorExtensions.GetErrorMessageForRelatedDeletion*
+  commentId: Overload:Innova.Data.Validation.IValidatorExtensions.GetErrorMessageForRelatedDeletion
+  href: Innova.Data.Validation.IValidatorExtensions.GetErrorMessageForRelatedDeletion.html#Innova_Data_Validation_IValidatorExtensions_GetErrorMessageForRelatedDeletion__1_FluentValidation_IValidator___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___
+  name: GetErrorMessageForRelatedDeletion
+  nameWithType: IValidatorExtensions.GetErrorMessageForRelatedDeletion
+  fullName: Innova.Data.Validation.IValidatorExtensions.GetErrorMessageForRelatedDeletion
 memberLayout: SeparatePages

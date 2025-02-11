@@ -1,0 +1,1062 @@
+### YamlMime:ManagedReference
+items:
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog
+  commentId: T:Innova.Prism.Library.Security.DirectoryObjectDialog
+  id: DirectoryObjectDialog
+  parent: Innova.Prism.Library.Security
+  children:
+  - Innova.Prism.Library.Security.DirectoryObjectDialog.#ctor
+  - Innova.Prism.Library.Security.DirectoryObjectDialog.AddScope(Innova.Prism.Library.Security.DirectoryScope,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  - Innova.Prism.Library.Security.DirectoryObjectDialog.MultiSelect
+  - Innova.Prism.Library.Security.DirectoryObjectDialog.PostInitCallback
+  - Innova.Prism.Library.Security.DirectoryObjectDialog.PreInitCallback
+  - Innova.Prism.Library.Security.DirectoryObjectDialog.Reset
+  - Innova.Prism.Library.Security.DirectoryObjectDialog.ResultProperties
+  - Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog(System.IntPtr)
+  - Innova.Prism.Library.Security.DirectoryObjectDialog.Selections
+  - Innova.Prism.Library.Security.DirectoryObjectDialog.TargetComputer
+  - Innova.Prism.Library.Security.DirectoryObjectDialog.UnderlyingScopeObjects
+  langs:
+  - csharp
+  - vb
+  name: DirectoryObjectDialog
+  nameWithType: DirectoryObjectDialog
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog
+  type: Class
+  source:
+    id: DirectoryObjectDialog
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\DirectoryObjectDialog.cs
+    startLine: 37
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: This dialog wraps the COM directory object picker (<xref href="Innova.Prism.Library.Security.LowLevel.ObjSel.IDsObjectPicker" data-throw-if-not-resolved="false"></xref>).
+  remarks: Unmanaged resources are only allocated in <xref href="Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog(System.IntPtr)" data-throw-if-not-resolved="false"></xref>, and they are also freed before the function returns.
+  example: []
+  syntax:
+    content: 'public class DirectoryObjectDialog : CommonDialog'
+    content.vb: Public Class DirectoryObjectDialog Inherits CommonDialog
+  inheritance:
+  - System.Object
+  - Microsoft.Win32.CommonDialog
+  inheritedMembers:
+  - Microsoft.Win32.CommonDialog.ShowDialog
+  - Microsoft.Win32.CommonDialog.ShowDialog(System.Windows.Window)
+  - Microsoft.Win32.CommonDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)
+  - Microsoft.Win32.CommonDialog.CheckPermissionsToShowDialog
+  - Microsoft.Win32.CommonDialog.Tag
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.ResultProperties
+  commentId: P:Innova.Prism.Library.Security.DirectoryObjectDialog.ResultProperties
+  id: ResultProperties
+  parent: Innova.Prism.Library.Security.DirectoryObjectDialog
+  langs:
+  - csharp
+  - vb
+  name: ResultProperties
+  nameWithType: DirectoryObjectDialog.ResultProperties
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.ResultProperties
+  type: Property
+  source:
+    id: ResultProperties
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\DirectoryObjectDialog.cs
+    startLine: 40
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  syntax:
+    content: public List<string> ResultProperties { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Property ResultProperties As List(Of String)
+  overload: Innova.Prism.Library.Security.DirectoryObjectDialog.ResultProperties*
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.Selections
+  commentId: P:Innova.Prism.Library.Security.DirectoryObjectDialog.Selections
+  id: Selections
+  parent: Innova.Prism.Library.Security.DirectoryObjectDialog
+  langs:
+  - csharp
+  - vb
+  name: Selections
+  nameWithType: DirectoryObjectDialog.Selections
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.Selections
+  type: Property
+  source:
+    id: Selections
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\DirectoryObjectDialog.cs
+    startLine: 45
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: The list of selected objects. It's only valid after a successful run, and not after calling <xref href="Innova.Prism.Library.Security.DirectoryObjectDialog.Reset" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public List<DirectoryObjectSelection> Selections { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Innova.Prism.Library.Security.DirectoryObjectSelection}
+    content.vb: Public Property Selections As List(Of DirectoryObjectSelection)
+  overload: Innova.Prism.Library.Security.DirectoryObjectDialog.Selections*
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.MultiSelect
+  commentId: P:Innova.Prism.Library.Security.DirectoryObjectDialog.MultiSelect
+  id: MultiSelect
+  parent: Innova.Prism.Library.Security.DirectoryObjectDialog
+  langs:
+  - csharp
+  - vb
+  name: MultiSelect
+  nameWithType: DirectoryObjectDialog.MultiSelect
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.MultiSelect
+  type: Property
+  source:
+    id: MultiSelect
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\DirectoryObjectDialog.cs
+    startLine: 50
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: If true (not default), then multiple principals can be selected.
+  example: []
+  syntax:
+    content: public bool MultiSelect { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property MultiSelect As Boolean
+  overload: Innova.Prism.Library.Security.DirectoryObjectDialog.MultiSelect*
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.TargetComputer
+  commentId: P:Innova.Prism.Library.Security.DirectoryObjectDialog.TargetComputer
+  id: TargetComputer
+  parent: Innova.Prism.Library.Security.DirectoryObjectDialog
+  langs:
+  - csharp
+  - vb
+  name: TargetComputer
+  nameWithType: DirectoryObjectDialog.TargetComputer
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.TargetComputer
+  type: Property
+  source:
+    id: TargetComputer
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\DirectoryObjectDialog.cs
+    startLine: 55
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: The target computer, or if null (default), then the local computer.
+  example: []
+  syntax:
+    content: public string TargetComputer { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TargetComputer As String
+  overload: Innova.Prism.Library.Security.DirectoryObjectDialog.TargetComputer*
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.PreInitCallback
+  commentId: E:Innova.Prism.Library.Security.DirectoryObjectDialog.PreInitCallback
+  id: PreInitCallback
+  parent: Innova.Prism.Library.Security.DirectoryObjectDialog
+  langs:
+  - csharp
+  - vb
+  name: PreInitCallback
+  nameWithType: DirectoryObjectDialog.PreInitCallback
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.PreInitCallback
+  type: Event
+  source:
+    id: PreInitCallback
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\DirectoryObjectDialog.cs
+    startLine: 60
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: Gets called before the dialog is initialized. You can inspect and change the values. Return false to cancel the dialog.
+  example: []
+  syntax:
+    content: public event EventHandler<DirectoryObjectDialogInitEventArgs> PreInitCallback
+    return:
+      type: System.EventHandler{Innova.Prism.Library.Security.DirectoryObjectDialogInitEventArgs}
+    content.vb: Public Event PreInitCallback As EventHandler(Of DirectoryObjectDialogInitEventArgs)
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.PostInitCallback
+  commentId: E:Innova.Prism.Library.Security.DirectoryObjectDialog.PostInitCallback
+  id: PostInitCallback
+  parent: Innova.Prism.Library.Security.DirectoryObjectDialog
+  langs:
+  - csharp
+  - vb
+  name: PostInitCallback
+  nameWithType: DirectoryObjectDialog.PostInitCallback
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.PostInitCallback
+  type: Event
+  source:
+    id: PostInitCallback
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\DirectoryObjectDialog.cs
+    startLine: 65
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: Gets called after the dialog is initialized. You can inspect but not change the values. Return false to cancel the dialog.
+  example: []
+  syntax:
+    content: public event EventHandler<DirectoryObjectDialogInitEventArgs> PostInitCallback
+    return:
+      type: System.EventHandler{Innova.Prism.Library.Security.DirectoryObjectDialogInitEventArgs}
+    content.vb: Public Event PostInitCallback As EventHandler(Of DirectoryObjectDialogInitEventArgs)
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.UnderlyingScopeObjects
+  commentId: P:Innova.Prism.Library.Security.DirectoryObjectDialog.UnderlyingScopeObjects
+  id: UnderlyingScopeObjects
+  parent: Innova.Prism.Library.Security.DirectoryObjectDialog
+  langs:
+  - csharp
+  - vb
+  name: UnderlyingScopeObjects
+  nameWithType: DirectoryObjectDialog.UnderlyingScopeObjects
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.UnderlyingScopeObjects
+  type: Property
+  source:
+    id: UnderlyingScopeObjects
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\DirectoryObjectDialog.cs
+    startLine: 70
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: Provides read-write access to the underlying scope objects.
+  example: []
+  syntax:
+    content: public List<ObjSel.DSOP_SCOPE_INIT_INFO> UnderlyingScopeObjects { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Innova.Prism.Library.Security.LowLevel.ObjSel.DSOP_SCOPE_INIT_INFO}
+    content.vb: Public Property UnderlyingScopeObjects As List(Of ObjSel.DSOP_SCOPE_INIT_INFO)
+  overload: Innova.Prism.Library.Security.DirectoryObjectDialog.UnderlyingScopeObjects*
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.#ctor
+  commentId: M:Innova.Prism.Library.Security.DirectoryObjectDialog.#ctor
+  id: '#ctor'
+  parent: Innova.Prism.Library.Security.DirectoryObjectDialog
+  langs:
+  - csharp
+  - vb
+  name: DirectoryObjectDialog()
+  nameWithType: DirectoryObjectDialog.DirectoryObjectDialog()
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.DirectoryObjectDialog()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\DirectoryObjectDialog.cs
+    startLine: 73
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: ''
+  example: []
+  syntax:
+    content: public DirectoryObjectDialog()
+    content.vb: Public Sub New()
+  overload: Innova.Prism.Library.Security.DirectoryObjectDialog.#ctor*
+  nameWithType.vb: DirectoryObjectDialog.New()
+  fullName.vb: Innova.Prism.Library.Security.DirectoryObjectDialog.New()
+  name.vb: New()
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.Reset
+  commentId: M:Innova.Prism.Library.Security.DirectoryObjectDialog.Reset
+  id: Reset
+  parent: Innova.Prism.Library.Security.DirectoryObjectDialog
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: DirectoryObjectDialog.Reset()
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.Reset()
+  type: Method
+  source:
+    id: Reset
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\DirectoryObjectDialog.cs
+    startLine: 89
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: ''
+  example: []
+  syntax:
+    content: public override void Reset()
+    content.vb: Public Overrides Sub Reset()
+  overridden: Microsoft.Win32.CommonDialog.Reset
+  overload: Innova.Prism.Library.Security.DirectoryObjectDialog.Reset*
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.AddScope(Innova.Prism.Library.Security.DirectoryScope,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:Innova.Prism.Library.Security.DirectoryObjectDialog.AddScope(Innova.Prism.Library.Security.DirectoryScope,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  id: AddScope(Innova.Prism.Library.Security.DirectoryScope,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  parent: Innova.Prism.Library.Security.DirectoryObjectDialog
+  langs:
+  - csharp
+  - vb
+  name: AddScope(DirectoryScope, bool, bool, bool, bool, bool, bool, bool)
+  nameWithType: DirectoryObjectDialog.AddScope(DirectoryScope, bool, bool, bool, bool, bool, bool, bool)
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.AddScope(Innova.Prism.Library.Security.DirectoryScope, bool, bool, bool, bool, bool, bool, bool)
+  type: Method
+  source:
+    id: AddScope
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\DirectoryObjectDialog.cs
+    startLine: 105
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: An easy-to-use method which adds a new element to <xref href="Innova.Prism.Library.Security.DirectoryObjectDialog.UnderlyingScopeObjects" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void AddScope(DirectoryScope scope, bool users = false, bool groups = false, bool excludeBuiltinGroups = false, bool computers = false, bool contacts = false, bool wellknown = false, bool starting = false)
+    parameters:
+    - id: scope
+      type: Innova.Prism.Library.Security.DirectoryScope
+      description: the scope type
+    - id: users
+      type: System.Boolean
+      description: can select users
+    - id: groups
+      type: System.Boolean
+      description: can select groups
+    - id: excludeBuiltinGroups
+      type: System.Boolean
+      description: exclude built-in groups (if <code class="paramref">groups</code> is true)
+    - id: computers
+      type: System.Boolean
+      description: can select computers
+    - id: contacts
+      type: System.Boolean
+      description: can select contacts
+    - id: wellknown
+      type: System.Boolean
+      description: can select well-known principals
+    - id: starting
+      type: System.Boolean
+      description: is it the starting scope
+    content.vb: Public Sub AddScope(scope As DirectoryScope, users As Boolean = False, groups As Boolean = False, excludeBuiltinGroups As Boolean = False, computers As Boolean = False, contacts As Boolean = False, wellknown As Boolean = False, starting As Boolean = False)
+  overload: Innova.Prism.Library.Security.DirectoryObjectDialog.AddScope*
+  nameWithType.vb: DirectoryObjectDialog.AddScope(DirectoryScope, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName.vb: Innova.Prism.Library.Security.DirectoryObjectDialog.AddScope(Innova.Prism.Library.Security.DirectoryScope, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  name.vb: AddScope(DirectoryScope, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog(System.IntPtr)
+  commentId: M:Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog(System.IntPtr)
+  id: RunDialog(System.IntPtr)
+  parent: Innova.Prism.Library.Security.DirectoryObjectDialog
+  langs:
+  - csharp
+  - vb
+  name: RunDialog(IntPtr)
+  nameWithType: DirectoryObjectDialog.RunDialog(IntPtr)
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog(System.IntPtr)
+  type: Method
+  source:
+    id: RunDialog
+    path: C:\Source\Workspaces\Workspace\Innova Frameworks\IDP\src\Innova.Prism.Library\Security\DirectoryObjectDialog.cs
+    startLine: 184
+  assemblies:
+  - Innova.Prism.Library
+  namespace: Innova.Prism.Library.Security
+  summary: ''
+  example: []
+  syntax:
+    content: protected override bool RunDialog(IntPtr hwndOwner)
+    parameters:
+    - id: hwndOwner
+      type: System.IntPtr
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function RunDialog(hwndOwner As IntPtr) As Boolean
+  overridden: Microsoft.Win32.CommonDialog.RunDialog(System.IntPtr)
+  overload: Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog*
+references:
+- uid: Innova.Prism.Library.Security.LowLevel.ObjSel.IDsObjectPicker
+  commentId: T:Innova.Prism.Library.Security.LowLevel.ObjSel.IDsObjectPicker
+  href: Innova.Prism.Library.Security.LowLevel.ObjSel.html
+  name: ObjSel.IDsObjectPicker
+  nameWithType: ObjSel.IDsObjectPicker
+  fullName: Innova.Prism.Library.Security.LowLevel.ObjSel.IDsObjectPicker
+  spec.csharp:
+  - uid: Innova.Prism.Library.Security.LowLevel.ObjSel
+    name: ObjSel
+    href: Innova.Prism.Library.Security.LowLevel.ObjSel.html
+  - name: .
+  - uid: Innova.Prism.Library.Security.LowLevel.ObjSel.IDsObjectPicker
+    name: IDsObjectPicker
+    href: Innova.Prism.Library.Security.LowLevel.ObjSel.IDsObjectPicker.html
+  spec.vb:
+  - uid: Innova.Prism.Library.Security.LowLevel.ObjSel
+    name: ObjSel
+    href: Innova.Prism.Library.Security.LowLevel.ObjSel.html
+  - name: .
+  - uid: Innova.Prism.Library.Security.LowLevel.ObjSel.IDsObjectPicker
+    name: IDsObjectPicker
+    href: Innova.Prism.Library.Security.LowLevel.ObjSel.IDsObjectPicker.html
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog(System.IntPtr)
+  commentId: M:Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog(System.IntPtr)
+  isExternal: true
+  href: Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog.html#Innova_Prism_Library_Security_DirectoryObjectDialog_RunDialog_System_IntPtr_
+  name: RunDialog(IntPtr)
+  nameWithType: DirectoryObjectDialog.RunDialog(IntPtr)
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog(System.IntPtr)
+  spec.csharp:
+  - uid: Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog(System.IntPtr)
+    name: RunDialog
+    href: Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog.html#Innova_Prism_Library_Security_DirectoryObjectDialog_RunDialog_System_IntPtr_
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog(System.IntPtr)
+    name: RunDialog
+    href: Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog.html#Innova_Prism_Library_Security_DirectoryObjectDialog_RunDialog_System_IntPtr_
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+- uid: Innova.Prism.Library.Security
+  commentId: N:Innova.Prism.Library.Security
+  href: Innova.html
+  name: Innova.Prism.Library.Security
+  nameWithType: Innova.Prism.Library.Security
+  fullName: Innova.Prism.Library.Security
+  spec.csharp:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Security
+    name: Security
+    href: Innova.Prism.Library.Security.html
+  spec.vb:
+  - uid: Innova
+    name: Innova
+    href: Innova.html
+  - name: .
+  - uid: Innova.Prism
+    name: Prism
+    href: Innova.Prism.html
+  - name: .
+  - uid: Innova.Prism.Library
+    name: Library
+    href: Innova.Prism.Library.html
+  - name: .
+  - uid: Innova.Prism.Library.Security
+    name: Security
+    href: Innova.Prism.Library.Security.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Win32.CommonDialog
+  commentId: T:Microsoft.Win32.CommonDialog
+  parent: Microsoft.Win32
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog
+  name: CommonDialog
+  nameWithType: CommonDialog
+  fullName: Microsoft.Win32.CommonDialog
+- uid: Microsoft.Win32.CommonDialog.ShowDialog
+  commentId: M:Microsoft.Win32.CommonDialog.ShowDialog
+  parent: Microsoft.Win32.CommonDialog
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.showdialog#microsoft-win32-commondialog-showdialog
+  name: ShowDialog()
+  nameWithType: CommonDialog.ShowDialog()
+  fullName: Microsoft.Win32.CommonDialog.ShowDialog()
+  spec.csharp:
+  - uid: Microsoft.Win32.CommonDialog.ShowDialog
+    name: ShowDialog
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.showdialog#microsoft-win32-commondialog-showdialog
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Win32.CommonDialog.ShowDialog
+    name: ShowDialog
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.showdialog#microsoft-win32-commondialog-showdialog
+  - name: (
+  - name: )
+- uid: Microsoft.Win32.CommonDialog.ShowDialog(System.Windows.Window)
+  commentId: M:Microsoft.Win32.CommonDialog.ShowDialog(System.Windows.Window)
+  parent: Microsoft.Win32.CommonDialog
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.showdialog#microsoft-win32-commondialog-showdialog(system-windows-window)
+  name: ShowDialog(Window)
+  nameWithType: CommonDialog.ShowDialog(Window)
+  fullName: Microsoft.Win32.CommonDialog.ShowDialog(System.Windows.Window)
+  spec.csharp:
+  - uid: Microsoft.Win32.CommonDialog.ShowDialog(System.Windows.Window)
+    name: ShowDialog
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.showdialog#microsoft-win32-commondialog-showdialog(system-windows-window)
+  - name: (
+  - uid: System.Windows.Window
+    name: Window
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.window
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Win32.CommonDialog.ShowDialog(System.Windows.Window)
+    name: ShowDialog
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.showdialog#microsoft-win32-commondialog-showdialog(system-windows-window)
+  - name: (
+  - uid: System.Windows.Window
+    name: Window
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.window
+  - name: )
+- uid: Microsoft.Win32.CommonDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)
+  commentId: M:Microsoft.Win32.CommonDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)
+  parent: Microsoft.Win32.CommonDialog
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.hookproc
+  name: HookProc(IntPtr, int, IntPtr, IntPtr)
+  nameWithType: CommonDialog.HookProc(IntPtr, int, IntPtr, IntPtr)
+  fullName: Microsoft.Win32.CommonDialog.HookProc(System.IntPtr, int, System.IntPtr, System.IntPtr)
+  nameWithType.vb: CommonDialog.HookProc(IntPtr, Integer, IntPtr, IntPtr)
+  fullName.vb: Microsoft.Win32.CommonDialog.HookProc(System.IntPtr, Integer, System.IntPtr, System.IntPtr)
+  name.vb: HookProc(IntPtr, Integer, IntPtr, IntPtr)
+  spec.csharp:
+  - uid: Microsoft.Win32.CommonDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)
+    name: HookProc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.hookproc
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Win32.CommonDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)
+    name: HookProc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.hookproc
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+- uid: Microsoft.Win32.CommonDialog.CheckPermissionsToShowDialog
+  commentId: M:Microsoft.Win32.CommonDialog.CheckPermissionsToShowDialog
+  parent: Microsoft.Win32.CommonDialog
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.checkpermissionstoshowdialog
+  name: CheckPermissionsToShowDialog()
+  nameWithType: CommonDialog.CheckPermissionsToShowDialog()
+  fullName: Microsoft.Win32.CommonDialog.CheckPermissionsToShowDialog()
+  spec.csharp:
+  - uid: Microsoft.Win32.CommonDialog.CheckPermissionsToShowDialog
+    name: CheckPermissionsToShowDialog
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.checkpermissionstoshowdialog
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Win32.CommonDialog.CheckPermissionsToShowDialog
+    name: CheckPermissionsToShowDialog
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.checkpermissionstoshowdialog
+  - name: (
+  - name: )
+- uid: Microsoft.Win32.CommonDialog.Tag
+  commentId: P:Microsoft.Win32.CommonDialog.Tag
+  parent: Microsoft.Win32.CommonDialog
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.tag
+  name: Tag
+  nameWithType: CommonDialog.Tag
+  fullName: Microsoft.Win32.CommonDialog.Tag
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Win32
+  commentId: N:Microsoft.Win32
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Win32
+  nameWithType: Microsoft.Win32
+  fullName: Microsoft.Win32
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Win32
+    name: Win32
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.win32
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Win32
+    name: Win32
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.win32
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.ResultProperties*
+  commentId: Overload:Innova.Prism.Library.Security.DirectoryObjectDialog.ResultProperties
+  href: Innova.Prism.Library.Security.DirectoryObjectDialog.ResultProperties.html#Innova_Prism_Library_Security_DirectoryObjectDialog_ResultProperties
+  name: ResultProperties
+  nameWithType: DirectoryObjectDialog.ResultProperties
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.ResultProperties
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.Reset
+  commentId: M:Innova.Prism.Library.Security.DirectoryObjectDialog.Reset
+  href: Innova.Prism.Library.Security.DirectoryObjectDialog.Reset.html#Innova_Prism_Library_Security_DirectoryObjectDialog_Reset
+  name: Reset()
+  nameWithType: DirectoryObjectDialog.Reset()
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.Reset()
+  spec.csharp:
+  - uid: Innova.Prism.Library.Security.DirectoryObjectDialog.Reset
+    name: Reset
+    href: Innova.Prism.Library.Security.DirectoryObjectDialog.Reset.html#Innova_Prism_Library_Security_DirectoryObjectDialog_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Innova.Prism.Library.Security.DirectoryObjectDialog.Reset
+    name: Reset
+    href: Innova.Prism.Library.Security.DirectoryObjectDialog.Reset.html#Innova_Prism_Library_Security_DirectoryObjectDialog_Reset
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.Selections*
+  commentId: Overload:Innova.Prism.Library.Security.DirectoryObjectDialog.Selections
+  href: Innova.Prism.Library.Security.DirectoryObjectDialog.Selections.html#Innova_Prism_Library_Security_DirectoryObjectDialog_Selections
+  name: Selections
+  nameWithType: DirectoryObjectDialog.Selections
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.Selections
+- uid: System.Collections.Generic.List{Innova.Prism.Library.Security.DirectoryObjectSelection}
+  commentId: T:System.Collections.Generic.List{Innova.Prism.Library.Security.DirectoryObjectSelection}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DirectoryObjectSelection>
+  nameWithType: List<DirectoryObjectSelection>
+  fullName: System.Collections.Generic.List<Innova.Prism.Library.Security.DirectoryObjectSelection>
+  nameWithType.vb: List(Of DirectoryObjectSelection)
+  fullName.vb: System.Collections.Generic.List(Of Innova.Prism.Library.Security.DirectoryObjectSelection)
+  name.vb: List(Of DirectoryObjectSelection)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Prism.Library.Security.DirectoryObjectSelection
+    name: DirectoryObjectSelection
+    href: Innova.Prism.Library.Security.DirectoryObjectSelection.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Security.DirectoryObjectSelection
+    name: DirectoryObjectSelection
+    href: Innova.Prism.Library.Security.DirectoryObjectSelection.html
+  - name: )
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.MultiSelect*
+  commentId: Overload:Innova.Prism.Library.Security.DirectoryObjectDialog.MultiSelect
+  href: Innova.Prism.Library.Security.DirectoryObjectDialog.MultiSelect.html#Innova_Prism_Library_Security_DirectoryObjectDialog_MultiSelect
+  name: MultiSelect
+  nameWithType: DirectoryObjectDialog.MultiSelect
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.MultiSelect
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.TargetComputer*
+  commentId: Overload:Innova.Prism.Library.Security.DirectoryObjectDialog.TargetComputer
+  href: Innova.Prism.Library.Security.DirectoryObjectDialog.TargetComputer.html#Innova_Prism_Library_Security_DirectoryObjectDialog_TargetComputer
+  name: TargetComputer
+  nameWithType: DirectoryObjectDialog.TargetComputer
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.TargetComputer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.EventHandler{Innova.Prism.Library.Security.DirectoryObjectDialogInitEventArgs}
+  commentId: T:System.EventHandler{Innova.Prism.Library.Security.DirectoryObjectDialogInitEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<DirectoryObjectDialogInitEventArgs>
+  nameWithType: EventHandler<DirectoryObjectDialogInitEventArgs>
+  fullName: System.EventHandler<Innova.Prism.Library.Security.DirectoryObjectDialogInitEventArgs>
+  nameWithType.vb: EventHandler(Of DirectoryObjectDialogInitEventArgs)
+  fullName.vb: System.EventHandler(Of Innova.Prism.Library.Security.DirectoryObjectDialogInitEventArgs)
+  name.vb: EventHandler(Of DirectoryObjectDialogInitEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: Innova.Prism.Library.Security.DirectoryObjectDialogInitEventArgs
+    name: DirectoryObjectDialogInitEventArgs
+    href: Innova.Prism.Library.Security.DirectoryObjectDialogInitEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Security.DirectoryObjectDialogInitEventArgs
+    name: DirectoryObjectDialogInitEventArgs
+    href: Innova.Prism.Library.Security.DirectoryObjectDialogInitEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.UnderlyingScopeObjects*
+  commentId: Overload:Innova.Prism.Library.Security.DirectoryObjectDialog.UnderlyingScopeObjects
+  href: Innova.Prism.Library.Security.DirectoryObjectDialog.UnderlyingScopeObjects.html#Innova_Prism_Library_Security_DirectoryObjectDialog_UnderlyingScopeObjects
+  name: UnderlyingScopeObjects
+  nameWithType: DirectoryObjectDialog.UnderlyingScopeObjects
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.UnderlyingScopeObjects
+- uid: System.Collections.Generic.List{Innova.Prism.Library.Security.LowLevel.ObjSel.DSOP_SCOPE_INIT_INFO}
+  commentId: T:System.Collections.Generic.List{Innova.Prism.Library.Security.LowLevel.ObjSel.DSOP_SCOPE_INIT_INFO}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ObjSel.DSOP_SCOPE_INIT_INFO>
+  nameWithType: List<ObjSel.DSOP_SCOPE_INIT_INFO>
+  fullName: System.Collections.Generic.List<Innova.Prism.Library.Security.LowLevel.ObjSel.DSOP_SCOPE_INIT_INFO>
+  nameWithType.vb: List(Of ObjSel.DSOP_SCOPE_INIT_INFO)
+  fullName.vb: System.Collections.Generic.List(Of Innova.Prism.Library.Security.LowLevel.ObjSel.DSOP_SCOPE_INIT_INFO)
+  name.vb: List(Of ObjSel.DSOP_SCOPE_INIT_INFO)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Innova.Prism.Library.Security.LowLevel.ObjSel
+    name: ObjSel
+    href: Innova.Prism.Library.Security.LowLevel.ObjSel.html
+  - name: .
+  - uid: Innova.Prism.Library.Security.LowLevel.ObjSel.DSOP_SCOPE_INIT_INFO
+    name: DSOP_SCOPE_INIT_INFO
+    href: Innova.Prism.Library.Security.LowLevel.ObjSel.DSOP_SCOPE_INIT_INFO.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Innova.Prism.Library.Security.LowLevel.ObjSel
+    name: ObjSel
+    href: Innova.Prism.Library.Security.LowLevel.ObjSel.html
+  - name: .
+  - uid: Innova.Prism.Library.Security.LowLevel.ObjSel.DSOP_SCOPE_INIT_INFO
+    name: DSOP_SCOPE_INIT_INFO
+    href: Innova.Prism.Library.Security.LowLevel.ObjSel.DSOP_SCOPE_INIT_INFO.html
+  - name: )
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.#ctor*
+  commentId: Overload:Innova.Prism.Library.Security.DirectoryObjectDialog.#ctor
+  href: Innova.Prism.Library.Security.DirectoryObjectDialog.-ctor.html#Innova_Prism_Library_Security_DirectoryObjectDialog__ctor
+  name: DirectoryObjectDialog
+  nameWithType: DirectoryObjectDialog.DirectoryObjectDialog
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.DirectoryObjectDialog
+  nameWithType.vb: DirectoryObjectDialog.New
+  fullName.vb: Innova.Prism.Library.Security.DirectoryObjectDialog.New
+  name.vb: New
+- uid: Microsoft.Win32.CommonDialog.Reset
+  commentId: M:Microsoft.Win32.CommonDialog.Reset
+  parent: Microsoft.Win32.CommonDialog
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.reset
+  name: Reset()
+  nameWithType: CommonDialog.Reset()
+  fullName: Microsoft.Win32.CommonDialog.Reset()
+  spec.csharp:
+  - uid: Microsoft.Win32.CommonDialog.Reset
+    name: Reset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Win32.CommonDialog.Reset
+    name: Reset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.reset
+  - name: (
+  - name: )
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.Reset*
+  commentId: Overload:Innova.Prism.Library.Security.DirectoryObjectDialog.Reset
+  href: Innova.Prism.Library.Security.DirectoryObjectDialog.Reset.html#Innova_Prism_Library_Security_DirectoryObjectDialog_Reset
+  name: Reset
+  nameWithType: DirectoryObjectDialog.Reset
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.Reset
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.UnderlyingScopeObjects
+  commentId: P:Innova.Prism.Library.Security.DirectoryObjectDialog.UnderlyingScopeObjects
+  href: Innova.Prism.Library.Security.DirectoryObjectDialog.UnderlyingScopeObjects.html#Innova_Prism_Library_Security_DirectoryObjectDialog_UnderlyingScopeObjects
+  name: UnderlyingScopeObjects
+  nameWithType: DirectoryObjectDialog.UnderlyingScopeObjects
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.UnderlyingScopeObjects
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.AddScope*
+  commentId: Overload:Innova.Prism.Library.Security.DirectoryObjectDialog.AddScope
+  href: Innova.Prism.Library.Security.DirectoryObjectDialog.AddScope.html#Innova_Prism_Library_Security_DirectoryObjectDialog_AddScope_Innova_Prism_Library_Security_DirectoryScope_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  name: AddScope
+  nameWithType: DirectoryObjectDialog.AddScope
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.AddScope
+- uid: Innova.Prism.Library.Security.DirectoryScope
+  commentId: T:Innova.Prism.Library.Security.DirectoryScope
+  parent: Innova.Prism.Library.Security
+  href: Innova.Prism.Library.Security.DirectoryScope.html
+  name: DirectoryScope
+  nameWithType: DirectoryScope
+  fullName: Innova.Prism.Library.Security.DirectoryScope
+- uid: Microsoft.Win32.CommonDialog.RunDialog(System.IntPtr)
+  commentId: M:Microsoft.Win32.CommonDialog.RunDialog(System.IntPtr)
+  parent: Microsoft.Win32.CommonDialog
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.rundialog
+  name: RunDialog(IntPtr)
+  nameWithType: CommonDialog.RunDialog(IntPtr)
+  fullName: Microsoft.Win32.CommonDialog.RunDialog(System.IntPtr)
+  spec.csharp:
+  - uid: Microsoft.Win32.CommonDialog.RunDialog(System.IntPtr)
+    name: RunDialog
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.rundialog
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Win32.CommonDialog.RunDialog(System.IntPtr)
+    name: RunDialog
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.win32.commondialog.rundialog
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+- uid: Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog*
+  commentId: Overload:Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog
+  href: Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog.html#Innova_Prism_Library_Security_DirectoryObjectDialog_RunDialog_System_IntPtr_
+  name: RunDialog
+  nameWithType: DirectoryObjectDialog.RunDialog
+  fullName: Innova.Prism.Library.Security.DirectoryObjectDialog.RunDialog
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+memberLayout: SeparatePages
